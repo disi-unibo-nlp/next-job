@@ -4,13 +4,14 @@ from pathlib import Path
 
 import torch
 from sentence_transformers import SentenceTransformer
+from sentence_transformers.evaluation import InformationRetrievalEvaluator
 
 from jobhop_eval_common import (
     build_texts,
     cleanup_cuda,
     configure_hf_cache,
     configure_reproducibility,
-    evaluate_score_matrix,
+    evaluate_score_matrix_at_k,
     failure_payload,
     gpu_info,
     load_jobhop_eval_data,
@@ -20,6 +21,7 @@ from jobhop_eval_common import (
     now_utc,
     package_versions,
     parse_optional_int,
+    parse_k_values,
     row_maxnorm,
     row_minmax,
     select_alpha_by_validation_mrr,
@@ -58,6 +60,7 @@ def parse_args():
     parser.add_argument("--random-seed", type=int, default=7)
     parser.add_argument("--batch-size", type=int, default=None)
     parser.add_argument("--retrieve-k", type=int, default=10, help="Ranking depth used to extract metrics; >=10.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
     parser.add_argument("--output-dir", default="outputs/dense_eval")
     parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
     parser.add_argument("--query-prefix", default=None, help="Override model-specific query prefix.")
@@ -88,12 +91,88 @@ def encode_texts(model, texts, prefix, batch_size):
     return embeddings.astype("float32")
 
 
+def flatten_ir_scores(scores, prefix=""):
+    rows = []
+    if isinstance(scores, dict):
+        for key, value in scores.items():
+            name = f"{prefix}.{key}" if prefix else str(key)
+            if isinstance(value, dict):
+                rows.extend(flatten_ir_scores(value, name))
+            else:
+                rows.append({"metric": name, "value": value})
+    else:
+        rows.append({"metric": prefix or "score", "value": scores})
+    return rows
+
+
+def make_ir_inputs(cases, query_texts, candidate_codes, candidate_texts):
+    queries = {f"q{i}": text for i, text in enumerate(query_texts)}
+    corpus = {code: text for code, text in zip(candidate_codes, candidate_texts)}
+    relevant_docs = {f"q{i}": {case["target"]} for i, case in enumerate(cases)}
+    return queries, corpus, relevant_docs
+
+
+def run_sentence_transformers_ir_evaluator(
+    model,
+    split,
+    cases,
+    query_texts,
+    candidate_codes,
+    candidate_texts,
+    query_prefix,
+    passage_prefix,
+    metric_ks,
+    batch_size,
+    output_dir,
+):
+    output_dir.mkdir(parents=True, exist_ok=True)
+    queries, corpus, relevant_docs = make_ir_inputs(cases, query_texts, candidate_codes, candidate_texts)
+    evaluator_kwargs = {
+        "queries": queries,
+        "corpus": corpus,
+        "relevant_docs": relevant_docs,
+        "mrr_at_k": metric_ks,
+        "ndcg_at_k": metric_ks,
+        "accuracy_at_k": metric_ks,
+        "precision_recall_at_k": metric_ks,
+        "map_at_k": metric_ks,
+        "show_progress_bar": True,
+        "batch_size": batch_size,
+        "name": f"{split}_pure_dense",
+        "write_csv": True,
+        "query_prompt": query_prefix or None,
+        "corpus_prompt": passage_prefix or None,
+    }
+    try:
+        evaluator = InformationRetrievalEvaluator(**evaluator_kwargs)
+    except TypeError:
+        queries, corpus, relevant_docs = make_ir_inputs(
+            cases,
+            apply_prefixes(query_texts, query_prefix),
+            candidate_codes,
+            apply_prefixes(candidate_texts, passage_prefix),
+        )
+        evaluator_kwargs = {
+            key: value
+            for key, value in evaluator_kwargs.items()
+            if key not in {"query_prompt", "corpus_prompt", "queries", "corpus", "relevant_docs"}
+        }
+        evaluator = InformationRetrievalEvaluator(queries, corpus, relevant_docs, **evaluator_kwargs)
+    scores = evaluator(model, output_path=str(output_dir))
+    rows = flatten_ir_scores(scores)
+    for row in rows:
+        row["split"] = split
+        row["setting"] = "sentence_transformers_information_retrieval_evaluator"
+    return scores, rows
+
+
 def main():
     args = parse_args()
     started_at = now_utc()
     started_monotonic = time.monotonic()
     stage = "initialization"
     max_eval_cases = parse_optional_int(args.max_eval_cases)
+    metric_ks = parse_k_values(args.metric_ks)
     cache_dir = configure_hf_cache(args.cache_dir)
     configure_reproducibility(args.random_seed)
 
@@ -113,6 +192,7 @@ def main():
         "random_seed": args.random_seed,
         "batch_size": batch_size,
         "retrieve_k": args.retrieve_k,
+        "metric_ks": metric_ks,
         "output_dir": str(run_dir),
         "cache_dir": cache_dir,
         "device": device,
@@ -162,6 +242,24 @@ def main():
         stage = "model_loading"
         model = load_sentence_transformer_model(args.model_name, device=device)
 
+        stage = "sentence_transformers_ir_evaluator_validation"
+        ir_output_dir = run_dir / "sentence_transformers_ir_evaluator"
+        validation_ir_scores, validation_ir_rows = run_sentence_transformers_ir_evaluator(
+            model,
+            "validation",
+            data["validation_cases"],
+            texts["validation_query_texts"],
+            data["candidate_codes"],
+            texts["candidate_texts"],
+            query_prefix,
+            passage_prefix,
+            metric_ks,
+            batch_size,
+            ir_output_dir,
+        )
+        write_json(run_dir / "sentence_transformers_ir_validation.json", validation_ir_scores)
+        write_csv(run_dir / "sentence_transformers_ir_validation.csv", validation_ir_rows)
+
         stage = "candidate_encoding"
         candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
 
@@ -173,7 +271,9 @@ def main():
         validation_rows = []
         for alpha in ALPHAS:
             final_scores = alpha * validation_markov_norm + (1.0 - alpha) * validation_embedding_norm
-            scores = evaluate_score_matrix(final_scores, data["validation_cases"], code_to_index, args.retrieve_k)
+            scores = evaluate_score_matrix_at_k(
+                final_scores, data["validation_cases"], code_to_index, metric_ks, args.retrieve_k
+            )
             row = {
                 "model": args.model_name,
                 "split": "validation",
@@ -196,11 +296,28 @@ def main():
             run_dir / "selected_alpha.json", run_dir / "selected_alpha.csv", selected_alpha_payload
         )
 
+        stage = "sentence_transformers_ir_evaluator_test"
+        test_ir_scores, test_ir_rows = run_sentence_transformers_ir_evaluator(
+            model,
+            "test",
+            data["test_cases"],
+            texts["test_query_texts"],
+            data["candidate_codes"],
+            texts["candidate_texts"],
+            query_prefix,
+            passage_prefix,
+            metric_ks,
+            batch_size,
+            ir_output_dir,
+        )
+        write_json(run_dir / "sentence_transformers_ir_test.json", test_ir_scores)
+        write_csv(run_dir / "sentence_transformers_ir_test.csv", test_ir_rows)
+
         stage = "test_encoding_and_final_eval"
         test_embeddings = encode_texts(model, texts["test_query_texts"], query_prefix, batch_size)
         test_embedding_norm = row_minmax(test_embeddings @ candidate_embeddings.T)
         test_scores = selected_alpha * test_markov_norm + (1.0 - selected_alpha) * test_embedding_norm
-        final_metrics = evaluate_score_matrix(test_scores, data["test_cases"], code_to_index, args.retrieve_k)
+        final_metrics = evaluate_score_matrix_at_k(test_scores, data["test_cases"], code_to_index, metric_ks, args.retrieve_k)
         final_row = {
             "model": args.model_name,
             "split": "test",

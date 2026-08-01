@@ -36,10 +36,13 @@ Intentional changes:
 - Equal validation MRR ties use the first alpha in the original notebook sweep order.
 - Added runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, validation sweeps, selected alpha, final test results, and failure files.
 - Added exception handling so partial results are saved when a model fails.
+- Added multi-K IR metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K.
+- Added `sentence_transformers.evaluation.InformationRetrievalEvaluator` for pure dense retrieval evaluation.
 
 Script-specific notes:
 
 - `scripts/dense_eval.py` keeps the dense alpha grid `[0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0]`.
 - `scripts/dense_eval.py` preserves full candidate scoring; `--retrieve-k` controls ranking extraction depth and is clamped to at least 10 for the reported metrics.
+- `scripts/dense_eval.py` writes SentenceTransformers IR evaluator outputs to `sentence_transformers_ir_validation.*` and `sentence_transformers_ir_test.*`.
 - `scripts/lateon_eval.py` keeps the LateOn alpha grid `[0.0, 0.25, 0.5, 0.75, 0.9, 1.0]`.
 - `scripts/lateon_eval.py` uses `--retrieve-k` for both LateOn retrieval depth and Markov candidate depth, matching the notebook default of 200.

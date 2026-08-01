@@ -28,5 +28,6 @@ python scripts/lateon_eval.py \
   --batch-size "${BATCH_SIZE:-16}" \
   --doc-batch-size "${DOC_BATCH_SIZE:-32}" \
   --retrieve-k "${RETRIEVE_K:-200}" \
+  --metric-ks "${METRIC_KS:-1,3,5,10,20,50,100}" \
   --output-dir "${OUTPUT_DIR:-outputs/lateon_eval}" \
   --cache-dir "$HF_HOME"

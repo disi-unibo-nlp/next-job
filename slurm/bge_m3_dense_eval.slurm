@@ -27,5 +27,6 @@ python scripts/dense_eval.py \
   --random-seed "${RANDOM_SEED:-7}" \
   --batch-size "${BATCH_SIZE:-32}" \
   --retrieve-k "${RETRIEVE_K:-10}" \
+  --metric-ks "${METRIC_KS:-1,3,5,10,20,50,100}" \
   --output-dir "${OUTPUT_DIR:-outputs/dense_eval}" \
   --cache-dir "$HF_HOME"

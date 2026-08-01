@@ -11,7 +11,7 @@ from jobhop_eval_common import (
     cleanup_cuda,
     configure_hf_cache,
     configure_reproducibility,
-    evaluate_ranked_lists,
+    evaluate_ranked_lists_at_k,
     failure_payload,
     gpu_info,
     load_jobhop_eval_data,
@@ -20,6 +20,7 @@ from jobhop_eval_common import (
     now_utc,
     package_versions,
     parse_optional_int,
+    parse_k_values,
     select_alpha_by_validation_mrr,
     train_markov_ranked,
     write_csv,
@@ -41,6 +42,7 @@ def parse_args():
     parser.add_argument("--batch-size", type=int, default=16, help="Query batch size.")
     parser.add_argument("--doc-batch-size", type=int, default=32, help="Candidate document batch size.")
     parser.add_argument("--retrieve-k", type=int, default=200, help="LateOn and Markov candidate depth.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
     parser.add_argument("--output-dir", default="outputs/lateon_eval")
     parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
     parser.add_argument("--index-dir", default=None, help="Optional PyLate index directory.")
@@ -122,7 +124,8 @@ def main():
     started_monotonic = time.monotonic()
     stage = "initialization"
     max_eval_cases = parse_optional_int(args.max_eval_cases)
-    retrieve_k = max(10, args.retrieve_k)
+    metric_ks = parse_k_values(args.metric_ks)
+    retrieve_k = max(10, args.retrieve_k, max(metric_ks))
     cache_dir = configure_hf_cache(args.cache_dir)
     configure_reproducibility(args.random_seed)
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -139,6 +142,7 @@ def main():
         "batch_size_queries": args.batch_size,
         "batch_size_docs": args.doc_batch_size,
         "retrieve_k": retrieve_k,
+        "metric_ks": metric_ks,
         "output_dir": str(run_dir),
         "cache_dir": cache_dir,
         "index_dir": str(index_dir),
@@ -209,7 +213,7 @@ def main():
             ranked = hybrid_ranked_lists(
                 data["validation_cases"], validation_lateon, transition_probs, global_rank, alpha, retrieve_k
             )
-            scores = evaluate_ranked_lists(data["validation_cases"], ranked)
+            scores = evaluate_ranked_lists_at_k(data["validation_cases"], ranked, metric_ks)
             row = {
                 "model": args.model_name,
                 "split": "validation",
@@ -241,7 +245,7 @@ def main():
         test_ranked = hybrid_ranked_lists(
             data["test_cases"], test_lateon, transition_probs, global_rank, selected_alpha, retrieve_k
         )
-        final_metrics = evaluate_ranked_lists(data["test_cases"], test_ranked)
+        final_metrics = evaluate_ranked_lists_at_k(data["test_cases"], test_ranked, metric_ks)
         final_row = {
             "model": args.model_name,
             "split": "test",

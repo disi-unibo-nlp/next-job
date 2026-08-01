@@ -43,6 +43,19 @@ def parse_optional_int(value):
     return parsed
 
 
+def parse_k_values(value):
+    if value is None:
+        return [1, 3, 5, 10, 20, 50, 100]
+    if isinstance(value, (list, tuple)):
+        values = [int(item) for item in value]
+    else:
+        values = [int(item.strip()) for item in str(value).split(",") if item.strip()]
+    values = sorted(set(k for k in values if k > 0))
+    if not values:
+        raise ValueError("Expected at least one positive K value.")
+    return values
+
+
 def model_slug(model_name):
     return re.sub(r"[^A-Za-z0-9._-]+", "_", model_name).strip("_")
 
@@ -162,11 +175,13 @@ def notebook_conversion_changes(script_name):
         "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
         "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
         "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+        "Adds multi-K information retrieval metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K.",
     ]
     dense = [
         "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
         "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
         "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
     ]
     lateon = [
         "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
@@ -602,12 +617,52 @@ def row_maxnorm(x):
 
 
 def evaluate_score_matrix(score_matrix, cases, code_to_index, retrieve_k=10):
+    return evaluate_score_matrix_at_k(score_matrix, cases, code_to_index, parse_k_values([5, 10]), retrieve_k)
+
+
+def _empty_metric_result(metric_ks, n_cases=0):
+    result = {"n_cases": n_cases}
+    for k in metric_ks:
+        result[f"Accuracy@{k}"] = 0.0
+        result[f"Precision@{k}"] = 0.0
+        result[f"Recall@{k}"] = 0.0
+        result[f"MRR@{k}"] = 0.0
+        result[f"NDCG@{k}"] = 0.0
+        result[f"MAP@{k}"] = 0.0
+    result["MRR"] = result.get("MRR@10", 0.0)
+    result["Recall@5"] = result.get("Recall@5", 0.0)
+    result["Recall@10"] = result.get("Recall@10", 0.0)
+    return result
+
+
+def _single_relevant_metrics_from_ranks(ranks, metric_ks):
+    n_cases = len(ranks)
+    if n_cases == 0:
+        return _empty_metric_result(metric_ks, n_cases=0)
+    result = {"n_cases": n_cases}
+    for k in metric_ks:
+        hits = [rank for rank in ranks if rank is not None and rank <= k]
+        accuracy = len(hits) / n_cases
+        result[f"Accuracy@{k}"] = float(accuracy)
+        result[f"Precision@{k}"] = float(accuracy / k)
+        result[f"Recall@{k}"] = float(accuracy)
+        result[f"MRR@{k}"] = float(sum(1.0 / rank for rank in hits) / n_cases)
+        result[f"NDCG@{k}"] = float(sum(1.0 / np.log2(rank + 1) for rank in hits) / n_cases)
+        result[f"MAP@{k}"] = result[f"MRR@{k}"]
+    result["MRR"] = result.get("MRR@10", result[f"MRR@{max(metric_ks)}"])
+    result["Recall@5"] = result.get("Recall@5", 0.0)
+    result["Recall@10"] = result.get("Recall@10", result.get(f"Recall@{max(metric_ks)}", 0.0))
+    return result
+
+
+def evaluate_score_matrix_at_k(score_matrix, cases, code_to_index, metric_ks, retrieve_k=10):
+    metric_ks = parse_k_values(metric_ks)
     if not cases:
-        return {"MRR": 0.0, "Recall@5": 0.0, "Recall@10": 0.0, "n_cases": 0}
-    top_k = max(10, int(retrieve_k))
+        return _empty_metric_result(metric_ks, n_cases=0)
+    top_k = max(max(metric_ks), int(retrieve_k))
     top_k = min(top_k, score_matrix.shape[1])
     target_indices = np.array([code_to_index[case["target"]] for case in cases], dtype=np.int64)
-    rr, r5, r10 = [], [], []
+    ranks = []
     for start in range(0, len(cases), RANKING_CHUNK_SIZE):
         end = min(start + RANKING_CHUNK_SIZE, len(cases))
         chunk = score_matrix[start:end]
@@ -618,35 +673,26 @@ def evaluate_score_matrix(score_matrix, cases, code_to_index, retrieve_k=10):
         ranked = np.take_along_axis(order, sorted_local, axis=1)
         for row_idx, preds in enumerate(ranked):
             target = target_indices[start + row_idx]
-            top10 = preds[:10]
-            matches = np.where(top10 == target)[0]
-            rr.append(1.0 / (int(matches[0]) + 1) if len(matches) else 0.0)
-            r5.append(float(target in top10[:5]))
-            r10.append(float(target in top10))
-    return {
-        "MRR": float(np.mean(rr)),
-        "Recall@5": float(np.mean(r5)),
-        "Recall@10": float(np.mean(r10)),
-        "n_cases": len(cases),
-    }
+            matches = np.where(preds == target)[0]
+            ranks.append(int(matches[0]) + 1 if len(matches) else None)
+    return _single_relevant_metrics_from_ranks(ranks, metric_ks)
 
 
 def evaluate_ranked_lists(cases, ranked_lists):
+    return evaluate_ranked_lists_at_k(cases, ranked_lists, parse_k_values([5, 10]))
+
+
+def evaluate_ranked_lists_at_k(cases, ranked_lists, metric_ks):
+    metric_ks = parse_k_values(metric_ks)
     if not cases:
-        return {"MRR": 0.0, "Recall@5": 0.0, "Recall@10": 0.0, "n_cases": 0}
-    rr, r5, r10 = [], [], []
+        return _empty_metric_result(metric_ks, n_cases=0)
+    max_k = max(metric_ks)
+    ranks = []
     for case, ranked in zip(cases, ranked_lists):
-        preds = [code for code, _ in ranked[:10]]
+        preds = [code for code, _ in ranked[:max_k]]
         target = case["target"]
-        rr.append(1.0 / (preds.index(target) + 1) if target in preds else 0.0)
-        r5.append(float(target in preds[:5]))
-        r10.append(float(target in preds[:10]))
-    return {
-        "MRR": float(np.mean(rr)),
-        "Recall@5": float(np.mean(r5)),
-        "Recall@10": float(np.mean(r10)),
-        "n_cases": len(cases),
-    }
+        ranks.append(preds.index(target) + 1 if target in preds else None)
+    return _single_relevant_metrics_from_ranks(ranks, metric_ks)
 
 
 def select_alpha_by_validation_mrr(validation_rows, alphas):
