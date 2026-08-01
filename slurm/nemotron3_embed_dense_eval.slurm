@@ -2,7 +2,6 @@
 #SBATCH --job-name=jobhop-nemotron3
 #SBATCH --output=%x-%j.out
 #SBATCH --error=%x-%j.err
-#SBATCH --partition=gpu
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=160G
 #SBATCH --time=24:00:00
