@@ -10,6 +10,9 @@
 
 set -euo pipefail
 
+source "$HOME/miniforge3/etc/profile.d/conda.sh"
+conda activate next-job
+
 cd "${SLURM_SUBMIT_DIR:-$PWD}"
 mkdir -p logs outputs/lateon_eval "${HF_CACHE_DIR:-/scratch/$USER/hf-cache}"
 
