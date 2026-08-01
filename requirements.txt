@@ -5,7 +5,7 @@ pandas
 pyarrow
 pylate
 requests
-sentence-transformers
+sentence-transformers>=5.4.1
 torch
-transformers
+transformers>=5.2.0
 tqdm

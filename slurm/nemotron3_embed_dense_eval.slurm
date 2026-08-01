@@ -5,8 +5,8 @@
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=80G
-#SBATCH --time=18:00:00
+#SBATCH --mem=160G
+#SBATCH --time=24:00:00
 
 set -euo pipefail
 
@@ -24,10 +24,10 @@ export HF_DATASETS_CACHE="$HF_HOME/datasets"
 export TOKENIZERS_PARALLELISM=false
 
 python scripts/dense_eval.py \
-  --model-name "nvidia/Nemotron-3-Embed-1B-BF16" \
+  --model-name "nvidia/Nemotron-3-Embed-8B-BF16" \
   --max-eval-cases "${MAX_EVAL_CASES:-2000}" \
   --random-seed "${RANDOM_SEED:-7}" \
-  --batch-size "${BATCH_SIZE:-8}" \
+  --batch-size "${BATCH_SIZE:-2}" \
   --retrieve-k "${RETRIEVE_K:-10}" \
   --output-dir "${OUTPUT_DIR:-outputs/dense_eval}" \
   --cache-dir "$HF_HOME"

@@ -36,15 +36,15 @@ DENSE_MODEL_DEFAULTS = {
         "passage_prefix": "",
         "batch_size": 32,
     },
-    "Qwen/Qwen3-Embedding-0.6B": {
+    "Qwen/Qwen3-Embedding-8B": {
         "query_prefix": "Instruct: Given a career history, retrieve the most plausible next ESCO occupation.\nQuery: ",
         "passage_prefix": "",
-        "batch_size": 16,
+        "batch_size": 4,
     },
-    "nvidia/Nemotron-3-Embed-1B-BF16": {
-        "query_prefix": "Instruct: Given a career history, retrieve the most plausible next ESCO occupation.\nQuery: ",
-        "passage_prefix": "",
-        "batch_size": 8,
+    "nvidia/Nemotron-3-Embed-8B-BF16": {
+        "query_prefix": "query: ",
+        "passage_prefix": "passage: ",
+        "batch_size": 2,
     },
 }
 
