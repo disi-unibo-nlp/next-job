@@ -38,6 +38,7 @@ Intentional changes:
 - Added exception handling so partial results are saved when a model fails.
 - Added multi-K IR metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K.
 - Added `sentence_transformers.evaluation.InformationRetrievalEvaluator` for pure dense retrieval evaluation.
+- Replaced host-level Conda execution with Docker-based SLURM execution following the cluster web guide.
 
 Script-specific notes:
 

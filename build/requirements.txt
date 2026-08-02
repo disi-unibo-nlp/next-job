@@ -1,0 +1,11 @@
+accelerate
+datasets
+numpy
+pandas
+pyarrow
+pylate
+requests
+sentence-transformers>=5.4.1
+torch
+transformers>=5.2.0
+tqdm

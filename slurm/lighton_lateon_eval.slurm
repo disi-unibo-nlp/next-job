@@ -8,21 +8,12 @@
 
 set -euo pipefail
 
-source "$HOME/miniforge3/etc/profile.d/conda.sh"
-conda activate next-job
-
 cd "${SLURM_SUBMIT_DIR:-$PWD}"
-SCRATCH_DIR="${TMPDIR:-$HOME/next-job/tmp/${SLURM_JOB_ID:-manual}}"
+export SCRATCH_DIR="${TMPDIR:-$HOME/next-job/tmp/${SLURM_JOB_ID:-manual}}"
+export DOCKER_MEMORY="${DOCKER_MEMORY:-80g}"
 mkdir -p logs outputs/lateon_eval "$SCRATCH_DIR"
 
-export HF_HOME="${HF_CACHE_DIR:-$SCRATCH_DIR/hf-cache}"
-export HF_HUB_CACHE="$HF_HOME/hub"
-export HUGGINGFACE_HUB_CACHE="$HF_HOME/hub"
-export TRANSFORMERS_CACHE="$HF_HOME/transformers"
-export HF_DATASETS_CACHE="$HF_HOME/datasets"
-export TOKENIZERS_PARALLELISM=false
-
-python scripts/lateon_eval.py \
+bash run_docker.sh python scripts/lateon_eval.py \
   --model-name "lightonai/LateOn" \
   --max-eval-cases "${MAX_EVAL_CASES:-2000}" \
   --random-seed "${RANDOM_SEED:-7}" \
@@ -30,5 +21,4 @@ python scripts/lateon_eval.py \
   --doc-batch-size "${DOC_BATCH_SIZE:-32}" \
   --retrieve-k "${RETRIEVE_K:-200}" \
   --metric-ks "${METRIC_KS:-1,3,5,10,20,50,100}" \
-  --output-dir "${OUTPUT_DIR:-outputs/lateon_eval}" \
-  --cache-dir "$HF_HOME"
+  --output-dir "${OUTPUT_DIR:-outputs/lateon_eval}"
