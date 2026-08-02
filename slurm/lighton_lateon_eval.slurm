@@ -12,9 +12,10 @@ source "$HOME/miniforge3/etc/profile.d/conda.sh"
 conda activate next-job
 
 cd "${SLURM_SUBMIT_DIR:-$PWD}"
-mkdir -p logs outputs/lateon_eval "${HF_CACHE_DIR:-/scratch/$USER/hf-cache}"
+SCRATCH_DIR="${TMPDIR:-$HOME/next-job/tmp/${SLURM_JOB_ID:-manual}}"
+mkdir -p logs outputs/lateon_eval "$SCRATCH_DIR"
 
-export HF_HOME="${HF_CACHE_DIR:-/scratch/$USER/hf-cache}"
+export HF_HOME="${HF_CACHE_DIR:-$SCRATCH_DIR/hf-cache}"
 export HF_HUB_CACHE="$HF_HOME/hub"
 export HUGGINGFACE_HUB_CACHE="$HF_HOME/hub"
 export TRANSFORMERS_CACHE="$HF_HOME/transformers"
