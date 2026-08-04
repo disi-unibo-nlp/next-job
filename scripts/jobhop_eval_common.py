@@ -147,6 +147,8 @@ def package_versions():
         "requests",
         "sentence-transformers",
         "torch",
+        "torchaudio",
+        "torchvision",
         "transformers",
         "tqdm",
     ]
@@ -214,6 +216,21 @@ def gpu_info():
                 }
             )
     return info
+
+
+def require_cuda():
+    if not torch.cuda.is_available():
+        raise RuntimeError(
+            "CUDA is not available inside this job. Refusing to run on CPU. "
+            f"torch_version={getattr(torch, '__version__', 'unknown')}; "
+            f"torch_cuda_version={torch.version.cuda}; "
+            f"CUDA_VISIBLE_DEVICES={os.environ.get('CUDA_VISIBLE_DEVICES', '')!r}."
+        )
+    device_count = torch.cuda.device_count()
+    if device_count < 1:
+        raise RuntimeError("CUDA reports available but no CUDA devices are visible.")
+    torch.cuda.init()
+    return "cuda"
 
 
 def hf_tree(path=""):

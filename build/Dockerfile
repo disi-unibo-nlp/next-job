@@ -21,6 +21,11 @@ RUN apt-get update -y && \
 
 RUN pip install --upgrade pip
 RUN pip install wrapt --upgrade --ignore-installed
+RUN pip install --no-cache-dir \
+    torch==2.7.1+cu128 \
+    torchvision==0.22.1+cu128 \
+    torchaudio==2.7.1+cu128 \
+    --index-url https://download.pytorch.org/whl/cu128
 
 COPY build/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt

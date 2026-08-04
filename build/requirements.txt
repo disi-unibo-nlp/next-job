@@ -6,6 +6,6 @@ pyarrow
 pylate
 requests
 sentence-transformers>=5.4.1
-torch
+# PyTorch is installed explicitly in build/Dockerfile as torch==2.7.1+cu128.
 transformers>=5.2.0
 tqdm

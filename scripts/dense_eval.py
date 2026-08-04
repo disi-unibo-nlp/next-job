@@ -22,6 +22,7 @@ from jobhop_eval_common import (
     package_versions,
     parse_optional_int,
     parse_k_values,
+    require_cuda,
     row_maxnorm,
     row_minmax,
     select_alpha_by_validation_mrr,
@@ -180,7 +181,7 @@ def main():
     batch_size = args.batch_size or defaults.get("batch_size", 16)
     query_prefix = args.query_prefix if args.query_prefix is not None else defaults.get("query_prefix", "")
     passage_prefix = args.passage_prefix if args.passage_prefix is not None else defaults.get("passage_prefix", "")
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cuda"
 
     run_dir = Path(args.output_dir) / model_slug(args.model_name)
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -210,6 +211,10 @@ def main():
     write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
 
     try:
+        stage = "cuda_check"
+        require_cuda()
+        write_json_and_key_value_csv(run_dir / "gpu_info.json", run_dir / "gpu_info.csv", gpu_info())
+
         stage = "data_loading_and_preprocessing"
         data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
         write_csv(run_dir / "dataset_statistics.csv", data["stats_rows"])

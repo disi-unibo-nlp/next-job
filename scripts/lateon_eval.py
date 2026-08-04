@@ -21,6 +21,7 @@ from jobhop_eval_common import (
     package_versions,
     parse_optional_int,
     parse_k_values,
+    require_cuda,
     select_alpha_by_validation_mrr,
     train_markov_ranked,
     write_csv,
@@ -128,7 +129,7 @@ def main():
     retrieve_k = max(10, args.retrieve_k, max(metric_ks))
     cache_dir = configure_hf_cache(args.cache_dir)
     configure_reproducibility(args.random_seed)
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cuda"
 
     run_dir = Path(args.output_dir) / model_slug(args.model_name)
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -159,6 +160,10 @@ def main():
     write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
 
     try:
+        stage = "cuda_check"
+        require_cuda()
+        write_json_and_key_value_csv(run_dir / "gpu_info.json", run_dir / "gpu_info.csv", gpu_info())
+
         stage = "data_loading_and_preprocessing"
         data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
         write_csv(run_dir / "dataset_statistics.csv", data["stats_rows"])
