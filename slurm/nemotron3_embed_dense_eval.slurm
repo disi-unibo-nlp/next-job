@@ -3,14 +3,14 @@
 #SBATCH --output=%x-%j.out
 #SBATCH --error=%x-%j.err
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=160G
+#SBATCH --mem=120G
 #SBATCH --time=24:00:00
 
 set -euo pipefail
 
 cd "${SLURM_SUBMIT_DIR:-$PWD}"
 export SCRATCH_DIR="${TMPDIR:-$HOME/next-job/tmp/${SLURM_JOB_ID:-manual}}"
-export DOCKER_MEMORY="${DOCKER_MEMORY:-160g}"
+export DOCKER_MEMORY="${DOCKER_MEMORY:-120g}"
 mkdir -p logs outputs/dense_eval "$SCRATCH_DIR"
 
 bash run_docker.sh python scripts/dense_eval.py \
