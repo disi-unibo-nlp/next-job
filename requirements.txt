@@ -3,9 +3,9 @@ datasets
 numpy
 pandas
 pyarrow
-pylate
+pylate==1.3.4
 requests
-sentence-transformers>=5.4.1
+sentence-transformers==5.1.1
 # PyTorch is installed explicitly in build/Dockerfile as torch==2.7.1+cu128.
-transformers>=5.2.0
+transformers==4.52.3
 tqdm

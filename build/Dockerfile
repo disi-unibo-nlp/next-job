@@ -29,5 +29,6 @@ RUN pip install --no-cache-dir \
 
 COPY build/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN python -c "import torch; assert torch.__version__ == '2.7.1+cu128', torch.__version__; assert torch.version.cuda == '12.8', torch.version.cuda"
 
 ENV DEBIAN_FRONTEND=dialog
