@@ -28,7 +28,12 @@ RUN pip install --no-cache-dir \
     --index-url https://download.pytorch.org/whl/cu128
 
 COPY build/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY build/constraints.txt .
+RUN pip install --no-cache-dir \
+    --extra-index-url https://download.pytorch.org/whl/cu128 \
+    -c constraints.txt \
+    -r requirements.txt
 RUN python -c "import torch; assert torch.__version__ == '2.7.1+cu128', torch.__version__; assert torch.version.cuda == '12.8', torch.version.cuda"
+RUN python -c "from pylate import indexes, models, retrieve; print('pylate import ok')"
 
 ENV DEBIAN_FRONTEND=dialog
