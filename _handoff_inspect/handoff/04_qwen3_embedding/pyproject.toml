@@ -1,0 +1,41 @@
+[project]
+name = "handoff-qwen3-embedding"
+version = "0.1.0"
+description = "Qwen3-Embedding fine-tuning with ms-swift (upstream QwenLM recipe)"
+requires-python = ">=3.10"
+
+# ms-swift is pinned: its embedding task_type, loss_type names and INFONCE_*
+# environment variables move between releases, and train.py builds a command
+# line against that surface. Bump it deliberately, then re-check
+# build_swift_command() and build_swift_env() in train.py.
+#
+# transformers is capped below 5 rather than pinned to the 4.56.2 the other
+# recipes use: ms-swift constrains it itself, and over-pinning here makes the
+# environment unresolvable.
+dependencies = [
+    "torch>=2.4.0",
+    "ms-swift==4.4.2",
+    "transformers>=4.51,<5",
+    "datasets",
+    "accelerate>=0.33",
+    "peft>=0.11",
+    "deepspeed",
+    "huggingface_hub>=0.34.0",
+    "hf_transfer",
+    "sentencepiece",
+    "protobuf",
+    "numpy",
+    "tqdm",
+    "wandb",
+]
+
+[project.optional-dependencies]
+# Optional speedups. flash-attn needs `--no-build-isolation` and a matching
+# CUDA toolchain; skip it if the install fails.
+speedups = [
+    "liger-kernel",
+]
+
+[tool.uv]
+# This directory is a script collection, not an installable package.
+package = false

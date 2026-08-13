@@ -20,6 +20,7 @@ RUN apt-get update -y && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip
+RUN pip install --no-cache-dir uv
 RUN pip install wrapt --upgrade --ignore-installed
 RUN pip install --no-cache-dir \
     torch==2.7.1+cu128 \
@@ -35,5 +36,6 @@ RUN pip install --no-cache-dir \
     -r requirements.txt
 RUN python -c "import torch; assert torch.__version__ == '2.7.1+cu128', torch.__version__; assert torch.version.cuda == '12.8', torch.version.cuda"
 RUN python -c "from pylate import indexes, models, retrieve; print('pylate import ok')"
+RUN uv --version
 
 ENV DEBIAN_FRONTEND=dialog

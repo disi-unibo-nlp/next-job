@@ -10,20 +10,32 @@ DOCKER_MEMORY="${DOCKER_MEMORY:-80g}"
 
 mkdir -p "$SCRATCH_DIR"
 
-if [ -n "${CUDA_VISIBLE_DEVICES:-}" ]; then
-  GPU_ARG="device=$CUDA_VISIBLE_DEVICES"
-else
-  GPU_ARG="all"
-fi
-
 docker_args=(
   run
   --rm
   -v "$PHYS_DIR":/workspace
   --memory="$DOCKER_MEMORY"
-  --gpus "$GPU_ARG"
   -e TOKENIZERS_PARALLELISM=false
 )
+
+for name in \
+  MODEL LOSS BATCH_SIZE GRAD_ACCUM EPOCHS LR NUM_NEGATIVES NEG_NUM \
+  DATA_DIR OUTPUT_DIR REPORT_TO DOCUMENT_LENGTH QUERY_LENGTH PASSAGE_MAX_LEN \
+  QUERY_MAX_LEN TRAIN_TYPE PER_DEVICE_BATCH_SIZE MAX_LENGTH NPROC_PER_NODE \
+  DEEPSPEED TRAIN_ARGS; do
+  if [ -n "${!name:-}" ]; then
+    docker_args+=(-e "$name=${!name}")
+  fi
+done
+
+if [ "${DOCKER_GPUS:-auto}" != "none" ]; then
+  if [ -n "${CUDA_VISIBLE_DEVICES:-}" ]; then
+    GPU_ARG="device=$CUDA_VISIBLE_DEVICES"
+  else
+    GPU_ARG="all"
+  fi
+  docker_args+=(--gpus "$GPU_ARG")
+fi
 
 if [ -n "${HF_CACHE_DIR:-}" ]; then
   mkdir -p "$HF_CACHE_DIR"
