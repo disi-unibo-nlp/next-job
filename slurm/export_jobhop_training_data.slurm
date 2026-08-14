@@ -12,10 +12,10 @@ cd "${SLURM_SUBMIT_DIR:-$PWD}"
 export SCRATCH_DIR="${TMPDIR:-$HOME/next-job/tmp/${SLURM_JOB_ID:-manual}}"
 export DOCKER_MEMORY="${DOCKER_MEMORY:-64g}"
 export DOCKER_GPUS=none
-mkdir -p logs handoff/data "$SCRATCH_DIR"
+mkdir -p logs handoff/data_full "$SCRATCH_DIR"
 
 bash run_docker.sh python scripts/export_jobhop_training_data.py \
-  --output-dir "${DATA_DIR:-handoff/data}" \
+  --output-dir "${DATA_DIR:-handoff/data_full}" \
   --cache-dir "${CACHE_DIR:-/hf-cache}" \
   --random-seed "${RANDOM_SEED:-7}" \
   --max-train-samples "${MAX_TRAIN_SAMPLES:-none}" \

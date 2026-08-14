@@ -15,9 +15,14 @@ mkdir -p logs handoff/checkpoints/late_interaction "$SCRATCH_DIR"
 
 bash run_docker.sh bash -lc '
   set -euo pipefail
+  DATA_DIR="${DATA_DIR:-/workspace/handoff/data_full}"
+  case "$DATA_DIR" in /*) ;; *) DATA_DIR="/workspace/$DATA_DIR" ;; esac
+  python /workspace/scripts/check_handoff_training_data.py \
+    --data-dir "$DATA_DIR" \
+    --min-train-rows "${MIN_TRAIN_ROWS:-1000}"
   cd /workspace/handoff/02_late_interaction
   uv sync
-  DATA_DIR="${DATA_DIR:-/workspace/handoff/data}" \
+  DATA_DIR="$DATA_DIR" \
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/late_interaction}" \
   MODEL="${MODEL:-lightonai/LateOn}" \
   LOSS="${LOSS:-contrastive}" \

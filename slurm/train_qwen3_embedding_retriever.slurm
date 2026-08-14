@@ -15,11 +15,16 @@ mkdir -p logs handoff/checkpoints/qwen3_embedding "$SCRATCH_DIR"
 
 bash run_docker.sh bash -lc '
   set -euo pipefail
+  DATA_DIR="${DATA_DIR:-/workspace/handoff/data_full}"
+  case "$DATA_DIR" in /*) ;; *) DATA_DIR="/workspace/$DATA_DIR" ;; esac
+  python /workspace/scripts/check_handoff_training_data.py \
+    --data-dir "$DATA_DIR" \
+    --min-train-rows "${MIN_TRAIN_ROWS:-1000}"
   cd /workspace/handoff/04_qwen3_embedding
   uv sync
-  DATA_DIR="${DATA_DIR:-/workspace/handoff/data}" \
+  DATA_DIR="$DATA_DIR" \
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/qwen3_embedding}" \
-  MODEL="${MODEL:-Qwen/Qwen3-Embedding-0.6B}" \
+  MODEL="${MODEL:-Qwen/Qwen3-Embedding-8B}" \
   TRAIN_TYPE="${TRAIN_TYPE:-lora}" \
   PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-1}" \
   GRAD_ACCUM="${GRAD_ACCUM:-8}" \

@@ -15,13 +15,18 @@ mkdir -p logs handoff/checkpoints/sentence_transformer "$SCRATCH_DIR"
 
 bash run_docker.sh bash -lc '
   set -euo pipefail
+  DATA_DIR="${DATA_DIR:-/workspace/handoff/data_full}"
+  case "$DATA_DIR" in /*) ;; *) DATA_DIR="/workspace/$DATA_DIR" ;; esac
+  python /workspace/scripts/check_handoff_training_data.py \
+    --data-dir "$DATA_DIR" \
+    --min-train-rows "${MIN_TRAIN_ROWS:-1000}"
   cd /workspace/handoff/01_sentence_transformer
   uv sync
-  DATA_DIR="${DATA_DIR:-/workspace/handoff/data}" \
+  DATA_DIR="$DATA_DIR" \
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/sentence_transformer}" \
-  MODEL="${MODEL:-sentence-transformers/all-MiniLM-L6-v2}" \
+  MODEL="${MODEL:-BAAI/bge-base-en-v1.5}" \
   LOSS="${LOSS:-mnrl}" \
-  BATCH_SIZE="${BATCH_SIZE:-64}" \
+  BATCH_SIZE="${BATCH_SIZE:-32}" \
   GRAD_ACCUM="${GRAD_ACCUM:-1}" \
   EPOCHS="${EPOCHS:-1}" \
   LR="${LR:-2e-5}" \

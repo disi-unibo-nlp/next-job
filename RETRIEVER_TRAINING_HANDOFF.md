@@ -34,26 +34,29 @@ available only as an explicit training expansion and should be reported if used.
 
 On the cluster, after building the Docker image:
 
+Full-data export writes to `handoff/data_full` by default:
+
 ```bash
 sbatch slurm/export_jobhop_training_data.slurm
 ```
 
-For a small smoke export:
+For a small smoke export, use the separate smoke script. It writes to
+`handoff/data_smoke` so it cannot overwrite the full-data files:
 
 ```bash
-MAX_TRAIN_SAMPLES=500 MAX_EVAL_CASES=200 sbatch slurm/export_jobhop_training_data.slurm
+sbatch slurm/export_jobhop_smoke_training_data.slurm
 ```
 
-The exporter writes:
+The full exporter writes:
 
-- `handoff/data/train.jsonl`
-- `handoff/data/eval_corpus.jsonl`
-- `handoff/data/eval_queries.jsonl` defaults to validation queries for training-time evaluation
-- `handoff/data/eval_queries_validation.jsonl`
-- `handoff/data/eval_queries_test.jsonl`
-- `handoff/data/export_summary.json`
-- `handoff/data/export_summary.csv`
-- `handoff/data/export_failure.json` if export fails
+- `handoff/data_full/train.jsonl`
+- `handoff/data_full/eval_corpus.jsonl`
+- `handoff/data_full/eval_queries.jsonl` defaults to validation queries for training-time evaluation
+- `handoff/data_full/eval_queries_validation.jsonl`
+- `handoff/data_full/eval_queries_test.jsonl`
+- `handoff/data_full/export_summary.json`
+- `handoff/data_full/export_summary.csv`
+- `handoff/data_full/export_failure.json` if export fails
 
 Each training row has the canonical handoff format:
 
@@ -63,7 +66,18 @@ Each training row has the canonical handoff format:
 
 ## Train One Retriever
 
-Start with the dense recipe as a smoke test:
+The SLURM defaults are the formal training choices:
+
+- SentenceTransformer dense: `BAAI/bge-base-en-v1.5`
+- Late interaction: `lightonai/LateOn`
+- BGE-M3: `BAAI/bge-m3`
+- Qwen embedding: `Qwen/Qwen3-Embedding-8B`
+
+The smaller handoff defaults such as `sentence-transformers/all-MiniLM-L6-v2`
+and `Qwen/Qwen3-Embedding-0.6B` should be treated as smoke/debug choices, not as
+the main experimental models.
+
+Start a formal dense run with:
 
 ```bash
 sbatch slurm/train_sentence_transformer_retriever.slurm
@@ -72,8 +86,10 @@ sbatch slurm/train_sentence_transformer_retriever.slurm
 Useful smoke run:
 
 ```bash
-MAX_TRAIN_SAMPLES=500 MAX_EVAL_CASES=200 sbatch slurm/export_jobhop_training_data.slurm
-TRAIN_ARGS="--max-steps 5 --no-save --no-eval" sbatch slurm/train_sentence_transformer_retriever.slurm
+sbatch slurm/export_jobhop_smoke_training_data.slurm
+DATA_DIR=handoff/data_smoke ALLOW_SMOKE_DATA=1 MODEL=sentence-transformers/all-MiniLM-L6-v2 \
+  TRAIN_ARGS="--max-steps 5 --no-save --no-eval" \
+  sbatch slurm/train_sentence_transformer_retriever.slurm
 ```
 
 Other recipes:
@@ -87,6 +103,10 @@ sbatch slurm/train_qwen3_embedding_retriever.slurm
 Each SLURM script runs one model family only and does not use conda or hard-code
 a node.
 
+Training scripts read `handoff/data_full` by default. Before training starts,
+they check the number of rows in `train.jsonl`. If the file looks like a small
+smoke export, training stops unless `ALLOW_SMOKE_DATA=1` is set deliberately.
+
 ## Docker / CUDA Notes
 
 `build/Dockerfile` installs `uv` and keeps the existing PyTorch CUDA checks:
@@ -98,6 +118,10 @@ a node.
 The handoff `pyproject.toml` files now pin `torch==2.7.1+cu128` from the
 PyTorch CUDA 12.8 wheel index. If a future dependency requires a different
 torch, `uv sync` should fail instead of silently upgrading PyTorch.
+
+`run_docker.sh` now defaults Hugging Face cache writes to a user-writable
+directory under the project (`hf-cache`) instead of `/llms`. Pass
+`HF_CACHE_DIR=/some/writable/path` if a different writable cache should be used.
 
 ## Final Evaluation
 

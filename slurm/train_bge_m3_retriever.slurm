@@ -15,9 +15,14 @@ mkdir -p logs handoff/checkpoints/bge_m3 "$SCRATCH_DIR"
 
 bash run_docker.sh bash -lc '
   set -euo pipefail
+  DATA_DIR="${DATA_DIR:-/workspace/handoff/data_full}"
+  case "$DATA_DIR" in /*) ;; *) DATA_DIR="/workspace/$DATA_DIR" ;; esac
+  python /workspace/scripts/check_handoff_training_data.py \
+    --data-dir "$DATA_DIR" \
+    --min-train-rows "${MIN_TRAIN_ROWS:-1000}"
   cd /workspace/handoff/03_bge_m3_flagembedding
   uv sync
-  DATA_DIR="${DATA_DIR:-/workspace/handoff/data}" \
+  DATA_DIR="$DATA_DIR" \
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/bge_m3}" \
   MODEL="${MODEL:-BAAI/bge-m3}" \
   NEG_NUM="${NEG_NUM:-7}" \
