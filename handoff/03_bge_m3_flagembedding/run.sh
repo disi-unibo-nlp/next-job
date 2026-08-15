@@ -42,6 +42,7 @@ EPOCHS="${EPOCHS:-1}"
 LR="${LR:-1e-5}"
 PASSAGE_MAX_LEN="${PASSAGE_MAX_LEN:-512}"
 QUERY_MAX_LEN="${QUERY_MAX_LEN:-128}"
+SAVE_STEPS="${SAVE_STEPS:-50000}"
 DEEPSPEED="${DEEPSPEED:-ds_stage0.json}"
 DATA_DIR="${DATA_DIR:-../data}"
 OUTPUT_DIR="${OUTPUT_DIR:-../checkpoints/bge_m3}"
@@ -58,6 +59,7 @@ uv run python train.py \
     --lr               "$LR" \
     --passage-max-len  "$PASSAGE_MAX_LEN" \
     --query-max-len    "$QUERY_MAX_LEN" \
+    --save-steps       "$SAVE_STEPS" \
     --deepspeed        "$DEEPSPEED" \
     --data-dir         "$DATA_DIR" \
     --output-dir       "$OUTPUT_DIR" \

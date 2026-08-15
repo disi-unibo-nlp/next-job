@@ -107,6 +107,11 @@ Training scripts read `handoff/data_full` by default. Before training starts,
 they check the number of rows in `train.jsonl`. If the file looks like a small
 smoke export, training stops unless `ALLOW_SMOKE_DATA=1` is set deliberately.
 
+BGE-M3 and Qwen3 default to `SAVE_STEPS=50000` for full runs. This is deliberate:
+the full JobHop run has about 32k optimizer steps, and frequent intermediate
+checkpoints can exceed the 150 GB user quota. Override `SAVE_STEPS` only when
+you explicitly want intermediate checkpoints and have enough disk space.
+
 ## Docker / CUDA Notes
 
 `build/Dockerfile` installs `uv` and keeps the existing PyTorch CUDA checks:

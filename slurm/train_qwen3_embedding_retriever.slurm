@@ -32,5 +32,6 @@ bash run_docker.sh bash -lc '
   LR="${LR:-6e-6}" \
   NUM_NEGATIVES="${NUM_NEGATIVES:-7}" \
   MAX_LENGTH="${MAX_LENGTH:-512}" \
+  SAVE_STEPS="${SAVE_STEPS:-50000}" \
   bash -lc "bash run.sh ${TRAIN_ARGS:-}"
 '

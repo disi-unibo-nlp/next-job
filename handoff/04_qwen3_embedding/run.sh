@@ -39,6 +39,7 @@ EPOCHS="${EPOCHS:-1}"
 LR="${LR:-6e-6}"
 NUM_NEGATIVES="${NUM_NEGATIVES:-7}"
 MAX_LENGTH="${MAX_LENGTH:-512}"
+SAVE_STEPS="${SAVE_STEPS:-50000}"
 NPROC_PER_NODE="${NPROC_PER_NODE:-1}"
 DATA_DIR="${DATA_DIR:-../data}"
 OUTPUT_DIR="${OUTPUT_DIR:-../checkpoints/qwen3_embedding}"
@@ -60,6 +61,7 @@ uv run python train.py \
     --lr                     "$LR" \
     --num-negatives          "$NUM_NEGATIVES" \
     --max-length             "$MAX_LENGTH" \
+    --save-steps             "$SAVE_STEPS" \
     --nproc-per-node         "$NPROC_PER_NODE" \
     --data-dir               "$DATA_DIR" \
     --output-dir             "$OUTPUT_DIR" \

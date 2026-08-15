@@ -32,5 +32,6 @@ bash run_docker.sh bash -lc '
   LR="${LR:-1e-5}" \
   PASSAGE_MAX_LEN="${PASSAGE_MAX_LEN:-512}" \
   QUERY_MAX_LEN="${QUERY_MAX_LEN:-128}" \
+  SAVE_STEPS="${SAVE_STEPS:-50000}" \
   bash -lc "bash run.sh --gradient-checkpointing ${TRAIN_ARGS:-}"
 '
