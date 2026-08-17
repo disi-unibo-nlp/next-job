@@ -14,8 +14,8 @@ export DOCKER_MEMORY="${DOCKER_MEMORY:-64g}"
 mkdir -p logs outputs/dense_eval "$SCRATCH_DIR"
 
 bash run_docker.sh python scripts/dense_eval.py \
-  --model-name "BAAI/bge-m3" \
-  --max-eval-cases "${MAX_EVAL_CASES:-2000}" \
+  --model-name "${MODEL_NAME:-BAAI/bge-m3}" \
+  --max-eval-cases "${MAX_EVAL_CASES:-none}" \
   --random-seed "${RANDOM_SEED:-7}" \
   --batch-size "${BATCH_SIZE:-32}" \
   --retrieve-k "${RETRIEVE_K:-10}" \

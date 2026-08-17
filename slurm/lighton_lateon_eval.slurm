@@ -14,8 +14,8 @@ export DOCKER_MEMORY="${DOCKER_MEMORY:-80g}"
 mkdir -p logs outputs/lateon_eval "$SCRATCH_DIR"
 
 bash run_docker.sh python scripts/lateon_eval.py \
-  --model-name "lightonai/LateOn" \
-  --max-eval-cases "${MAX_EVAL_CASES:-2000}" \
+  --model-name "${MODEL_NAME:-lightonai/LateOn}" \
+  --max-eval-cases "${MAX_EVAL_CASES:-none}" \
   --random-seed "${RANDOM_SEED:-7}" \
   --batch-size "${BATCH_SIZE:-16}" \
   --doc-batch-size "${DOC_BATCH_SIZE:-32}" \
