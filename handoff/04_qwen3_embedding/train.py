@@ -91,6 +91,12 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--grad-accum", type=int, default=8)
     p.add_argument("--lr", type=float, default=6.0e-6)
     p.add_argument("--warmup-ratio", type=float, default=0.05)
+    p.add_argument("--quant-method", type=str, default=None,
+                   help="Optional swift quantization backend, e.g. bnb for QLoRA.")
+    p.add_argument("--quant-bits", type=int, default=None,
+                   help="Optional quantization bits, e.g. 4.")
+    p.add_argument("--bnb-4bit-compute-dtype", type=str, default="bfloat16",
+                   help="Compute dtype when using bitsandbytes 4-bit quantization.")
     p.add_argument("--gradient-checkpointing", action="store_true", default=True)
     p.add_argument("--no-gradient-checkpointing", dest="gradient_checkpointing",
                    action="store_false")
@@ -104,6 +110,7 @@ def parse_args() -> argparse.Namespace:
     # --- Output ---
     p.add_argument("--output-dir", type=str, default="../checkpoints/qwen3_embedding")
     p.add_argument("--save-steps", type=int, default=500)
+    p.add_argument("--save-total-limit", type=int, default=None)
     p.add_argument("--logging-steps", type=int, default=25)
     p.add_argument("--report-to", type=str, default="none", choices=["none", "wandb"])
     p.add_argument("--run-name", type=str, default=None)
@@ -176,6 +183,14 @@ def build_swift_command(args, dataset_path: Path, output_dir: Path) -> list[str]
         "--dataloader_num_workers", "4",
         "--report_to", args.report_to,
     ]
+    if args.save_total_limit is not None:
+        cmd += ["--save_total_limit", str(args.save_total_limit)]
+    if args.quant_method:
+        cmd += ["--quant_method", args.quant_method]
+    if args.quant_bits is not None:
+        cmd += ["--quant_bits", str(args.quant_bits)]
+    if args.quant_method == "bnb" and args.quant_bits == 4:
+        cmd += ["--bnb_4bit_compute_dtype", args.bnb_4bit_compute_dtype]
     if args.gradient_checkpointing:
         cmd += ["--gradient_checkpointing", "true"]
     if args.train_type == "lora":
@@ -289,6 +304,9 @@ def main() -> None:
         "epochs": args.epochs,
         "per_device_batch_size": args.per_device_batch_size,
         "gradient_accumulation_steps": args.grad_accum,
+        "quant_method": args.quant_method,
+        "quant_bits": args.quant_bits,
+        "bnb_4bit_compute_dtype": args.bnb_4bit_compute_dtype,
         "lr": args.lr,
         "seed": args.seed,
         "swift_env": env_overrides,

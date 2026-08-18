@@ -4,7 +4,7 @@
 #SBATCH --error=%x-%j.err
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=120G
-#SBATCH --time=48:00:00
+#SBATCH --time=96:00:00
 
 set -euo pipefail
 
@@ -26,12 +26,16 @@ bash run_docker.sh bash -lc '
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/qwen3_embedding}" \
   MODEL="${MODEL:-Qwen/Qwen3-Embedding-8B}" \
   TRAIN_TYPE="${TRAIN_TYPE:-lora}" \
-  PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-1}" \
+  PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-4}" \
   GRAD_ACCUM="${GRAD_ACCUM:-8}" \
   EPOCHS="${EPOCHS:-1}" \
   LR="${LR:-6e-6}" \
   NUM_NEGATIVES="${NUM_NEGATIVES:-7}" \
   MAX_LENGTH="${MAX_LENGTH:-512}" \
-  SAVE_STEPS="${SAVE_STEPS:-50000}" \
+  SAVE_STEPS="${SAVE_STEPS:-4000}" \
+  SAVE_TOTAL_LIMIT="${SAVE_TOTAL_LIMIT:-2}" \
+  QUANT_METHOD="${QUANT_METHOD:-bnb}" \
+  QUANT_BITS="${QUANT_BITS:-4}" \
+  BNB_4BIT_COMPUTE_DTYPE="${BNB_4BIT_COMPUTE_DTYPE:-bfloat16}" \
   bash -lc "bash run.sh ${TRAIN_ARGS:-}"
 '

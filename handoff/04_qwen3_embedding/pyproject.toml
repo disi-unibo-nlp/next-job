@@ -19,6 +19,7 @@ dependencies = [
     "datasets",
     "accelerate>=0.33",
     "peft>=0.11",
+    "bitsandbytes",
     "deepspeed",
     "huggingface_hub>=0.34.0",
     "hf_transfer",
