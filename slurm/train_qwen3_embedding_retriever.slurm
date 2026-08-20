@@ -4,7 +4,7 @@
 #SBATCH --error=%x-%j.err
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=120G
-#SBATCH --time=96:00:00
+#SBATCH --time=168:00:00
 
 set -euo pipefail
 
