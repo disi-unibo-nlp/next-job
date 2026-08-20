@@ -5,12 +5,13 @@
 #   cd ../shared && bash prepare_data.sh
 #
 # The backbone is an LLM, so this is the heaviest recipe per parameter. LoRA is
-# the default because full fine-tuning a 0.6B embedder still wants ZeRO-3.
+# the default because full fine-tuning an 8B embedder is not practical on a
+# single RTX 3090.
 #
-# Memory profile (Qwen3-Embedding-0.6B, LoRA r=8, max_length 512,
-# 7 negatives, gradient checkpointing ON):
-#   PER_DEVICE_BATCH_SIZE=1  -> ~14 GB
-#   PER_DEVICE_BATCH_SIZE=4  -> ~40 GB   <- default
+# Memory profile (Qwen3-Embedding-8B, LoRA r=8, 4-bit, max_length 512,
+# 7 negatives, gradient checkpointing ON) is tight on a 24 GB RTX 3090:
+#   PER_DEVICE_BATCH_SIZE=4 can OOM when the card is not fully free.
+#   PER_DEVICE_BATCH_SIZE=2 is the safer default.
 # Each device processes PER_DEVICE_BATCH_SIZE x (1 + NUM_NEGATIVES) texts per
 # step, so the negative count moves memory as much as the batch size does.
 #
@@ -24,16 +25,16 @@
 # Usage:
 #   bash run.sh
 #   bash run.sh --dry-run
-#   MODEL=Qwen/Qwen3-Embedding-4B PER_DEVICE_BATCH_SIZE=1 bash run.sh
+#   MODEL=Qwen/Qwen3-Embedding-8B PER_DEVICE_BATCH_SIZE=2 bash run.sh
 #   bash run.sh --max-steps 5                   # smoke run
 
 set -euo pipefail
 
 cd "$(dirname "$0")"
 
-MODEL="${MODEL:-Qwen/Qwen3-Embedding-0.6B}"
+MODEL="${MODEL:-Qwen/Qwen3-Embedding-8B}"
 TRAIN_TYPE="${TRAIN_TYPE:-lora}"
-PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-4}"
+PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-2}"
 GRAD_ACCUM="${GRAD_ACCUM:-8}"
 EPOCHS="${EPOCHS:-1}"
 LR="${LR:-6e-6}"

@@ -26,7 +26,7 @@ bash run_docker.sh bash -lc '
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/qwen3_embedding}" \
   MODEL="${MODEL:-Qwen/Qwen3-Embedding-8B}" \
   TRAIN_TYPE="${TRAIN_TYPE:-lora}" \
-  PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-4}" \
+  PER_DEVICE_BATCH_SIZE="${PER_DEVICE_BATCH_SIZE:-2}" \
   GRAD_ACCUM="${GRAD_ACCUM:-8}" \
   EPOCHS="${EPOCHS:-1}" \
   LR="${LR:-6e-6}" \
