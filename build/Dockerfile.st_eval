@@ -1,0 +1,40 @@
+FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
+
+LABEL maintainer="JobHop"
+
+ENV DEBIAN_FRONTEND=noninteractive
+WORKDIR /workspace
+ENV APP_PATH=/workspace
+
+RUN apt-get update -y && \
+    apt-get install -y \
+        curl \
+        git \
+        bash \
+        nano \
+        python3.11 \
+        python3-pip \
+        python-is-python3 && \
+    apt-get autoremove -y && \
+    apt-get clean -y && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir uv
+RUN pip install wrapt --upgrade --ignore-installed
+RUN pip install --no-cache-dir \
+    torch==2.7.1+cu128 \
+    torchvision==0.22.1+cu128 \
+    torchaudio==2.7.1+cu128 \
+    --index-url https://download.pytorch.org/whl/cu128
+
+COPY build/requirements_st_eval.txt .
+COPY build/constraints.txt .
+RUN pip install --no-cache-dir \
+    --extra-index-url https://download.pytorch.org/whl/cu128 \
+    -c constraints.txt \
+    -r requirements_st_eval.txt
+RUN python -c "import torch; assert torch.__version__ == '2.7.1+cu128', torch.__version__; assert torch.version.cuda == '12.8', torch.version.cuda"
+RUN python -c "import sentence_transformers; assert sentence_transformers.__version__ == '5.7.0', sentence_transformers.__version__"
+
+ENV DEBIAN_FRONTEND=dialog

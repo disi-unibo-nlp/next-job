@@ -1,0 +1,9 @@
+accelerate
+datasets
+numpy
+pandas
+pyarrow
+requests
+sentence-transformers==5.7.0
+transformers>=4.57,<5
+tqdm
