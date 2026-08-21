@@ -51,6 +51,26 @@ python scripts/jobhop_llm_wiki_rerank.py \
 
 Use `--max-eval-cases none` only after the small run is verified.
 
+## SLURM vLLM Reranking Job
+
+Use `slurm/llm_rerank_eval.slurm` for cluster runs. This is one SLURM job and one GPU allocation. Inside the job it:
+
+1. Generates retriever top-k candidate caches.
+2. Starts a `Qwen/Qwen3.5-9B` vLLM OpenAI-compatible server.
+3. Runs LLM reranking from the cached candidates.
+
+Example:
+
+```bash
+RETRIEVER_MODEL=handoff/checkpoints/bge_m3 \
+SPLITS="validation test" \
+MAX_EVAL_CASES=none \
+sbatch -N 1 -w faretra --gpus=nvidia_geforce_rtx_3090:1 \
+  slurm/llm_rerank_eval.slurm
+```
+
+This avoids running a separate interactive LLM server and prevents the previous `localhost:8000 Connection refused` failure mode.
+
 ## Outputs
 
 The run directory contains:

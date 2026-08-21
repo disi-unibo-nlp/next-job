@@ -51,6 +51,9 @@ def parse_args():
     parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100")
     parser.add_argument("--output-dir", default="outputs/llm_wiki_rerank")
     parser.add_argument("--cache-dir", default=None)
+    parser.add_argument("--candidate-cache", default=None, help="JSONL path for saved retriever top-k candidates.")
+    parser.add_argument("--save-candidates-only", action="store_true", help="Save retriever top-k candidates and exit.")
+    parser.add_argument("--rerank-from-candidates", action="store_true", help="Load retriever top-k candidates from JSONL.")
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
     parser.add_argument("--require-cuda", action="store_true")
     parser.add_argument("--query-prefix", default=None)
@@ -79,6 +82,13 @@ def append_jsonl(path, payload):
         f.write(json.dumps(payload, ensure_ascii=False, default=str) + "\n")
 
 
+def reset_jsonl_outputs(run_dir):
+    for name in ["requests.jsonl", "responses.jsonl", "parsed_results.jsonl", "failures.jsonl"]:
+        path = Path(run_dir) / name
+        if path.exists():
+            path.unlink()
+
+
 def apply_prefixes(texts, prefix):
     return [prefix + text for text in texts] if prefix else texts
 
@@ -103,6 +113,36 @@ def top_k_ranked_lists(score_matrix, candidate_codes, candidate_k):
         idx = idx[np.argsort(-row[idx])]
         ranked_lists.append([(candidate_codes[i], float(row[i])) for i in idx])
     return ranked_lists
+
+
+def save_candidate_cache(path, cases, ranked_lists):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with tmp.open("w", encoding="utf-8") as f:
+        for i, (case, ranked) in enumerate(zip(cases, ranked_lists)):
+            row = {
+                "case_index": i,
+                "case": case,
+                "target": case["target"],
+                "ranked_candidates": [{"code": code, "score": score} for code, score in ranked],
+            }
+            f.write(json.dumps(row, ensure_ascii=False, default=str) + "\n")
+    tmp.replace(path)
+
+
+def load_candidate_cache(path):
+    rows = []
+    with Path(path).open("r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip():
+                rows.append(json.loads(line))
+    cases = [row["case"] for row in rows]
+    ranked_lists = [
+        [(item["code"], float(item["score"])) for item in row["ranked_candidates"]]
+        for row in rows
+    ]
+    return rows, cases, ranked_lists
 
 
 def build_history_block(metadata_lookup, case):
@@ -257,6 +297,9 @@ def main():
         "metric_ks": metric_ks,
         "output_dir": str(run_dir),
         "cache_dir": cache_dir,
+        "candidate_cache": args.candidate_cache,
+        "save_candidates_only": args.save_candidates_only,
+        "rerank_from_candidates": args.rerank_from_candidates,
         "query_prefix": query_prefix,
         "passage_prefix": passage_prefix,
         "llm_base_url": args.llm_base_url,
@@ -267,6 +310,7 @@ def main():
         "dry_run": args.dry_run,
     }
     write_json_and_key_value_csv(run_dir / "run_config.json", run_dir / "run_config.csv", run_config)
+    reset_jsonl_outputs(run_dir)
     write_json_and_key_value_csv(run_dir / "gpu_info.json", run_dir / "gpu_info.csv", gpu_info())
     write_json_and_key_value_csv(run_dir / "package_versions.json", run_dir / "package_versions.csv", package_versions())
     runtime = {"started_at_utc": started_at, "status": "running", "stage": stage}
@@ -289,14 +333,39 @@ def main():
             run_dir / "preprocessing_config.json", run_dir / "preprocessing_config.csv", data["preprocessing_config"]
         )
 
-        stage = "retriever_model_loading"
-        model = load_sentence_transformer_model(args.retriever_model, device=device)
+        if args.rerank_from_candidates:
+            if not args.candidate_cache:
+                raise ValueError("--rerank-from-candidates requires --candidate-cache.")
+            stage = "candidate_cache_loading"
+            _, cases, base_ranked_lists = load_candidate_cache(args.candidate_cache)
+        else:
+            stage = "retriever_model_loading"
+            model = load_sentence_transformer_model(args.retriever_model, device=device)
 
-        stage = "retriever_encoding"
-        candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
-        query_embeddings = encode_texts(model, query_texts, query_prefix, batch_size)
-        score_matrix = query_embeddings @ candidate_embeddings.T
-        base_ranked_lists = top_k_ranked_lists(score_matrix, data["candidate_codes"], args.candidate_k)
+            stage = "retriever_encoding"
+            candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
+            query_embeddings = encode_texts(model, query_texts, query_prefix, batch_size)
+            score_matrix = query_embeddings @ candidate_embeddings.T
+            base_ranked_lists = top_k_ranked_lists(score_matrix, data["candidate_codes"], args.candidate_k)
+            if args.candidate_cache:
+                save_candidate_cache(args.candidate_cache, cases, base_ranked_lists)
+            cleanup_cuda()
+
+        if args.save_candidates_only:
+            if not args.candidate_cache:
+                raise ValueError("--save-candidates-only requires --candidate-cache.")
+            runtime.update(
+                {
+                    "status": "success",
+                    "stage": "candidate_cache_saved",
+                    "candidate_cache": args.candidate_cache,
+                    "finished_at_utc": now_utc(),
+                    "elapsed_seconds": time.monotonic() - started_monotonic,
+                }
+            )
+            write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
+            return 0
+
         base_metrics = evaluate_ranked_lists_at_k(cases, base_ranked_lists, metric_ks)
         write_json(run_dir / "base_retriever_metrics.json", base_metrics)
         write_csv(run_dir / "base_retriever_metrics.csv", [{"setting": "base_retriever", **base_metrics}])
@@ -385,6 +454,12 @@ def main():
         write_json(run_dir / "parsed_results.json", parsed_rows)
         write_csv(run_dir / "parsed_results.csv", parsed_rows)
         write_csv(run_dir / "failures.csv", failure_rows)
+
+        if not args.dry_run and len(cases) > 0 and len(failure_rows) == len(cases):
+            raise RuntimeError(
+                "All LLM reranking calls failed. Check the LLM endpoint and failures.jsonl; "
+                "metrics were written with retriever fallback only."
+            )
 
         stage = "finalization"
         runtime.update(
