@@ -22,6 +22,14 @@ bash run_docker.sh bash -lc '
     --min-train-rows "${MIN_TRAIN_ROWS:-1000}"
   cd /workspace/handoff/04_qwen3_embedding
   uv sync
+  RESUME_FROM_CHECKPOINT="${RESUME_FROM_CHECKPOINT:-}"
+  if [ -n "$RESUME_FROM_CHECKPOINT" ]; then
+    case "$RESUME_FROM_CHECKPOINT" in /*) ;; *) RESUME_FROM_CHECKPOINT="/workspace/$RESUME_FROM_CHECKPOINT" ;; esac
+    if [ ! -d "$RESUME_FROM_CHECKPOINT" ]; then
+      echo "Missing RESUME_FROM_CHECKPOINT directory: $RESUME_FROM_CHECKPOINT" >&2
+      exit 1
+    fi
+  fi
   DATA_DIR="$DATA_DIR" \
   OUTPUT_DIR="${OUTPUT_DIR:-/workspace/handoff/checkpoints/qwen3_embedding}" \
   MODEL="${MODEL:-Qwen/Qwen3-Embedding-8B}" \
@@ -37,5 +45,6 @@ bash run_docker.sh bash -lc '
   QUANT_METHOD="${QUANT_METHOD:-bnb}" \
   QUANT_BITS="${QUANT_BITS:-4}" \
   BNB_4BIT_COMPUTE_DTYPE="${BNB_4BIT_COMPUTE_DTYPE:-bfloat16}" \
+  RESUME_FROM_CHECKPOINT="$RESUME_FROM_CHECKPOINT" \
   bash -lc "bash run.sh ${TRAIN_ARGS:-}"
 '

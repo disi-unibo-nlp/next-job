@@ -114,6 +114,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--logging-steps", type=int, default=25)
     p.add_argument("--report-to", type=str, default="none", choices=["none", "wandb"])
     p.add_argument("--run-name", type=str, default=None)
+    p.add_argument("--resume-from-checkpoint", type=str, default=None,
+                   help="Resume ms-swift training from a checkpoint directory.")
     p.add_argument("--dry-run", action="store_true",
                    help="Convert the data and print the swift command, then exit.")
     p.add_argument("--convert-only", action="store_true",
@@ -205,6 +207,8 @@ def build_swift_command(args, dataset_path: Path, output_dir: Path) -> list[str]
         cmd += ["--max_steps", str(args.max_steps)]
     if args.run_name:
         cmd += ["--run_name", args.run_name]
+    if args.resume_from_checkpoint:
+        cmd += ["--resume_from_checkpoint", args.resume_from_checkpoint]
     return cmd
 
 
@@ -309,6 +313,7 @@ def main() -> None:
         "bnb_4bit_compute_dtype": args.bnb_4bit_compute_dtype,
         "lr": args.lr,
         "seed": args.seed,
+        "resume_from_checkpoint": args.resume_from_checkpoint,
         "swift_env": env_overrides,
         "swift_command": cmd,
     }

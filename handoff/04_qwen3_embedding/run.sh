@@ -49,10 +49,16 @@ NPROC_PER_NODE="${NPROC_PER_NODE:-1}"
 DATA_DIR="${DATA_DIR:-../data}"
 OUTPUT_DIR="${OUTPUT_DIR:-../checkpoints/qwen3_embedding}"
 REPORT_TO="${REPORT_TO:-none}"
+RESUME_FROM_CHECKPOINT="${RESUME_FROM_CHECKPOINT:-}"
 
 DEEPSPEED_ARGS=()
 if [ -n "${DEEPSPEED:-}" ]; then
     DEEPSPEED_ARGS=(--deepspeed "$DEEPSPEED")
+fi
+
+RESUME_ARGS=()
+if [ -n "$RESUME_FROM_CHECKPOINT" ]; then
+    RESUME_ARGS=(--resume-from-checkpoint "$RESUME_FROM_CHECKPOINT")
 fi
 
 echo "[$(date +%H:%M:%S)] Training $MODEL (train_type=$TRAIN_TYPE, gpus=$NPROC_PER_NODE)"
@@ -76,6 +82,7 @@ uv run python train.py \
     --output-dir             "$OUTPUT_DIR" \
     --report-to              "$REPORT_TO" \
     "${DEEPSPEED_ARGS[@]}" \
+    "${RESUME_ARGS[@]}" \
     "$@"
 
 echo "[$(date +%H:%M:%S)] Done."
