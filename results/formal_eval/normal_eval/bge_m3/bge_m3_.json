@@ -1,0 +1,33 @@
+{
+  "name": "bge_m3",
+  "backend": "dense",
+  "model_path": "/workspace/handoff/checkpoints/bge_m3",
+  "num_queries": 32123,
+  "num_documents": 2982,
+  "metrics": {
+    "bge_m3_cosine_accuracy@1": 0.06808205958347602,
+    "bge_m3_cosine_accuracy@3": 0.16433707935124367,
+    "bge_m3_cosine_accuracy@5": 0.22323568782492295,
+    "bge_m3_cosine_accuracy@10": 0.3211717461009246,
+    "bge_m3_cosine_precision@1": 0.06808205958347602,
+    "bge_m3_cosine_precision@3": 0.05477902645041455,
+    "bge_m3_cosine_precision@5": 0.04464713756498459,
+    "bge_m3_cosine_precision@10": 0.03211717461009246,
+    "bge_m3_cosine_recall@1": 0.06808205958347602,
+    "bge_m3_cosine_recall@3": 0.16433707935124367,
+    "bge_m3_cosine_recall@5": 0.22323568782492295,
+    "bge_m3_cosine_recall@10": 0.3211717461009246,
+    "bge_m3_cosine_ndcg@1": 0.06808205958347602,
+    "bge_m3_cosine_ndcg@3": 0.12309782036347051,
+    "bge_m3_cosine_ndcg@5": 0.14728263123569335,
+    "bge_m3_cosine_ndcg@10": 0.17887063681638077,
+    "bge_m3_cosine_mrr@1": 0.06808205958347602,
+    "bge_m3_cosine_mrr@3": 0.10893544604592974,
+    "bge_m3_cosine_mrr@5": 0.12231215432348648,
+    "bge_m3_cosine_mrr@10": 0.13530069687495905,
+    "bge_m3_cosine_map@1": 0.06808205958347602,
+    "bge_m3_cosine_map@3": 0.10893544604592763,
+    "bge_m3_cosine_map@5": 0.12231215432348577,
+    "bge_m3_cosine_map@10": 0.1353006968749583
+  }
+}
