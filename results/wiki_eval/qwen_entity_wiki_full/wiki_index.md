@@ -1,0 +1,2984 @@
+# JobHop Qwen Entity Wiki
+
+- 0110.12: Squadron Leader | Commands a squadron specialising in different operations, such as aircraft squadrons, ground operations squadrons, or armoured fighting vehicles squadrons.
+- 0110.1: air force officer | Air force officers specialise in flying or ground duties and supervise teams of air force personnel.
+- 0110.10: Lieutenant | A military officer who commands troops of platoons, leading them in training and discipline exercises while performing administrative duties and acting as advisers.
+- 0110.11: Navy Officer | Navy officers command missions during conflict and peace times, supervise team training and development, and oversee combat, aid, and patrolling operations to ensure peace-keeping.
+- 0110.3: army captain | Army captains aid in the supervision of large units of soldiers, perform planning and strategic duties in tactical operations, ensure equipment maintenance, and provide logistical support during operations.
+- 0110.4: Army General | Army generals command large divisions of the army, performing management, administrative, and strategic planning duties to ensure national safety and develop military policies.
+- 0110.2: armed forces officer | Armed forces officers supervise operations and manoeuvres, assign duties, and command subordinate staff while ensuring efficient communication and performing training duties.
+- 0110.5: Army Major | Army majors command large units of officers and soldiers, supervise their training, oversee their welfare, and manage administration and equipment.
+- 0110.6: artillery officer | Artillery officers provide battle support through target acquisition, information coordination, surveillance, and weaponry management. They are responsible for tactics, weaponry deployment, and leading soldiers.
+- 0110.8: colonel | Colonels serve in the staff of a military commander, functioning as primary advisers in operational and strategic decision-making to senior officers.
+- 0110.7: Brigadier | A military officer who commands large units of troops called brigades, overseeing strategic and tactical planning while monitoring operations.
+- 0110.9: Fleet Commander | Naval professionals responsible for ensuring vessel readiness, regulatory compliance, personnel supervision, and overall naval service operations.
+- 0210.1: army corporal | Army corporals supervise sections of soldiers, perform instruction duties, and command equipment such as heavy machinery and weaponry.
+- 0210.2: sergeant | Sergeants command squads as second in command, allocating tasks, supervising equipment, and ensuring staff training.
+- 0210.3: Special forces officer | Operates in specialised missions such as counter-terrorism, performing combat and intelligence operations to impede enemy equipment and gather strategic information.
+- 0210.4: Warfare Specialist | Professionals who perform strategic duties including making tactical decisions, detecting threats, and locating targets to ensure operational efficiency and team safety.
+- 0310.1: air force pilot | Operates aircraft in combat, patrol, or search and rescue missions while ensuring maintenance and operational safety.
+- 0310.3: infantry soldier | Infantry soldiers fight in combat missions or provide aid in peacekeeping missions and other humanitarian services.
+- 0310.2: bomb disposal technician | Specialists who search for and remove explosive materials like land mines and bombs using detection equipment and trained animals, ensuring area safety before disarming and removal.
+- 0310.4: Intelligence Communications Interceptor | Air Force personnel who develop intelligence by searching and intercepting electromagnetic traffic transmitted in various languages at headquarters and command posts.
+- 0310.5: military engineer | Military engineers perform technical and scientific functions in the military, including equipment development, manufacturing support, and technical research.
+- 1111.2: government minister | Decision-makers in national or regional governments who head government ministries, perform legislative duties, and supervise departmental operations.
+- 1111.1: city councillor | City councillors represent residents in the city council, performing local legislative duties, examining resident concerns, and supervising city operations.
+- 1111.3: Governor | Main legislators of a nation's unit (state or province) who supervise staff, perform administrative and ceremonial duties, and represent the region.
+- 1111.4: Mayor | Chairs jurisdiction council meetings, supervises local government administrative policies, represents the jurisdiction in official events, and holds legislative power with the council.
+- 1111.5: Member of Parliament | Represents political party interests in parliaments, performing legislative duties, communicating with officials, and ensuring government transparency.
+- 1111.7: senator | Senators perform legislative duties on a central government level, such as working on constitutional reforms, negotiating on bills of law, and settling conflicts between other governmental institutions.
+- 1111.6: Secretary of State | Secretaries of state assist heads of government departments, such as ministers, and aid in the supervision of departmental proceedings. They support the direction of policies, operations, and staff while performing planning, resource allocation, and decision-making duties.
+- 1112.1: central bank governor | Central bank governors set monetary and regulatory policy, determine interest rates, maintain price stability, control the national money supply and foreign exchange rates, and oversee the banking industry.
+- 1112.2: consul | Consuls represent governments in foreign institutions such as embassies to facilitate economic and political cooperation, protect home nation interests, and provide bureaucratic assistance to expatriates and travelers.
+- 1112.3: Diplomat | Diplomats represent their home nation and government in international organisations, ensuring national interests are protected and facilitating communication.
+- 1112.3.1: ambassador | Ambassadors represent their government in foreign countries for diplomatic and peace-keeping purposes, ensuring citizen protection and facilitating international communication.
+- 1112.3.2: embassy counsellor | Embassy counsellors supervise specific sections in an embassy, such as economics, defence, or political affairs, and perform advisory functions for the ambassador.
+- 1112.4: fire commissioner | Fire commissioners oversee fire department activities, ensuring effective service delivery and necessary equipment provision. They develop and manage business policies to ensure legislative compliance, perform safety inspections, and promote fire prevention education.
+- 1112.5: police commissioner | Supervises an entire police department by monitoring and regulating administrative and operational activities, developing policies and procedural methods, and overseeing employee performance.
+- 1112.6: Public administration manager | Directs, monitors, and evaluates the implementation of government policies while supervising staff and managing resources.
+- 1112.7: Secretary General | Secretaries General head international governmental or nongovernmental organisations, supervising staff and directing policy and strategy development while serving as the main representative of the organisation.
+- 1114.1: Special-interest groups' official | Officials representing trade unions, employer organisations, industry associations, sports, and humanitarian groups. They develop policies, ensure implementation, and negotiate on behalf of members regarding working conditions and safety.
+- 1120.1: animal facility manager | Coordinates and plans all activities of a zoo, formulates policies, manages daily operations, and serves as the public face of the institution.
+- 1120.3: Chief executive officer | Holds the highest ranking in a corporate structure, overseeing business functioning, departments, risks, and stakeholders to drive overall strategy.
+- 1120.3.1: Airport Chief Executive | Airport chief executives lead a group of airport directors responsible for all airport areas. They envision and make decisions on the strategic direction of the airport based on information provided by their team of managers.
+- 1120.4: Chief operating officer | The right hand and second in command of a company's chief executive officer, ensuring daily operations run smoothly.
+- 1120.5: Public employment service manager | Supervises the operations of a public employment agency and oversees staff who assist individuals in finding employment or receiving occupational guidance.
+- 1120.6: social entrepreneur | Creates innovative products or service models to tackle social and environmental challenges, pursuing a social mission through profits to benefit the wider community or environment.
+- 1211.1: financial manager | Financial managers handle all matters regarding the finance and investments of a company, managing operations such as assets, liabilities, equity, and cash flow to maintain financial health and viability.
+- 1211.1.1: accounting manager | Accounting managers assume responsibility for all accounting activities relating to financial reporting, ensuring timely and accurate financial statements within budget and time constraints.
+- 1211.1.2: bank treasurer | Bank treasurers oversee all aspects of the financial management of a bank, managing liquidity and solvency.
+- 1211.1.3: budget manager | Budget managers assess financial proposals from various departments to grant resources, monitor budget policy implementation, and evaluate program impacts and revenue potential.
+- 1211.1.4: corporate treasurer | Corporate treasurers determine and oversee the financial strategic policies of a company or organisation.
+- 1212.1: employee volunteering programme coordinator | Coordinates and manages employee volunteering (corporate volunteering) programmes, connecting staff with local community organisations to address specific needs.
+- 1212.2: human resources manager | Plans, designs, and implements processes related to company human capital, managing recruitment, compensation, and employee development.
+- 1212.2.1: Equality and inclusion manager | Equality and inclusion managers develop policies to improve affirmative action, diversity, and equality matters. They inform staff on policy importance and implementation, advise senior staff on corporate climate, and provide guidance and support to employees.
+- 1213.2: Policy Manager | Manages the development of policy programs to ensure organizational strategic objectives are met, overseeing policy positions and advocacy work.
+- 1212.3: Volunteer Manager | Volunteer managers work across the non-profit sector to recruit, train, motivate, and supervise volunteers. They design assignments, review tasks and impact, provide feedback, and manage overall performance against organizational objectives, including online volunteering activities.
+- 1213.2.1: social security administrator | Directs and develops government-provided social security programmes to aid public welfare and promote social security initiatives.
+- 1213.2.2: Strategic planning manager | Managers who create company-wide strategic plans with a team and coordinate their implementation across departments to ensure consistency.
+- 1213.3: procurement department manager | Procurement department managers ensure that the organisation's policy goals are transformed into concrete actions and support their teams to achieve the best results for their clients and the public.
+- 1213.2.3: Tourism policy director | Develops and implements policies to improve regional tourism, creates marketing plans for foreign promotion, monitors industry operations, and researches policy improvements and economic benefits.
+- 1213.4: programme manager | Programme managers coordinate and oversee several simultaneous projects, ensuring workability and compatibility to achieve profitable and synergistic outcomes.
+- 1213.5: business manager | Responsible for setting business unit objectives, creating operational plans, and facilitating their achievement with employees and stakeholders.
+- 1213.6: EU funds manager | EU funds managers administer EU funds and financial resources in public administrations, defining investment priorities and drafting Operational Programs.
+- 1213.5.1: Branch manager | Manages all affairs related to a company in a specific geographic region or business branch, implementing headquarters strategy while adapting it to the local market.
+- 1213.7: Health, safety and environmental manager | Designs and executes corporate policies for occupational health, safety, and environmental protection while ensuring legislative compliance.
+- 1213.8: Sustainability Manager | Responsible for ensuring the sustainability of business processes, compliance with environmental regulations, and adherence to social responsibility standards.
+- 1219.1: Business service manager | Manages the provision of professional services to companies, organizing tailored service delivery and negotiating contractual obligations with clients.
+- 1219.1.2: security manager | Security managers ensure safety and security for people and company assets by enforcing policies, implementing protocols, and supervising staff.
+- 1219.1.1: facilities manager | Facilities managers perform strategic and routine operational planning related to buildings' administration and maintenance, overseeing health, safety, security, and utilities.
+- 1219.3: defence administration officer | Defence administration officers perform managerial duties and administrative tasks in defense institutions.
+- 1219.2: corporate social responsibility manager | Corporate social responsibility managers monitor organizational practices regarding ethics and community impact, advising on sustainability and promoting environmentally conscious, philanthropic, or human rights-related actions.
+- 1219.4: department manager | Department managers are responsible for the operations of a certain division or department of a company, ensuring objectives and goals are reached while managing employees.
+- 1219.5.1: chemical plant manager | Manages day-to-day chemical production, ensuring product quality, equipment integrity, personnel safety, and environmental protection while acting as a profit center.
+- 1219.5: Manufacturing facility manager | Foresees maintenance and routine operational planning of manufacturing buildings, controlling health and safety procedures, supervising contractors, and overseeing cleaning and security activities.
+- 1219.5.2: Foundry Manager | Foundry managers coordinate and implement short and medium term casting production schedules, oversee the development and improvement of casting processes, and partner with maintenance and engineering departments to ensure reliability and remediation.
+- 1219.5.3: Power plant manager | Supervises operations in power plants producing and transporting energy, coordinating production and overseeing construction, operation, and maintenance of transmission and distribution networks.
+- 1219.5.4: Water treatment plant manager | Supervises water treatment, storage, and distribution operations to ensure regulatory compliance and staff management.
+- 1219.6: project manager | Oversees projects daily to deliver high-quality results within objectives and constraints, ensuring effective resource use.
+- 1219.5.5: Wood factory manager | Wood factory managers realize planning, commercial, and advisory tasks for wood factories and timber trades, overseeing the management of purchasing, sales, customer service, and marketing of wood and wood products.
+- 1219.7: Quality services manager | Quality services managers manage the quality of services in business organisations, ensuring in-house operations meet customer requirements and service quality standards.
+- 1221.1: auction house manager | Manages staff, activities, finances, and marketing within an auction house.
+- 1221.3: Chief marketing officer | Chief marketing officers manage high-level marketing operations, coordinating promotional and advertising activities across units or geographical areas to ensure profitability.
+- 1221.3.1: Destination manager | Manages and implements national, regional, or local tourism strategies for destination development, marketing, and promotion.
+- 1221.2: banking products manager | Manages the banking product portfolio by analyzing market trends, adapting existing offerings, and developing new products to meet client needs.
+- 1221.3.2: marketing manager | Marketing managers implement marketing operations, develop strategies and plans detailing costs and resources, analyze profitability, and raise product awareness among targeted customers.
+- 1221.3.2.1.1: Category Manager | Professionals who define sales programmes for specific product groups by researching market demands and newly supplied products.
+- 1221.3.2.1: Sales Manager | Sales managers develop sales and targeting strategies, manage sales teams, allocate resources, and maintain sales platforms to track leads and performance.
+- 1221.3.2.1.2: Licensing Manager | Licensing managers oversee licenses and rights of a company regarding use of its products or intellectual property. They ensure that third parties comply with specified agreements and contracts, and negotiate with and maintain relationships between both parties.
+- 1221.3.2.1.3: Motor vehicle aftersales manager | Manages ongoing business to maximize sales, negotiates contract renewals with existing clients, and oversees product claims and warranties.
+- 1221.3.2.1.4: online sales channel manager | Defines e-commerce sales programmes across channels like email, internet, and social media, while assisting in strategy planning and identifying marketing opportunities.
+- 1221.4: commercial director | Responsible for income generation within the commercial sector of a company.
+- 1221.3.3: Promotion Manager | Promotion managers plan and implement promotional programs in the point-of-sale of products, coordinating personnel and advertising efforts to raise awareness.
+- 1221.6: Tourism product manager | Tourism product managers analyse the market, research potential offers, develop products, and plan and organise the distribution and marketing processes.
+- 1221.5: digital marketing manager | Digital marketing managers develop company digital marketing strategies to improve brand recognition and awareness, aligning with organizational mission and vision.
+- 1222.1: communication manager | Responsible for developing communication strategies to promote the organization's mission, services, or products. They coordinate communication projects and manage communications for both internal and external clients.
+- 1222.1.1: Advertising manager | Manages the implementation of advertising initiatives from strategic marketing plans, organizing resources for campaigns and ensuring operations adhere to budgets.
+- 1223.1: product manager | Responsible for managing the lifecycle of a product, including research, development, and strategic planning to increase profits.
+- 1222.1.2: public relations manager | Public relations managers strive to convey and maintain a desired image or reputation of a company, individual, governmental institution, or organisation in general to the public and stakeholders at large.
+- 1223.1.1: Insurance product manager | Insurance product managers set and direct the development of new insurance products, following the product lifecycle policy and the general insurance strategy. They coordinate marketing and sales activities and inform sales managers about newly developed products.
+- 1223.2: Research and development manager | Coordinates scientists, researchers, and developers to create new products, improve existing ones, and conduct scientific research while managing budgets and staff.
+- 1223.2.1: Product development manager | Manages the end-to-end development of new products, coordinating design, technical, and cost criteria to create prototypes for untapped market opportunities.
+- 1223.2.1.1: Clothing development manager | Manages the product line and category life cycle, defining product concepts aligned with target consumers and marketing strategies while ensuring execution within budget.
+- 1223.2.1.3: games development manager | Supervises and coordinates the creation, development, distribution, and selling of games, while communicating with manufacturers to ensure production.
+- 1223.2.1.2: footwear product development manager | Manages the coordination of footwear design and collection development to ensure compliance with design specifications, deadlines, and company strategic requirements.
+- 1223.2.2: Research manager | Oversees research and development functions in facilities, programs, or universities, supporting executive staff and monitoring projects.
+- 1311.1: Forester | Foresters monitor the natural and economic viability of woodlands and forests, managing activities related to their conservation and sustainable use.
+- 1223.2.1.4: Leather goods product development manager | Manages the design and product development of leather goods to align with marketing specifications, deadlines, and company policies while coordinating cross-functional teams.
+- 1223.2.2.1: ICT research manager | ICT research managers plan, manage, and monitor research activities while evaluating emerging trends in information and communication technology to assess their relevance to the organization.
+- 1312.1: Aquaculture harvesting manager | Manages the harvesting operations of aquatic organisms, ensuring efficient collection while maintaining stock health and operational safety.
+- 1312.2: Aquaculture husbandry manager | Specialises in the husbandry of ongrowing aquatic species, focusing on feeding, growth, and stock management processes.
+- 1321.1: Green coffee coordinator | Organises and manages operations in coffee plants and plans the functioning of machines for blending various types of green coffee beans.
+- 1312.3: Aquaculture production manager | Plans, directs, and coordinates the production of fish, shellfish, or other aquatic life in large-scale operations for culture, harvest, or release into various water bodies.
+- 1321.2: manufacturing manager | Manufacturing managers plan, oversee and direct the manufacturing process in an organisation to ensure efficient production within timeframe and budget.
+- 1321.2.1: Industrial production manager | Oversees operations and resources in industrial plants and manufacturing sites to ensure smooth functioning.
+- 1321.2.1.2: Clothing operations manager | Clothing operations managers schedule orders and delivery times to ensure the efficient flow of the production system.
+- 1321.2.1.1: chemical production manager | Responsible for the technical coordination and control of chemical production processes, steering manufacturing units to meet objectives of volume, quality, and planning.
+- 1321.2.1.3: Food production manager | Oversees and monitors food production processes, ensuring product quality while managing staffing and recruitment levels.
+- 1321.2.1.4: Footwear production manager | Plans, distributes, and coordinates footwear manufacturing activities to ensure quality standards and meet production goals.
+- 1321.2.1.5: Leather finishing operations manager | Plans and organises the work of the finishing department, managing chemical supplies, equipment, and staff coordination.
+- 1321.2.1.6.1: Leather goods production manager | Manages the planning, distribution, and coordination of all leather goods manufacturing phases to ensure quality standards and meet production/productivity goals.
+- 1321.2.1.7: Metallurgical manager | Manages metallurgical or steel-making production schedules and coordinates process development, maintenance reliability, and engineering improvements.
+- 1321.2.1.8: Metal production manager | Manages day-to-day and long-term project work in metal fabrication factories to process basic metals into fabricated metals.
+- 1321.2.2: Industrial quality manager | Industrial quality managers monitor and control information assets by detailing processes and procedures to ensure compliance with industrial standards.
+- 1321.2.1.6.2: Leather wet processing department manager | Plans and organizes work, staff, and equipment for washing raw hides or skins, removing unwanted elements, and preparing materials for tanning.
+- 1321.2.2.2: Leather goods quality manager | Manages and promotes quality assurance systems in organizations to achieve predefined requirements, foster internal and external communication, and ensure continuous improvement and customer satisfaction.
+- 1321.2.2.3: Textile quality manager | Textile quality managers implement, manage, and promote quality systems to ensure textile products adhere to organizational standards by inspecting production lines and finished goods.
+- 1321.2.3: Operations Manager | Plans, oversees, and coordinates the daily operations of production and service provision, while formulating company policies and managing resource allocation.
+- 1321.2.4: Sewerage systems manager | Manages the coordination, planning, construction, and maintenance of pipe and sewer systems, as well as wastewater treatment facilities.
+- 1321.3: textile operations manager | Textile operations managers schedule orders and delivery times to assure the efficient flow of the production system.
+- 1321.2.5: waste management officer | Advises and enforces regulations on facilities managing waste disposal, collection, and recycling, while developing rules and evaluating legislative compliance.
+- 1322.1.1: Mine production manager | Mine production managers coordinate and implement short and medium term mine production schedules and plans.
+- 1322.1: mine manager | Mine managers control, direct, plan, and coordinate mining production activities, holding statutory responsibility for safety and environmental impact.
+- 1322.2: Quarry manager | Plans, oversees, and coordinates quarry operations, ensuring extraction, processing, and transportation run smoothly according to health and safety standards.
+- 1323.1: construction manager | Responsible for planning and coordinating construction projects, providing expertise in the design phase for cost and functional estimates, and managing subcontractors from start to completion.
+- 1322.1.2: Oil and gas production manager | Manages short and medium-term production schedules for drilling, extraction, and waste management, overseeing technical and human resources to meet volume, quality, and planning objectives.
+- 1323.1.1: construction general contractor | Professionals responsible for delivering construction projects by managing bid processes, hiring subcontractors, and ensuring work meets agreed standards and timelines.
+- 1323.1.2: property developer | Professionals who buy land, finance deals, order construction projects, and orchestrate the development process, including obtaining legal approval and financing.
+- 1324.1: Airport director | Airport directors oversee a group of managers who lead or supervise a particular area of the airport, programme, or a project.
+- 1324.2: air traffic manager | Coordinates ground control planning, aircraft maintenance, and customer handling to ensure efficient resource use, safety, and quality in air navigation services.
+- 1324.3: Logistics and distribution manager | Professionals who organize storage and distribution of goods, ensuring timely and cost-effective delivery to the right location by managing internal and external supply chain variables.
+- 1324.3.1: Distribution manager | Plans the distribution of goods to various points of sales.
+- 1324.3.1.1: Inland water transport general manager | Coordinates administrative and dispatching activities in inland water transport, managing operations from an economic perspective.
+- 1324.3.1.2: Maritime water transport general manager | Maritime water transport general managers coordinate administrative activities for vessel management, overseeing operations from an economic standpoint while ensuring regulatory compliance.
+- 1324.3.1.4: road operations manager | Road operations managers oversee day-to-day road transportation processes, manage operational workflows, and strive to meet customer expectations.
+- 1324.3.1.3: Rail operations manager | Oversees, designs, and controls transport operation processes, ensuring safe and efficient service delivery, staff management, and network utilization.
+- 1324.3.1.5: Road transport division manager | Road transport division managers maintain control of processes related to vehicles, staff, customers, routes, and contracts.
+- 1324.3.1.6: Specialised goods distribution manager | Plans, coordinates, and manages the distribution of specialised goods to various points of sales, overseeing staff and ensuring efficient operations.
+- 1324.3.1.6.1: agricultural machinery and equipment distribution manager | Plans the distribution of agricultural machinery and equipment to various points of sales.
+- 1324.3.1.6.10: Electrical household appliances distribution manager | Plans the distribution of electrical household appliances to various points of sales.
+- 1324.3.1.6.12: Fish, crustaceans and molluscs distribution manager | Plans the distribution of fish, crustaceans and molluscs to various points of sales.
+- 1324.3.1.6.11: electronic and telecommunications equipment and parts distribution manager | Electronic and telecommunications equipment and parts distribution managers plan the distribution of electronic and telecommunications equipment and parts to various points of sales.
+- 1324.3.1.6.13: Flowers and plants distribution manager | Flowers and plants distribution managers plan the distribution of flowers and plants to various points of sales.
+- 1324.3.1.6.14: Fruit and vegetables distribution manager | Plans the distribution of fruit and vegetables to various points of sales.
+- 1324.3.1.6.15: Furniture, carpets and lighting equipment distribution manager | Plans the distribution of furniture, carpets, and lighting equipment to various points of sales.
+- 1324.3.1.6.17: Hides, skins and leather products distribution manager | Plans the distribution of hides, skins and leather products to various points of sales.
+- 1324.3.1.6.16: Hardware, plumbing and heating equipment and supplies distribution manager | Plans the distribution of hardware, plumbing, and heating equipment and supplies to various points of sales.
+- 1324.3.1.6.18: Household goods distribution manager | Household goods distribution managers plan the distribution of household goods to various points of sales.
+- 1324.3.1.6.19: Live animals distribution manager | Live animals distribution managers plan the distribution of live animals to various points of sales.
+- 1324.3.1.6.2: agricultural raw materials, seeds and animal feeds distribution manager | Plans the distribution of agricultural raw materials, seeds, and animal feeds to various points of sales.
+- 1324.3.1.6.20: Machinery, industrial equipment, ships and aircraft distribution manager | Plans the distribution of machinery, industrial equipment, ships, and aircraft to various points of sales.
+- 1324.3.1.6.21: Meat and meat products distribution manager | Plans the distribution of meat and meat products to various points of sales.
+- 1324.3.1.6.22: Metals and metal ores distribution manager | Plans the distribution of metals and metal ores to various points of sales.
+- 1324.3.1.6.23: mining, construction and civil engineering machinery distribution manager | Plans the distribution of mining, construction and civil engineering machinery to various points of sales.
+- 1324.3.1.6.25: pharmaceutical goods distribution manager | Plans the distribution of pharmaceutical goods to various points of sales.
+- 1324.3.1.6.24: Perfume and cosmetics distribution manager | Perfume and cosmetics distribution managers plan the distribution of perfume and cosmetics to various points of sales.
+- 1324.3.1.6.27: Textile industry machinery distribution manager | Plans the distribution of textile industry machinery to various points of sales.
+- 1324.3.1.6.26: sugar, chocolate and sugar confectionery distribution manager | Plans the distribution of sugar, chocolate and sugar confectionery to various points of sales.
+- 1324.3.1.6.29: tobacco products distribution manager | Tobacco products distribution managers plan the distribution of tobacco products to various points of sales.
+- 1324.3.1.6.28: Textiles, textile semi-finished and raw materials distribution manager | Plans the distribution of textiles, textile semi-finished goods, and raw materials to various points of sales.
+- 1324.3.1.6.3: Beverages distribution manager | Plans the distribution of beverages to various points of sales.
+- 1324.3.1.6.30: waste and scrap distribution manager | Plans the distribution of goods to various points of sales.
+- 1324.3.1.6.31: Watches and jewellery distribution manager | Plans the distribution of watches and jewellery to various points of sales.
+- 1324.3.1.6.32: Wood and construction materials distribution manager | Plans the distribution of wood and construction materials to various points of sales.
+- 1324.3.1.6.4: chemical products distribution manager | Plans the distribution of chemical products to various points of sales.
+- 1324.3.1.6.5: China and glassware distribution manager | Plans the distribution of china and glassware to various points of sales.
+- 1324.3.1.6.6: Clothing and Footwear Distribution Manager | Plans the distribution of clothing and footwear to various points of sales.
+- 1324.3.1.6.7: Coffee, tea, cocoa and spices distribution manager | Plans the distribution of coffee, tea, cocoa and spices to various points of sales.
+- 1324.3.1.6.8: Computers, computer peripheral equipment and software distribution manager | Plans the distribution of computers, computer peripheral equipment, and software to various points of sale.
+- 1324.3.1.6.9: Dairy products and edible oils distribution manager | Plans the distribution of dairy products and edible oils to various points of sales.
+- 1324.3.2: Import export manager | Import export managers install and maintain procedures for cross-border business, coordinating internal and external parties.
+- 1324.3.2.1: Import export manager in agricultural machinery and equipment | Manages cross-border business operations for agricultural machinery and equipment, establishing procedures and coordinating internal and external stakeholders.
+- 1324.3.2.10: Import export manager in electrical household appliances | Manages cross-border business procedures for electrical household appliances, coordinating internal and external parties.
+- 1324.3.2.11: Import export manager in electronic and telecommunications equipment and parts | Manages cross-border business procedures for electronic and telecommunications equipment, coordinating internal and external parties.
+- 1324.3.2.12: Import export manager in fish, crustaceans and molluscs | Manages cross-border business procedures for aquatic products, coordinating internal and external parties.
+- 1324.3.2.13: Import export manager in flowers and plants | Manages cross-border business procedures for the flowers and plants sector, coordinating internal and external stakeholders.
+- 1324.3.2.14: Import export manager in fruit and vegetables | Manages cross-border business procedures for fruit and vegetable trade, coordinating internal and external stakeholders.
+- 1324.3.2.15: Import export manager in furniture, carpets and lighting equipment | Manages cross-border business procedures for furniture, carpets, and lighting equipment, coordinating internal and external parties.
+- 1324.3.2.16: Import export manager in hardware, plumbing and heating equipment and supplies | Manages cross-border business procedures for hardware, plumbing, and heating equipment, coordinating internal and external parties.
+- 1324.3.2.17: Import export manager in hides, skins and leather products | Manages cross-border business operations specifically for the hides, skins, and leather products sector.
+- 1324.3.2.18: Import export manager in household goods | Manages cross-border business procedures for household goods, coordinating internal and external parties to ensure efficient import and export operations.
+- 1324.3.2.19: Import export manager in live animals | Manages cross-border business procedures for live animals, coordinating internal and external parties to ensure compliance and operational efficiency.
+- 1324.3.2.2: Import export manager in agricultural raw materials, seeds and animal feeds | Manages cross-border business procedures for agricultural raw materials, seeds, and animal feeds, coordinating internal and external stakeholders.
+- 1324.3.2.20: Import export manager in machinery, industrial equipment, ships and aircraft | Manages cross-border business procedures for machinery, industrial equipment, ships, and aircraft, coordinating internal and external parties.
+- 1324.3.2.22: Import export manager in meat and meat products | Manages cross-border business procedures for the meat and meat products sector, ensuring compliance and operational efficiency.
+- 1324.3.2.23: Import export manager in metals and metal ores | Manages cross-border business procedures for metals and metal ores, coordinating internal and external parties.
+- 1324.3.2.24: Import export manager in mining, construction and civil engineering machinery | Manages cross-border business procedures for heavy machinery sectors, coordinating internal and external stakeholders.
+- 1324.3.2.25: Import export manager in office furniture | Manages cross-border business operations for office furniture, establishing and maintaining procedures for international trade.
+- 1324.3.2.26: Import export manager in office machinery and equipment | Manages cross-border business operations for office machinery and equipment, establishing procedures and coordinating internal and external stakeholders.
+- 1324.3.2.27: Import export manager in perfume and cosmetics | Manages cross-border business operations for the perfume and cosmetics industry, establishing and maintaining procedures for international trade.
+- 1324.3.2.28: Import export manager in pharmaceutical goods | Manages cross-border business procedures for pharmaceutical goods, coordinating internal and external parties to ensure compliance and operational efficiency.
+- 1324.3.2.29: Import export manager in sugar, chocolate and sugar confectionery | Manages cross-border business operations for the sugar, chocolate, and sugar confectionery sectors by establishing and maintaining import/export procedures.
+- 1324.3.2.3: Import export manager in beverages | Manages cross-border business operations for the beverage industry, establishing and maintaining procedures for international trade.
+- 1324.3.2.30: Import export manager in textile industry machinery | Manages cross-border business procedures for textile industry machinery, coordinating internal and external parties.
+- 1324.3.2.31: Import export manager in textiles and textile semi-finished and raw materials | Manages cross-border business operations specifically within the textile sector, handling semi-finished goods and raw materials.
+- 1324.3.2.32: Import export manager in tobacco products | Manages cross-border business operations for tobacco products by establishing and maintaining import/export procedures.
+- 1324.3.2.33: Import export manager in waste and scrap | Manages cross-border business operations for waste and scrap, establishing and maintaining procedures while coordinating internal and external stakeholders.
+- 1324.3.2.34: Import export manager in watches and jewellery | Manages cross-border business operations for the watches and jewellery sector, establishing and maintaining procedures for international trade.
+- 1324.3.2.35: Import export manager in wood and construction materials | Manages cross-border business procedures for wood and construction materials, coordinating internal and external parties.
+- 1324.3.2.4: Import export manager in chemical products | Manages cross-border business operations for chemical products by establishing and maintaining import/export procedures.
+- 1324.3.2.5: Import export manager in china and other glassware | Import export managers in china and other glassware install and maintain procedures for cross-border business, coordinating internal and external parties.
+- 1324.3.2.6: Import export manager in clothing and footwear | Manages cross-border business operations specifically within the clothing and footwear sector, establishing and maintaining necessary procedures.
+- 1324.3.2.7: Import export manager in coffee, tea, cocoa and spices | Manages cross-border business operations for specific agricultural commodities, establishing and maintaining procedures to coordinate internal and external stakeholders.
+- 1324.3.2.8: Import export manager in computers, computer peripheral equipment and software | Manages cross-border business procedures for computer hardware, peripherals, and software, coordinating internal and external stakeholders.
+- 1324.3.2.9: Import export manager in dairy products and edible oils | Manages cross-border business operations specifically for dairy products and edible oils, ensuring compliance and efficiency in international trade.
+- 1324.3.3: intermodal logistics manager | Manages and oversees commercial and operational aspects of intermodal logistics for an organisation.
+- 1324.3.4: warehouse manager | Warehouse managers assume the responsibility for storage facilities. They manage the operations and the staff within.
+- 1324.5: movie distributor | Movie distributors coordinate the distribution of motion pictures and television series, overseeing their sale on physical media such as DVD and Blu-ray.
+- 1324.3.4.1: Finished leather warehouse manager | Manages the organization, monitoring, and operational efficiency of finished leather warehouses, overseeing stock levels, packing, and dispatch.
+- 1324.6: Pipeline Superintendent | Pipeline superintendents manage the direction and overall development of pipeline transport projects, envisioning planning, route selection, resource management, and daily operations to safeguard infrastructure efficiency.
+- 1324.4: Move manager | Move managers coordinate all resources and activities in moving services, defining requirements with clients and ensuring compliance and efficiency through communication with shipping companies, planners, and movers.
+- 1324.8.2: purchasing manager | Purchasing managers are in charge of buying goods, equipment and services for their company, and try to ensure the most competitive prices.
+- 1324.7: railway station manager | Manages tasks linked to train station operations, including maintenance, passenger comfort, safety, security, and commercial use.
+- 1324.8: Supply chain manager | Plans, manages, and coordinates all activities related to sourcing and procurement of supplies for manufacturing operations, from raw material acquisition to finished product distribution.
+- 1324.8.1: Forecast Manager | Manages production efficiency by analyzing company operations, inventory, costs, and demand trends to define optimal production orders using forecasting software.
+- 1324.8.3: Resource Manager | Resource managers manage resources for all potential and assigned projects, ensuring departmental needs are met timely and communicating resourcing issues that impact deadlines.
+- 1330.1: chief data officer | Chief data officers manage enterprise-wide data administration and data mining functions, ensuring data is utilized as a strategic business asset at the executive level.
+- 1324.8.2.1: Leather raw materials purchasing manager | Plans and purchases leather raw materials (hides, skins, wet-blue, crust) to meet production requirements, negotiates processes, forecasts demand, and manages supplier relationships to ensure stock levels and quality.
+- 1330.1.1: ICT information and knowledge manager | ICT information and knowledge managers define organisational information strategy and manage the creation, editing, storage, and distribution of information. They maintain structured and unstructured data, create digital structures for optimisation, and enable business intelligence through data analysis.
+- 1330.3: chief technology officer | Chief technology officers contribute to a company's technical vision and lead all aspects of technology development, according to its strategic direction and growth objectives. They match technology with business needs.
+- 1330.2: Chief Information Officer | Chief information officers define and implement the ICT strategy and governance, ensuring ICT infrastructure supports organizational operations and priorities.
+- 1330.10: ICT environmental manager | ICT environmental managers manage the implementation of environmental strategies for ICT networks and systems, ensuring compliance with green ICT legal frameworks and sustainability targets.
+- 1330.4: ICT documentation manager | ICT documentation managers oversee the documentation development process, ensuring compliance with legal requirements, standards, and organizational goals. They manage departmental resources, including budgeting, scheduling, and risk analysis, while establishing documentation standards and media concepts.
+- 1330.5.1: Software manager | Software managers oversee the acquisition and development of software systems to support all organisational units, while monitoring the results and quality of implemented software solutions and projects.
+- 1330.5: ICT operations manager | ICT operations managers coordinate ICT services and infrastructure to ensure required resources are available. They plan and monitor business or computer processes, negotiate contracts, and take mitigation actions for non-fulfilment.
+- 1330.6: ICT product manager | ICT product managers analyse and define current and target status for ICT products, services, or solutions. They estimate cost effectiveness, risks, opportunities, strengths, and weaknesses, while creating structured plans with time scales and milestones to optimise activities and resources.
+- 1330.7: ICT project manager | ICT project managers schedule, control, and direct resources, people, funding, and facilities to achieve ICT project objectives.
+- 1330.8: ICT vendor relationship manager | ICT vendor relationship managers establish and maintain positive business relationships between stakeholders by deploying compliant activities. They manage the outsourcing process for the ICT department and handle supply chain communications.
+- 1330.9: telecommunications manager | Manages telecommunications staff activities for installing, troubleshooting, repairing, and maintaining equipment and infrastructure.
+- 1341.1: Child care coordinator | Organises child care services, activities, and events after school hours and during holidays, implementing care programmes to assist in child development while maintaining a safe environment.
+- 1341.2: child day care centre manager | Manages child care facilities and provides social services to children and families, overseeing staff teams and resources.
+- 1342.1: clinical informatics manager | Oversees daily operations of information systems in medical institutions and conducts research to improve healthcare services.
+- 1341.3: nursery school head teacher | Manages day-to-day activities of a kindergarten or nursery school, ensuring compliance with national education requirements and age-appropriate curriculum standards.
+- 1342.2: healthcare institution manager | Supervises operations of healthcare institutions (hospitals, rehabilitation, home care, elderly care) to ensure compliance, patient care, maintenance, and equipment availability.
+- 1343.1: Elderly home manager | Oversees, plans, organises and evaluates the provision of elderly care services for people affected by ageing, while managing the home and supervising staff activities.
+- 1344.1: social services manager | Social services managers provide strategic and operational leadership for staff and resources within social services, ensuring the implementation of relevant legislation and policies regarding vulnerable people.
+- 1344.1.1: Public housing manager | Develops strategies for housing policy improvement and social housing provision, identifies community housing needs, and supervises resource allocation.
+- 1344.1.2: Youth centre manager | Plans and supervises operations of children and youth homes providing care and counselling services.
+- 1344.1.3: Youth programme director | Professionals who develop and implement programmes and policies to improve and ensure youths' well-being.
+- 1345.1: headteacher | Manages day-to-day activities of an educational institution, ensuring compliance with national education requirements and facilitating student academic development.
+- 1345.1.10: university department head | Academic leaders who lead and manage a department of their discipline, collaborating with faculty deans to deliver strategic objectives.
+- 1345.1.1: dean of faculty | Leads and manages a collection of related academic departments, collaborating with the principal and department heads to deliver strategic objectives.
+- 1345.1.2: deputy head teacher | Deputy head teachers support the management duties of school principals as part of the administrative staff, updating leadership on daily operations and implementing school policies.
+- 1345.1.3: Education programme coordinator | Supervises the development and implementation of educational programmes, develops promotion policies, and manages budgets.
+- 1345.1.4: Further education principal | Manages day-to-day activities of post-secondary education institutes, including technical schools, ensuring curriculum standards and academic development.
+- 1345.1.5: Head of higher education institutions | Manages day-to-day activities of higher education institutions, including colleges and vocational schools, ensuring operational efficiency and academic standards.
+- 1345.1.6: primary school head teacher | Manages day-to-day activities of a primary school, overseeing staff, admissions, and curriculum standards to ensure social and academic development while meeting national legal requirements.
+- 1345.1.8: secondary school head teacher | Manages staff and curriculum standards to facilitate student academic development while ensuring compliance with national education requirements.
+- 1345.1.7: secondary school department head | Manages and supervises assigned departments to ensure safe learning environments, optimizes communication between management, staff, parents, and districts, and leads school staff in collaboration with the principal.
+- 1346.1: bank manager | Bank managers oversee the management of one or several bank activities, ensuring compliance with legal requirements and meeting economic, social, and commercial targets.
+- 1345.1.9: Special educational needs head teacher | Manages day-to-day activities of a special education school, supervises staff, and ensures compliance with national education requirements for students with disabilities.
+- 1346.2: Brokerage firm director | Brokerage firm directors organise activities and personnel involved in securities trading, envisioning strategies to increase asset trading efficiency and profitability.
+- 1346.3: credit union manager | Credit union managers oversee and manage member services, supervise staff and operations of credit unions. They inform staff about the latest credit union procedures and policies and prepare financial reports.
+- 1346.4: Insurance agency manager | Manages operations of insurance institutions or branches and provides clients with advice on insurance products.
+- 1346.5: Insurance claims manager | Insurance claims managers lead teams of claims officers to ensure proper and efficient handling of insurance claims, addressing complex customer complaints and assisting with fraudulent cases.
+- 1346.6: Pension scheme manager | Pension scheme managers coordinate pension schemes to provide retirement benefits to individuals or organisations, ensuring daily fund deployment and defining strategic policies for new packages.
+- 1349.1: Airside safety manager | Supervises airside operations' safety and security, advises civil aviation authorities on airport information systems changes, and ensures compliance with standards and regulations.
+- 1349.10: court administrator | Court administrators perform managerial tasks within court institutions, overseeing staff, administration, finances, and facility maintenance while communicating with judges and reviewing procedures.
+- 1349.11: document management officer | Ensures documents required for organizational functioning are registered, classified, and archived correctly, making them available to services or the public upon request.
+- 1349.12: energy manager | Coordinates energy use in an organisation to implement sustainability policies, minimize costs and environmental impact, and research beneficial energy sources.
+- 1349.14: front of house manager | Front of house managers oversee public areas of live event venues, ensuring smooth customer interactions and professional service.
+- 1349.13: Environmental protection manager | Managers who provide advice on environmental policy development to governmental and official institutions, analyzing threats to public and environmental well-being.
+- 1349.15: Interpretation agency manager | Interpretation agency managers oversee operations in the delivery of interpretation services, coordinating teams of interpreters to ensure service quality and agency administration.
+- 1349.16: library manager | Supervises library equipment and items, manages services and department operations, provides staff training, and manages the library budget.
+- 1349.17: medical laboratory manager | Oversees daily operations of a medical laboratory, managing employees and ensuring compliance with specifications and safety standards.
+- 1349.18: museum director | Oversees the management of art collections, artefacts, and exposition facilities, balancing the acquisition and sale of works with their preservation and maintenance.
+- 1349.19: Publications Coordinator | Responsible for the production of print and online materials such as newsletters, company procedures, and technical documents for institutions and businesses, while supervising publishing teams to ensure content reaches the target audience.
+- 1349.2: airspace manager | Controls activities to develop the European airspace into a flexible, reactive continuum, optimizing network capacity and improving performance.
+- 1349.20: Rescue centre manager | Supervises rescue centre operations, performs administrative duties, and ensures staff conduct rescue missions safely, efficiently, and in compliance with policies.
+- 1349.21: Service manager | Service managers supervise and coordinate the provision of professional and technical services to customers, ensuring smooth interactions and high satisfaction levels.
+- 1349.21.1: Legal service manager | Legal service managers oversee the general management of a legal service office, ensuring efficiency and effectiveness in delivering legal services while coordinating teams of legally trained professionals.
+- 1349.22: Sport administrator | Middle management professionals within sport organisations (clubs, federations, local authorities) who execute organisational tasks to deliver sport strategies and policies.
+- 1349.23: Translation agency manager | Manages operations in the delivery of translation services, coordinating translator teams and ensuring service quality.
+- 1349.3: artistic director | Artistic directors lead artistic projects or cultural organizations, overseeing strategic vision, visibility, and quality of activities like theatre and dance.
+- 1349.4: Aviation communications and frequency coordination manager | Manages activities and projects to establish communication infrastructure supporting information exchange between airspace users.
+- 1349.5: Aviation surveillance and code coordination manager | Ensures that all components of surveillance infrastructures, both ground and airborne, operate in a safe, cohesive and interoperable manner.
+- 1349.8: Commercial art gallery manager | Commercial art gallery managers manage the commercial and artistic success of the gallery.
+- 1349.6: Book publisher | Professionals responsible for selecting manuscripts for publication and overseeing the production, marketing, and distribution of texts.
+- 1349.7: Chief fire officer | Chief fire officers supervise fire departments, coordinating operations and leading staff during firefighting and rescue activities to ensure safety and risk limitation.
+- 1349.9: correctional services manager | Correctional services managers manage the operations of a correctional facility, supervising personnel and ensuring compliance with legal regulations.
+- 1411.2: hospitality entertainment manager | Hospitality entertainment managers are in charge of managing the team which creates entertainment activities for the guests of a hospitality establishment.
+- 1411.1: Accommodation manager | Manages operations and strategy for hospitality establishments, overseeing human resources, finances, marketing, and daily activities.
+- 1411.3: Rooms division manager | Rooms division managers are in charge of managing and coordinating a team of employees at front desk, reservations, housekeeping and maintenance departments.
+- 1412.1: restaurant manager | Manages food and beverage operations in the kitchen and other food and beverage outlets or units in a hospitality establishment.
+- 1420.1: department store manager | Manages and controls operations and staff in retail establishments providing department store services.
+- 1420.2: retail department manager | Retail department managers are responsible for activities and staff in a section in a store.
+- 1420.3: Sales Account Manager | Intermediates between clients and the organisation, managing sales and long-term client relations while developing contracts.
+- 1420.4: shop manager | Shop managers are responsible for activities and staff in specialised shops.
+- 1420.4.1: Ammunition shop manager | Ammunition shop managers are responsible for activities and staff in specialised shops.
+- 1420.4.11: Computer shop manager | Computer shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.10: Clothing shop manager | Clothing shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.12: Computer software and multimedia shop manager | Manages activities and staff in specialised shops selling computer software and multimedia products.
+- 1420.4.13: confectionery shop manager | Manages activities and staff in specialised shops selling confectionery items such as pastries, candy, and chocolate.
+- 1420.4.16: Delicatessen shop manager | Manages activities and staff in specialised delicatessen shops.
+- 1420.4.14: cosmetics and perfume shop manager | Manages staff and operations in a drugstore, overseeing sales, budgets, and inventory of cosmetics, perfumes, medicines, and miscellaneous items.
+- 1420.4.15: Craft shop manager | Manages activities and staff in specialised shops selling equipment and supplies for craft activities such as sewing, painting, or pottery making.
+- 1420.4.17: Domestic appliances shop manager | Manages activities and staff in specialised shops selling domestic appliances.
+- 1420.4.2: Antique shop manager | Antique shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.19: Eyewear and optical equipment shop manager | Manages activities and staff in specialised shops selling eyewear and optical equipment.
+- 1420.4.18: drugstore manager | Manages activities and staff in drugstores selling magazines, household products, medicines, cosmetics, candy, or refreshments.
+- 1420.4.20: Fish and seafood shop manager | Fish and seafood shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.21: floor and wall coverings shop manager | Floor and wall coverings shop managers assume responsibility for activities and staff in specialised shops for wall and floor coverings.
+- 1420.4.22: Flower and garden shop manager | Manages activities and staff in specialised flower and garden shops.
+- 1420.4.23: Fruit and vegetables shop manager | Fruit and vegetables shop managers assume responsibility for activities and staff in specialised shops for fruit and vegetables.
+- 1420.4.24: Fuel station manager | Manages operations and staff at a fuel station.
+- 1420.4.25: furniture shop manager | Furniture shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.27: Jewellery and watches shop manager | Jewellery and watches shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.26: Hardware and paint shop manager | Manages activities and staff in specialised hardware and paint shops, overseeing operations, sales, and administrative functions.
+- 1420.4.28: Kitchen and bathroom shop manager | Manages activities and staff in specialised shops selling kitchens and bathrooms, overseeing operations, sales, and administration.
+- 1420.4.29: Meat and meat products shop manager | Manages activities and staff in specialised shops selling meat and meat products.
+- 1420.4.3: Audio and video equipment shop manager | Audio and video equipment shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.30: medical goods shop manager | Manages activities and staff in specialised medical goods shops, overseeing operations, sales, and administrative duties.
+- 1420.4.31: Motor vehicle shop manager | Manages activities and staff in a vehicle showroom, overseeing sales, budgeting, and supply chain operations.
+- 1420.4.32: Music and video shop manager | Manages activities and staff in specialised music and video retail shops.
+- 1420.4.33: Orthopaedic supply shop manager | Manages activities and staff in specialised orthopaedic supply shops, overseeing operations, sales, and administrative functions.
+- 1420.4.34: Pet and pet food shop manager | Pet and pet food shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.36: Press and stationery shop manager | Manages activities and staff in specialised shops selling press and stationery products.
+- 1420.4.35: photography shop manager | Manages activities and staff in a photography store, overseeing operations, sales, and administrative duties.
+- 1420.4.37: Second-hand shop manager | Second-hand shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.38: Shoe and leather accessories shop manager | Manages activities and staff in specialised shops selling shoes and leather accessories.
+- 1420.4.4: Audiology equipment shop manager | Audiology equipment shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.40: Telecommunication equipment shop manager | Manages activities and staff in specialised shops selling telecommunication equipment.
+- 1420.4.39: Sporting and outdoor accessories shop manager | Sporting accessories shop managers assume responsibility for the activities and staff in specialised shops, overseeing operations, sales, and administrative duties.
+- 1420.4.41: Textile shop manager | Textile shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.42: tobacco shop manager | Tobacco shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.5: Bakery shop manager | Bakery shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.43: Toys and games shop manager | Manages activities and staff in specialised shops selling toys and games.
+- 1420.4.6: Beverages shop manager | Beverages shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.4.7: bicycle shop manager | Manages activities and staff in specialised shops that sell and repair bicycles.
+- 1420.4.8: Bookshop manager | Bookshop managers assume responsibility for activities and staff in this specialised store.
+- 1420.4.9: Building materials shop manager | Building materials shop managers assume responsibility for activities and staff in specialised shops.
+- 1420.5: supermarket manager | Supermarket managers are responsible for activities and staff in a supermarket.
+- 1420.6: Trade regional manager | Trade regional managers are responsible for activities and staff in an assigned region for a specific chain of stores.
+- 1431.1.1: cultural centre director | Manages operations of a cultural community centre, organizes and promotes cultural activities and events, manages staff, and aims to promote the overall inclusion of cultural programmes in the community.
+- 1431.1: Cultural facilities manager | Directs operations of cultural service facilities (theatres, museums, concert halls), planning daily activities, coordinating departments, and ensuring adherence to field developments.
+- 1431.1.2: Performance production manager | Manages practical issues concerning the production of entertainment events, overseeing logistics, staffing, and operations.
+- 1431.2: Recreational facilities manager | Directs operations of facilities providing recreational services such as gardens, spas, zoos, and gambling/lottery venues, ensuring adherence to field developments.
+- 1431.2.1: beauty salon manager | Beauty salon managers oversee daily operations, staff management, and customer satisfaction while ensuring budget control and inventory management.
+- 1431.2.4: Lottery Manager | Lottery managers organise and coordinate lottery organisation activities, overseeing daily operations and facilitating communications between staff and customers.
+- 1431.2.3: Gambling manager | Organises and coordinates activities of a gambling facility, overseeing daily operations, staff management, and regulatory compliance to ensure profitability.
+- 1431.2.5: Spa manager | Spa managers coordinate day-to-day operations to ensure optimal guest experiences, overseeing staff performance, financial management, supplier relations, and advertising campaigns.
+- 1431.2.6: zoo curator | A middle-management role responsible for the oversight, management, and development of an animal collection, including husbandry, welfare policy, and exhibit design.
+- 1439.1: call centre manager | Manages call centre operations by setting service objectives and monitoring daily, weekly, and monthly results to ensure KPI achievement.
+- 1431.3: Sport facility manager | Leads and manages sport facilities or venues, overseeing operations, programming, sales, promotion, health and safety, development, and staffing to achieve business and operational targets.
+- 1439.2: Camping ground manager | Plans, directs, or coordinates all campsite facilities and manages employees.
+- 1439.3: contact centre manager | Manages daily operations of contact centres to ensure efficient customer inquiry resolution and high satisfaction levels.
+- 1439.4: garage manager | Oversees the work of road vehicle mechanics and administrative personnel, organizing daily operations and handling client interactions.
+- 1439.5: Laundry and dry cleaning manager | Oversees laundry operations in institutional settings, supervising staff, managing budgets, and ensuring quality standards and safety procedures are met.
+- 1439.6: Tourist information centre manager | Manages employees and activities of a centre providing information and advice to travellers and visitors about local attractions, events, travelling, and accommodation.
+- 1439.7: Tour operator manager | Manages employees and activities within tour operators related to the organisation of package tours and other tourism services.
+- 2111.1: Astronomer | Researchers who study the formation, structures, properties, and development of celestial bodies and interstellar matter.
+- 1439.8: travel agency manager | Travel agency managers are in charge of managing employees and activities of a travel agency. They organise, advertise and sell tourist offers and travel deals for specific regions.
+- 2111.2: cosmologist | Cosmologists study the universe as a whole, focusing on its origin, evolution, and ultimate fate.
+- 2111.3: physicist | Scientists who study physical phenomena, specializing from atomic particle physics to universal phenomena, and apply findings to improve society through energy, medical treatment, and technology development.
+- 2112.1: meteorologist | Meteorologists study climate processes, measure and predict weather patterns, and provide consultancy services to various users.
+- 2112.1.1: Aviation meteorologist | Forecasts weather conditions at airports and provides day-to-day, hour-to-hour observations, analysis, forecasts, warnings, and advice to pilots, airport operators, and airlines.
+- 2112.1.2: climatologist | Climatologists study long-term average changes in weather and climate, analyzing historic conditions to forecast trends like temperature shifts and global warming.
+- 2112.2: Metrologist | Metrologists study and practice the science of measurement, developing quantity systems, units, and methods for scientific use.
+- 2112.1.3: Weather forecaster | Professionals who gather meteorological data to predict weather conditions and present forecasts to the public via radio, television, or online platforms.
+- 2113.1: chemist | Chemists perform laboratory research by testing and analyzing the chemical structure of substances, translating results into industrial production processes, and testing product quality and environmental impact.
+- 2113.1.1: Analytical chemist | Analytical chemists research and describe the chemical composition of substances and draw conclusions regarding their behavior under different conditions, focusing on relationships with the environment, food, fuel, and medicine.
+- 2113.1.2: chemical application specialist | Develops chemical products based on client needs, formulating formulas and processes while evaluating their efficiency and performance.
+- 2113.1.3: Chemical Tester | Responsible for the rapid on-the-spot analysis of steel test pieces incoming from the metal production shop to enable timely corrections of the chemical composition of the liquid metal.
+- 2113.1.4: cosmetic chemist | Develops formulas to create and test new cosmetic products and improve existing ones, including perfumes, makeup, hair dye, and topical medicines.
+- 2113.1.5: Fragrance chemist | Develops and improves fragrance chemicals by formulating, testing, and analyzing fragrances and ingredients to meet customer expectations and needs.
+- 2113.1.6: textile chemist | Textile chemists coordinate and supervise chemical processes for textiles like yarn and fabric forming such as dyeing and finishing.
+- 2113.2: Sensory Scientist | Sensory scientists conduct sensory analysis to develop and improve flavors and fragrances for the food, beverage, and cosmetics industries based on consumer research.
+- 2114.1: geologist | Geologists research the materials that form the earth, studying geological layers, mineral quality, and phenomena like earthquakes and volcanic activity based on specific research purposes.
+- 2114.1.1: Environmental geologist | Environmental geologists study how mineral operations impact the earth's composition and physical characteristics, providing advice on land reclamation and environmental pollution.
+- 2114.1.10: seismologist | Seismologists study tectonic plate movements and seismic waves to analyze earthquake sources, including volcanic activity, atmospheric phenomena, and ocean behavior, providing data to prevent construction and infrastructure dangers.
+- 2114.1.2: exploration geologist | Professionals who examine and prospect for mineral deposits, identifying and defining economically viable resources while securing legal title.
+- 2114.1.3: geochemist | Geochemists study the characteristics and chemical elements in minerals, rocks, and soils, analyzing their interactions with hydrological systems.
+- 2114.1.4: Hydrogeologist | Hydrogeologists in mining study water distribution, quality, and flow to prevent nuisance water in mine workings and ensure adequate process water supply while protecting water sources from contamination.
+- 2114.1.5: hydrologist | Hydrologists research and study the quality, challenges, and distribution of Earth's water, analyzing supply from rivers, streams, and springs to ensure sustainable use.
+- 2114.1.6: Mine geologist | Mine geologists locate, identify, quantify and classify mineral resources and their geological characteristics and structure, providing advice to mine managers and engineers at existing and prospective mineral operations.
+- 2114.1.7: Mud logger | Mud loggers analyse drilling fluids to determine the position of hydrocarbons, monitor natural gas, and identify lithology with respect to depth.
+- 2114.1.8: Oceanographer | Studies and performs research on matters related to the sea and oceans, specializing in physical, chemical, or geological aspects.
+- 2114.2: geophysicist | Geophysicists study the physical characteristics of the earth and apply physical measurements to geological situations.
+- 2114.1.9: palaeontologist | Researches and analyses ancient life forms to define evolutionary paths and interactions with geological areas, including plants, animals, and ecological traces.
+- 2114.3: Mineralogist | Mineralogists study the composition, structure, and physical aspects of the earth. They analyze minerals using scientific equipment to determine their structure and properties, focusing on classification and identification through sampling and testing.
+- 2120.2: Demographer | Demographers study population parameters and develop statistical analyses on the evolution of births, elderly populations, marriage, divorce, employment, mortality, and immigration.
+- 2120.1: Actuarial Consultant | Actuarial consultants analyse, manage, and provide guidance on the financial impact of risks across fields such as insurance, pensions, investments, banking, and healthcare.
+- 2120.3: gambling games developer | Gambling games developers create, develop and produce content for lottery, betting and similar gambling games for large audiences.
+- 2120.4: Gambling quality assurance engineer | Designs and plans methods to test gambling, lottery, or betting games for both public and private audiences, executing tests for online and land-based gaming.
+- 2120.6: statistician | Statisticians collect, tabulate, and analyse quantitative information from varied fields, interpreting studies to advise on patterns.
+- 2120.5: Mathematician | Mathematicians study and deepen existing mathematical theories to expand knowledge and find new paradigms. They apply this knowledge to engineering and scientific projects to ensure the viability of measurements, quantities, and mathematical laws.
+- 2120.6.1: Biometrician | Biometricians perform research in the field of biometrics, carrying out statistical or biological research projects by measuring fingerprints, retinas, and human shapes for medical or industrial applications.
+- 2131.1: animal behaviourist | Professionals who study, observe, and assess animal behaviour to develop suitable environments and management regimes that prevent or address inappropriate behaviours, ensuring compliance with national legislation.
+- 2131.2: Animal feed nutritionist | Animal feed nutritionists analyse the nutritional value of animal feeds to provide dietary advice to agricultural, manufacturing, zoological, and public sector staff.
+- 2131.4: biologist | Biologists study living organisms and life in its broader extent in combination with its environment, striving to explain functional mechanisms, interactions, and evolution through research.
+- 2131.3: bioinformatics scientist | Bioinformatics scientists analyse biological processes using computer programmes, maintain biological databases, and conduct scientific research and statistical analyses to report findings.
+- 2131.4.1: Aquaculture Biologist | Aquaculture biologists apply knowledge of aquatic animals, plant life, and their environmental interactions to improve production, prevent health and environmental issues, and provide necessary solutions.
+- 2131.4.11: Physiologist | Physiologists study and exert research on the functioning of different living organisms, their parts, and their interactions, focusing on reactions to diseases, physical activity, and stress.
+- 2131.4.12: Specialist biomedical scientist | Leads a department or specialist area, acting as a diagnostic partner with clinical teams to investigate and diagnose patient illnesses (e.g., diabetes, haematological disorders, coagulation, molecular biology, genomics) or undertaking clinical research projects.
+- 2131.4.10: Microbiologist | Microbiologists study and research the life forms, characteristics, and processes of microscopic organisms such as bacteria, protozoa, and fungi to diagnose and counteract their effects in animals, the environment, the food industry, and health care.
+- 2131.4.13: toxicologist | Toxicologists study the effects of chemical, biological, and physical agents on living organisms, specifically regarding environmental and human health impacts.
+- 2131.4.2: biochemist | Biochemists study and perform research on the reactions caused by chemicals in living organisms, focusing on developing or improving chemical-based products like medicine to improve health and understand biological reactions.
+- 2131.4.3: Biomedical scientist advanced | Biomedical scientists advanced undertake advanced translational research in the biomedical science field and perform as educators of their professions or as other professionals.
+- 2131.4.4: Biophysicist | Biophysicists study the relationship between living organisms and physics, using physical methods to explain life's complexity, predict patterns, and draw conclusions.
+- 2131.4.5: Botanicals Specialist | Specialists who apply knowledge of plant science, flavour chemistry, and biological sciences to the production of herbal alcoholic beverages.
+- 2131.4.6.1: Curator of horticulture | Curators of horticulture develop and maintain the botanical collections, exhibits, and landscapes of a botanical garden.
+- 2131.4.7: Epidemiologist | Epidemiologists centre their research on the origin and causes of illness eruptions in humans, determining disease spread patterns and proposing preventive measures to health policy organisms.
+- 2131.4.6: Botanist | Professionals responsible for the maintenance, development, and scientific study of plants, often within botanic gardens or in the wild.
+- 2131.4.8: geneticist | Geneticists study and focus their research on genetics, analyzing how genes interact, operate, and inherit traits and characteristics.
+- 2131.4.9: marine biologist | Marine biologists study marine living organisms, ecosystems, and their underwater interactions, focusing on physiology, evolution, and environmental adaptations.
+- 2131.6: Immunologist | Immunologists research the immune system of living organisms and their reactions to external infections or invasive harmful agents, focusing on classifying diseases affecting immunology for treatment.
+- 2131.5: food biotechnologist | Food biotechnologists study the life cycle of food from preservation to spoilage and food-borne pathogens. They research food-borne diseases to prevent them and ensure food products comply with government health and safety regulations.
+- 2131.7: pharmacologist | Pharmacologists study how drugs and medicaments interact with organisms, living systems, and their parts (cells, tissues, or organs) to identify substances for curing illnesses.
+- 2131.8: biomedical scientist | Biomedical scientists perform laboratory methods required for medical examination, treatment, and research, including clinical-chemical, haematological, and microbiological tests. They analyze samples and report results to medical staff for diagnosis.
+- 2131.8.2: Cytology Screener | Examines human cell samples under a microscope to identify abnormalities and diseases such as cancer or infectious agents, transferring findings to pathologists for diagnosis under medical supervision.
+- 2131.8.1: Anatomical Pathology Technician | Assists specialized doctors in pathology by conducting post-mortem examinations, managing records of samples and specimens, and ensuring appropriate disposal under supervision.
+- 2132.1: agricultural scientist | Researches and studies soil, animals, and plants to improve agricultural processes, product quality, and environmental impact, while planning and implementing development projects for clients or institutions.
+- 2132.2: Agronomist | Agronomists provide consulting services to companies, cooperatives, and growers on food crop cultivation. They study plant science, technology, and business to improve yields and production.
+- 2132.4: Fisheries adviser | Provides consultancy on fish stocks and habitats, manages coastal fishing business modernization, and develops fisheries management plans and policies.
+- 2132.3: Aquaculture recirculation manager | Manages the production of aquatic organisms in land-based recirculation systems, overseeing water re-use, circulation, aeration, and biofilter operations.
+- 2132.5: Forestry adviser | Forestry advisers provide services and advice on economic and environmental issues related to timber and forestry management in compliance with laws and regulations.
+- 2132.6: Livestock advisor | Livestock advisors provide complex specialist advice to farmers and livestock breeders to ensure that their business and production is optimised.
+- 2133.10: Pipeline environmental project manager | Ensures environmental preservation within pipeline transport projects by analyzing sites and routes to advise on environmental issues.
+- 2133.1: Airport environment officer | Airport environment officers monitor environmental issues such as emissions, contamination, and wildlife activity within airport premises. They report environmental attractors for animals and study the environmental impact on surrounding communities to ensure sustainable development.
+- 2133.11: soil scientist | Researchers who study soil disciplines to advise on improving soil quality for nature, food production, and infrastructure using surveying, irrigation, and erosion reduction measures.
+- 2133.13: Water quality analyst | Water quality analysts safeguard water quality through scientific analysis, ensuring safety standards are met for drinking, irrigation, and other supply purposes.
+- 2133.14: Air pollution analyst | Professionals who conduct field and laboratory tests to examine air pollution levels in various areas and identify pollution sources.
+- 2133.15: Environmental Technician | Investigates pollution sources and aids in developing prevention and protection plans by sampling and testing environmental materials.
+- 2133.15.1: Groundwater monitoring technician | Monitors the environment by gathering data through samples and performing tests in laboratories or fields to investigate pollution sources, while maintaining monitoring equipment.
+- 2133.2: Aquaculture environmental analyst | Assesses, plans, and implements programmes to recognise, monitor, and control environmental factors affecting the health of aquatic animals and plants.
+- 2133.3: conservation scientist | Conservation scientists manage the quality of specific forests, parks, and natural resources, protecting wildlife habitats, biodiversity, and scenic values through field work.
+- 2133.4: Countryside Officer | Professionals responsible for managing and maintaining the natural environment, public access, and recreation in open spaces and the countryside.
+- 2133.5: Ecologist | Assesses the health and distribution of organisms (people, plants, animals) and their relationship with the environment, specializing in areas such as freshwater, marine, terrestrial, fauna, or flora.
+- 2133.6: Environmental programme coordinator | Develops programmes to improve environmental sustainability and efficiency within an organization or institution.
+- 2133.7: Environmental scientist | Identifies problems and finds solutions to minimize environmental hazards by analyzing samples (air, water, soil), advising on policies, and managing waste disposal sites.
+- 2133.9: nature conservation officer | Nature conservation officers manage and improve the local environment across community sectors, promoting awareness and understanding of the natural environment through varied projects.
+- 2133.8: natural resources consultant | Provides advice on the protection and management of natural resources (fauna, flora, soil, water) to companies and governments, guiding sustainable exploitation policies and ensuring ecosystem conservation.
+- 2141.1: Clothing technologist | Clothing technologists work on the design, development, and production of textile and apparel products, ensuring quality and efficiency from pre-production to the final product.
+- 2141.10: process engineer | Process engineers apply engineering concepts to improve production and manufacturing processes regarding efficiency and productivity.
+- 2141.2: Food and beverage packaging technologist | Assesses appropriate packaging for various food products, manages packaging matters to ensure customer specifications and company targets, and develops packaging projects as required.
+- 2141.11: Textile Technologist | Optimizes textile manufacturing system management, developing and supervising production systems for spinning, weaving, knitting, and finishing using emerging technologies.
+- 2141.3: Homologation Engineer | Engineers responsible for the homologation process of new vehicles, components, and systems to ensure compliance with regulatory requirements for specific sales countries.
+- 2141.4: industrial engineer | Industrial engineers design production systems to deliver efficient and effective solutions by integrating variables such as workers, technology, ergonomics, production flows, and product specifications.
+- 2141.4.1: manufacturing engineer | Designs manufacturing processes by integrating industry-specific constraints and product requirements with general engineering principles.
+- 2141.4.2.1: automation engineer | Automation engineers research, design, and develop applications and systems to automate production processes, implementing technology to reduce human input and maximize industrial robotics potential.
+- 2141.4.2: Production Engineer | Production engineers review and evaluate production performance, perform data analysis, and identify under-performing production systems to plan enhancements and process optimizations.
+- 2141.4.2.2: food production engineer | Oversees electrical and mechanical needs of food and beverage manufacturing equipment to maximize plant productivity.
+- 2141.4.3: surface engineer | Surface engineers research and develop technologies for manufacturing processes that alter the properties of bulk material surfaces to reduce degradation by corrosion or wear.
+- 2141.6: Leather production planner | Leather production planners are responsible for planning and following production schedules, ensuring optimum material levels and quality in coordination with the warehouse, and meeting customer order requirements with marketing and sales.
+- 2141.5: Leather goods industrial engineer | Leather goods industrial engineers analyze technical specifications, define productive operations, and refine working methods to maximize productivity and reduce costs while ensuring product quality.
+- 2141.8: Maintenance and repair engineer | Engineers who focus on the optimization of equipment, procedures, machineries, and infrastructure to ensure maximum availability at minimum costs.
+- 2141.9: Packaging production manager | Professionals who define and analyze package units to prevent damage or quality loss, design packaging according to product specifications, and develop solutions for packaging problems.
+- 2142.1.1: Airport planning engineer | Airport planning engineers manage and coordinate the planning, design, and development programs in airports.
+- 2142.1: civil engineer | Civil engineers design, plan, and develop technical and engineering specifications for infrastructure and construction projects, optimizing materials and resources within time constraints.
+- 2142.1.11: Water engineer | Water engineers research and develop methods for the provision of clean water, water treatment, and flood damage prevention. They design and develop projects for managing water resources, including treatment plants, pipelines, pump systems, and irrigation or draining systems.
+- 2142.1.2: construction engineer | Construction engineers interpret building designs and add technical specifications to ensure structures are safe and resistant, integrating engineering principles to transform design ideas into executable plans.
+- 2142.1.3: drainage engineer | Drainage engineers design and construct drainage systems for sewers and storm water systems, ensuring compliance with legislation and environmental standards.
+- 2142.1.4: geological engineer | Geological engineers apply geological knowledge to assess sites, soils, slope stability, and sediments, integrating this data into project planning and development.
+- 2142.1.5: Hydropower engineer | Hydropower engineers research, design, and plan facilities that generate electricity from water movement, optimizing locations and materials for efficient energy production while analyzing environmental consequences.
+- 2142.1.7: Pipeline Engineer | Pipeline engineers design and develop engineering aspects for constructing pipeline infrastructures in various sites (e.g., inland, maritime) and create specifications for pumping systems and general goods transport.
+- 2142.1.9: transport engineer | Designs and sets engineering specifications for the construction and development of roadways and transport infrastructure, applying engineering concepts for sustainable and efficient transportation modes.
+- 2142.1.8: Rail project engineer | Rail project engineers maintain safe, cost-effective, high-quality, and environmentally responsible approaches across railway technical projects, providing management advice on construction, testing, commissioning, and site supervision.
+- 2143.1: Environmental Engineer | Environmental engineers integrate environmental and sustainable measures into various projects to preserve natural resources and sites.
+- 2143.1.1: Environmental mining engineer | Environmental mining engineers oversee the environmental performance of mining operations, developing and implementing systems to minimize environmental impacts.
+- 2143.1.3: recycling specialist | Recycling specialists research policies and legislation to supervise waste management implementation, ensuring compliance with regulations while advising on procedural improvements.
+- 2143.1.4: waste treatment engineer | Designs processes, facilities, and equipment for waste collection, treatment, and distribution to ensure environmental compliance and minimal ecological strain.
+- 2143.2: Environmental Expert | Environmental experts search for technological solutions to tackle environmental problems, detect and analyse issues, and develop new production processes to counter them.
+- 2143.3: wastewater engineer | Designs sewage systems and networks for the removal and treatment of wastewater from cities and residential areas, ensuring compliance with environmental standards.
+- 2144.1.1: aerospace engineer | Develops, tests, and oversees the manufacture of flight vehicles such as aircrafts, missiles, and spacecrafts.
+- 2144.1: mechanical engineer | Mechanical engineers research, plan and design mechanical products and systems and supervise the fabrication, operation, application, installation and repair of systems and products. They research and analyse data.
+- 2144.1.10: marine engineer | Marine engineers design, build, maintain, and repair hulls, mechanical, electronic equipment, and auxiliary systems like engines, pumps, heating, ventilation, and generator sets on various vessels.
+- 2144.1.11: mechatronics engineer | Designs and develops intelligent systems by combining mechanical, electronic, computer, and control engineering technologies.
+- 2144.1.1.1: Aerodynamics Engineer | Aerodynamics engineers perform analysis to ensure transport equipment designs meet aerodynamic and performance requirements, contributing to engine design and issuing technical reports.
+- 2144.1.12: Mine mechanical engineer | Supervises the procurement, installation, removal, and maintenance of mining mechanical equipment using knowledge of mechanical specifications.
+- 2144.1.15: optomechanical engineer | Optomechanical engineers design and develop optomechanical systems, devices, and components, such as optical mirrors and optical mounts, combining optical and mechanical engineering principles.
+- 2144.1.16: Packing machinery engineer | Engineers responsible for packaging machinery, focusing on maintenance, technical standard improvement, and operational analysis.
+- 2144.1.14: Naval Architect | Naval architects design, build, maintain, and repair all types of boats, ranging from pleasure crafts to naval vessels and submarines.
+- 2144.1.17: powertrain engineer | Designs propulsion mechanisms across the automotive sector, focusing on technical implementation of components and optimizing multiple energy sources.
+- 2144.1.18: Precision Engineer | Designs processes, machines, fixtures, and equipment with exceptionally low engineering tolerances that are repeatable and stable over time.
+- 2144.1.19: rolling stock engineer | Designs and oversees the manufacturing, installation, and maintenance of rail vehicles, including locomotives, carriages, and wagons.
+- 2144.1.2.1: agricultural equipment design engineer | Applies engineering and biological science to solve agricultural problems, designing structures, machinery, equipment, and processes.
+- 2144.1.2: agricultural engineer | Agricultural engineers apply engineering concepts to the agriculture field, designing machinery for efficient land exploitation and advising on resource usage.
+- 2144.1.21: Steam engineer | Steam engineers provide energy and utilities to facilities, such as steam, heat, and refrigeration.
+- 2144.1.20: Rotating equipment engineer | Develops designs and specifications for rotating equipment according to applicable standards and provides technical expertise to ensure proper installation of new and existing equipment.
+- 2144.1.22: Tooling Engineer | Designs new tools for manufacturing equipment, manages construction follow-up, and analyzes data to resolve tooling difficulties.
+- 2144.1.23: welding engineer | Welding engineers research and develop optimal welding techniques and design efficient equipment to aid the welding process. They conduct quality control, evaluate inspection procedures, and manage complex technical projects related to welding applications.
+- 2144.1.4: Container equipment design engineer | Designs equipment to contain products or liquids, such as boilers or pressure vessels, according to set specifications.
+- 2144.1.3: automotive engineer | Designs and oversees the manufacturing and operation of motor vehicles and their engineering systems, ensuring compliance with cost and technical constraints.
+- 2144.1.6: equipment engineer | Designs and maintains machinery and equipment in manufacturing facilities to ensure uninterrupted functioning and adapt to specific manufacturing requirements.
+- 2144.1.5: Engine designer | Engine designers carry out engineering duties in designing mechanical equipment such as machines and all types of engines. They also supervise their installation and maintenance.
+- 2145.1: chemical engineer | Designs and develops large-scale chemical and physical production processes, managing the industrial transformation of raw materials into products.
+- 2144.1.7: Fluid power engineer | Fluid power engineers supervise the assembly, installation, maintenance, and testing of fluid power equipment in accordance with specified manufacturing processes.
+- 2144.1.8: heating, ventilation, air conditioning engineer | Designs and develops heating, ventilation, air conditioning, and refrigeration systems for residences, commercial buildings, and manufacturing sites, balancing client needs with architectural constraints.
+- 2144.1.9: Industrial tool design engineer | Designs various industrial tools in accordance with customer needs, manufacturing requirements, and building specifications.
+- 2145.1.4: food technologist | Develops manufacturing processes for foodstuffs based on chemical, physical, and biological principles.
+- 2145.1.2: Brewmaster | Brewmasters ensure the brewing quality of current products and create mixtures for the development of new products.
+- 2145.1.5: gas distribution engineer | Designs and constructs natural gas transport systems, connecting distribution networks to consumers through piping works and mains.
+- 2145.1.1: biochemical engineer | Biochemical engineers research life science to discover new solutions, converting findings into chemical products that improve societal wellbeing, such as vaccines, tissue repair methods, improved crops, and green technologies like cleaner fuels.
+- 2145.1.6: gas production engineer | Gas production engineers develop methods to optimise the extraction and production of gas for energy and utilities.
+- 2145.1.7: oenologist | Oenologists track the wine manufacturing process in its entirety and supervise workers in wineries to ensure quality.
+- 2145.1.8: Paper engineer | Paper engineers ensure an optimal production process in the manufacture of paper and related products by managing raw materials, machinery, and chemical additives.
+- 2145.1.9: pharmaceutical engineer | Designs and develops technologies for pharmaceutical research and drug manufacturing, advises on plant operations, and ensures safety compliance.
+- 2145.2: rubber technologist | Rubber technologists develop compound formulations to meet specific needs and attain required in-rubber properties based on technical specifications and application demands.
+- 2146.1: assayer | Assayers test and analyse precious metals such as silver and gold to determine value and properties using chemical and physical techniques, and separate these metals from other materials.
+- 2145.3: Synthetic materials engineer | Develops new synthetic materials processes or improves existing ones, designs production installations, and examines raw material samples to ensure quality.
+- 2146.10: Petroleum Engineer | Petroleum engineers evaluate gas and oil fields, designing and developing methods for extracting hydrocarbons from the earth's surface while maximizing recovery at minimum cost with minimal environmental impact.
+- 2146.2: drilling engineer | Drilling engineers develop and supervise the drilling of gas and oil wells, assisting in design, testing, and creation on land or offshore platforms.
+- 2146.4: liquid fuel engineer | Liquid fuel engineers evaluate extraction sites and design methods to recover liquid fuels like petroleum, natural gas, and biodiesel from underground sources.
+- 2146.5: metallurgist | Specialists in the extraction and processing of metals like iron, steel, zinc, copper, and aluminium, focusing on molding, combining, and developing alloys for new shapes and properties.
+- 2146.5.1: chemical metallurgist | Chemical metallurgists are involved in the extraction of useable metals from ores and recycleable material. They study the properties of metal, such as corrosion and fatigue.
+- 2146.5.2: Process metallurgist | Process metallurgists study the characteristics of ores, including copper, nickel, and iron ores, and evaluate the performance of various metals and alloys.
+- 2146.7: mine health and safety engineer | Develops and implements systems and procedures to prevent employee injury and sickness, improve mine working conditions, reduce health and safety risks, and prevent damage to equipment and property.
+- 2146.6: mine development engineer | Mine development engineers design and coordinate mine development operations such as crosscutting, sinking, tunnelling, in-seam drivages, raising, and removing and replacing overburden.
+- 2146.9: Mineral processing engineer | Develops and manages equipment and techniques to process and refine valuable minerals from ore or raw mineral.
+- 2149.1: acoustical engineer | Acoustical engineers study and apply the science of sound to various applications, focusing on sound transmission in spaces and noise contamination compliance.
+- 2149.10.1: Fire prevention and protection engineer | Engineers who study, design, and develop innovative solutions to prevent fire and protect people, natural sites, and urban areas.
+- 2149.10: health and safety engineer | Designs objects and programs by combining engineering principles with health and safety requirements to ensure the protection and well-being of people using designed objects or performing work under specific safety programs.
+- 2149.11: materials engineer | Materials engineers research and design new or improved materials for diverse applications, analyzing composition and developing solutions for industry-specific use.
+- 2149.11.1: nanoengineer | Nanoengineers combine scientific knowledge of atomic and molecular particles with engineering principles to improve existing applications or create micro-objects across various fields.
+- 2149.11.2: Wood technology engineer | Wood technology engineers develop wood-based materials and components, construct production facilities, monitor manufacturing processes, and advise customers on product specifications.
+- 2149.12: optical engineer | Designs and develops industrial applications using optics, leveraging knowledge of light and transmission principles to create engineering specs for devices like microscopes, lenses, and telescopes.
+- 2149.12.1: photonics engineer | Engineers concerned with the generation, transmission, transformation, and detection of light, designing and deploying photonic systems across various application fields.
+- 2149.13: patent engineer | Patent engineers advise companies on intellectual property law, analyzing inventions and researching their economic potential.
+- 2149.14: quantity surveyor | Manages the complete cost of building and construction projects from inception to delivery, ensuring efficient resource use while maintaining quality standards and meeting client requirements.
+- 2149.15: robotics engineer | Designs and develops robotic devices and applications by combining mechanical engineering principles with computing, engineering, and electronics knowledge.
+- 2149.16: Test Engineer | Professionals who plan and execute detailed quality tests throughout the design process to ensure system installation and correct functionality, while analyzing data and producing reports.
+- 2149.17: textile, leather and footwear researcher | Researchers who combine material sciences, chemistry, physics, process technologies, management, and engineering to drive innovations in textile, apparel, leather, and footwear sectors through multidisciplinary collaboration.
+- 2149.2.1: Calculation Engineer | Calculation engineers draw conclusions about real systems regarding strength, stability, and durability by performing experiments on virtual models and testing production processes.
+- 2149.2: Application Engineer | Application engineers manage technical requirements and design for engineering applications, including systems, new product designs, and process improvements. They implement designs, provide technical support, and assist sales teams.
+- 2149.2.2: Component Engineer | Designs and envisions the engineering development of small parts composing larger projects, machines, or processes, ensuring parts do not conflict from an engineering perspective.
+- 2149.2.3: Contract Engineer | Contract engineers combine technical knowledge of contracts and legal matters with understanding of engineering specifications and principles to ensure alignment in project development.
+- 2149.2.4: Design Engineer | Design engineers develop new conceptual and detailed designs, creating the look for concepts or products and the systems used to manufacture them. They collaborate with engineers and marketers to enhance the functioning and efficiency of existing devices.
+- 2149.2.5: Installation engineer | Installation engineers oversee and manage the installation of complex structures and systems, ensuring safety, risk avoidance, and cost optimization while creating constructive designs.
+- 2149.2.7: Quality Engineer | Quality engineers define quality standards for products or services, verify compliance with these standards, and coordinate quality improvements.
+- 2149.2.6: logistics engineer | Designs and implements systems to optimize time and effort in transportation activities, ensuring micro-tracking and smooth communication across transport methods and stages.
+- 2149.2.7.1: compliance engineer | Ensures engineering systems comply with regulations, safety measures, and internal directives across mechanical, electrical, and electronic fields.
+- 2149.3: autonomous driving specialist | Designs and oversees the operation of autonomous vehicles, managing system performance and testing protocols.
+- 2149.2.8: research engineer | Research engineers combine research skills and engineering principles to develop new products, improve technical processes, and create innovative technologies.
+- 2149.4: Aviation ground systems engineer | Supervises the maintenance of airport equipment including visual aids, electrical systems, luggage systems, security systems, pavements, drainage, unpaved areas, and related vehicles.
+- 2149.5: bioengineer | Bioengineers combine state-of-the-art biological findings with engineering logics to develop solutions aimed at improving societal well-being.
+- 2149.5.1: biomedical engineer | Biomedical engineers combine engineering principles and biological findings to develop medical treatments, medicaments, and healthcare solutions.
+- 2149.6: Commissioning Engineer | Supervises the final stages of a project when systems are installed and tested, ensuring equipment, facilities, and plants meet requirements and specifications.
+- 2149.7: Dependability Engineer | Ensures the reliability, availability, and maintainability (RAM) of production processes or systems to guarantee uninterrupted operation and ease of repair.
+- 2149.9: energy engineer | Designs new, efficient, and clean ways to produce, transform, and distribute energy to improve environmental sustainability and energy efficiency.
+- 2149.8: Dismantling Engineer | Dismantling engineers research and plan the optimal way to dismantle industrial equipment, machinery, and buildings at end-of-life, analyzing requirements and scheduling operations.
+- 2149.9.1: Alternative fuels engineer | Designs and develops systems, components, motors, and equipment to replace fossil fuels with renewable and non-fossil energy sources for propulsion and power generation.
+- 2149.9.2: energy systems engineer | Supervises energy conversion and distribution processes, analyzing supply and consumption efficiency to improve technical and financial outcomes while studying environmental impacts and integrating renewable energy.
+- 2149.9.4: nuclear engineer | Plans and designs engineering equipment and processes in nuclear plants and sites, engaging in activities pertaining to nuclear power plants and developing risk solutions.
+- 2149.9.5: offshore renewable energy engineer | Designs and supervises the installation of offshore energy farms and equipment, researching optimal locations and ensuring design plan execution.
+- 2149.9.6: onshore wind energy engineer | Onshore wind energy engineers design, install, and maintain wind energy farms and equipment, focusing on efficient energy production and environmental sustainability.
+- 2149.9.7: renewable energy engineer | Engineers who research alternative energy sources to design systems for renewable energy production, focusing on sustainability, efficiency, and cost reduction.
+- 2149.9.8: solar energy engineer | Designs and constructs systems that generate electrical energy from sunlight, such as photovoltaic systems, optimizing energy output and production sustainability.
+- 2149.9.9: Thermal Engineer | Designs and constructs heating or cooling systems using thermodynamics to transfer heat or energy through liquids and gases, ensuring proper functionality through testing.
+- 2151.1: electrical engineer | Designs and develops electrical systems, equipment, components, motors, and energy transmission devices. Engages in large-scale projects like power station design and maintenance, as well as power distribution for smaller applications.
+- 2151.1.1: Electric power generation engineer | Designs and develops systems to generate electrical power and creates strategies to improve existing electricity generation systems.
+- 2151.1.2: electromagnetic engineer | Designs and develops electromagnetic systems, devices, and components, including electromagnets for loudspeakers, locks, MRI machines, and electric motors.
+- 2151.1.3: electromechanical engineer | Designs and develops equipment and machinery utilizing both electrical and mechanical technology, overseeing the manufacturing process.
+- 2151.1.4: Mine electrical engineer | Supervises the procurement, installation, and maintenance of mining electrical equipment using knowledge of electrical and electronic principles.
+- 2151.1.5: Power distribution engineer | Designs and operates facilities distributing power to consumers, optimizes distribution methods, and ensures safety compliance.
+- 2151.1.6: Substation Engineer | Substation engineers design medium and high voltage substations used for the transmission, distribution, and generation of electrical energy. They develop methods for the efficient operation of the energy process, and ensure compliance to safety and environmental standards.
+- 2151.2: smart home engineer | Responsible for the design, integration, and acceptance testing of home automation systems, including HVAC, lighting, security, and solar shading, ensuring connected devices function within residential facilities.
+- 2152.1: electronics engineer | Electronic engineers research, design, and develop electronic systems such as circuits, semiconductor devices, and equipment that use electricity as a source of power.
+- 2152.1.1: computer hardware engineer | Designs and develops computer hardware systems and components, such as circuit boards, modems, and printers.
+- 2152.1.11: optoelectronic engineer | Optoelectronic engineers design and develop optoelectronic systems and devices, such as UV sensors, photodiodes, and LEDs, combining optical and electronic engineering principles.
+- 2152.1.10: Microsystem engineer | Microsystem engineers research, design, develop, and supervise the production of microelectromechanical systems (MEMS) for integration into mechanical, optical, acoustic, and electronic products.
+- 2152.1.12: Power electronics engineer | Designs and tests circuits for power electronics systems, identifies flaws in mechanical designs, and collaborates on cross-functional testing tasks.
+- 2152.1.13: Predictive maintenance expert | Analyses data from sensors in factories, machinery, vehicles, and railroads to monitor conditions, inform users, and notify the need for maintenance.
+- 2152.1.15: sensor engineer | Sensor engineers design and develop sensors, sensor systems, and products equipped with sensors, while planning and monitoring their manufacture.
+- 2152.1.3: Instrumentation Engineer | Instrumentation engineers envision and design equipment used in manufacturing processes for controlling and monitoring various engineering processes remotely.
+- 2152.1.14: Satellite Engineer | Develops, tests, and oversees the manufacture of satellite systems and programmes, including command and control systems.
+- 2152.1.2: Flight test engineer | Flight test engineers collaborate with systems engineers to plan detailed tests, ensure recording systems are installed for required data parameters, analyze collected data, produce reports for test phases and final flights, and ensure the safety of test operations.
+- 2152.1.4: Language engineer | Language engineers work within computing science and natural language processing to improve machine translation accuracy. They bridge the gap between human and machine translation by parsing texts, comparing mappings, and refining linguistics through programming.
+- 2152.1.5: medical device engineer | Designs and develops medical-technical systems, installations, and equipment such as pacemakers, MRI scanners, and X-ray machines, monitoring the process from concept to implementation.
+- 2152.1.6: microelectronics designer | Develops and designs microelectronic systems from the top packaging level down to the integrated circuit level, integrating system-level understanding with analogue and digital circuit knowledge.
+- 2152.1.7: Microelectronics engineer | Designs, develops, and supervises the production of small electronic devices and components such as micro-processors and integrated circuits.
+- 2152.1.7.1: integrated circuit design engineer | Designs the layout for integrated circuits according to electronics engineering principles using software to create design schematics and diagrams.
+- 2152.1.9: Microelectronics smart manufacturing engineer | Designs, plans, and supervises the manufacturing and assembly of electronic devices (e.g., integrated circuits, automotive electronics, smartphones) within an Industry 4.0 compliant environment.
+- 2152.1.8: Microelectronics materials engineer | Designs, develops, and supervises the production of materials for microelectronics and MEMS, applying physical and chemical knowledge to aid device design and investigate failure mechanisms.
+- 2153.1: telecommunications engineer | Designs, builds, tests, and maintains telecommunication systems and networks, including radio and broadcasting equipment.
+- 2153.1.1: telecommunications analyst | Telecommunications analysts review, analyse and evaluate an organisation's telecommunications needs and systems. They provide training on the telecommunications system features and functionalities.
+- 2161.1: architect | Architects investigate, design, and oversee the construction and development of buildings, urban spaces, infrastructure projects, and social spaces, adhering to regulations and considering function, aesthetics, costs, and safety.
+- 2161.1.1: interior architect | Interior architects create plans for the interior of homes, buildings, or structures, determining space specifications and distribution while combining spatial understanding with aesthetics to ensure harmonious design.
+- 2162.1: landscape architect | Professionals who plan and design the construction of gardens and natural spaces, combining natural understanding with aesthetics to create harmonious environments.
+- 2162.1.1: landscape designer | Designs and creates outdoor public areas, landmarks, structures, parks, gardens, and private gardens to achieve environmental, social-behavioral, or aesthetic outcomes.
+- 2163.1: industrial designer | Industrial designers work out ideas and develop them into designs and concepts for a wide variety of manufactured products.
+- 2163.1.2: costume designer | Develops costume design concepts for events, performances, movies, or TV programs based on research and artistic vision, supervising execution while collaborating with artistic directors and teams.
+- 2163.1.1: automotive designer | Creates 2D/3D model designs and isometric drawings for vehicles, collaborating with hardware engineers on advanced systems like driver-assistance and vehicle-to-everything technologies.
+- 2163.1.3: fashion designer | Professionals who create designs for haute couture, ready-to-wear, and high street fashion markets, covering clothing, footwear, and accessories.
+- 2163.1.3.1: clothing fashion designer | Professionals who create concepts and sketches for clothing, analyze fashion trends, and develop collections based on market research and aesthetic criteria.
+- 2163.1.3.3: leather goods designer | Leather goods designers manage the creative process of leather goods, including trend analysis, market research, collection planning, and prototype development.
+- 2163.1.3.2: Footwear Designer | Professionals who analyze fashion trends, create footwear concepts, and develop prototypes to promote collection lines.
+- 2163.1.4: furniture designer | Furniture designers work on items of furniture and related products, combining innovative design, functional requirements, and aesthetic appeal.
+- 2163.1.8: textile designer | Textile designers conceptualise textile products considering visual communication and functional performance.
+- 2163.1.6: Model maker | Creates three-dimensional scale models or designs for various purposes, such as anatomical representations, and mounts them on display stands for educational or display use.
+- 2163.1.5: jewellery designer | Designs and plans jewellery pieces using materials like gold, silver, and precious stones for wearable or decorative purposes, covering stages from concept to production for individual or mass markets.
+- 2163.1.7: Puppet Designer | Designs and creates puppets and manipulable objects for performers based on research and artistic vision, often incorporating robotic elements.
+- 2163.3: Textile colourist | Textile colourists prepare, develop and create colours for textile applications.
+- 2163.2: leather goods product developer | Leather goods product developers bridge design and production by analyzing specifications, transforming concepts into technical requirements, and selecting materials and components for manufacturing.
+- 2163.4: textile product developer | Innovates and performs product design for apparel, home, and technical textiles by applying scientific and technical principles.
+- 2164.1: land planner | Professionals who visit sites to create projects and plans for land usage and development, collecting and analyzing data to advise on efficiency and safety.
+- 2164.3: transport planner | Develops and implements policies to improve transport systems by analyzing social, environmental, and economic factors.
+- 2164.2: Mobility services manager | Manages strategic development and implementation of sustainable mobility programs, including bike sharing, e-scooter sharing, carsharing, ride hailing, and parking management to reduce costs and meet community transportation needs.
+- 2164.4: urban planner | Urban planners create development plans for towns, urban areas, cities, and regions by researching community needs and evaluating parameters like sustainability.
+- 2165.1: cadastral technician | Designs and creates maps and blueprints, converting measurement results into the real estate cadastre. Defines property boundaries, ownerships, and land use using measurement equipment and specialized software.
+- 2165.2: Cartographer | Creates maps by combining scientific information, mathematical measurements, and aesthetic visual depiction for various purposes such as topographic, urban, or political mapping.
+- 2165.4: land surveyor | Land surveyors determine distances and positions of points at the surface of sites for construction purposes using specialised equipment.
+- 2165.3: geographic information systems specialist | Specialists who use computer systems, engineering measures, and geological concepts to process land and geospatial information into digital maps and geomodels.
+- 2165.4.1: hydrographic surveyor | Hydrographic surveyors measure and map marine environments using specialized equipment to collect scientific data on underwater topography and morphology.
+- 2166.10: illustrator | Illustrators provide a visual representation that corresponds to the content of the associated text or idea, working for books, magazines, journals, comic books, and other publications.
+- 2165.4.2: mine surveyor | Mine surveyors prepare and maintain mining plans in line with statutory and management requirements, while keeping records of physical progress and production.
+- 2166.1: 3D modeller | Designs 3D models of objects, virtual environments, layouts, characters, and 3D virtual animated agents.
+- 2166.11: Performance lighting designer | Develops lighting design concepts for performances based on research and artistic vision, supervising execution to align with the overall artistic direction.
+- 2166.13: Special effects artist | Special effects artists create illusions for movies, videos, and computer games using computer software.
+- 2166.14: stop-motion animator | Creates animations by using puppets or clay models.
+- 2166.12: Performance video designer | Develops projected image design concepts for performances and supervises their execution based on research and artistic vision.
+- 2166.2: animation layout artist | Animation layout artists coordinate with cameramen and directors to create optimal 3D animation shots, translating 2D storyboards into 3D scenes.
+- 2166.3: animator | Animators use software to create animations by rapidly sequencing images to create an illusion of movement.
+- 2166.3.1: 3D animator | Professionals responsible for animating 3D models of objects, virtual environments, layouts, characters, and virtual animated agents.
+- 2166.4: Desktop publisher | Desktop publishers are responsible for the layout of publications, using computer software to arrange texts, photographs, and other materials into a pleasing and readable finished product.
+- 2166.5: digital artist | Creates art applying digital technology as an essential part of the creative process, typically using computers or specialized digital equipment.
+- 2166.6: digital games designer | Develops the layout, logic, concept, and gameplay of digital games, focusing on playfield design, specification writing, and tuning gameplay through numeric properties.
+- 2166.8: gambling games designer | Designs innovative gambling, betting, and lottery games, determining their design, rules, and structure.
+- 2166.7: digital media designer | Creates and edits graphics, animations, sound, text, and video for integrated multimedia products, including web, social networks, AR, and VR.
+- 2166.9: Graphic Designer | Creates text and images to communicate ideas, making visual concepts by hand or using computer software for paper or online media.
+- 2212.1: specialised doctor | Specialised doctors prevent, diagnose and treat diseases depending on their medical or surgical specialty.
+- 2211.1: general practitioner | Promotes health, prevents, identifies, diagnoses, and treats diseases and health disorders for all persons regardless of age, sex, or problem type.
+- 2221.1: Advanced nurse practitioner | General care nurses with expert knowledge and complex decision-making skills who promote health, provide diagnosis and care in advanced settings, manage chronic diseases, and supervise team members.
+- 2221.2: nurse responsible for general care | Nurses who promote and restore patient health through physical and psychological support to patients, friends, and families, while supervising assigned team members.
+- 2222.1: midwife | Midwives assist women in childbirth by providing support, care, and advice during pregnancy, labour, and the postpartum period, while conducting births and caring for the new-born.
+- 2221.3: Specialist nurse | Promotes and restores people's health, and diagnoses and cares for patients within a specific branch of the nursing field.
+- 2230.1: Aromatherapist | Aromatherapists use essential oils extracted from herbal products at the interface of skin and mucous membranes to improve client well-being, treating various physical or psychological conditions under supervision and on a doctor's order.
+- 2230.2: complementary therapist | Complementary therapists use a range of complementary and alternative therapies to work simultaneously with the clients' body, mind, and spirit in a holistic approach.
+- 2230.2.1: acupuncturist | Acupuncturists use thin needles inserted into specific body points to restore energy meridian imbalances and promote overall health.
+- 2230.2.2: Homeopath | A professional who treats clients by selecting and prescribing homeopathic remedies based on the principle of 'like cures like'.
+- 2250.1: Animal chiropractor | Provides therapeutic treatment following veterinary diagnosis or referral, concentrating on spinal manipulation or manual therapy for animals in accordance with national legislation.
+- 2230.2.3: Traditional Chinese Medicine Therapist | A professional who uses alternative medicine approaches to cure illnesses and enhance general health through therapies like herbal medicine, acupuncture, massage, and dietary regimens.
+- 2250.3: animal physiotherapist | Provides therapeutic treatment following veterinary diagnosis or referral, applying physical therapy and exercise procedures to support animal rehabilitation after surgery or injury.
+- 2250.2: animal osteopath | Animal osteopaths provide therapeutic treatments following veterinary diagnosis or referral, utilizing body tissue manipulation to resolve strain and injury in animals in accordance with national legislation.
+- 2250.4: animal therapist | Animal therapists provide therapeutic treatment following a veterinary diagnosis or referral.
+- 2250.4.1: Animal hydrotherapist | Provides therapeutic water-based treatments for animals following veterinary diagnosis or referral to treat conditions, assist recovery, and enhance fitness.
+- 2250.4.2: Animal massage therapist | Provides therapeutic treatment following veterinary diagnosis or referral, focusing on manual and mechanical manipulation of soft tissues to promote healing and recovery in animals in accordance with national legislation.
+- 2250.5: Aquatic animal health professional | Diagnoses, prevents, and treats diseases, injuries, and dysfunctions in aquatic animals through sampling protocols, medicine supervision, and health data reporting.
+- 2250.6: general veterinarian | Professionals with comprehensive scientific education authorized to independently practice all aspects of veterinary medicine for animal health, welfare, and public health in accordance with legislation.
+- 2250.7: Official veterinarian | Professionals with comprehensive scientific education authorized to independently perform veterinary activities focused on animal health, welfare, and public health in accordance with national and international legislation.
+- 2250.9: veterinary scientist | Develops and conducts research in animal models, compares basic biology across species, and translates research findings to different animals, including humans.
+- 2250.8: specialised veterinarian | Professionals with comprehensive scientific education and recognized qualifications in specific species or procedures who independently practice veterinary medicine to ensure animal health, welfare, and public safety.
+- 2261.1: dental practitioner | Dental practitioners prevent, diagnose and treat anomalies and diseases affecting the teeth, mouth, jaws and adjoining tissues.
+- 2261.2: Specialist dentist | Specialist dentists prevent, diagnose and treat anomalies and diseases affecting the teeth, mouth, jaws and adjoining tissues, with specialization in oral surgery or orthodontics.
+- 2262.1.1: pharmaceutical quality specialist | Pharmaceutical quality specialists perform inspections and precision measurements to test and ensure the quality of pharmaceutical products throughout the development phase until market readiness.
+- 2262.1: pharmacist | Pharmacists prepare, dispense, and provide prescriptions for over-the-counter medication. They offer clinical information on medicines, report suspected adverse reactions, and provide personalized support to patients. They also formulate and test medications in laboratories, and store, preserve, and distribute them.
+- 2262.1.2: Specialist Pharmacist | Provides specialist services for companies in the pharmacy industry and in hospital pharmacies, with roles varying by national rules and training.
+- 2262.1.2.1: hospital pharmacist | Hospital pharmacists prepare, dispense, and provide medication to patients in hospitals, collaborating with healthcare personnel to treat patients and offering advice on medications.
+- 2262.1.2.2: industrial pharmacist | Industrial pharmacists are involved in the research and creation of medications, developing new medicines, performing tests, assuring quality, and ensuring regulatory compliance.
+- 2263.2: Food safety specialist | Food safety specialists organise processes and implement procedures to avoid problems with food safety, ensuring strict compliance with relevant regulations.
+- 2263.1: Emergency response coordinator | Professionals who analyse potential risks for communities or institutions, develop reaction strategies, outline emergency guidelines, educate at-risk parties, and test response plans to ensure compliance with health and safety regulations.
+- 2263.3.1: ergonomist | Analyses the design of equipment, furniture, and systems to improve safety, health, and efficiency, focusing on optimizing human interaction with the environment.
+- 2263.3: health and safety officer | Executes plans to improve work environments and cultures by assessing risks, interviewing employees, and ensuring compliance with health and safety rules.
+- 2263.5: radiation protection officer | Radiation protection officers are responsible for the protection from harmful effects caused by exposure to ionising radiation. They ensure compliance with legislation and regulations by enforcing safety measures. Furthermore they develop radiation protection plans in particular for nuclear plants and facilities.
+- 2264.1: Advanced physiotherapist | Highly specialised professionals who make complex decisions and manage risks in unpredictable contexts within a defined area of clinical practice, education, research, or professional management.
+- 2264.2: physiotherapist | Autonomous health professionals who develop, maintain, or restore motor function and movement using evidence-based practice to relieve pain and treat physical conditions.
+- 2265.1: Dietitian | Dietitians assess nutritional requirements for individuals and populations, translating evidence-based advice to maintain, reduce risk to, or restore health. They empower people to select safe, nutritious, and sustainable food while improving the nutritional environment across various sectors.
+- 2265.1.1: Prepared meals nutritionist | Prepared meals nutritionists value ingredients, manufacturing processes, and foodstuffs to assure nutritional quality and suitability of prepared meals and dishes.
+- 2266.1: audiologist | Audiologists assess, diagnose, and treat patients with audiological and vestibular disorders caused by infectious, genetic, traumatic, or degenerative conditions.
+- 2267.1: optometrist | Optometrists examine and test eyes to identify abnormalities, visual problems, or disease. They prescribe and fit lenses such as spectacles and contacts, and offer advice on visual problems. They may also refer patients to a medical practitioner.
+- 2266.2: speech and language therapist | Professionals who focus on the aetiology, assessment, diagnosis, treatment, and prevention of communication and swallowing disorders in people of all ages to help them maintain, promote, improve, initiate, or recover verbal and nonverbal communication abilities.
+- 2267.2: orthoptist | Orthoptists diagnose and treat anomalies of binocular vision, examining and assessing vision impairments, squint, amblyopia, and eye motility disorders to improve functional disorders of the visual system.
+- 2269.1: Chiropractor | Independent primary health care professionals who diagnose, treat, and prevent disorders of the neuromusculoskeletal system and their effects on general health.
+- 2269.11: osteopath | Osteopaths provide therapeutic treatment of disorders in the musculoskeletal system to patients with physical issues such as back pain, joint pain and digestive disorders.
+- 2269.10: Specialist chiropractor | A specialist chiropractor possesses advanced knowledge and complex decision-making skills within a specific chiropractic field, often acquired through advanced studies.
+- 2269.3: medical physics expert | Medical physics experts advise on radiation physics applied to medical exposure, ensuring patient and public safety through dosimetry and radiation protection optimization.
+- 2269.2: kinesiologist | Kinesiologists study and research body movement, muscles, and parts. They use scientific data and methods to improve body motion in humans by understanding physiology, kinetics, neurology, and biology.
+- 2269.4: Occupational therapist | Assists individuals or groups with occupational limitations due to diseases, physical disorders, or mental disabilities in regaining the ability to perform daily activities and participate actively in society.
+- 2269.5: Occupational therapy assistant | Supports occupational therapists by working with people and communities to enhance their ability to engage in desired, needed, or expected occupations, or by modifying the occupation or environment to better support engagement.
+- 2269.6: podiatrist | Foot specialists who study foot physiology and pathology from a structural and functional standpoint to assess, diagnose, and treat physical, sporting, medical, and surgical problems of the foot and lower limb.
+- 2269.7: Podiatry Assistant | Supports podiatrists in diagnosing and treating foot disorders, advising on foot care techniques, and performing minor clinical and clerical duties to promote mobility and well-being.
+- 2269.8: radiographer | Radiographers use a range of technologies to examine, treat and care for patients in Medical Imaging, Radiotherapy, and Nuclear Medicine.
+- 2269.8.1: diagnostic radiographer | Plans, prepares, and performs diagnostic imaging examinations and post-processing using X-rays, MRI, and Ultrasound.
+- 2269.8.2: nuclear medicine radiographer | Plans, prepares, and performs nuclear medicine examinations, post-processing, and treatments using X-rays, magnetic resonance imaging, and radiopharmaceuticals.
+- 2269.9: recreational therapist | Offers treatment to persons with behavioural disorders or conditions using techniques and interventions such as art, music, animals, and dance to promote, maintain, and restore development and health.
+- 2269.9.1: Animal assisted therapist | Provides support to individuals with cognitive, motoric, or social-emotional disabilities through animal assisted intervention, aiming to restore and maintain well-being and recovery.
+- 2269.9.2: art therapist | Art therapists help patients overcome psychological and emotional difficulties through an artistic process that reflects emotions and feelings, focusing on those with mental, psychological, and behavioural disorders to facilitate self-understanding and awareness.
+- 2269.9.3: Dance therapist | Dance therapists support individuals with emotional, mental, or physical health problems by improving body awareness, self-esteem, social integration, and personal development through dance and movement patterns in a therapeutic environment.
+- 2269.9.4: music therapist | Professionals who use music-therapeutic interventions to treat patients with behavioral disorders and pathogenic conditions, aiming to prevent, mitigate, or eliminate symptoms and change behaviors and attitudes.
+- 2310.1: Higher education lecturer | Instructs students with upper secondary diplomas in specialized academic fields, holding titles such as senior lecturer or professor.
+- 2310.1.1: anthropology lecturer | Subject professors or lecturers who instruct students in anthropology at the upper secondary education level, conducting academic research and collaborating with university assistants.
+- 2310.1.10: communications lecturer | Subject professors or lecturers who instruct students with an upper secondary education diploma in the specialized field of communications, focusing on academic instruction.
+- 2310.1.11: computer science lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of computer science, focusing on academic instruction.
+- 2310.1.12: Dentistry lecturer | Subject professors or lecturers, often doctors, who instruct students with upper secondary education in the specialized field of dentistry through academic teaching.
+- 2310.1.13: Earth science lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of earth science, primarily in an academic setting.
+- 2310.1.14: Economics Lecturer | Subject professors and lecturers who instruct students in economics, develop curriculum, and conduct academic research.
+- 2310.1.16: Engineering Lecturer | Subject professors or lecturers who instruct students with upper secondary education diplomas in specialized engineering fields, primarily within an academic university setting.
+- 2310.1.15: education studies lecturer | Professors or lecturers who instruct students with upper secondary education diplomas in the specialized field of education studies to prepare them for teaching careers.
+- 2310.1.17: Fine arts instructor | Educates students in theory and practice-based fine arts courses at specialized higher education institutions, focusing on skills like drawing, painting, and sculpturing.
+- 2310.1.18: food science lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of food science, conducting academic research and teaching.
+- 2310.1.19: healthcare specialist lecturer | Subject professors, teachers, or lecturers, often doctors, who instruct students with upper secondary education diplomas in specialized healthcare fields through academic instruction.
+- 2310.1.2: archaeology lecturer | Subject professors and lecturers who instruct students in archaeology at the university level, conducting academic research and preparing educational materials.
+- 2310.1.20: History lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of history, focusing on academic instruction and research.
+- 2310.1.21: journalism lecturer | Subject professors and lecturers who instruct students with upper secondary education in the specialized field of journalism and media within an academic context.
+- 2310.1.22: law lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of law, conducting academic research and teaching.
+- 2310.1.23: Linguistics lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of linguistics, primarily in an academic setting.
+- 2310.1.25: Medicine lecturer | Subject professors, teachers, or lecturers who instruct students with an upper secondary education diploma in the specialized field of medicine. They are often doctors working in an academic setting.
+- 2310.1.24: Mathematics Lecturer | Instructs students with upper secondary education in specialized academic mathematics, conducts research, and collaborates with university staff on teaching and assessment.
+- 2310.1.26: Modern languages lecturer | Subject professors or lecturers who instruct students with upper secondary education in modern languages within an academic context.
+- 2310.1.27: music instructor | Educates students in music theory and practice-based courses at specialized music schools or conservatories, focusing on instruments and vocal training.
+- 2310.1.28: nursing lecturer | Subject professors, teachers, or lecturers, often doctors, who instruct students with an upper secondary education diploma in the specialized field of nursing through academic instruction.
+- 2310.1.3: architecture lecturer | Subject professors or lecturers who instruct students with upper secondary diplomas in the specialized field of architecture, focusing on academic instruction.
+- 2310.1.29: Performing arts school dance instructor | Educates students in specific theory and practice-based dance courses at specialized dance schools or conservatories at a higher education level.
+- 2310.1.30: performing arts theatre instructor | Educates students in specific theory and practice-based theatre courses at specialized higher education institutions, focusing on mastering practical skills and techniques.
+- 2310.1.31: pharmacy lecturer | Subject professors or lecturers who instruct students with upper secondary education in pharmacy, focusing on academic instruction within a university setting.
+- 2310.1.32: philosophy lecturer | Subject professors or lecturers who instruct students with an upper secondary diploma in the specialized field of philosophy, focusing on academic instruction.
+- 2310.1.33: physics lecturer | Subject professors or lecturers who instruct students with upper secondary education diplomas in the specialized field of physics, primarily in an academic setting.
+- 2310.1.34: politics lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of politics, conducting academic research and teaching.
+- 2310.1.35: Psychology lecturer | Subject professors or lecturers who instruct students with an upper secondary education diploma in the specialized field of psychology, focusing on academic instruction.
+- 2310.1.36: religious studies lecturer | Subject professors or lecturers who instruct students with upper secondary education in theology, focusing on academic study.
+- 2310.1.37: social work lecturer | Professionals who combine academic discipline practice with professional education, research, and knowledge development to address complex social problems.
+- 2310.1.38: Sociology Lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of sociology, conducting academic research and teaching.
+- 2310.1.4: art studies lecturer | Subject professors or lecturers who instruct students with upper secondary education in specialized academic art studies.
+- 2310.1.39: space science lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of space science, conducting academic research and teaching.
+- 2310.1.40: university literature lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of literature within an academic context.
+- 2310.1.41: University research assistant | University research assistants conduct academic research for their employing university or college, assisting professors or developing independent research within related fields.
+- 2310.1.42: university teaching assistant | Graduate students or recent graduates employed on temporary contracts to support teaching staff with course preparation, assessment, and student feedback.
+- 2310.1.43: veterinary medicine lecturer | Subject professors or lecturers who instruct students in veterinary medicine, often holding doctorates, focusing on academic instruction within specialized fields.
+- 2310.1.5: assistant lecturer | An autonomous, full-time academic role sharing a lecturer's workload by delivering lectures, preparing classes, and conducting private student evaluations while maintaining independent research in their field.
+- 2310.1.6: Biology Lecturer | Subject professors or lecturers who instruct students with upper secondary education diplomas in specialized biology fields, conducting research and teaching.
+- 2310.1.7: business lecturer | Subject professors or lecturers who instruct students with upper secondary education in specialized business fields, conducting academic research and teaching.
+- 2310.1.8: Chemistry Lecturer | Subject professors or lecturers who instruct students with upper secondary education in the specialized field of chemistry, focusing on academic instruction.
+- 2310.1.9: Classical languages lecturer | Subject professors or lecturers who instruct students with upper secondary education in classical languages within an academic setting.
+- 2310.2: social work practice educator | Educators who teach, supervise, and assess social work students before, during, and after their degree completion, holding authority to recommend students based on evidence.
+- 2320.1: Vocational teacher | Instructs students in specialised, predominantly practical fields of study, providing theoretical instruction to support the mastery of practical skills and techniques.
+- 2320.1.1: Agriculture, Forestry and Fishery Vocational Teacher | Instructs students in the specialised fields of agriculture, forestry, and fishery, providing theoretical instruction to support the mastery of practical skills and techniques required for these professions.
+- 2320.1.10: Electricity and energy vocational teacher | Instructs students in the practical field of electricity and energy, providing theoretical instruction to support the mastery of necessary professional skills and techniques.
+- 2320.1.11: electronics and automation vocational teacher | Instructs students in the practical field of electronics and automation, providing theoretical instruction to support the mastery of skills required for professions such as electrician or production automation technician.
+- 2320.1.12: firefighter instructor | Trains probationary recruits and cadets on the theory and practice required to become firefighters through lectures and hands-on instruction.
+- 2320.1.13: Food service vocational teacher | Instructs students in the practical and theoretical aspects of food service to prepare them for related professions.
+- 2320.1.15: hospitality vocational teacher | Instructs students in the practical field of hospitality, providing theoretical instruction to support the mastery of specific professional skills and techniques.
+- 2320.1.14: hairdressing vocational teacher | Instructs students in the practical field of hairdressing, providing theoretical instruction to support skill mastery, monitoring progress, and evaluating performance through assignments and examinations.
+- 2320.1.16: Industrial arts vocational teacher | Instructs students in industrial arts, a practical field involving theoretical and technical training for professions like carpentry and sheet metal work.
+- 2320.1.18: medical laboratory technology vocational teacher | Instructs students in the practical field of medical laboratory technology, providing theoretical instruction to support the mastery of necessary skills and techniques.
+- 2320.1.17: Maritime Instructor | Maritime instructors teach occupationally piloting personnel, such as skippers and ship captains, how to operate inland water boats and maritime ships according to regulations.
+- 2320.1.19: Occupational driving instructor | Occupational driving instructors teach occupational drivers how to operate vehicles according to regulations, covering theory, optimal driving techniques, and vehicle maintenance.
+- 2320.1.2: Air traffic instructor | Trains personnel in air navigation service operations, including flight traffic management and aerodrome communication directives to ensure safety and expeditious flow.
+- 2320.1.21: Physical education vocational teacher | Instructs students in the practical field of physical education, providing theoretical instruction to support the mastery of professional skills and techniques required for related careers.
+- 2320.1.20: Occupational railway instructor | Trains future railway drivers (train, tram, metro, trolley) on vehicle operation, regulations, maintenance, and safety.
+- 2320.1.22: police trainer | Trains probationary recruits, cadets, and seasoned veterans on the theory and practice required to become police officers through lectures and hands-on instruction.
+- 2320.1.23: Transport technology vocational teacher | Instructs students in the practical field of transport technology, providing theoretical instruction to support the mastery of specific professional skills and techniques.
+- 2320.1.24: Travel and tourism vocational teacher | Instructs students in the practical field of travel and tourism, providing theoretical instruction to support the mastery of necessary professional skills and techniques.
+- 2320.1.3: armed forces training and education officer | Trains probationary recruits, academy cadets, or new soldiers on the theory and practice required for military service, requiring prior experience as a military officer.
+- 2320.1.5: Beauty vocational teacher | Instructs students in the practical field of beauty, providing theoretical instruction to support the mastery of cosmetology-related skills and techniques.
+- 2320.1.4: Auxiliary nursing and midwifery vocational teacher | Instructs students in auxiliary nursing and midwifery, providing theoretical instruction to support practical skill mastery, monitoring progress, and evaluating performance.
+- 2320.1.6: business administration vocational teacher | Instructs students in the practical field of business administration, providing theoretical instruction to support the mastery of professional skills for roles such as accountant or banker.
+- 2320.1.7: Business and marketing vocational teacher | Instructs students in specialized sales and marketing fields, providing theoretical instruction to support practical skill mastery.
+- 2320.1.8: Cabin crew instructor | Teaches trainees all matters regarding aircraft cabin operations, including safety procedures, service equipment, and client service formalities.
+- 2320.1.9: Design and applied arts vocational teacher | Instructs students in specialised applied arts and crafts fields, providing theoretical instruction to support practical skill mastery for professions like graphic or interior design.
+- 2330.1: secondary school teacher | Specialist subject teachers who provide education to students in a secondary school setting.
+- 2330.1.1: art teacher secondary school | Art teachers at secondary schools provide specialized education to students in art, preparing lesson plans, monitoring progress, and evaluating performance through assignments and examinations.
+- 2330.1.10: literature teacher at secondary school | Specialized subject teachers who instruct students in literature within a secondary school setting.
+- 2330.1.11: Mathematics teacher at secondary school | Specialized educators who instruct students in mathematics within secondary school settings, focusing on curriculum delivery and student assessment.
+- 2330.1.12: Modern languages teacher, secondary school | Specialized subject teachers at secondary schools who instruct students in modern languages, preparing lesson plans and monitoring progress.
+- 2330.1.13: music teacher secondary school | Specialized subject teachers at secondary schools who instruct students in music, preparing lesson plans, monitoring progress, and evaluating performance through assignments and examinations.
+- 2330.1.14: philosophy teacher secondary school | Philosophy teachers at secondary schools provide education to students in a secondary school setting, specializing in the field of philosophy.
+- 2330.1.15: physical education teacher secondary school | Specialized subject teachers at secondary schools who instruct students in physical education, focusing on practical physical activities and student development.
+- 2330.1.16: physics teacher secondary school | Specialized educators at secondary schools who instruct students in physics, preparing lesson plans, monitoring progress, and evaluating knowledge through assessments.
+- 2330.1.17: religious education teacher at secondary school | Specialized subject teachers who instruct students in religion within a secondary school setting, focusing on the field of religious studies.
+- 2330.1.18: science teacher secondary school | Science teachers at secondary schools provide specialized education to students in science subjects, preparing lesson plans, monitoring progress, and evaluating knowledge through assessments.
+- 2330.1.2: biology teacher secondary school | Specialized educators at secondary schools who instruct students in biology, preparing lesson plans, monitoring progress, and evaluating knowledge through assessments.
+- 2330.1.3: business studies and economics teacher secondary school | Specialized subject teachers at secondary schools who instruct students in business and economics, preparing lesson plans and monitoring progress.
+- 2330.1.4: chemistry teacher secondary school | Specialized educators at secondary schools who instruct students in chemistry, preparing lesson plans, monitoring progress, and evaluating knowledge through assessments.
+- 2330.1.5: Classical languages teacher, secondary school | Specialized subject teachers at secondary schools who instruct students in classical languages, preparing lesson plans, monitoring progress, and evaluating performance through assignments and tests.
+- 2330.1.6: drama teacher secondary school | Specialized subject teachers at secondary schools who instruct students in drama, preparing lesson plans, monitoring progress, and evaluating performance through assignments and examinations.
+- 2330.1.7: geography teacher secondary school | Specialized educators at secondary schools who instruct students in geography, preparing lesson plans, monitoring progress, and evaluating knowledge through assessments.
+- 2330.1.8: history teacher secondary school | History teachers at secondary schools provide specialized education to students in history, preparing lesson plans, monitoring progress, and evaluating knowledge through assignments and examinations.
+- 2330.1.9: ICT teacher secondary school | ICT teachers at secondary schools provide specialized education in Information and Communication Technology to students, preparing lesson plans, monitoring progress, and evaluating knowledge through assignments and examinations.
+- 2341.1: primary school teacher | Instructs students at a primary school level, developing lesson plans aligned with curriculum objectives for subjects including mathematics, languages, nature studies, and music.
+- 2341.1.1: Steiner school teacher | Educates students using Waldorf Steiner philosophy, emphasizing practical, hands-on activities to develop social, creative, and artistic capacities.
+- 2342.1: early years teacher | Instructs young children in basic subjects and creative play to develop social and intellectual skills informally, preparing them for formal learning.
+- 2342.2: Freinet school teacher | Educates students using Freinet philosophy, focusing on enquiry-based, democratic, and cooperative learning methods where students develop interests through trial and error and self-government.
+- 2342.3: Montessori school teacher | Educates students using Montessori philosophy, focusing on constructivist and 'learning through discovery' models that encourage first-hand experience and high levels of student freedom.
+- 2351.1: Curriculum Administrator | Professionals who develop and improve education institution curricula by analyzing quality, collaborating with education professionals, and reporting on developments.
+- 2351.2: educational researcher | Educational researchers perform research in the area of education to broaden knowledge on processes, systems, and individuals. They foresee improvements, develop innovation plans, and advise legislators on educational policies.
+- 2351.4: Special Educational Needs Coordinator | Oversees programmes and activities providing educational support to children with disabilities, ensuring alignment with the latest research to maximize student learning potential.
+- 2351.3: Education inspector | Professionals who visit schools to ensure staff compliance with educational rules, oversee administration and premises, and assess school operations through observation and record examination.
+- 2352.1: Special educational needs teacher | Special educational needs teachers work with children, young people, and adults with intellectual or physical disabilities to optimise communication, mobility, autonomy, and social integration.
+- 2352.1.1: adult literacy teacher | Instructs adult students, including recent immigrants and early school leavers, in basic reading and writing skills at a primary school level.
+- 2352.1.2: early years special educational needs teacher | Provides specially-designed instruction to kindergarten-level students with various disabilities to ensure they reach their learning potential.
+- 2352.1.3: learning support teacher | Assists students with general learning difficulties by teaching basic subjects like numeracy and literacy, planning learning strategies, and identifying individual needs within primary or secondary schools.
+- 2352.1.4: Special educational needs itinerant teacher | Specialised teachers employed by public schools to instruct disabled or sick children in their homes, assisting students, parents, and schools in communication and attendance.
+- 2352.1.5: Special educational needs teacher primary school | Provides specially-designed instruction to primary school students with various disabilities to ensure they reach their learning potential.
+- 2352.1.6: Special educational needs teacher, secondary school | Provides specially-designed instruction to secondary school students with a variety of disabilities to ensure they reach their learning potential.
+- 2352.2: Teacher of talented and gifted students | Educators who teach students with strong skills in specific areas, fostering their intellectual growth and emotional well-being.
+- 2353.1: Language school teacher | Educates non-age-specific students in a non-native language at specialized schools, focusing on real-life application for business, immigration, or leisure rather than academic theory.
+- 2353.2: Sign language teacher | Educates non-age-specific students in sign language, including those with and without special educational needs such as deafness.
+- 2354.1: music teacher | Instructs students in various musical genres (classical, jazz, folk, pop, blues, rock, electronic) within a recreational context, utilizing a practice-based approach to help students experiment with styles and develop their own musical identity.
+- 2355.1: Arts education officer | Arts education officers manage activities for cultural venues and art facilities, delivering high-quality learning and participation programmes to current and prospective visitors of all ages.
+- 2355.2: Circus arts teacher | Instructs students in recreational circus techniques and acts, providing historical context while focusing on a practice-based approach to mastering specific skills.
+- 2355.3: Dance teacher | Instructs students in recreational dance genres (e.g., ballet, jazz, hip-hop), providing history and repertoire while focusing on practice-based mastery of expression styles and techniques.
+- 2355.4: drama teacher | Instructs students in a recreational context on theatrical genres and dramatic expression forms, focusing on a practice-based approach to mastering techniques and developing personal expression.
+- 2355.6: Visual arts teacher | Instructs students in various styles of visual arts (drawing, painting, sculpting) within a recreational context, utilizing a practice-based approach to help students master techniques and develop their own style.
+- 2355.5: photography teacher | Instructs students in photography techniques, styles, and history, focusing on a practice-based approach to help them master skills and develop their own artistic style.
+- 2356.1: ICT trainer | ICT trainers conduct training-needs analysis, design programs for software and information systems, and deliver effective training in various formats while maintaining expertise in specialized ICT subjects.
+- 2356.1.1: digital literacy teacher | Instructs students in the theory and practice of basic computer usage, digital literacy, and optionally advanced computer science principles.
+- 2359.10: Instructional Designer | Instructional designers develop instructional material for training courses using multimedia technology and authoring tools to create efficient, effective, and appealing learning experiences.
+- 2359.1: academic advisor | Post-secondary professionals who assist students in recognizing and achieving educational goals by advising on program selection, degree requirements, and career planning.
+- 2359.11: learning mentor | Supports underperforming students inside and outside the classroom to increase academic success, assisting those with learning difficulties, behavioral issues, attendance problems, or gifted students who are under-challenged.
+- 2359.12: prison instructor | Educates legal offenders on social rehabilitation and correctional behaviour to facilitate reintegration into society and employment.
+- 2359.14: tutor | Provides personalised education to children of employers or adults outside the main education system, helping students improve specific subject knowledge at their own pace.
+- 2359.13: public speaking coach | Provides private instruction to clients on theory and techniques to improve public speaking skills, tailoring approaches to individual needs.
+- 2359.2: academic support officer | Academic support officers assist students with learning problems, serving as the primary contact for those with academic or personal issues. They ensure extra tuition and educational programs are provided to under-represented students and organize social activities throughout the academic year.
+- 2359.3: Admissions Coordinator | Admissions coordinators manage student applications for private schools, colleges, or universities. They assess qualifications, approve or deny applications based on administration regulations, and assist accepted students with enrollment.
+- 2359.4: assessor of prior learning | Professionals who evaluate a candidate's existing competences, skills, and knowledge against a specific qualification standard to determine if performance criteria are met.
+- 2359.5: Assistive Technologist | Professionals who improve access to learning and enhance independence for individuals with disabilities through learner and staff support.
+- 2359.6: e-learning architect | E-learning architects establish goals and procedures for applying learning technologies within an organisation and create supporting infrastructure. They review existing curricula to verify online delivery capability and advise changes to adapt courses for digital environments.
+- 2359.7: e-learning developer | Designs and develops simpler forms of digital learning content, including reference materials, slides, assessments, screen-casts, interview videos, and podcasts for computer-based learning applications.
+- 2359.9: Further education teacher | Organises and teaches programmes designed specifically for adult learners, imparting a wide spectrum of subjects from academic areas to technical expertise and practical courses.
+- 2359.8: educational counsellor | Educational counsellors provide practical and emotional support to students in educational institutions, functioning as accessible officials for a wide variety of issues.
+- 2411.1: accountant | Accountants review and analyse financial statements, budgets, and business plans to detect irregularities, provide financial advice, and ensure compliance with legislation.
+- 2411.1.1: accounting analyst | Evaluates client financial statements (income sheet, balance sheet, cash flows) and interprets/implements new accounting systems to ensure regulatory compliance and user requirement alignment.
+- 2411.1.10: Grants Management Officer | Professionals who administer and manage grant funds by evaluating applications from individuals, charities, community groups, or university research departments to decide on funding awards from charitable trusts, government, or public bodies.
+- 2411.1.11: Public finance accountant | Heads the treasury department of a governmental institution, managing financial administration, expenditure, income generation, and compliance with financial legislation.
+- 2411.1.12: tax advisor | Tax advisors use expertise in tax legislation to provide commercially-focused advisory and consultancy services, explaining complex laws and devising tax-efficient strategies for clients across all economic sectors.
+- 2411.1.3: bankruptcy trustee | Administers bankruptcy cases, investigates documentation for fraud, and manages proceeds from asset sales for creditor distribution.
+- 2411.1.2: Audit Supervisor | Audit supervisors oversee audit staff, manage planning and reporting, and review automated audit work papers to ensure compliance with company methodology.
+- 2411.1.4: budget analyst | Budget analysts monitor spending activities of public and private institutions, prepare budget reports, review budget models, and ensure compliance with policies and legal regulations.
+- 2411.1.5: Cost Analyst | Cost analysts prepare regular costs, budgeting analyses, and reports to contribute to overall cost planning and forecasting activities. They review and reconcile key balance sheets and identify new opportunities to save costs.
+- 2411.1.6: dividend analyst | Calculates and allocates dividends and interest incomes to shareholders, forecasts payment schedules, and identifies financial risks based on market expertise.
+- 2411.1.8: financial controller | Financial controllers manage budgeting and accounting tasks, ensuring compliance with internal procedures and preparing documentation for external audits.
+- 2411.1.7: financial auditor | Financial auditors collect and examine financial data for clients, organisations, and companies to ensure it is properly maintained, free of material misstatements due to error or fraud, and functions legally and effectively.
+- 2411.1.9: financial fraud examiner | Undertakes anti-fraud investigations regarding financial statement irregularities, securities fraud, and market abuse. Manages fraud risk assessments and prepares forensic reports by analyzing and verifying evidence, while liaising with regulatory bodies.
+- 2412.10: Public funding advisor | Advises individuals and businesses on government funding opportunities, analyzes client needs, and assists with grant applications and administration setup.
+- 2412.1: business valuer | Provides valuation assessments of business entities, securities, and intangible assets to assist clients in strategic decision-making.
+- 2412.11: venture capitalist | Invests in young or small start-up companies by providing private funding, researching markets, and offering strategic guidance without assuming executive managerial positions.
+- 2412.3: corporate risk manager | Identifies and assesses potential threats and opportunities, creates preventive plans, and coordinates risk management across organizational functions.
+- 2412.2: corporate banking manager | Corporate banking managers offer advice on a broad range of financial goods and services to institutions and organisations.
+- 2412.4.1: Relationship banking manager | Manages total customer relationships to retain and expand business, utilizing cross-selling techniques to advise on and sell banking products.
+- 2412.4: financial planner | Specialists who assist individuals with personal financial issues by advising on tailored strategies for retirement, investments, risk management, insurance, and tax planning.
+- 2412.6: investment adviser | Professionals who offer transparent advice by recommending suitable financial solutions to clients, including individuals, households, families, and small business owners.
+- 2412.6.2: Investment fund management assistant | Provides financial planning advice, serves as the primary client contact, and supports the creation and administration of investment funds.
+- 2412.5: Financial risk manager | Identifies and assesses potential risk areas threatening organizational assets, specializing in credit, market, operational, or regulatory risk analysis to provide advice on mitigation and control.
+- 2412.6.1: corporate investment banker | Corporate investment bankers offer strategic financial advice to companies and institutions, ensuring legal compliance during capital raising efforts.
+- 2412.6.4: Investor relations manager | Manages communication between a company and the investment community, disseminating investment strategies and ensuring transparent dialogue regarding financial stability and corporate policies.
+- 2412.7: investment fund manager | Professionals who implement and monitor investment strategies, manage portfolio trading, and supervise analysts to make buying and selling decisions for fund assets.
+- 2412.6.3: investment manager | Professionals who administer company investment portfolios, analyzing market behavior and financial data to identify profitable solutions and advise on risks.
+- 2412.8: Personal Trust Officer | Monitors and administers personal trusts by interpreting documentation, defining investment goals with advisors, and managing securities transactions.
+- 2412.9: programme funding manager | Programme funding managers take the lead in developing and realizing the funding strategy of the programmes of an organisation.
+- 2413.1: financial analyst | Financial analysts conduct economic research and provide analyses on profitability, liquidity, solvency, and asset management to support decision-making in public and private sectors.
+- 2413.1.1: Insurance rating analyst | Analyses insurance market information and credit ratings to prepare reports and invoices. Compiles financial data to present credit rating opinions to stakeholders and calculates insurance premiums and rates using manual and automated methods.
+- 2413.1.2: Investment Analyst | Investment analysts undertake research to make informed recommendations to fund managers, focusing on financial and economic information to interpret data and assess market impacts.
+- 2413.1.3: Mergers and acquisitions analyst | Oversees the execution of transactions for the purchase, sale, merger, or takeover of companies, negotiating deals and managing post-merger integration.
+- 2413.1.4: securities analyst | Securities analysts perform research activities to gather and analyse financial, legal and economic information. They interpret data on the price, stability and future investment trends in a certain economic area and make recommendations and forecasts to business clients.
+- 2413.2: middle office analyst | Middle office analysts work in the treasury of a financial company, ensuring compliance with company policy and legislation, providing research and analysis on financial matters, measuring risk and supporting operations in the front office.
+- 2421.1: business analyst | Business analysts research and understand the strategic position of businesses relative to their markets and stakeholders. They analyze and present views on improving strategic position and internal corporate structure from multiple perspectives.
+- 2421.1.1: Manufacturing Cost Estimator | Professionals who collect and analyze data to evaluate the money, materials, labor, and time required for manufacturing processes, identifying cost-effective technical designs and production methods.
+- 2421.2: business consultant | Business consultants analyse business positions, structures, and processes to offer advice and services aimed at improvement, often working in external firms to provide an objective view.
+- 2421.3: Business intelligence manager | Managers who analyze industry knowledge and innovative processes to improve company operations, focusing on supply chain, warehouses, storage, and sales to facilitate communication and revenue growth.
+- 2421.4: Lean Manager | Plans and manages lean programs across business units to drive continuous improvement, optimize productivity, and foster a culture of innovation and operational transformation.
+- 2421.5: logistics analyst | Logistics analysts streamline product manufacturing, transportation, storage, and distribution. They assess production and supply chain problems to determine economically efficient solutions, assist managers in decision-making, and direct programs providing logistic technology to subcontractors, managers, and customers.
+- 2422.1: civil service administrative officer | Civil service administrative officers perform administrative duties in civil service organisations and government departments, ensuring record maintenance and providing information to the public.
+- 2422.10: Monitoring and evaluation officer | Responsible for the conceptualisation, design, implementation, and follow-up of monitoring and evaluation activities for projects, programmes, policies, strategies, institutions, or processes.
+- 2422.11: parliamentary assistant | Supports officials and politicians in regional, national, and international parliaments by undertaking logistical tasks, revising official documents, and following parliamentary procedures.
+- 2422.12.1: Agricultural Policy Officer | Professionals who analyze agricultural policy issues, develop improvement plans, and implement new policies through reports and presentations to secure support from officials and the public.
+- 2422.12: Policy Officer | Policy officers research, analyse, and develop policies across public sectors to improve regulations. They evaluate policy effects, report findings to the government and public, and collaborate with stakeholders to implement changes.
+- 2422.12.10: labour market policy officer | Labour market policy officers research, analyse and develop labour market policies, implementing measures ranging from financial support to job training and start-up incentives.
+- 2422.12.11: Legal policy officer | Legal affairs policy officers research, analyse, and develop policies related to the legal sector to improve existing regulations.
+- 2422.12.12: Public health policy officer | Develops and implements strategies to improve community health care policies and advises governments on policy changes.
+- 2422.12.15: social services policy officer | Social services policy officers research, analyse, and develop social services policies to improve the circumstances of disadvantaged and vulnerable members of society, such as children and elderly people.
+- 2422.12.13: Recreation policy officer | Recreation policy officers research, analyse, and develop policies in the sports and recreation sector to improve the sport system and population health. They aim to increase participation, support athletes, enhance performance in competitions, and promote social inclusion.
+- 2422.12.14: Regional development policy officer | Professionals who research, analyse, and develop regional development policies to reduce disparities by fostering economic activities and supporting structural changes like rural development and infrastructure improvement.
+- 2422.12.2: Competition Policy Officer | Manages the development of regional and national competition policies and law to regulate competition, encourage open and transparent trade practices, and protect consumers and businesses.
+- 2422.12.3: Cultural policy officer | Develops and implements policies to improve and promote cultural activities and events, managing resources to facilitate public interest.
+- 2422.12.4: Education policy officer | Professionals who research, analyze, and develop education policies to improve the education system, impacting schools, universities, and vocational institutions.
+- 2422.12.5: Environmental policy officer | Environmental policy officers research, analyse, develop and implement policies related to the environment, providing expert advice to commercial organisations, government agencies, and land developers to reduce the impact of industrial, commercial, and agricultural activities.
+- 2422.12.6: Fiscal affairs policy officer | Researches, analyses, and develops policies related to taxation and government spending to improve sector regulations.
+- 2422.12.7: Foreign affairs officer | Foreign affairs officers analyse foreign policies and operations, produce clear reports, advise on policy development, and assist with administrative duties like passport and visa issues.
+- 2422.12.8: Housing policy officer | Housing policy officers research, analyse, and develop policies to ensure affordable and adequate housing for all, implementing measures to improve housing conditions.
+- 2422.12.9: Immigration policy officer | Develops strategies for refugee and asylum seeker integration and policies for international transit to improve cooperation and procedural efficiency.
+- 2422.13: political affairs officer | Political affairs officers analyse foreign political developments and policy matters, monitor conflicts, and consult on mediation measures and developmental strategies.
+- 2422.15: Public procurement specialist | Full-time practitioners working within procurement teams in large organizations or central purchasing bodies to manage all phases of the procurement cycle.
+- 2422.14: Procurement category specialist | Experts in specific markets and contract types who provide advanced knowledge of particular supply categories to increase value for money and end-user satisfaction.
+- 2422.16: social service consultant | Social service consultants aid in the development of policy and procedure for social service programs, research existing programs to identify improvements, and fulfill advisory functions for social service organizations.
+- 2422.17: sports programme coordinator | Coordinates sports and recreation activities and policy implementation, developing new programs to promote them while ensuring facility maintenance.
+- 2422.18: Trade development officer | Develops and implements trade policies for domestic and international import/export relations, ensuring compliance and business protection.
+- 2422.2: Community development officer | Professionals who develop plans to improve quality of life in local communities by investigating needs, managing resources, and implementing strategies.
+- 2422.3: Employment Programme Coordinator | Professionals who research and develop employment programmes and policies to improve employment standards and reduce unemployment, while supervising policy promotion and coordinating implementation.
+- 2422.5: Government planning inspector | Government planning inspectors monitor the development and implementation of government plans and policies, process planning and policy proposals, and perform inspections of planning procedures.
+- 2422.6: healthcare consultant | Advises health care organisations on developing plans to improve patient care and safety by analyzing policies and identifying issues.
+- 2422.7: Humanitarian Advisor | Humanitarian advisors ensure strategies to reduce the impact of humanitarian crises on a national and/or international level. They provide professional advice and support in collaboration with different partners.
+- 2422.8: Intelligence Officer | Intelligence officers develop and execute plans to gather information and intelligence, investigate lines of enquiry, and interview sources.
+- 2422.9: International relations officer | Ensures the development of cooperation between international public organisations and governments by facilitating communication and developing collaboration strategies.
+- 2423.1: career guidance advisor | Career guidance advisors provide guidance and advice to adults and students on making educational, training, and occupational choices, assisting people in managing their careers through planning and exploration.
+- 2423.3: human resources officer | Develops and implements strategies to select and retain qualified staff, manages recruitment, administers payroll, and advises on employment law and remuneration.
+- 2423.2: Employment and Vocational Integration Consultant | Professionals who assist unemployed individuals in finding jobs or vocational training opportunities tailored to their background, advising on skill marketing, CV writing, interview preparation, and job search strategies.
+- 2423.4: labour relations officer | Labour relations officers implement labour policy within an organisation, advise trade unions on policies and negotiations, handle disputes, and facilitate communication between unions and management.
+- 2423.5: Occupational Analyst | Occupational analysts collect and analyse occupational information within a specific field or company to recommend cost reductions and business improvements. They provide technical assistance with staff recruitment, development, and restructuring, while studying and writing job descriptions and preparing occupational classification systems.
+- 2423.6: recruitment consultant | Recruitment consultants provide suitable candidates to employers based on specific job profiles, maintaining long-term relationships with clients.
+- 2424.2: corporate trainer | Corporate trainers train, coach, and guide employees to improve skills, competences, and knowledge aligned with company needs, enhancing efficiency, motivation, and employability.
+- 2424.1: business coach | Guides employees to improve personal effectiveness, job satisfaction, and career development by leading them to resolve specific challenges and achieve targeted goals through their own means.
+- 2424.3: corporate training manager | Corporate training managers coordinate all training activities and development programmes within a company, designing new modules and supervising planning and delivery.
+- 2431.1: advertising copywriter | Advertising copywriters are responsible for the written or verbal design of advertisements and commercials, creating slogans and catchphrases.
+- 2431.10: marketing consultant | Marketing consultants advise companies on developing marketing strategies for specific purposes, such as market entry, product re-launch, new product introduction, or commercial image positioning.
+- 2431.10.1: Advertising media planner | Advertising media planners advise on the best communication media platforms to convey ideas and assess the potential and response rate of different channels for marketing messages.
+- 2431.10.3: marketing assistant | Supports marketing managers and officers by preparing operational reports for account and financial divisions and ensuring necessary resources are available.
+- 2431.10.2: eBusiness manager | Creates and executes electronic strategy plans for selling products and services online, improving data integrity, tool placement, and brand exposure while monitoring internet-based sales.
+- 2431.10.4: online marketer | Online marketers use e-mail, internet and social media in order to market goods and brands.
+- 2431.11: market research analyst | Market research analysts collect and study market information to draw conclusions, defining potential customers, target groups, and reach strategies. They analyze product positions regarding features, prices, and competitors, as well as cross-selling and interdependencies between products.
+- 2431.13: network marketer | Network marketers apply various marketing strategies, including network marketing strategies, to sell products and convince new people to join and start selling these products.
+- 2431.12: Membership Manager | Oversees and coordinates membership plans, supports existing members, and engages potential new members while ensuring process efficiency.
+- 2431.14: Pricing Specialist | Analyses production prices, market trends, and competitors to establish optimal pricing strategies while integrating brand and marketing concepts.
+- 2431.15: Product and services manager | Manages the definition of content and structure for company catalogues or portfolios.
+- 2431.16: Promotion Assistant | Supports the implementation of promotional programs and efforts at points-of-sale by researching requirements and administering information for managerial decisions.
+- 2431.4: Brand Manager | Analyses and plans the way a brand is positioned on the market.
+- 2431.2: advertising media buyer | Purchases advertising space across print, broadcast, and online media on behalf of clients, negotiating prices while ensuring quality and channel appropriateness.
+- 2431.3: Advertising Specialist | Provides advice on advertising strategies and general strategic approaches, combining marketing, budget, and psychological knowledge with creativity to develop campaigns.
+- 2431.7: creative director | Manages teams responsible for creating advertisements and commercials, overseeing the entire creation process and pitching designs to clients.
+- 2431.5: business developer | Business developers strive to improve the market share of companies by performing strategic analyses of product or service advantages and cooperating in marketing campaign development for lead generation and sales support.
+- 2431.6: Client relations manager | Act as the middle person between a company and its customers, ensuring customer satisfaction by providing guidance and explanations on accounts and services.
+- 2431.8: customer experience manager | Manages customer interactions in hospitality, recreation, or entertainment to optimize experience and boost profits.
+- 2432.1: Activism Officer | Promotes or hinders social, political, economic, or environmental change through strategic advocacy and public engagement.
+- 2431.9: hospitality revenue manager | Maximises revenue from facilities like hotels and resorts by analysing trends and competition to assist managers in strategic decisions.
+- 2432.2: election agent | Manages political candidate campaigns and oversees election operations to ensure accuracy, developing strategies to persuade the public and secure votes.
+- 2432.3: Fundraising manager | Manages fundraising activities for organizations, often non-profits, by developing programs to utilize raised resources and executing various money-raising strategies.
+- 2432.5: online community manager | Provides and maintains interactive digital environments using social media, forums, and wikis to foster relations between communities.
+- 2432.4: Intercultural communication consultant | Specialises in social interaction between parties of different cultures, advising organisations on international interactions to optimise performance and facilitate cooperation.
+- 2432.6: political campaign officer | Political campaign officers provide support during political campaigns by advising candidates and management staff on strategies, coordinating staff, and developing advertising and research plans.
+- 2432.6.1: campaign canvasser | Operates on the field level to persuade the public to vote for a political candidate through direct conversation and information dissemination.
+- 2432.7: Political party agent | Manages administrative tasks for political parties, including budget management, record keeping, and agenda writing, while ensuring communication with governmental bodies and media.
+- 2432.9: public relations officer | Public relations officers represent a company or organisation to stakeholders and the public, using communications strategies to promote a favourable understanding of their clients' activities and image.
+- 2432.8: public affairs consultant | Public affairs consultants act as representatives for clients, persuading legislative bodies and policymakers to implement specific laws or regulations while negotiating with conflicting interests.
+- 2432.9.1: spokesperson | Spokespeople speak on behalf of companies or organisations, using communication strategies to represent clients through public announcements and conferences.
+- 2433.1: after-sales service technician | Provides after-sales service support including installation, maintenance, and repair of sold products to ensure customer satisfaction and resolve technical issues.
+- 2433.2: medical sales representative | Promotes and sells medical devices, equipment, and pharmaceutical products to healthcare professionals by providing product information, demonstrating features, and negotiating sales contracts.
+- 2433.3: renewable energy consultant | Advises clients on the advantages and disadvantages of different renewable energy sources to determine the most advantageous option for their specific purpose.
+- 2433.4: Sales Engineer | Provides technical customization of products based on customer requests, primarily for heavy-duty equipment, and manages B2B contacts.
+- 2433.6: Technical sales representative | Act for a business to sell its merchandise while providing technical insight for customers.
+- 2433.6.1: Technical sales representative in agricultural machinery and equipment | Act for a business to sell agricultural machinery and equipment while providing technical insight to customers.
+- 2433.5: solar energy sales consultant | Solar energy sales consultants provide advice on solar energy for domestic or industrial purposes, promote sustainable energy use, and drive sales through client communication and networking.
+- 2433.6.2: Technical sales representative in chemical products | Act for a business to sell its merchandise while providing technical insight for customers.
+- 2433.6.3: Technical sales representative in hardware, plumbing and heating equipment | Act for a business to sell merchandise while providing technical insight for customers.
+- 2433.6.4: Technical sales representative in machinery and industrial equipment | Act for a business to sell its merchandise while providing technical insight for customers.
+- 2433.6.5: Technical sales representative in mining and construction machinery | Act for a business to sell its merchandise while providing technical insight for customers.
+- 2433.6.6: Technical sales representative in office machinery and equipment | Acts for a business to sell office machinery and equipment merchandise while providing technical insight to customers.
+- 2433.6.7: Technical sales representative in the textile machinery industry | Act for a business to sell its merchandise while providing technical insight for customers.
+- 2434.2: ICT business development manager | ICT business development managers increase business opportunities for the organisation and develop strategies that will enhance the smooth running of the organisation, product development and product distribution.
+- 2434.3: ICT presales engineer | ICT presales engineers actively drive and manage the ICT evaluation stage of the sales process, working in conjunction with the sales team to provide technical guidance and plan product configurations.
+- 2434.1: ICT account manager | ICT account managers build business relationships with customers to facilitate the sale of hardware, software, telecommunications, or ICT services. They identify opportunities and manage the sourcing and delivery of products to customers while achieving sales targets and maintaining profitability.
+- 2434.4: Technical sales representative in electronic and telecommunications equipment | Act for a business to sell its merchandise while providing technical insight for customers.
+- 2511.1: computer scientist | Conducts research in computer and information science to advance fundamental knowledge of ICT phenomena, invents new computing approaches, and solves complex problems.
+- 2511.10: ICT consultant | ICT consultants advise on optimizing existing tools and systems, recommend technological solutions for business projects, and raise awareness of IT innovations.
+- 2511.12: ICT research consultant | ICT research consultants perform targeted ICT research, design survey questionnaires, analyze results, and provide final reports with recommendations to clients.
+- 2511.11: ICT intelligent systems designer | ICT intelligent systems designers apply artificial intelligence methods in engineering, robotics, and computer science to design programs simulating intelligence, such as thinking models and cognitive systems. They integrate structured knowledge into computer systems to solve complex problems requiring high-level human expertise.
+- 2511.14.1: blockchain architect | ICT system architects specialized in blockchain-based solutions who design decentralized system architectures.
+- 2511.14: ICT system architect | ICT system architects design architecture, components, modules, interfaces, and data for multi-component systems to meet specified requirements.
+- 2511.13: ICT system analyst | ICT system analysts specify system needs to meet end-user requirements, analyze system functions to define goals, and design new IT solutions to improve business efficiency and productivity.
+- 2511.15: ICT system developer | ICT system developers maintain, audit, and improve organisational support systems using existing or new technologies to meet specific needs.
+- 2511.16: ICT system integration consultant | ICT system integration consultants advise on bringing together different systems to interoperate within an organisation for enabling data sharing and reducing redundancy.
+- 2511.17: Integration Engineer | Develops and implements solutions coordinating applications across enterprises, evaluating system components, and ensuring final solutions meet organizational needs.
+- 2511.19: user experience analyst | Assesses client interaction and analyzes users' behaviors, attitudes, and emotions regarding product usage to propose interface and usability improvements.
+- 2511.18: IT auditor | IT auditors perform audits of information systems, platforms, and operating procedures to ensure efficiency, accuracy, and security. They evaluate ICT infrastructure risks and establish controls to mitigate organizational loss.
+- 2511.2: computer vision engineer | Researches, designs, develops, and trains AI algorithms and ML primitives to understand digital image content and solve real-world problems.
+- 2511.3: data analyst | Data analysts import, inspect, clean, transform, validate, model, or interpret data collections to support business goals, ensuring data consistency and reliability.
+- 2511.5: embedded system designer | Translates and designs requirements and high-level plans or architectures for embedded control systems based on technical software specifications.
+- 2511.4: data scientist | Professionals who find, interpret, and manage rich data sources to build mathematical models, create visualizations, and communicate insights to both specialist and non-expert audiences.
+- 2511.6: enterprise architect | Enterprise architects balance technological opportunities with business requirements, maintaining a holistic view of the organisation's strategy, processes, information, and ICT assets.
+- 2511.7: Green ICT Consultant | Advises organisations on their green ICT strategy and implementation to achieve short, mid, and long-term environmental objectives efficiently.
+- 2511.8: ICT business analysis manager | ICT business analysis managers identify areas for information system changes to support business plans, monitor change management impacts, and translate business needs into ICT solutions.
+- 2511.9: ICT business analyst | ICT business analysts analyse and design organisational processes and systems, assessing business models and their integration with technology to ensure effective implementation.
+- 2512.1: cloud engineer | Cloud engineers design, plan, manage, and maintain cloud-based systems, developing applications and migrating on-premise infrastructure to the cloud.
+- 2512.2: Software Analyst | Software analysts elicit and prioritise user requirements, produce and document software specifications, test applications, and review them during development, acting as the interface between users and the development team.
+- 2512.3: Software Architect | Creates technical designs and functional models for software systems based on functional specifications, aligning architecture with business requirements, technical platforms, and development environments.
+- 2512.4: software developer | Software developers implement or program all kinds of software systems based on specifications and designs by using programming languages, tools, and platforms.
+- 2512.4.1: blockchain developer | Blockchain developers implement or program blockchain-based software systems based on specifications and designs by using programming languages, tools, and blockchain platforms.
+- 2512.5: User interface developer | User interface developers implement, code, document and maintain the interface of a software system by using front-end development technologies.
+- 2513.1: digital games developer | Digital games developers program, implement and document digital games, ensuring technical standards in gameplay, graphics, sound, and functionality.
+- 2513.2: search engine optimisation expert | Search engine optimisation experts increase the ranking of a company's web pages with regard to target queries in a search engine. They create and launch SEO campaigns and identify areas of improvement.
+- 2513.3: User interface designer | Professionals responsible for designing user interfaces for applications and systems, focusing on layout, graphics, and dialogues.
+- 2513.4: Web content manager | Professionals who curate or create content for web platforms to align with organizational strategic goals, policies, and procedures.
+- 2513.5: Web Developer | Develops, implements, and documents web-accessible software based on designs, aligning client web presence with business strategy while troubleshooting and improving applications.
+- 2514.2: ICT application developer | ICT application developers implement ICT (software) applications based on provided designs using domain-specific languages, tools, and platforms.
+- 2514.2.1: embedded systems software developer | Programs, implements, documents, and maintains software designed to run on embedded systems.
+- 2514.1: ICT application configurator | ICT application configurators identify, record, and maintain user-specific application configurations based on user requirements and business rules. They configure generic software systems to create specific versions tailored to an organization's context, ranging from adjusting basic parameters to developing specific modules for Commercial off-the-shelf (COTS) systems.
+- 2514.2.2: mobile application developer | Mobile application developers implement applications software for mobile devices based on provided designs, utilizing general or specific development tools for device operating systems.
+- 2514.3: Industrial mobile devices software developer | Develops and implements application software for specific professional industrial mobile (handheld) devices tailored to industry needs using specialized development tools.
+- 2514.4: numerical tool and process control programmer | Develops computer programs to control automatic machines and equipment involved in manufacturing processes.
+- 2519.2: ICT auditor manager | ICT auditor managers monitor ICT auditors responsible for auditing information systems, platforms, and operating procedures in accordance with established corporate standards for efficiency, accuracy and security.
+- 2519.1: Data quality specialist | Reviews organizational data for accuracy, recommends system enhancements, and assesses data integrity while overseeing data privacy policies and compliance.
+- 2519.3: ICT change and configuration manager | ICT change and configuration managers organise and implement processes to manage changes throughout the lifecycle of ICT assets, including software, applications, and ICT systems.
+- 2519.4: ICT disaster recovery analyst | ICT disaster recovery analysts develop, maintain, and implement ICT continuity and disaster recovery strategies to ensure business functions continue with minimal data loss.
+- 2519.6: ICT test analyst | ICT test analysts work in testing environments to assess products, check for quality and accuracy, and create test scripts that are subsequently implemented by testers.
+- 2519.5: ICT quality assurance manager | ICT quality assurance managers establish and operate ICT quality approaches through management systems, ensuring compliance with internal/external standards and organizational culture to safeguard assets and data integrity.
+- 2519.7: Software Tester | Professionals who perform software tests, plan and design testing procedures, and ensure applications function properly before delivery to clients.
+- 2519.7.1: digital games tester | Reviews and tests various genres of digital games by playing them to identify bugs, glitches, and evaluate playability and attraction capacity.
+- 2519.7.2: ICT accessibility tester | Evaluates websites, software applications, systems, or user interface components to ensure friendliness, operability, and visibility for all users, with a specific focus on those with special needs or disabilities.
+- 2519.7.3: ICT integration tester | ICT integration testers perform tests on groups of system components, units, or applications, aggregating them into larger systems to verify complex inter-component relations.
+- 2519.7.4: ICT system tester | ICT system testers perform testing activities and some test planning activities to ensure systems and components function properly before delivery to clients.
+- 2519.7.5: ICT usability tester | ICT usability testers ensure compliance with requirements and strive for optimal usability within the software engineering cycle phases (analysis, design, implementation, and deployment). They work closely with users to research and document user profiles, analyse tasks, workflows, and user scenarios.
+- 2521.3: database developer | Database developers program, implement and coordinate changes to computer databases based on their expertise of database management systems.
+- 2521.1: database administrator | Database administrators test, implement, and administer computer databases, utilizing expertise in database management systems to plan, coordinate, and implement security measures.
+- 2521.2: Database Designer | Database designers specify the database's logical structure, processes, and information flows. They design data models and databases to serve data acquisition.
+- 2521.4: Database Integrator | Database integrators perform integration among different databases, maintaining integration and ensuring interoperability.
+- 2521.5: data warehouse designer | Professionals responsible for planning, connecting, designing, scheduling, and deploying data warehouse systems, including the development and maintenance of ETL processes and reporting applications.
+- 2522.1.1: ICT network administrator | ICT network administrators maintain the operation of reliable, secure, and efficient data communications networks, including LAN, WAN, intranet, and internet.
+- 2522.1: ICT system administrator | ICT system administrators ensure the upkeep, configuration, and reliable operation of computer and network systems, servers, workstations, and peripheral devices.
+- 2522.1.2: System Configurator | Professionals who tailor computer systems and software to specific organizational and user requirements by adjusting base configurations and performing scripting.
+- 2523.1: ICT capacity planner | ICT capacity planners ensure that the capacity of ICT services and infrastructure delivers agreed service level targets in a cost-effective and timely manner, while planning for short, medium, and long-term business requirements.
+- 2523.2: ICT network architect | ICT network architects design the topology and connectivity of ICT networks, encompassing hardware, infrastructure, communication, and hardware components.
+- 2523.3: ICT network engineer | ICT network engineers implement, maintain, and support computer networks, performing modelling, analysis, planning, and security design.
+- 2529.1: Chief ICT security officer | Chief ICT security officers protect company and employee information against unauthorized access, define Information System security policy, manage security deployment across all Information Systems, and ensure the provision of information availability.
+- 2529.2: digital forensics expert | Retrieves and analyses information from computers and data storage devices to identify, preserve, recover, and present facts about digital information.
+- 2529.3: embedded systems security engineer | Advises and implements solutions to control access to data and programs in embedded and connected systems, ensuring safe operation through protection and security measures.
+- 2529.4: Ethical hacker | Professionals who perform security vulnerability assessments and penetration tests using industry-accepted methods to identify system flaws.
+- 2529.5: ICT resilience manager | ICT resilience managers research, plan and develop models, policies, methods, techniques and tools that enhance an organisation's cyber security, resilience and disaster recovery.
+- 2529.6: ICT security administrator | ICT security administrators plan and carry out security measures to protect information and data from unauthorised access, deliberate attack, theft and corruption.
+- 2529.8: ICT security manager | ICT security managers propose and implement necessary security updates, advise on security measures, and provide training and security awareness.
+- 2529.7: ICT security engineer | ICT security engineers advise on and implement solutions to control access to data and programs, ensuring the protection of an organization's mission and business processes. They act as gatekeepers for information, managing network and system security by designing, planning, and executing security architectures.
+- 2529.9: knowledge engineer | Integrates structured knowledge into computer systems to solve complex problems requiring high-level human expertise or AI methods.
+- 2611.1: lawyer | Professionals who provide legal advice, represent clients in legal proceedings, and ensure compliance with the law.
+- 2611.1.2: prosecutor | Prosecutors represent governmental bodies and the general public in court cases against parties accused of illegal activity.
+- 2611.1.1: corporate lawyer | Provides legal consulting services and representation to corporations and organisations.
+- 2612.1: judge | Judges preside over, review, and handle court cases, hearings, appeals, and trials, ensuring procedures conform to legal processes.
+- 2619.1: Contract Manager | Oversees awarded contracts to ensure service delivery as foreseen, acting as the main point of contact for suppliers on contractual matters.
+- 2619.10: notary | Notaries ensure the authenticity and legitimacy of official documents such as declarations, certificates, contracts, deeds, and purchases.
+- 2619.11: ombudsman | Impartial mediators who resolve disputes between parties with a power imbalance, primarily against public institutions.
+- 2619.12: regulatory affairs manager | Regulatory affairs managers oversee product and service development from inception to market release, ensuring compliance with local legislation and regulatory requirements across sectors like healthcare, energy, and banking.
+- 2619.2: coroner | Coroners oversee the examination of deceased individuals to determine the cause of death in uncommon circumstances, maintain death records, and facilitate communication with other officials to ensure investigations are complete.
+- 2619.3: Court jury coordinator | Court jury coordinators aid lawyers in trial preparation by researching jury members, developing trial strategies, analyzing jury behavior, and advising on proceedings.
+- 2619.5: election observer | Skilled and trained spectators of elections in a functioning democracy designed to enhance transparency and credibility.
+- 2619.4: data protection officer | Ensures organizational compliance with data protection standards and legislation (e.g., GDPR), implements data protection policies, and manages regulatory interactions.
+- 2619.6: human rights officer | Human rights officers investigate and handle human rights violations, develop plans to reduce violations, and ensure compliance with human rights legislation.
+- 2619.8: legislative drafter | Legislative drafters research pieces of legislation and edit them to make them stronger and more clear. They rarely add new ideas that have never been incorporated into a law or bill before.
+- 2619.7: legal consultant | Legal consultants advise diverse clients, including businesses, individuals, and legal firms, on legal affairs outside courtrooms. They assist with mergers, housing purchases, contract modifications, and regulatory compliance to prevent illegal acts.
+- 2619.9: Mediator | Professionals who resolve disputes between parties by examining cases, facilitating communication, and advising on beneficial, legally compliant solutions to avoid litigation.
+- 2621.2: Collection manager | Ensures the care and preservation of objects within cultural institutions such as museums, libraries, and archives.
+- 2621.1: Archivist | Professionals who assess, collect, organise, preserve, and provide access to records and archives in various formats, including analogue and digital media such as documents, photographs, video, and sound recordings.
+- 2621.4: Cultural archive manager | Ensures the care, preservation, and management of cultural institutions and their archives, including the digitization of collections.
+- 2621.3: Conservator | Conservators organise and valorise works of art, buildings, books, and furniture. They work in diverse areas including creating new art collections, preserving heritage buildings through restoration, and conserving literary works, films, and valuable objects.
+- 2621.6: exhibition curator | Exhibition curators organise and display artworks and artefacts within museums, art galleries, science/history museums, libraries, archives, and other cultural institutions.
+- 2621.5: Cultural visitor services manager | Manages all programmes, activities, studies, and research concerning the presentation of a cultural venue's artefacts or programme to current and prospective visitors.
+- 2621.7: exhibition registrar | Exhibition registrars organise, manage and document the movement of museum artefacts to and from storage, display and exhibitions.
+- 2621.8: museum scientist | Professionals who perform and manage curatorial, preparatory, and clerical work in museums, botanical gardens, art galleries, and similar institutions to maintain educational, scientific, or aesthetic collections.
+- 2622.1: Information manager | Information managers are responsible for systems that provide information to people, ensuring access based on theoretical principles and hands-on capabilities in storing, retrieving, and communicating information across public or private work environments.
+- 2621.9: Zoo Registrar | Zoo registrars maintain comprehensive records of animals and their care in zoological collections, ensuring data is organized and submitted to relevant species information systems.
+- 2622.2: librarian | Librarians manage libraries and perform related library services, focusing on the management, collection, and development of information resources to make them accessible and discoverable to all users.
+- 2631.1: Economic policy officer | Develops economic strategies and contributes to the creation of economic policies, projects, and programs.
+- 2631.2.1: business economics researcher | Conducts research on economy, organisations, and strategy to analyse macroeconomic and microeconomic trends, providing advice on strategic planning, product feasibility, and market trends.
+- 2631.2: economist | Economists perform research and develop theories in microeconomic or macroeconomic analysis to advise companies, governments, and institutions.
+- 2631.2.2: economic adviser | Economic advisers research economic developments, forecast trends, and advise companies and organizations on finance, trade, and fiscal matters to gain economic profit.
+- 2631.2.3: Economic development coordinator | Economic development coordinators outline and implement policies to improve the economic growth and stability of communities, governments, or institutions. They research trends, coordinate institutional cooperation, and advise on economic sustainability.
+- 2631.2.4: tax policy analyst | Tax policy analysts research and develop taxation policies and legislation to improve and develop tax systems. They advise official bodies on policy implementation and financial operations, and forecast the financial influence of tax policy changes.
+- 2632.1.1: Communication scientist | Researches aspects of information planning, collection, creation, organization, preservation, evaluation, and exchange through verbal or non-verbal communication, including human-technology interactions.
+- 2632.1: anthropologist | Anthropologists research all aspects of human life, studying past and present civilizations to analyze physical, societal, linguistic, political, economic, philosophical, and cultural dimensions.
+- 2632.1.2: media scientist | Media scientists research the role and impact of media on society, observing and documenting the usage of various media types and societal responses.
+- 2632.4: Criminologist | Criminologists study social and psychological factors leading to criminal acts to advise organizations on crime prevention.
+- 2632.3: behavioural scientist | Researchers who study human and animal behavior in society to understand motives, circumstances, and personalities, advising organizations and institutions.
+- 2632.2: archaeologist | Archaeologists research and study past civilisations and settlements by collecting and inspecting material remains to analyze hierarchy, linguistics, culture, and politics.
+- 2632.6: Sociologist | Sociologists research and explain social behaviour and societal organization by analyzing legal, political, economic systems, and cultural expressions.
+- 2632.5: Geographer | Scholars who study human and physical geography, analyzing political, economic, and cultural aspects of humanity alongside land formations, soils, natural frontiers, and water flows.
+- 2632.6.1: social work researcher | Social work researchers manage projects to investigate social issues, providing reports on problems, needs, and response techniques.
+- 2632.7: Thanatology researcher | Thanatology researchers study death and the dying across scientific fields such as psychology, sociology, physiology, and anthropology to advance knowledge on death-related phenomena.
+- 2633.1: historian | Historians research, analyze, interpret, and present the past of human societies by examining documents, sources, and traces.
+- 2633.1.1: genealogist | Genealogists trace family history and lineages, presenting results as family trees or narratives.
+- 2633.2: philosopher | Philosophers study and argue over general and structural problems pertaining to society, humans, and individuals, utilizing logic to reach deep levels of abstraction regarding existence, value systems, knowledge, and reality.
+- 2633.3: political scientist | Political scientists study political behaviour, activity, and systems, ranging from the origins of political systems to decision-making processes and power perspectives. They advise governments and institutional organisations on governance matters.
+- 2634.1: Polygraph Examiner | Professionals who prepare individuals for polygraph testing, conduct exams using instruments to monitor physiological responses, interpret results, write reports, and provide courtroom testimony.
+- 2634.2: psychologist | Psychologists study human behaviour and mental processes, providing services for mental health issues and life challenges such as bereavement, relationship difficulties, and abuse.
+- 2634.2.2: educational psychologist | Psychologists employed by educational institutions to provide psychological and emotional support to students, conducting assessments, and consulting with families and staff.
+- 2634.2.1: clinical psychologist | Diagnoses, rehabilitates, and supports individuals with mental, emotional, and behavioural disorders using cognitive tools and psychological science.
+- 2634.2.3: health psychologist | Health psychologists address health-related behaviors in individuals and groups, preventing illness and promoting healthy lifestyles through counseling and psychological science.
+- 2634.2.4: Psychotherapist | Assists and treats healthcare users with psychological, psychosocial, or psychosomatic disorders using science-based psychotherapeutic methods to promote personal development and well-being.
+- 2635.1: social counsellor | Social counsellors provide support and guidance to individuals in the social work area to help them solve specific personal life problems.
+- 2635.1.1: bereavement counsellor | Supports patients and families to cope with the death of loved ones in emergent situations, hospices, and memorial services, while training professionals and communities on supportive needs.
+- 2635.1.2: drug and alcohol addiction counsellor | Professionals who provide assistance and counselling to individuals and families dealing with drug and alcohol addictions, monitoring progress and advocating for them.
+- 2635.1.4: Marriage counsellor | Marriage counsellors support and guide couples and families facing crises such as depression, substance abuse, and relationship problems.
+- 2635.1.5: sexual violence counsellor | Provides support, crisis care, and counselling to women and adolescents exposed to sexual assault or rape, while addressing problematic sexualized behaviours in children.
+- 2635.1.3: Family planning counsellor | Provides support and counselling to adults and adolescents on reproduction, contraceptive methods, pregnancy, and termination of pregnancy in compliance with legislation. Offers information on health practices, sexual disease prevention, and treatment referrals in collaboration with doctors.
+- 2635.2: social pedagogue | Social pedagogues provide care, support, and education to children and young persons with diverse backgrounds or capabilities, emphasizing self-reliance and societal inclusion.
+- 2635.3.10: education welfare officer | Addresses the social and psychological well-being of students by counseling on personal issues affecting school behavior, performance, and social life.
+- 2635.3: social worker | Practice-based professionals who promote social change, cohesion, and empowerment by interacting with individuals, families, groups, organizations, and communities to provide therapy, counseling, and community work.
+- 2635.3.1: Benefits advice worker | Guides individuals in the social work area to solve personal life problems, address inner conflicts, depression, and addictions, while empowering clients to improve their quality of life and claim social security benefits.
+- 2635.3.11: Employment support worker | Provides assistance to individuals with difficulties finding employment and long-term unemployed people.
+- 2635.3.12: Enterprise development worker | Supports enterprises in solving big social problems by liaising with communities and customers, while focusing on improving employee productivity and work-life balance.
+- 2635.3.13: Family social worker | Family social workers provide advice to families regarding available social services to address problems or challenging life situations, such as addictions, mental illnesses, medical or financial struggles. They assist users in accessing these services and monitor their appropriate usage.
+- 2635.3.14: Gerontology social worker | Gerontology social workers provide assistance to elderly individuals and their families, helping them cope with biopsychosocial needs by assessing functional capacity, health problems, and connecting them with community resources.
+- 2635.3.15: Homelessness worker | Provides on-the-spot assistance, counselling, and advice to individuals with housing problems or living on the streets, connecting them to services like hostel vacancies and financial aid.
+- 2635.3.17: mental health social worker | Assists and provides counselling to people with mental, emotional, or substance abuse problems, focusing on personalised support and monitoring recovery.
+- 2635.3.16: hospital social worker | Hospital social workers provide counselling to patients and families to help them cope with illness, diagnosis emotions, and social/financial problems. They act as a link between patients and medical staff, sensitizing healthcare professionals to emotional aspects, and support discharge processes.
+- 2635.3.18: Migrant social worker | Provides advice to migrants to guide them through integration steps, including living and working in a foreign country, while explaining eligibility criteria, rights, and duties.
+- 2635.3.2: child care social worker | Child care social workers provide social services to children and their families to improve social and psychological functioning, maximize family well-being, and protect children from abuse and neglect.
+- 2635.3.19: military welfare worker | Assists military families in coping with deployment, separation, and reintegration, while supporting veterans in re-adapting to civilian life and managing trauma.
+- 2635.3.20: Palliative care social worker | Provides assistance and counselling to patients with chronic or terminal diseases and their families regarding practical arrangements and emotional adjustment.
+- 2635.3.21: probation officer | Supervises offenders released from incarceration or sentenced to non-incarceration penalties, ensuring compliance with community service and rehabilitation plans.
+- 2635.3.22: rehabilitation support worker | Provides counselling and support to individuals dealing with birth defects, diseases, accidents, or burnouts, helping them cope with personal, social, and vocational issues.
+- 2635.3.23: social work supervisor | Manages social work cases, investigates alleged neglect or abuse, assesses family dynamics, and provides assistance to individuals with health or mental disorders.
+- 2635.3.24: substance misuse worker | Substance misuse workers provide assistance and counselling to people with substance abuse problems, monitoring progress and performing crisis interventions.
+- 2635.3.25: Victim support officer | Provides assistance and counselling to victims or witnesses of crimes such as sexual assault, domestic abuse, or anti-social behaviour, developing tailored solutions based on individual needs.
+- 2635.3.27: Youth worker | Youth workers support, accompany, and counsel young people, focusing on their personal and social development through one-to-one or group-based activities.
+- 2635.3.26: Youth offending team worker | Supports young offenders to prevent reoffending through counselling, risk assessment, and facilitating access to housing, education, and constructive activities.
+- 2635.3.27.1: Youth information worker | Delivers youth information, guidance, and counselling services to empower young people, support their wellbeing, and ensure services are accessible and welcoming.
+- 2635.3.3: clinical social worker | Provides therapy, counselling, and intervention services to clients facing mental illness, addiction, and abuse, while advocating for necessary resources and addressing medical/public health impacts.
+- 2635.3.5: community development social worker | Supports individuals, families, and groups in socially or financially deprived areas by providing leadership, fostering community cohesion, and tackling social inequality.
+- 2635.3.4: Community care case worker | Professionals who perform assessment and care management to organize domiciliary services for vulnerable adults with physical impairments or those convalescing, aiming to support safe and independent living in the community.
+- 2635.3.6: Community social worker | Professionals who assist individuals disadvantaged or excluded from society to improve their situation and resolve integration issues, often focusing on specific community groups.
+- 2635.3.7: consultant social worker | Delivers high-quality social work services by contributing to the development and improvement of social work and social care practice.
+- 2635.3.9: Crisis situation social worker | Provides emergency support and assistance to persons with physical or mental disorders by addressing distress, impairment, and instability.
+- 2635.3.8: Criminal justice social worker | Professionals who tackle criminal behaviour, reduce reoffending risks, and support victims and offenders within the criminal justice system.
+- 2636.1: Chaplain | Chaplains perform religious activities in secular institutions, providing counselling, spiritual, and emotional support to people within those institutions.
+- 2636.2: minister of religion | Ministers of religion lead religious organisations or communities, perform spiritual and religious ceremonies, and provide spiritual guidance to members of a particular religious group.
+- 2636.3: missionary | Supervises the execution of outreach missions from a church foundation, organizing activities and developing goals and strategies.
+- 2641.1: Book editor | Professionals who identify manuscripts for publication, evaluate commercial potential, and maintain relationships with writers.
+- 2636.4: Religion scientific researcher | Religion scientific researchers study concepts related to religions, beliefs, and spirituality, applying rationality to the pursuit of morality and ethics through the study of scripture, religion, discipline, and divine law.
+- 2641.2: dramaturge | Dramaturges evaluate new plays and works, proposing them to stage directors and art councils while gathering comprehensive documentation on the work, author, and context.
+- 2641.3: literary scholar | Literary scholars research works of literature, history of literature, genres, and literary criticism to appraise works within appropriate contexts and produce research results on specific topics.
+- 2641.4: writer | Develops content for books, including novels, poetry, short stories, comics, and other literature forms, covering both fictional and non-fictional genres.
+- 2641.4.1: Lyricist | Interprets the style of a music piece and writes words to accompany the melody, working collaboratively with music composers.
+- 2641.4.2: script writer | Creates scripts for motion pictures or television series, developing detailed stories including plot, characters, dialogue, and physical environment.
+- 2641.4.3: speechwriter | Researches and writes speeches on various topics, creating presentations in a conversational tone to engage audiences and ensure the message is comprehensible.
+- 2642.1: journalist | Journalists research, verify, and write news stories for various media outlets, covering diverse events while adhering to ethical codes and press laws.
+- 2641.4.4: Technical Communicator | Prepares clear, concise, and professional communication from product developers to users, including online help, manuals, white papers, and videos.
+- 2642.1.1: blogger | Bloggers write online articles on subjects such as politics, fashion, economics, and sports, relating objective facts and offering personal opinions while interacting with readers via comments.
+- 2642.1.10: fact checker | Fact checkers ensure the accuracy of information in texts ready for publishing by researching facts thoroughly and correcting errors.
+- 2642.1.11: foreign correspondent | Foreign correspondents research and write news stories of international importance for various media outlets while stationed in a foreign country.
+- 2642.1.12: magazine editor | Magazine editors select stories for publication, assign journalists, determine article length and placement, and ensure timely publication.
+- 2642.1.13: newspaper editor | Professionals who decide which news stories are covered, assign journalists, determine article length and placement, and ensure publications are finished on time.
+- 2642.1.14: picture editor | Picture editors select and approve photographs and illustrations for newspapers, journals, and magazines, ensuring timely delivery for publication.
+- 2642.1.15: political journalist | Political journalists research and write articles about politics and politicians for newspapers, magazines, television and other media. They conduct interviews and attend events.
+- 2642.1.16: sports journalist | Sports journalists research and write articles about sport events and athletes for newspapers, magazines, television and other media. They conduct interviews and attend events.
+- 2642.1.17: vlogger | Vloggers create online videos covering diverse subjects like politics, fashion, economics, and sports, often blending objective facts with personal opinions. They publish content on social media or streaming platforms with accompanying text and engage with viewers through comments.
+- 2642.1.2: broadcast news editor | Broadcast news editors decide which news stories will be covered during the news, assign journalists to each item, and determine the length of coverage and placement within the broadcast.
+- 2642.1.3: business journalist | Business journalists research and write articles about the economy and economic events for newspapers, magazines, television, and other media.
+- 2642.1.4: columnist | Columnists research and write opinion pieces about new events for newspapers, journals, magazines, and other media, distinguished by a specific area of interest and unique writing style.
+- 2642.1.5: Copy editor | Professionals who ascertain that text is agreeable to read and adheres to grammar and spelling conventions for books, journals, magazines, and other media.
+- 2642.1.6: crime journalist | Crime journalists research and write articles about criminal events for newspapers, magazines, television and other media. They conduct interviews and attend court hearings.
+- 2642.1.7: critic | Professionals who write reviews of literary, musical, artistic, and entertainment works for various media, evaluating theme, expression, and technique based on personal expertise.
+- 2642.1.8: editor-in-chief | Oversees the production of news stories for newspapers, magazines, journals, and other media, managing day-to-day operations to ensure timely publication.
+- 2642.1.9: entertainment journalist | Entertainment journalists research and write articles about cultural and social events for newspapers, magazines, television and other media. They conduct interviews with artists and celebrities and attend events.
+- 2643.3: Lexicographer | Lexicographers write and compile the content for dictionaries, determining which new words are in common use and should be included in the glossary.
+- 2643.1: Graphologist | Graphologists analyse written or printed materials to draw conclusions and evidence about traits, personality, abilities, and authorship by interpreting letter forms, writing fashion, and patterns.
+- 2643.2: Interpreter | Interpreters understand and convert spoken communication from one language to another, retaining information and communicating it immediately while preserving message nuances and stress.
+- 2643.4: Linguist | Linguists study languages scientifically, mastering them to interpret grammatical, semantic, and phonetic characteristics while researching language evolution and societal usage.
+- 2643.5: Sign language interpreter | Sign language interpreters understand and convert sign language into spoken language and vice versa, maintaining the nuances and stress of the message in the recipient language.
+- 2643.4.1: lawyer linguist | Lawyer linguists interpret and translate legal pieces from one language to another, providing legal analysis and helping to understand technicalities in foreign languages.
+- 2643.6: translator | Translators transcribe written documents from one or more languages to another, ensuring that the message and nuances remain intact in the translated material.
+- 2643.6.1: Localiser | Translates and adapts texts to the language and culture of a specific target audience, converting standard translations into locally understandable content enriched with cultural nuances.
+- 2643.6.2: subtitler | Professionals who create subtitles for audiovisual works, working either intralingually for hearing-impaired viewers or interlingually for foreign language audiences, ensuring synchronization with sound and images.
+- 2651.1: Artistic Painter | Creates paintings in oil, water colours, or pastel, as well as miniatures, collages, and drawings executed directly by the artist or entirely under their control.
+- 2651.10: Storyboard artist | Storyboard artists draw out scenes of motion pictures or television series according to the script to visualize production possibilities.
+- 2651.11: video artist | Creates videos using analogue or digital techniques to obtain special effects, animation, or other animated visuals using films, videos, images, computer or other electronic tools.
+- 2651.2: art restorer | Restorers perform corrective treatment based on an evaluation of the aesthetic, historic, and scientific characteristics of art objects to address structural stability and chemical or physical deterioration.
+- 2651.3: Cartoonist | Draws people, objects, and events in a comical or derogatory way, often exaggerating physical features and personality traits to portray political, economic, cultural, and social events humorously.
+- 2651.4: Ceramicist | A professional with in-depth knowledge of ceramic materials who develops personal methods of expression to create sculptures, jewellery, tablewares, tiles, and other ceramic goods.
+- 2651.6: Drawing artist | Drawing artists express concepts by providing a drawn representation corresponding to the idea.
+- 2651.7: glass artist | Glass artists create original artworks by assembling pieces of glass, producing accessories, windows, or decorations, and may participate in restoration processes for religious buildings.
+- 2651.5: conceptual artist | Conceptual artists select any material as an artistic tool or medium to create experiences for the public. Their work spans fine arts, including two-dimensional (drawing, painting, collage), three-dimensional (sculpture, installation), and four-dimensional (moving images, performance) forms.
+- 2651.8: printmaker | Engraves or etches metal, wood, rubber, or other materials to create images transported onto surfaces, generally using a printing press.
+- 2651.9: Sculptor | Creates sculptures using diverse materials such as stone, clay, glass, wood, and plaster through carving, modelling, moulding, casting, or welding.
+- 2652.1.1: music arranger | Creates arrangements for music after its creation by a composer, interpreting, adapting, or reworking compositions for different instruments, voices, or styles.
+- 2652.1: composer | Creates new music pieces in various styles, often notating them in musical notation. Works independently or within ensembles to support film, television, games, or live performances.
+- 2652.2: music director | Music directors lead musical groups such as orchestras and bands during live performances or recording sessions, organizing music and coordinating musicians.
+- 2652.3: musician | Musicians perform vocal or musical parts for an audience, utilizing instruments or voice, and may write or transcribe music.
+- 2652.3.1.1: Choirmaster/choirmistress | Choirmasters/choirmistresses manage various aspects of the vocal, and sometimes instrumental, performances of musical groups, such as choirs, ensembles, or glee clubs.
+- 2652.3.2: singer | Professional musicians skilled in using their voice as a musical instrument across various vocal ranges and musical genres.
+- 2652.3.1: musical conductor | Musical conductors lead ensembles of musicians, directing them during rehearsals, recording sessions, and live performances to help them achieve their best performance.
+- 2652.4: Répétiteur | A répétiteur accompanies performers, typically singers, following the instructions of musical conductors to direct rehearsals and guide artists through the rehearsal process.
+- 2652.5: sound artist | Sound artists use sound as a main creative medium to express their intention and identity through the creation of sounds, often in interdisciplinary and hybrid forms.
+- 2653.1: Choreographer | Creates sequences of movements specifying motion and form, often coordinating, teaching, and rehearsing performers.
+- 2653.1.1: Choreologist | Specialised creators of dance in specific styles or traditions (e.g., ethnic, early, baroque), contextualising work historically and sociologically while analysing movement from intrinsic and extrinsic perspectives.
+- 2653.1.2: dance répétiteur | Dance répétiteurs assist conductors and choreographers in directing rehearsals and guiding artists, ensuring the integrity of the work is respected.
+- 2653.2: dancer | Dancers interpret ideas, feelings, stories, or characters for audiences using movement and body language, typically accompanied by music.
+- 2654.1.1: animation director | Supervises and recruits multimedia artists, ensuring animation quality, on-time delivery, and adherence to budget.
+- 2654.1: art director | Art directors shape the visual layout of a concept, create innovative designs, and manage cooperation between all aspects involved to ensure visually appealing work for audiences.
+- 2654.1.2: casting director | Selects actors for motion pictures and television series by collaborating with producers and directors to define role requirements, organizing auditions, and managing actor contracts.
+- 2654.1.3: Director of Photography | Responsible for the visual interpretation of the script and all photography components of film or television, including framing, colouring, lighting, style, and locations.
+- 2654.1.4: Performance lighting director | Performance lighting directors determine lighting requirements during production to align with the video and motion picture director's creative vision, using the script to design specific lighting for each shot.
+- 2654.1.6: stage director | Stage directors oversee and orchestrate the mounting of a performance production by unifying various endeavours and aspects of a theatrical production.
+- 2654.1.5: production designer | Responsible for the complete visual look (style, colouring, locations) of television programmes, series, motion pictures, and commercials.
+- 2654.1.7: Technical director | Realises artistic visions within technical constraints by coordinating production units and managing stage and technical equipment.
+- 2654.1.8: video and motion picture director | Responsible for the overall production of movies or television programs, translating scripts into audiovisual images, and supervising the film crew to convey a creative vision.
+- 2654.2: post-production supervisor | Oversees the entire post-production process, ensuring workflow planning, budgeting, and final delivery of the product.
+- 2654.3: Producer | Manages the production of music, motion pictures, or series by planning, coordinating, and overseeing all aspects including direction, publication, financing, recording, and editing.
+- 2654.3.1: music producer | Professionals responsible for acquiring music for publication, evaluating demos, and overseeing the technical production and editing of records.
+- 2654.4: Radio producer | Radio producers organize the making of radio shows, overseeing content, audio production, resource planning, and personnel supervision.
+- 2654.3.2: video and motion picture producer | Supervises the entire production of movies or television programmes, holding final decision-making power from development to distribution.
+- 2654.5: video and motion picture editor | Professionals responsible for assembling and cutting raw footage into logically and aesthetically pleasing material for movies, television, or domestic use.
+- 2656.1: audio describer | Audio describers depict orally what happens on the screen or on stage for the blind and visually impaired, enabling them to enjoy audio-visual shows, live performances, or sports events.
+- 2655.1: actor/actress | Actors/actresses play roles and parts on live stage performances, TV, radio, video, or motion picture productions for entertainment or instruction.
+- 2655.1.1: voice-over artist | Voice-over artists perform the dialogues of animated television or movie characters, empathizing with their roles to make them come alive through their voice.
+- 2656.2: news anchor | News anchors present news stories on radio and television, introducing pre-recorded items and reports from live reporters.
+- 2656.3: presenter | Presenters host broadcast productions, serving as the face or voice of programs across radio, television, theatres, and other establishments to entertain audiences and introduce guests.
+- 2659.1: community artist | Community artists research, plan, organise and lead artistic activities for people brought together by a shared interest, capacity, environment or condition, fostering creativity and improving quality of life.
+- 2659.2: performance artist | Creates performances involving time, space, the performer's body, or presence in a medium, establishing a relationship with an audience.
+- 2659.2.1: Circus Artist | Develops original performance pieces showcasing artistic and performing skills, emotive depth, and artistic proposals for the general public through traditional or original circus disciplines.
+- 2659.2.5: street performer | Street performers create outdoor arts performances using space and audience as creative resources to entertain and share critical societal opinions.
+- 2659.2.2: disc jockey | Disc jockeys mix music from various sources using turntables or a mixing console and play music at events in front of a live audience. They may also provide music on the radio, select broadcast content according to schedule, and create mixes for later distribution.
+- 2659.2.3: Puppeteer | Puppeteers perform shows by manipulating puppets such as hand puppets or marionettes, synchronizing movements with speech and music based on a script.
+- 2659.2.4: stand-up comedian | Stand-up comedians tell humorist stories, jokes, and one-liners typically described as a monologue, act, or routine.
+- 2659.4: Tourist animator | Tourist animators develop and organise entertainment activities for guests of a hospitality establishment, setting up and coordinating events to entertain customers.
+- 2659.3: street artist | Street artists create visual art, such as graffiti or sticker art, in urban public spaces to express feelings, political views, or ideas, utilizing non-traditional art venues.
+- 3111.1: chemistry technician | Chemistry technicians monitor chemical processes and conduct tests to analyse chemical substances for manufacturing or scientific purposes, assisting chemists in laboratories or production facilities.
+- 2659.2.6: variety artist | Multi-disciplinary artists who master at least two disciplines including comedy, dance, singing, circus arts, object manipulation, and illusionism. They perform solo or collectively in music variety shows, cabaret, musicals, and other entertainment events, characterized by blending arts, styles, and disciplines.
+- 3111.11: physics technician | Physics technicians monitor physical processes and perform tests for manufacturing, educational, or scientific purposes, assisting physicists in laboratories, schools, or production facilities.
+- 3111.10: nuclear technician | Aids to physicists and engineers in nuclear laboratories and power plants who monitor procedures, maintain equipment, and control radioactive materials to ensure safety and quality.
+- 3111.1.1: Chromatographer | Chromatographers apply gas, liquid, or ion exchange techniques to identify and analyze chemical compounds in samples. They calibrate and maintain chromatography machinery, prepare equipment and solutions, and develop new analysis methods as needed.
+- 3111.12: radiation protection technician | Monitors radiation levels in facilities to ensure health and safety compliance and prevent dangerous elevations in radiation.
+- 3111.14: soil surveying technician | Analyses soil by carrying out technical surveying tasks, focusing on classifying soil types and properties.
+- 3111.13: Remote sensing technician | Collects airborne data using specialized equipment to determine geographical points for operations including land conservation, urban planning, and military activities.
+- 3111.3: Food Analyst | Food analysts perform standardized tests to determine the chemical, physical, or microbiological features of products for human consumption.
+- 3111.4: geology technician | Assists geologists in collecting materials, conducting research, and studying Earth samples to determine land value for exploration.
+- 3111.5: hydrographic surveying technician | Hydrographic surveying technicians perform oceanographic and surveying operations in marine environments, assisting hydrographic surveyors to map and study underwater topography and morphology.
+- 3111.6: Leather laboratory technician | Leather laboratory technicians perform and report chemical analyses and physical tests of leather, auxiliaries, environmental emissions, and discharges, ensuring compliance with national, international, or customer standards.
+- 3111.7: Material testing technician | Material testing technicians perform a variety of tests on materials such as soils, concrete, masonry and asphalt, in order to verify conformance to intended usage cases and specifications.
+- 3111.8: Meteorology Technician | Meteorology technicians collect extensive meteorological data for users like aviation companies and meteorological institutions. They operate specialized instruments to ensure accurate weather predictions and report observations, assisting meteorologists in scientific operations.
+- 3112.1.1: Bridge inspector | Professionals who inspect bridge structures for defects such as joint breaks, cracks, and rust, and organize or carry out maintenance activities.
+- 3111.9: Metrology Technician | Metrology technicians apply practical knowledge of metrology to calibrate measuring instruments, test equipment, and analyze their performance to ensure precision, performance, and accuracy.
+- 3112.1: civil engineering technician | Civil engineering technicians assist in designing and executing construction plans, managing organizational tasks, and ensuring material quality for civil engineering projects.
+- 3112.1.10: rail maintenance technician | Executes routine inspections of railway tracks, powerlines, signage, and switches; repairs defects quickly, safely, and at any time of day or night.
+- 3112.1.11: road maintenance technician | Road maintenance technicians inspect and manage roads in enclosed areas for maintenance and repair, ensuring traffic flows safely and smoothly.
+- 3112.1.12: sewerage maintenance technician | Technicians who inspect sewers and pipeline systems using moving video cameras to identify the need for maintenance and repair.
+- 3112.1.13: Water systems engineering technician | Aids engineers in developing and implementing water supply and treatment systems, ensuring operational compliance with health, safety, and legislation.
+- 3112.1.2: Building Inspector | Professionals who inspect buildings to verify compliance with specifications, regulations, and standards regarding construction quality and resistance.
+- 3112.1.3: Construction quality inspector | Monitors activities at larger construction sites to ensure compliance with standards and specifications, while identifying safety issues and testing product conformity.
+- 3112.1.4: Construction quality manager | Ensures construction work meets contractual and legislative standards by establishing quality procedures, performing inspections, and proposing solutions to shortcomings.
+- 3112.1.5: energy assessor | Professionals who determine the energy performance of buildings and issue Energy Performance Certificates (EPCs) to estimate consumption and advise on conservation improvements.
+- 3112.1.5.1: Domestic Energy Assessor | Professionals who advise individuals on home energy supply, assess needs, recommend suppliers, and create compliant energy plans.
+- 3112.1.6: Fire inspector | Fire inspectors conduct inspections of buildings and properties to ensure compliance with fire prevention and safety regulations, enforce regulations in non-compliant facilities, and educate the public on fire safety, prevention methods, policies, and disaster response.
+- 3112.1.8: Fire safety tester | Conducts tests on building, transportation, and textile materials, as well as fire prevention and fighting systems, to measure flame resistance and behavior under extreme circumstances.
+- 3112.1.7: Fire protection technician | Fire protection technicians install and maintain fire protection equipment, such as fire extinguishers, fire alarms, fire detection systems, and sprinkler systems to ensure safety compliance and hazard protection.
+- 3112.1.9: Landfill supervisor | Landfill supervisors coordinate landfill activities and staff, ensuring operational compliance with waste management legislation while directing waste disposal operations.
+- 3112.10: surveying technician | Surveying technicians carry out technical surveying tasks, assisting surveyors, architects, or engineers with mapping land, creating construction drawings, and operating precise measuring equipment.
+- 3112.2: construction safety inspector | Construction safety inspectors monitor construction sites and their conformity to health and safety regulations. They perform inspections, identify safety hazards and report on their findings.
+- 3112.3: Construction safety manager | Construction safety managers inspect, enforce, and control health and safety measures at construction sites. They manage workplace accidents and ensure safety policies are correctly implemented.
+- 3112.4: Corrosion Technician | Monitors pipeline integrity, performs repairs, and ensures connections comply with health and safety regulations.
+- 3112.5: energy analyst | Energy analysts evaluate energy consumption in buildings owned by consumers and businesses, analyzing existing systems to recommend cost-effective alternatives and efficiency improvements.
+- 3112.6: energy conservation officer | Energy conservation officers promote energy conservation in residential homes and businesses by advising on power reduction, enforcing efficiency improvements, and implementing demand management policies.
+- 3112.7: energy consultant | Advises clients on energy sources, tariffs, and efficiency methods to reduce consumption and carbon footprint.
+- 3112.8: Engineering Assistant | Engineering assistants ensure the administration and monitoring of technical and engineering files for projects, assignments, and quality matters. They assist engineers with experiments, participate in site visits, and administer the collection of information.
+- 3112.9: railway infrastructure inspector | Railway infrastructure inspectors check railway conditions, monitor health and safety compliance, and detect damage or flaws to ensure safe operations.
+- 3113.1.1: Calibration Technician | Tests and calibrates electrical and electronic equipment by developing testing procedures based on technical drawings and blueprints.
+- 3113.1: electrical engineering technician | Electrical engineering technicians work with electrical engineers in research, performing technical tasks to aid in the designing, testing, manufacturing, and operation of electrical devices and facilities.
+- 3114.1: electronics engineering technician | Electronics engineering technicians work closely with electronics engineers in the development of electronic equipment and devices.
+- 3113.1.2: Electromechanical engineering technician | Collaborates with engineers to develop electromechanical equipment, responsible for building, installing, testing, monitoring, and maintaining circuits and systems.
+- 3113.2: Hydropower Technician | Hydropower technicians install and maintain systems in hydropower plants, ensuring turbines operate in compliance with regulations.
+- 3114.1.1: Avionics Inspector | Inspects aircraft instruments, electrical, mechanical, and electronic systems to ensure compliance with performance and safety standards. Reviews maintenance, repair, overhaul work, and modifications for conformity.
+- 3114.1.10: sensor engineering technician | Collaborates with sensor engineers to develop sensors, systems, and products, focusing on building, testing, maintaining, and repairing sensor equipment.
+- 3114.1.2: Computer hardware engineering technician | Collaborates with computer hardware engineers to develop computer hardware components such as motherboards, routers, and microprocessors.
+- 3114.1.3: Computer hardware test technician | Conducts testing of computer hardware such as circuit boards, chips, and systems to analyze configuration and verify reliability and conformance to specifications.
+- 3114.1.4: Instrumentation engineering technician | Assists instrumentation engineers in developing control equipment like valves, relays, and regulators to monitor and control processes. Responsible for building, testing, monitoring, and maintaining equipment.
+- 3114.1.6: Microelectronics engineering technician | Collaborates with engineers to develop small electronic devices and components like micro-processors, memory chips, and integrated circuits for machine and motor controls.
+- 3114.1.5: medical device engineering technician | Collaborates with engineers in the design, development, and production of medical-technical systems like pacemakers, MRI machines, and X-ray devices.
+- 3114.1.7: Microelectronics maintenance technician | Professionals responsible for the preventive and corrective maintenance, troubleshooting, and repair of microelectronic systems, products, and components.
+- 3114.1.8: Microsystem engineering technician | Collaborates with micro-system engineers to develop microsystems and microelectromechanical systems (MEMS) integrated into mechanical, optical, acoustic, and electronic products.
+- 3115.1: mechanical engineering technician | Provides technical support to mechanical engineers in producing and manufacturing mechanical machinery.
+- 3114.1.9: optoelectronic engineering technician | Technicians who collaborate with engineers to develop, build, test, install, and calibrate optoelectronic systems and components.
+- 3115.1.10: Material stress analyst | Plans and uses software to perform structural analyses (static, stability, fatigue) on machines, develops analysis of primary and secondary structures, and prepares technical reports.
+- 3115.1.1: aerospace engineering technician | Aerospace engineering technicians assist engineers in operating, maintaining, and testing equipment for aircraft and spacecraft. They interpret blueprints to define test procedures, utilize software for system diagnostics, and document results to recommend operational changes.
+- 3115.1.11: mechatronics engineering technician | Mechatronics engineering technicians collaborate with engineers to develop mechatronic devices and applications by integrating mechanical, electronic, and computer engineering principles.
+- 3115.1.12: Motor vehicle engine inspector | Inspects diesel, gas, petrol, and electric engines in assembly facilities and mechanic shops to ensure compliance with safety standards and regulations.
+- 3115.1.14: Optomechanical engineering technician | Technicians who collaborate with engineers to develop, build, install, test, and maintain optomechanical devices and equipment prototypes.
+- 3115.1.13: Motor vehicle engine tester | Tests the performance of diesel, petrol, gas, and electric engines in specialised facilities like laboratories, recording data on temperature, speed, fuel consumption, and pressure.
+- 3115.1.15: pneumatic engineering technician | Evaluates operating pneumatic systems and assemblies, such as compressed air machines, and recommends modifications for efficiency. Also involved in the design of pneumatic systems and components.
+- 3115.1.16: Production engineering technician | Production engineering technicians plan production, follow up production processes, and develop and test solutions to solve technical problems.
+- 3115.1.18: rolling stock engineering technician | Technicians supporting engineers in the design, development, manufacturing, testing, installation, and maintenance of rail vehicles like wagons, multiple units, carriages, and locomotives.
+- 3115.1.17: Refrigeration, air conditioning and heat pump technician | Technicians who safely perform design, installation, commissioning, operation, maintenance, and dismantling of refrigeration, air conditioning, and heat pump systems, including electrical work and refrigerant management.
+- 3115.1.19: rolling stock engine inspector | Inspects diesel and electric locomotive engines to ensure compliance with standards, conducting routine, post-overhaul, and post-casualty inspections while providing technical support and documentation.
+- 3115.1.2: Aircraft engine inspector | Inspects all types of aircraft engines in factories to ensure compliance with safety standards and regulations.
+- 3115.1.20: rolling stock engine tester | Tests the performance of diesel and electric engines used for locomotives by positioning engines on test stands, connecting machinery, and recording data.
+- 3115.1.21: rolling stock inspector | Inspects wagons and carriages to assess technical condition before transportation, ensuring correct operation of devices and preparing required documentation.
+- 3115.1.22: Vessel Engine Inspector | Inspects ship and boat engines in assembly facilities to ensure compliance with safety standards and regulations.
+- 3115.1.23: Vessel engine tester | Tests the performance of various vessel engines in specialised facilities, including positioning engines on test stands and using computerised equipment.
+- 3115.1.3: Aircraft engine tester | Tests aircraft engine performance in specialized facilities by positioning engines on test stands and recording data using computerized equipment.
+- 3115.1.24: welding inspector | Welding inspectors examine metal connections and bonds using visual tools and electrical instruments to ensure quality and safety. They verify that welding activities, plans, and materials comply with guidelines and regulations, working both in the field and office to compile reports.
+- 3115.1.4: automotive engineering technician | Automotive engineering technicians collaborate with engineers to operate, repair, maintain, and test motor vehicle equipment. They ensure serviceability in various environments, review designs for test specifications, and use software to verify vehicle part functionality.
+- 3115.1.5: heating, ventilation, air conditioning and refrigeration engineering technician | Aids in the design of HVAC and refrigeration devices for buildings, ensuring equipment compliance with environmental standards and safety protocols.
+- 3115.1.6: Industrial maintenance supervisor | Organises and supervises maintenance operations of machines, systems, and equipment to ensure compliance with health, safety, environmental, productivity, and quality standards.
+- 3115.1.7: marine engineering technician | Technicians who assist marine engineers in the design, development, manufacturing, testing, installation, and maintenance of various vessels, from pleasure crafts to naval ships and submarines.
+- 3115.1.8: marine mechatronics technician | Technicians who work in shipyards and on vessels to configure, optimize, assemble, and maintain industrial mechatronic systems.
+- 3115.1.9: Marine Surveyor | Marine surveyors inspect vessels intended for operations in maritime or open sea waters to ensure compliance with International Maritime Organisation (IMO) regulations. They may also act as third parties for reviewing offshore facilities and construction projects.
+- 3116.1: chemical engineering technician | Chemical engineering technicians transform raw materials to develop and test chemical products, while also working to improve chemical plant operations and processes.
+- 3116.1.1: asphalt laboratory technician | Asphalt laboratory technicians perform inspections and laboratory testing on asphalt and related raw materials to ensure product quality and resolve technical issues on construction sites.
+- 3116.1.2: chemical manufacturing quality technician | Chemical manufacturing quality technicians perform inspections and precision measurements to test and ensure product quality using computer-controlled machinery and systems.
+- 3116.1.3: colour sampling technician | Colour sampling technicians prepare recipes of colours and dyeing mixes, ensuring consistency in colour while using materials from different sources.
+- 3116.1.4: Hazardous waste technician | Specialists who dispose of materials exhibiting ignitable, corrosive, reactive, toxic, or combined hazardous traits, ensuring compliance with regulations.
+- 3117.1: Desalination Technician | Operates, monitors, and maintains desalination plant equipment while ensuring compliance with legal regulations and safety requirements.
+- 3117.2: geotechnician | Geotechnicians collect and process rock and soil samples for geomechanical testing, describing rock mass quality and reporting findings to geologists and engineers.
+- 3117.3: metallurgical technician | Provides technical support in researching and performing experiments on minerals, metals, alloys, oil, and gas, while assisting in improving extraction methods.
+- 3117.5: mine surveying technician | Mine surveying technicians conduct boundary and topographic surveys and monitor the progress of mining operations.
+- 3117.4: mine safety officer | Mine safety officers oversee health and safety systems at mining operations, ensuring compliance and preventing accidents.
+- 3118.2: clothing CAD technician | Clothing CAD technicians use software to create design plans for clothing products, utilizing 2D surface modelling or 3D solid modelling.
+- 3118.1: 3D printing technician | Assists in designing and programming products, performs maintenance on 3D printers, checks renders, and runs printing tests.
+- 3118.3: drafter | Drafters prepare and create technical drawings using special software or manual techniques to show how something is built or works.
+- 3118.3.1: aerospace engineering drafter | Converts aerospace engineers' designs into technical drawings using computer-aided design programs to detail dimensions, fastening, and assembling methods for aircraft and spacecrafts.
+- 3118.3.11: mechanical engineering drafter | Converts mechanical engineers' designs and sketches into technical drawings detailing dimensions, fastening, and assembling methods for manufacturing processes.
+- 3118.3.10: marine engineering drafter | Converts marine engineers' designs into technical drawings using software, detailing dimensions, fastening, and assembling methods for boats from pleasure crafts to naval vessels.
+- 3118.3.12: Product development engineering drafter | Designs and draws blueprints to bring new concepts and products to life, creating detailed manufacturing plans.
+- 3118.3.13: rolling stock engineering drafter | Converts rolling stock engineers' designs into technical drawings using software, detailing dimensions, fastening, and assembling methods for rail vehicles.
+- 3118.3.2: architectural drafter | Architectural drafters create drawings based on specifications and ideas provided by architects, utilizing both computer-aided design tools and conventional methods.
+- 3118.3.3: automotive engineering drafter | Converts automotive engineers' designs into technical drawings using software, detailing dimensions, fastening, and assembling methods for vehicle components and motor vehicles.
+- 3118.3.4: Civil drafter | Civil drafters draw and prepare sketches for civil engineers and architects regarding architectonic projects, topographical maps, or the reconstruction of existing structures.
+- 3118.3.5: Computer-aided design operator | Uses computer hardware and software to add technical dimensions to CAD drawings, ensuring product images are accurate and realistic, and calculating required manufacturing materials.
+- 3118.3.6: electrical drafter | Electrical drafters support engineers in the design and conceptualisation of electrical equipment by drafting specifications for various electrical systems using specialised software.
+- 3118.3.7: Electromechanical Drafter | Electromechanical drafters draw and create blueprints together with electromechanical engineers, interpreting specifications to design equipment and components.
+- 3118.3.8: electronics drafter | Supports electronic engineers in the design and conceptualisation of electronic equipment by drafting blueprints and assembly diagrams.
+- 3118.3.9: heating, ventilation, air conditioning (and refrigeration) drafter | Creates prototypes, sketches, technical details, and aesthetic briefings for engineers to produce computer-aided drawings of HVAC and refrigeration systems for various projects.
+- 3118.4: Printed circuit board designer | Professionals who diagram and design the construction of circuit boards by envisioning the logical placement of conductive tracks, copper, and pin pads.
+- 3119.1: airport maintenance technician | Airport maintenance technicians are responsible for maintaining all equipment necessary for airport functionality, including visual aids, electrical systems, luggage systems, security systems, pavements, drainage, and unpaved areas.
+- 3119.10: Metal additive manufacturing operator | Operates machines using additive manufacturing processes, performing setup, maintenance, and repair while managing feedstock handling and solving process-related problems.
+- 3119.12: photonics engineering technician | Technicians who collaborate with engineers to develop photonic systems, build, test, install, and calibrate optical equipment such as lasers, lenses, and fibre optic devices.
+- 3119.11: offshore renewable energy technician | Technicians who install offshore energy farms and equipment, ensuring regulatory compliance and assisting engineers in constructing devices like wind turbines and wave generators.
+- 3119.13: Pipeline compliance coordinator | Pipeline compliance coordinators track, compile, and summarize compliance activities in pipeline infrastructures and fields to ensure regulatory adherence, develop policies, and minimize risk.
+- 3119.14: Process engineering technician | Technicians who work closely with engineers to evaluate existing processes and configure manufacturing systems to reduce costs, improve sustainability, and develop best practices.
+- 3119.15: Product development engineering technician | Technicians who improve product development efficiency, set up equipment, and develop/test solutions to solve technical problems.
+- 3119.16: quality engineering technician | Quality engineering technicians collaborate with engineers to analyze and solve quality problems, improve productivity, and ensure products meet standards through inspection and machine examination.
+- 3119.16.1: Footwear quality control laboratory technician | Technicians who perform laboratory tests on footwear and materials according to national and international standards, analyze results, and prepare quality reports.
+- 3119.16.2: Footwear quality technician | Manages standards and techniques for footwear processes and products, utilizing quality systems based on national and international standards to ensure continuous improvement and customer satisfaction.
+- 3119.16.3: Leather goods quality control laboratory technician | Technicians who perform laboratory control tests on leather goods according to national and international standards, preparing samples, analyzing results, and reporting findings.
+- 3119.16.4: Leather goods quality technician | Leather goods quality technicians perform quality control tasks, executing laboratory tests on finished products, materials, and components against national and international standards. They analyze results, prepare reports, and advise on corrective and preventive measures to ensure continuous improvement and customer satisfaction.
+- 3119.16.5: Textile chemical quality technician | Textile chemical quality technicians perform chemical laboratory tests on textile materials and products, interpret results, and support colouration and finishing processes.
+- 3119.16.6: textile quality technician | Textile quality technicians perform physical laboratory tests on textile materials and products to ensure they meet established standards.
+- 3119.17: Tanning Technician | Manages technical operations across all tannery production departments, ensuring consistent leather quality, fitness for use, and process sustainability from beamhouse to finishing.
+- 3119.18: Textile process controller | Textile process controllers perform operations and technical functions in design, production, and quality control of textile products, managing cost control and ensuring process conformity to specifications.
+- 3119.2: automation engineering technician | Collaborates with automation engineers to develop applications and systems for automating production processes.
+- 3119.19: Utilities inspector | Examine products, systems, and machinery such as sewer, water, gas, or electric turbines to ensure they are built and functioning according to regulations.
+- 3119.2.1: robotics engineering technician | Robotics engineering technicians collaborate with engineers in the development of robotic devices and applications through a combination of mechanical, electronic, and computer engineering.
+- 3119.3: Aviation Safety Officer | Plans and develops safety procedures for aviation companies, studies safety regulations relative to operations, and directs personnel to ensure compliance with safety measures.
+- 3119.4: Commissioning Technician | Supervises the final stages of projects where systems are installed and tested, working alongside commissioning engineers to ensure correct functioning.
+- 3119.5: food technician | Assists food technologists in developing food manufacturing processes based on chemical, physical, and biological principles, while ensuring product quality and regulatory compliance.
+- 3119.8: industrial engineering technician | Assists industrial engineers in improving efficiency, safety, and productivity in manufacturing plants.
+- 3119.7: Footwear production technician | Technicians involved in all phases of footwear manufacturing, from product engineering to construction, aiming to maximize productivity, reduce costs, and ensure quality.
+- 3119.6: Footwear Product Developer | Engineers footwear prototypes by bridging design and production, selecting or redesigning lasts and components, and creating technical drawings for manufacturing tools.
+- 3119.9: leather goods manufacturing technician | Technicians who perform cutting, closing, and finishing tasks for leather goods using manual techniques and simple traditional equipment to produce exclusive models or small orders based on customer requirements.
+- 3121.1: mine supervisor | Mine supervisors coordinate and supervise mining and quarrying activities in underground and surface mines and quarries.
+- 3121.1.1: Mine shift manager | Supervises staff, manages plant and equipment, optimises productivity, and ensures safety at the mine on a day-to-day basis.
+- 3122.2: Food production planner | Food production planners prepare production plans, evaluate all the variables in the process and strive to ensure that production objectives be achieved.
+- 3122.1: Dairy processing technician | Supervises and coordinates production, operations, and maintenance workers in dairy plants, assisting food technologists with process improvement and product development.
+- 3122.3: Industrial assembly supervisor | Industrial assembly supervisors organize, plan, and coordinate assembly operations to ensure efficient functioning and address production issues.
+- 3122.3.2: Container equipment assembly supervisor | Supervises the assembly of containers such as boilers or pressure vessels, ensuring production goals are met through process monitoring and workforce coaching.
+- 3122.3.3: Footwear assembly supervisor | Supervises operators in the lasting room, coordinating production chain activities and ensuring quality control of footwear assembly.
+- 3122.3.1: Aircraft assembly supervisor | Coordinates employees in aircraft manufacturing, schedules activities, and prepares production reports to optimize cost and productivity.
+- 3122.3.4: Machinery assembly supervisor | Supervises machinery assembly processes and trains workers to meet production targets.
+- 3122.3.5: Motor vehicle assembly supervisor | Coordinates employees in motor vehicle manufacturing, schedules activities, and prepares production reports to reduce costs and improve productivity.
+- 3122.3.8: Wood assembly supervisor | Wood assembly supervisors monitor the various processes in the assembly of wood products, ensuring production efficiency and quality.
+- 3122.3.6: rolling stock assembly supervisor | Coordinates employees in rolling stock manufacturing, schedules activities, and prepares production reports to optimize cost and productivity.
+- 3122.3.7: Vessel assembly supervisor | Coordinates employees in boat and ship manufacturing, schedules activities, and ensures compliance with working procedures and engineering standards.
+- 3122.4: Production supervisor | Production supervisors coordinate, plan and direct manufacturing and production processes, reviewing schedules and managing staff in production areas.
+- 3122.4.1: Animal feed supervisor | Supervises the manufacturing process of animal feeds, ensuring quality control and compliance with standards.
+- 3122.4.10: Metal production supervisor | Oversees day-to-day working processes and activities of labourers in metal fabrication factories, ensuring operational efficiency and safety.
+- 3122.4.11: optical instrument production supervisor | Optical instrument production supervisors coordinate, plan, and direct the optical instrument production process, ensuring proper glass processing and assembly according to specifications.
+- 3122.4.12: Paper mill supervisor | Coordinates and monitors paper mill operations to ensure production targets for quantity, quality, timeliness, and cost-effectiveness are met.
+- 3122.4.13: plastic and rubber products manufacturing supervisor | Manages and coordinates personnel in plastic or rubber products manufacturing to ensure efficient, safe, and cost-effective production.
+- 3122.4.14: Precision mechanics supervisor | Oversees, trains, and manages workers who assemble complex parts of small-size machines, such as measuring or control mechanisms.
+- 3122.4.15: Print studio supervisor | Print studio supervisors organise the activity of one or more teams of machine operators in printing, binding of books and finishing of printed materials to optimise production processes.
+- 3122.4.16: Wood production supervisor | Monitors processes involved in converting felled trees into usable lumber, ensuring production targets for quantity, quality, timeliness, and cost-effectiveness are met.
+- 3122.4.3: Distillery Supervisor | Coordinates spirit production processes and manages workers, verifying output volumes and alcohol proofs.
+- 3122.4.2: Chemical processing supervisor | Coordinates staff and activities in chemical production to meet goals and deadlines, while controlling quality and optimizing processes through defined tests and analysis.
+- 3122.4.4: electrical equipment production supervisor | Electrical equipment production supervisors coordinate, plan and direct the production process of electrical equipment, managing labourers, overseeing quality, and handling cost and resource management.
+- 3122.4.5: electronics production supervisor | Electronics production supervisors coordinate, plan, and direct the electronics production process, managing laborers, overseeing quality, and handling cost and resource management.
+- 3122.4.6: Footwear production supervisor | Monitors and coordinates day-to-day production activities in a footwear manufacturing plant, overseeing quality control, staff management, supplier negotiations, and production planning.
+- 3122.4.7: Leather goods production supervisor | Leather goods production supervisors monitor and coordinate day-to-day production activities of a leather goods manufacturing plant, overseeing quality control and managing staff.
+- 3122.4.8: Machine operator supervisor | Coordinates and directs workers who set up and operate machines, monitors production processes and material flow, and ensures products meet requirements.
+- 3122.4.9: Malt house supervisor | Oversees malting processes to ensure integrity, monitoring steeping, germination, and kilning to meet customer specifications while leading production staff safely.
+- 3123.1.1: Bricklaying Supervisor | Bricklaying supervisors monitor bricklaying activities, assign tasks, and take quick decisions to resolve problems.
+- 3122.5: waste management supervisor | Coordinates waste collection, recycling, and disposal facilities while supervising operations and ensuring environmental compliance.
+- 3123.1: Construction general supervisor | Construction general supervisors keep track of the proceedings of all stages in the building process, coordinating different teams, assigning tasks, and resolving problems.
+- 3123.1.10: Dredging Supervisor | Dredging supervisors monitor dredging operations to ensure compliance with regulations and resolve operational problems quickly.
+- 3123.1.11: Electrical Supervisor | Electrical supervisors monitor operations involved in installing and servicing electricity cables and other electrical infrastructure.
+- 3123.1.13: Insulation Supervisor | Insulation supervisors monitor insulation operations, assign tasks, and make quick decisions to resolve problems.
+- 3123.1.12: Glass installation supervisor | Monitors the process of installing plate glass, assigns tasks, and makes quick decisions to resolve problems.
+- 3123.1.14: Lift installation supervisor | Monitors lift installation proceedings, assigns tasks, and makes quick decisions to resolve problems.
+- 3123.1.17: plumbing supervisor | Plumbing supervisors monitor plumbing operations, assign tasks, and make quick decisions to resolve problems.
+- 3123.1.15: Paperhanger Supervisor | Paperhanger supervisors monitor the hanging of wallpaper, assign tasks, and take quick decisions to resolve problems.
+- 3123.1.16: Plastering Supervisor | A professional who monitors plastering activities, assigns tasks, and makes quick decisions to resolve problems on-site.
+- 3123.1.18: Power lines supervisor | Monitors the construction and maintenance of power lines and associated equipment, assigning tasks and making quick decisions to resolve problems.
+- 3123.1.2: Bridge construction supervisor | Monitors bridge construction, assigns tasks, and makes quick decisions to resolve problems.
+- 3123.1.20: road construction supervisor | Road construction supervisors monitor the construction and maintenance of roads, assigning tasks and making quick decisions to resolve problems.
+- 3123.1.19: rail construction supervisor | Rail construction supervisors monitor the construction and maintenance of railway infrastructure, assigning tasks and resolving problems.
+- 3123.1.21: Roofing Supervisor | Roofing supervisors monitor work on building roofs, assign tasks, and make quick decisions to resolve problems.
+- 3123.1.23: Structural ironwork supervisor | Structural ironwork supervisors monitor ironworking activities, assign tasks, and make quick decisions to resolve problems.
+- 3123.1.22: sewer construction supervisor | Supervises the installation of sewer pipes and other sewage infrastructure, assigning tasks and making quick decisions to resolve problems.
+- 3123.1.24: Terrazzo setter supervisor | Terrazzo setter supervisors monitor terrazzo setting operations, assign tasks, and make quick decisions to resolve problems.
+- 3123.1.25: Tiling Supervisor | Monitors tile fitting operations, assigns tasks, and makes quick decisions to resolve problems.
+- 3123.1.26: Water conservation technician supervisor | Supervises the installation of systems to recover, filter, store, and distribute water from sources such as rainwater and domestic greywater.
+- 3123.1.3: Carpenter Supervisor | Carpenter supervisors monitor carpentry operations in construction, assign tasks, and resolve problems quickly.
+- 3123.1.4: Concrete finisher supervisor | Concrete finisher supervisors monitor the concrete finishing process, assign tasks to finishers, and resolve problems quickly.
+- 3123.1.5: Construction painting supervisor | Plans, directs, and oversees the work of painter crews assigned to specific projects or locations, while supervising and evaluating their performance.
+- 3123.1.8: Demolition Supervisor | Monitors demolition operations and debris cleanup, making quick decisions to resolve problems.
+- 3123.1.7: Crane crew supervisor | Supervises crane operations, ensuring safety compliance and resolving operational problems through quick decision-making.
+- 3123.1.6: Construction scaffolding supervisor | Plans and supervises the transport, assembly, disassembly, and maintenance of scaffolding structures, ensuring safety compliance for supports, ladders, and fenders.
+- 3123.1.9: Dismantling Supervisor | Monitors dismantling operations for industrial equipment, machinery, or plants; distributes tasks and ensures compliance with safety regulations.
+- 3123.2: underwater construction supervisor | Underwater construction supervisors monitor underwater construction projects such as tunnels, canal locks, and bridge pillars, ensuring safety and adherence to regulations.
+- 3131.1: offshore renewable energy plant operator | Operates and maintains equipment producing electrical energy from marine renewable sources like offshore wind, wave, or tidal currents.
+- 3131.2: onshore wind farm technician | Operates and maintains onshore wind farms by performing diagnostic inspections, analyzing faults, and executing repair duties to ensure regulatory compliance.
+- 3131.3.2: Electrical transmission system operator | Operates the electrical grid to transport electrical power from generation plants to distribution stations.
+- 3131.3: Power production plant operator | Maintains and operates equipment in power stations and energy production plants, ensuring safe electricity distribution and compliance with safety and environmental procedures.
+- 3131.3.1: electrical power distributor | Operates and maintains equipment delivering energy from the transmission system to consumers, supervises power line maintenance, and responds to distribution faults.
+- 3131.3.3: fossil-fuel power plant operator | Operates and maintains industrial equipment like generators, turbines, and boilers to produce electricity from fossil fuels, ensuring safety and legislative compliance.
+- 3131.3.7: Power plant control room operator | Responsible for the safe and proper operation of power plants, switchyards, and associated control structures.
+- 3131.3.5: Hydroelectric plant operator | Operates and maintains equipment for energy production from water movement, monitors measuring equipment, assesses production needs, and adapts water flow.
+- 3131.3.6: nuclear reactor operator | Directly controls nuclear reactors in power plants from control panels, solely responsible for alterations in reactor reactivity, startup operations, and reaction to critical events while monitoring parameters and ensuring safety compliance.
+- 3131.3.8: Solar power plant operator | Operates and maintains equipment to produce electrical energy from solar power, ensuring safety and production needs.
+- 3131.3.9: Steam turbine operator | Operates and maintains machinery that generates power, ensuring operational safety and monitoring for problems.
+- 3132.1: Incinerator Operator | Operators tend incineration machines to burn refuse and waste, ensuring equipment maintenance and adherence to safety regulations.
+- 3132.2: Liquid waste treatment plant operator | Technicians who remove hazardous chemicals and pollutants from liquid waste, such as oil, to enable safe reuse. They operate and maintain treatment equipment, monitor operations, and test samples to ensure safety standards are met.
+- 3132.3: Solid Waste Operator | Operates and maintains solid waste treatment and distribution equipment, tests samples to monitor pollution, and ensures compliance with safety regulations during waste collection and disposal.
+- 3132.5: Wastewater treatment technician | Aids wastewater treatment operators in the operation, maintenance, and repair of equipment and purification procedures within sewage plants.
+- 3132.4: wastewater treatment operator | Operates equipment in water or wastewater plants to treat drinking water for distribution and process wastewater to remove harmful substances before environmental release.
+- 3132.6: water plant technician | Maintains and repairs water treatment and supply equipment to ensure the provision of clean water.
+- 3132.7: Water treatment systems operator | Operators treat water to ensure safety for drinking, irrigation, or other uses by operating and maintaining equipment, testing water before distribution, and meeting environmental standards.
+- 3133.1: chemical processing plant controller | Controls chemical production processes by operating machines and systems, monitoring, and maintaining equipment and instruments.
+- 3133.1.1: Air separation plant operator | Controls and maintains equipment for nitrogen and oxygen extraction from air, ensuring operational parameters and product purity.
+- 3133.1.2: Biogas technician | Biogas technicians work in the derivation of gas from organic matter, specifically landfill gas or digested gas. They operate equipment in biogas plants, perform tests and maintenance tasks, and take action in the event of a failure.
+- 3133.1.3: chemical plant control room operator | Monitors and inspects production systems remotely, reports anomalies, operates control panels, and ensures worker and equipment safety.
+- 3133.1.4: Gas processing plant supervisor | Supervises gas processing for utility and energy services by controlling equipment to ensure standard operation, maintaining machinery, and performing quality tests.
+- 3133.1.5: Gas station operator | Gas station operators process gases for compression, transmission, or recovery using gas, steam, or electric engine compressors. They perform chemical tests on gases and manage pump and pipeline operations.
+- 3134.1: Gas processing plant control room operator | Operators monitor gas processing plant processes via electronic displays, adjust variables, and coordinate with other departments to ensure smooth operations and safety.
+- 3134.2: Gas processing plant operator | Operates and maintains distribution equipment in gas distribution plants to supply gas to utilities or consumers while ensuring pipeline pressure compliance and scheduling adherence.
+- 3134.3: oil refinery control room operator | Monitors oil refinery processes via electronic displays and adjusts variables to ensure smooth operations according to established procedures.
+- 3134.5: Refinery shift manager | Supervises staff, manages plant and equipment, optimises production, and ensures safety at the oil refinery on a day-to-day basis.
+- 3134.4: Petroleum pump system operator | Operators tend pumps to maintain oil and derived product circulation, monitor pipe flow at refineries, and ensure minimal equipment disruptions from automated control rooms.
+- 3135.1: Metal furnace operator | Monitors metal production processes before casting, controlling furnaces to achieve desired metal compositions and chemical-thermal treatment standards.
+- 3139.1.1: Clothing process control technician | Clothing process control technicians operate multiple process control equipment in manufacturing assembly lines.
+- 3139.1: Automated assembly line operator | Operates, maintains, and cleans production machines to assemble whole products or parts, performing production tasks via a rotation system.
+- 3139.2: Industrial robot controller | Operates and monitors industrial robots in automation processes to perform manufacturing activities like lifting, welding, and assembling.
+- 3139.3: Pulp control operator | Operates and monitors multi-function process control machinery to process wood, scrap pulp, recyclable paper, and cellulose materials into pulp.
+- 3141.1: Biotechnical technician | Biotechnical technicians perform technological work in assistance of scientists within laboratory settings, helping to research, develop, and test forms of biotechnology.
+- 3141.2: scientific laboratory technician | Scientific laboratory technicians carry out laboratory-based research, analysis, and testing to support life science professionals across fields such as biology, biotechnology, environmental science, forensic science, and pharmacology.
+- 3141.2.1: Bacteriology Technician | Provides technical assistance in researching and testing bacteria using laboratory equipment, collecting and analyzing data for experiments, compiling reports, and maintaining laboratory stock.
+- 3141.2.2: biochemistry technician | Provides technical assistance in researching, analysing, and testing chemical reactions in living organisms using laboratory equipment.
+- 3141.2.3: biology technician | Provides technical assistance in researching and analysing the relationship between living organisms and their environment using laboratory equipment.
+- 3141.2.4: Botanical Technician | Provides technical assistance in researching and testing plant species to monitor properties like growth and structure, while studying their use in medicine, food, and materials.
+- 3141.2.5: zoology technician | Provides technical assistance in researching and testing animal species using laboratory equipment, aiding research on animals, their environments, and ecosystems.
+- 3142.1: agricultural technician | Agricultural technicians collect and conduct experiments and tests on agriculture and aquaculture specimens, providing support to scientists and farmers while analyzing and reporting on environmental conditions.
+- 3142.1.1: Aquaculture quality supervisor | Establishes standards and policies for quality control of aquatic organisms' production, ensuring compliance with safety regulations.
+- 3142.1.3: Viticulture adviser | Viticulture advisers advise on improving vineyard production and wine-making.
+- 3142.1.2: Aquaculture site supervisor | Supervises production processes in large-scale aquaculture operations and inspects sites to maintain and improve performance.
+- 3143.1: Forestry Technician | Assists forest managers in implementing decisions, supervises equipment operators, and supports environmental protection through research and data collection.
+- 3151.1: Fisheries refrigeration engineer | Fisheries refrigeration engineers perform maintenance and repair machines and equipment in the fish hold and refrigeration system on board of fishing vessels.
+- 3151.2: marine chief engineer | Head of the engine department responsible for all technical operations, including engineering, electrical, and mechanical divisions, aboard a vessel.
+- 3151.3: ship assistant engineer | Assists the ship chief and duty engineers in hull operations, main engines, steering, electrical generation, and major subsystems while ensuring safety and regulatory compliance.
+- 3151.4: Ship duty engineer | Engineers responsible for the operation and maintenance of a ship's hull, main engines, steering mechanisms, electrical generation, and major subsystems.
+- 3152.1: deck officer | Deck officers or mates perform watch duties on vessels, determining course and speed, avoiding hazards, and monitoring position using charts and navigational aids.
+- 3152.2: Helmsman | A crew member on the highest rank of the operational level on an inland vessel, primarily responsible for steering the ship.
+- 3152.3: Maritime pilot | Maritime pilots are expert mariners who guide ships through dangerous or congested waters, such as harbours or river mouths, utilizing detailed knowledge of local waterways.
+- 3152.4: ship captain | Ship captains are in charge of a vessel for the transportation of goods and passengers, operating in offshore and coastal waters. The size of the vessel can range from a small vessel to a cruise liner depending on the tonnage that they are certified to sail.
+- 3152.5: Skipper | The highest authority on-board or on inland waterways, responsible for vessel operations, safety, and the well-being of clients and crew.
+- 3153.2: Aircraft Pilot | Aircraft pilots control and navigate aircraft, operating mechanical and electrical systems to transport people, mail, and freight.
+- 3153.1: Aircraft Maintenance Engineer | Professionals who perform preflight and postflight inspections, adjustments, and minor repairs to ensure the safe and sound performance of aircraft.
+- 3153.2.2: Commercial pilot | Navigates the flight of fixed-wing and multi-engine aircrafts for the transport of passengers and cargo.
+- 3153.2.1: Co-pilot | Assists captains by monitoring flight instruments, handling radio communications, and watching for air traffic while adhering to aviation regulations and company procedures.
+- 3153.2.3: Flight instructor | Trains new and experienced pilots to gain licenses or experience in flying new aircraft, teaching theory and practice of optimal flight and maintenance while evaluating student technique.
+- 3153.2.2.1: airline transport pilot | Airline transport pilots fly large aircrafts with a maximum take-off weight of more than 5700 kilograms to transport passengers, mail, or freight on long or short-haul flights for leisure, business or commercial purposes.
+- 3153.2.5: Private pilot | Operates non-commercial airplanes for leisure and private transport with limited seats and engine horsepower.
+- 3153.2.4: helicopter pilot | Helicopter pilots fly helicopters to transport passengers and cargo, planning flights using aeronautical charts and navigation instruments.
+- 3153.3: astronaut | Crew members commanding spacecrafts for operations beyond low Earth orbit, performing scientific research, satellite operations, and space station construction.
+- 3153.4: drone pilot | Drone pilots remotely operate unmanned aerial vehicles (UAVs), navigating them and activating onboard equipment such as cameras, sensors, and LIDARs to calculate distances or gather data.
+- 3153.2.6: Second Officer | Second officers monitor and control aircraft systems for fixed-wing and rotary-wing aircraft, coordinating closely with pilots during all flight phases.
+- 3154.1: air traffic controller | Air traffic controllers assist pilots by providing information on height, speed, and course to facilitate safe take-offs and landings. They maintain secure and orderly movement of aircraft along major air routes and within airport vicinities to prevent collisions and minimize delays.
+- 3154.1.1: aeronautical information service officer | Maintains operational timing from sunrise to sunset to ensure the authenticity of information passed by agencies, striving to ensure safety, regularity, and efficiency.
+- 3154.1.2: Aeronautical Information Specialist | Provides high-quality aeronautical information management services using technological means to support chart production and data needs for aviation entities.
+- 3154.1.3: Airport operations officer | Airport operations officers perform supervisory and administrative work monitoring operational activities on an assigned shift at a large airport to ensure the safe take-off and landing of aircrafts.
+- 3154.3: flight operations officer | Flight operations officers compile flight information to expedite aircraft movement between and through airports, managing dispatch data and operational constraints.
+- 3154.2: Aviation Inspector | Professionals who inspect procedures related to aircraft maintenance, air navigational aids, air traffic control, and communications equipment to ensure regulatory compliance.
+- 3155.1: air traffic safety technician | Provides technical support regarding the safety of air traffic control and navigation systems, designing, maintaining, installing, and operating them according to regulations.
+- 3211.1: clinical perfusion scientist | Operates heart-lung equipment during surgical operations to ensure patient breathing and blood circulation as part of the surgical team.
+- 3211.2: radiation therapist | Radiation therapists ensure the accurate delivery of radiotherapy to cancer patients as part of a multidisciplinary team, covering treatment preparation, delivery, and immediate post-treatment care.
+- 3212.2: medical laboratory assistant | Medical laboratory assistants work under the supervision of biomedical scientists to carry out basic laboratory procedures and clerical tasks.
+- 3213.1: pharmacy assistant | Pharmacy assistants perform general duties, such as stock management, serving at the cash desk, or performing administrative duties. They deal with the inventory within the pharmacy under the supervision of a pharmacist.
+- 3213.2: pharmacy technician | Pharmacy technicians, under the supervision of a pharmacist, check incoming goods, control stock, handle and store pharmaceuticals properly. Where permitted by national rules, they dispense medication and provide advice on their appropriate use.
+- 3214.2: dental technician | Manufactures dental custom-made devices like bridges, crowns, dentures, and appliances under the supervision of dental practitioners following their directions and specifications.
+- 3214.1: Audiology Technician | Audiology technicians create and service hearing aids and hearing protection products, and dispense and fit hearing aids for individuals who need them.
+- 3214.3: Prosthetist-orthotist | Designs and custom fits prostheses and orthoses for individuals with limb loss or impairments caused by accident, disease, or congenital conditions.
+- 3214.3.1: Prosthetic-orthotics technician | Designs, creates, fits, and repairs supportive medical devices including braces, joints, arch supports, and surgical appliances.
+- 3240.2: veterinary technician | Provides technical and administrative support to the veterinarian in accordance with national legislation.
+- 3222.1: maternity support worker | Maternity support workers collaborate with midwives and health professionals to provide support, care, and advice to women during pregnancy, labour, and the postpartum period, including assisting births and newborn care.
+- 3230.1: herbal therapist | Herbal therapists use herbal medicine to relieve pain and treat illnesses such as allergies, chronic physical conditions, or stress-related conditions by studying plant properties and creating personalized treatment plans.
+- 3240.1: alternative animal therapist | Investigates sick or injured animals and provides alternative healing treatments such as homeopathy or acupuncture to strengthen self-healing powers.
+- 3240.2.2: Animal embryo transfer technician | Aids and supports the carrying out of embryo transfer under veterinary supervision in accordance with national legislation.
+- 3240.2.1: Animal artificial insemination technician | Animal artificial insemination technicians are in charge of the impregnation of an animal using collected semen, in accordance with national legislation.
+- 3240.2.3: Equine dental technician | Provides routine equine dental care using appropriate equipment in accordance with national legislation.
+- 3240.2.4: veterinary nurse | Supports animals undergoing veterinary treatment and advises clients on animal health and disease prevention in accordance with national legislation.
+- 3251.1: dental chairside assistant | Supports dental practitioners in clinical treatments, preparation, practical execution, follow-up, and administrative tasks under supervision.
+- 3252.1: medical records clerk | Medical records clerks organise, keep up-to-date and archive patients' records for medical staff availability. They transfer medical information from a patient's paper records to an electronic template.
+- 3251.2: dental hygienist | Dental hygienists work under the supervision of dental practitioners to clean and polish teeth, perform scaling, apply prophylactic materials, collect data, and provide comprehensive oral hygiene advice based on patient needs.
+- 3252.1.1: Clinical coder | Reads patients' medical records to analyse and interpret statements about diseases, injuries, and procedures, converting them into health classification codes for reimbursement, statistics, and performance monitoring.
+- 3252.2: Medical records manager | Manages activities of medical records units to maintain and secure patient data, while supervising, overseeing, and training employees.
+- 3252.3: Picture archiving and communication systems administrator | Manages picture archiving and communication systems (PACS) to store medical images (e.g., X-rays) and ensure their accessibility for medical professionals.
+- 3252.4: Waiting list coordinator | Guarantees day-to-day management of waiting list times, plans operation room availability, and coordinates patient scheduling for surgeries to optimize resource use.
+- 3253.1: Community health worker | Provides advice and information on various health subjects to the community, assisting with care, nutrition, and prevention programs.
+- 3254.1: optician | Opticians improve and correct vision by fitting spectacle lenses, frames, contact lenses, and other devices according to individual specifications and national regulations.
+- 3253.1.1: First aid instructor | First aid instructors teach students immediate lifesaving emergency measures, such as cardiopulmonary resuscitation, the recovery position, and injury care.
+- 3255.1: massage therapist | Massage therapists provide therapeutic massage treatments to improve client well-being, performing various techniques such as shiatsu and swedish massage based on client needs.
+- 3254.1.1: optical technician | Optical technicians assemble, repair, and design parts of eyewear, including lenses, frames, and patterns. They use machinery and hand tools to cut, inspect, mount, and polish components, ensuring lenses conform to prescriptions from dispensing opticians, ophthalmologists, or optometrists.
+- 3255.2: Physiotherapy assistant | Works under supervision within defined contexts using agreed treatment protocols to support physiotherapy interventions.
+- 3255.3: Shiatsu practitioner | Provides health maintenance, education, and treatment through energetic evaluation and regulation of the body's life energy system (Ki) using manual techniques.
+- 3255.4: sophrologist | Professionals who apply a dynamic relaxation method consisting of specific physical and mental exercises to reduce client stress and promote optimal health and well-being, acting on a doctor's order.
+- 3256.1: Doctors' surgery assistant | Supports doctors of medicine in medical measures, performs simple support activities during procedures and diagnostic tests, ensures hygiene, maintains medical devices, and handles administrative tasks under supervision.
+- 3257.1: Environmental health inspector | Professionals who investigate areas, organizations, and companies to ensure compliance with environmental and public health legislation, evaluate complaints, and prevent hazards.
+- 3257.3: Food safety inspector | Food safety inspectors carry out inspections in food processing environments to ensure compliance with regulations and laws governing safety and health.
+- 3257.2: Food regulatory advisor | Extra-judicial or judiciary technical experts who ensure food industry practices comply with regulatory norms through audits, diagnosis, and monitoring.
+- 3257.4: Industrial waste inspector | Conducts controls in companies to ensure compliance with waste and environmental regulations by checking documentation, collecting samples, and observing industrial practices.
+- 3257.4.2: Hazardous waste inspector | Inspects industrial sites to ensure adherence to waste disposal legislation, verifies equipment functionality against regulations, and educates the public on hazardous substances and handling rules.
+- 3257.4.1: Hazardous materials inspector | Inspects facilities handling hazardous materials to ensure compliance with health, safety regulations, and legislation. They investigate violations, oversee emergency response plans, and advise on safety improvements and community risk mitigation.
+- 3257.5: Occupational health and safety inspector | Professionals who perform workplace audits to ensure compliance with government and environment legislation, investigate work accidents, and analyze legal paperwork.
+- 3257.5.1: healthcare inspector | Healthcare inspectors visit healthcare facilities to ensure proper patient care aligns with legal requirements and that equipment, processes, and staff operate adequately to prevent infection and disease spread.
+- 3257.6: Transport health and safety inspector | Professionals responsible for maintaining safety standards, reducing risks to companies, staff, and customers, and achieving industry standards across transport sectors.
+- 3258.1: Emergency ambulance driver | Emergency ambulance drivers use emergency vehicles to respond to medical emergencies, support paramedics, and transport patients safely under medical supervision.
+- 3257.7: health and safety inspector | Investigates the implementation of labour standards and policies in workplaces, ensuring legal adherence and respect for equality and labour rights.
+- 3258.2: Paramedic in emergency responses | Provides emergency care to sick, injured, and vulnerable persons in emergency medical situations before and during transport to a medical facility.
+- 3259.1: Anaesthetic technician | Assists specialised doctors in anaesthetics by preparing operating theatres, equipment, and patients for procedures under medical supervision.
+- 3259.2: assistant clinical psychologist | Healthcare professionals who aid psychologists in treating patients within healthcare facilities or private practices.
+- 3259.3: Chiropractic assistant | Supports patient care and performs administrative tasks under the sole direction of a Chiropractor or Specialized Chiropractor.
+- 3259.4: Covid tester | Professionals who perform Covid tests via nasal or throat swabs, complement sample data with health-related inquiries, and input collected information into digital devices.
+- 3259.5: Dietetic Technician | Assists dietitians in planning nutritional programmes and menus for patients as part of an overall treatment plan under supervision.
+- 3259.8: Temperature screener | Checks the temperature of guests, staff, or visitors entering premises to prevent the spread of infectious diseases in private and public spaces.
+- 3259.7: respiratory therapy technician | Assists doctors and surgeons to treat respiratory problems by operating medical equipment to test patients' conditions and aiding in treatment within hospitals and medical facilities.
+- 3311.1: asset manager | Invests client money into financial assets via investment funds or individual portfolio management, adhering to specific investment policies and risk frameworks.
+- 3311.2: financial broker | Undertakes financial market activities on behalf of clients, monitoring securities, documentation, market trends, and legal requirements.
+- 3311.2.1: Foreign exchange broker | Professionals who buy and sell foreign currencies on behalf of clients to profit from exchange rate fluctuations, utilizing technical analysis of market data.
+- 3311.2.2: mortgage broker | Professionals who handle mortgage loan applications, collect documentation, and search for lending opportunities to complete and close loan processes for clients.
+- 3311.2.3: Mutual Fund Broker | Handles and raises cash from shareholders to invest in stocks, bonds, and money-market securities. Engages with investors regarding account status and transactions, utilizing expertise in investment theory and market research to select appropriate portfolio investments while ensuring legal compliance.
+- 3311.2.4.1: securities underwriter | Administers the distribution activities of new securities from a business company, establishing prices and facilitating sales to investors.
+- 3311.2.4: securities broker | Securities brokers facilitate connections between investors and investment opportunities, executing purchases and sales of securities on behalf of clients based on market expertise.
+- 3311.2.5: Stock broker | Stock brokers act on behalf of individual or institutional clients to buy and sell stocks and other securities via the stock exchange market, ensuring transactions align with client wishes.
+- 3311.3: financial trader | Financial traders buy and sell financial products such as assets, shares and bonds for private clients, banks or companies.
+- 3311.3.3: Futures trader | Undertakes daily trading activities in the futures market by buying and selling futures contracts to speculate on price direction.
+- 3311.3.1: energy trader | Professionals who buy or sell energy shares from various sources, analyzing market trends and prices to maximize profit.
+- 3311.3.2: Foreign exchange trader | Professionals who buy and sell foreign currencies to profit from exchange rate fluctuations, trading on their own account or for employers.
+- 3311.3.4: securities trader | Purchases and sells securities such as stocks, bonds, and shares on their own or their employer's account based on financial market expertise.
+- 3312.1: bank account manager | Advises prospective clients on suitable banking accounts, assists with setup and documentation, and serves as the primary point of contact for account-related needs.
+- 3312.2: credit adviser | Credit advisers offer guidance on credit services, assessing financial situations and debt issues to identify optimal solutions and provide debt elimination plans.
+- 3311.3.5: stock trader | Stock traders utilize technical expertise of financial markets to advise asset managers or shareholders on profitable investment strategies, managing company performance, taxes, commissions, and fiscal obligations while trading bonds, stocks, futures, and hedge fund shares.
+- 3312.2.1: Credit Analyst | Investigates credit applications to evaluate compliance with regulations and guidelines, advising financial institutions on loan worthiness.
+- 3312.4: credit risk analyst | Manages individual credit risk, fraud prevention, business deal analysis, and legal document analysis to provide risk level recommendations.
+- 3312.3: credit manager | Credit managers oversee the application of credit policy in a bank, managing the credit department and ensuring customer payments are collected.
+- 3312.5: Loan officer | Specialists who assess and authorise loan applications for individuals and businesses, ensuring complete transactions between loan organisations, borrowers, and sellers.
+- 3312.6: Mortgage loan underwriter | Ensures compliance with underwriting guidelines, participates in implementing new guidelines, and reviews closed and denied loans.
+- 3312.7: Student financial support coordinator | Assists students and administrators in managing tuition fees and student loans, determining eligibility, and facilitating loan processes with external sources.
+- 3313.2: Bookkeeper | Records and assembles day-to-day financial transactions, ensuring documentation in appropriate ledgers and preparing data for accountant analysis.
+- 3313.1: Accounting Assistant | Records and reports ticketing accounting situations, verifies deposits, prepares daily reports and income, arranges refund vouchers, maintains returned check accounts, and communicates with ticketing managers regarding system issues.
+- 3313.3: Grants Administrator | Professionals who manage the pass-through track of government grants, handling applications and ensuring recipients spend funds according to terms.
+- 3314.1: Actuarial Assistant | Actuarial assistants perform statistical data research to set premium rates and insurance policies, reviewing risks of accidents, injuries, and property damage using statistical formulas and models.
+- 3314.2: Statistical Assistant | Statistical assistants collect data and use statistical formulas to execute studies and create reports, including charts, graphs, and surveys.
+- 3315.1: Foreclosure Specialist | Foreclosure specialists revise documentation related to properties under foreclosure and assist clients whose property has been reclaimed by banks due to non-payment by assessing possibilities for saving the property.
+- 3315.2: Gemmologist | Gemmologists value precious stones by analyzing their characteristics, cut, and provenience for trading or polishing efforts, assessing them to determine market value.
+- 3315.3: insurance claims handler | Ensures accurate handling of insurance claims and payment to policyholders using statistical data and reporting.
+- 3315.4: Insurance fraud investigator | Professionals who combat fraudulent activities by investigating suspicious claims, new customer activities, product purchases, and premium calculations.
+- 3315.5: loss adjuster | Loss adjusters treat and evaluate insurance claims by investigating cases, determining liability and damage, and making settlement recommendations in accordance with insurance policies.
+- 3315.6: Personal property appraiser | Undertakes detailed analysis and investigation of personal items such as books, wine, arts, and antiques to determine their value for sales and insurance purposes.
+- 3315.7: Property appraiser | Undertakes detailed analysis and investigation of properties to determine their value for sales, mortgage, and insurance purposes.
+- 3315.8: Real estate surveyor | Professionals who conduct research to assess property value specifically for tax purposes, utilizing accurate appraisal techniques.
+- 3321.1: insurance broker | Promotes, sells, and advises on various insurance policies (life, health, accident, fire) to individuals and organizations, acting as intermediaries between clients and insurance companies.
+- 3321.2: insurance risk consultant | Insurance risk consultants prepare reports for insurance underwriters by undertaking surveys to determine potential financial risks for personal products, properties, or sites.
+- 3322.1: Commercial sales representative | Represents a company in selling and providing information on goods and services to businesses and organisations.
+- 3321.3: Insurance underwriter | Assesses business risks and liability policies, making decisions regarding commercial property and aligning risks with business practices.
+- 3321.3.1: Property insurance underwriter | Assesses and determines the risk and coverage of a client's property insurance, analyzing and reviewing underwriting policies according to legal regulations.
+- 3322.1.1: Electricity sales representative | Assesses clients' energy needs and recommends electricity supply purchases from their corporation while promoting services and negotiating sale terms.
+- 3323.2: Purchaser | Professionals who select and purchase stock, materials, services, or goods, while organizing tender procedures and selecting suppliers.
+- 3322.1.2: Renewable Energy Sales Representative | Professionals who assess clients' energy supply needs and secure sales of renewable energy methods by promoting suppliers and products.
+- 3323.1: Costume Buyer | Costume buyers collaborate with costume designers to identify and source materials, accessories, and ready-made clothing for wardrobes based on design sketches.
+- 3323.2.1: Green coffee buyer | Purchases green coffee beans from global producers on behalf of coffee roasters, possessing deep knowledge of the coffee process from fruit to cup.
+- 3323.2.3: Purchase planner | Purchase planners organise the continuous supply of goods based on existing contracts.
+- 3323.2.4: Textile sourcing merchandiser | Textile sourcing merchandisers organise efforts for textile producers from fibre to final products.
+- 3323.2.2: ICT buyer | ICT buyers create and place purchase orders for ICT products and services, manage receiving and invoice issues, and apply strategic sourcing methodologies to build vendor relationships.
+- 3323.3: Set buyer | Set buyers analyse scripts to identify required set dressing and props, ensuring authenticity and believability for all scenes.
+- 3323.4: Standalone public buyer | Manages the entire procurement process and covers all procurement needs for a small contracting authority, collaborating with internal departments to access specialized knowledge.
+- 3323.5: Timber trader | Assesses the quality, quantity, and market value of timber and timber products to organize selling processes and purchase stocks.
+- 3324.1: Commodity broker | Intermediaries between buyers and sellers of movable and immovable property, such as raw materials, livestock, or real estate, who negotiate prices and receive commissions.
+- 3324.1.1: shipbroker | Intermediaries facilitating the transfer of ships, cargo space, and charters between buyers and sellers.
+- 3324.1.2: waste broker | Waste brokers act as a mediating party between clients and waste management industries, ensuring waste is collected by specialized professionals and transported to processing facilities.
+- 3324.2: Commodity trader | Professionals who negotiate the sale and purchase of physical goods and raw materials (e.g., gold, oil, wheat) on trading floors, implementing instructions and managing transaction terms.
+- 3324.3: non-vessel operating common carrier | Consolidators in ocean trades who purchase space from carriers and sub-sell it to smaller shippers, issuing bills of lading and publishing tariffs as ocean common carriers.
+- 3324.4: Wholesale merchant | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of goods.
+- 3324.4.1: Wholesale merchant in agricultural machinery and equipment | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of agricultural machinery and equipment.
+- 3324.4.10: Wholesale merchant in electrical household appliances | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of electrical household appliances.
+- 3324.4.11: Wholesale merchant in electronic and telecommunications equipment and parts | Wholesale merchants in electronic and telecommunications equipment and parts investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.12: Wholesale merchant in fish, crustaceans and molluscs | Investigates potential wholesale buyers and suppliers and matches their needs to conclude trades involving large quantities of fish, crustaceans, and molluscs.
+- 3324.4.13: Wholesale merchant in flowers and plants | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of floral and plant goods.
+- 3324.4.14: Wholesale merchant in fruit and vegetables | Investigates potential wholesale buyers and suppliers to match their needs and concludes trades involving large quantities of goods.
+- 3324.4.15: Wholesale merchant in furniture, carpets and lighting equipment | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of goods in the furniture, carpets, and lighting sectors.
+- 3324.4.16: Wholesale merchant in hardware, plumbing and heating equipment and supplies | Wholesale merchants in hardware, plumbing and heating equipment and supplies investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.17: Wholesale merchant in hides, skins and leather products | Professionals who investigate potential wholesale buyers and suppliers in the hides, skins, and leather sector to match needs and conclude large-volume trades.
+- 3324.4.18: Wholesale merchant in household goods | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of household goods.
+- 3324.4.19: Wholesale merchant in live animals | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of live animals.
+- 3324.4.2: Wholesale merchant in agricultural raw materials, seeds and animal feeds | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of agricultural goods.
+- 3324.4.20: Wholesale merchant in machinery, industrial equipment, ships and aircraft | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of machinery, industrial equipment, ships, and aircraft.
+- 3324.4.21: Wholesale merchant in machine tools | Wholesale merchants in machine tools investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.22: Wholesale merchant in meat and meat products | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of meat and meat products.
+- 3324.4.23: Wholesale merchant in metals and metal ores | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of metals and metal ores.
+- 3324.4.24: Wholesale merchant in mining, construction and civil engineering machinery | Wholesale merchants in mining, construction and civil engineering machinery investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.25: Wholesale merchant in office furniture | Wholesale merchants in office furniture investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.26: Wholesale merchant in office machinery and equipment | Wholesale merchants in office machinery and equipment investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.27: Wholesale merchant in perfume and cosmetics | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of perfume and cosmetics goods.
+- 3324.4.28: Wholesale merchant in pharmaceutical goods | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of pharmaceutical goods.
+- 3324.4.29: Wholesale merchant in sugar, chocolate and sugar confectionery | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of sugar, chocolate, and sugar confectionery goods.
+- 3324.4.3: Wholesale merchant in beverages | Professionals who investigate potential wholesale buyers and suppliers for beverages and conclude trades involving large quantities of goods.
+- 3324.4.30: Wholesale merchant in textile industry machinery | Professionals who investigate potential buyers and suppliers of textile industry machinery to match needs and conclude large-volume trades.
+- 3324.4.31: Wholesale merchant in textiles and textile semi-finished and raw materials | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of textile goods.
+- 3324.4.32: Wholesale merchant in tobacco products | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of tobacco goods.
+- 3324.4.33: Wholesale merchant in waste and scrap | Wholesale merchants in waste and scrap investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.34: Wholesale merchant in watches and jewellery | Investigates potential wholesale buyers and suppliers to match their needs and concludes trades involving large quantities of goods.
+- 3324.4.35: Wholesale merchant in wood and construction materials | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of wood and construction materials.
+- 3324.4.4: Wholesale merchant in chemical products | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of chemical goods.
+- 3324.4.5: Wholesale merchant in china and other glassware | Wholesale merchants in china and other glassware investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.6: Wholesale merchant in clothing and footwear | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of clothing and footwear goods.
+- 3324.4.7: Wholesale merchant in coffee, tea, cocoa and spices | Wholesale merchants in coffee, tea, cocoa and spices investigate potential wholesale buyers and suppliers and match their needs. They conclude trades involving large quantities of goods.
+- 3324.4.8: Wholesale merchant in computers, computer peripheral equipment and software | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of computer hardware, peripherals, and software.
+- 3324.4.9: Wholesale merchant in dairy products and edible oils | Professionals who investigate potential wholesale buyers and suppliers to match their needs and conclude trades involving large quantities of dairy products and edible oils.
+- 3331.1: customs and excise officer | Approves or denies the passage of goods through customs barriers for international business and ensures compliance with consignment legislation.
+- 3331.2: Forwarding manager | Forwarding managers plan and organise cargo shipments within national and international areas, acting as experts in supply chain management.
+- 3331.2.1: Import export specialist | Specialists who apply deep knowledge of import/export goods, customs clearance, and documentation to declare goods, inform customers, and resolve customs disputes.
+- 3331.2.1.1: Import export specialist in agricultural machinery and equipment | Specialists who manage the import and export of agricultural machinery and equipment, applying deep knowledge of trade regulations, customs clearance, and documentation.
+- 3331.2.1.10: Import export specialist in electrical household appliances | Specialists who manage the import and export of electrical household appliances, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.11: Import export specialist in electronic and telecommunications equipment | Specialists who manage the import and export of electronic and telecommunications equipment, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.12: Import export specialist in fish, crustaceans and molluscs | Specialists who manage the import and export of aquatic products, applying deep knowledge of customs clearance and specific documentation requirements.
+- 3331.2.1.13: Import export specialist in flowers and plants | Specialists who manage the import and export of flowers and plants, applying deep knowledge of customs clearance and documentation requirements.
+- 3331.2.1.14: Import export specialist in fruit and vegetables | Specialists who manage the import and export of fruit and vegetable goods, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.15: Import export specialist in furniture, carpets and lighting equipment | Specialists who manage the import and export of furniture, carpets, and lighting equipment, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.16: Import export specialist in hardware, plumbing and heating equipment | Specialists who manage the import and export of goods within the hardware, plumbing, and heating equipment sectors, applying deep knowledge of logistics and regulatory requirements.
+- 3331.2.1.18: Import export specialist in household goods | Specialists who manage the import and export of household goods, applying deep knowledge of customs clearance and required documentation.
+- 3331.2.1.17: Import export specialist in hides, skins and leather products | Specialists who manage the import and export of hides, skins, and leather products, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.19: Import export specialist in live animals | Specialists who manage the import and export of live animals, applying deep knowledge of customs clearance and specific documentation requirements.
+- 3331.2.1.2: Import export specialist in agricultural raw materials, seeds and animal feeds | Specialists who manage the import and export of agricultural raw materials, seeds, and animal feeds, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.21: Import export specialist in machine tools | Specialists who manage the import and export of machine tools, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.20: Import export specialist in machinery, industrial equipment, ships and aircraft | Specialists who manage the import and export of machinery, industrial equipment, ships, and aircraft, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.22: Import export specialist in meat and meat products | Specialists who manage the import and export of meat and meat products, applying deep knowledge of customs clearance and required documentation.
+- 3331.2.1.23: Import export specialist in metals and metal ores | Specialists who manage the import and export of metals and metal ores, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.25: Import export specialist in office furniture | Specialists who manage the import and export of office furniture, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.24: Import export specialist in mining, construction, civil engineering machinery | Specialists who manage the import and export of goods within the mining, construction, and civil engineering machinery sectors, applying deep knowledge of logistics and regulatory compliance.
+- 3331.2.1.26: Import export specialist in office machinery and equipment | Specialists who manage the import and export of office machinery and equipment, applying deep knowledge of trade regulations, customs clearance, and required documentation.
+- 3331.2.1.27: Import export specialist in perfume and cosmetics | Specialists who manage the import and export of perfume and cosmetics goods, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.28: Import export specialist in pharmaceutical goods | Specialists who manage the import and export of pharmaceutical goods, applying deep knowledge of customs clearance and regulatory documentation.
+- 3331.2.1.29: Import export specialist in sugar, chocolate and sugar confectionery | Specialists who manage the import and export of sugar, chocolate, and confectionery goods, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.3: Import export specialist in beverages | Specialists who manage the import and export of beverage goods, applying deep knowledge of customs clearance and regulatory documentation.
+- 3331.2.1.31: Import export specialist in textiles and textile semi-finished and raw materials | Specialists who manage the import and export of textile goods, semi-finished products, and raw materials, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.32: Import export specialist in tobacco products | Import export specialists in tobacco products have and apply deep knowledge of import and export goods including customs clearance and documentation.
+- 3331.2.1.33: Import export specialist in waste and scrap | Specialists who manage the import and export of waste and scrap materials, applying deep knowledge of customs clearance and regulatory documentation.
+- 3331.2.1.34: Import export specialist in watches and jewellery | Specialists who manage the import and export of watches and jewellery, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.35: Import export specialist in wood and construction materials | Specialists who manage the import and export of wood and construction materials, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.4: Import export specialist in chemical products | Specialists who manage the import and export of chemical goods, applying deep knowledge of customs clearance and regulatory documentation.
+- 3331.2.1.5: Import export specialist in china and other glassware | Specialists who manage the import and export of goods, specifically focusing on China and glassware, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.6: Import export specialist in clothing and footwear | Specialists who manage the import and export of clothing and footwear goods, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.7: Import export specialist in coffee, tea, cocoa and spices | Specialists who manage the import and export of coffee, tea, cocoa, and spices, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.1.8: Import export specialist in computers, peripheral equipment and software | Specialists who manage the import and export of computers, peripheral equipment, and software, applying deep knowledge of customs clearance and documentation.
+- 3331.2.1.9: Import export specialist in dairy products and edible oils | Specialists who manage the import and export of dairy products and edible oils, applying deep knowledge of logistics, customs clearance, and regulatory documentation.
+- 3331.2.2: shipping agent | Represents the ship owner in a foreign port, ensuring timely customs clearance and managing necessary formalities.
+- 3332.1: Event assistant | Implements and follows plans detailed by event managers and planners, specializing in specific areas such as catering, transportation, or facilities.
+- 3331.3: International forwarding operations coordinator | Professionals who implement and monitor international forwarding operations, resolving transport issues and managing administrative burdens related to cross-border regulations.
+- 3332.2.1: Venue director | Plans and manages conference, banqueting, and venue operations in hospitality establishments to reflect client needs.
+- 3332.2: event manager | Plans and oversees diverse events including festivals, conferences, and exhibitions, managing all stages from venue selection to execution within budget and time limits.
+- 3332.2.2: Wedding planner | Assists with all logistical details required concerning a client's wedding ceremony, coordinating activities both before and during the event.
+- 3333.1: employment agent | Employment agents work for employment services and agencies, matching job seekers with advertised vacancies and providing job search advice.
+- 3332.3: venue programmer | Venue programmers manage the artistic programme for theatres, cultural centers, concert halls, or temporary festival settings, balancing artistic vision with organizational financial constraints.
+- 3334.1: Housing manager | Housing managers oversee housing services for tenants or residents, managing operations for housing associations or private organisations.
+- 3334.2: Property acquisitions manager | Manages land or property acquisition transactions, ensuring compliance with legal requirements and handling necessary documentation.
+- 3334.2.1: Title closer | Handles and investigates documentation for property sales, ensuring legal compliance and reviewing fees.
+- 3334.3: real estate agent | Administers sales or letting processes for residential, commercial properties, or land on behalf of clients, ensuring transaction legality and optimal pricing.
+- 3334.3.1: Letting agent | Professionals who schedule appointments to show and lease real estate, assist in marketing properties for rent, and handle daily administrative tasks.
+- 3334.3.2: Real estate investor | Professionals who buy and sell real estate (apartments, dwellings, land, non-residential buildings) to generate profit, often actively improving property value through renovation or facility upgrades.
+- 3334.5: Real estate manager | Manages operational aspects of commercial or residential properties, negotiates lease contracts, and plans new real estate projects and construction.
+- 3339.1: Advertising sales agent | Advertising sales agents sell advertising space and media time to businesses and individuals, executing sales pitches and managing after-sales follow-ups.
+- 3334.4: Real estate leasing manager | Manages lease and rental efforts for apartment communities and non-co-ownership properties, overseeing staff, administration, and vacancy promotion.
+- 3339.2: auctioneer | Auctioneers conduct auctions by accepting bids and declaring goods sold.
+- 3339.5: publishing rights manager | Publishing rights managers are responsible for the copyrights of books and organize the sale of these rights for adaptations such as translations and movies.
+- 3339.3: Intellectual property consultant | Provides advice on the usage of intellectual property assets such as patents, copyrights, and trademarks, helping clients value portfolios and follow legal protection procedures.
+- 3339.4: promoter | Promoters arrange shows by liaising with artists, agents, and venues to agree on dates and negotiate deals. They book venues, promote events, and ensure logistical requirements like soundchecks and running orders are met.
+- 3339.6: relocation officer | Relocation officers assist businesses and organizations in moving employees by managing moving activities, planning services, and providing real estate advice while ensuring the well-being of employees and their families.
+- 3339.8: Tourism contract negotiator | Tourism contract negotiators negotiate tourism-related contracts between a tour operator and tourism service providers.
+- 3339.7: Talent agent | Professionals who represent entertainment and broadcast industry clients, such as actors, musicians, and athletes, to secure employment and manage their careers.
+- 3341.1: Call centre analyst | Examines data regarding incoming or outgoing customer calls and prepares reports and visualisations.
+- 3341.2: call centre quality auditor | Professionals who assess call centre operator performance by listening to recorded or live calls to ensure compliance with protocols and quality standards.
+- 3341.4: contact centre supervisor | Oversees and coordinates contact centre employee activities to ensure smooth daily operations.
+- 3341.3: Call centre supervisor | Oversees call centre employees, manages projects, and understands technical aspects of call centre activities.
+- 3341.5: Data entry supervisor | Manages the day-to-day operations of data entry staff and organizes workflow and tasks.
+- 3341.6: Field survey manager | Field survey managers organise and supervise investigations and surveys on the request of a sponsor, monitor implementation against production requirements, and lead teams of field investigators.
+- 3342.1: Civil Registrar | Civil registrars collect and record acts of birth, marriage, civil partnership, and death.
+- 3341.7: Office manager | Office managers oversee administrative work performed by clerical workers across various organizations. They exercise micromanagement to maintain close control over administrative processes, including correspondence, filing systems, and supply requisitions.
+- 3342.2: legal administrative assistant | Carries out daily administrative activities for firms, notary offices, and companies, combining general admin duties with specific legal business knowledge.
+- 3343.1: administrative assistant | Provides administrative and office support for supervisors by managing daily office operations, communication, and facility maintenance.
+- 3343.1.1: court reporter | Court reporters transcribe courtroom hearings using word processors or specialized software to create official, accurate records of legal cases for study by all parties.
+- 3343.1.2: Education administrator | Professionals who organise and manage the administration, support systems, and student activities of an education institution to ensure efficient and cost-effective operations.
+- 3343.1.3: Fundraising Assistant | Provides administrative support for fundraising managers by targeting donors, processing payments, maintaining records, and acknowledging contributions.
+- 3343.1.5: Procurement Support Officer | Assists procurement team staff throughout procurement processes, ensuring document compliance with procedural, technical, and legal requirements, and organizing meetings and contacts.
+- 3343.1.4: International student exchange coordinator | Professionals who lead the entire process of international exchange studies, managing applications, admissions, accommodation, and administrative duties while guiding students through cultural adjustment.
+- 3343.1.7: Supply chain assistant | Supports managers in operations processes including purchasing, manufacturing, and distribution by handling administrative and pragmatic follow-up tasks.
+- 3343.1.6: project support officer | Provides administrative support, assistance, and training to project managers within a horizontal project management office to ensure successful project execution.
+- 3343.3: executive assistant | Advanced administrative professionals who support top-level executives or international facilities by managing office operations, communications, and logistics.
+- 3343.2: editorial assistant | Supports editorial staff throughout the publication process of newspapers, websites, newsletters, books, and journals by managing information, rights, and scheduling.
+- 3343.4: management assistant | Management assistants perform varied administrative tasks and support managers to ensure the entire department functions smoothly, usually under general supervision.
+- 3343.5: Scopist | A scopist edits transcripts created by court reporters to produce readable, professional legal documents by applying punctuation, correcting missing words, formatting, and improving accuracy.
+- 3344.1: medical administrative assistant | Provides office support to health professionals by managing correspondence, scheduling appointments, and answering patient queries.
+- 3344.2: medical practice manager | Manages the day-to-day operations of a medical practice, overseeing both staff and business functions.
+- 3344.3: medical transcriptionist | Medical transcriptionists interpret dictated information from healthcare professionals and convert it into formatted medical records, ensuring correct punctuation and grammar.
+- 3351.2: Hand luggage inspector | Professionals who check individuals' luggage to detect potential threatening objects while complying with public safety regulations and company procedures.
+- 3351.1: customs officer | Government officials who control documents to ensure entry criteria and custom laws are complied with, verify the payment of custom taxes, and combat the importation of illegal goods, firearms, drugs, or dangerous items across national borders.
+- 3352.1: tax compliance officer | Tax compliance officers collect fees, debt, and taxes on behalf of government institutions in cities, municipalities, and other jurisdictions, ensuring operations align with policies.
+- 3351.3: Immigration Officer | Immigration officers monitor the eligibility of people, food, electronic devices, and merchandise entering a country via an entry point. They use surveillance methods and check identification and documents to ensure entry criteria and custom laws are complied with.
+- 3352.2: tax inspector | Tax inspectors calculate taxation, ensure timely payment by individuals and organizations, and provide guidance on taxation legislation.
+- 3353.2.1: Pensions Administrator | Professionals who perform administrative duties in the management of pension schemes, ensuring correct benefit calculations, legal compliance, and customer communication.
+- 3353.1: social security inspector | Social security inspectors investigate fraudulent activities affecting workers' rights, audit benefit applications, and examine company actions based on employee complaints to ensure fair treatment and legal compliance.
+- 3353.2: social security officer | Advises clients on social security benefits, ensures eligibility claims, and provides guidance on employment support services.
+- 3354.1: Immigration adviser | Professionals who assist individuals in relocating between nations by providing guidance on immigration legislation and facilitating the acquisition of required documentation.
+- 3354.3: passport officer | Passport officers provide passports and other travel documents such as certificates of identity and refugee travel documents, while maintaining records of all issued documents.
+- 3354.2: Licensing Officer | Licensing officers process licence applications, provide advice on licensing legislation, and perform investigative duties to ensure applicant eligibility, fee payment, and legislative compliance.
+- 3355.1: criminal investigator | Examines and processes crime scenes, handles evidence compliant with regulations, isolates scenes from outside influence, photographs scenes, maintains evidence, and writes reports.
+- 3355.2: police detective | Police detectives gather and compile evidence to assist in the solution of crimes using investigative techniques.
+- 3355.3: police inspector | Police inspectors coordinate and supervise a division within a police department, ensuring compliance with rules and regulations while monitoring personnel performance.
+- 3359.1: agricultural inspector | Agricultural inspectors monitor agricultural operations in farms and facilities to ensure compliance with legislation and standards regarding health, safety, costs, and production processes.
+- 3359.2: Consumer rights advisor | Aids consumers with complaints and provides advice on rights after purchasing products or services. Monitors organizations for compliance with consumer rights standards and assists in handling disputes.
+- 3359.3: Fisheries observer | Records and reports on fishing activity, compliance, and enforcement of conservation measures by monitoring vessel position, fishing gear usage, and catch.
+- 3359.4: Forestry inspector | Forestry inspectors monitor forestry operations to ensure compliance with legislation and standards, examining operations, wages, costs, and health and safety measures.
+- 3359.5: Freight Inspector | Freight inspectors determine if freight is secure and comes with proper documentation, inspecting and managing shipments to verify compliance with local, national, and international regulations.
+- 3359.5.1: marine cargo inspector | Marine cargo inspectors investigate baggage and freight listed on ship manifests, verifying cargo condition, documentation, and regulatory compliance.
+- 3359.6: gaming inspector | Gaming inspectors oversee all games to ensure adherence to rules and prevent cheating, maintaining equipment and handling customer inquiries while upholding high standards of efficiency, security, and service.
+- 3359.8: Weights and measures inspector | Ensures adherence to regulations regarding the weights and measures of packaged goods by investigating compliance issues and documenting violations.
+- 3411.1: Case administrator | Supervises the progress of criminal and civil cases from opening to closing, ensuring proceedings comply with legislation and occur in a timely manner.
+- 3411.2: conveyance clerk | Conveyance clerks provide services for the legal transference of legal titles and properties from one party to another, exchanging necessary contracts and ensuring all properties, titles, and rights are transferred.
+- 3411.3: court administrative officer | Court administrative officers perform administrative and assisting duties for the court and judges, managing case accounts, handling official documents, and supporting trial proceedings.
+- 3411.4: court bailiff | Court bailiffs maintain order and security in courtrooms, transport offenders, manage supplies, and facilitate court proceedings.
+- 3411.5: court clerk | Court clerks provide assistance to judges in a court institution, handling enquiries on court proceedings and supporting judges with legal research and opinion writing.
+- 3411.6: court enforcement officer | Court enforcement officers enforce orders of court judgements by managing the recovery of money owed, seizing goods, and selling goods in public auctions. They also issue summons and arrest warrants to ensure attendance in court or other judicial procedures.
+- 3411.7: legal assistant | Legal assistants work closely with lawyers and legal representatives in the research and preparation of cases brought to courts, assisting with paperwork and the administrative management of court affairs.
+- 3411.8: Private detective | Private detectives research and analyse information to uncover facts for personal, corporate, or legal reasons, conducting surveillance and compiling reports for clients.
+- 3411.8.1: Store detective | Monitors store activities to prevent and detect shoplifting, taking legal measures such as alerting police when offenders are caught.
+- 3411.9: justice of the peace | Justices of the peace deal with small claims and disputes, minor offences, and ensure the keeping of the peace within their jurisdiction.
+- 3412.1: Crisis helpline operator | Provides advice and support to distraught callers via telephone regarding diverse issues such as abuse, depression, and financial problems, while maintaining call records according to regulations and privacy policies.
+- 3412.3: Life coach | Professionals who assist clients in setting clear personal development objectives, achieving goals, and realizing their personal vision through counseling and guidance.
+- 3412.2: legal guardian | Legal guardians legally assist and support minor children, mentally disabled persons, or incapacitated older adults in their personal life, managing their property and daily needs.
+- 3412.4: social care worker | Social care workers provide support and help people with care services, assisting individuals from babies to older adults to live full and valued lives in the community.
+- 3412.4.1: adult community care worker | Professionals who perform assessment and care management for adults living with physical impairments or convalescing states to promote safe, independent community living.
+- 3412.4.10: residential childcare worker | Counsels and supports children with physical or mental disabilities, monitors their progress, and provides care in a positive living environment.
+- 3412.4.11: residential home adult care worker | Counsels and supports vulnerable adults with physical or mental disabilities or addiction issues in a residential setting, monitoring progress and fostering a positive living environment.
+- 3412.4.12: residential home older adult care worker | Counsels and supports elderly individuals with physical or mental disabilities in a residential setting, monitoring their progress and fostering a positive living environment.
+- 3412.4.13: residential home young people care worker | Provides assistance and support to young people with complex emotional needs and challenging behaviours, as well as young adults with learning disabilities.
+- 3412.4.2: Care at home worker | Provides domiciliary services to vulnerable adults, including frail elderly or disabled people, to help them live safely and independently in their own homes.
+- 3412.4.4: disability support worker | Provides personal assistance and support to individuals of all ages with intellectual or physical disabilities, collaborating with health professionals to maximize well-being.
+- 3412.4.3: Child welfare worker | Child welfare workers provide early intervention and support to children and families to improve social and psychological functioning, protect children from abuse and neglect, and advocate for children's rights.
+- 3412.4.5: Family support worker | Provides actionable advice and emotional support to families facing difficulties such as addictions, disabilities, sickness, imprisoned parents, or financial issues. Assesses family situations to determine the best solutions for children's placement and informs families of available services.
+- 3412.4.6: Foster care support worker | Assists and supports mentally or physically abused children to be legally separated from their parents, prioritizing their welfare during recovery.
+- 3412.4.8: mental health support worker | Assists and provides treatment to people with mental, emotional, or substance abuse problems, focusing on personalized cases and monitoring recovery.
+- 3412.4.7: Housing support worker | Provides support and assistance to vulnerable individuals including the elderly, people with physical impairments or learning disabilities, homeless people, and ex-drug or alcohol addicts.
+- 3412.4.9: residential care home worker | Provides day-to-day social care to clients in residential centres, following specific care plans to support their physical and mental wellbeing.
+- 3412.5: social work assistant | Practice-based professionals who assist social workers in promoting social change, cohesion, and empowerment by guiding clients to access services, benefits, and community resources.
+- 3413.1: Monk/Nun | Monks/nuns dedicate themselves to a monastic lifestyle, vowing to participate in spiritual works within their religious community. They engage in daily prayer and often reside in self-sufficient monasteries or convents alongside other members.
+- 3412.6: Volunteer Mentor | Volunteer mentors guide volunteers through the integration process, introducing them to the host culture, and supporting them in responding to administrative, technical, and practical needs of the community.
+- 3421.1: Professional athlete | Individuals who compete in sports and athletic events at a professional level.
+- 3413.2: Pastoral worker | Pastoral workers support religious communities by providing spiritual education, guidance, and implementing programs such as charity works and religious rites. They assist ministers and help participants with social, cultural, or emotional problems.
+- 3422.1: Artistic Coach | Artistic coaches research, plan, organise and lead arts activities for sport practitioners to provide artistic abilities such as dance, acting, expression, and transmission, aiming to improve sport performance.
+- 3422.2: Lifeguard instructor | Trains future professional lifeguards in safety supervision, rescue techniques, first aid, and preventative responsibilities to ensure they become licensed.
+- 3422.3.1: Football coach | Trains amateur or professional football teams of youths or adults, developing training plans to improve physical condition, technique, and tactical abilities.
+- 3422.3: sports coach | Provides instruction in a specific sport within a recreational context for non-age-specific and age-specific participants, fostering physical and psychological fitness.
+- 3422.4: sports instructor | Introduces people to sports and teaches the skills required for performance, often focusing on adventure sports.
+- 3422.4.1: boxing instructor | Trains individuals or groups in boxing, instructing clients during sessions and teaching techniques such as stance, defense, and punches.
+- 3422.4.2: golf instructor | Trains and teaches golf to individuals or groups by demonstrating techniques, explaining correct posture and swinging, providing feedback, and advising on equipment.
+- 3422.4.3: Ice-skating coach | Ice-skating coaches teach and train individuals or groups in ice skating and related sports such as figure skating and speed skating, preparing them for competitions.
+- 3422.4.5: snowboard instructor | Snowboard instructors teach groups or individuals how to ride a snowboard, covering basic and advanced techniques for students of all ages and skill levels.
+- 3422.4.4: ski instructor | Ski instructors teach individuals or groups to ski and advanced skiing techniques, advising on equipment and safety while planning and delivering lessons.
+- 3422.4.6: Swimming teacher | Trains and advises groups or individuals on swimming, planning trainings and teaching various swimming styles.
+- 3422.4.7: Tennis Coach | Tennis coaches advise and guide individuals and groups on playing tennis, conducting lessons to teach rules, techniques, grips, strokes, and serves while motivating clients to improve performance.
+- 3422.5: sports official | Administers rules and laws of a sport to ensure fair play, health, safety, and protection of participants during events.
+- 3423.1: Activity leader | Activity leaders provide recreational services to people and children on vacation by organizing games, sports, tours, and cultural visits.
+- 3423.1.1: Outdoor activities coordinator | Organises and manages work programmes and resources to deliver outdoor services, supervising staff while addressing client, technical, environmental, and safety responsibilities.
+- 3423.1.2: Outdoor animator | Professionals responsible for planning and organizing outdoor activities, often working in the field while managing administrative and maintenance tasks.
+- 3423.1.2.1: assistant outdoor animator | Assists in planning outdoor activities, conducting risk assessments, and monitoring equipment while managing resources and groups.
+- 3423.1.2.3: Specialised outdoor animator | Plans, organises, and safely delivers outdoor animator activities, often supporting assistants and managing administrative or maintenance tasks.
+- 3423.1.2.2.1: Survival Instructor | Survival instructors guide groups into vast natural areas to self-directly learn basic survival needs without modern gear or comfort facilities, ensuring safety while maintaining an adventurous environment.
+- 3423.1.2.2: Outdoor activities instructor | Professionals who organise and lead recreational outdoor trips, teaching skills like hiking, climbing, skiing, and water sports while ensuring participant and equipment safety.
+- 3423.2: fitness instructor | Fitness instructors build fitness participation by delivering safe and effective exercise instruction to individuals or groups using equipment and fitness classes.
+- 3423.2.2: personal trainer | Designs, implements, and evaluates exercise or physical activity programmes for individual clients by collecting and analysing client information to ensure programme effectiveness.
+- 3423.2.1: Leisure Attendant | Leisure attendants promote health and fitness participation, ensuring a clean, safe, and friendly environment to encourage regular member attendance and satisfaction.
+- 3423.2.3: Pilates teacher | Professionals who plan, teach, and adapt exercises based on Joseph Pilates' principles to ensure safe, appropriate, and effective client programs.
+- 3423.2.4: Sport therapist | Professionals who program and supervise rehabilitation exercises for individuals and groups, focusing on those with chronic health conditions or high risk of developing them.
+- 3423.4: Mountain guide | Mountain guides assist visitors, interpret natural heritage, and provide information and guidance to tourists on mountain expeditions, ensuring safety through monitoring weather and health conditions.
+- 3431.1: photographer | Photographers capture images using digital or film cameras and equipment, often processing them to create finished prints.
+- 3423.3: Horse riding instructor | Horse riding instructors advise and guide individuals and groups on riding horses, conducting lessons to teach techniques such as stopping, turning, show-riding, and jumping while motivating clients to improve performance.
+- 3431.2: Photojournalist | Photojournalists cover news events by taking informative images and tell stories by taking, editing, and presenting images for newspapers, journals, magazines, television, and other media.
+- 3432.2: Merchandiser | Merchandisers are responsible for positioning goods following standards and procedures.
+- 3432.1.1: Interior planner | Interior planners help clients in planning their interiors for commercial and private use.
+- 3432.1: Interior Designer | Professionals who design or renovate internal spaces, integrating structural alterations, fixtures, lighting, and color schemes to balance functional efficiency with aesthetic appeal.
+- 3432.3: miniature set designer | Designs and builds miniature props and sets for motion pictures and visual effects, ensuring models meet production requirements.
+- 3432.4: Set builder | Constructs, builds, prepares, adapts, and maintains scenic elements for stage, film, television, and events using materials like wood, steel, aluminium, and plastics based on artistic visions and plans.
+- 3432.4.1: scenic painter | Scenic painters decorate sets for live performances using figurative painting, landscape painting, and Trompe-l'œil techniques to create convincing scenes based on artistic vision and sketches.
+- 3432.5: Set designer | Set designers develop a set concept for a performance and supervise its execution based on research and artistic vision, ensuring alignment with the overall artistic direction.
+- 3432.6: Visual merchandiser | Specialised in the promotion of the sale of goods, particularly through the presentation of products in retail outlets.
+- 3433.1: art handler | Trained individuals who work directly with objects in museums and art galleries to ensure safe handling and care.
+- 3433.2: Big data archive librarian | Professionals who classify, catalogue, and maintain libraries of digital media while ensuring compliance with metadata standards.
+- 3434.1: chef | Culinary professionals with a flair for creativity and innovation to provide a unique gastronomic experience.
+- 3433.3: Taxidermist | Taxidermists mount and reproduce deceased animals or parts of animals, such as trophy heads, for public display, education, scientific study, or private collections.
+- 3434.1.1: head chef | Head chefs manage the kitchen to oversee the preparation, cooking and service of food.
+- 3434.1.2: pastry chef | Pastry chefs are responsible for preparing, cooking and presenting desserts, sweet products and bakery products.
+- 3434.1.2.1: Head pastry chef | Manages pastry staff and ensures the preparation, cooking, and presentation of desserts, sweet products, and pastry products.
+- 3434.1.3: Private chef | Private chefs prepare meals for employers in their homes, adhering to food and sanitation rules while accommodating dietary restrictions and personal preferences. They may also organize small dinner parties and celebrations.
+- 3435.1: assistant stage director | Supports the stage director and production team by coordinating rehearsals, taking notes, and facilitating communication between performers, designers, and staff.
+- 3435.10: Head of workshop | Coordinates specialised workshops that construct, build, prepare, adapt and maintain elements used on stage, aligning work with artistic vision and production schedules.
+- 3435.11: location manager | Professionals responsible for procuring filming locations outside of studios and managing all associated logistics, site safety, and security during production.
+- 3435.12: Mask maker | Constructs, adapts, and maintains masks for live performances based on artistic visions and sketches, ensuring maximum wearer mobility.
+- 3435.13: Media Integration Operator | Controls overall image, media content, and synchronization of communication signals between performance disciplines based on artistic concepts, interacting closely with performers and other operators.
+- 3435.14: Performance flying director | Designs and supervises flying effects for performances based on artistic vision, training actors and manipulating them during execution.
+- 3435.15: Performance lighting technician | Performance lighting technicians setup, prepare, check and maintain equipment to provide optimal lighting quality for live performances.
+- 3435.15.1: Intelligent Lighting Engineer | Intelligent lighting engineers set up, prepare, check, and maintain digital and automated lighting equipment to ensure optimal lighting quality for live performances.
+- 3435.16: prompter | A professional who cues performers during live productions to ensure they remember their lines and maintain correct stage positioning.
+- 3435.18: prop master/prop mistress | Professionals who setup, prepare, check, and maintain objects used on stage by actors or other small movable objects called props.
+- 3435.17: Prop maker | Constructs, builds, prepares, adapts, and maintains props for stage, film, and television productions based on artistic vision and sketches.
+- 3435.19: Pyrotechnic designer | Develops pyrotechnical design concepts for performances based on research and artistic vision, supervising execution to ensure alignment with the overall artistic direction.
+- 3435.2: assistant video and motion picture director | Assists directors in organizing, scheduling, and planning cast and crew activities on set while managing budgets and ensuring production adherence to schedule.
+- 3435.21: script supervisor | Ensures continuity of movie or television programs by monitoring shots against the script and verifying visual and verbal consistency during editing.
+- 3435.20: Pyrotechnician | Pyrotechnicians control pyrotechnical elements of a performance based on artistic concepts, interacting closely with performers, designers, and other operators to ensure safety and artistic impact.
+- 3435.22: stage manager | Coordinates and supervises the preparation and execution of shows to ensure scenic images and stage actions comply with the artistic vision of the director and team.
+- 3435.23: Stand-in | A stand-in replaces actors before filming begins to perform actions during lighting and audiovisual setup, ensuring correct positioning for the actual shoot.
+- 3435.24: stunt performer | Executes dangerous actions, fight scenes, stunts, and specialized physical performances that actors cannot safely or physically perform.
+- 3435.25: theatre technician | Executes all technical tasks to support live performances, including stage construction, equipment operation, and logistics.
+- 3435.25.2: Light board operator | Light board operators control performance lighting based on artistic concepts, interacting closely with performers, designers, and other technical crew to influence and be influenced by the final result.
+- 3435.25.1: Followspot Operator | Followspot operators control specialized lighting instruments to follow performers on stage, adjusting movement, size, beam width, and color based on artistic concepts and performer interaction.
+- 3435.25.3: scenery technician | Scenery technicians setup, prepare, check and maintain pre-assembled sets to ensure optimal scenery quality for live performances.
+- 3435.25.4: Stage machinist | Stage machinists manipulate sets and performance elements based on artistic concepts, working closely with designers, operators, and performers to execute setups and changeovers.
+- 3435.3: audio production technician | Audio production technicians set up, prepare, check, and maintain equipment to ensure optimal sound quality for live performances, cooperating with road crews to handle logistics and operation.
+- 3435.25.5: Stage technician | Stage technicians control performance aspects based on artistic concepts, preparing setups, programming equipment, and operating systems for lighting, sound, video, sets, and fly systems in venues and artistic productions.
+- 3435.4: Automated fly bar operator | Controls movements of sets and elements in a performance based on artistic concepts, interacting with performers and other operators to execute automated fly bar, rigging, or related systems.
+- 3435.5: body artist | Professionals who decorate clients' skin temporarily or permanently using techniques such as tattooing or piercing, following client preferences and ensuring safety.
+- 3435.6: broadcasting programme director | Broadcasting programme directors make the programme schedule, deciding broadcast time and air times based on ratings and viewer demographics.
+- 3435.7: Dresser | Dressers assist and support artists before, during, and after performances to ensure costumes align with the artistic vision. They maintain, check, and repair costumes while facilitating quick changes.
+- 3435.8: Extra | Extras perform actions in the background or in crowds during filming to create atmosphere without directly contributing to the plot.
+- 3435.7.1: costume attendant | Costume attendants assist actors and extras with dressing, ensuring costumes match the designer's vision and maintaining appearance continuity. They are responsible for the maintenance, repair, and safe storage of costumes after shooting.
+- 3435.9: fight director | Fight directors coach performers to safely execute fight sequences for performances such as dance, movies, television, and circus.
+- 3511.1: data centre operator | Maintains computer operations within the data centre, managing daily activities to solve problems, ensure system availability, and evaluate performance.
+- 3512.1: ICT help desk agent | ICT help desk agents provide technical assistance to computer users, answer questions, or solve computer problems for clients via telephone or electronically, focusing on hardware and software usage.
+- 3512.2: ICT help desk manager | ICT help desk managers monitor technical support service delivery against deadlines, plan user support actions, troubleshoot ICT issues, and supervise help desk teams to ensure appropriate customer feedback and support.
+- 3512.3: ICT security technician | ICT security technicians propose and implement necessary security updates and measures whenever required. They advise, support, inform, and provide training and security awareness.
+- 3512.4: ICT technician | ICT technicians install, maintain, repair, and operate information systems and ICT-related equipment, including hardware and software.
+- 3513.1: Aviation data communications manager | Professionals who plan, implement, and maintain data transmission networks, supporting data processing systems that link user agencies to central computers.
+- 3513.2: ICT network technician | ICT network technicians install, maintain, and troubleshoot networks, data communications equipment, and network devices such as printers and storage area networks. They also analyze and resolve network-related problems reported by users.
+- 3514.1: Webmaster | Professionals who deploy, maintain, monitor, and support web servers to ensure system integrity, security, and performance while coordinating website content and strategy.
+- 3521.1: audio-visual technician | Audio-visual technicians set up, operate and maintain equipment to record and edit images and sound for radio and television broadcasts, at live events and for telecommunication signals.
+- 3521.1.1: Boom operator | A boom operator sets up and operates boom microphones by hand, on an arm, or on a moving platform to capture dialogue.
+- 3521.1.10: Sound operator | Sound operators control the sound of a performance based on artistic concepts, interacting with performers and other operators to influence and be influenced by the results of their work.
+- 3521.1.11: video technician | Video technicians set up, prepare, check, and maintain equipment to ensure optimal projected image quality for live performances, cooperating with road crews to handle logistics and operation.
+- 3521.1.2: Camera operator | Camera operators setup and operate digital film cameras to shoot domestic motion pictures or television programs, collaborating with directors and clients.
+- 3521.1.3: Performance rental technician | Technicians who prepare, maintain, issue, transport, set up, program, operate, and store audiovisual, performance, and event equipment based on plans and instructions.
+- 3521.1.5: Projectionist | Projectionists operate and maintain projection equipment in cinema theatres, ensuring smooth movie screenings and proper film storage.
+- 3521.1.4: Performance video operator | Controls projected images of a performance based on artistic concepts, interacting with performers and other technical crew to influence and be influenced by the visual outcome.
+- 3521.1.6: Recording Studio Technician | Operates and maintains audio equipment in recording booths, manages sound production, advises singers on vocal technique, and edits recordings into finished products.
+- 3521.1.7: Sound designer | Develops sound design concepts for performances based on research and artistic vision, supervising execution and preparing audio fragments.
+- 3521.1.9: Sound mastering engineer | Sound mastering engineers convert finished recordings to the desired format such as CD, vinyl, and digital, ensuring the quality of the sound on all formats.
+- 3521.1.8: sound editor | Sound editors create soundtracks and sound effects for motion pictures, television series, and multimedia productions, ensuring synchronization of music, sound, and dialogue with visual scenes.
+- 3521.2: broadcast technician | Broadcast technicians install, start up, maintain, monitor, and repair equipment used for the transmission and reception of television and radio broadcast signals, ensuring materials are available in suitable transmittable quality by deadlines.
+- 3522.1: telecommunications engineering technician | Deploys, maintains, and monitors telecommunication systems for data and voice interactions, including telephone, video conferencing, and voicemail. Also involved in system design, manufacturing, construction, and R&D technical assistance.
+- 4110.1: office clerk | Office clerks perform clerical and administrative duties to support business operations within a department, assisting administrative staff, secretaries, and assistants.
+- 4110.1.1: Membership Administrator | Ensures effective membership administration, documentation, and communication while supporting sales, enquiries, and renewal processes.
+- 4120.1: secretary | Secretaries perform a variety of administrative tasks to help keep an organisation run smoothly.
+- 4131.1: Typist | Operates computers to type and revise documents, compile material such as correspondence and reports, and follow instructions to determine formatting and production requirements.
+- 4132.1: data entry clerk | Data entry clerks update, maintain, and retrieve information on computer systems. They prepare source data by compiling and sorting information, process customer and account documents by reviewing for deficiencies, and verify entered data.
+- 4211.1: bank teller | Bank tellers interact frequently with customers to promote bank products, manage personal accounts, and handle transactions such as deposits, savings, and transfers.
+- 4212.1: bingo caller | Organises and runs games of bingo in halls, social clubs, or entertainment facilities.
+- 4211.2: Post office counter clerk | Sells products and services at a post office, assists customers with mail pickup and sending, and sells financial products.
+- 4212.2: Bookmaker | Bookmakers take bets on sports games and other events at agreed-upon odds, calculate odds, pay out winnings, and manage associated risks.
+- 4212.3: Casino Cashier | Casino cashiers exchange tokens, coins, or chips for money, arrange pay-outs, and verify customer signatures and identification.
+- 4212.4: casino gaming manager | Casino gaming managers oversee the day-to-day operations of gaming facilities, ensuring compliance with rules and regulations while supervising personnel and security services.
+- 4212.4.1: Casino pit boss | Casino pit bosses support management by supervising gaming floor operations, inspecting activities, and managing staff to ensure efficiency, security, and service standards while meeting financial targets.
+- 4212.5: gaming dealer | Gaming dealers operate table games by standing behind the table, dispensing cards, operating gaming equipment, distributing winnings, and collecting money or chips from players.
+- 4212.6: lottery operator | Lottery operators manage the daily functions of lotteries, including data verification, system entry, and equipment maintenance.
+- 4214.1: debt collector | Compiles debt owed to an organisation or third parties, primarily focusing on accounts past their due date.
+- 4212.7: Odds compiler | Odds compilers count odds in gambling for bookmakers, betting exchanges, lotteries, and casinos. They set odds for sporting outcomes and manage trading aspects of gambling operations.
+- 4213.1: pawnbroker | Pawnbrokers offer loans to clients by securing them with personal objects or items, assessing item value, determining loan amounts, and managing inventory assets.
+- 4212.8: Race track operator | Operates tote systems and communication tools at horse race tracks, maintaining odds boards and supporting daily tote operations.
+- 4221.2: Host/Hostess | Personnel who welcome and inform visitors at transport hubs, hotels, and events, or attend to passengers during transport.
+- 4214.2: Insurance collector | Collects payment for overdue insurance bills across various sectors (medical, life, car, travel) and facilitates payment plans based on individual financial situations.
+- 4221.1: Ground steward/ground stewardess | Assists rail passengers before boarding, performs check-in duties, and handles customer service tasks such as ticket booking and refund processing for delays or cancellations.
+- 4221.3: Ticket sales agent | Ticket sales agents provide initial service to customers, sell travel tickets, and fit reservation offers to customers' queries and needs.
+- 4221.4: Tourist information officer | Tourist information officers provide information and advice to travellers about local attractions, events, travelling, and accommodation.
+- 4221.6: Tour organiser | Manages and supervises the itinerary of a touristic voyage and provides practical information to tourists.
+- 4221.5: Tour operator representative | Act on behalf of the tour operator to provide practical information, assistance, and sell excursions to tourists at their destinations.
+- 4221.3.1: railway sales agent | Railway sales agents provide service to customers at ticket counters, handling reservations, sales, refunds, and seat verification.
+- 4221.7: travel agent | Designs and markets travel programme itineraries for potential travellers or visitors.
+- 4221.8: travel consultant | Provides customised information and consultation on travel offers, makes reservations, and sells travel services along with related services.
+- 4222.1: customer contact centre information clerk | Provides information to customers via telephone and other media such as email regarding a company's services, products, and policies.
+- 4222.1.1: Live chat operator | Responds to customer answers and requests through online platforms and websites in real time, providing service and solving inquiries via written communication.
+- 4223.1: Telephone switchboard operator | Establishes telephone connections using switchboards and consoles, while answering customer inquiries and service problem reports.
+- 4224.1: hospitality establishment receptionist | Provides first point of contact and assistance to guests, manages bookings, processes payments, and provides information.
+- 4224.1.1: Camping ground operative | Camping ground operatives perform customer care in a campsite facility and other operational work.
+- 4223.1.1: Emergency medical dispatcher | Responds to urgent calls at a control center, gathers details about the emergency situation and location, and dispatches the nearest ambulance or paramedic helicopter.
+- 4224.2: night auditor | Oversees night customer care in hospitality establishments and performs a wide variety of activities from front desk to bookkeeping.
+- 4225.1: customer service representative | Handles customer complaints and maintains overall goodwill between an organisation and its customers.
+- 4226.1: Receptionist | Receptionists manage the reception area of a business, serving as the first point of contact for clients and customers.
+- 4226.1.1: Front line medical receptionist | Greet clients and patients upon arrival, check them in, collect patient notes, and make appointments under the supervision of a healthcare institution manager.
+- 4226.1.2: veterinary receptionist | Provides reception and office/administrative support in a veterinary practice, including scheduling appointments, receiving clients, and advising on animal-related products in accordance with national legislation.
+- 4227.1: market research interviewer | Professionals who collect customer perceptions, opinions, and preferences regarding commercial products or services using various contact methods.
+- 4227.2: Survey enumerator | Survey enumerators conduct interviews and complete forms to collect data from interviewees via phone, mail, personal visits, or street surveys, primarily for governmental demographic statistics.
+- 4229.1: contact tracing agent | Assesses exposure to infectious diseases, advises individuals and contacts on containment measures, and follows up regularly to ensure compliance.
+- 4311.1: billing clerk | Billing clerks create credit memos, invoices, and monthly customer statements, issue them to customers, and update customer files accordingly.
+- 4229.2: hotel concierge | Hotel concierges provide information to customers, assist guests with various tasks such as making restaurant reservations, recommending entertainment highlights, booking transportation, procuring tickets to special events, and assisting with travel arrangements and tours of local attractions.
+- 4311.2: Sales support assistant | Performs general sales support tasks including assisting in sales plan development, managing clerical activities, verifying invoices, compiling data, and preparing reports for company departments.
+- 4312.1: auditing clerk | Auditing clerks collect and examine financial data, such as inventory transactions, to ensure accuracy, proper maintenance, and mathematical correctness. They review numbers in databases and documents, consulting with accountants, managers, or other clerks as necessary.
+- 4312.2: Back office specialist | Performs administrative and organisational operations in a financial company to support the front office, managing data, documents, and financial transactions.
+- 4312.2.1: financial markets back office administrator | Administrative professionals who process transactions involving securities, derivatives, foreign exchange, and commodities, managing the clearing and settling of trades registered in the trading room.
+- 4312.3: Foreign exchange cashier | Processes cash transactions in national and foreign currencies, provides exchange rate information, handles deposits, records transactions, and verifies currency validity.
+- 4312.4: insurance clerk | Insurance clerks perform general clerical and administrative duties in insurance companies, service institutions, for self-employed agents/brokers, or government institutions. They assist customers with insurance information and manage insurance agreement paperwork.
+- 4312.5: investment clerk | Investment clerks assist with the administration of investments such as stocks, bonds, or other securities and perform general clerical duties in the investment sector of a financial company.
+- 4312.6: property assistant | Property assistants perform administrative tasks in the real estate sector, providing financial information, advising clients, and organizing property viewings.
+- 4312.7: tax clerk | Tax clerks collect financial information to prepare accounting and tax documents while performing general clerical duties.
+- 4321.1: Inventory Coordinator | Inventory coordinators keep track of products stored in warehouses for transport to stores, wholesalers, and individual customers. They inspect inventory and maintain related paperwork and documents.
+- 4313.1: payroll clerk | Payroll clerks manage employee time sheets and pay checks, ensuring the accuracy and correctness of payroll information.
+- 4321.1.1: Footwear factory warehouse operator | Operates in footwear factories to store raw materials, components, and production devices, ensuring the supply chain is ready for manufacturing.
+- 4321.1.2: Leather goods warehouse operator | Manages the warehouse for leather, components, materials, and production devices; classifies and registers raw materials; forecasts purchases; and ensures material availability for the production chain.
+- 4321.1.4: Raw materials warehouse specialist | Specialists who organise and monitor the reception and storage of raw materials in the warehouse according to required conditions and monitor stock levels.
+- 4321.1.3: Raw material reception operator | Operates and maintains tools to evaluate raw materials (e.g., grains, potatoes) for qualitative and quantitative requirements, then stores and distributes products to processing units.
+- 4321.1.5: Warehouse operators for clothing | Warehouse operators for clothing manage the storage of textile fabrics, accessories, and components, ensuring production readiness through classification, registration, and distribution.
+- 4322.1: Machinery assembly coordinator | Professionals who prepare and plan machinery manufacturing, monitor production processes, and ensure timely delivery of assemblies and resources.
+- 4323.1: Aircraft Cargo Operations Coordinator | Directs and coordinates air transport terminal cargo and ramp activities, planning working activities based on incoming flight data.
+- 4323.10: Pipeline route manager | Pipeline route managers oversee the day-to-day operational aspects of transporting goods via pipeline infrastructures, planning efficient routes and ensuring regulatory compliance.
+- 4323.12: Rail logistics coordinator | Manages rail shipments, coordinates transport means and equipment allocation, and ensures timely delivery while designing efficient supply chains.
+- 4323.11: Port coordinator | Manages traffic division operations for port authorities, enforcing regulations on ship berthing, cargo handling, and facility use while directing policing and cleaning activities.
+- 4323.13: rail traffic controller | Operates signals and points from a signal box to control train order and movement, ensuring safety during normal, degraded, and emergency situations.
+- 4323.14: road transport maintenance scheduler | Responsible for the effective execution of maintenance work control processes for urban transport vehicles and the efficient planning and scheduling of resources to conduct maintenance activities.
+- 4323.15: Ship pilot dispatcher | Coordinates ships entering or leaving port by writing orders, notifying pilots of assignments, and recording pilotage charges and activity reports.
+- 4323.16: ship planner | Manages vessel performance, ensuring safety, operationality, and cargo profitability by optimizing loading capacity and minimizing costs.
+- 4323.17: taxi controller | Taxi controllers take bookings, dispatch vehicles, and are responsible for coordinating drivers while maintaining customer liaison.
+- 4323.18: tram controller | Tram controllers assign and manage tram vehicles and drivers for the transport of passengers, including records of distances covered and of repairs made.
+- 4323.20: Water traffic coordinator | Manages vessel movements in ports and waterways to ensure the efficient deployment of a shipping company's fleet.
+- 4323.2: Aircraft dispatcher | Aircraft dispatchers authorise, regulate, and control commercial airline flights according to governmental and company regulations, ensuring flight flow efficiency.
+- 4323.19: Vessel operations coordinator | Manages chartered vessels' transit and performance, optimizing schedules while assessing vessel capabilities and risks based on cargo types.
+- 4323.3: Baggage flow supervisor | Monitors baggage flow in airports to ensure timely connections and arrivals, ensuring regulatory compliance and applying solutions to operational issues.
+- 4323.4: Bus route supervisor | Coordinates vehicle movements, routes, and drivers, and may supervise loading, unloading, and checking of baggage or express shipped by bus.
+- 4323.5: dangerous goods safety adviser | Professionals who inspect and provide transport recommendations for dangerous goods in compliance with European regulations across road, rail, sea, and air modes.
+- 4323.7: Gas scheduling representative | Gas scheduling representatives track and control the flow of natural gas between pipelines and the distribution system, ensuring compliance with schedules and demands.
+- 4323.6: Freight transport dispatcher | Freight transport dispatchers receive and transmit reliable messages, track vehicles and equipment, and record important information. They oversee planning operations by coordinating different transport modes, structuring routes, and determining appropriate transport methods.
+- 4323.8: gas transmission system operator | Gas transmission system operators transport energy in the form of natural gas through pipelines, ensuring delivery from production stations to gas distribution stations.
+- 4323.9: Move coordinator | Move coordinators envision all activities required for a successful moving, translating client briefings into actions that ensure a smooth, competitive, and satisfactory move.
+- 4412.1: mail clerk | Mail clerks perform mail handling, sorting, recording, and other duties in connection with mail services from post offices or related organisations.
+- 4411.1: library assistant | Assists the librarian in day-to-day library activities, including helping clients find materials, checking out items, and restocking shelves.
+- 4412.2: Postman/Postwoman | Delivers mail and parcel posts to residences and businesses, collects signatures from recipients, and performs related duties for post offices or organizations.
+- 4415.1: file clerk | File clerks maintain company records, manage forms and information, organize documents, and ensure efficient retrieval systems.
+- 4416.1: human resources assistant | Supports human resources managers in recruitment, administrative tasks, and data analysis.
+- 4413.1: Proofreader | Examines facsimiles of finished products such as books, newspapers, and magazines to correct grammatical, typographical, and spelling errors, ensuring the quality of the printed product.
+- 4419.1: Advertising Assistant | Supports operations in advertising departments or agencies by handling administrative activities, communicating with internal staff and external clients, and assisting in the implementation of plans and content creation.
+- 5111.1: Cabin Crew Manager | Manages cabin crew teams to ensure passenger satisfaction and enforce safety regulations during flights.
+- 5111.2: Steward/Stewardess | Stewards/stewardesses perform food and beverage service activities on all land, sea and air travel services.
+- 4419.2: Foreign language correspondence clerk | Foreign language correspondence clerks read and reply to a company's correspondence in foreign languages and perform related clerical duties.
+- 5111.2.1: flight attendant | Flight attendants perform personal services conducive to the safety and comfort of airline passengers during flight.
+- 5111.2.3: Train attendant | Train attendants work on trains to provide services to passengers, including welcoming them, answering questions, and serving meals.
+- 5111.2.2: ship steward/ship stewardess | Work on board vessels to provide services to passengers, including serving meals, housekeeping, welcoming guests, and explaining safety procedures.
+- 5112.1: Chief Conductor | Responsible for the safe performance of operational tasks on passenger trains outside the driver's cab, ensuring passenger safety and operational communication.
+- 5112.2: railway passenger service agent | Railway passenger service agents assist station customers by providing travel information, mobility support, and security, while safely managing unexpected situations.
+- 5112.3.1: passenger fare controller | Passenger fare controllers collect tickets, fares, and passes from passengers and provide information on transport rules, station details, and timetables.
+- 5112.3: Train Conductor | Assists passengers with boarding and alighting, provides information on rules and timetables, collects fares, and supports operational safety and emergency response.
+- 5113.1: Tourist guide | Assists individuals or groups during travel or sightseeing tours at places of touristic interest, interpreting cultural and natural heritage and providing information in the language of their choice.
+- 5120.1: cook | Culinary operatives who prepare and present food, typically in domestic and institutional environments.
+- 5113.1.1: Environmental education officer | Promotes environmental conservation and development through education, resource creation, and community engagement.
+- 5113.1.2: Park guide | Park guides assist visitors, interpret cultural and natural heritage, and provide information and guidance to tourists in parks such as wildlife, amusement, and nature parks.
+- 5113.1.3: zoo educator | Zoo educators teach visitors about zoo/aquarium animals, other species, habitats, and wildlife conservation. They provide information on zoo management and collections through formal and informal learning opportunities.
+- 5120.1.1: Diet cook | Diet cooks prepare and present meals according to special dietary or nutrition needs.
+- 5120.1.2: Fish cook | Fish cooks prepare and present fish dishes using various techniques, including the preparation of accompanying sauces and the purchasing of fresh fish.
+- 5120.1.3: Grill cook | Grill cooks prepare and present meat, vegetables, and fish using grill equipment such as grills and rotisseries.
+- 5131.1: restaurant host/restaurant hostess | Restaurant hosts/hostesses welcome customers to a hospitality service unit and provide initial services.
+- 5120.1.4: Industrial cook | Industrial cooks create new food designs and recipes, preparing and mixing ingredients to produce foodstuff products while regulating temperatures and monitoring the cooking process.
+- 5131.2: waiter/waitress | Waiters/waitresses supply guests with food and drinks as requested in restaurants, bars, and hotels.
+- 5131.2.1: Head waiter/head waitress | Manages food and beverage service in hospitality outlets, ensuring a positive customer experience by coordinating service actions and supervising transactions.
+- 5131.2.2: Sommelier | Sommeliers stock, prepare, advise on and serve wine and other alcoholic beverages.
+- 5131.2.2.2: Head sommelier | Manages the ordering, preparing, and servicing of wine and other related beverages in a hospitality service unit.
+- 5131.2.2.1: Beer sommelier | Beer sommeliers understand and advise on beer styles, brewing processes, and optimal food pairings in restaurants, breweries, and shops. They possess expert knowledge of ingredients, beer history, glassware, and draught systems.
+- 5131.2.2.3: Wine sommelier | Professionals with general knowledge of wine production, service, and food pairing who manage specialized wine cellars, publish wine lists, or work in restaurants.
+- 5132.1: Bartender | Serves alcoholic or non-alcoholic drinks as requested by clients in a hospitality service bar outlet.
+- 5132.1.1: barista | Barista's prepare specialised types of coffee using professional equipment in a hospitality/coffee shop/bar unit.
+- 5132.1.2: cocktail bartender | Cocktail bartenders perform expert mixing of alcoholic and non-alcoholic cocktails.
+- 5141.1: hairdresser | Professionals who offer beauty services including cutting, colouring, bleaching, permanent waving, and styling clients' hair using tools like clippers, scissors, and razors.
+- 5141.1.1: barber | Barbers cut, trim, taper, and style men's hair, and remove facial hair by shaving specific areas.
+- 5141.1.2: hairdresser assistant | Assists hairdressers by cleaning client hair, applying treatments, and performing scalp care in beauty salons.
+- 5141.1.4: Performance hairdresser | Assists and supports artists before, during, and after performances to ensure hairdressing aligns with the artistic vision of the stage director and team.
+- 5141.1.3: hair stylist | Hair stylists wash, dry, cut, and style the hair of performers such as singers, presenters, and actors for stage, movie, TV, and music videos. They collaborate with art directors to design looks, dress wigs and hairpieces, and provide on-site touch-ups during artistic activities.
+- 5142.1: aesthetician | Aestheticians offer skin care treatments to maintain healthy and attractive skin. They apply facial treatments like lotions, scrubs, peels, and masks based on client needs, perform neck massages, body wraps, and hair removal.
+- 5142.10: spa attendant | Spa attendants interact with guests at the reception desk to explain available services, clean spa rooms, maintain storage areas, restock towels, monitor facility security, and sell treatment packages.
+- 5142.11: Tanning Consultant | Tanning consultants assist clients with their tanning needs by offering advice on purchases and treatments in solariums and tanning salons.
+- 5142.12: weight loss consultant | Weight loss consultants assist clients in obtaining and maintaining a healthy lifestyle by advising on the balance between healthy food and exercise.
+- 5142.2: beauty salon attendant | Beauty salon attendants manage client appointments, provide service information, handle complaints, maintain salon cleanliness, and process payments.
+- 5142.3: hair removal technician | Provides cosmetic services by removing unwanted hair from various body parts using temporary or permanent methods.
+- 5142.4: make-up and hair designer | Develops design concepts for performer make-up and hair based on research and artistic vision, supervising execution to align with overall artistic goals.
+- 5142.5: make-up artist | Assists artists before, during, and after film or TV productions to ensure make-up aligns with the director's artistic vision, creating images and characters through make-up and prosthetics.
+- 5142.8: Pedicurist | Pedicurists offer cosmetic treatment and care for clients' feet and toenails.
+- 5142.7: Masseur/Masseuse | Professionals who perform massages to help clients relax and de-stress according to their preferences, utilizing specific techniques, equipment, and oils.
+- 5142.6: manicurist | Manicurists provide fingernail care by cleaning, cutting, and shaping nails, removing cuticles, and applying polish or artificial nails.
+- 5142.9: personal stylist | Personal stylists assist clients in making fashion choices by advising on trends in clothing, jewellery, and accessories. They help select appropriate outfits based on social events, personal tastes, and body types, while teaching clients how to manage their overall appearance and image.
+- 5152.1: bed and breakfast operator | Manages the daily operations of a bed and breakfast establishment to ensure guests' needs are met.
+- 5151.2: Housekeeping supervisor | Housekeeping supervisors are in charge of supervising and coordinating the daily running of cleaning and housekeeping activities in hospitality establishments.
+- 5151.1: hotel butler | Hotel butlers provide personalised services to guests in high-level hospitality establishments, managing housekeeping staff to ensure clean interiors and excellent customer service while overseeing general guest welfare.
+- 5152.2: domestic housekeeper | Responsible for all household activities in a private house, including cooking, cleaning, and childcare, while managing supplies and expenditures.
+- 5153.1: building caretaker | Maintains and monitors the condition and security of buildings, serving as a contact person for residents.
+- 5153.1.1: Amusement park cleaner | Professionals responsible for maintaining cleanliness and performing minor repairs within amusement parks.
+- 5152.2.1: Domestic Butler | Domestic butlers serve at official meals, monitor meal preparations and table setting, and manage the household staff. They may also offer personal assistance in booking travel arrangements and restaurants, valeting, and clothing care.
+- 5153.1.2: house sitter | House sitters move into an employer's property to maintain security and inspect facility conditions during the owner's absence.
+- 5161.1: Astrologer | Analyses celestial motions and alignments to interpret clients' temperament, health, relationships, and life opportunities.
+- 5153.1.3: verger | Verger perform administrative duties for churches and parishes, ensure equipment maintenance, and support the parish priest or other superiors. They also perform assisting duties before and after church service such as tidying, readying the equipment, and supporting the priest.
+- 5161.2: Fortune teller | Fortune tellers use intuition and specific techniques to foretell future events and provide interpretations for clients.
+- 5161.3: Medium | Mediums act as communicators between the natural world and the spiritual world, conveying statements or images claimed to be provided by spirits.
+- 5163.1: Cemetery Attendant | Maintains cemetery grounds in good condition, prepares graves for burials, and ensures accurate burial records.
+- 5162.1: Companion | Companions perform housekeeping duties and meal preparation for individuals on their own premises, such as the elderly or those with special needs or illnesses. They also provide entertainment, shopping assistance, and transportation to appointments.
+- 5161.4: psychic | Psychics claim to have extra-sensory talents to gather information and insight into people's lives, events, or situations. They offer advice to clients on topics such as health, money, and love, often utilizing traditional practices like tarot card reading, palm reading, or astrological charts.
+- 5163.2: Embalmer | Professionals who arrange for the removal of deceased bodies, prepare them for burial or cremation, and restore a natural appearance through cleaning, disinfection, and cosmetic application.
+- 5164.1: animal care attendant | Provides routine care for non-production animals, ensuring their health, welfare, and enrichment in accordance with national legislation.
+- 5163.3: Funeral Attendant | Funeral attendants lift and carry coffins, place them in chapels and cemeteries, handle floral offerings, direct mourners, and assist with equipment storage.
+- 5163.4: Funeral services director | Funeral services directors coordinate funeral logistics, support bereaved families, and manage daily crematorium operations.
+- 5164.1.1: animal groomer | Animal groomers are in charge of grooming a range of animals, using the correct equipment, materials and methods.
+- 5164.1.2: Kennel worker | Kennel workers handle animals in kennels or catteries and provide care for pets, including feeding, cleaning, grooming, and exercising.
+- 5164.1.3: Zookeeper | Manages animals kept in captivity for conservation, education, research, and public display, ensuring their daily care and welfare.
+- 5164.10: zoo section leader | Manages and leads a team of zoo keepers, overseeing daily animal care, long-term species management, and exhibit organization.
+- 5164.2: Animal Handler | Professionals responsible for managing animals in working roles and continuing their training in compliance with national legislation.
+- 5164.2.1: Animal Trainer | Trains animals and/or animal handlers for general and specific purposes including assistance, security, leisure, competition, transportation, obedience, routine handling, entertainment, and education, in accordance with national legislation.
+- 5164.2.1.2: Horse Trainer | Trains animals and/or riders for general and specific purposes including assistance, security, leisure, competition, transportation, obedience, routine handling, entertainment, and education in accordance with national legislation.
+- 5164.2.1.1: Dog trainer | Trains animals and/or handlers for general and specific purposes including assistance, security, leisure, competition, transportation, obedience, routine handling, entertainment, and education in accordance with national legislation.
+- 5164.2.1.1.1: Guide dog instructor | Trains dogs to guide blind people effectively, matches dogs with clients, manages dog care routines, and advises clients on mobility techniques.
+- 5164.6: dog breeder | Dog breeders oversee the production and day-to-day care of dogs, maintaining their health and welfare.
+- 5164.5: Cattle pedicure | Specialists in taking care of hooves of cattle, ensuring compliance with national legal authority regulatory requirements.
+- 5164.3: Animal shelter worker | Provides routine animal care services at shelters, including intake, nursing, cleaning, and adoption administration.
+- 5164.8: Kennel supervisor | Monitors daily kennel operations to ensure proper pet handling and care, supervises staff, and maintains contact with pet owners during drop-offs and pick-ups.
+- 5164.9: Pet sitter | Pet sitters provide animal-sitting services including dog walking, home-boarding, pet/home sitting, day boarding, and animal transportation services.
+- 5165.1: driving instructor | Teaches vehicle operation theory and practice, assists students in developing driving skills, and prepares them for theory and practical examinations.
+- 5165.1.1: Bus driving instructor | Teaches the theory and practice of operating a bus safely and according to regulations, assisting students in developing driving skills and preparing them for theory and practical tests.
+- 5165.1.2: car driving instructor | Teaches individuals the theory and practice of safe car operation according to regulations, preparing them for driving tests.
+- 5165.1.3: motorcycle instructor | Motorcycle driver instructors teach people the theory and practice of how to operate a motorcycle safely and according to regulations.
+- 5169.1: club host/club hostess | Club host/hostess welcome customers to the club and ensure that clients are well looked after and satisfied.
+- 5165.2: vessel steering instructor | Teaches the theory and practice of safe vessel operation according to regulations, preparing students for driving theory and examinations.
+- 5165.1.4: Truck driving instructor | Truck driving instructors teach people the theory and practice of how to operate a truck safely and according to regulations.
+- 5211.1: Market vendor | Sells products such as fruit, vegetables, and household goods on organized outdoor or indoor marketplaces.
+- 5169.2: dating service consultant | Dating service consultants provide personalized support to clients in searching for partners, setting up dates, and achieving dating objectives. They operate in both physical and virtual environments, assisting users with profile management, messaging, and connection building.
+- 5212.1: street food vendor | Street food vendors sell food preparations, dishes, and products on organized outdoor or indoor marketplaces or on the streets, preparing food in their stalls and using sales techniques to recommend products to passers-by.
+- 5169.3: escort | Accompanies persons to social events and private occasions such as dinners or night club visits, potentially arranging transportation and tickets, and may provide legal erotic or sexual services depending on local laws.
+- 5221.1: retail entrepreneur | Organises business processes and concepts in a personally owned retail business.
+- 5222.1.1: checkout supervisor | Oversees cashiers in department stores and other large retail establishments.
+- 5222.1: shop supervisor | Shop supervisors ensure the smooth operation of stores according to regulations and company policy, overseeing business activities and employee performance.
+- 5223.1: Car leasing agent | Represents businesses involved in financing vehicles, offering appropriate leasing schemes and additional services related to the vehicle.
+- 5223.2: Motor vehicles parts advisor | Motor vehicles parts advisors sell motor vehicle parts, order parts, and identify alternative parts.
+- 5223.4: sales assistant | Sales assistants represent the direct contact with clients and provide general advice to customers.
+- 5223.3: Personal shopper | Assists individual clients in selecting and buying clothing items and other goods such as gifts, according to their personal tastes, desires and style.
+- 5223.5: Sales Processor | Handles sales operations, selects delivery channels, executes orders, and informs clients about dispatching and procedures.
+- 5223.7: Specialised seller | Specialised sellers sell goods in specialised shops.
+- 5223.6: shop assistant | Shop assistants work in shops performing assistance duties, helping shopkeepers with daily operations, selling products, and maintaining the shop environment.
+- 5223.7.1: Ammunition specialised seller | Sells weapons and ammunition for individual use in specialised shops.
+- 5223.7.11: confectionery specialised seller | Confectionery specialised sellers sell confectionery in specialised shops.
+- 5223.7.10: Computer games, multimedia and software specialised seller | Sells software products, including computer games and multimedia, in specialised retail shops.
+- 5223.7.13: Delicatessen specialised seller | Delicatessen specialised sellers sell delicatessen in specialised shops.
+- 5223.7.12: Cosmetics and perfume specialised seller | Sells cosmetics and toilet articles in specialised shops.
+- 5223.7.14: Domestic appliances specialised seller | Sells domestic appliances in specialised shops.
+- 5223.7.15: Eyewear and optical equipment specialised seller | Sells glasses and optical equipment in specialised shops.
+- 5223.7.16: Fish and seafood specialised seller | Fish and seafood specialised sellers sell fish, crustaceans and molluscs in specialised shops.
+- 5223.7.17: floor and wall coverings specialised seller | Floor and wall coverings specialised sellers sell wall and floor coverings in specialised shops.
+- 5223.7.19: Fruit and vegetables specialised seller | Sells fruit and vegetables in specialised shops.
+- 5223.7.18: Flower and garden specialised seller | Sells flowers, plants, seeds, and/or fertilisers in specialised shops.
+- 5223.7.20: Furniture specialised seller | Sells furniture and other household articles in specialised shops.
+- 5223.7.2: Audio and video equipment specialised seller | Sells audio and video equipment, such as radio and television sets, CD and DVD players, and recorders, in specialised shops.
+- 5223.7.21: Hardware and paint specialised seller | Sells hardware, paints, and related products in specialised retail shops.
+- 5223.7.23: Meat and meat products specialised seller | Meat and meat products specialised sellers cut up and sell meat in specialised shops.
+- 5223.7.22: Jewellery and watches specialised seller | Sells, maintains, and cleans jewels and watches in specialised shops.
+- 5223.7.24: medical goods specialised seller | Medical goods specialised sellers dispense medicinal drugs and provide advice.
+- 5223.7.25: Motor vehicles specialised seller | Sells cars and motor vehicles in specialised shops.
+- 5223.7.27: Orthopaedic supplies specialised seller | Sells orthopaedic goods in specialised shops.
+- 5223.7.26: music and video shop specialised seller | Sells musical records, audio tapes, compact discs, video tapes, and DVDs in specialised shops.
+- 5223.7.28: Pet and pet food specialised seller | Sells pets, pet foods, accessories, care products, and related services in specialised shops.
+- 5223.7.3: Audiology equipment specialised seller | Sells goods and equipment in specialised shops.
+- 5223.7.29: Press and stationery specialised seller | Sells newspapers and office supplies such as pens, pencils, and paper in specialised shops.
+- 5223.7.31: Shoe and leather accessories specialised seller | Sells footwear in specialised shops.
+- 5223.7.30: Second-hand goods specialised seller | Sells second-hand goods such as books, clothes, and appliances in specialised shops.
+- 5223.7.32: specialised antique dealer | Specialised antique dealers sell antique goods in specialised shops.
+- 5223.7.34: telecommunications equipment specialised seller | Sells telecommunication equipment and services in specialised shops.
+- 5223.7.33: Sporting accessories specialised seller | Sells sports goods, fishing gear, camping goods, boats, and bicycles in specialised shops.
+- 5223.7.35: Textile specialised seller | Textile specialised sellers sell textiles, fabrics, and haberdashery in specialised shops.
+- 5223.7.36: tobacco specialised seller | Tobacco specialised sellers sell tobacco products in specialised shops.
+- 5223.7.37: Toys and games specialised seller | Sells toys and games in specialised shops.
+- 5223.7.4: Bakery specialised seller | Sells bread and cakes in specialised shops, performing post-processing of products if required.
+- 5223.7.5: Beverages specialised seller | Sells beverages in specialised shops.
+- 5223.7.6: Bookshop specialised seller | Sells books in specialised shops, providing suggestions and advice on available books and related products.
+- 5223.7.7: Building materials specialised seller | Sells building materials in specialised shops.
+- 5223.7.8: Clothing specialised seller | Clothing specialised sellers sell clothes in specialised shops.
+- 5223.7.9: Computer and accessories specialised seller | Sells computers and other peripheral units in specialised shops.
+- 5230.1: cashier | Cashiers operate the cash register, receive payments from customers, issue receipts and return change due.
+- 5230.3: ticket issuing clerk | Ticket issuing clerks provide service to customers, sell tickets, and fit reservation offers to customers' needs for sporting, cultural, and leisure activities.
+- 5230.2: lottery cashier | Lottery cashiers exchange the registration of set of numbers or symbols for money and give tickets to the players. They pay out prizes and obtain customers' signatures and identification. They audit and count money in the cash register, enforcing regulations to prevent money laundering.
+- 5241.1: art model | Art models pose for visual artists as reference or inspiration for their creative work, serving as the object of creation for figure drawing, painting, sculpture, or photography.
+- 5241.2: fashion model | Fashion models promote products like clothes, cosmetics, and appliances by posing for journalists, photographers, and audiences on catwalks.
+- 5242.1: Promotions Demonstrator | Promotions demonstrators proactively seek out and engage with new potential clients to provide product-specific advice and demonstrate promotional goods or services.
+- 5243.1: Door to door seller | Door to door sellers sell goods and services directly to customers at their residences.
+- 5244.1: call centre agent | Handles incoming or outgoing customer calls to promote goods and services, obtain sales, and arrange sales visits.
+- 5245.1: Fuel station specialised seller | Sells fuel, lubricating, and cooling products for motor vehicles and motorcycles at a fuel station.
+- 5246.1: food service worker | Food service workers prepare food and serve customers, ensuring kitchen operations run smoothly in establishments like restaurants, cafeterias, hotels, and hospitals.
+- 5249.1: rental manager | Supervises the activities of a rental office or station and its staff.
+- 5246.2: Quick service restaurant team leader | Quick service restaurant team leaders manage operations in a quick service restaurant.
+- 5249.2: rental service representative | Rental service representatives are in charge of renting out equipment and determining specific periods of usage. They document transactions, insurances and payments.
+- 5249.2.1: Rental service representative in other machinery, equipment and tangible goods | Professionals responsible for renting out equipment and tangible goods, managing usage periods, and handling related administrative documentation.
+- 5249.2.1.1: rental service representative in agricultural machinery and equipment | Rental service representatives in agricultural machinery and equipment are in charge of renting out equipment and determining specific periods of usage. They document transactions, insurances and payments.
+- 5249.2.1.2: Rental service representative in air transport equipment | Professionals responsible for renting out air transport equipment, managing usage periods, and handling related administrative documentation.
+- 5249.2.1.3: Rental service representative in cars and light motor vehicles | Professionals responsible for renting out vehicles and determining specific usage periods.
+- 5249.2.1.4: Rental service representative in construction and civil engineering machinery | Professionals responsible for renting out construction and civil engineering machinery, managing usage periods, and handling related administrative documentation.
+- 5249.2.1.6: Rental service representative in trucks | Rental service representatives in trucks manage the rental of truck equipment, determining usage periods and handling related administrative tasks.
+- 5249.2.1.5: rental service representative in office machinery and equipment | Rental service representatives in office machinery and equipment are in charge of renting out equipment and determining specific periods of usage. They document transactions, insurances and payments.
+- 5249.2.1.7: Rental service representative in water transport equipment | Professionals responsible for renting out water transport equipment, managing usage periods, and handling related administrative documentation.
+- 5249.2.2: Rental service representative in personal and household goods | Professionals responsible for renting out household equipment, determining usage periods, and managing related administrative transactions.
+- 5249.2.2.1: Rental service representative in recreational and sports goods | Professionals responsible for renting out recreational and sports equipment, managing usage periods, and handling related administrative transactions.
+- 5249.2.2.2: Rental service representative in video tapes and disks | Professionals responsible for renting out video tape and disk equipment, managing usage periods, and handling related administrative documentation.
+- 5249.3: vehicle rental agent | Represents businesses involved in renting out vehicles and determines short periods of usage.
+- 5311.1.1: Au pair | Young individuals who live with a host family in another country to provide child care and perform light housekeeping duties while experiencing a different culture.
+- 5311.1: child care worker | Child care workers provide care for children when parents or family members are unavailable, looking after basic needs and supervising play.
+- 5311.1.3: child day care worker | Child day care workers provide social services to children and their families to improve social and psychological functioning, aiming to maximize family well-being through daytime care.
+- 5311.1.2: Babysitter | Provides short-term care services to children on the employer's premises, organizing play and educational activities, preparing meals, assisting with hygiene and homework, and transporting children to and from school.
+- 5311.1.4: Nanny | Provides qualified care services to children on the employer's premises, organizing play and educational activities, preparing meals, assisting with hygiene, and supporting homework.
+- 5311.2: school bus attendant | School bus attendants monitor activities on school buses to ensure student safety and good behavior, assist children with boarding and alighting, support the driver, and provide emergency assistance.
+- 5312.1: early years teaching assistant | Supports early years teachers in nursery schools by assisting with instruction, supervision, and daily schedule organization.
+- 5312.2: Primary school teaching assistant | Provides instructional and practical support to primary school teachers, reinforcing instruction for students needing extra attention and preparing classroom materials.
+- 5312.4: Special Educational Needs Assistant | Assists special education teachers in classroom duties by tending to the physical needs of students with disabilities and providing instructional support.
+- 5312.3: Secondary school teaching assistant | Provides instructional and practical support to secondary school teachers, assisting with lesson preparation, student reinforcement, and classroom supervision.
+- 5321.1: healthcare assistant | Healthcare assistants work in teams of nurses within nursing, social care, and clinical care fields to support patients of all age groups.
+- 5321.1.1: nurse assistant | Provides basic patient care under the direction of nursing staff.
+- 5329.1: hospital porter | Professional healthcare assistants who transport people on stretchers and items around the hospital site.
+- 5322.1: home care aide | Provides personal assistance and promotes autonomy for individuals unable to care for themselves due to illness, ageing, or disability.
+- 5329.2: phlebotomist | Phlebotomists take blood samples from patients for laboratory analysis, ensuring patient safety during the blood collection process.
+- 5329.3: sterile services technician | Sterile services technicians ensure decontamination of medical devices in compliance with strict hygienic procedures, dismantling and re-assembling sophisticated medical equipment for further usage.
+- 5411.1: firefighter | Firefighters manage emergency responses to fires and hazardous situations, prioritizing victim rescue, evacuation, and scene safety.
+- 5411.1.3: mine rescue officer | Mine rescue officers coordinate mine rescue operations and serve as the first line of response in emergency situations.
+- 5411.1.1: industrial firefighter | Industrial firefighters manage emergency responses to fires and hazardous situations in industrial facilities, ensuring safety compliance and damage assessment.
+- 5411.1.2: marine firefighter | Emergency responders who contain fires and hazardous situations on vessels, docks, and marine facilities while ensuring regulatory compliance.
+- 5411.1.4: Pump Operator | Assists firefighting operations by controlling pumps to supply water and other substances for extinguishing fires.
+- 5412.1: police officer | Police officers use investigation methods to prevent crime, pursue and apprehend criminals, and protect the public from violent and criminal activities.
+- 5413.1: Juvenile Correctional Officer | Monitors and provides security to juvenile offenders, ensuring facility safety and regulatory compliance.
+- 5413.2: prison officer | Prison officers supervise inmates in correctional facilities, ensuring security, peace-keeping, and regulatory compliance.
+- 5414.1: security guard | Security guards observe, detect irregularities, and protect people, buildings, and assets by maintaining constant security through patrols, access control, and monitoring systems.
+- 5414.1.1: Airport security officer | Airport security officers interact with passengers to ensure smooth transitions between airport areas while complying with safety regulations. They conduct searches of passengers, identification documents, and baggage to ensure safety and prevent illegal activity.
+- 5414.1.2: Armoured car guard | Ensures the safe transportation of valuable items like money between locations, handling vehicle operations, documentation, and responding to security threats.
+- 5414.1.3: Bodyguard | Bodyguards offer protection to clients against injury, attacks, and harassment by accompanying them to events, observing surroundings, anticipating threats, and responding to security emergencies.
+- 5414.1.4: door supervisor | Ensures suitability of people entering public places like bars and venues, enforces legal regulations, manages crowds, and handles aggressive behaviors.
+- 5414.1.6: hospitality establishment security officer | Manages the overall process and implementation of hospitality facility security, ensuring the safety of belongings, personal safety, and building security.
+- 5414.1.7: Security alarm investigator | Responds to burglar alarm signals and investigates disturbances identified by alarm systems on clients' premises.
+- 5414.1.5: Gate guard | Gate guards control access and exit to buildings or property to prevent unauthorized presence and incidents. They identify theft, investigate suspicious activities, and write reports.
+- 5419.10: Game keeper | Manages the habitat and wild game population in a defined area.
+- 5414.1.8: security consultant | Security consultants provide security services to clients and individuals, helping them prevent, plan, and mitigate threats such as terrorism, espionage, theft, and violence to their organization, buildings, operations, and employees.
+- 5414.1.9: Security guard supervisor | Security guard supervisors monitor and oversee the activities of guards who protect properties from vandalism and theft.
+- 5419.1: Aircraft marshaller | Aircraft marshallers signal pilots to assist with operations like turning, slowing, stopping, and shutting down engines. They lead aircraft to parking stands or runways and indicate directions using follow-me cars.
+- 5419.2: civil enforcement officer | Civil enforcement officers patrol streets to enforce parking restrictions, maintain traffic flow, ensure pedestrian safety, and verify compliance with traffic and parking laws.
+- 5419.4: crossing guard | Directs pedestrians in public places like streets near schools or railways to cross roads safely by observing traffic and using stop signs.
+- 5419.3: Coastguard watch officer | Coastguard watch officers patrol and survey coast and sea regions to prevent accidents, perform search and rescue missions, and react to emergency calls to advise on safety procedures.
+- 5419.5: crowd controller | Professionals who monitor crowds during events to prevent incidents, control entry, manage behavior, and conduct evacuations.
+- 5419.6: emergency response worker | Emergency response workers aid in emergency and disaster situations, such as natural disasters or oil spills, by ensuring safety, preventing damage, and transporting supplies.
+- 5419.7: Life guard | Monitors and ensures safety in aquatic facilities by preventing and responding to emergencies, identifying risks, and supervising public activities.
+- 5419.8: street warden | Street wardens patrol designated areas to ensure public security, monitor suspicious behavior, and enforce laws to maintain community safety.
+- 5419.9: Animal welfare inspector | Professionals who investigate animal cruelty, rescue animals at risk, and advise owners to prevent suffering.
+- 6112.1: Arboriculturist | Specialists who carry out observation, health assessment, and maintenance tasks related to trees.
+- 6111.1: Agronomic crop production team leader | Leads and works with a team of crop production workers, organizing daily work schedules and participating in production activities.
+- 6112.3: Hop farmer | Plants, cultivates, and harvests hops for the production of commodities such as beer.
+- 6112.2: Fruit production team leader | Fruit production team leaders are responsible for leading and working with a team to organize daily work schedules for fruit crop production and participate in the production processes.
+- 6112.5: Vineyard Machinery Operator | Carries out practical activities related to the cultivation, propagation of grape varieties, and wine production using specialized machinery or equipment.
+- 6112.4: Vineyard Cellar Master | Vineyard cellar masters manage the entire winemaking process from grape entry to on-site bottling and distribution, ensuring quality and regulatory compliance at every stage.
+- 6112.6: Vineyard manager | Vineyard managers orchestrate the conduct of the vineyard and the winery, and in some cases also handle administration and marketing.
+- 6113.1: Groundsman/Groundswoman | Provides landscape and lawn services and maintains grounds for private households, commercial and public facilities, schools, hotels, botanical gardens, golf courses, parks, and athletic fields.
+- 6113.2: Horticulture production manager | Plans production, manages the enterprise, and participates in horticultural production.
+- 6113.4: Interior landscaper | Interior landscapers design, install, manage and maintain indoor green spaces to customer requirements.
+- 6113.3: Horticulture production team leader | Horticulture production team leaders are responsible for leading and working with a team to organize daily work schedules for the production of horticulture crops and participate in the production process.
+- 6113.5: Landscape gardener | Professionals who plan, construct, renovate, and maintain parks, gardens, and public green spaces.
+- 6113.6: Tree surgeon | Tree surgeons maintain trees by pruning and cutting them, often using heavy machinery and climbing trees to perform maintenance.
+- 6114.1: crop production manager | Crop production managers plan the production, manage the enterprise and participate in the production process of crop production facilities.
+- 6121.1: Cattle breeder | Cattle breeders oversee the production and day-to-day care of cattle, ensuring their health and welfare.
+- 6121.2: Equine yard manager | Responsible for the day-to-day running of the yard, including staff management, horse care, health and safety, and client relations.
+- 6121.3: Horse breeder | Horse breeders oversee the production and day-to-day care of horses, ensuring their health and welfare.
+- 6121.4: Pig breeder | Pig breeders oversee the production and day-to-day care of pigs, ensuring their health and welfare.
+- 6121.5: sheep breeder | Sheep breeders oversee the production and day-to-day care of sheep, ensuring their health and welfare.
+- 6121.6: Shepherd | Shepherds manage the welfare and movement of livestock, especially sheep, goats and other grazing animals, in a variety of surroundings.
+- 6122.1: Poultry breeder | Poultry breeders oversee the production and day-to-day care of poultry, ensuring their health and welfare.
+- 6122.2: Poultry sexer | Specialists working in poultry farms determining the sex of animals to separate male from female birds.
+- 6123.1: bee breeder | Bee breeders oversee the production and day-to-day care of bees, ensuring their health and welfare.
+- 6129.1: Fur animals breeder | Fur animals breeders oversee the production and day-to-day care of fur animals, ensuring their health and welfare.
+- 6130.1: Farm manager | Plans and organises the daily operations, resourcing, and business management of animal and crop-producing farms.
+- 6130.2: mixed farmer | Manages all aspects of livestock and crop production as a small enterprise or for self-sufficiency.
+- 6210.1: Forest ranger | Forest rangers are responsible for the protection and conservation of natural resources, particularly in regards to forests and woodlands.
+- 6221.1: Aquaculture cage technician | Operates in the production of aquatic organisms in water-based (freshwater, brackish water, salt water) on-growing processes in cages.
+- 6221.11: water-based aquaculture technician | Coordinates and supervises fattening activities for aquaculture organisms in suspended systems (floating or submerged), participates in extraction and commercialization handling, and oversees maintenance of equipment and facilities.
+- 6221.10: Aquaculture Recirculation Technician | Operates and controls production processes for aquatic organisms in land-based recirculation systems, utilizing water re-use, pumping, aeration, heating, lighting, biofilter, and backup power systems.
+- 6221.4: Aquaculture hatchery technician | Operates and controls all aspects of hatchery production processes, managing broodstock and pregrowing juveniles.
+- 6221.3: Aquaculture hatchery manager | Plans, directs, and coordinates large-scale aquaculture operations to breed fish and shellfish, developing breeding strategies and controlling reproduction and early life cycle stages.
+- 6221.6: Aquaculture husbandry technician | Operates in aquatic organisms' production, specializing in the husbandry of ongrowing culture processes.
+- 6221.5: Aquaculture hatchery worker | Active in the production of aquatic organisms in land-based hatchery processes, assisting in raising organisms through early life stages and managing their release.
+- 6221.7: Aquaculture husbandry worker | Active in the production of aquatic organisms in land-based on-growing processes, assisting in raising organisms through all stages of their life cycle.
+- 6221.8: Aquaculture mooring manager | Manages the mooring and operation of large-scale aquaculture cages in open or semi-open water, ensuring stability against environmental conditions.
+- 6221.9: Aquaculture rearing technician | Specialists in the production of aquatic organisms, focusing on the rearing, weaning, and production of juveniles.
+- 6222.1: Fisheries boatman | Operates small boats inshore and near the coast to organize, manage, and execute shipping activities, capture and conserve fish, or engage in aquaculture operations while adhering to safety and regulatory standards.
+- 6223.1: Deep-sea fishery worker | Operates on board fishing vessels to catch deep-sea fish using rods and nets, adhering to legislation, and handles the transport, preservation, and delivery of the catch.
+- 6224.1: Hunter | Hunters track and pursue animals to trap or kill them for food, products, recreation, trade, or wildlife management.
+- 6223.2: Fisheries master | Plans, manages, and executes fishing vessel activities inshore, coastal, and offshore waters, directing navigation and overseeing cargo and fish handling operations.
+- 7111.1: House builder | Constructs, maintains, and repairs houses or similar small buildings using various techniques and materials.
+- 7112.1: Bricklayer | Bricklayers assemble brick walls and structures by skilfully laying bricks in an established pattern, using a binding agent like cement to bond them together, and filling joints with mortar.
+- 7113.1: stonemason | Stonemasons manually carve and assemble stone for construction purposes, performing artisanal carving for ornamental stone despite CNC equipment being the industry standard.
+- 7113.1.1: Stone engraver | Stone engravers use hand tools, machines, and chemical products to etch and carve patterns and inscriptions on stone surfaces.
+- 7114.1: Concrete finisher | Workers who prepare and finish concrete surfaces using binding agents like cement, including setting forms, pouring, and applying finishing actions.
+- 7114.2: Terrazzo setter | Terrazzo setters create terrazzo surfaces by preparing the substrate, installing dividing strips, pouring cement and marble chip solutions, and polishing the floor to ensure smoothness and shine.
+- 7115.1: carpenter | Carpenters cut, shape, and assemble wooden elements, as well as materials like plastic and metal, for the construction of buildings and other structures, including creating wooden frames to support wood-framed buildings.
+- 7115.2: Door installer | Door installers set doors in place, removing old doors if necessary, preparing frame openings, and ensuring new doors are installed square, straight, plumb, and watertight. They also inspect and service existing doors.
+- 7115.3: Fireplace Installer | Installs wood, gas, and electric fireplaces in homes according to manufacturer instructions and health and safety requirements. Performs maintenance, repairs, and acts as the primary customer contact for operation guidance.
+- 7115.4: Kitchen unit installer | Installs kitchen elements in homes by taking measurements, preparing rooms, removing old units, and fitting new equipment with utility connections.
+- 7115.5: Staircase installer | Staircase installers put in place standard or custom designed staircases between the various levels in buildings.
+- 7115.6: Window installer | Window installers place windows into structures and service them, ensuring they are installed plumb, straight, square, and watertight.
+- 7119.1: construction scaffolder | Construction scaffolders put up scaffolds and platforms to enable safe construction work at heights.
+- 7119.2: demolition worker | Demolition workers operate equipment to demolish structures, safely destroy buildings, and remove debris to permit site reuse.
+- 7115.7: Frame maker | Frame makers build, adjust, and repair frames, primarily from wood, for pictures and mirrors. They discuss specifications with customers, cut and join wooden elements, apply protective treatments, and fit glass.
+- 7119.4: Steeplejack | Specialised heightworkers who safely scale the outside of buildings and structures to perform critical work.
+- 7119.3: Manufactured wooden building assembler | Assembles wooden elements, such as walls, windows, doors, and whole rooms, into usable construction modules by integrating structures, insulation, and coverings.
+- 7121.1: Roofer | Roofers cover structures with roofs, installing weight-bearing elements for flat or pitched roofs and applying weatherproof layers.
+- 7122.1: carpet fitter | Carpet fitters lay rolls of carpet as a floor covering, cutting the material to size and preparing the surface before installation.
+- 7122.2: Hardwood floor layer | Hardwood floor layers install floors made of solid wood by preparing surfaces, cutting elements, and laying them in specific patterns.
+- 7122.3: Resilient floor layer | A skilled worker who installs prefabricated flooring materials such as linoleum, vinyl, rubber, or cork to create durable floor coverings.
+- 7123.1: Ceiling installer | Installs ceilings in buildings, applying specific techniques based on requirements such as fire resistance or space constraints between dropped ceilings and floors.
+- 7122.4: Tile fitter | Tile fitters install tiles onto walls and floors, cutting them to the correct size and shape, preparing surfaces, and laying them flush and straight. They may also undertake creative projects such as laying mosaics.
+- 7123.2: plasterer | Plasterers apply plaster made from gypsum, cement, or other solutions to walls to create a smooth finish.
+- 7124.1: insulation worker | Insulation workers install a variety of insulation materials to shield a structure or materials from heat, cold, and noise from the environment.
+- 7125.1: Plate glass installer | Fits panes of glass into windows and other structural elements like glass doors, walls, and façades.
+- 7125.2: vehicle glazier | Vehicle glaziers install glass in motor vehicles according to manufacturer specifications regarding type, thickness, size, and shape. They order and inspect windows for specific models and prepare damaged areas for new glass installation.
+- 7126.1: Bathroom fitter | Bathroom fitters install bathroom elements by taking measurements, preparing rooms, removing old fixtures, and installing new equipment including plumbing and electrical connections.
+- 7126.10: sewerage network operative | Operatives maintain sewerage systems that remove and transport wastewater, inspecting infrastructure for faults and clearing blockages.
+- 7126.12: sprinkler fitter | Responsible for the installation of fire protection systems that sprinkle water, connecting pipes, tubing, and necessary accessories.
+- 7126.11: sewer construction worker | Sewer construction workers install sewer pipes to transport wastewater, dig trenches, and construct sewage infrastructure elements like manholes.
+- 7126.13: Water conservation technician | Water conservation technicians install systems to recover, filter, store and distribute water from different sources such as rainwater and domestic greywater.
+- 7126.14: Water network operative | Maintains pipes and pumping stations for water supply, waste water removal, and sewerage, performing maintenance, repairs, and blockage clearance.
+- 7126.2: Drain Technician | Drain technicians install and maintain drainage equipment used in sewer systems, such as pipes and valves. They analyse the design and ensure the proper installation of the drainage system, and perform maintenance and repair duties.
+- 7126.3: gas service technician | Gas service technicians install and maintain gas service appliances and systems in facilities or buildings, ensuring compliance with regulations.
+- 7126.5: Irrigation system installer | Builds necessary infrastructure for soil irrigation, typically for agricultural purposes, often specializing in specific types of stationary irrigation systems.
+- 7126.4: heating technician | Heating technicians install and maintain gas, electric, oil, solid-fuel, and multiple fuel heating and ventilation equipment as stand-alone systems or integrated into machinery and transport equipment.
+- 7126.7: Pipeline maintenance worker | Operates equipment to maintain pipeline suitability, performing checks for deviations and administering chemicals for cleaning and corrosion prevention.
+- 7126.6: irrigation technician | Specialises in the installation, maintenance, and repair of sprinklers, pipes, and other irrigation systems while operating machinery and ensuring environmental compliance.
+- 7126.9: septic tank servicer | Septic tank servicers clean and maintain septic systems, repair damages and faults, and ensure tanks are cleaned and maintained using machinery in compliance with safety procedures.
+- 7126.8: Plumber | Plumbers maintain and install water, gas, and sewage systems. They inspect pipes and fixtures, make repairs, bend and cut pipes, test systems, and place sanitary equipment while adhering to safety regulations.
+- 7131.1: Construction Painter | Paints the interior and exterior of buildings and structures using standard latex-based paints or specialized paints for decorative and protective effects.
+- 7127.1: heating and ventilation service engineer | Heating and ventilation service engineers install and maintain industrial heating and refrigeration systems, ensuring the controlled passage and treatment of air.
+- 7131.3: Paperhanger | Specialised in hanging wallpaper, applying adhesives, and ensuring a straight, well-aligned finish without air bubbles.
+- 7131.2: marine painter | Marine painters work in the shipbuilding industry to complete blasting, painting, hull washing, cleaning, scraping, and protection jobs following set guidelines and procedures.
+- 7132.2: surface treatment operator | Surface treatment operators apply chemicals and paint to material surfaces to protect against corrosion and calculate the necessary materials for protection.
+- 7132.1: Lacquer spray gun operator | Operates lacquer spray guns to apply hard, durable finishing coats (matte, sheen, or glossy) to metal, wooden, or plastic workpieces.
+- 7133.1: asbestos abatement worker | Asbestos abatement workers remove asbestos from buildings and other constructions, compliant with health and safety regulations concerning the handling of hazardous materials.
+- 7133.2: Building exterior cleaner | Removes dirt and litter from building exteriors and performs restoration tasks while ensuring safety compliance.
+- 7132.3: Transport equipment painter | Professionals who use painting machines and hand tools to coat parts and paint surfaces of various transport equipment, including cars, buses, boats, aircraft, motorcycles, and railway cars.
+- 7133.3: chimney sweep | Chimney sweeps undertake cleaning activities of chimneys for all types of buildings, removing ash and soot while performing maintenance and safety inspections following health and safety regulations.
+- 7133.4: Chimney sweep supervisor | Chimney sweep supervisors oversee and coordinate the activities of chimney sweeps, ensuring operational efficiency and regulatory compliance.
+- 7133.5: Decontamination worker | Decontamination workers remove and dispose of hazardous materials, such as radioactive materials or contaminated soil, ensuring compliance with safety regulations.
+- 7211.1: Foundry Operative | Manufactures castings, including pipes, tubes, and hollow profiles, by operating hand-controlled equipment to process steel and other metals.
+- 7211.1.1: Coquille casting worker | Manufactures castings such as pipes, tubes, and hollow profiles by operating hand-controlled equipment in a foundry to pour molten ferrous and non-ferrous metals into coquilles.
+- 7211.1.2: Foundry Moulder | Manufactures cores for metal moulds used in casting processes, ensuring specific spaces remain unfilled during metal pouring.
+- 7211.1.3: Mouldmaker | Mouldmakers manually create moulds for the production of metal products by mixing sand and hardening materials, using patterns and cores to form impressions for casting.
+- 7212.1: Brazier | Operates equipment such as torches, soldering irons, and welding machines to join metal pieces by heating and melting filler materials like brass or copper.
+- 7212.3: Welder | Operates welding equipment to join metal workpieces using various fusion welding processes and techniques.
+- 7212.2: Solderer | Operates equipment such as gas torches, soldering irons, and welding machines to join metal items by melting and forming a filler metal with a lower melting point than the adjoining materials.
+- 7212.3.1: electron beam welder | Sets up and tends machines to join metal workpieces using high-velocity electron beams, monitoring processes to alter electron kinetic energy for precise melting and joining.
+- 7212.3.2: laser beam welder | Sets up and tends laser beam welding machines to join separate metal workpieces using a concentrated heat source for precise welding.
+- 7212.3.3: pipe welder | Assembles and installs pipeline components for transporting goods like water, steam, and chemicals, interpreting technical specs for on-site installation.
+- 7212.3.4: Spot welder | Sets up and tends spot welding machines to press and join metal workpieces together using electrical resistance and heat.
+- 7212.4: welding coordinator | Supervises welding workflows, monitors processes, and ensures equipment readiness while occasionally performing complex welds.
+- 7213.2: Container equipment assembler | Manufactures containers such as boilers or pressure vessels by reading blueprints and technical drawings to assemble parts and build piping and fittings.
+- 7213.1: Boilermaker | Operates equipment to create, repipe, and retube hot water and steam boilers, managing all production steps from metal shaping to final coating.
+- 7213.3: Coppersmith | Coppersmiths craft and repair items made of non-ferrous metals such as copper and brass, shaping raw materials into practical or artistic objects using smithing tools.
+- 7213.4: Sheet metal worker | Constructs roofs, ducts, gutters, and other metal structures using sheet metal in construction settings.
+- 7214.1: Dismantling worker | Dismantling workers perform the dismantling of industrial equipment, machinery, and buildings as instructed by the team leader, utilizing heavy machinery and power tools while adhering to safety regulations.
+- 7214.3: structural ironworker | A construction worker who installs iron elements into structures, erecting steel frameworks for buildings and bridges, and setting metal rods (rebar) for reinforced concrete.
+- 7214.2: Shipwright | Shipwrights build and repair small water vessels, ranging from pleasure craft to naval ships, using various materials like wood, metal, and fibreglass.
+- 7214.3.1: Riveter | Assembles metal parts by drilling holes in rivet shanks and inserting rivets or bolts to fasten components together.
+- 7215.1.1: stagehand | Assists stage technicians in setting up and preparing equipment for live performances.
+- 7215.1: event scaffolder | Event scaffolders set up and dismantle temporary seating, stages, and structures to support performance equipment, artists, and audiences, working indoors and outdoors based on specific plans and calculations.
+- 7215.2: Rigger | Specialists in lifting heavy objects, often using cranes or derricks, who work with crane operators to attach and detach loads and install objects in place.
+- 7215.2.1: Boat Rigger | Boat riggers install motors, gauges, controls, and accessories like batteries and fuel tanks using hand and power tools, and conduct pre-delivery inspections.
+- 7215.3: Rigging Supervisor | Oversees rigging operations, managing and coordinating employees who operate lifting and rigging equipment while organizing day-to-day working activities.
+- 7215.2.2: Ground rigger | Ground riggers assist level riggers in assembling temporary suspension structures to support performance equipment, working both indoors and outdoors based on specific instructions and plans.
+- 7215.2.3: high rigger | High riggers assemble and hoist temporary suspension structures at heights to support performance equipment, operating both indoors and outdoors based on specific instructions and calculations.
+- 7215.4: Tent Installer | Sets up and dismantles temporary shelters, tents, and circus tents with associated accommodation for events and performances based on instructions, plans, and calculations.
+- 7221.1: blacksmith | Heats metal, usually steel, in a forge and shapes it with a hammer, chisel, and anvil to create artisanal metal products and horseshoes.
+- 7221.1.1: Farrier | A professional who inspects, trims, and shapes horse hooves, and fabricates and fits horseshoes while adhering to regulatory standards.
+- 7221.2: drop forging hammer worker | Operates forging machinery, specifically machined hammers, to shape ferrous and non-ferrous metal workpieces using closed or open dies.
+- 7221.3: hydraulic forging press worker | Sets up and tends hydraulic forging presses to shape ferrous and non-ferrous metal workpieces, including pipes, tubes, and hollow profiles, using compressive forces generated by a piston and fluid pressure.
+- 7222.1: casting mould maker | Creates metal, wooden, or plastic models of finished products to serve as patterns for manufacturing moulds.
+- 7221.4: mechanical forging press worker | Sets up and tends mechanical forging presses to shape ferrous and non-ferrous metal workpieces, such as pipes and tubes, using compressive forces from cranks, cams, and toggles.
+- 7222.2: Gunsmith | Gunsmiths modify and repair metal-fabricated firearms to meet specific customer specifications, applying decorative finishes and restoring functionality.
+- 7222.3: Locksmith | Locksmiths install and repair mechanical and electronic lock systems using specialized tools, cut and make duplicated keys, and open locked doors in emergency situations.
+- 7222.4: precision mechanic | Manufactures precision metal components for machines and assembles them into functional units, while building electronic measuring and control components.
+- 7223.1: Boring machine operator | Operates single or multiple spindle boring machines to enlarge existing holes in fabricated workpieces using hardened, rotary, multipointed cutting tools.
+- 7222.5: Tool and die maker | Operates equipment and machinery to design, cut, shape, and finish metal tools and dies for manufacturing processes using manual, power, hand tools, and CNC machines.
+- 7223.10: laser marking machine operator | Operators set up and tend laser marking or engraving machines to carve designs onto metal workpieces using a moving controller and laser beam. They adjust beam intensity, direction, and speed, and ensure the laser table functions correctly.
+- 7223.11: Metal nibbling operator | Cuts detailed patterns from metal surfaces using manual or powered metal nibblers, such as handheld nibbling drills or nibbling machines.
+- 7223.12: Metal planer operator | Sets up and operates a planer to cut excess material from metal workpieces using linear relative motion between the cutting tool and the workpiece.
+- 7223.13: Moulding machine operator | Operates machines to produce moulds for castings or moulded materials using sand, plastics, or ceramics.
+- 7223.14: Ornamental Metal Worker | Uses finishing equipment and machinery to shape and finish fabricated ornamental metal workpieces for construction installation.
+- 7223.15: oxy fuel burning machine operator | Operators set up and tend machines that cut or remove excess material from metal workpieces by heating them to kindling temperature and burning them into slag via an oxygen stream.
+- 7223.16: plasma cutting machine operator | Sets up and operates plasma cutting machines to cut and shape metal workpieces using a high-temperature plasma torch that melts and blows away excess material.
+- 7223.17: Router Operator | Sets up and operates multi-spindle routing machines to hollow-out or cut hard materials like wood, composites, aluminium, steel, plastics, and foams.
+- 7223.18: scrap metal operative | Cuts big sheets of metal scrap to prepare them for use in a smelter.
+- 7223.19: Screw machine operator | Sets up and tends mechanical screw machines to manufacture threaded screws from processed metal workpieces, specifically small- to medium-sized items previously turned by a lathe.
+- 7223.2: Briquetting machine operator | Tends equipment to dry, mix, and compress metal chips into briquettes for use in a smelter.
+- 7223.20: Spark erosion machine operator | Sets up and tends spark erosion machines to cut excess material from metal workpieces using electrical discharges separated by a dielectric liquid.
+- 7223.21: Stamping press operator | Sets up and tends stamping presses to form metal workpieces into desired shapes by applying pressure via a bolster plate and die attached to a stamping ram.
+- 7223.22: Straightening Machine Operator | Operators set up and tend straightening machines to form metal workpieces into desired shapes using pressing practices, ensuring correct alignment without excess work hardening.
+- 7223.24: Thread rolling machine operator | Sets up and tends thread rolling machines to form metal workpieces into external and internal screw threads by pressing dies against blank rods, increasing their diameter.
+- 7223.23: Swaging machine operator | Sets up and tends rotary swaging machines to alter round ferrous and non-ferrous metal workpieces into desired shapes using compressive force from dies, ensuring no excess material is lost.
+- 7223.25: Upsetting machine operator | Sets up and tends upsetting machines, primarily crank presses, to form metal workpieces (wires, rods, bars) into desired shapes by compressing them with split dies to increase diameter.
+- 7223.3: Chain making machine operator | Operators tend and operate machinery to create metal chains, including precious metal chains for jewellery, managing all production steps from feeding wire to finishing.
+- 7223.4: Computer Numerical Control Machine Operator | Operators set up, maintain, and control CNC machines to execute product orders, ensuring parameters, measurements, quality, and safety standards are met.
+- 7223.4.1: Engraving Machine Operator | Operates engraving machines to carve designs onto metal workpieces using diamond styluses, managing settings for precision and quality.
+- 7223.4.2: Grinding Machine Operator | Sets up, programs, and controls grinding machines to apply abrasive processes for removing excess material and smoothening metal workpieces using abrasive wheels with diamond teeth.
+- 7223.4.3: laser cutting machine operator | Operators set up, program, and tend laser cutting machines to cut or melt excess material from metal workpieces using computer-motion-controlled laser beams.
+- 7223.4.4: Lathe and turning machine operator | Operators set up, program, and tend lathe and turning machines to cut excess metal from workpieces using computer-controlled motors and hardened cutting tools.
+- 7223.4.4.1: Metalworking lathe operator | Sets up and tends a metalworking lathe manually to cut metal to desired size and shape using gear trains or swapping gears to rotate the workpiece.
+- 7223.4.5: Metal sawing machine operator | Operators set up and run metal sawing machines to cut excess material from workpieces using large toothed blades. They also trim finished shapes using tin snips, shears, or wire cutters, and smooth rough edges with various tools.
+- 7223.4.6: Milling machine operator | Sets up, programs, and controls computer-controlled milling machines to cut excess material from metal workpieces.
+- 7223.4.8: Water jet cutter operator | Sets up and operates water jet cutters to remove excess material from metal workpieces using high-pressure water or abrasive mixtures.
+- 7223.4.7: Punch press operator | Sets up and tends punch presses to cut workpieces into desired shapes by propelling a hydraulic ram to punch holes through a single die set.
+- 7223.8: gear machinist | Gear machinists make precision parts for gears and other driving elements using a variety of machine tools.
+- 7223.5: drilling machine operator | Sets up, programs, and controls computer-controlled drilling machines to create holes in workpieces using rotary-cutting tools.
+- 7223.6: Drill press operator | Sets up and operates drill presses to cut excess material from or enlarge holes in fabricated workpieces using hardened, rotary, multipointed cutting tools.
+- 7223.7: Fitter and Turner | Uses machine tools to create and modify metal parts according to specifications to fit components for machinery, ensuring they are ready for assembly.
+- 7224.2: Tool grinder | Tool grinders perform precision grinding processes on metal objects and tools, grinding, sharpening, or smoothening metal surfaces to meet necessary specifications.
+- 7223.9: Heat treatment furnace operator | Monitors and controls the heat treatment of castings to ensure they meet specific standards through chemicothermal processes.
+- 7231.1: automotive brake technician | Automotive brake technicians inspect, maintain, diagnose and repair braking, steering and suspension systems as well as wheels and tyres.
+- 7224.1: Metal polisher | Metal polishers use metal working equipment and machinery to polish and buff almost finished metal workpieces to enhance smoothness and appearance, removing oxidation and tarnish after fabrication.
+- 7231.2: Coachbuilder | A coachbuilder executes work on vehicle bodies and coaches, specializing in forming body parts from panels and manufacturing vehicle frames.
+- 7231.3: Diesel engine mechanic | Diesel engine mechanics repair and maintain all types of diesel engines, diagnosing issues and replacing worn parts.
+- 7231.4: Refurbishing technician | Overhauls and refurbishes inner parts of vehicles, such as engine parts and diesel pumps.
+- 7231.10: vehicle technician | Vehicle technicians inspect, test, and maintain vehicles, motorcycles, engines, and tyres. They repair engine failures, perform lube replacements, replace components, and evaluate warranty options.
+- 7231.5: Restoration Technician | Restoration technicians overhaul old and classic cars.
+- 7231.8: vehicle maintenance attendant | Executes basic vehicle maintenance tasks at a vehicle maintenance station.
+- 7231.6: Roadside vehicle technician | Roadside vehicle technicians perform onsite repairs, tests, and maintenance to roadside vehicles, locating and traveling to customers' vehicles to provide services.
+- 7231.7: tyre fitter | Tyre fitters inspect, maintain, repair, and fit tyres to vehicles, advising clients on appropriate tyre and wheel types while ensuring safety compliance.
+- 7231.9: vehicle maintenance supervisor | Vehicle maintenance supervisors assume responsibility for the day-to-day operation of a service station.
+- 7232.1: Aircraft de-icer installer | Assembles, installs, tests, maintains, and repairs mechanical de-icing and anti-icing systems to prevent ice accumulation on aircraft and spacecrafts.
+- 7232.3: Aircraft gas turbine engine overhaul technician | Aircraft gas turbine engine overhaul technicians perform overhaul, maintenance, and repair work on gas turbine engines.
+- 7232.2: Aircraft engine specialist | Aircraft engine specialists advise on maintenance procedures for aircraft and helicopter engines, perform operability tests to diagnose component suitability, and interpret manufacturer technical specifications for airport operations.
+- 7232.4: Aircraft Maintenance Coordinator | Plans, schedules, and manages aircraft preparation and maintenance works in hangars and workshops to ensure efficient airport operations.
+- 7233.1: construction equipment technician | Construction equipment technicians inspect, maintain, and repair heavy-duty vehicles used in construction, forestry, and earthworks, ensuring machinery safety and optimal efficiency.
+- 7233.11: Mining equipment mechanic | Mining equipment mechanics install, remove, maintain, and repair mining equipment.
+- 7232.5: Aircraft Maintenance Technician | Aircraft maintenance technicians perform preventive maintenance on aircraft, components, engines, and assemblies, including airframes and hydraulic/pneumatic systems, while conducting inspections according to strict protocols and aviation laws.
+- 7233.10: marine mechanic | Marine mechanics maintain and repair vessel engines and machinery, including boilers, generators, and electrical equipment, while replacing defective parts and communicating operational status to crew.
+- 7233.12: moulding machine technician | Service machinery used in the casting and moulding of plastics and other materials.
+- 7233.14: rotating equipment mechanic | Responsible for preventive and corrective maintenance of rotating equipment such as turbines, compressors, engines, and pumps to ensure system availability, integrity, safety, and reliability.
+- 7233.13: pneumatic systems technician | Technicians who assemble, install, test, maintain, and repair equipment operated by gas or air under pressure according to engineering specifications.
+- 7233.15: textile machinery technician | Textile machinery technicians set up, maintain, inspect and repair mechanical and computer-controlled machinery used in textile manufacturing such as weaving, dyeing and finishing machines.
+- 7233.2: Crane technician | Crane technicians assemble industrial and harbor crane components, install conveyors and controls, perform final on-site assembly, and maintain and repair cranes.
+- 7233.4: fluid power technician | Fluid power technicians install and assemble equipment that uses liquid or gas pressure to transmit or regulate power. They also perform tests on and maintain this equipment.
+- 7233.3: Fisheries assistant engineer | Assists the marine chief engineer with checking operations and maintenance of the propulsion plant, machinery, and auxiliary equipment of the ship.
+- 7233.5: forge equipment technician | Maintains and repairs forge machinery such as presses and material handling equipment, ensuring proper functionality through evaluation, preventative maintenance, and fault repair.
+- 7233.6: Greaser | Industrial workers who ensure machines are properly lubricated to maintain operations using grease guns, while also performing basic maintenance and repair duties.
+- 7233.8: land-based machinery technician | Land-based machinery technicians maintain, overhaul and repair agricultural equipment and machinery.
+- 7233.7: Industrial machinery mechanic | Professionals who work on new machinery and equipment in operation, handling setup, maintenance, repair, and diagnostics.
+- 7233.8.1: agricultural machinery technician | Agricultural machinery technicians repair, overhaul, and maintain agricultural equipment such as tractors, tillage, seeding, and harvesting machinery. They perform equipment evaluations and preventive maintenance to repair faults.
+- 7233.8.2: forestry machinery technician | Maintains and transports forestry machinery, utilizing specialized software and data recording systems.
+- 7234.1: bicycle mechanic | Bicycle mechanics maintain and repair a variety of bicycle models and component parts, performing customized alterations according to client preferences.
+- 7233.9: marine fitter | Marine fitters work primarily in fabrication, subassembly, assembly and final assembly of all structural components on commercial and naval vessels.
+- 7311.1: Clock and watchmaker | Specialists who assemble, repair, and maintain mechanical or electronic timing devices using precision tools or automated machinery.
+- 7311.3: optical instrument repairer | Optical instrument repairers repair and test optical instruments such as microscopes, telescopes, camera optics, and compasses to ensure proper function.
+- 7311.2: optical instrument assembler | Assembles lenses and optical instruments like microscopes and telescopes by processing glass, centering lenses, and cementing them to frames based on blueprints.
+- 7311.4: precision instrument assembler | Assembles precision instruments such as micrometers, gauges, thermostats, and utility meters by reading blueprints and using hand tools or machinery.
+- 7311.5: Surgical instrument maker | Creates, repairs, and designs surgical instruments such as clamps, graspers, mechanical cutters, scopes, and probes.
+- 7311.6: Watch and clock repairer | Maintains and repairs wristwatches and clocks by identifying defects, replacing components, and restoring antique timepieces.
+- 7312.2: instrument technician | Assists and supports musicians before, during, and after performances to ensure instruments and connected equipment are properly set up, maintained, and repaired.
+- 7312.1: Idiophone musical instruments maker | Creates and assembles idiophone instruments by shaping, drilling, sanding, and stringing parts made of glass, metal, ceramics, or wood according to specific instructions or diagrams.
+- 7312.3: Keyboard musical instrument maker | Creates and assembles parts to build keyboard instruments based on instructions or diagrams, performing finishing and quality control.
+- 7312.3.1: Harpsichord maker | Creates and assembles harpsichords by sanding wood, tuning, testing, and inspecting instruments according to specified instructions or diagrams.
+- 7312.3.2: Organ builder | Creates and assembles parts to build organs according to specified instructions or diagrams, sanding wood, tuning, testing, and inspecting the finished instrument.
+- 7312.3.3: Piano Maker | Creates and assembles parts to make pianos according to specified instructions or diagrams, sanding wood, tuning, testing, and inspecting the finished instrument.
+- 7312.4: Membranophone musical instruments maker | Creates and assembles membranophone instruments by stretching and attaching membranes to frames, following specific instructions or diagrams.
+- 7312.5: musical instrument technician | Maintains, tunes, and repairs a variety of musical instruments including pianos, pipe organs, band instruments, and violins.
+- 7312.6: Stringed musical instrument maker | Creates and assembles parts to build stringed instruments based on specified instructions or diagrams.
+- 7312.6.3: Violin maker | Violin makers create and assemble parts to build violins according to specified instructions or diagrams, ensuring quality control throughout the process.
+- 7312.6.1: Guitar maker | Guitar makers create and assemble parts to build guitars according to specified instructions or diagrams, working with wood and inspecting finished instruments.
+- 7312.7: Wind musical instrument maker | Creates and assembles parts to manufacture wind instruments based on specified instructions and diagrams.
+- 7313.1.1: Filigree maker | Creates delicate jewellery, usually of gold and silver, by soldering tiny beads and twisted threads to metal surfaces in artistic motifs.
+- 7313.1: Jeweller | Jewellers fabricate and repair various jewellery articles by creating models, casting, assembling, and polishing pieces using specialized hand tools and torches.
+- 7313.1.2: Goldsmith | Goldsmiths design, manufacture, and sell jewellery. They also adjust, repair, and appraise gems and jewellery for customers using experience in the working of gold and other precious metals.
+- 7313.1.3: Jewellery engraver | Jewellery engravers engrave lettering and ornamental designs onto jewellery articles using hand tools.
+- 7313.1.4: Jewellery mounter | Creates the framework for a piece of jewellery, on which the precious stones are added to later.
+- 7313.1.5: Jewellery polisher | Ensures finished jewellery pieces are cleaned by customer demand or prepared for sale, and may perform minor repairs.
+- 7313.1.6: jewellery repairer | Specialised hand tool users who adjust, repair, and restore all types of jewellery pieces, including resizing and gem resetting.
+- 7313.1.7: Precious stone setter | Uses tools to insert diamonds and other gemstones into jewellery settings according to specifications, with the setting method determined by the stone's size and shape.
+- 7313.1.8: Silversmith | Designs, manufactures, and sells jewelry while specializing in working with silver and other precious metals. Also adjusts, repairs, and appraises gems and jewelry.
+- 7313.2: Precious stone cutter | Precious stone cutters use cutting machines and tools to cut or carve diamonds and other gemstones according to diagrams and patterns while considering different specifications. They are experts at fabricating jewellery such as rings, brooches, chains and bracelets from gemstones.
+- 7314.1: Hand brick moulder | Creates unique bricks, pipes, and heat-resistant products using hand moulding tools, managing the entire process from mould preparation to final smoothing.
+- 7314.3: pottery and porcelain caster | A worker who fills moulds with clay to cast pottery and porcelain wares, managing the drying and finishing of the castings.
+- 7315.1: Glass-blower | Designs, produces, and decorates glass artefacts including stained glass, mirrors, and architectural glass. Specializes in restoration, renovation, and repair of original pieces, or works as a scientific glass-blower designing and repairing laboratory glass.
+- 7315.2: Glass beveller | Measures, cuts, assembles, and installs flat glass and mirrors according to client specifications.
+- 7316.1: decorative painter | Designs and creates visual art on surfaces such as pottery, casings, glass, and fabric using diverse materials and techniques.
+- 7316.1.1: Ceramic painter | Designs and creates visual art on ceramic surfaces and objects such as tiles, sculptures, tableware, and pottery using various decorative techniques.
+- 7316.1.3: Porcelain painter | Designs and creates visual art on porcelain surfaces and objects, such as tiles and pottery, using various decorative techniques.
+- 7316.1.2: Glass painter | Designs and creates visual art on glass or crystal surfaces and objects, such as windows, stemware, and bottles.
+- 7316.1.4: wood painter | Wood painters design and create visual art on wooden surfaces and objects such as furniture, figurines, and toys.
+- 7316.2: Glass engraver | Glass engravers engrave lettering and ornamental designs onto glass articles using hand tools.
+- 7316.3: Metal engraver | Metal engravers make incisions of a design onto a metal surface by carving grooves into it, usually for decorative purposes, including metal weaponry.
+- 7316.4: Sign maker | Designs and develops signs for various uses including flyers, traffic signs, billboards, and business signs using different materials and techniques.
+- 7317.1: Artisan papermaker | Creates paper slurry, strains it on screens, and dries it manually or using small-scale equipment.
+- 7317.2: Basketmaker | Basketmakers use stiff fibres to manually weave objects such as containers, baskets, mats, and furniture using various traditional techniques and materials.
+- 7317.3: Brush maker | Inserts materials like horsehair, vegetable fiber, nylon, and hog bristle into metal ferrules to form brush heads, attaches handles, and applies protective substances to finish the product.
+- 7317.4: Toymaker | Creates or reproduces hand-made toys from materials like plastic, wood, and textile; designs, cuts, shapes, and finishes objects; maintains and repairs mechanical toys.
+- 7317.5: Wicker furniture maker | Specialists who select and prepare materials like rattan or willow to manufacture wicker furniture, utilizing various tools to cut, bend, and weave components before applying protective surface treatments.
+- 7317.6: Woodcarver | Woodcarvers manually shape wood into desired forms using knives, gouges, and chisels to create decorative items, components for composite products, utensils, or toys.
+- 7318.1: carpet handicraft worker | Carpet handicraft workers use traditional techniques to create textile floor coverings, such as carpets and rugs, from wool or other textiles.
+- 7318.2: carpet weaver | Carpet weavers operate machinery to create textile floor coverings, producing carpets and rugs from wool or synthetic textiles using specialized equipment.
+- 7318.3: Fishing net maker | Makes and assembles fishing net gear and carries out repair and maintenance work based on drawings and/or traditional methods.
+- 7318.4: Knitter | Creates textiles or fabric by knitting pieces of yarn using traditional techniques to form interlocking loops.
+- 7318.5: Leather goods artisanal worker | Manufactures leather goods or parts by hand according to customer specifications or personal design, and performs repairs on items such as shoes, bags, and gloves.
+- 7319.1: Candle maker | A professional who molds candles, places wicks, fills molds with wax, and inspects finished products for quality.
+- 7318.6: Weaver | Operates traditional hand-powered weaving machines to convert yarns into fabrics for clothing, home-textiles, and technical uses. Monitors machine condition and fabric quality, performs mechanical repairs on looms, and completes check-out sheets.
+- 7319.2: sports equipment repair technician | Maintains and repairs recreational sports equipment such as tennis rackets, archery tools, and camping equipment using specialized hand or mechanical tools.
+- 7321.1: Prepress technician | Prepress technicians prepare printing processes by formatting, setting, and composing text and graphics into a suitable form for production.
+- 7321.1.3: Prepress operator | Creates prepress proofs or samples of finished products and monitors printing quality to ensure graphics, colors, and content meet technical standards.
+- 7321.1.2: Lithographer | Lithographers make and prepare metal plates to be used as the original in various printing processes and media.
+- 7321.1.1: imagesetter | Processes images and graphic templates using phototypesetting machines to optimize text and image arrangement on print sheets for output on photo paper or film.
+- 7321.1.4: Scanning Operator | A professional who tends scanners, feeding print materials into machines and adjusting controls to achieve the highest resolution scans.
+- 7321.1.5: Screen making technician | Screen making technicians engrave or etch screens for textile printing.
+- 7322.1: digital printer | Operates machines that print directly to the medium using laser or inkjet technology, bypassing the need for intervening plates.
+- 7321.1.6: Typesetter | Ensures that printed text is correctly set and visually pleasing, primarily using digital design or specialized typesetting programs.
+- 7322.10: Textile Printer | Textile printers perform textile printing operations.
+- 7322.2: flexographic press operator | Operates flexographic presses to print on various materials using inked relief plates.
+- 7322.3: Gravure press operator | Operates gravure presses where images are engraved directly on a roll, managing setup, monitoring, and safety.
+- 7322.4: Hot foil operator | Tends machines that apply metallic foil to materials using pressure cylinders and heating, while managing color mixing and equipment setup.
+- 7322.5: offset printer | Operates an offset press to transfer inked images from plates to rubber blankets and then onto printing surfaces.
+- 7322.6: Paper embossing press operator | Operates presses to create relief on printed material by raising or recessing specific areas using matching engraved dies and applied pressure.
+- 7322.7: Printing textile technician | Printing textile technicians perform operations related to setting up the printing processes.
+- 7322.8: reprographics technician | Responsible for the full or partial process of reproduction of graphical documents through mechanical-driven or digital means, such as photography, scanning or digital printing, commonly for maintaining archives or structured catalogues.
+- 7322.9: Screen printer | A screen printer tends a press that presses ink through a screen, managing the setup, operation, and maintenance of the machinery.
+- 7323.1: bindery operator | Tends machines that bind printed or unprinted paper into volumes using staples, twine, glue, or other binding technologies.
+- 7323.2: Book-sewing machine operator | Operates machinery to stitch paper signatures into book volumes, ensuring correct insertion and preventing jams.
+- 7323.4: Print folding operator | Print folding operators tend machines that fold paper and bundles of paper.
+- 7323.3: Book restorer | Book restorers correct and treat books based on an evaluation of their aesthetic, historic, and scientific characteristics, addressing chemical and physical deterioration.
+- 7411.1: electrician | Electricians fit and repair electrical circuits and wiring systems, and install and maintain electrical equipment and machinery.
+- 7411.1.1: building electrician | Building electricians install and maintain electricity cables and other electrical infrastructure in buildings, ensuring safety and functionality.
+- 7411.1.1.1: Domestic electrician | Installs and maintains electrical infrastructures and domestic machinery in homes and residential buildings, performing inspections and repairs to ensure efficiency.
+- 7411.1.1.2: Industrial electrician | Industrial electricians install and maintain electricity cables and other electrical infrastructure in large industrial and commercial buildings, performing inspections and repairs to ensure system efficiency.
+- 7411.1.2: Electric meter technician | Electric meter technicians install and maintain electric meter systems in facilities or buildings, ensuring compliance with regulations.
+- 7411.1.3: event electrician | Event electricians set up and dismantle temporary, reliable electrical systems to support events in locations with or without grid access, working indoors and outdoors based on plans and calculations.
+- 7411.1.4: solar energy technician | Installs and maintains systems that collect solar energy, preparing fixtures and connecting panels to electronic systems.
+- 7412.1: automotive battery technician | Automotive battery technicians assemble, install, inspect, maintain, and repair batteries in motor vehicles, ensuring proper function and safe disposal.
+- 7412.10: Power tool repair technician | Identifies defects and repairs electrically powered tools such as drills, chainsaws, lawn mowers, and grinding machines.
+- 7412.12: theme park technician | Theme park technicians maintain and repair amusement park attractions, requiring strong technical knowledge and specialized expertise in specific rides.
+- 7412.11: rolling stock electrician | Rolling stock electricians install, maintain, and repair electrical and electronic systems in rail vehicles, including air conditioning, lighting, heating, and wiring.
+- 7412.2: automotive electrician | Automotive electricians install, maintain, and repair electrical and electronic systems in motor vehicles, including air conditioning, lighting, and wiring.
+- 7412.3: electrical mechanic | Electrical mechanics install, repair, and maintain mechanical and electrical components of machinery, tools, and equipment.
+- 7412.5: Ground lighting officer | Ground lighting officers carry out the inspection and maintenance of airports' lighting systems, recording findings and formulating necessary actions.
+- 7412.4: Geothermal Technician | Geothermal technicians install, maintain, and repair geothermal power plants and heating systems for commercial and residential use, ensuring safety compliance.
+- 7412.6: household appliances repair technician | Technicians who use electrical equipment to test resistance or voltage and identify malfunctions in small and large electrical or gas home appliances.
+- 7412.7: Lift Technician | Lift technicians install, inspect, and repair lifts by setting up support assemblies, motors, and mechanisms within prepared hoist-ways, while connecting electronic elements and maintaining detailed inspection logs.
+- 7412.9: Mining electrician | Mining electricians install, maintain, and repair specialised electrical mining equipment using their knowledge of electrical principles. They also monitor mine electricity supply.
+- 7413.1: electricity distribution technician | Electricity distribution technicians construct and maintain electric power transmission and distribution systems, ensuring compliance with safety regulations.
+- 7412.8: marine electrician | Marine electricians install, maintain, and repair electrical and electronic systems on vessels, including air conditioning, lighting, and communication equipment.
+- 7413.1.1: Cable Jointer | Cable jointers construct and maintain power supply and control cables in underground pipes and grooves, and make and repair electrical cables connecting customers to the electricity network.
+- 7413.1.2: Overhead line worker | Constructs and maintains power supply and control cables in overhead power lines, and repairs electrical cables connecting customers to the electricity network.
+- 7413.1.3: street lighting electrician | Street lighting electricians construct and maintain electric power transmission and distribution in street lights, ensuring compliance with safety regulations.
+- 7421.1: ATM repair technician | ATM repair technicians install, diagnose, maintain, and repair automatic teller machines by traveling to client locations to fix malfunctioning money distributors.
+- 7421.2: Avionics Technician | Installs, tests, inspects, and adjusts electrical and electronic equipment in aircraft and spacecraft, including navigation, communication, and flight control systems.
+- 7421.3: consumer electronics repair technician | Consumer electronics repair technicians use electrical equipment to diagnose malfunctions and test functionality of consumer electronics such as TVs, video and audio systems and digital cameras. They read manufacturers' instructions and conduct the necessary repairs or replacements.
+- 7421.5: Office equipment repair technician | Provides services to businesses related to installing, maintaining, and repairing new or existing office equipment such as printers, scanners, and modems on clients' premises.
+- 7421.4: marine electronics technician | Marine electronics technicians lay out, install, and repair electronic systems and equipment in vessels, assembling components and wiring according to blueprints and assembly drawings.
+- 7421.6: railway electronic technician | Railway electronic technicians are responsible for installing, inspecting, testing, and maintaining train control systems, radio, radar, electronic and electromagnetic components.
+- 7422.1: Communication infrastructure maintainer | Professionals who install, repair, operate, and maintain the physical infrastructure required for communication systems.
+- 7421.7: smart home installer | Installs and maintains home automation systems, connected devices, and smart appliances while educating customers on product recommendations for comfort, convenience, security, and safety.
+- 7421.8: vehicle electronics installer | Vehicle electronics installers set up equipment and accessories in motor vehicles, such as CD players and GPS systems, and examine malfunctioning electronic systems.
+- 7422.2: Computer hardware repair technician | Technicians who install, examine, test, and repair computer hardware and peripheral components, identifying problems and replacing damaged parts.
+- 7422.3: mobile devices technician | Mobile devices technicians carry out proper fault diagnosis to improve the quality of mobile devices and repair them. They provide information related to a number of services, including warranties and after-sale services.
+- 7422.4: Radio Technician | Radio technicians install, adjust, test, maintain, and repair mobile or stationary radio transmitting and receiving equipment and two-way radio communications systems. They also monitor performance and determine causes of faults.
+- 7422.3.1: mobile phone repair technician | Technicians who assess mobile phone functionality, update software, troubleshoot wiring, and replace damaged components like batteries and screens while advising clients on warranties.
+- 7422.5: security alarm technician | Installs and maintains security alarm systems to protect against hazards such as fire and burglary.
+- 7422.6: telecommunications equipment maintainer | Professionals who repair, install, or maintain mobile and stationary radio transmitting, broadcasting, and receiving equipment, including two-way radio systems and communication towers.
+- 7511.1: Butcher | Butchers order, inspect, and buy meat to prepare and sell it as consumable products. They perform activities such as cutting, trimming, boning, tying, and grinding beef, pork, and poultry.
+- 7422.7: telecommunications technician | Telecommunications technicians install, test, maintain, and troubleshoot telecommunications systems, repair defective equipment, and provide customer assistance.
+- 7511.1.1: Halal butcher | Halal butchers order, inspect, and buy meat to prepare and sell it as consumable products in accordance with Islamic practices.
+- 7511.1.2: Kosher butcher | Kosher butchers order, inspect, and buy meat to prepare and sell it as consumable products in accordance with Jewish practices.
+- 7511.2: Fish preparation operator | Fish preparation operators realize the preparation of fish and shellfish according to hygiene, food safety, and trade regulations. They carry out fish processing operations and handle retail activities.
+- 7511.4: Meat Cutter | Meat cutters cut animal carcasses into large and smaller parts for further processing and remove bones from pre-processed carcasses.
+- 7511.3: fish trimmer | Fish trimmers cut off fish heads and remove organs from the body for fish and seafood production. They remove organs by scraping and washing, cut out areas presenting defects, and package the processed fish in appropriate containers.
+- 7511.6: Slaughterer | Slaughterers slaughter animals and process carcasses for further processing and distribution.
+- 7511.5: Meat preparations operator | Meat preparations operators prepare fresh meat with ingredients such as spices, herbs or additives in order to make ready-for-sale meat preparations.
+- 7511.6.1: Halal slaughterer | Halal slaughterers slaughter animals and process carcasses of halal meat from cows and chickens for further processing and distribution, adhering to Islamic law.
+- 7511.6.2: Kosher slaughterer | Kosher slaughterers slaughter animals and process carcasses of kosher meat for further processing and distribution, adhering strictly to Jewish law and rituals.
+- 7512.2: chocolatier | Chocolatiers make confectionery products with chocolate, ensuring quality through sensory analysis.
+- 7512.3: confectioner | Confectioners make a varied range of cakes, candies and other confectionery items for industrial purposes or for direct selling.
+- 7512.1: baker | Bakers make a wide range of breads, pastries, and other baked goods by managing raw materials, preparing dough, and tending ovens.
+- 7512.4: pasta maker | Pasta makers prepare fresh pasta, fillings, and other types of pasta following specific recipes and processes.
+- 7512.5: pastry maker | Pastry makers prepare and bake cakes, cookies, croissants, pies and alike products according to recipes.
+- 7513.1: Dairy products maker | Artisanally processes raw milk to produce dairy products such as butter, cheese, cream, and milk.
+- 7513.2: Milk Reception Operator | Operates devices to ensure the correct qualitative and quantitative reception of raw milk, performing initial cleaning, storage, and distribution to processing units.
+- 7514.1: Fruit and Vegetable Preserver | Tends machines to prepare and preserve fruit and vegetable products, aiming to keep perishable foods in a stable form through freezing, packing, and other processing methods.
+- 7514.2: Oil mill operator | Oil mill operators tend mills to extract oil from oilseed following artisanal techniques.
+- 7514.3: Oilseed presser | Operates hydraulic presses to extract oil from oilseeds.
+- 7515.2: Farm milk controller | Farm milk controllers are responsible for measuring and analysing the production and quality of milk and providing advice accordingly.
+- 7515.1: Coffee taster | Coffee tasters evaluate coffee samples to determine product grade, estimate market value, and assess consumer appeal. They also develop blending formulas for commercial coffee production.
+- 7515.3: Food grader | Food graders inspect, sort, and grade food products based on sensory criteria or machinery to determine appropriate use, discarding damaged or expired items.
+- 7515.4: Malt master | Malt masters evaluate and grade different malts on a sensory basis for brewing purposes, ensuring product consistency and assisting in product development.
+- 7515.5: Master coffee roaster | Designs new coffee styles and ensures the quality of blends and recipes pragmatically.
+- 7516.1: Curing room worker | Assists in the blending, aging, and fermenting of tobacco strips and stems for the production of cigars, chewing tobacco, and snuff.
+- 7516.3: Leaf tier | A worker who manually ties tobacco leaves into bundles for processing by selecting loose leaves and arranging them with butt ends together.
+- 7516.2: Leaf sorter | Analyses colour and condition of tobacco leaves to determine suitability as cigar wrappers or binders, selecting defect-free leaves based on specific quality criteria.
+- 7521.1: Wood drying kiln operator | Wood drying kiln operators control the process of applying heat to moist or 'green' wood to obtain usable dry wood.
+- 7521.2: Wood treater | Wood treaters apply treatments to wood to make it resistant to environmental factors like mould, cold, moisture, or staining, and may influence the wood's colour.
+- 7522.2: Cabinet maker | Builds cabinets or other pieces of furniture by cutting, shaping, and fitting pieces of wood using various power and hand tools.
+- 7522.1: antique furniture reproducer | Antique furniture reproducers duplicate and recreate antique furniture by preparing drawings and templates, creating and assembling parts, and finishing articles according to original specifications.
+- 7522.3: Cooper | Coopers build barrels and related products made of segments of wood, such as wooden buckets. They shape the wood, fit hoops around them, and shape the barrel to hold the product, which is usually premium alcoholic beverages.
+- 7522.5: Furniture Finisher | Furniture finishers treat the surface of wood furniture using hand and power tools to sand, clean, and polish. They apply wood coatings using techniques such as brushing or spray guns, selecting appropriate coatings for protective and decorative purposes.
+- 7522.7: Recreation model maker | Designs and constructs recreation scale models from materials such as plastic, wood, wax, and metals, primarily using hand tools.
+- 7523.1: Nailing Machine Operator | Operates hydraulic machines to nail wooden elements together, ensuring correct positioning and monitoring processes to prevent downtime.
+- 7522.6: furniture restorer | Furniture restorers analyse materials and techniques to assess the state of old furniture, identify and classify it according to art and cultural history, and restore it using appropriate tools.
+- 7523.2: Wood boring machine operator | Operates milling machines or specialized boring jigs to cut holes in wood workpieces, distinguishing the process from routing by directing the main movement into the workpiece rather than across its surface.
+- 7523.3: Wooden furniture machine operator | Operates machinery to manufacture wooden furniture parts according to established procedures, ensuring smooth operation and performing necessary repairs.
+- 7523.5: Wood sander | Wood sanders smoothen the surface of a wooden object using various sanding instruments that apply an abrasive surface, usually sandpaper, to remove irregularities.
+- 7523.4: Wood pallet maker | Creates wood pallets for storage, shipping, and goods manipulation by operating machines to assemble treated low-grade softwood planks.
+- 7523.6: woodturner | Woodturners use a lathe to remove superfluous material from wood. The lathe turns the workpiece around its axis, as shape tools are used to obtain the desired shape.
+- 7531.1: costume maker | Constructs, sews, stitches, dyes, adapts, and maintains costumes for events, live performances, and film/TV based on artistic vision and sketches.
+- 7531.3: Hide grader | Hide graders sort hides, skins, wet blue, and crust based on natural characteristics, category, weight, and defect magnitude. They compare batches to specifications, assign grades, and manage trimming.
+- 7531.2: Dressmaker | Designs, makes, fits, alters, and repairs tailored, bespoke, or hand-made garments for women and children using textiles, light leather, and fur according to specific customer or manufacturer specifications.
+- 7531.4: Milliner | Designs and manufactures hats and other headwear.
+- 7531.5: tailor | Tailors design, make, fit, alter, or repair bespoke garments from textiles, leather, or fur, and produce hats or wigs according to specific customer or manufacturer specifications.
+- 7531.6: Wig and hairpiece maker | Creates, adapts, and maintains hair prostheses for live performance, ensuring maximum wearer mobility through close cooperation with designers.
+- 7532.2: Clothing Cutter | Clothing cutters mark, cut, shape, and trim textile or related materials according to blueprints or specifications in the manufacture of wearing apparel.
+- 7532.1: clothing CAD patternmaker | Designs, evaluates, adjusts, and modifies patterns, cutting plans, and technical files for wearing apparel using CAD systems, serving as an interface for digital printing, cutting, and assembly operations.
+- 7532.3: Clothing Product Grader | Produces patterns in different sizes to reproduce wearing apparel, drafting by hand or using software following size charts.
+- 7532.4: digital prototyper | Digital prototypers transform paper patterns into digital forms using specialized software and operate machines to produce clothing-related products.
+- 7532.5: leather goods CAD patternmaker | Designs, adjusts, and modifies 2D patterns for leather goods using CAD systems, checks laying variants via nesting modules, and estimates material consumption.
+- 7532.7: Wearing Apparel Patternmaker | Interprets design sketches and creates cut patterns for wearing apparel using hand tools or industrial machines to meet customer requirements.
+- 7533.1: Doll maker | Designs, creates, and repairs dolls using materials like porcelain, wood, or plastic by building moulds and assembling parts.
+- 7533.3: glove maker | Glove makers design and manufacture technical, sport or fashion gloves.
+- 7533.2: embroiderer | Embroiderers punch designs and decorate textile surfaces by hand or using an embroidery machine, applying traditional stitching techniques to produce intricate designs on clothing, accessories, and home decor items.
+- 7533.4: Made-up textile articles manufacturer | Manufacturers of made-up articles from textile materials, excluding apparel. They produce home textiles (e.g., bed linen, pillows, bean bags, carpets) and outdoor textile articles.
+- 7533.5: Sewing machinist | Sewing machinists sew components of wearing apparel together and repair or renovate apparel by hand or using sewing machines.
+- 7534.2: mattress maker | Mattress makers form mattresses by creating pads and coverings, tufting them by hand, and attaching padding and cover material over innerspring assemblies.
+- 7534.1: Aircraft Interior Technician | Manufactures, assembles, and repairs aircraft interior components including seats, carpeting, door panels, ceilings, and lighting systems. Also replaces entertainment equipment and prepares vehicle interiors for new installations.
+- 7534.3: upholsterer | Upholsterers provide objects such as furniture, panels, orthopaedic devices, fixtures, or vehicle parts with padding or soft covering using materials like fabrics, leather, suede, or cotton.
+- 7534.3.1: furniture upholsterer | Furniture upholsterers provide furniture with padding, springs, webbing, and covers to ensure comfort and beauty.
+- 7534.3.3: motor vehicle upholsterer | Creates manufacturing templates, manufactures and assembles interior components for vehicles, and prepares interiors for trim items using various tools.
+- 7534.3.2: marine upholsterer | Manufactures, assembles, and repairs interior components for all types of boats, including preparing surfaces and applying finishes.
+- 7534.3.4: railway car upholsterer | Railway car upholsterers create manufacturing templates, manufacture and assemble interior components for train carriages, and prepare vehicle interiors for trim items.
+- 7535.1: Leather sorter | Leather sorters inspect and classify leather during and at the end of the production process according to qualitative features, destinations of use, and customer requirements.
+- 7535.2: Tanner | A tanner programs and operates tannery drums to process hides and skins, verifying physical and chemical characteristics throughout the workflow.
+- 7536.1: Leather goods manual operator | Handles tools to prepare leather piece joints for stitching or to close already stitched pieces, shaping the final leather goods product.
+- 7536.1.1: Leather goods finishing operator | Organizes leather goods for finishing by applying various treatments (creamy, oily, waxy, polishing, plastic-coated) and incorporating handles and metallic applications into bags and accessories.
+- 7536.1.2: Leather goods hand cutting operator | A skilled worker who manually checks materials and dies, positions leather components, and cuts pieces to strict specifications and quality standards.
+- 7536.2: Shoemaker | Shoemakers use hand or machine operations for the traditional manufacturing of a various range of footwear. They also repair all types of footwear in a repair shop.
+- 7536.1.3: Leather goods hand stitcher | Leather goods hand stitchers join cut pieces of leather and other materials using simple tools to close products and create decorative stitches.
+- 7536.2.1: Bespoke Footwear Technician | A professional who designs, prepares, cuts, sews, assembles, and finishes custom-made footwear in small production environments such as workshops.
+- 7536.2.3: Footwear CAD patternmaker | Professionals who design, adjust, and modify footwear patterns using CAD systems, ensuring material efficiency and producing graded series for production.
+- 7536.2.5: Footwear patternmaker | Designs and cuts patterns for all kinds of footwear using hand and simple machine tools, checks nesting variants, estimates material consumption, and produces series of patterns for different sizes after sample approval.
+- 7536.2.4: Footwear hand sewer | A skilled worker who joins cut pieces of leather and other materials using simple tools to produce footwear uppers and perform decorative or assembly stitching.
+- 7536.2.6: Hand lasting operator | A skilled worker who manually shapes and secures shoe linings and uppers over a last using hand tools to achieve the final footwear model shape.
+- 7536.2.7: Orthopaedic footwear technician | Designs and manufactures orthopaedic footwear and components to accommodate foot and ankle fitting problems using manufacturing technology.
+- 7536.2.8: Shoe repairer | Shoe repairers repair and renew deteriorated footwear and other items like belts or bags using hand tools and specialised machinery.
+- 7541.1: Construction commercial diver | Construction commercial divers work below the surface of the water to install, inspect, remove, and repair hydraulic structures, waterways, and marine facilities.
+- 7541.2: Harvest diver | Harvest divers extract and collect marine resources like algae, coral, and sponges up to 12 metres deep using apnoea or surface-supplied air equipment.
+- 7541.3: rescue diver | Divers that manage underwater emergencies, prevent and manage problems underwater, handle dive emergencies, and operate rescue equipment in seas or waterways under demanding physical conditions.
+- 7543.1: automated optical inspection operator | Operates automated optical inspection machines to inspect assembled printed circuit boards for flaws or defects.
+- 7542.1: Shotfirer | Shotfirers set up and safely detonate explosives at a site to blast and break up in situ material.
+- 7543.10: Product quality inspector | Professionals who check products to assess compliance with standards or guidelines by observing, measuring, and testing.
+- 7543.10.1: Cigar Inspector | Tests, sorts, samples, and weighs cigars to identify defects and deviations from product specifications.
+- 7543.10.3: Precision device inspector | Ensures precision devices, such as micrometers and gauges, operate according to design specifications.
+- 7543.10.2: Clothing quality inspector | Inspects manufactured components and ready-made garments to classify quality, ensure compliance with standards, and identify defects or deviations from specifications.
+- 7543.10.4: Textile quality inspector | Ensures that the manufacture of textile products is compliant with predetermined specifications.
+- 7543.11: Veneer Grader | Veneer graders inspect slices of veneer for quality, identifying irregularities, blemishes, and production errors to grade slices based on pattern desirability.
+- 7543.2: automotive test driver | Automotive test drivers drive prototype and pre-production vehicles to assess performance, safety, and comfort, preparing reports to aid engineering improvements.
+- 7543.3: Battery test technician | Battery test technicians use positive and negative wired plugs to test battery resistance capacity and analyze rejected batteries to determine flaws.
+- 7543.4: Control panel tester | Tests electrical control panels by reading blueprints to verify wiring connections and using measuring equipment to detect malfunctions.
+- 7543.6: Printed circuit board test technician | Inspect and test printed circuit boards, performing various testing procedures and minor repairs.
+- 7543.5: non-destructive testing specialist | Specialists who inspect vehicles, vessels, manufactured objects, and construction structures using non-invasive methods to detect defects without causing damage.
+- 7543.7: Product assembly inspector | Evaluates products for compliance with specifications and defects, ensuring conformity to engineering, manufacturing, quality, and safety standards using measuring and testing equipment.
+- 7543.7.1: Aircraft Assembly Inspector | Uses measuring and testing equipment to inspect aircraft assemblies, ensuring conformity to engineering specifications, safety standards, and regulations.
+- 7543.7.2: Consumer goods inspector | Evaluates assembled parts of consumer goods and products for compliance with specifications and defects in-line with clients' requirements and organisational policies.
+- 7543.7.3: electrical equipment inspector | Electrical equipment inspectors check finished electrical products for physical defects and faulty electrical connections, recording results and returning faulty assemblies to production.
+- 7543.7.4: electronic equipment inspector | Electronic equipment inspectors check electronic equipment for defects and malfunctions, ensuring correct assembly according to specifications and regulations.
+- 7543.7.5: Motor vehicle assembly inspector | Motor vehicle assembly inspectors use measuring and testing equipment to inspect and monitor motor vehicle assemblies to ensure conformity to engineering and manufacturing specifications, quality, and safety standards and regulations.
+- 7543.8: Product grader | Product graders perform preventive and operational quality control on products and resources, inspecting and evaluating materials to ensure conformity to desired standards.
+- 7543.7.6: rolling stock assembly inspector | Professionals who use measuring and testing equipment to inspect rolling stock assemblies, ensuring conformity to engineering specifications, safety standards, and regulations.
+- 7543.7.7: Vessel Assembly Inspector | Vessel assembly inspectors use measuring and testing equipment to inspect and monitor boat and ship assemblies to ensure conformity to engineering specifications and safety standards. They examine assemblies to detect malfunction and damage, check repair work, and provide detailed documentation.
+- 7543.8.1: Engineered wood board grader | Inspects finished engineered wood products for quality issues such as incomplete gluing, warping, or blemishing, and tests load-bearing qualities.
+- 7543.8.2: Lumber Grader | Lumber graders inspect lumber, or wood cut into planks, to test quality and determine grade based on desirability of the pattern.
+- 7543.9: Product quality controller | Checks the quality of manufactured products in facilities, performing inspections and evaluations before, during, or after production to track problems and return inferior items for repair.
+- 7543.8.3: Pulp grader | Grades paper pulp based on specific criteria including pulping process, raw materials, bleaching methods, yield, and fibre length.
+- 7543.9.2: Leather goods quality controller | Analyses visual aspects of leather goods against specifications to ensure appearance, robustness, and finish quality.
+- 7543.9.3: Metal product quality control inspector | Professionals who perform preventive and operational quality control on metal products to ensure conformity to desired standards.
+- 7543.9.1: Footwear quality controller | Professionals who perform visual analysis of footwear, raw materials, and components against defined criteria to determine acceptance or rejection, while preparing quality reports and implementing quality management tools.
+- 7544.1: Pest management worker | Identifies, eliminates, and repels pests using chemical solutions, traps, and equipment. Advises clients on after-care and preventive methods.
+- 8111.1: Dewatering Technician | Installs and operates pumps, spares, pipe ranges, and vacuum dewatering systems to collect and remove liquids and chemicals.
+- 7544.1.1: Pesticides Sprayer | Professionals who mix and apply chemical solutions to trees, plants, and lawns using technical equipment, while maintaining machinery and ensuring area safety.
+- 8111.2: Driller | Drillers set up and operate drilling rigs and related equipment designed to drill holes for mineral exploration, shotfiring operations, and construction purposes.
+- 8111.3: Surface miner | Surface miners perform a wide range of ancillary surface mining operations, often involving a high level of spatial awareness, such as pumping, dust suppression, and the transport of materials including sand, stone, and clay to the point of production.
+- 8111.4: Underground heavy equipment operator | Controls heavy-duty mining equipment to excavate and load ore and raw minerals at underground mines.
+- 8112.1: Mineral Crushing Operator | Operates and monitors crushers and related machinery to crush materials and minerals, ensuring end products meet specifications.
+- 8112.2: Mineral processing operator | Operates plants and equipment to convert raw materials into marketable products and provides process information to the control room.
+- 8111.5: Underground miner | Underground miners perform a wide range of ancillary underground mining operations, including inspections, conveyor attendance, and the transport of equipment and consumable materials from the surface to the point of extraction.
+- 8112.3: Stone Driller | Operates drilling machines to bore holes into stone blocks, manipulating materials like granite, sandstone, marble, and slate according to specifications.
+- 8113.2: Drill operator | Drill operators supervise teams during rigging and drilling operations, monitor well activity, and implement emergency measures.
+- 8113.1: Derrickhand | Derrickhands guide the positions and movements of drill pipes, control automated pipe-handling equipment, and manage drilling fluids.
+- 8112.4: Stone planer | Operates and maintains planing machines to finish stone blocks and slabs, ensuring all parameters meet specifications.
+- 8113.3: oil rig motorhand | Oil rig motorhands assume responsibility for the engines powering the drilling equipment and ensure that all other rig equipment operates correctly.
+- 8113.4: Pipeline pump operator | Pipeline pump operators tend pump equipment and systems to transfer liquids and substances (e.g., chemical solutions, crude oil, gases) from one point to the next.
+- 8113.6: Roustabout | Roustabouts maintain and repair oil field equipment and machinery using hand and power tools, performing general labor tasks.
+- 8113.5: Roughneck | A drilling floor worker who makes or breaks connections when the drill pipe is tripped, assembles and disassembles pipes and drills, collects core samples, and maintains drilling equipment.
+- 8113.7: Tool pusher | Tool pushers assume responsibility over daily drilling operations, primarily performing administrative duties to ensure the oil rig has sufficient materials, spare parts, and personnel.
+- 8113.8: Tunnel Boring Machine Operator | Operators regulate large tunnelling equipment (TBMs), adjusting cutting wheel torque and screw conveyor settings to ensure tunnel stability before installing reinforced concrete rings.
+- 8113.9: well-digger | Operates drilling machinery to create and maintain wells for extracting ore, liquids, and gases, while ensuring environmental safety.
+- 8114.1: asphalt plant operator | Operators extract raw materials, operate mobile transport equipment, and tend automated machines to crush, sort, and mix stones with asphalt cement. They verify mix quality via sampling and arrange transport to construction sites.
+- 8114.2: Block machine operator | Controls, maintains, and operates concrete block casting machines to fill and vibrate molds, compacting wet concrete into finished blocks.
+- 8114.3: Concrete products machine operator | Operators tend machines to produce moulded concrete products, managing the entire cycle from mixing to finishing.
+- 8114.4: Electrolytic cell maker | Electrolytic cell makers create, finish, and test electrolytic cells using specialized equipment, tools, and concrete mixers.
+- 8114.5: Precast Moulder | Handcasts decorative and structural concrete building products such as fireplace units, blocks, or coloured tiles using a portable concrete-mixing machine.
+- 8114.6: Slate Mixer | Operates and maintains slate mixing machines to blend multicolored slate granules for asphalt-coated roofing felt surfacing.
+- 8114.7: Stone polisher | Stone polishers operate grinding and polishing tools and equipment to smooth stones.
+- 8114.8: Stone splitter | Operates and maintains machines to split stone into various forms such as blocks, cobbles, tiles, and concrete products.
+- 8121.1: Casting Machine Operator | Operates casting machines to manipulate molten ferrous and non-ferrous metals into specific shapes, ensuring high-quality manufacturing outcomes.
+- 8121.2: Extrusion Machine Operator | Operators set up, monitor, and maintain machines that heat or melt raw materials to form continuous profiles like tubes, pipes, and sheeting through shaped dies.
+- 8121.3: Metal annealer | Operates electric or gas kilns to soften metal for cutting and shaping by heating it to specific temperatures or colors and then slowly cooling it according to specifications.
+- 8121.4: Metal drawing machine operator | Sets up and operates drawing machines to reduce the cross-section of ferrous and non-ferrous metals, producing wires, bars, pipes, hollow profiles, and tubes.
+- 8121.6: Spring maker | Spring makers operate equipment and machinery to manufacture various types of springs, including leaf, coil, torsion, clock, tension, and extension springs.
+- 8121.7: Wire weaving machine operator | Sets up and tends wire weaving machines to produce woven metal wire cloth from alloys or ductile metals.
+- 8121.5: Metal rolling mill operator | Sets up and tends metal rolling mills to form metal workpieces into desired shapes by passing them through pairs of rolls to decrease thickness and ensure homogeneity, while managing proper process temperatures.
+- 8122.1: Abrasive blasting operator | Operates equipment to smoothen rough surfaces by forcibly thrusting abrasive materials under high pressure for finishing metal workpieces and building materials.
+- 8122.11: Surface grinding machine operator | Sets up and tends surface grinding machines to apply abrasive processes, removing excess material and smoothening metal workpieces using rotating abrasive grinding wheels or wash grinders on horizontal or vertical axes.
+- 8122.10: Rustproofer | Rustproofers use proper equipment and machinery to apply hard, durable chemical finishing coats to metal workpieces, preventing rust and protecting against corrosion.
+- 8122.12: Tumbling machine operator | Sets up and operates tumbling machines (wet or dry) to remove excess material and burrs from heavy metal and precious metal workpieces, improving surface appearance through friction.
+- 8122.2: Anodising Machine Operator | Sets up and tends anodising machines to apply durable, corrosion-resistant anodic oxide finishing coats to metal workpieces, typically aluminum, via an electrolytic passivation process.
+- 8122.3: Coating machine operator | Sets up and tends coating machines to apply protective or decorative layers (e.g., lacquer, enamel, metals) to metal products.
+- 8122.4: Cylindrical grinder operator | Sets up and tends cylindrical grinding machines to apply abrasive processes, using diamond-teeth grinding wheels to remove excess material and smoothen metal workpieces into precise cylinders.
+- 8122.5: Deburring Machine Operator | Sets up and tends mechanical deburring machines to strip rough edges (burrs) from metal workpieces by hammering or rolling surfaces to smoothen or flatten uneven slits and sheers.
+- 8122.6: Dip tank operator | Dip tank operators set up and tend dip tanks, which are coating machines designed to provide finished work pieces with durable coating by dipping them in a tank of specific paint, preservative, or molten zinc.
+- 8122.8: enameller | Enamellers embellish metals such as gold, silver, copper, steel, cast iron, or platinum by painting them with coloured powdered glass.
+- 8122.7: Electroplating Machine Operator | Sets up and tends electroplating machines to coat metal workpieces with a thin layer of metal using electric current.
+- 8122.9: Filing Machine Operator | Sets up and tends filing machines to smoothen metal, wood, or plastic surfaces by precisely cutting and removing excess material.
+- 8131.1: Capsule filling machine operator | Capsule filling machine operators control the filling of gelatine capsules with specific medicinal preparations.
+- 8131.12: Nitrator Operator | Monitors and controls equipment processing chemical substances to produce explosives and manages product storage in tanks.
+- 8131.13: Nitroglycerin neutraliser | Maintains explosives mixing tanks by neutralizing process remaining acids.
+- 8131.10: lime kiln operator | Controls equipment that burns limestone to produce lime or carbon dioxide by managing material, fuel, and air flows while monitoring gauges and maintaining production records.
+- 8131.11: mine control room operator | Mine control room operators monitor mining processes via electronic displays and adjust variables to ensure smooth operations according to established procedures.
+- 8131.15: Nonwoven filament machine operator | Nonwoven filament machine operators perform chemical nonwoven processing operations.
+- 8131.16: Perfume production machine operator | Operators tend machinery for the manufacturing of perfumes by setting up equipment, cleaning, maintaining tools, and adhering to production schedules.
+- 8131.14: Nitroglycerin separator operator | Maintains gravity separators in explosives processing to separate nitroglycerin from spent acids by controlling temperature and liquid flow.
+- 8131.17: Pill maker operator | Operators tend pilling machines to create pills in various sizes and shapes, managing material flow and machine temperature.
+- 8131.18: Plodder Operator | Controls milled soap compression machines to produce specific shapes and sizes of soap bars, ensuring products conform to specifications and quality requirements.
+- 8131.19: Soap maker | Operates equipment and mixers to produce soap, ensuring the end product adheres to specified formulas.
+- 8131.19.1: Soap Chipper | Operates machinery to convert soap bars into chips, ensuring product specifications are met while managing transfer and storage.
+- 8131.19.2: Soap drier operator | Controls and maintains viscous soap machines to produce soap flakes, performing sample tests and coordinating discharge into storage bins.
+- 8131.2: chemical mixer | Operates and maintains mixing tanks and blenders to develop chemical products from raw materials, ensuring end products conform to batch ticket specifications.
+- 8131.2.1: Fertiliser mixer | Operates and maintains machines to mix chemical ingredients into fertilisers, ensuring the final product meets specifications.
+- 8131.2.2: Lacquer maker | Operates and maintains lacquer and synthetic paints mixers and jar mills to ensure the end product adheres to specific formulas.
+- 8131.2.3: Paint mixer | Operates and maintains machines to mix lacquers, solvents, and paints, ensuring the final product adheres to specified formulas.
+- 8131.2.5: Tracer Powder Blender | Operates machinery to mix liquid and dry chemicals for igniters and tracer powders, ensuring flammable mixtures meet strict specifications.
+- 8131.2.6: Varnish maker | Operates equipment and mixers to produce varnish by melting, mixing, and cooking chemical ingredients according to specifications.
+- 8131.2.4: Pesticide Mixer | Operates and maintains machinery to mix chemical ingredients in dry or liquid states to produce insecticides, fungicides, rodenticides, or herbicides, ensuring the final product adheres to specific formulas.
+- 8131.20: Soap tower operator | Controls, monitors, and maintains tower operations to produce soap powders, ensuring process parameters meet specifications.
+- 8131.21: Wax bleacher | Operates and maintains filter presses and tanks used in the wax bleaching process for candle production.
+- 8131.4: Cosmetics production machine operator | Tends machinery for the manufacturing of cosmetic products by setting up equipment, cleaning, maintaining tools, and adhering to production schedules.
+- 8131.6: Dry house attendant | Monitors and maintains the drying room to ensure pyrotechnics are dried and stored within correct parameters and specifications.
+- 8131.5: Distillation Operator | Operates distillation equipment to separate intermediate products or impurities from oil, overseeing the process and assisting with troubleshooting.
+- 8131.7: Fermenter Operator | Controls and maintains equipment and tanks for producing active ingredients for pharmaceuticals (e.g., antibiotics, vitamins) and cosmetics.
+- 8131.8: Gauger | Gaugers test oil during processing and before dispatch, while controlling pumping systems and regulating oil flow into pipelines.
+- 8131.9: Granulator Machine Operator | Operates mixing and milling machines to granulate powdered ingredients for medicinal tablet compression, adhering to specific batch sizes and formulas.
+- 8132.1: motion picture film developer | Develops film material into visible videos and materials, converting footage into various formats and presentations such as black and white or colour for specific client requests.
+- 8132.2: photographic developer | Photographic developers use chemicals, instruments, and darkroom photographic techniques in specialised rooms to develop photographic films into visible images.
+- 8141.1: Rubber products machine operator | Operates machines to knead, blend, calender, mould, extrude, and cure rubber products from natural and synthetic rubber.
+- 8141.1.2: Coagulation Operator | Controls machines to coagulate synthetic rubber latex into rubber crumb slurry and prepares crumbs for finishing processes.
+- 8141.1.3: Foam rubber mixer | Operates machinery to mix foam rubber particles with liquid latex, preparing materials for cushion and mattress production.
+- 8141.1.1: Belt builder | Belt builders manufacture transmission and conveyor belts by assembling plies of rubberised fabric, cutting them to required lengths, and bonding them together.
+- 8141.1.4: Rubber cutting machine tender | Operates machinery to cut rubber stock into slabs, transfers them to pallets, and applies chemical solutions to prevent sticking.
+- 8141.1.7: Tyre builder | Tyre builders build pneumatic tyres from rubber components.
+- 8141.1.6: sectional belt mould assembler | Operates machinery to press belts into a V-shape, stretching the belt around the mould and initiating the machine cycle.
+- 8141.1.5: Rubber dipping machine operator | Operates machinery to dip forms into liquid latex for manufacturing rubber products like balloons, finger cots, and prophylactics.
+- 8141.1.8: Tyre vulcaniser | Repairs tears and holes in castings and treads of tyres using hand tools or machines.
+- 8141.1.9.1: V-belt coverer | Operates machines to cover belts with rubberised fabric and cuts the fabric after one revolution of the belt.
+- 8141.1.9.2: V-belt finisher | Operates machines to make V-belts flexible, positions belts on measuring machines, and stamps identifying information.
+- 8141.1.9: V-belt builder | A skilled worker who forms V-belts from calendered rubber rolls, measuring, cutting, and assembling components to specified widths.
+- 8142.1: blow moulding machine operator | Operates and monitors blow moulding machines to mould plastic goods, regulating temperature, air pressure, and volume according to specifications.
+- 8142.11: plastic rolling machine operator | Operates and monitors machines to produce plastic rolls or flatten/reduce material, ensuring products meet specifications.
+- 8142.10: plastic heat treatment equipment operator | Operators manipulate plastic products using furnaces or flame-hardening machines to temper, anneal, or heat-treat items. They set up machinery, monitor temperatures, remove products, and verify conformity to specifications.
+- 8142.13: Record press operator | Operates machinery to press vinyl records by forcing material into the grooves of a master disc using negative impressions.
+- 8142.12: Pultrusion Machine Operator | Operators tend, control, and maintain machines that produce composite materials with consistent cross-sections by reinforcing materials with fibres and coating them with resin before curing through a heated die.
+- 8142.14: Vacuum forming machine operator | Operators tend, control, and maintain machines that heat plastic sheets and move them around a mould using vacuum suction to permanently set them in the mould's shape upon cooling.
+- 8142.2: Cake press operator | Sets up and tends hydraulic presses to compress and bake plastic chips into cake moulds, producing plastic sheets.
+- 8142.3: Compression moulding machine operator | Sets up and operates machines to mould plastic products, selecting dies, weighing premixed compounds, and regulating die temperatures.
+- 8142.4: fiberglass laminator | Moulds fiberglass materials to form hulls and boat decks, applying resins and preparing surfaces for composite construction.
+- 8142.5: Fibreglass machine operator | Controls and maintains machinery that sprays a mix of resin and glass fibers onto products like bathtubs or boat hulls to create strong, lightweight composite end-products.
+- 8142.6: filament winding operator | Tends, controls, and maintains machines that coat filament (e.g., fibreglass or carbon) in resin and wind them around rotating moulds to produce hollow cylindrical products like pipes and containers.
+- 8142.7: injection moulding operator | Operates and monitors injection moulding machines to cast products from thermoplastic materials, regulating temperature, pressure, and volume per specifications.
+- 8142.7.1: optical disc moulding machine operator | Operates moulding machines to manufacture optical discs by melting polycarbonate pellets and injecting plastic into mould cavities.
+- 8142.8: insulating tube winder | Sets up and operates machinery to wind insulating tubes and cut them to specified dimensions.
+- 8143.1: Absorbent pad machine operator | Tends machinery that processes cellulose fibres into compressed, highly absorbent pads for hygienic products like diapers and tampons.
+- 8142.9: Plastic furniture machine operator | Operators tend plastic processing machines to produce items like chairs and tables, inspecting products for abnormalities and removing inadequate pieces. They may also assemble different plastic parts to complete the final product.
+- 8143.2: Corrugator Operator | Tends a machine that folds heavy paper into a wave-like pattern and covers it to create lightweight, sturdy packaging material.
+- 8143.3: Envelope maker | Operates machinery to manufacture envelopes by cutting, folding, and gluing paper sheets.
+- 8143.4: Paper bag machine operator | Tends a machine that takes in paper, folds it, and glues it to produce paper bags of various sizes, shapes, and grades of strength.
+- 8143.5: Paperboard Products Assembler | Constructs components and parts made from paperboard according to strictly laid down procedures to assemble finished products.
+- 8143.6: Paper cutter operator | Paper cutter operators tend a machine that cuts paper to the desired size and shape. They may also cut and perforate other sheet materials, such as metal foil.
+- 8143.7: Tissue paper perforating and rewinding operator | Tends machines that process tissue paper by perforating it and rewinding it into rolls for sanitary products.
+- 8143.8: Paper stationery machine operator | Operates machines to perform specific operations on paper, preparing it for various markets.
+- 8151.1: Cotton Gin Operator | Operates machinery to separate cotton fibers from seeds, manages bale presses, and maintains equipment for smooth processing.
+- 8151.2: Spinning machine operator | Produces yarns, twists, and fibres by tending spinning, twisting, winding, and reeling machines, handling raw materials, and performing routine maintenance.
+- 8151.2.1: Man-made fiber spinner | Man-made fiber spinners perform fibre or filament processing operations.
+- 8151.2.3: Yarn spinner | Converts fibres into yarns.
+- 8151.2.2: Twisting machine operator | Operates machinery to spin two or more fibres together into yarn, handling raw materials and performing routine maintenance.
+- 8151.3: Spinning textile technician | Spinning textile technicians perform operations related to setting up spinning processes.
+- 8151.4: Winding machine operator | Operators tend machines that wrap strings, cords, yarns, ropes, and threads onto reels, bobbins, or spools.
+- 8152.1.1: Knitting machine supervisor | Supervises the knitting process of a group of machines, monitoring fabric quality and knitting conditions to ensure products meet specifications.
+- 8152.1: Knitting machine operator | Sets up, operates, and monitors knitting machines to process yarn into products like clothing, carpets, or rope, while performing maintenance and repairs.
+- 8152.1.2: Knitting textile technician | Technicians who perform operations related to setting up knitting processes in weft or warp knitting factories, utilizing digital technology for patterning and collaborating with laboratory staff to ensure fabric quality.
+- 8152.2: Textile machine operator | Supervises the textile process of a group of machines, monitoring quality and productivity to ensure products meet specifications and quality standards.
+- 8152.3: Weaving machine operator | Weaving machine operators set up, operate, and monitor weaving machines to process yarn into products like clothing, home textiles, or technical goods. They also maintain and repair machinery to ensure smooth operations.
+- 8152.3.3: Weaving textile technician | Weaving textile technicians perform operations related to setting up weaving processes.
+- 8152.3.2: Weaving machine supervisor | Monitors automated weaving processes, ensures fabric quality, and performs maintenance and repairs on looms for various textile end-uses.
+- 8153.1: Sewing Machine Operator | Sewing machine operators tend specific sewing machines in the industrial production chain of wearing apparel.
+- 8153.1.3: Embroidery machine operator | Decorates wearing apparel by tending embroidery machines varying in their technology to embroider and create ornamental designs.
+- 8153.1.1: Clothing Alteration Machinist | Clothing alteration machinists ensure the alteration of finished garments in line with business demands, maintaining quality and adhering to customer branding guidelines.
+- 8153.1.2: Clothing sample machinist | Creates the first made-up sample of a garment design, ensuring sealing samples are ready for bulk production on time.
+- 8153.1.4: Leather goods stitching machine operator | Operates machines to join cut pieces of leather and other materials to produce leather goods, handling tools and monitoring machine performance.
+- 8154.1: Finishing textile technician | Finishing textile technicians perform operations related to setting up finishing processes, which are the final series of operations that improve the appearance and/or usefulness of textiles.
+- 8154.2: textile dyeing technician | Textile dyeing technicians perform operations related to setting up dyeing processes.
+- 8153.1.5: Protective clothing apparel manufacturer | Produces personal protective equipment (PPE) made of textiles resistant to hazards such as thermal, physical, electrical, biological, and chemical risks, as well as high-visibility and weather-protective clothing.
+- 8154.3: Textile Dyer | Textile dyers operate dye machines to color yarn and textiles, ensuring machine settings are correct and preparing chemical solutions according to specific formulas.
+- 8154.4: Textile finishing machine operator | Operates, supervises, monitors, and maintains the production of textiles finishing machines.
+- 8155.1: Leather production machine operator | Operates tannery machinery and programs to meet departmental standards, performing routine maintenance on equipment.
+- 8155.1.1: Colour sampling operator | Colour sampling operators apply colours and finish mixes, such as pigments and dyes, according to defined recipes.
+- 8155.1.2: Leather finishing operator | Operates machinery to finish leather according to client specifications for surface characteristics, including color, pattern, and special properties like waterproofness.
+- 8156.2: Footwear production machine operator | Operates machinery for the industrial production of footwear, including lasting, cutting, closing, and finishing processes, while performing routine maintenance.
+- 8156.1: Automated cutting machine operator | Operators manage automated cutting machines by sending digital files, positioning materials, and performing nesting or fault digitization. They initiate cutting cycles, collect parts, conduct quality control against specifications, and monitor machine device status.
+- 8156.2.1: Cutting machine operator | Operators check materials like leather, textiles, and synthetic goods, select cutting areas based on quality and stretch, and program/execute cutting machines for footwear and other components.
+- 8156.2.3: Footwear stitching machine operator | Operates machines to join cut leather and material pieces to produce shoe uppers by guiding parts under needles and following seams.
+- 8156.2.2: Footwear maintenance technician | Professionals who install, program, and tune cutting, stitching, assembling, and finishing equipment used in footwear production. They perform preventive and corrective maintenance, analyze faults, repair components, and provide data on equipment usage and energy consumption.
+- 8156.2.4: Lasting machine operator | Lasting machine operators use specific machinery to shape footwear uppers over a last, ensuring the final form of the shoe model.
+- 8156.2.5: Pre-lasting operator | Handles tools and equipment to prepare footwear uppers for lasting by attaching components and conditioning materials.
+- 8156.2.6: Sole and heel operator | Attaches soles or heels to footwear using stitching, cementing, or nailing methods.
+- 8156.3: Leather goods machine operator | Operates machinery in the industrial production of leather goods, performing cutting, closing, and finishing tasks on products like luggage, handbags, saddlery, and harnesses.
+- 8156.3.1: Leather goods maintenance technician | Programs and tunes cutting, stitching, and finishing equipment for leather goods manufacturing. Performs preventive and corrective maintenance, including fault analysis, component repair, and routine lubrication.
+- 8156.4: Pre-stitching machine operator | Operators who handle tools and equipment to prepare shoe uppers for stitching by splitting, skiving, folding, punching, crimping, placking, and marking, often applying reinforcement strips or gluing pieces together.
+- 8157.1: Laundry worker | Operates and monitors machines using chemicals to wash or dry-clean articles like garments, linens, and carpets, ensuring color and texture maintenance.
+- 8157.1.1: Laundry ironer | Laundry ironers re-shape clothing items and linen and remove creases from them by using irons, presses and steamers. They clean and maintain the ironing and drying area and organise the items accordingly.
+- 8157.2: Laundry workers supervisor | Monitors and coordinates laundry and dry-cleaning staff in shops and industrial companies, planning production schedules and ensuring quality standards.
+- 8159.2: Braiding textile technician | Braiding textile technicians perform operations related to setting up the braiding process.
+- 8159.1: Braiding Machine Operator | Supervises the braiding process of a group of machines, monitoring fabric quality and braiding conditions to ensure products meet specifications.
+- 8159.3: Canvas goods assembler | Constructs products made from closely woven fabrics and leather, such as tents, bags, and wallets.
+- 8159.6: nonwoven staple machine operator | Nonwoven staple machine operators perform physical nonwoven processing operations.
+- 8159.4: Leather measuring operator | Leather measuring operators use machines to measure the surface area of leather and ensure that the machines are regularly calibrated. They note the size of leather for further invoicing.
+- 8159.5: mattress making machine operator | Operates machinery to form mattresses, creating pads and coverings, and attaching materials to innerspring assemblies.
+- 8159.7: nonwoven textile technician | Nonwoven textile technicians perform operations related to setting up non-woven processes.
+- 8160.1: animal feed operator | Animal feed operators tend various animal feed processing machines in industrial plants.
+- 8159.8: Textile pattern making machine operator | Operators create patterns, designs, and decorations for textiles and fabrics using specialized machinery, while selecting materials and ensuring quality control.
+- 8160.10: Cacao beans cleaner | Operates machinery to remove foreign materials like stones, string, and dirt from cacao beans, manages silo transfers, and utilizes air-cleaning systems to ensure bean purity.
+- 8160.12: Carbonation Operator | Carbonation operators perform the injection of carbonation into beverages.
+- 8160.11: Candy Machine Operator | Operators tend machines that weigh, measure, and mix candy ingredients, forming soft candies on slabs or casting them in moulds.
+- 8160.13: cellar operator | Cellar operators manage fermentation and maturation tanks, controlling the beer production process from wort inoculation to final maturation.
+- 8160.14: centrifuge operator | Centrifuge operators tend centrifugal machines that separate impurities from food materials aimed to be further processed as to achieve finished foodstuffs.
+- 8160.15: Chilling Operator | Chilling operators perform various processes and tend specific machines for manufacturing prepared meals and dishes, applying chilling, sealing, and freezing methods to foodstuffs for non-immediate consumption.
+- 8160.17: Cider fermentation operator | Cider fermentation operators control the fermentation process of mash or wort inoculated with yeast.
+- 8160.16: chocolate moulding operator | Chocolate moulding operators tend machines and equipment that pour tempered chocolate into moulds to form bars, blocks, and other shapes of chocolate. They monitor machines to ensure that moulds do not jam.
+- 8160.18: Cigarette making machine operator | Operators tend cigarette-making machines to encase tobacco in continuous paper rolls, cut cigarettes, and set monogram-printing devices to print brand names.
+- 8160.19: Clarifier | Operates equipment to remove sediments and moisture from oleo and oils by heating tanks with steam and using strainers.
+- 8160.20: Cocoa mill operator | Operators tend machines to pulverize cacao beans into powder of specified fineness, utilizing air classification systems to separate powder by density, and handle weighing, bagging, and stacking of the final product.
+- 8160.2: Baking Operator | Baking operators tend automatic reels or conveyor-type ovens to bake bread, pastries, and other bakery products, ensuring operational control and quality.
+- 8160.21: Cocoa press operator | Operates hydraulic cocoa presses to extract cocoa butter from chocolate liquor.
+- 8160.22: Coffee grinder | Operates grinding machines to grind coffee beans to specified fineness.
+- 8160.24: Dairy processing operator | Sets up and operates continuous flow or vat-type equipment to process milk, cheese, ice cream, and other dairy products following specific instructions, methods, and formulas.
+- 8160.25: Dairy products manufacturing worker | Dairy products manufacturing workers set up, operate and tend equipment to process milk, cheese, ice cream and other dairy products.
+- 8160.23: Coffee roaster | Coffee roasters control gas-fired roasters to dry coffee beans, monitor roasting progress by comparing bean color against specifications, and operate mechanical blowers to cool the beans.
+- 8160.26: Distillery miller | Tends distillery mills to clean and grind whole grain for distilled liquor production, performing daily maintenance on equipment.
+- 8160.28: Dryer Attendant | Tends rotary dryers to remove moisture from raw materials or food products during transformation processes.
+- 8160.27: Distillery worker | Operates industrial distillery equipment and machinery, performing maintenance, cleaning, and barrel handling tasks.
+- 8160.29: Extract mixer tester | Extract mixer testers sift spices using mechanical sifters, operate mixing machines to blend and weigh spices to a specified consistency, and compare mixture colors against standard charts to ensure specifications are met.
+- 8160.3: beverage filtration technician | Operates machines to clarify beverages prior to filtering by transferring fermented liquids and applying chemicals.
+- 8160.30: Fat-purification worker | Operates acidulation tanks and equipment to separate undesirable components from oils.
+- 8160.32: Fish production operator | Regulates and supervises fish product manufacturing facilities, managing ingredient and equipment stock while executing mass manufacturing processes.
+- 8160.33: flour purifier operator | Operators who tend machines to blend and sift flour, transport flour via screw conveyors, and operate separators to sieve flour and remove lumps before packaging.
+- 8160.31: Fish Canning Operator | Fish canning operators brine, cook, and package fish. They sterilize canning lines, introduce fish into tanks after evisceration, tend cooking stoves, and fill cans manually or mechanically with fish, olive oil, or other products.
+- 8160.34: food production operator | Food production operators supply and perform tasks across various stages of the food production process, including manufacturing, packaging, and operating machinery.
+- 8160.37: Germination Operator | Tends steeping and germination vessels where barley is germinated to produce malt.
+- 8160.35: Fruit-press operator | Fruit-press operators tend power presses to extract juice from fruits by spreading fruit evenly in cloth and managing filter bags within the machinery.
+- 8160.36: Fruit and vegetable canner | Tends machines to prepare industrial fruit and vegetable products for storage or shipping, executing sorting, grading, washing, peeling, trimming, and slicing tasks while following canning and preserving procedures.
+- 8160.38: Honey Extractor | Operates machinery to extract liquid honey from honeycombs by placing decapped combs into machine baskets.
+- 8160.39: Hydrogenation Machine Operator | Controls equipment to process base oils for the manufacture of margarine and shortening products.
+- 8160.40: Kettle Tender | Operates machines to mix chewing gum base with sugar or sweetener, following procedures to load containers and direct flow into mixers.
+- 8160.4: Blanching Operator | Removes outer coverings or skins from almonds and nuts, cuts leaves and impurities, controls material flow, and manages pressure and temperature during the blanching process.
+- 8160.41: Liquor Blender | Liquor blenders regauge, filter, rectify, blend, and verify the proof of alcoholic drinks prior to bottling.
+- 8160.42: Liquor grinding mill operator | Operates mills to grind cracked cocoa beans or nibs into liquid chocolate of specified consistency.
+- 8160.43: Malt kiln operator | Tends kiln machines and equipment while supervising that the grain roasting operation maintains specified roasting parameters.
+- 8160.44: Milk heat treatment process operator | Operators who use equipment to perform pasteurisation and/or sterilisation of dairy liquid products.
+- 8160.45: Miller | Millers tend mills to grind cereal crops into flour, regulating material flow and adjusting grind fineness while performing equipment maintenance and product evaluation.
+- 8160.46: pasta operator | Manufactures dry pasta products by managing raw ingredients and operating machinery to shape and dry pasta.
+- 8160.48: Refining Machine Operator | Operators who tend machines to refine crude oils, such as soybean, cottonseed, and peanut oil, and manage wash tanks to remove by-products and impurities using heat.
+- 8160.49: Sauce production operator | Sauce production operators process, produce, and manufacture sauces derived from fruits, vegetables, oils, and vinegars.
+- 8160.47: Prepared Meat Operator | Processes meat by hand or using machines for grinding, crushing, and mixing. Performs preservation processes like pasteurising, salting, drying, freeze-drying, fermenting, and smoking to ensure safety and extend shelf life.
+- 8160.5: Blender operator | Produces non-alcoholic flavoured waters by managing the administration of a large selection of ingredients to water.
+- 8160.50: Starch Converting Operator | Operators who control converters to transform starch into glucose or corn syrup and test products for purity.
+- 8160.51: Starch extraction operator | Operates equipment to extract starch from raw materials such as corn, potatoes, rice, tapioca, and wheat.
+- 8160.52: sugar refinery operator | Sugar refinery operators tend and control refinery equipment to produce sugars and related products from raw sugar or other raw materials like corn starch.
+- 8160.53: vermouth manufacturer | Vermouth manufacturers perform all production processes required to produce vermouth, including mixing ingredients and botanicals with wine and spirits.
+- 8160.55: Yeast Distiller | Extracts alcohol from yeast for the manufacture of distilled liquors by managing fermentation conditions.
+- 8160.54: Wine Fermenter | Wine fermenters tend tanks to ferment crushed fruit or must into wines, managing the chemical and biological processes required for production.
+- 8160.6: blending plant operator | Controls equipment to weigh and mix vegetable oils for products like salad oil and margarines, following specific formulas.
+- 8160.9: Cacao bean roaster | Sets up and operates cacao processing equipment to roast, crack, fan, dry, and grind cacao beans.
+- 8160.7: Brew house operator | Monitors brewing processes including mashing, lautering, and boiling; ensures vessel cleanliness; supervises brew house work; operates equipment to deliver quality brews within specified times.
+- 8160.8: bulk filler | Bulk fillers perform the dumping of food products into barrels, tubs, or containers together with prescribed amounts of preservatives, such as salt, sugar, brine, syrup, or vinegar, for the manufacturing of food products.
+- 8171.2: Digester operator | Cooks wood chips with soda ash or acid to separate wood pulp from unwanted constituents and tests the resulting solution.
+- 8171.4: Laminating machine operator | Tends a machine that applies a plastic layer to paper to strengthen it and protect it from wetness and stains.
+- 8171.6: Paper pulp moulding operator | Tends a machine that moulds paper pulp in various shapes, usually for use in lightweight but sturdy packaging material, such as egg boxes.
+- 8171.5: Paper machine operator | Tends a machine that processes pulp slurry into paper by spreading it over a screen, draining water, pressing, and drying.
+- 8171.3: Froth flotation deinking operator | Operators tend tanks to process recycled paper by mixing it with water and heating the solution to approximately 50°C. They introduce air bubbles to lift ink particles to the surface, forming a froth that is subsequently removed.
+- 8171.8: pulp technician | Pulp technicians perform technical tasks in the production of pulp, ensuring the process runs according to specifications.
+- 8172.1: Chipper operator | Chipper operators tend machines that chip wood into small pieces for use in particle board, further processing into pulp, or for direct use.
+- 8171.9: Wash deinking operator | Operates a tank to mix recycled paper with water and dispersants, washing out printing inks to create a pulp slurry that is subsequently dewatered.
+- 8172.2: Crosscut saw operator | Operates manual crosscut saws for felling, bucking trees, removing limbs, and making manual cuts in workshops.
+- 8172.3: Debarker operator | Operates debarking machines to strip harvested trees of their bark using abrasion or cutting methods.
+- 8172.5.1: band saw operator | Operates industrial saws with continuous flexible blades revolving around wheels to produce irregular shapes.
+- 8172.4: Engineered wood board machine operator | Operates machinery to bond wood or cork particles and fibres using industrial glues or resins to produce fibre, particle, or cork boards.
+- 8172.5: Sawmill operator | Operates automated lumber mill equipment to saw timber into rough lumber and processes lumber into various shapes and sizes using computer-controlled machinery.
+- 8172.5.2: Planer thicknesser operator | Operates machinery to shave wood planks to a uniform thickness, typically planing both sides in one operation.
+- 8172.5.3: Table saw operator | Operates industrial saws with rotating circular blades built into a table to cut wood, adjusting blade height to control cut depth while managing safety risks from unpredictable wood forces.
+- 8172.5.5: Wood router operator | Operates industrial routers to cut wood into desired shapes, utilizing computer-controlled systems for precision and consistency.
+- 8172.5.4: Veneer Slicer Operator | Operates machinery to slice lumber into thin sheets for use as surface coverings on materials like particle board or fibre board.
+- 8172.6: Wood fuel pelletiser | Operates a hammer mill to process wood waste into pellets, which are then pressed through a die to achieve standardised shape and size for fuel use.
+- 8181.1: Auger press operator | Controls and adjusts auger presses to perform clay forming, extrusion, and cutting operations according to specifications.
+- 8181.2: Brick and tile caster | Operates and maintains mixing machines used in brick and tile products development.
+- 8181.10: Kiln firer | Operates kilns to fire decorations or glazes, managing temperature levels and uniformity while directing helpers in firebox preparation and ignition.
+- 8181.3: Clay kiln burner | Operates clay kilns to bake products like bricks, sewer pipes, and tiles by regulating valves and monitoring temperature fluctuations.
+- 8181.3.1: Clay products dry kiln operator | Manages drying tunnels used to dry clay products before they undergo kiln treatment.
+- 8181.4: Drawing kiln operator | Responsible for continuous sheet flat glass production by manipulating the drawing kiln that processes molten glass.
+- 8181.3.2: Tunnel kiln operator | Controls preheating chambers and tunnel kilns to bake clay products like bricks, sewer pipes, and tiles by monitoring gauges, adjusting valves, and moving kiln cars.
+- 8181.6: fibre machine tender | Operates and maintains extrusion machines that form sliver from filaments using synthetic or non-synthetic materials.
+- 8181.7: Glass annealer | Operates electric or gas kilns to strengthen glass products via a controlled heating-cooling process, ensuring temperatures meet specifications and inspecting products for flaws throughout the cycle.
+- 8181.5: Dry press operator | Operates machinery to press dry tempered clay or silica into bricks and other shapes, managing dies and stacking finished products.
+- 8181.8: Glass forming machine operator | Operates and maintains machines that press or blow molten glass in moulds to form products like bottles, jars, and drinking glasses.
+- 8182.2: Steam plant operator | Operates and maintains mechanical equipment such as stationary engines and boilers to provide utilities for domestic or industrial use.
+- 8181.9: Glass polisher | Glass polishers finish plate glass to create various glass products by polishing edges and applying mirrored surfaces.
+- 8182.1: Boiler Operator | Maintains heating systems including low-pressure, high-pressure, and power boilers in large buildings like power plants to ensure safe and environmentally friendly operation.
+- 8183.1: Canning and bottling line operator | Operators monitor bottles and cans on conveyor belts during production to ensure proper filling levels and discard defective items.
+- 8183.3: Cylinder Filler | Operates and maintains equipment and containers used to fill cylinders with gases in liquefied or compressed state.
+- 8183.4: Footwear finishing and packing operator | Applies techniques to ensure the appropriate final appearance of packed footwear pairs before sale, following supervisor instructions on materials and operation sequences.
+- 8183.2: Cigar Brander | Operates machinery to stamp brands on cigar wrappers, ensuring continuous material supply and preventing jams.
+- 8183.5: heat sealing machine operator | Operates sealing and gluing machines to join items together for further processing or to seal products and packages using heat.
+- 8183.7: Packaging and filling machine operator | Operators tend machines to prepare and pack food products into various containers such as jars, cartons, and cans.
+- 8189.1: edge bander operator | Operators tend machines that veneer materials, mostly wood, to increase durability and improve aesthetics.
+- 8183.6: Leather goods packing operator | Leather goods packing operators perform final product revisions, apply accessories like handles and labels, and execute general packaging procedures including boxing and parcel preparation.
+- 8189.2: Slitter Operator | Sets up, operates, or tends machines to cut, slit, bend, or straighten sheets of metal, paper, or other materials to specific widths and ensures product quality.
+- 8211.1.1: Aircraft engine assembler | Builds and installs prefabricated parts to form aircraft engines, such as lightweight piston engines and gas turbines, following technical specifications.
+- 8211.2: Industrial machinery assembler | Manufactures industrial equipment such as robots, assembly line machines, and labeling machines using hand tools and computer-controlled machines.
+- 8211.1: Aircraft Assembler | Constructs, fits, and installs prefabricated parts to manufacture fixed or rotary wing aircraft and subassemblies using hand tools, power tools, CNC machines, and robots.
+- 8211.3: mechatronics assembler | Assembles and maintains complex mechatronic equipment and machines, such as robots, elevators, and advanced home appliances.
+- 8211.5: motor vehicle assembler | Installs prefabricated parts to assemble motor vehicles, inspects for defects, and tests equipment for performance and quality conformity.
+- 8211.4: motorcycle assembler | Motorcycle assemblers fasten motorcycle parts and components together, such as frames, wheels, and engines, using hand tools, power tools, CNC machines, or robots. They read technical plans, inspect parts for malfunctions, and verify assembly quality against standards and specifications.
+- 8211.5.1: Motor vehicle body assembler | Fastens motor vehicle body parts and components together, such as frames, doors, chassis, and hoods, using hand tools, power tools, and automated equipment.
+- 8211.5.2: Motor vehicle engine assembler | Builds and installs prefabricated parts to form motor vehicle engines, including diesel, gas, petrol, and electric types.
+- 8211.5.3: Motor vehicle parts assembler | Fastens motor vehicle parts and components together using hand tools, power tools, and programmable devices to ensure quality standards and specifications are met.
+- 8211.6: rolling stock assembler | Constructs, fits, and installs prefabricated parts to manufacture rolling stock subassemblies and body structures using hand tools, power tools, lifting equipment, or robots.
+- 8211.7: Vessel engine assembler | Builds and installs prefabricated parts to form engines for various vessels, including electric motors, nuclear reactors, gas turbines, and diesel engines.
+- 8212.1: dental instrument assembler | Assembles various dental instruments, such as drills, lasers, probes, mirrors, and dental imaging devices using machinery, hand tools, chemicals, adhesives, and epoxies.
+- 8212.2: electrical equipment assembler | Responsible for the assembly of electrical equipment by putting together product components and wiring according to blueprints.
+- 8212.2.2: electrical cable assembler | Manipulates cables and wires made of steel, copper, or aluminium to enable electricity conduction in various appliances.
+- 8212.2.1: Control panel assembler | Reads schematic drawings to assemble control panel units for electrical equipment, integrating wiring, switches, control apparatus, and cables using hand-operated tools.
+- 8212.2.3: Wire harness assembler | Wire harness assemblers bind wires or cables to form wire harnesses used in electronic and electrical systems and equipment.
+- 8212.3: electronic equipment assembler | Responsible for the assembly of electronic equipment and systems by putting together components and wiring according to blueprints and assembly drawings.
+- 8212.3.1: Battery assembler | Welds and assembles battery components, including electronics parts, wiring, and casings around cells.
+- 8212.3.2: Electromechanical Equipment Assembler | Reads and interprets blueprints and instructions to assemble or modify electromechanical equipment, then inspects and tests units to ensure compliance with specifications.
+- 8212.3.3: electronic musical instrument maker | Creates and assembles parts to make electronic instruments according to specified instructions or diagrams, including installation and testing of electric pick-ups.
+- 8212.3.4: photographic equipment assembler | Builds photographic products such as cameras, film cameras, and projectors by assembling optical, electronic, and mechanical components.
+- 8212.3.5: Printed circuit board assembler | Reads blueprints and drawings to assemble printed circuit boards using hand- and automated soldering tools and machines to connect electronic components.
+- 8212.3.6: semiconductor processor | Manufactures electronic semiconductors and devices like microchips or integrated circuits, including repair, testing, and review.
+- 8212.4: surface-mount technology machine operator | Operates surface-mount technology (SMT) machines to mount and solder small electronic components onto printed circuit boards to create surface-mounted devices (SMD).
+- 8212.5: wave soldering machine operator | Sets up and operates machines to solder electronic components to printed circuit boards, utilizing blueprints and layout designs.
+- 8219.1: Ammunition Assembler | Ammunition assemblers put together explosives and other ammunition components in mass production within ammunition factories, focusing on the manufacturing of cartridges or projectiles.
+- 8219.10: rubber goods assembler | Manufactures rubber products such as water bottles, swim fins, and rubber gloves by fastening components and applying tape.
+- 8219.11: Wood products assembler | Wood products assemblers put together products from premade pieces of wood, operating machines to bind elements using joints, glue, or fasteners.
+- 8219.2: bicycle assembler | Builds, tunes, and ensures the working order of various bicycles and accessory products.
+- 8219.3: Firework assembler | Creates explosive devices, coloured lights, and set pieces for fireworks by following blueprints, fabricating powders, and assembling components.
+- 8219.4: furniture assembler | Furniture assemblers place together all parts of furniture and auxiliary items such as legs and cushions, following instructions or blueprints using hand and power tools.
+- 8219.5: Jewellery assembler | Jewellery assemblers assemble jewelry parts to form various types of jewelry, such as bracelets, necklaces, or earrings.
+- 8219.6: Medical device assembler | Manufactures instruments, machines, and appliances used to prevent, diagnose, or treat medical conditions, including non-electrical items like tubes and sterile pipettes, electrical devices like pacemakers and MRI machines, and medical furniture.
+- 8219.7: Metal furniture machine operator | Operates machines and power tools to cut, shape, and join metal pieces to produce metal furniture, including office furnishings and outdoor fittings.
+- 8219.8: Metal products assembler | Fits and fastens metal materials according to strictly laid down procedures to produce various parts or final products.
+- 8219.9: plastic products assembler | Fits and fastens parts and finished plastic products according to strictly-defined procedures, and may cut and shape plastic parts using various tools.
+- 8312.1: Level crossing signalperson | Operates equipment to safeguard level crossings according to safety regulations, supervises traffic situations, and communicates with controllers and drivers.
+- 8312.2: Rail switchperson | Assists traffic controllers by operating switches and signals to manage rail traffic flow.
+- 8311.1: Train driver | Operates trains providing passenger or cargo transport services, ensuring safety and compliance with regulations.
+- 8312.3: Shunter | Shunters move shunting units, wagons, or train groups to build trains, managing locomotive driving and switching operations within yards or sidings.
+- 8312.4: Train dispatcher | Ensures the safe and efficient dispatch of train services, prioritizing customer safety by monitoring traffic signals and coordinating with train crews.
+- 8321.1: Motorcycle delivery person | Motorcycle delivery persons transport packets containing objects, loose pieces, prepared meals, medications, and documents requiring special treatment regarding urgency, value, or fragility.
+- 8312.5: Train preparer | Train preparers check and test equipment and systems on rail vehicles to ensure they are fit for service, correctly deployed, and match the designated pathway.
+- 8322.2: car and van delivery driver | Transport goods and packages to specified locations by car or van, ensuring proper handling and adherence to schedules.
+- 8322.1: Armoured car driver | Drives an armoured car to transfer valuable items, such as money, to different locations while remaining inside the vehicle and ensuring security.
+- 8322.3: Hearse driver | Operates and maintains specialized vehicles to transport deceased persons from homes, hospitals, or funeral homes to their final resting place, while assisting funeral attendants with duties.
+- 8322.4: Parking valet | Parking valets assist clients by moving vehicles to specific parking locations, handling luggage, and providing information on parking rates while maintaining a friendly attitude and adhering to company policies.
+- 8322.5: Patient transport services driver | Transfers disabled, vulnerable, and elderly patients to and from health care facilities such as hospitals or social care settings, driving ambulances and maintaining related equipment under non-emergency circumstances.
+- 8322.6: Private chauffeur | Private chauffeurs transport employers to specific destinations safely and on time, utilizing navigation devices to optimize travel time while adhering to legal driving regulations.
+- 8322.7: Taxi driver | Operates a licensed private passenger transportation vehicle, looking after customers, taking fares, and managing vehicle servicing.
+- 8331.1: Bus driver | Operates buses or coaches, collects fares, and ensures passenger safety and comfort.
+- 8331.1.1: Trolley bus driver | Operates trolley buses or guided buses, collects fares, and ensures passenger safety and comfort.
+- 8331.2: Tram driver | Operates trams, collects fares, and ensures passenger safety and comfort.
+- 8332.2: cargo vehicle driver | Operates vehicles such as trucks and vans to transport goods, potentially handling loading and unloading of cargo.
+- 8332.1: Aircraft fuel system operator | Aircraft fuel system operators maintain fuel distribution systems and ensure the refuelling of planes.
+- 8332.4: Dangerous goods driver | Transports fuel, bulk liquids, hazardous products, and chemicals by road.
+- 8332.3: Concrete pump operator | Operates trucks to haul concrete from plants to project sites and uses pumps to disperse concrete. Responsible for cleaning and maintaining the truck and its mechanical parts.
+- 8332.6: Live animal transporter | Provides transport and transfer for live animals, ensuring health and welfare monitoring, journey planning, and loading/unloading in compliance with legislation.
+- 8332.5: Fire service vehicle operator | Drives and operates emergency fire service vehicles, specializing in emergency driving and assisting firefighting operations while ensuring vehicle materials are stored, transported, and ready for use.
+- 8332.7: Moving truck driver | Operating lorries or trucks intended for relocating and transporting goods, belongings, machinery, and others.
+- 8341.2: land-based machinery operator | Operates specialised equipment and machinery for agricultural production and maintenance of landscape.
+- 8332.8: Refuse vehicle driver | Drivers of large vehicles used for refuse collection who transport waste from homes and facilities to treatment and disposal sites.
+- 8341.1: Forestry equipment operator | Operates specialized machinery in forest environments to maintain, harvest, extract, and transport wood for industrial and consumer manufacturing.
+- 8342.1: Bulldozer operator | Operates a heavy vehicle to move earth, rubble, or other material over the ground.
+- 8341.3: Land-based machinery supervisor | Plans and organises land-based machinery services for agricultural production and landscaping in close cooperation with clients.
+- 8342.10: surface mine plant operator | Controls heavy-duty equipment to excavate, load, and transport ore, raw minerals, and overburden at quarries and surface mines.
+- 8342.2: Dredge Operator | Operates industrial equipment to remove underwater material for navigation access, port establishment, cable laying, and material relocation.
+- 8342.4: Grader Operator | Operates heavy mobile equipment to create flat surfaces by slicing off top soil with a large blade, providing a flat finish for earthmoving work.
+- 8342.3: excavator operator | Excavator operators use excavators to dig into earth or other materials to remove it for various construction and industrial projects.
+- 8342.5: Pile driving hammer operator | Operates heavy equipment to position piles and drive them into the ground using a rigging mechanism.
+- 8342.6: road construction worker | Road construction workers perform road construction on earthworks, substructure works, and the pavement section of the road.
+- 8342.9: snow-clearing worker | Operates trucks and plows to remove snow and ice from public sidewalks, streets, and other locations, and applies de-icing materials.
+- 8342.7: road roller operator | Road roller operators work with equipment to compact materials like soil, gravel, concrete, or asphalt for road and foundation construction.
+- 8342.8: Scraper Operator | Operates mobile heavy equipment to scrape ground surfaces, adjusting machine speed to surface hardness, and deposits material into a hopper for hauling.
+- 8343.1: Automated cable vehicle controller | Operates systems and control boards to manage various cable transport modes, ensuring continuous operations and intervening during unforeseen situations.
+- 8343.3: mobile crane operator | Operates mobile cranes mounted on trucks that can be easily moved around road, rail, and water environments.
+- 8343.2: container crane operator | Operates electrically powered cranes with cantilevers to load and unload container cargo from vessels, positioning containers on docks, decks, or holds.
+- 8343.4: Production plant crane operator | Operates basic technologic cranes during the production process to lift and move loads such as bales, containers, buckets, and other facilities using raw and other materials.
+- 8343.5: tower crane operator | Operators control tower cranes, tall balance cranes with a horizontal jib on a vertical mast, from a control cabin or via radio control.
+- 8344.1: forklift operator | Operates forklifts to move, locate, relocate, stack, and count merchandise while ensuring safe and efficient operations.
+- 8350.2: decksman | Unlicensed member of the deck department of an inland vessel, typically serving as the first step toward becoming an able seaman.
+- 8350.1: Boatswain | Boatswains organize the crew on deck and at the fishing hold to execute orders from superiors, coordinating maintenance, maneuvers, and gear operations while ensuring safety and hygiene standards.
+- 8350.3: engine minder | Engine minders perform work related to the deck department of an inland water transport vessel, utilizing on-board experience as an ordinary crewmember with basic engine knowledge.
+- 8350.4: Fisheries deckhand | Fisheries deckhands work on fishing vessels carrying out fishing-related activities, handling gears and catches, and performing maritime duties on land and at sea.
+- 8350.6: Ordinary Seaman | Occupies the lowest rank of a maritime ship's deck crew, serving as the main labour force to help operate the ship under the supervision of the captain and engineer.
+- 8350.5: Matrose | A member of the deck department on an inland water transportship responsible for helm, deck, cargo hold, and engine room operations, including emergency and safety equipment usage.
+- 9111.1: Domestic cleaner | Domestic cleaners perform all necessary cleaning activities in order to clean their clients' houses.
+- 8350.7: Sailor | Assists the ship captain and crew to operate ships, maintaining cleanliness, rigging, and auxiliary engines while recording voyage data.
+- 9112.2: building cleaner | Maintains cleanliness and functionality of buildings like offices, hospitals, and public institutions by performing cleaning duties and checking security and HVAC systems.
+- 9112.1: Aircraft Groomer | Aircraft groomers clean aircraft cabins and airplanes after usage, ensuring the interior is tidy and ready for the next flight.
+- 9112.3: Furniture Cleaner | Maintains furniture items by removing dust, applying polish, cleaning stains, and preserving colouring.
+- 9112.4: room attendant | Room attendants clean, tidy and restock guest rooms as well as other public areas as directed.
+- 9112.5: toilet attendant | Toilet attendants clean and maintain toilet facilities in accordance with company standards and policies, performing duties before, during, and after operational hours.
+- 9112.6: Train cleaner | Train cleaners keep the interiors of trains tidy and clean by performing various cleaning activities.
+- 9121.1: linen room attendant | Retrieves linen or uniforms for cleaning, maintains service availability, and keeps inventory records.
+- 9121.2: Wearing Apparel Presser | Uses steam irons, vacuum pressers, or hand pressers to shape wearing apparel.
+- 9122.1: vehicle cleaner | Vehicle cleaners clean and polish surfaces of external parts and interiors of vehicles.
+- 9129.1: Drapery and Carpet Cleaner | Professionals who clean draperies and carpets for clients by removing stains, dust, and odors using chemical solutions, repellents, brushes, and mechanical equipment.
+- 9123.1: window cleaner | Window cleaners use cleaning tools such as sponges and detergents to clean windows, mirrors and other glass surfaces of buildings, both on the interior and exterior. They use specific ladders to clean taller buildings, using safety belts for support.
+- 9129.2: sewerage cleaner | Maintains and cleans sewerage systems and pipes within communities to ensure smooth operation.
+- 9129.3: swimming facility attendant | Handles daily activities of swimming facilities such as pools, beaches, and lakes, focusing on cleaning, client interaction, and safety.
+- 9211.1: Fruit and vegetable picker | Selects and harvests fruits, vegetables, and nuts using methods appropriate for the specific crop type.
+- 9212.1: catcher | Specialists working at poultry farms to catch the poultry.
+- 9211.2: Vineyard worker | Carries out manual activities related to the cultivation, propagation of grape varieties, and the production and/or packaging of wines.
+- 9212.2: Equine worker | Equine workers provide caring activities for horses and ponies.
+- 9212.3: Groom | Provides practical daily horse care to ensure the horse's health, welfare, and safety.
+- 9212.4: livestock worker | Livestock workers maintain the health and welfare of animals, overseeing breeding/production and day-to-day care.
+- 9213.1: crop production worker | Crop production workers carry out practical activities and assist in the production of agronomical crops.
+- 9214.1: garden labourer | Garden labourers perform simple tasks in cultivating and maintaining flowers, trees and shrubs in parks or private gardens.
+- 9214.2: Horticulture worker | Horticulture workers carry out practical activities and assist in nurseries or greenhouses for the production of horticultural crops.
+- 9215.1: Forest worker | Forest workers carry out a variety of jobs to care for and manage trees, woodland areas and forests.
+- 9216.1: Aquaculture cage mooring worker | Operates highly-specialised equipment to moor cages in stable stations, drifting cages, or self-propelled and semi-submerged cages.
+- 9216.2: Aquaculture harvesting worker | Aquaculture harvesting workers work in the harvesting of aquatic organisms cultured in land-based on-growing processes.
+- 9216.3: On foot aquatic resources collector | Collects spat, seaweed, shellfish, crustaceans, echinoderms, and other aquatic or vegetable resources manually on foot.
+- 9216.4: Water-based aquaculture worker | Carries out manual activities in the ongrowing processes of cultured aquatic organisms in water-based suspended systems (floating or submerged structures).
+- 9311.1: Mining assistant | Mining assistants perform routine duties in mining and quarrying operations, supporting miners in equipment maintenance, infrastructure installation, and waste removal.
+- 9312.1: civil engineering worker | Civil engineering workers perform tasks concerning the cleaning and preparation of construction sites for civil engineering projects.
+- 9312.1.1: drainage worker | Drainage workers assemble and maintain drainage and dewatering systems to dry out ground and prevent groundwater issues.
+- 9312.1.3: road maintenance worker | Road maintenance workers perform routine inspections of roads and execute repairs for damage such as potholes and cracks.
+- 9312.1.2: Rail layer | Constructs railway tracks on prepared sites by monitoring equipment that sets sleepers and laying rail tracks to ensure constant gauge.
+- 9312.1.4: Road marker | Road markers apply markings to roads to increase safety, indicate traffic regulations, and help road users navigate.
+- 9312.1.5: Road sign installer | Road sign installers transport road signs to specified locations and erect them, performing necessary ground preparation and anchoring.
+- 9312.1.6: Waterway construction labourer | Labourers who maintain canals, dams, and waterway structures, including coastal or inland water plants. They execute construction works in and around water environments.
+- 9313.1: building construction worker | Building construction workers prepare and maintain building construction activities on construction sites, performing preparation and clean-up work to assist specialised construction workers.
+- 9321.1: Clothing Finisher | Clothing finishers set haberdasheries such as bottoms, zips, and ribbons, cut threads, and weigh, pack, and label materials and products.
+- 9329.1: factory hand | Factory hands assist machine operators and product assemblers by maintaining equipment cleanliness and ensuring material availability.
+- 9321.2: Hand packer | Collects, packs, and labels goods and materials by hand, ensuring compliance with specific instructions and requirements.
+- 9329.2: Wood Caulker | Wood caulkers drive oakum into the seams between planking in deck or hull of wooden ships to make them watertight.
+- 9331.1: bicycle courier | Bicycle couriers collect and deliver packages and mail by bicycle.
+- 9332.1: Carriage driver | Carriage drivers transport passengers in horse-drawn carriages, ensuring passenger safety and caring for the horses.
+- 9333.2: Distribution centre dispatcher | Ensures efficient shipping of manufactured goods by stipulating routes and completing shipping documents.
+- 9333.1: Airport baggage handler | Airport baggage handlers receive and return passenger luggage at terminals, preparing and attaching claim checks while stacking baggage on carts or conveyors.
+- 9333.3: materials handler | Executes the handling and storage of materials through loading, unloading, and moving articles in warehouses or storage rooms.
+- 9333.4: Mover | Movers handle the physical relocation of goods and belongings, managing disassembly, packing, transport, and reassembly.
+- 9333.5: Rail intermodal equipment operator | Assists in loading trailers and containers on/off railcars and chassis, maneuvers tractor-trailer combinations in tight spaces, and uses on-board computers to communicate with yard management systems.
+- 9333.6: Stevedore | Stevedores sort, handle, load, and unload freight into over-the-road equipment following oral and written instructions and state regulations. They move various goods, including boxes, bulky items, and large pallets, between storage areas and transport vehicles.
+- 9333.7: Stevedore superintendent | Supervises and monitors freight handling and longshore labor in a dockyard to maximize productivity, managing cargo loading/unloading and ensuring work area safety.
+- 9333.8: warehouse worker | Executes the accurate handling, packing, and storage of materials in a warehouse environment.
+- 9333.8.1: warehouse order picker | Warehouse order pickers prepare orders manually by picking up goods, assembling merchandise, and transporting them to delivery platforms or shipping locations to meet quantity, type, and quality criteria.
+- 9411.1: Pizzaiolo | Pizzaiolos are responsible for preparing and cooking pizzas.
+- 9334.1: Shelf filler | Stocks and rotates merchandise on shelves, identifies and removes expired products, and cleans the shop after hours to ensure readiness for the next day.
+- 9411.2: Quick service restaurant crew member | Quick service restaurant crew members prepare, cook and serve food and beverages in a quick service operation.
+- 9412.1: kitchen assistant | Kitchen assistants assist in the preparation of food and cleaning of the kitchen area.
+- 9412.2: kitchen porter | Kitchen porters wash and clean kitchen areas, including pots, pans, utensils, cutlery and dishes. They prepare the kitchen area before service, and receive and store supplies.
+- 9510.1: leaflet distributor | Leaflet distributors hand out flyers, leaflets, and advertisements to inform people or sell products and services, distributing them directly on streets or via mailboxes.
+- 9520.1: Hawker | Sells goods and services on established routes, streets, and market locations.
+- 9611.1: Refuse collector | Removes waste from homes and facilities, loads it into bin lorries, and assists drivers with unloading and recording collection amounts.
+- 9612.1: recycling worker | Recycling workers clean materials, remove waste, and ensure proper sorting into recycling containers. They also dismantle vehicles, sort parts, and deposit recyclable materials onto conveyor belts for further processing.
+- 9612.2: Sorter labourer | Sorter labourers sort recyclable materials and waste from a recycling stream, ensuring no unsuitable materials contaminate the recyclables. They inspect materials, perform cleaning duties, and work in compliance with waste regulations.
+- 9613.1: street sweeper | Operates sweeping equipment to remove waste, leaves, and debris from streets, while maintaining operational records and performing equipment maintenance.
+- 9621.1: Doorman/doorwoman | Personnel who welcome guests to hospitality establishments and provide services related to luggage assistance and guest safety.
+- 9621.2: hotel porter | Hotel porters welcome guests to accommodation facilities, assist with luggage, and provide occasional cleaning services.
+- 9622.1: Handyman | Handymen perform various maintenance and repair activities for buildings, grounds, and facilities, including structural repairs, assembly, and utility checks.
+- 9623.1: Meter reader | Visits residential, business, and industrial facilities to record utility meter readings for gas, water, electricity, and other services, then forwards results to clients and suppliers.
+- 9623.2: Vending machine operator | Vending machine operators remove cash, conduct visual inspections of the machine, provide basic maintenance, and refill goods sold for vending and other coin-operated machines.
+- 9629.1: Advertising installer | Attaches posters and advertisement materials on buildings, buses, underground transport, and in public places to attract passersby.
+- 9629.2: amusement and recreation attendant | Attendants perform various duties at amusement or recreation facilities, including scheduling facility use, maintaining equipment for sporting events, and operating concessions and rides.
+- 9629.4: Cloak room attendant | Ensures safe deposit of clients' coats and bags, manages ticket exchanges, and returns items to owners.
+- 9629.3: Attraction Operator | Controls rides, monitors attractions, and manages opening/closing procedures while providing first aid assistance.
+- 9629.5: Laundromat attendant | Assists customers of self-servicing laundries with machine issues and maintains general cleanliness.
+- 9629.6: Locker room attendant | Assists customers in handling personal items in changing rooms, maintains cleanliness, and manages lost and found issues in sports or theatre areas.
+- 9629.7: Usher | Ushers assist visitors in large venues like theatres, stadiums, or concert halls by checking tickets, directing them to seats, and answering questions. They may also perform security monitoring tasks.

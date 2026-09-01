@@ -1,0 +1,6 @@
+{
+  "selected_alpha_embedding": 0.5,
+  "selected_alpha_markov": 0.5,
+  "selection_rule": "maximum validation MRR only; first sweep alpha wins ties",
+  "validation_MRR": 0.14101457245933197
+}

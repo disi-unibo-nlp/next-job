@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Local caches
+hf-cache/
+.cache/
+
+# Runtime outputs
+outputs/
+logs/
+tmp/
+
+# Local inspection and sync folders
+_llm_wiki_inspect/
+_wiki_sync_tmp/
+modified/
+
+# Archives copied between local and cloud machines
+*.zip
+*.tar.gz
+*.tgz

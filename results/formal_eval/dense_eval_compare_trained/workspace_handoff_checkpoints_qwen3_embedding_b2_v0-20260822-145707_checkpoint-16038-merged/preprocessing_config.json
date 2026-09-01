@@ -1,0 +1,21 @@
+{
+  "candidate_pool": "unique ESCO codes observed in train trajectories",
+  "collapse_consecutive_duplicates": true,
+  "dataset_id": "aida-ugent/JobHop",
+  "date_sort_keys": [
+    "start_date parsed as year/quarter",
+    "end_date",
+    "matched_code"
+  ],
+  "max_eval_cases": null,
+  "min_trajectory_length": 2,
+  "prediction_protocol": "last-step next-occupation prediction",
+  "random_seed": 7,
+  "remove_unknown": true,
+  "splits": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "validation_test_filter": "cases whose target is in train candidate pool"
+}

@@ -1,0 +1,22 @@
+{
+  "script_specific_changes": [
+    "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
+    "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
+    "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+    "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics."
+  ],
+  "shared_changes": [
+    "Removed Colab-only shell installs such as !pip; dependencies are declared in requirements.txt.",
+    "Removed display()/Styler notebook rendering; all tabular outputs are saved as CSV and key metadata as JSON.",
+    "Added argparse for model name, max evaluation cases with 'none' support, random seed, batch size, retrieve-k, output directory, and cache directory.",
+    "Runs one model per process/job instead of iterating over multiple models inside one notebook.",
+    "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+    "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+    "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+    "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+    "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+    "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+    "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+    "Adds multi-K information retrieval metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K."
+  ]
+}

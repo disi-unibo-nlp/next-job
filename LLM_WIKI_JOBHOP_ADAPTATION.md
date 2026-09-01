@@ -1,87 +1,111 @@
-# JobHop LLM-Wiki-Style Reranking
+# JobHop Wiki Experiment
 
-This is a JobHop-specific adaptation of the LLM_Wiki local LLM pattern. It does not use the Wiki QA task, Wiki metrics, Milvus, or SQuAD/MultiHop data.
+This repository includes a JobHop-specific adaptation of the LLM-Wiki idea.
+The goal is not to reproduce the original Wiki QA pipeline directly. JobHop is
+last-step next-occupation prediction, so the main signal is career-transition
+structure rather than document evidence routing.
 
-The script keeps the JobHop protocol:
+## Data Protocol
 
-- last-step next-occupation prediction
-- train-split ESCO candidate pool
-- validation/test split from JobHop
-- MRR and Recall/Accuracy/Precision/NDCG/MAP at configurable K values
+The experiment follows the existing JobHop v2 protocol used by the dense and
+late-interaction evaluations:
 
-The LLM step follows the suggested option 2:
+- training and evaluation data are exported under `handoff/data_full`
+- the candidate pool is the train-only ESCO occupation pool
+- validation and test queries are filtered to targets in the train candidate pool
+- metrics are reported with the JobHop evaluator: Accuracy, MRR, NDCG, Recall,
+  and MAP at the configured K values
 
-1. Build top-k candidates with a retriever model.
-2. Send the full candidate list to a local OpenAI-compatible LLM endpoint.
-3. Ask the LLM to return the most relevant candidate ids.
-4. Use the returned ids as a reranking signal.
+## Frozen Entity Wiki
 
-## Prompt-Only Smoke Test
+`scripts/jobhop_qwen_make_entity_pages.py` builds a frozen entity Wiki from the
+2,982 ESCO occupations in `handoff/data_full/eval_corpus.jsonl`.
 
-This writes the candidate prompt and baseline retriever metrics without calling the LLM:
+The synced result summary is stored under:
 
-```bash
-python scripts/jobhop_llm_wiki_rerank.py \
-  --retriever-model BAAI/bge-m3 \
-  --split validation \
-  --max-eval-cases 1 \
-  --candidate-k 100 \
-  --return-k 20 \
-  --dry-run \
-  --output-dir outputs/llm_wiki_rerank_smoke \
-  --cache-dir hf-cache
+```text
+results/wiki_eval/qwen_entity_wiki_full/
 ```
 
-## Local LLM Run
+The frozen Wiki generation completed with 2,982 entity pages and 0 failures.
 
-Start a local vLLM/OpenAI-compatible server first, then run:
+## Query-Time Pipeline
 
-```bash
-python scripts/jobhop_llm_wiki_rerank.py \
-  --retriever-model BAAI/bge-m3 \
-  --split validation \
-  --max-eval-cases 20 \
-  --candidate-k 100 \
-  --return-k 20 \
-  --llm-base-url http://localhost:8000/v1 \
-  --llm-model Qwen/Qwen3.5-9B \
-  --output-dir outputs/llm_wiki_rerank \
-  --cache-dir hf-cache
+The latest query-time Wiki experiment uses:
+
+```text
+validation/test query
+  -> train transition KG
+  -> Wiki BM25/grep fallback
+  -> raw occupation fallback
+  -> Top-100 candidate occupation IDs
+  -> optional Qwen direct selection of Top-3 IDs
+  -> JobHop metrics
 ```
 
-Use `--max-eval-cases none` only after the small run is verified.
+The main script is:
 
-## SLURM vLLM Reranking Job
-
-Use `slurm/llm_rerank_eval.slurm` for cluster runs. This is one SLURM job and one GPU allocation. Inside the job it:
-
-1. Generates retriever top-k candidate caches.
-2. Starts a `Qwen/Qwen3.5-9B` vLLM OpenAI-compatible server.
-3. Runs LLM reranking from the cached candidates.
-
-Example:
-
-```bash
-RETRIEVER_MODEL=handoff/checkpoints/bge_m3 \
-SPLITS="validation test" \
-MAX_EVAL_CASES=none \
-sbatch -N 1 -w faretra --gpus=nvidia_geforce_rtx_3090:1 \
-  slurm/llm_rerank_eval.slurm
+```text
+scripts/jobhop_qwen_wiki_direct_select.py
 ```
 
-This avoids running a separate interactive LLM server and prevents the previous `localhost:8000 Connection refused` failure mode.
+This script intentionally disables query-time Qwen routing:
 
-## Outputs
+```text
+ROUTING_DISABLED_FOR_DIRECT_SELECT
+```
 
-The run directory contains:
+The reason is empirical. In this JobHop adaptation, Qwen routing over Wiki pages
+had very low gold coverage (`gold_in_selected_pages_rate` around 0.03), while a
+transition KG built from `handoff/data_full/train.jsonl` raised candidate recall
+to around 0.68 to 0.70. This suggests that query-time Wiki page routing is not a
+good candidate generator for JobHop, where the target is a plausible next job
+rather than a semantically matching document.
 
-- `requests.jsonl`
-- `responses.jsonl`
-- `parsed_results.jsonl`
-- `failures.jsonl`
-- `base_retriever_metrics.*`
-- `metrics.*`
-- `run_config.*`
-- `runtime.*`
-- `dataset_summary.*`
-- `preprocessing_config.*`
+## Direct Selection Variant
+
+The current direct-selection variant follows the suggested Option 2:
+
+```text
+Top-100 candidates -> one Qwen call -> selected_ids Top-3
+```
+
+Qwen is asked to directly select occupation IDs from the candidate list. It does
+not score every candidate. The selected IDs are moved to the front, and the
+remaining candidates keep the original retrieval order.
+
+Current small-scale findings:
+
+- n=200, c24, Top-3, 128 output tokens: 0 failures, about 0.76 seconds per case
+- candidate_recall@100 is 0.705
+- retrieval-only MRR@10 is 0.1057
+- Qwen direct-select MRR@10 is 0.0946
+- n=500 direct select also underperforms retrieval-only
+
+Therefore, the direct-selection Qwen step is useful as an ablation, but the
+current evidence does not support using it as the main full-data method.
+
+## Recommended Main Result
+
+The strongest current Wiki-style mainline is:
+
+```text
+frozen Qwen entity Wiki + train transition KG + deterministic Top-100 retrieval
+```
+
+Qwen routing and Qwen direct selection should be reported as ablations unless
+future tuning shows a stable improvement over retrieval-only ranking.
+
+## Synced Results
+
+Formal dense and late-interaction results are organized under:
+
+```text
+results/formal_eval/
+```
+
+Wiki experiment summaries are organized under:
+
+```text
+results/wiki_eval/
+```

@@ -1,0 +1,15 @@
+Normal evaluation:
+- handoff/results/sentence_transformer/final_.json
+- handoff/results/bge_m3/bge_m3_.json
+- handoff/results/late_interaction/final_.json
+- handoff/results/qwen3_embedding_b2/checkpoint-16038-merged_.json
+
+Comparison evaluation:
+- outputs/dense_eval_compare/BAAI_bge-m3/final_test_results.csv
+- outputs/dense_eval_compare_trained/workspace_handoff_checkpoints_sentence_transformer_final/final_test_results.csv
+- outputs/dense_eval_compare_trained/workspace_handoff_checkpoints_qwen3_embedding_b2_v0-20260822-145707_checkpoint-16038-merged/final_test_results.csv
+- outputs/lateon_eval_compare/lightonai_LateOn/final_test_results.csv
+
+Excluded:
+- outputs/llm_wiki*
+- smoke/mock/dry-run wiki experiments

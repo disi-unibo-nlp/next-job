@@ -1,0 +1,29 @@
+[
+  {
+    "missing_end_date": 136497,
+    "missing_start_date": 58312,
+    "resumes": 284251,
+    "rows": 1594827,
+    "split": "train",
+    "trajectories_len_ge_2": 256593,
+    "unknown_code_rows": 110573
+  },
+  {
+    "missing_end_date": 17041,
+    "missing_start_date": 7329,
+    "resumes": 35531,
+    "rows": 199587,
+    "split": "validation",
+    "trajectories_len_ge_2": 32123,
+    "unknown_code_rows": 13622
+  },
+  {
+    "missing_end_date": 16829,
+    "missing_start_date": 7085,
+    "resumes": 35533,
+    "rows": 198877,
+    "split": "test",
+    "trajectories_len_ge_2": 32089,
+    "unknown_code_rows": 13587
+  }
+]

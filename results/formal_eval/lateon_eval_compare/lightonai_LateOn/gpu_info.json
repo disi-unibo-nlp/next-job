@@ -1,0 +1,15 @@
+{
+  "cuda_available": true,
+  "cuda_device_count": 1,
+  "device": "cuda",
+  "gpus": [
+    {
+      "index": 0,
+      "major": 8,
+      "minor": 9,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_memory_gb": 23.64288330078125
+    }
+  ],
+  "torch_cuda_version": "12.8"
+}
