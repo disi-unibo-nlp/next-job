@@ -1,0 +1,24 @@
+{
+  "script": "scripts/eval_lateon_only_datafull.py",
+  "data_dir": "handoff/data_full",
+  "split": "test",
+  "model_name": "lightonai/LateOn",
+  "index_dir": "outputs/lateon_eval_compare/lightonai_LateOn/pylate_index",
+  "max_eval_cases": null,
+  "batch_size": 16,
+  "retrieve_k": 200,
+  "metric_ks": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "alpha_markov": 0.0,
+  "alpha_lateon": 1.0,
+  "n_queries": 32089,
+  "n_corpus": 2982,
+  "note": "LateOn-only evaluation on data_full, reusing existing PyLate index."
+}

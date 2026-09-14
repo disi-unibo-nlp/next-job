@@ -1,0 +1,356 @@
+
+===== outputs/paper_checks/error_analysis/error_analysis_summary.md =====
+--- line 1 ---
+# Error Analysis: KG-alone vs Wiki+KG Score Fusion
+
+Split: full test
+
+--- line 16 ---
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| 1 | kg_alone | 4849 | 0.0608 | 0.1163 | 0.1552 | 0.2834 |
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+--- line 18 ---
+| 1 | kg_alone | 4849 | 0.0608 | 0.1163 | 0.1552 | 0.2834 |
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+--- line 20 ---
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+--- line 22 ---
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+--- line 24 ---
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+--- line 36 ---
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| yes | kg_alone | 4778 | 0.1898 | 0.3290 | 0.4148 | 0.6921 |
+| yes | wiki_kg_score_fusion_alpha_0.8 | 4778 | 0.2175 | 0.3847 | 0.4844 | 0.8056 |
+| no | kg_alone | 27311 | 0.0487 | 0.0988 | 0.1344 | 0.2519 |
+| no | wiki_kg_score_fusion_alpha_0.8 | 27311 | 0.0472 | 0.0945 | 0.1283 | 0.2397 |
+| yes | delta_fusion_minus_kg | 4778 | 0.0276 | 0.0556 | 0.0697 | 0.1134 |
+--- line 38 ---
+| yes | kg_alone | 4778 | 0.1898 | 0.3290 | 0.4148 | 0.6921 |
+| yes | wiki_kg_score_fusion_alpha_0.8 | 4778 | 0.2175 | 0.3847 | 0.4844 | 0.8056 |
+| no | kg_alone | 27311 | 0.0487 | 0.0988 | 0.1344 | 0.2519 |
+| no | wiki_kg_score_fusion_alpha_0.8 | 27311 | 0.0472 | 0.0945 | 0.1283 | 0.2397 |
+| yes | delta_fusion_minus_kg | 4778 | 0.0276 | 0.0556 | 0.0697 | 0.1134 |
+| no | delta_fusion_minus_kg | 27311 | -0.0015 | -0.0042 | -0.0061 | -0.0122 |
+
+--- line 47 ---
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| 0 | kg_alone | 20 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 0 | wiki_kg_score_fusion_alpha_0.8 | 20 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 1-5 | kg_alone | 269 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 1-5 | wiki_kg_score_fusion_alpha_0.8 | 269 | 0.0000 | 0.0010 | 0.0024 | 0.0074 |
+| 6-20 | kg_alone | 1246 | 0.0000 | 0.0025 | 0.0044 | 0.0104 |
+--- line 49 ---
+| 0 | kg_alone | 20 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 0 | wiki_kg_score_fusion_alpha_0.8 | 20 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 1-5 | kg_alone | 269 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 1-5 | wiki_kg_score_fusion_alpha_0.8 | 269 | 0.0000 | 0.0010 | 0.0024 | 0.0074 |
+| 6-20 | kg_alone | 1246 | 0.0000 | 0.0025 | 0.0044 | 0.0104 |
+| 6-20 | wiki_kg_score_fusion_alpha_0.8 | 1246 | 0.0000 | 0.0045 | 0.0084 | 0.0217 |
+| 21-100 | kg_alone | 5075 | 0.0022 | 0.0065 | 0.0106 | 0.0246 |
+--- line 51 ---
+| 1-5 | kg_alone | 269 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 1-5 | wiki_kg_score_fusion_alpha_0.8 | 269 | 0.0000 | 0.0010 | 0.0024 | 0.0074 |
+| 6-20 | kg_alone | 1246 | 0.0000 | 0.0025 | 0.0044 | 0.0104 |
+| 6-20 | wiki_kg_score_fusion_alpha_0.8 | 1246 | 0.0000 | 0.0045 | 0.0084 | 0.0217 |
+| 21-100 | kg_alone | 5075 | 0.0022 | 0.0065 | 0.0106 | 0.0246 |
+| 21-100 | wiki_kg_score_fusion_alpha_0.8 | 5075 | 0.0022 | 0.0098 | 0.0172 | 0.0424 |
+| 100+ | kg_alone | 25479 | 0.0874 | 0.1662 | 0.2195 | 0.3944 |
+--- line 53 ---
+| 6-20 | kg_alone | 1246 | 0.0000 | 0.0025 | 0.0044 | 0.0104 |
+| 6-20 | wiki_kg_score_fusion_alpha_0.8 | 1246 | 0.0000 | 0.0045 | 0.0084 | 0.0217 |
+| 21-100 | kg_alone | 5075 | 0.0022 | 0.0065 | 0.0106 | 0.0246 |
+| 21-100 | wiki_kg_score_fusion_alpha_0.8 | 5075 | 0.0022 | 0.0098 | 0.0172 | 0.0424 |
+| 100+ | kg_alone | 25479 | 0.0874 | 0.1662 | 0.2195 | 0.3944 |
+| 100+ | wiki_kg_score_fusion_alpha_0.8 | 25479 | 0.0910 | 0.1713 | 0.2245 | 0.3984 |
+| 0 | delta_fusion_minus_kg | 20 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+--- line 55 ---
+| 21-100 | kg_alone | 5075 | 0.0022 | 0.0065 | 0.0106 | 0.0246 |
+| 21-100 | wiki_kg_score_fusion_alpha_0.8 | 5075 | 0.0022 | 0.0098 | 0.0172 | 0.0424 |
+| 100+ | kg_alone | 25479 | 0.0874 | 0.1662 | 0.2195 | 0.3944 |
+| 100+ | wiki_kg_score_fusion_alpha_0.8 | 25479 | 0.0910 | 0.1713 | 0.2245 | 0.3984 |
+| 0 | delta_fusion_minus_kg | 20 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| 1-5 | delta_fusion_minus_kg | 269 | 0.0000 | 0.0010 | 0.0024 | 0.0074 |
+| 6-20 | delta_fusion_minus_kg | 1246 | 0.0000 | 0.0020 | 0.0040 | 0.0112 |
+--- line 67 ---
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| seen | kg_alone | 20764 | 0.1047 | 0.1952 | 0.2556 | 0.4534 |
+| seen | wiki_kg_score_fusion_alpha_0.8 | 20764 | 0.1086 | 0.1999 | 0.2596 | 0.4542 |
+| unseen | kg_alone | 11325 | 0.0057 | 0.0191 | 0.0303 | 0.0682 |
+| unseen | wiki_kg_score_fusion_alpha_0.8 | 11325 | 0.0066 | 0.0238 | 0.0379 | 0.0852 |
+| seen | delta_fusion_minus_kg | 20764 | 0.0039 | 0.0047 | 0.0039 | 0.0008 |
+--- line 69 ---
+| seen | kg_alone | 20764 | 0.1047 | 0.1952 | 0.2556 | 0.4534 |
+| seen | wiki_kg_score_fusion_alpha_0.8 | 20764 | 0.1086 | 0.1999 | 0.2596 | 0.4542 |
+| unseen | kg_alone | 11325 | 0.0057 | 0.0191 | 0.0303 | 0.0682 |
+| unseen | wiki_kg_score_fusion_alpha_0.8 | 11325 | 0.0066 | 0.0238 | 0.0379 | 0.0852 |
+| seen | delta_fusion_minus_kg | 20764 | 0.0039 | 0.0047 | 0.0039 | 0.0008 |
+| unseen | delta_fusion_minus_kg | 11325 | 0.0009 | 0.0046 | 0.0075 | 0.0170 |
+
+
+===== outputs/paper_checks/error_analysis_plus_bge/error_analysis_plus_bge_summary.md =====
+--- line 15 ---
+| method                         |     n |   Accuracy@1 |    MRR@10 |   NDCG@10 |   Recall@10 |
+|:-------------------------------|------:|-------------:|----------:|----------:|------------:|
+| KG-alone                       | 32089 |    0.0697435 | 0.133072  | 0.176111  |    0.31743  |
+| wiki_kg_score_fusion_alpha_0.8 | 32089 |    0.0725794 | 0.137745  | 0.181313  |    0.323943 |
+| BGE-M3 pure                    | 32089 |    0.0343731 | 0.0685488 | 0.0890462 |    0.155412 |
+| BGE-M3+Markov fusion           | 32089 |    0.077659  | 0.139675  | 0.179024  |    0.307146 |
+| trained ST pure                | 32089 |    0.0526037 | 0.110855  | 0.149258  |    0.275016 |
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.csv =====
+--- line 2 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+--- line 3 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+--- line 4 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+--- line 5 ---
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.md =====
+--- line 9 ---
+
+| Test | Metric | N | Baseline | System | Delta | 95% CI | p_boot | p_t_approx |
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+--- line 10 ---
+| Test | Metric | N | Baseline | System | Delta | 95% CI | p_boot | p_t_approx |
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+--- line 11 ---
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+--- line 12 ---
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+
+===== outputs/wiki_kg_ablation_seed42_test_full/test/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_test_full",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+
+===== outputs/wiki_kg_ablation_seed42_validation_full/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_full",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+
+===== outputs/wiki_kg_ablation_seed42_validation_n1000/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_n1000",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+
+===== outputs/wiki_kg_score_fusion_seed42_test_full_alpha08/test/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_test_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 11 ---
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 11 ---
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_n1000/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_n1000",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 11 ---
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.7,0.8,0.9,0.95",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+
+===== scripts/error_analysis_plus_bge.py =====
+--- line 33 ---
+    s = str(x)
+    return {
+        "kg_alone": "KG-alone",
+        "wiki_kg_fusion": "Wiki+KG fusion",
+        "wiki_kg": "Wiki+KG fusion",
+    }.get(s, s)
+
+--- line 34 ---
+    return {
+        "kg_alone": "KG-alone",
+        "wiki_kg_fusion": "Wiki+KG fusion",
+        "wiki_kg": "Wiki+KG fusion",
+    }.get(s, s)
+
+
+
+===== scripts/jobhop_wiki_kg_ablation.py =====
+--- line 269 ---
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+            raise ValueError(mode)
+--- line 289 ---
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_ablation")
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+--- line 332 ---
+        "transition_stats": transition_stats,
+    }
+
+    for mode in ["wiki_only", "kg_alone", "wiki_kg"]:
+        rows = run_mode(mode, queries, wiki_rankings, raw_rankings, trans, prefix_trans, prior, valid_docids, args)
+        write_jsonl(out / f"{mode}_parsed_results.jsonl", rows)
+        metrics[mode] = eval_ranked(rows, [1, 3, 5, 10, 20, 50, 100])
+
+===== scripts/jobhop_wiki_kg_score_fusion.py =====
+--- line 7 ---
+from collections import defaultdict
+from pathlib import Path
+
+from jobhop_wiki_kg_ablation import (
+    parse_limit, read_jsonl, write_json, write_jsonl,
+    load_raw_corpus, load_entity_pages, page_blob,
+    build_bm25_index, bm25_rank,
+--- line 69 ---
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_score_fusion")
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+--- line 74 ---
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--alphas", default="0.7,0.8,0.9,0.95")
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+--- line 116 ---
+    }
+
+    for alpha in alphas:
+        method = f"wiki_kg_fusion_alpha_{alpha:g}"
+        rankings = [
+            fusion_rank(kg_items_all[i], wiki_items_all[i], raw_items_all[i], alpha, args.candidate_pool_size)
+            for i in range(len(queries))

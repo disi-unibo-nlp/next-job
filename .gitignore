@@ -1,22 +1,31 @@
-# Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
 
-# Local caches
-hf-cache/
-.cache/
+# Large data/model artifacts should be restored externally, not committed.
+handoff/data_full/
+handoff/checkpoints/
+models/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
 
-# Runtime outputs
+# Local experiment scratch and archives.
 outputs/
 logs/
-tmp/
-
-# Local inspection and sync folders
-_llm_wiki_inspect/
-_wiki_sync_tmp/
-modified/
-
-# Archives copied between local and cloud machines
-*.zip
+*.tar
 *.tar.gz
-*.tgz
+*.zip
+
+# OS/editor files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

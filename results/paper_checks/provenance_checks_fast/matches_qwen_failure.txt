@@ -1,0 +1,2890 @@
+
+===== outputs/paper_checks/error_analysis/error_analysis_summary.md =====
+--- line 1 ---
+# Error Analysis: KG-alone vs Wiki+KG Score Fusion
+
+Split: full test
+
+
+===== outputs/paper_checks/error_analysis_plus_bge/error_analysis_plus_bge_summary.md =====
+--- line 1 ---
+# Error Analysis Plus BGE
+
+This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.
+
+--- line 3 ---
+# Error Analysis Plus BGE
+
+This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.
+
+## Inputs
+- error_per_case: `outputs/paper_checks/error_analysis/error_analysis_per_case.csv`
+--- line 6 ---
+This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.
+
+## Inputs
+- error_per_case: `outputs/paper_checks/error_analysis/error_analysis_per_case.csv`
+- bge_ranks: `outputs/paper_checks/bge_m3_original_formal_per_query_full_test/bge_m3_formal_per_query_ranks.csv`
+- trained_st_ranks: `outputs/paper_checks/trained_st_formal_per_query_full_test/trained_st_formal_per_query_ranks.csv`
+
+--- line 7 ---
+
+## Inputs
+- error_per_case: `outputs/paper_checks/error_analysis/error_analysis_per_case.csv`
+- bge_ranks: `outputs/paper_checks/bge_m3_original_formal_per_query_full_test/bge_m3_formal_per_query_ranks.csv`
+- trained_st_ranks: `outputs/paper_checks/trained_st_formal_per_query_full_test/trained_st_formal_per_query_ranks.csv`
+
+## Overall
+--- line 22 ---
+| trained ST+Markov fusion       | 32089 |    0.0863847 | 0.154709  | 0.198201  |    0.339836 |
+
+## Files Written
+- `error_analysis_plus_bge_per_case_long.csv`
+- `error_analysis_plus_bge_by_bucket.csv`
+- `error_analysis_plus_bge_examples.jsonl`
+- `error_analysis_plus_bge_summary.md`
+--- line 23 ---
+
+## Files Written
+- `error_analysis_plus_bge_per_case_long.csv`
+- `error_analysis_plus_bge_by_bucket.csv`
+- `error_analysis_plus_bge_examples.jsonl`
+- `error_analysis_plus_bge_summary.md`
+--- line 24 ---
+## Files Written
+- `error_analysis_plus_bge_per_case_long.csv`
+- `error_analysis_plus_bge_by_bucket.csv`
+- `error_analysis_plus_bge_examples.jsonl`
+- `error_analysis_plus_bge_summary.md`
+--- line 25 ---
+- `error_analysis_plus_bge_per_case_long.csv`
+- `error_analysis_plus_bge_by_bucket.csv`
+- `error_analysis_plus_bge_examples.jsonl`
+- `error_analysis_plus_bge_summary.md`
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.csv =====
+--- line 1 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+--- line 6 ---
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+--- line 7 ---
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+--- line 8 ---
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+--- line 9 ---
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+--- line 10 ---
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+--- line 11 ---
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+--- line 12 ---
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+--- line 13 ---
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.md =====
+--- line 3 ---
+# Significance Tests
+
+Paired bootstrap with 10000 resamples, seed=42. Delta = system - baseline.
+
+For Qwen ablations, per-query metrics are computed from `gold_rank_before_qwen` and `gold_rank_after_qwen`.
+
+--- line 5 ---
+
+Paired bootstrap with 10000 resamples, seed=42. Delta = system - baseline.
+
+For Qwen ablations, per-query metrics are computed from `gold_rank_before_qwen` and `gold_rank_after_qwen`.
+
+| Test | Metric | N | Baseline | System | Delta | 95% CI | p_boot | p_t_approx |
+|---|---|---:|---:|---:|---:|---|---:|---:|
+--- line 7 ---
+
+For Qwen ablations, per-query metrics are computed from `gold_rank_before_qwen` and `gold_rank_after_qwen`.
+
+| Test | Metric | N | Baseline | System | Delta | 95% CI | p_boot | p_t_approx |
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+--- line 13 ---
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+--- line 14 ---
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+--- line 15 ---
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+--- line 16 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+--- line 17 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+--- line 18 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+--- line 19 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+--- line 20 ---
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/metrics.json =====
+--- line 5 ---
+  "n_cases": 2000,
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 0,
+  "avg_selected_pages": 0.0,
+  "avg_search_terms": 4.0,
+--- line 6 ---
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 0,
+  "avg_selected_pages": 0.0,
+  "avg_search_terms": 4.0,
+  "avg_candidate_ids": 100.0,
+--- line 14 ---
+  "gold_in_selected_pages_rate": 0.0,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+--- line 18 ---
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.928934010152282,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 1367.5024976730347,
+--- line 19 ---
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.928934010152282,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 1367.5024976730347,
+  "seconds_per_case": 0.6837512488365174,
+--- line 23 ---
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 1367.5024976730347,
+  "seconds_per_case": 0.6837512488365174,
+  "retrieval_without_final_qwen": {
+    "n_cases": 2000,
+    "Accuracy@1": 0.071,
+    "Recall@1": 0.071,
+--- line 125 ---
+    "MAP@50": 0.11555204308751163,
+    "MRR": 0.10240654761904736
+  },
+  "pipeline": "no_qwen_routing_top100_direct_selection"
+}
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean",
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/metrics.json =====
+--- line 5 ---
+  "n_cases": 2000,
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 109,
+  "avg_selected_pages": 0.0,
+  "avg_search_terms": 4.0,
+--- line 6 ---
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 109,
+  "avg_selected_pages": 0.0,
+  "avg_search_terms": 4.0,
+  "avg_candidate_ids": 100.0,
+--- line 14 ---
+  "gold_in_selected_pages_rate": 0.0,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+--- line 18 ---
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.872371283538797,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 1943.795140504837,
+--- line 19 ---
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.872371283538797,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 1943.795140504837,
+  "seconds_per_case": 0.9718975702524185,
+--- line 23 ---
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 1943.795140504837,
+  "seconds_per_case": 0.9718975702524185,
+  "retrieval_without_final_qwen": {
+    "n_cases": 2000,
+    "Accuracy@1": 0.071,
+    "Recall@1": 0.071,
+--- line 125 ---
+    "MAP@50": 0.1174843304929329,
+    "MRR": 0.10451765873015843
+  },
+  "pipeline": "no_qwen_routing_top100_direct_selection"
+}
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128",
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/metrics.json =====
+--- line 5 ---
+  "n_cases": 2000,
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 1929,
+  "ranking_failures": 365,
+  "avg_selected_pages": 0.4405,
+  "avg_search_terms": 3.9995,
+--- line 6 ---
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 1929,
+  "ranking_failures": 365,
+  "avg_selected_pages": 0.4405,
+  "avg_search_terms": 3.9995,
+  "avg_candidate_ids": 100.0,
+--- line 14 ---
+  "gold_in_selected_pages_rate": 0.0005,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.322,
+  "gold_in_raw_fallback_rate": 0.3215,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+--- line 18 ---
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.76577229876722,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 4090.848784685135,
+--- line 19 ---
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.76577229876722,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 4090.848784685135,
+  "seconds_per_case": 2.0454243923425675,
+--- line 23 ---
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 4090.848784685135,
+  "seconds_per_case": 2.0454243923425675,
+  "retrieval_without_final_qwen": {
+    "n_cases": 2000,
+    "Accuracy@1": 0.071,
+    "Recall@1": 0.071,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128",
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 15,
+--- line 12 ---
+  "route_selected_pages": 15,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 256,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/metrics.json =====
+--- line 5 ---
+  "n_cases": 2000,
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 265,
+  "avg_selected_pages": 4.9475,
+  "avg_search_terms": 3.9895,
+--- line 6 ---
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 265,
+  "avg_selected_pages": 4.9475,
+  "avg_search_terms": 3.9895,
+  "avg_candidate_ids": 100.0,
+--- line 14 ---
+  "gold_in_selected_pages_rate": 0.0395,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.3195,
+  "gold_in_raw_fallback_rate": 0.315,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+--- line 18 ---
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.809282088469907,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 2340.395634174347,
+--- line 19 ---
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.809282088469907,
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 2340.395634174347,
+  "seconds_per_case": 1.1701978170871734,
+--- line 23 ---
+  "oracle_accuracy@1": 0.6895,
+  "elapsed_seconds": 2340.395634174347,
+  "seconds_per_case": 1.1701978170871734,
+  "retrieval_without_final_qwen": {
+    "n_cases": 2000,
+    "Accuracy@1": 0.071,
+    "Recall@1": 0.071,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean",
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 80,
+  "route_selected_pages": 5,
+--- line 12 ---
+  "route_selected_pages": 5,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 128,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/metrics.json =====
+--- line 5 ---
+  "n_cases": 200,
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 28,
+  "avg_selected_pages": 4.945,
+  "avg_search_terms": 3.985,
+--- line 6 ---
+  "n_pages": 2982,
+  "seed": 42,
+  "route_failures": 0,
+  "ranking_failures": 28,
+  "avg_selected_pages": 4.945,
+  "avg_search_terms": 3.985,
+  "avg_candidate_ids": 100.0,
+--- line 14 ---
+  "gold_in_selected_pages_rate": 0.035,
+  "gold_in_transition_kg_rate": 0.705,
+  "gold_in_grep_pages_rate": 0.29,
+  "gold_in_raw_fallback_rate": 0.275,
+  "gold_in_final_candidate_ids_rate": 0.705,
+  "candidate_recall@50": 0.58,
+  "candidate_recall@100": 0.705,
+--- line 18 ---
+  "gold_in_final_candidate_ids_rate": 0.705,
+  "candidate_recall@50": 0.58,
+  "candidate_recall@100": 0.705,
+  "mean_gold_rank_before_qwen": 26.49645390070922,
+  "mean_gold_rank_after_qwen": 26.156028368794328,
+  "oracle_accuracy@1": 0.705,
+  "elapsed_seconds": 255.3673186302185,
+--- line 19 ---
+  "candidate_recall@50": 0.58,
+  "candidate_recall@100": 0.705,
+  "mean_gold_rank_before_qwen": 26.49645390070922,
+  "mean_gold_rank_after_qwen": 26.156028368794328,
+  "oracle_accuracy@1": 0.705,
+  "elapsed_seconds": 255.3673186302185,
+  "seconds_per_case": 1.2768365931510925,
+--- line 23 ---
+  "oracle_accuracy@1": 0.705,
+  "elapsed_seconds": 255.3673186302185,
+  "seconds_per_case": 1.2768365931510925,
+  "retrieval_without_final_qwen": {
+    "n_cases": 200,
+    "Accuracy@1": 0.045,
+    "Recall@1": 0.045,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean",
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 80,
+  "route_selected_pages": 5,
+--- line 12 ---
+  "route_selected_pages": 5,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 128,
+
+===== outputs/qwen_wiki_query_smoke_20pages_5q/validation/metrics.json =====
+--- line 4 ---
+{
+  "n_cases": 5,
+  "n_pages": 20,
+  "n_failures": 0,
+  "avg_selected_pages": 2.6,
+  "avg_selected_ids": 2.4,
+  "gold_in_selected_pages_rate": 0.0,
+
+===== outputs/qwen_wiki_query_smoke_20pages_5q/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_smoke_20",
+  "split": "validation",
+  "max_eval_cases": "5",
+  "output_dir": "outputs/qwen_wiki_query_smoke_20pages_5q",
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_smoke_20",
+  "split": "validation",
+  "max_eval_cases": "5",
+  "output_dir": "outputs/qwen_wiki_query_smoke_20pages_5q",
+  "route_k": 10,
+  "return_k": 10,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+--- line 10 ---
+  "route_k": 10,
+  "return_k": 10,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "route_max_tokens": 256,
+  "answer_max_tokens": 256,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_t256/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_t256",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 5,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "500",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_direct_select_seed42_validation_n5_c16/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "5",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n5_c16",
+--- line 12 ---
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 23 ---
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+--- line 28 ---
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+  "llm_model": "Qwen/Qwen3.5-9B",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "route_max_tokens": 384,
+
+===== outputs/wiki_kg_ablation_seed42_test_full/test/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_test_full",
+
+===== outputs/wiki_kg_ablation_seed42_validation_full/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_full",
+
+===== outputs/wiki_kg_ablation_seed42_validation_n1000/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_n1000",
+
+===== outputs/wiki_kg_score_fusion_seed42_test_full_alpha08/test/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_test_full_alpha08",
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08",
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_n1000/validation/run_config.json =====
+--- line 3 ---
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_n1000",
+
+===== scripts/check_handoff_training_data.py =====
+--- line 27 ---
+    summary_path = data_dir / "export_summary.json"
+
+    if not train_path.exists():
+        raise FileNotFoundError(f"Missing training file: {train_path}")
+
+    rows = count_jsonl(train_path)
+    summary_rows = None
+--- line 37 ---
+
+    allow_smoke = os.environ.get(args.allow_smoke_env) == "1"
+    if rows < args.min_train_rows and not allow_smoke:
+        raise RuntimeError(
+            f"{train_path} has only {rows} rows"
+            f"{'' if summary_rows is None else f' (export_summary train_rows={summary_rows})'}. "
+            "This looks like smoke data. Export full data to handoff/data_full first, "
+
+===== scripts/create_named_wiki_pages.py =====
+--- line 15 ---
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--out-name", default="wiki_pages_named")
+    args = ap.parse_args()
+
+--- line 25 ---
+    entity_path = wiki_dir / "entity_pages.jsonl"
+
+    if not entity_path.exists():
+        raise FileNotFoundError(entity_path)
+    if not src_dir.exists():
+        raise FileNotFoundError(src_dir)
+
+--- line 27 ---
+    if not entity_path.exists():
+        raise FileNotFoundError(entity_path)
+    if not src_dir.exists():
+        raise FileNotFoundError(src_dir)
+
+    dst_dir.mkdir(parents=True, exist_ok=True)
+
+
+===== scripts/dense_eval.py =====
+--- line 15 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    evaluate_score_matrix_at_k,
+    failure_payload,
+    gpu_info,
+    load_jobhop_eval_data,
+    markov_score_matrix,
+--- line 42 ---
+        "passage_prefix": "",
+        "batch_size": 32,
+    },
+    "Qwen/Qwen3-Embedding-8B": {
+        "query_prefix": "Instruct: Given a career history, retrieve the most plausible next ESCO occupation.\nQuery: ",
+        "passage_prefix": "",
+        "batch_size": 4,
+--- line 79 ---
+def load_sentence_transformer_model(model_name, device):
+    try:
+        return SentenceTransformer(model_name, device=device, trust_remote_code=True)
+    except TypeError:
+        return SentenceTransformer(model_name, device=device, model_kwargs={"trust_remote_code": True})
+
+
+--- line 149 ---
+    }
+    try:
+        evaluator = InformationRetrievalEvaluator(**evaluator_kwargs)
+    except TypeError:
+        queries, corpus, relevant_docs = make_ir_inputs(
+            cases,
+            apply_prefixes(query_texts, query_prefix),
+--- line 235 ---
+            data["test_cases"],
+        )
+
+        stage = "markov_baseline"
+        transition_probs, global_probs, code_to_index = train_markov_dense(
+            data["trajectories"]["train"],
+            data["candidate_codes"],
+--- line 352 ---
+        cleanup_cuda()
+        return 0
+
+    except Exception as exc:
+        payload = failure_payload(exc, stage, started_at)
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+--- line 353 ---
+        return 0
+
+    except Exception as exc:
+        payload = failure_payload(exc, stage, started_at)
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+        write_json(run_dir / "failure.json", payload)
+--- line 356 ---
+        payload = failure_payload(exc, stage, started_at)
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+        write_json(run_dir / "failure.json", payload)
+        write_csv(run_dir / "failures.csv", [payload])
+        runtime.update(payload)
+        write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
+--- line 357 ---
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+        write_json(run_dir / "failure.json", payload)
+        write_csv(run_dir / "failures.csv", [payload])
+        runtime.update(payload)
+        write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
+        cleanup_cuda()
+
+===== scripts/error_analysis_plus_bge.py =====
+--- line 15 ---
+        return None
+    try:
+        return int(float(v))
+    except Exception:
+        return None
+
+
+--- line 78 ---
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--error-per-case", default="outputs/paper_checks/error_analysis/error_analysis_per_case.csv")
+    ap.add_argument("--bge-ranks", default="outputs/paper_checks/bge_m3_original_formal_per_query_full_test/bge_m3_formal_per_query_ranks.csv")
+    ap.add_argument("--trained-st-ranks", default="outputs/paper_checks/trained_st_formal_per_query_full_test/trained_st_formal_per_query_ranks.csv")
+    ap.add_argument("--output-dir", default="outputs/paper_checks/error_analysis_plus_bge")
+--- line 79 ---
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--error-per-case", default="outputs/paper_checks/error_analysis/error_analysis_per_case.csv")
+    ap.add_argument("--bge-ranks", default="outputs/paper_checks/bge_m3_original_formal_per_query_full_test/bge_m3_formal_per_query_ranks.csv")
+    ap.add_argument("--trained-st-ranks", default="outputs/paper_checks/trained_st_formal_per_query_full_test/trained_st_formal_per_query_ranks.csv")
+    ap.add_argument("--output-dir", default="outputs/paper_checks/error_analysis_plus_bge")
+    args = ap.parse_args()
+--- line 81 ---
+    ap.add_argument("--error-per-case", default="outputs/paper_checks/error_analysis/error_analysis_per_case.csv")
+    ap.add_argument("--bge-ranks", default="outputs/paper_checks/bge_m3_original_formal_per_query_full_test/bge_m3_formal_per_query_ranks.csv")
+    ap.add_argument("--trained-st-ranks", default="outputs/paper_checks/trained_st_formal_per_query_full_test/trained_st_formal_per_query_ranks.csv")
+    ap.add_argument("--output-dir", default="outputs/paper_checks/error_analysis_plus_bge")
+    args = ap.parse_args()
+
+    out = Path(args.output_dir)
+--- line 87 ---
+    out = Path(args.output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    ea = pd.read_csv(args.error_per_case)
+    ea["method"] = ea["method"].map(method_label)
+
+    # One row per test case for buckets/features.
+--- line 125 ---
+        ])
+
+    long_df = pd.concat(all_parts, ignore_index=True)
+    long_df.to_csv(out / "error_analysis_plus_bge_per_case_long.csv", index=False)
+
+    rows = []
+
+--- line 148 ---
+        rows.append(part)
+
+    by_bucket = pd.concat(rows, ignore_index=True)
+    by_bucket.to_csv(out / "error_analysis_plus_bge_by_bucket.csv", index=False)
+
+    examples = []
+    tmp = long_df.pivot_table(
+--- line 177 ---
+                    "bge_fusion_rank": clean_rank(r.get("BGE-M3+Markov fusion")),
+                })
+
+    with (out / "error_analysis_plus_bge_examples.jsonl").open("w", encoding="utf-8") as fh:
+        for row in examples:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+--- line 182 ---
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+    md = []
+    md.append("# Error Analysis Plus BGE")
+    md.append("")
+    md.append("This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.")
+    md.append("")
+--- line 184 ---
+    md = []
+    md.append("# Error Analysis Plus BGE")
+    md.append("")
+    md.append("This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.")
+    md.append("")
+    md.append("## Inputs")
+    md.append(f"- error_per_case: `{args.error_per_case}`")
+--- line 187 ---
+    md.append("This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.")
+    md.append("")
+    md.append("## Inputs")
+    md.append(f"- error_per_case: `{args.error_per_case}`")
+    md.append(f"- bge_ranks: `{args.bge_ranks}`")
+    md.append(f"- trained_st_ranks: `{args.trained_st_ranks}`" if has_st else f"- trained_st_ranks missing: `{args.trained_st_ranks}`")
+    md.append("")
+--- line 199 ---
+    md.append(overall_view.to_markdown(index=False))
+    md.append("")
+    md.append("## Files Written")
+    md.append("- `error_analysis_plus_bge_per_case_long.csv`")
+    md.append("- `error_analysis_plus_bge_by_bucket.csv`")
+    md.append("- `error_analysis_plus_bge_examples.jsonl`")
+    md.append("- `error_analysis_plus_bge_summary.md`")
+--- line 200 ---
+    md.append("")
+    md.append("## Files Written")
+    md.append("- `error_analysis_plus_bge_per_case_long.csv`")
+    md.append("- `error_analysis_plus_bge_by_bucket.csv`")
+    md.append("- `error_analysis_plus_bge_examples.jsonl`")
+    md.append("- `error_analysis_plus_bge_summary.md`")
+
+--- line 201 ---
+    md.append("## Files Written")
+    md.append("- `error_analysis_plus_bge_per_case_long.csv`")
+    md.append("- `error_analysis_plus_bge_by_bucket.csv`")
+    md.append("- `error_analysis_plus_bge_examples.jsonl`")
+    md.append("- `error_analysis_plus_bge_summary.md`")
+
+    (out / "error_analysis_plus_bge_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+--- line 202 ---
+    md.append("- `error_analysis_plus_bge_per_case_long.csv`")
+    md.append("- `error_analysis_plus_bge_by_bucket.csv`")
+    md.append("- `error_analysis_plus_bge_examples.jsonl`")
+    md.append("- `error_analysis_plus_bge_summary.md`")
+
+    (out / "error_analysis_plus_bge_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+--- line 204 ---
+    md.append("- `error_analysis_plus_bge_examples.jsonl`")
+    md.append("- `error_analysis_plus_bge_summary.md`")
+
+    (out / "error_analysis_plus_bge_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+    print("WROTE:")
+    print(out / "error_analysis_plus_bge_per_case_long.csv")
+--- line 207 ---
+    (out / "error_analysis_plus_bge_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+    print("WROTE:")
+    print(out / "error_analysis_plus_bge_per_case_long.csv")
+    print(out / "error_analysis_plus_bge_by_bucket.csv")
+    print(out / "error_analysis_plus_bge_examples.jsonl")
+    print(out / "error_analysis_plus_bge_summary.md")
+--- line 208 ---
+
+    print("WROTE:")
+    print(out / "error_analysis_plus_bge_per_case_long.csv")
+    print(out / "error_analysis_plus_bge_by_bucket.csv")
+    print(out / "error_analysis_plus_bge_examples.jsonl")
+    print(out / "error_analysis_plus_bge_summary.md")
+    print()
+--- line 209 ---
+    print("WROTE:")
+    print(out / "error_analysis_plus_bge_per_case_long.csv")
+    print(out / "error_analysis_plus_bge_by_bucket.csv")
+    print(out / "error_analysis_plus_bge_examples.jsonl")
+    print(out / "error_analysis_plus_bge_summary.md")
+    print()
+    print((out / "error_analysis_plus_bge_summary.md").read_text(encoding="utf-8"))
+--- line 210 ---
+    print(out / "error_analysis_plus_bge_per_case_long.csv")
+    print(out / "error_analysis_plus_bge_by_bucket.csv")
+    print(out / "error_analysis_plus_bge_examples.jsonl")
+    print(out / "error_analysis_plus_bge_summary.md")
+    print()
+    print((out / "error_analysis_plus_bge_summary.md").read_text(encoding="utf-8"))
+
+... 1 more hits omitted
+
+===== scripts/export_bge_m3_formal_per_query.py =====
+--- line 97 ---
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model-name", default="models/BAAI_bge-m3")
+    ap.add_argument("--cache-dir", default="/hf-cache")
+    ap.add_argument("--output-dir", default="outputs/paper_checks/bge_m3_original_formal_per_query_full_test")
+    ap.add_argument("--batch-size", type=int, default=32)
+    ap.add_argument("--random-seed", type=int, default=7)
+    ap.add_argument("--retrieve-k", type=int, default=10)
+--- line 249 ---
+            "test": "bge_m3_formal_fusion_vs_pure_test",
+            "metric": metric,
+            "n": len(delta),
+            "baseline": float(pure_vec[metric].mean()),
+            "system": float(fusion_vec[metric].mean()),
+            "delta": obs,
+            "ci95_low": lo,
+--- line 272 ---
+    ]
+    for r in sig_rows:
+        md.append(
+            f"| {r['metric']} | {r['n']} | {r['baseline']:.6f} | {r['system']:.6f} | "
+            f"{r['delta']:.6f} | [{r['ci95_low']:.6f}, {r['ci95_high']:.6f}] | {r['p_boot']:.6g} |"
+        )
+    (out / "bge_m3_formal_significance_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+===== scripts/export_bge_m3_per_query_test.py =====
+--- line 49 ---
+        return (1.0 / np.log2(rank + 1)) if hit else 0.0
+    if metric == "MAP":
+        return (1.0 / rank) if hit else 0.0
+    raise ValueError(metric)
+
+def summarize_ranks(ranks, metric_ks):
+    n = len(ranks)
+
+===== scripts/export_bge_m3_per_query_test_datafull.py =====
+--- line 76 ---
+
+
+def row_minmax(x):
+    mn = x.min(axis=1, keepdims=True)
+    mx = x.max(axis=1, keepdims=True)
+    denom = np.where((mx - mn) > 1e-12, mx - mn, 1.0)
+    return ((x - mn) / denom).astype("float32")
+--- line 77 ---
+
+def row_minmax(x):
+    mn = x.min(axis=1, keepdims=True)
+    mx = x.max(axis=1, keepdims=True)
+    denom = np.where((mx - mn) > 1e-12, mx - mn, 1.0)
+    return ((x - mn) / denom).astype("float32")
+
+--- line 83 ---
+
+
+def row_maxnorm(x):
+    mx = x.max(axis=1, keepdims=True)
+    denom = np.where(mx > 1e-12, mx, 1.0)
+    return (x / denom).astype("float32")
+
+--- line 159 ---
+def load_model(model_name):
+    try:
+        return SentenceTransformer(model_name, device="cuda", trust_remote_code=True)
+    except TypeError:
+        return SentenceTransformer(model_name, device="cuda", model_kwargs={"trust_remote_code": True})
+
+
+--- line 230 ---
+    args = ap.parse_args()
+
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA is not available. Run this on the 3090 machine/container.")
+
+    started = time.time()
+    data_dir = Path(args.data_dir)
+--- line 254 ---
+    for row in eval_rows:
+        pos = row.get("positive_docids") or []
+        if not pos:
+            raise ValueError(f"missing positive_docids for qid={row.get('qid')}")
+        targets.append(str(pos[0]))
+
+    target_indices = np.array([code_to_index[t] for t in targets], dtype=np.int64)
+
+===== scripts/export_jobhop_training_data.py =====
+--- line 11 ---
+    candidate_text,
+    configure_hf_cache,
+    configure_reproducibility,
+    failure_payload,
+    load_jobhop_eval_data,
+    make_last_step_cases,
+    now_utc,
+--- line 138 ---
+    existing = [path for path in targets if path.exists()]
+    if existing and not overwrite:
+        names = ", ".join(str(path) for path in existing)
+        raise FileExistsError(f"Refusing to overwrite existing export files: {names}. Pass --overwrite.")
+
+
+def main():
+--- line 236 ---
+        write_json_and_key_value_csv(output_dir / "export_summary.json", output_dir / "export_summary.csv", summary)
+        print(json.dumps(summary, indent=2), flush=True)
+
+    except Exception as exc:
+        failure = failure_payload(exc, stage, started_at)
+        write_json(output_dir / "export_failure.json", failure)
+        raise
+--- line 237 ---
+        print(json.dumps(summary, indent=2), flush=True)
+
+    except Exception as exc:
+        failure = failure_payload(exc, stage, started_at)
+        write_json(output_dir / "export_failure.json", failure)
+        raise
+
+--- line 238 ---
+
+    except Exception as exc:
+        failure = failure_payload(exc, stage, started_at)
+        write_json(output_dir / "export_failure.json", failure)
+        raise
+
+
+
+===== scripts/export_trained_st_formal_per_query_and_sig.py =====
+--- line 104 ---
+    return rows
+
+
+def write_sig(out, name, baseline_rows, system_rows, baseline_label, system_label):
+    b = metric_vectors_from_rank_rows(baseline_rows)
+    s = metric_vectors_from_rank_rows(system_rows)
+
+--- line 105 ---
+
+
+def write_sig(out, name, baseline_rows, system_rows, baseline_label, system_label):
+    b = metric_vectors_from_rank_rows(baseline_rows)
+    s = metric_vectors_from_rank_rows(system_rows)
+
+    sig_rows = []
+--- line 117 ---
+            "test": name,
+            "metric": metric,
+            "n": len(delta),
+            "baseline_label": baseline_label,
+            "system_label": system_label,
+            "baseline": float(b[metric].mean()),
+            "system": float(s[metric].mean()),
+--- line 119 ---
+            "n": len(delta),
+            "baseline_label": baseline_label,
+            "system_label": system_label,
+            "baseline": float(b[metric].mean()),
+            "system": float(s[metric].mean()),
+            "delta": obs,
+            "ci95_low": lo,
+--- line 133 ---
+    write_csv(out / f"{name}_per_query_deltas.csv", delta_rows)
+
+    md = [
+        f"# {system_label} vs {baseline_label}",
+        "",
+        "Paired bootstrap with 10000 resamples, seed=42. Delta = system - baseline.",
+        "",
+--- line 135 ---
+    md = [
+        f"# {system_label} vs {baseline_label}",
+        "",
+        "Paired bootstrap with 10000 resamples, seed=42. Delta = system - baseline.",
+        "",
+        "| Metric | N | Baseline | System | Delta | 95% CI | p_boot |",
+        "|---|---:|---:|---:|---:|---|---:|",
+--- line 137 ---
+        "",
+        "Paired bootstrap with 10000 resamples, seed=42. Delta = system - baseline.",
+        "",
+        "| Metric | N | Baseline | System | Delta | 95% CI | p_boot |",
+        "|---|---:|---:|---:|---:|---|---:|",
+    ]
+    for r in sig_rows:
+--- line 142 ---
+    ]
+    for r in sig_rows:
+        md.append(
+            f"| {r['metric']} | {r['n']} | {r['baseline']:.6f} | {r['system']:.6f} | "
+            f"{r['delta']:.6f} | [{r['ci95_low']:.6f}, {r['ci95_high']:.6f}] | {r['p_boot']:.6g} |"
+        )
+    (out / f"{name}_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+--- line 154 ---
+    ap.add_argument("--model-name", default="/workspace/handoff/checkpoints/sentence_transformer/final")
+    ap.add_argument("--cache-dir", default="/hf-cache")
+    ap.add_argument("--output-dir", default="outputs/paper_checks/trained_st_formal_per_query_full_test")
+    ap.add_argument("--bge-formal-ranks", default="outputs/paper_checks/bge_m3_original_formal_per_query_full_test/bge_m3_formal_per_query_ranks.csv")
+    ap.add_argument("--batch-size", type=int, default=64)
+    ap.add_argument("--random-seed", type=int, default=7)
+    ap.add_argument("--retrieve-k", type=int, default=10)
+--- line 308 ---
+        print(f"trained ST fusion vs BGE-M3 fusion significance using {bge_path}", flush=True)
+        bge_rows = read_bge_formal_rows(bge_path)
+        if len(bge_rows) != len(fusion_rows):
+            raise RuntimeError(f"BGE rows {len(bge_rows)} != trained ST rows {len(fusion_rows)}")
+        write_sig(
+            out,
+            "trained_st_fusion_vs_bge_m3_fusion_formal_test",
+
+===== scripts/filter_counts_formal.py =====
+--- line 33 ---
+            return int(obj)
+        if isinstance(obj, (np.floating,)):
+            return float(obj)
+    except Exception:
+        pass
+    return str(obj)
+
+
+===== scripts/jobhop_eval_common.py =====
+--- line 42 ---
+        return None
+    parsed = int(text)
+    if parsed < 0:
+        raise ValueError("Expected a non-negative integer or 'none'.")
+    return parsed
+
+
+--- line 55 ---
+        values = [int(item.strip()) for item in str(value).split(",") if item.strip()]
+    values = sorted(set(k for k in values if k > 0))
+    if not values:
+        raise ValueError("Expected at least one positive K value.")
+    return values
+
+
+--- line 162 ---
+    for name in packages:
+        try:
+            versions[name] = importlib.metadata.version(name)
+        except importlib.metadata.PackageNotFoundError:
+            versions[name] = None
+    return versions
+
+--- line 174 ---
+        "Added argparse for model name, max evaluation cases with 'none' support, random seed, batch size, retrieve-k, output directory, and cache directory.",
+        "Runs one model per process/job instead of iterating over multiple models inside one notebook.",
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+--- line 175 ---
+        "Runs one model per process/job instead of iterating over multiple models inside one notebook.",
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+        "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+--- line 176 ---
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+        "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+        "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+--- line 177 ---
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+        "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+        "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+        "Adds multi-K information retrieval metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K.",
+--- line 183 ---
+        "Adds multi-K information retrieval metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K.",
+    ]
+    dense = [
+        "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
+        "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
+--- line 184 ---
+    ]
+    dense = [
+        "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
+        "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
+    ]
+--- line 185 ---
+    dense = [
+        "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
+        "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
+    ]
+    lateon = [
+--- line 189 ---
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
+    ]
+    lateon = [
+        "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "LateOn script keeps PyLate ColBERT encoding, PLAID indexing, and ColBERT retrieval.",
+        "LateOn script uses --retrieve-k for both LateOn retrieval depth and Markov candidate depth, matching the notebook's shared default of 200.",
+        "LateOn script keeps per-case union of LateOn and Markov candidates with per-row min-max normalization before hybrid ranking.",
+--- line 190 ---
+    ]
+    lateon = [
+        "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "LateOn script keeps PyLate ColBERT encoding, PLAID indexing, and ColBERT retrieval.",
+        "LateOn script uses --retrieve-k for both LateOn retrieval depth and Markov candidate depth, matching the notebook's shared default of 200.",
+        "LateOn script keeps per-case union of LateOn and Markov candidates with per-row min-max normalization before hybrid ranking.",
+    ]
+--- line 192 ---
+        "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "LateOn script keeps PyLate ColBERT encoding, PLAID indexing, and ColBERT retrieval.",
+        "LateOn script uses --retrieve-k for both LateOn retrieval depth and Markov candidate depth, matching the notebook's shared default of 200.",
+        "LateOn script keeps per-case union of LateOn and Markov candidates with per-row min-max normalization before hybrid ranking.",
+    ]
+    specific = dense if script_name == "dense" else lateon
+    return {"shared_changes": shared, "script_specific_changes": specific}
+--- line 223 ---
+
+def require_cuda():
+    if not torch.cuda.is_available():
+        raise RuntimeError(
+            "CUDA is not available inside this job. Refusing to run on CPU. "
+            f"torch_version={getattr(torch, '__version__', 'unknown')}; "
+            f"torch_cuda_version={torch.version.cuda}; "
+--- line 231 ---
+        )
+    device_count = torch.cuda.device_count()
+    if device_count < 1:
+        raise RuntimeError("CUDA reports available but no CUDA devices are visible.")
+    torch.cuda.init()
+    return "cuda"
+
+--- line 260 ---
+        path = stack.pop()
+        try:
+            entries = hf_tree(path)
+        except Exception:
+            continue
+        for item in entries:
+            item_path = item.get("path") or item.get("name")
+--- line 280 ---
+def load_split(split, split_files):
+    paths = split_files.get(split, [])
+    if not paths:
+        raise RuntimeError(f"No parquet files found for split={split}.")
+    frames = []
+    for path in tqdm(paths, desc=f"loading {split}"):
+        frames.append(pd.read_parquet(hf_resolve_url(path)))
+--- line 295 ---
+        if "resume_id" in df.columns:
+            df["person_id"] = df["resume_id"]
+        else:
+            raise KeyError(f"No person/resume identifier column found. Columns: {df.columns.tolist()}")
+
+    if "university_studies" not in df.columns:
+        if "university_level" in df.columns:
+--- line 344 ---
+        try:
+            frames.append(pd.read_parquet(url))
+            print("Loaded danieldux parquet:", url, flush=True)
+        except Exception as exc:
+            print("Could not read danieldux parquet:", url, exc, flush=True)
+
+    if not frames:
+--- line 623 ---
+def row_minmax(x):
+    if x.size == 0:
+        return x.astype("float32")
+    mn = x.min(axis=1, keepdims=True)
+    mx = x.max(axis=1, keepdims=True)
+    denom = np.maximum(mx - mn, 1e-8)
+    return ((x - mn) / denom).astype("float32")
+... 7 more hits omitted
+
+===== scripts/jobhop_llm_wiki_rerank.py =====
+--- line 20 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    evaluate_ranked_lists_at_k,
+    failure_payload,
+    gpu_info,
+    label_for_code,
+    load_jobhop_eval_data,
+--- line 62 ---
+    parser.add_argument("--query-prefix", default=None)
+    parser.add_argument("--passage-prefix", default=None)
+    parser.add_argument("--llm-base-url", default="http://localhost:8000/v1")
+    parser.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    parser.add_argument("--llm-api-key", default="EMPTY")
+    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--max-tokens", type=int, default=1024)
+--- line 86 ---
+
+
+def reset_jsonl_outputs(run_dir):
+    for name in ["requests.jsonl", "responses.jsonl", "parsed_results.jsonl", "failures.jsonl"]:
+        path = Path(run_dir) / name
+        if path.exists():
+            path.unlink()
+--- line 98 ---
+
+def resolve_device(device, require_cuda):
+    if require_cuda and not torch.cuda.is_available():
+        raise RuntimeError("CUDA is required for this run, but torch.cuda.is_available() is False.")
+    if device == "auto":
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    if device == "cuda" and not torch.cuda.is_available():
+--- line 102 ---
+    if device == "auto":
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    if device == "cuda" and not torch.cuda.is_available():
+        raise RuntimeError("Requested --device cuda, but torch.cuda.is_available() is False.")
+    return device
+
+
+--- line 179 ---
+{chr(10).join(candidates)}
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+
+--- line 195 ---
+    cleaned = strip_code_fences(text)
+    try:
+        payload = json.loads(cleaned)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", cleaned, flags=re.DOTALL)
+        if not match:
+            raise
+--- line 205 ---
+    else:
+        ids = payload.get("selected_ids") or payload.get("ids") or payload.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("LLM response did not contain a list of selected ids.")
+    return [str(item).strip() for item in ids if str(item).strip()]
+
+
+--- line 340 ---
+
+        if args.rerank_from_candidates:
+            if not args.candidate_cache:
+                raise ValueError("--rerank-from-candidates requires --candidate-cache.")
+            stage = "candidate_cache_loading"
+            _, cases, base_ranked_lists = load_candidate_cache(args.candidate_cache)
+        else:
+--- line 358 ---
+
+        if args.save_candidates_only:
+            if not args.candidate_cache:
+                raise ValueError("--save-candidates-only requires --candidate-cache.")
+            runtime.update(
+                {
+                    "status": "success",
+--- line 378 ---
+        stage = "llm_reranking"
+        reranked_lists = []
+        parsed_rows = []
+        failure_rows = []
+        for i, (case, ranked) in enumerate(tqdm(list(zip(cases, base_ranked_lists)), desc="llm rerank cases")):
+            user_prompt = build_user_prompt(
+                data["metadata_lookup"], case, ranked, args.return_k, args.candidate_description_chars
+--- line 428 ---
+                append_jsonl(run_dir / "responses.jsonl", response_row)
+                append_jsonl(run_dir / "parsed_results.jsonl", parsed_row)
+                parsed_rows.append(parsed_row)
+            except Exception as exc:
+                reranked_lists.append(ranked)
+                failure = {
+                    "case_index": i,
+--- line 430 ---
+                parsed_rows.append(parsed_row)
+            except Exception as exc:
+                reranked_lists.append(ranked)
+                failure = {
+                    "case_index": i,
+                    "target": case["target"],
+                    "error_type": type(exc).__name__,
+--- line 433 ---
+                failure = {
+                    "case_index": i,
+                    "target": case["target"],
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+                append_jsonl(run_dir / "failures.jsonl", failure)
+--- line 434 ---
+                    "case_index": i,
+                    "target": case["target"],
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+                append_jsonl(run_dir / "failures.jsonl", failure)
+                failure_rows.append(failure)
+--- line 436 ---
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+                append_jsonl(run_dir / "failures.jsonl", failure)
+                failure_rows.append(failure)
+
+        stage = "metrics"
+--- line 437 ---
+                    "error": str(exc),
+                }
+                append_jsonl(run_dir / "failures.jsonl", failure)
+                failure_rows.append(failure)
+
+        stage = "metrics"
+        llm_metrics = evaluate_ranked_lists_at_k(cases, reranked_lists, metric_ks)
+--- line 445 ---
+            "base_retriever": base_metrics,
+            "llm_reranked": llm_metrics,
+            "n_cases": len(cases),
+            "n_llm_failures": len(failure_rows),
+            "avg_valid_ids": float(np.mean([row.get("n_valid", 0) for row in parsed_rows])) if parsed_rows else 0.0,
+            "fusion_mode": args.fusion_mode,
+            "rank_bonus": args.rank_bonus,
+--- line 458 ---
+        write_csv(run_dir / "metrics.csv", metric_rows)
+        write_json(run_dir / "parsed_results.json", parsed_rows)
+        write_csv(run_dir / "parsed_results.csv", parsed_rows)
+        write_csv(run_dir / "failures.csv", failure_rows)
+
+        if not args.dry_run and len(cases) > 0 and len(failure_rows) == len(cases):
+            raise RuntimeError(
+--- line 460 ---
+        write_csv(run_dir / "parsed_results.csv", parsed_rows)
+        write_csv(run_dir / "failures.csv", failure_rows)
+
+        if not args.dry_run and len(cases) > 0 and len(failure_rows) == len(cases):
+            raise RuntimeError(
+                "All LLM reranking calls failed. Check the LLM endpoint and failures.jsonl; "
+                "metrics were written with retriever fallback only."
+... 7 more hits omitted
+
+===== scripts/jobhop_qwen_make_entity_pages.py =====
+--- line 24 ---
+    m = re.search(r"Description:\s*(.*)$", text, flags=re.S)
+    return m.group(1).strip() if m else text
+
+def call_qwen(row, args):
+    docid = str(row["docid"])
+    text = str(row["text"])
+    title = parse_title(text)
+--- line 50 ---
+Rules:
+- Do not invent another ESCO id.
+- Use only information supported by the source occupation.
+- Keep each field concise.
+"""
+
+    payload = {
+--- line 72 ---
+        timeout=args.timeout,
+    )
+    if r.status_code >= 400:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:1200]}")
+    content = r.json()["choices"][0]["message"]["content"]
+    obj = json.loads(content)
+    return docid, obj, content
+--- line 96 ---
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data-dir", default="handoff/data_full")
+    ap.add_argument("--output-dir", default="outputs/qwen_entity_wiki")
+    ap.add_argument("--max-pages", default="20")
+    ap.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    ap.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+--- line 99 ---
+    ap.add_argument("--output-dir", default="outputs/qwen_entity_wiki")
+    ap.add_argument("--max-pages", default="20")
+    ap.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    ap.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    ap.add_argument("--max-tokens", type=int, default=384)
+    ap.add_argument("--temperature", type=float, default=0.0)
+    ap.add_argument("--concurrency", type=int, default=4)
+--- line 115 ---
+    print(f"loaded corpus pages: {len(rows)}", flush=True)
+
+    entity_path = out / "entity_pages.jsonl"
+    failure_path = out / "failures.jsonl"
+    index_lines = ["# JobHop Qwen Entity Wiki", ""]
+
+    successes, failures = [], []
+--- line 116 ---
+
+    entity_path = out / "entity_pages.jsonl"
+    failure_path = out / "failures.jsonl"
+    index_lines = ["# JobHop Qwen Entity Wiki", ""]
+
+    successes, failures = [], []
+    t0 = time.time()
+--- line 118 ---
+    failure_path = out / "failures.jsonl"
+    index_lines = ["# JobHop Qwen Entity Wiki", ""]
+
+    successes, failures = [], []
+    t0 = time.time()
+
+    with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
+--- line 122 ---
+    t0 = time.time()
+
+    with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
+        futs = {ex.submit(call_qwen, row, args): row for row in rows}
+        for n, fut in enumerate(as_completed(futs), start=1):
+            row = futs[fut]
+            docid = str(row["docid"])
+--- line 131 ---
+                (pages_dir / f"{docid}.md").write_text(page_markdown(obj), encoding="utf-8")
+                successes.append(obj)
+                index_lines.append(f"- {docid}: {obj.get('title', '')} | {obj.get('summary', '')}")
+            except Exception as e:
+                failures.append({"docid": docid, "error_type": type(e).__name__, "error": str(e)})
+            if n % 10 == 0 or n == len(rows):
+                print(f"processed {n}/{len(rows)}", flush=True)
+--- line 132 ---
+                successes.append(obj)
+                index_lines.append(f"- {docid}: {obj.get('title', '')} | {obj.get('summary', '')}")
+            except Exception as e:
+                failures.append({"docid": docid, "error_type": type(e).__name__, "error": str(e)})
+            if n % 10 == 0 or n == len(rows):
+                print(f"processed {n}/{len(rows)}", flush=True)
+
+--- line 140 ---
+        for obj in successes:
+            f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
+    with open(failure_path, "w", encoding="utf-8") as f:
+        for obj in failures:
+            f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
+--- line 141 ---
+            f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
+    with open(failure_path, "w", encoding="utf-8") as f:
+        for obj in failures:
+            f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
+    (out / "wiki_index.md").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+--- line 148 ---
+    metrics = {
+        "n_input_pages": len(rows),
+        "n_entity_pages": len(successes),
+        "n_failures": len(failures),
+        "elapsed_seconds": time.time() - t0,
+        "seconds_per_page": (time.time() - t0) / max(len(rows), 1),
+    }
+
+===== scripts/jobhop_qwen_wiki_direct_select.py =====
+--- line 163 ---
+        timeout=args.timeout,
+    )
+    if r.status_code >= 400:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:1200]}")
+    return r.json()["choices"][0]["message"]["content"]
+
+
+--- line 173 ---
+    text = re.sub(r"\s*```\s*$", "", text)
+    try:
+        return json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.S)
+        if not m:
+            raise
+--- line 335 ---
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+
+def raw_fallback_retrieve(case, search_terms, inv, idf, lens, avgdl, top_k):
+    query = case.get("query", "") + " " + " ".join(search_terms)
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+--- line 345 ---
+    sources = {}
+    for source, ids in [
+        ("train_transition_kg", transition_ids),
+        ("qwen_selected_pages", selected_ids),
+        ("wiki_grep", grep_ids),
+        ("raw_corpus_fallback", raw_ids),
+    ]:
+--- line 347 ---
+        ("train_transition_kg", transition_ids),
+        ("qwen_selected_pages", selected_ids),
+        ("wiki_grep", grep_ids),
+        ("raw_corpus_fallback", raw_ids),
+    ]:
+        for docid in ids:
+            if docid not in sources:
+--- line 408 ---
+- Do NOT explain candidates.
+- Do NOT output occupations outside the candidate list.
+- Prefer plausible next occupations, not occupations already in the career history.
+- If uncertain, preserve the original candidate order.
+"""
+    raw = call_chat(
+        prompt,
+--- line 421 ---
+    return ranked, invalid, raw
+
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+--- line 423 ---
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+--- line 425 ---
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+--- line 429 ---
+    scored = []
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+        qwen_score = bonus * (1.0 / qpos[docid]) if docid in qpos else 0.0
+        scored.append((docid, retrieval_score + qwen_score))
+    return [docid for docid, _ in sorted(scored, key=lambda x: x[1], reverse=True)]
+
+--- line 430 ---
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+        qwen_score = bonus * (1.0 / qpos[docid]) if docid in qpos else 0.0
+        scored.append((docid, retrieval_score + qwen_score))
+    return [docid for docid, _ in sorted(scored, key=lambda x: x[1], reverse=True)]
+
+
+--- line 464 ---
+    target = case.get("positive_docids") or ([case["target_docid"]] if case.get("target_docid") is not None else [])
+    target = [str(x) for x in target]
+
+    route_failed = False
+    ranking_failed = False
+    route_raw = "ROUTING_DISABLED_FOR_DIRECT_SELECT"
+    answer_raw = ""
+--- line 465 ---
+    target = [str(x) for x in target]
+
+    route_failed = False
+    ranking_failed = False
+    route_raw = "ROUTING_DISABLED_FOR_DIRECT_SELECT"
+    answer_raw = ""
+    route_invalid = []
+--- line 476 ---
+
+    transition_ids = transition_retrieve(case, trans, prefix_trans, target_prior, set(pages), args)
+    grep_ids = grep_retrieve(case, search_terms, pages, wiki_inv, wiki_idf, wiki_lens, wiki_avgdl, args.grep_top_k)
+    raw_ids = raw_fallback_retrieve(case, search_terms, raw_inv, raw_idf, raw_lens, raw_avgdl, args.raw_fallback_top_k)
+    candidate_ids, sources = merge_candidates(selected_ids, transition_ids, grep_ids, raw_ids, args.candidate_pool_size)
+
+    gold_in_selected = False
+--- line 487 ---
+    rank_before = first_gold_rank(target, candidate_ids)
+
+    try:
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        seen = set(qwen_ranked_ids)
+        ranked_ids = qwen_ranked_ids + [x for x in candidate_ids if x not in seen]
+    except Exception as e:
+--- line 488 ---
+
+    try:
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        seen = set(qwen_ranked_ids)
+        ranked_ids = qwen_ranked_ids + [x for x in candidate_ids if x not in seen]
+    except Exception as e:
+        ranking_failed = True
+--- line 489 ---
+    try:
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        seen = set(qwen_ranked_ids)
+        ranked_ids = qwen_ranked_ids + [x for x in candidate_ids if x not in seen]
+    except Exception as e:
+        ranking_failed = True
+        qwen_ranked_ids = []
+--- line 490 ---
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        seen = set(qwen_ranked_ids)
+        ranked_ids = qwen_ranked_ids + [x for x in candidate_ids if x not in seen]
+    except Exception as e:
+        ranking_failed = True
+        qwen_ranked_ids = []
+        ranked_ids = candidate_ids
+--- line 491 ---
+        seen = set(qwen_ranked_ids)
+        ranked_ids = qwen_ranked_ids + [x for x in candidate_ids if x not in seen]
+    except Exception as e:
+        ranking_failed = True
+        qwen_ranked_ids = []
+        ranked_ids = candidate_ids
+        answer_raw = f"DIRECT_SELECT_ERROR: {type(e).__name__}: {e}"
+--- line 492 ---
+        ranked_ids = qwen_ranked_ids + [x for x in candidate_ids if x not in seen]
+    except Exception as e:
+        ranking_failed = True
+        qwen_ranked_ids = []
+        ranked_ids = candidate_ids
+        answer_raw = f"DIRECT_SELECT_ERROR: {type(e).__name__}: {e}"
+
+... 30 more hits omitted
+
+===== scripts/jobhop_qwen_wiki_query_eval.py =====
+--- line 163 ---
+        timeout=args.timeout,
+    )
+    if r.status_code >= 400:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:1200]}")
+    return r.json()["choices"][0]["message"]["content"]
+
+
+--- line 173 ---
+    text = re.sub(r"\s*```\s*$", "", text)
+    try:
+        return json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.S)
+        if not m:
+            raise
+--- line 335 ---
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+
+def raw_fallback_retrieve(case, search_terms, inv, idf, lens, avgdl, top_k):
+    query = case.get("query", "") + " " + " ".join(search_terms)
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+--- line 345 ---
+    sources = {}
+    for source, ids in [
+        ("train_transition_kg", transition_ids),
+        ("qwen_selected_pages", selected_ids),
+        ("wiki_grep", grep_ids),
+        ("raw_corpus_fallback", raw_ids),
+    ]:
+--- line 347 ---
+        ("train_transition_kg", transition_ids),
+        ("qwen_selected_pages", selected_ids),
+        ("wiki_grep", grep_ids),
+        ("raw_corpus_fallback", raw_ids),
+    ]:
+        for docid in ids:
+            if docid not in sources:
+--- line 411 ---
+- ESCO ids look like "2432.9" or "1221.3.2"; do not output row numbers like "1", "2", "47".
+- Return up to {args.final_rank_k} ids.
+- Prefer plausible next occupations, not occupations already in the career history.
+- If uncertain, preserve the candidate order.
+"""
+    raw = call_chat(
+        prompt,
+--- line 425 ---
+
+
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+--- line 427 ---
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+--- line 429 ---
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+--- line 433 ---
+    scored = []
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+        qwen_score = bonus * (1.0 / qpos[docid]) if docid in qpos else 0.0
+        scored.append((docid, retrieval_score + qwen_score))
+    return [docid for docid, _ in sorted(scored, key=lambda x: x[1], reverse=True)]
+
+--- line 434 ---
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+        qwen_score = bonus * (1.0 / qpos[docid]) if docid in qpos else 0.0
+        scored.append((docid, retrieval_score + qwen_score))
+    return [docid for docid, _ in sorted(scored, key=lambda x: x[1], reverse=True)]
+
+
+--- line 468 ---
+    target = case.get("positive_docids") or ([case["target_docid"]] if case.get("target_docid") is not None else [])
+    target = [str(x) for x in target]
+
+    route_failed = False
+    ranking_failed = False
+    route_raw = ""
+    answer_raw = ""
+--- line 469 ---
+    target = [str(x) for x in target]
+
+    route_failed = False
+    ranking_failed = False
+    route_raw = ""
+    answer_raw = ""
+    route_invalid = []
+--- line 479 ---
+
+    try:
+        selected_ids, search_terms, route_invalid, route_raw = route_query(case, pages, route_index_ids, args)
+    except Exception as e:
+        route_failed = True
+        selected_ids = []
+        search_terms = tokenize(case.get("query", ""))[:args.max_search_terms]
+--- line 480 ---
+    try:
+        selected_ids, search_terms, route_invalid, route_raw = route_query(case, pages, route_index_ids, args)
+    except Exception as e:
+        route_failed = True
+        selected_ids = []
+        search_terms = tokenize(case.get("query", ""))[:args.max_search_terms]
+        route_raw = f"ROUTE_ERROR: {type(e).__name__}: {e}"
+--- line 483 ---
+        route_failed = True
+        selected_ids = []
+        search_terms = tokenize(case.get("query", ""))[:args.max_search_terms]
+        route_raw = f"ROUTE_ERROR: {type(e).__name__}: {e}"
+
+    transition_ids = transition_retrieve(case, trans, prefix_trans, target_prior, set(pages), args)
+    grep_ids = grep_retrieve(case, search_terms, pages, wiki_inv, wiki_idf, wiki_lens, wiki_avgdl, args.grep_top_k)
+--- line 487 ---
+
+    transition_ids = transition_retrieve(case, trans, prefix_trans, target_prior, set(pages), args)
+    grep_ids = grep_retrieve(case, search_terms, pages, wiki_inv, wiki_idf, wiki_lens, wiki_avgdl, args.grep_top_k)
+    raw_ids = raw_fallback_retrieve(case, search_terms, raw_inv, raw_idf, raw_lens, raw_avgdl, args.raw_fallback_top_k)
+    candidate_ids, sources = merge_candidates(selected_ids, transition_ids, grep_ids, raw_ids, args.candidate_pool_size)
+
+    gold_in_selected = bool(set(target) & set(selected_ids))
+--- line 498 ---
+    rank_before = first_gold_rank(target, candidate_ids)
+
+    try:
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        ranked_ids = fuse_ranked_ids(candidate_ids, qwen_ranked_ids, args.final_fusion_mode, args.qwen_rank_bonus)
+    except Exception as e:
+        ranking_failed = True
+--- line 499 ---
+
+    try:
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        ranked_ids = fuse_ranked_ids(candidate_ids, qwen_ranked_ids, args.final_fusion_mode, args.qwen_rank_bonus)
+    except Exception as e:
+        ranking_failed = True
+        qwen_ranked_ids = []
+--- line 500 ---
+    try:
+        qwen_ranked_ids, rank_invalid, answer_raw = final_rank(case, candidate_ids, sources, pages, raw_corpus, args)
+        ranked_ids = fuse_ranked_ids(candidate_ids, qwen_ranked_ids, args.final_fusion_mode, args.qwen_rank_bonus)
+    except Exception as e:
+        ranking_failed = True
+        qwen_ranked_ids = []
+        ranked_ids = candidate_ids
+... 31 more hits omitted
+
+===== scripts/jobhop_strict_llm_wiki_eval.py =====
+--- line 37 ---
+    p.add_argument("--return-k", type=int, default=20)
+    p.add_argument("--page-desc-chars", type=int, default=140)
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    p.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    p.add_argument("--max-tokens", type=int, default=512)
+    p.add_argument("--temperature", type=float, default=0.0)
+    p.add_argument("--concurrency", type=int, default=8)
+--- line 174 ---
+Task:
+Select exactly {return_k} ESCO occupation page ids that are the most plausible next occupations.
+Use only ids from the wiki pages above.
+Preserve descending relevance order.
+If uncertain, prefer pages that best match the career trajectory, not merely the last title.
+
+Return exactly this JSON schema:
+--- line 187 ---
+    text = re.sub(r"\s*```$", "", text)
+    try:
+        obj = json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.S)
+        if not m:
+            raise
+--- line 194 ---
+        obj = json.loads(m.group(0))
+    ids = obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+
+
+--- line 275 ---
+        ids = parse_selected_ids(content)
+        valid_ids, invalid_ids = unique_valid(ids, candidate_ids)
+
+        # Fill missing slots with original wiki preselection order, but record avg_valid_ids.
+        filled = list(valid_ids)
+        for cid in candidate_ids:
+            if len(filled) >= args.return_k:
+--- line 308 ---
+            "ranked": ranked,
+            "valid_count": len(valid_ids),
+        }
+    except Exception as e:
+        fallback = [(cid, float(args.return_k - j)) for j, cid in enumerate(candidate_ids[:args.return_k])]
+        return {
+            "ok": False,
+--- line 309 ---
+            "valid_count": len(valid_ids),
+        }
+    except Exception as e:
+        fallback = [(cid, float(args.return_k - j)) for j, cid in enumerate(candidate_ids[:args.return_k])]
+        return {
+            "ok": False,
+            "request": request_row,
+--- line 313 ---
+        return {
+            "ok": False,
+            "request": request_row,
+            "failure": {
+                "case_index": i,
+                "qid": row.get("qid"),
+                "target": target,
+--- line 317 ---
+                "case_index": i,
+                "qid": row.get("qid"),
+                "target": target,
+                "error_type": type(e).__name__,
+                "error": str(e),
+                "gold_in_page_candidates": target in candidate_ids,
+            },
+--- line 318 ---
+                "qid": row.get("qid"),
+                "target": target,
+                "error_type": type(e).__name__,
+                "error": str(e),
+                "gold_in_page_candidates": target in candidate_ids,
+            },
+            "ranked": fallback,
+--- line 321 ---
+                "error": str(e),
+                "gold_in_page_candidates": target in candidate_ids,
+            },
+            "ranked": fallback,
+            "valid_count": 0,
+        }
+
+--- line 351 ---
+    config = vars(args).copy()
+    config.update({
+        "method": "strict_llm_wiki_jobhop",
+        "protocol": "data_full corpus as ESCO wiki pages; Qwen selects relevant wiki pages directly; no trained retriever candidates.",
+        "n_pages": len(pages),
+        "n_cases": len(query_rows),
+    })
+--- line 367 ---
+    requests_rows = [r["request"] for r in results]
+    responses_rows = [r["response"] for r in results if r.get("ok")]
+    parsed_rows = [r["parsed"] for r in results if r.get("ok")]
+    failure_rows = [r["failure"] for r in results if not r.get("ok")]
+    ranked_lists = [r["ranked"] for r in results]
+
+    append_jsonl(out_dir / "requests.jsonl", requests_rows)
+--- line 373 ---
+    append_jsonl(out_dir / "requests.jsonl", requests_rows)
+    append_jsonl(out_dir / "responses.jsonl", responses_rows)
+    append_jsonl(out_dir / "parsed_results.jsonl", parsed_rows)
+    append_jsonl(out_dir / "failures.jsonl", failure_rows)
+
+    ks = [1, 3, 5, 10, 20]
+    wiki_metrics = evaluate_ranked(query_rows, ranked_lists, ks)
+--- line 387 ---
+        "llm_base_url": args.llm_base_url,
+        "n_pages": len(pages),
+        "n_cases": len(query_rows),
+        "n_llm_failures": len(failure_rows),
+        "avg_valid_ids": sum(r["valid_count"] for r in results) / max(1, len(results)),
+        "gold_in_page_candidates_rate": sum(1 for r in requests_rows if r["gold_in_page_candidates"]) / max(1, len(requests_rows)),
+        "page_candidate_k": args.page_candidate_k,
+
+===== scripts/jobhop_transition_wiki_eval.py =====
+--- line 337 ---
+    text = re.sub(r"\s*```\s*$", "", text)
+    try:
+        obj = json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.S)
+        if not m:
+            raise
+--- line 345 ---
+
+    ids = obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+
+
+--- line 456 ---
+        response = {"case_index": i, "qid": case.get("qid"), "response": raw}
+        return base_row, parsed, response, None
+
+    except Exception as e:
+        parsed = {
+            "case_index": i,
+            "qid": case.get("qid"),
+--- line 469 ---
+            "target_in_selected": False,
+            "target_in_ranked": gold_in_candidates,
+        }
+        failure = {"case_index": i, "qid": case.get("qid"), "error_type": type(e).__name__, "error": str(e)}
+        return base_row, parsed, None, failure
+
+
+--- line 470 ---
+            "target_in_ranked": gold_in_candidates,
+        }
+        failure = {"case_index": i, "qid": case.get("qid"), "error_type": type(e).__name__, "error": str(e)}
+        return base_row, parsed, None, failure
+
+
+def parse_args():
+--- line 503 ---
+    p.add_argument("--prior-weight", type=float, default=0.08)
+
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    p.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    p.add_argument("--max-tokens", type=int, default=512)
+    p.add_argument("--temperature", type=float, default=0.0)
+    p.add_argument("--concurrency", type=int, default=4)
+--- line 552 ---
+    base_rows = []
+    parsed_rows = []
+    response_rows = []
+    failure_rows = []
+
+    with ThreadPoolExecutor(max_workers=args.concurrency if not args.diagnose_only else 1) as ex:
+        futs = [
+--- line 560 ---
+            for i, case in enumerate(queries)
+        ]
+        for n, fut in enumerate(as_completed(futs), start=1):
+            base, parsed, response, failure = fut.result()
+            base_rows.append(base)
+            if parsed is not None:
+                parsed_rows.append(parsed)
+--- line 566 ---
+                parsed_rows.append(parsed)
+            if response is not None:
+                response_rows.append(response)
+            if failure is not None:
+                failure_rows.append(failure)
+            if n % 100 == 0 or n == len(futs):
+                print(f"processed {n}/{len(futs)}", flush=True)
+--- line 567 ---
+            if response is not None:
+                response_rows.append(response)
+            if failure is not None:
+                failure_rows.append(failure)
+            if n % 100 == 0 or n == len(futs):
+                print(f"processed {n}/{len(futs)}", flush=True)
+
+--- line 574 ---
+    base_rows.sort(key=lambda x: x["case_index"])
+    parsed_rows.sort(key=lambda x: x["case_index"])
+    response_rows.sort(key=lambda x: x["case_index"])
+    failure_rows.sort(key=lambda x: x["case_index"])
+
+    ks = [int(x) for x in args.diagnose_ks.split(",") if x.strip()]
+    eval_ks = [1, 3, 5, 10, 20, 50]
+--- line 583 ---
+
+    metrics = {
+        "n_cases": len(base_rows),
+        "n_llm_failures": len(failure_rows),
+        "avg_valid_ids": None if args.diagnose_only else (
+            sum(len(x["selected_ids"]) for x in parsed_rows) / max(len(parsed_rows), 1)
+        ),
+--- line 591 ---
+        "elapsed_seconds": time.time() - t0,
+    }
+    metrics["seconds_per_case"] = metrics["elapsed_seconds"] / max(len(base_rows), 1)
+    metrics["page_selector_baseline"] = eval_ranked(base_rows, eval_ks)
+
+    if not args.diagnose_only:
+        metrics["llm_wiki"] = eval_ranked(parsed_rows, eval_ks)
+--- line 610 ---
+    write_jsonl(out_dir / "candidate_cache.jsonl", base_rows)
+    write_jsonl(out_dir / "parsed_results.jsonl", parsed_rows)
+    write_jsonl(out_dir / "responses.jsonl", response_rows)
+    write_jsonl(out_dir / "failures.jsonl", failure_rows)
+    write_json(out_dir / "metrics.json", metrics)
+    write_json(out_dir / "runtime.json", {"elapsed_seconds": metrics["elapsed_seconds"]})
+
+
+===== scripts/jobhop_wiki_kg_ablation.py =====
+--- line 272 ---
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+            raise ValueError(mode)
+
+        rows.append({
+            "case_index": i,
+--- line 286 ---
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data-dir", default="handoff/data_full")
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_ablation")
+
+===== scripts/jobhop_wiki_kg_score_fusion.py =====
+--- line 24 ---
+        return {docid: 1.0 for docid, _ in items}
+    return {docid: (score - lo) / (hi - lo) for docid, score in items}
+
+def fill_with_fallback(ranked, fallback_items, top_k):
+    seen = set(ranked)
+    out = list(ranked)
+    for docid, _ in fallback_items:
+--- line 27 ---
+def fill_with_fallback(ranked, fallback_items, top_k):
+    seen = set(ranked)
+    out = list(ranked)
+    for docid, _ in fallback_items:
+        if docid not in seen:
+            out.append(docid)
+            seen.add(docid)
+--- line 46 ---
+        scored.append((docid, score))
+
+    ranked = [docid for docid, _ in sorted(scored, key=lambda x: x[1], reverse=True)]
+    return fill_with_fallback(ranked, raw_items, top_k)
+
+def make_rows(method, queries, rankings, args):
+    rows = []
+--- line 66 ---
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data-dir", default="handoff/data_full")
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_score_fusion")
+
+===== scripts/lateon_eval.py =====
+--- line 15 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    evaluate_ranked_lists_at_k,
+    failure_payload,
+    gpu_info,
+    load_jobhop_eval_data,
+    model_slug,
+--- line 184 ---
+            data["test_cases"],
+        )
+
+        stage = "markov_baseline"
+        transition_probs, global_rank = train_markov_ranked(data["trajectories"]["train"])
+
+        stage = "lateon_import"
+--- line 281 ---
+        cleanup_cuda()
+        return 0
+
+    except Exception as exc:
+        payload = failure_payload(exc, stage, started_at)
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+--- line 282 ---
+        return 0
+
+    except Exception as exc:
+        payload = failure_payload(exc, stage, started_at)
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+        write_json(run_dir / "failure.json", payload)
+--- line 285 ---
+        payload = failure_payload(exc, stage, started_at)
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+        write_json(run_dir / "failure.json", payload)
+        write_csv(run_dir / "failures.csv", [payload])
+        runtime.update(payload)
+        write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
+--- line 286 ---
+        payload["elapsed_seconds"] = time.monotonic() - started_monotonic
+        payload["run_config"] = run_config
+        write_json(run_dir / "failure.json", payload)
+        write_csv(run_dir / "failures.csv", [payload])
+        runtime.update(payload)
+        write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
+        cleanup_cuda()
+
+===== scripts/vllm_datafull_late_interaction_parallel.py =====
+--- line 64 ---
+{chr(10).join(lines)}
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+
+--- line 74 ---
+    text = re.sub(r"\s*```$", "", text)
+    try:
+        obj = json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.S)
+        if not m:
+            raise
+--- line 81 ---
+        obj = json.loads(m.group(0))
+    ids = obj if isinstance(obj, list) else obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+
+def call_llm(args, prompt):
+--- line 153 ---
+    p.add_argument("--max-tokens", type=int, default=128)
+    p.add_argument("--concurrency", type=int, default=80)
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    p.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    p.add_argument("--timeout", type=int, default=180)
+    p.add_argument("--output-dir", default="outputs/llm_wiki_rerank_datafull_late_parallel")
+    args = p.parse_args()
+--- line 203 ---
+            f.write(json.dumps({"case_index": i, "case": case, "target": case["target"],
+                                "ranked_candidates": [{"code": c, "score": s} for c, s in ranked]}, ensure_ascii=False) + "\n")
+
+    failures, parsed, responses = [], [], [None] * len(cases)
+    reranked = [None] * len(cases)
+
+    def one(i):
+--- line 227 ---
+                reranked[i] = rr
+                responses[i] = {"case_index": i, "target": cases[i]["target"], "raw_content": content, "raw_response": raw_response}
+                parsed.append({"case_index": i, "target": cases[i]["target"], "valid_selected_ids": valid, "n_valid": len(valid)})
+            except Exception as e:
+                failures.append({"error_type": type(e).__name__, "error": str(e)})
+
+    for i, rr in enumerate(reranked):
+--- line 228 ---
+                responses[i] = {"case_index": i, "target": cases[i]["target"], "raw_content": content, "raw_response": raw_response}
+                parsed.append({"case_index": i, "target": cases[i]["target"], "valid_selected_ids": valid, "n_valid": len(valid)})
+            except Exception as e:
+                failures.append({"error_type": type(e).__name__, "error": str(e)})
+
+    for i, rr in enumerate(reranked):
+        if rr is None:
+--- line 234 ---
+        if rr is None:
+            reranked[i] = base_ranked[i]
+
+    for name, rows in [("responses.jsonl", responses), ("parsed_results.jsonl", parsed), ("failures.jsonl", failures)]:
+        with (run_dir / name).open("w", encoding="utf-8") as f:
+            for r in rows:
+                if r:
+--- line 245 ---
+        "base_retriever": metrics(cases, base_ranked, ks),
+        "llm_reranked": metrics(cases, reranked, ks),
+        "n_cases": len(cases),
+        "n_llm_failures": len(failures),
+        "avg_valid_ids": sum(x["n_valid"] for x in parsed) / max(len(parsed), 1),
+        "data_dir": args.data_dir,
+        "retriever_model": args.retriever_model,
+
+===== scripts/vllm_datafull_rerank_parallel.py =====
+--- line 90 ---
+The retriever ranking is a strong prior.
+Do not aggressively reorder candidates.
+Only move a candidate upward if it is clearly a better next occupation than candidates above it.
+If uncertain, preserve the original retriever order.
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+--- line 93 ---
+If uncertain, preserve the original retriever order.
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+
+--- line 104 ---
+    text = re.sub(r"\s*```$", "", text)
+    try:
+        obj = json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.S)
+        if not m:
+            raise
+--- line 111 ---
+        obj = json.loads(m.group(0))
+    ids = obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+
+
+--- line 193 ---
+    p.add_argument("--concurrency", type=int, default=4)
+    p.add_argument("--rank-bonus", type=float, default=1.0)
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    p.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    p.add_argument("--output-dir", default="outputs/llm_wiki_rerank_datafull_parallel")
+    p.add_argument("--cache-dir", default="/hf-cache")
+    p.add_argument("--query-prefix", default="")
+--- line 222 ---
+    run_dir = Path(args.output_dir) / slug(args.retriever_model) / args.split
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    for name in ["responses.jsonl", "failures.jsonl", "parsed_results.jsonl"]:
+        path = run_dir / name
+        if path.exists():
+            path.unlink()
+--- line 245 ---
+
+    reranked_lists = list(ranked_lists)
+    parsed_rows = []
+    failure_rows = []
+    response_rows = []
+
+    print(f"[datafull-parallel] llm rerank cases with concurrency={args.concurrency}", flush=True)
+--- line 256 ---
+        ]
+        for fut in tqdm(as_completed(futures), total=len(futures), desc="llm rerank cases"):
+            try:
+                i, reranked, parsed, response, failure = fut.result()
+                reranked_lists[i] = reranked
+                parsed_rows.append(parsed)
+                response_rows.append(response)
+--- line 260 ---
+                reranked_lists[i] = reranked
+                parsed_rows.append(parsed)
+                response_rows.append(response)
+            except Exception as e:
+                failure_rows.append({"error_type": type(e).__name__, "error": str(e)})
+
+    with (run_dir / "responses.jsonl").open("w", encoding="utf-8") as f:
+--- line 261 ---
+                parsed_rows.append(parsed)
+                response_rows.append(response)
+            except Exception as e:
+                failure_rows.append({"error_type": type(e).__name__, "error": str(e)})
+
+    with (run_dir / "responses.jsonl").open("w", encoding="utf-8") as f:
+        for row in response_rows:
+--- line 269 ---
+    with (run_dir / "parsed_results.jsonl").open("w", encoding="utf-8") as f:
+        for row in parsed_rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    with (run_dir / "failures.jsonl").open("w", encoding="utf-8") as f:
+        for row in failure_rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+--- line 270 ---
+        for row in parsed_rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    with (run_dir / "failures.jsonl").open("w", encoding="utf-8") as f:
+        for row in failure_rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+    llm_metrics = metric_at_k(cases, reranked_lists, [1, 3, 5, 10, 20, 50, 100])
+--- line 277 ---
+    elapsed = time.time() - t0
+    summary = {
+        "n_cases": len(cases),
+        "n_llm_failures": len(failure_rows),
+        "avg_valid_ids": float(np.mean([x["n_valid"] for x in parsed_rows])) if parsed_rows else 0.0,
+        "base_retriever": base_metrics,
+        "llm_reranked": llm_metrics,
+--- line 285 ---
+        "elapsed_seconds": elapsed,
+        "seconds_per_case": elapsed / len(cases) if cases else None,
+    }
+    status = "success" if len(failure_rows) < len(cases) else "failed"
+    (run_dir / "metrics.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    (run_dir / "runtime.json").write_text(json.dumps({"status": status, "stage": "finalization", "elapsed_seconds": elapsed}, indent=2), encoding="utf-8")
+    print(json.dumps(summary, indent=2), flush=True)

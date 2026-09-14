@@ -1,4 +1,0 @@
-split,rows,resumes,unknown_code_rows,missing_start_date,missing_end_date,trajectories_len_ge_2
-train,1594827,284251,110573,58312,136497,256593
-validation,199587,35531,13622,7329,17041,32123
-test,198877,35533,13587,7085,16829,32089

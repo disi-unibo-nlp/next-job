@@ -1,5 +1,0 @@
-key,value
-selected_alpha_markov,0.25
-selected_alpha_embedding,0.75
-validation_MRR,0.1571330362609201
-selection_rule,maximum validation MRR only; first sweep alpha wins ties

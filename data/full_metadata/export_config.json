@@ -1,0 +1,11 @@
+{
+  "cache_dir": "/hf-cache",
+  "max_eval_cases": null,
+  "max_train_samples": null,
+  "negative_strategy": "random",
+  "num_negatives": 8,
+  "output_dir": "handoff/data_full",
+  "random_seed": 7,
+  "script": "scripts/export_jobhop_training_data.py",
+  "train_example_mode": "last-step"
+}

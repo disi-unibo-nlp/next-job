@@ -1,0 +1,3256 @@
+
+===== outputs/paper_checks/filter_counts/filter_counts_by_split.csv =====
+--- line 1 ---
+split,raw_rows,raw_persons,unknown_code_rows,valid_code_rows_after_unknown_invalid_removed,dropped_rows_unknown_or_invalid,persons_with_at_least_one_valid_code,persons_len_ge_2_before_collapse,events_after_consecutive_duplicate_collapse,persons_after_consecutive_duplicate_collapse,persons_len_ge_2_after_collapse,dropped_persons_by_len_after_collapse,train_trajectories_used_for_markov,train_candidate_vocab_size,final_train_trajectories,eval_cases_after_len_filter,eval_cases_target_in_train_vocab,dropped_eval_cases_target_not_in_train_vocab,final_eval_cases
+train,1594827,284251,110573,1484254,110573,281982,263697,1312111,281982,256593,25389,256593.0,2982.0,256593.0,,,,
+validation,199587,35531,13622,185965,13622,35262,32976,164396,35262,32123,3139,,,,32123.0,32123.0,0.0,32123.0
+test,198877,35533,13587,185290,13587,35249,32988,163796,35249,32089,3160,,,,32089.0,32089.0,0.0,32089.0
+
+===== outputs/paper_checks/filter_counts/filter_counts_stages.csv =====
+--- line 8 ---
+train,persons_len_ge_2_before_collapse,263697,Persons with at least two valid events before duplicate collapse.
+train,persons_after_collapse,281982,Persons remaining after consecutive duplicate collapse.
+train,persons_len_ge_2_after_collapse,256593,Persons with at least two events after duplicate collapse.
+train,train_trajectories_used_for_markov,256593,Final train trajectories used for candidate vocabulary and Markov transitions.
+train,train_candidate_vocab_size,2982,Unique ESCO candidate codes from retained train trajectories.
+validation,raw_rows,199587,Rows loaded after schema standardization.
+validation,valid_code_rows,185965,Rows retained after removing Unknown/invalid ESCO codes.
+--- line 9 ---
+train,persons_after_collapse,281982,Persons remaining after consecutive duplicate collapse.
+train,persons_len_ge_2_after_collapse,256593,Persons with at least two events after duplicate collapse.
+train,train_trajectories_used_for_markov,256593,Final train trajectories used for candidate vocabulary and Markov transitions.
+train,train_candidate_vocab_size,2982,Unique ESCO candidate codes from retained train trajectories.
+validation,raw_rows,199587,Rows loaded after schema standardization.
+validation,valid_code_rows,185965,Rows retained after removing Unknown/invalid ESCO codes.
+validation,persons_with_valid_code,35262,Persons with at least one valid occupation code.
+--- line 17 ---
+validation,persons_after_collapse,35262,Persons remaining after consecutive duplicate collapse.
+validation,persons_len_ge_2_after_collapse,32123,Persons with at least two events after duplicate collapse.
+validation,eval_cases_after_len_filter,32123,Last-step eval cases after len>=2 trajectory filter.
+validation,eval_cases_target_in_train_vocab,32123,Eval cases retained because target is in train candidate vocabulary.
+validation,final_eval_cases,32123,Final evaluation cases.
+test,raw_rows,198877,Rows loaded after schema standardization.
+test,valid_code_rows,185290,Rows retained after removing Unknown/invalid ESCO codes.
+--- line 26 ---
+test,persons_after_collapse,35249,Persons remaining after consecutive duplicate collapse.
+test,persons_len_ge_2_after_collapse,32089,Persons with at least two events after duplicate collapse.
+test,eval_cases_after_len_filter,32089,Last-step eval cases after len>=2 trajectory filter.
+test,eval_cases_target_in_train_vocab,32089,Eval cases retained because target is in train candidate vocabulary.
+test,final_eval_cases,32089,Final evaluation cases.
+
+===== outputs/paper_checks/filter_counts/filter_counts_summary.md =====
+--- line 15 ---
+- valid-code rows retained: `1484254`
+- len>=2 trajectories after consecutive duplicate collapse: `256593`
+- final train trajectories: `256593`
+- train candidate vocabulary size: `2982`
+
+### validation
+
+--- line 46 ---
+- train retained trajectories: `256593`
+- validation eval cases: `32123`
+- test eval cases: `32089`
+- train candidate vocabulary size: `2982`
+
+## CSV Columns
+
+--- line 50 ---
+
+## CSV Columns
+
+`split`, `raw_rows`, `raw_persons`, `unknown_code_rows`, `valid_code_rows_after_unknown_invalid_removed`, `dropped_rows_unknown_or_invalid`, `persons_len_ge_2_after_collapse`, `final_train_trajectories`, `train_candidate_vocab_size`, `eval_cases_after_len_filter`, `eval_cases_target_in_train_vocab`, `dropped_eval_cases_target_not_in_train_vocab`, `final_eval_cases`
+
+## Files
+
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.csv =====
+--- line 6 ---
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+--- line 7 ---
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+--- line 8 ---
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+--- line 9 ---
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+--- line 10 ---
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+--- line 11 ---
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+--- line 12 ---
+qwen_direct_select_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.305,-0.009,-0.0175,-0.0005,0.0418,-2.0942279041138994,0.03623968317041986
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+--- line 13 ---
+qwen_routing_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.071,0.0,0.0,0.0,1.0,0.0,1.0
+qwen_routing_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.13437321428571428,0.0004642857142857142,-0.0008111111111111111,0.0018208333333333342,0.4832,0.6942174967232424,0.48754582157663584
+qwen_routing_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.17508650099941753,-0.0008855128474560341,-0.003303100274608422,0.0015181047253420299,0.4728,-0.7193317052856988,0.471936565278208
+qwen_routing_vs_baseline_validation_n2000,Recall@10,2000,0.314,0.308,-0.006,-0.013,0.001,0.1134,-1.6336743420301807,0.10232724864962232
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.md =====
+--- line 13 ---
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+--- line 14 ---
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+--- line 15 ---
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+--- line 16 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+--- line 17 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+--- line 18 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+--- line 19 ---
+| qwen_direct_select_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.305000 | -0.009000 | [-0.017500, -0.000500] | 0.0418 | 0.0362397 |
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+--- line 20 ---
+| qwen_routing_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.071000 | 0.000000 | [0.000000, 0.000000] | 1 | 1 |
+| qwen_routing_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.134373 | 0.000464 | [-0.000811, 0.001821] | 0.4832 | 0.487546 |
+| qwen_routing_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.175087 | -0.000886 | [-0.003303, 0.001518] | 0.4728 | 0.471937 |
+| qwen_routing_vs_baseline_validation_n2000 | Recall@10 | 2000 | 0.314000 | 0.308000 | -0.006000 | [-0.013000, 0.001000] | 0.1134 | 0.102327 |
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/metrics.json =====
+--- line 9 ---
+  "ranking_failures": 0,
+  "avg_selected_pages": 0.0,
+  "avg_search_terms": 4.0,
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0,
+  "gold_in_transition_kg_rate": 0.6895,
+--- line 15 ---
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+--- line 16 ---
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.928934010152282,
+--- line 17 ---
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.928934010152282,
+  "oracle_accuracy@1": 0.6895,
+--- line 91 ---
+    "MAP@50": 0.11555204308751163,
+    "MRR": 0.10240654761904736
+  },
+  "wiki_direct_select": {
+    "n_cases": 2000,
+    "Accuracy@1": 0.0435,
+    "Recall@1": 0.0435,
+--- line 125 ---
+    "MAP@50": 0.11555204308751163,
+    "MRR": 0.10240654761904736
+  },
+  "pipeline": "no_qwen_routing_top100_direct_selection"
+}
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/metrics.json =====
+--- line 9 ---
+  "ranking_failures": 109,
+  "avg_selected_pages": 0.0,
+  "avg_search_terms": 4.0,
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0,
+  "gold_in_transition_kg_rate": 0.6895,
+--- line 15 ---
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+--- line 16 ---
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.872371283538797,
+--- line 17 ---
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.872371283538797,
+  "oracle_accuracy@1": 0.6895,
+--- line 91 ---
+    "MAP@50": 0.1174843304929329,
+    "MRR": 0.10451765873015843
+  },
+  "wiki_direct_select": {
+    "n_cases": 2000,
+    "Accuracy@1": 0.0435,
+    "Recall@1": 0.0435,
+--- line 125 ---
+    "MAP@50": 0.1174843304929329,
+    "MRR": 0.10451765873015843
+  },
+  "pipeline": "no_qwen_routing_top100_direct_selection"
+}
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/metrics.json =====
+--- line 9 ---
+  "ranking_failures": 365,
+  "avg_selected_pages": 0.4405,
+  "avg_search_terms": 3.9995,
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0005,
+  "gold_in_transition_kg_rate": 0.6895,
+--- line 15 ---
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.322,
+  "gold_in_raw_fallback_rate": 0.3215,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+--- line 16 ---
+  "gold_in_grep_pages_rate": 0.322,
+  "gold_in_raw_fallback_rate": 0.3215,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.76577229876722,
+--- line 17 ---
+  "gold_in_raw_fallback_rate": 0.3215,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.76577229876722,
+  "oracle_accuracy@1": 0.6895,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 15,
+--- line 8 ---
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 15,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+--- line 24 ---
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/metrics.json =====
+--- line 9 ---
+  "ranking_failures": 265,
+  "avg_selected_pages": 4.9475,
+  "avg_search_terms": 3.9895,
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0395,
+  "gold_in_transition_kg_rate": 0.6895,
+--- line 15 ---
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.3195,
+  "gold_in_raw_fallback_rate": 0.315,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+--- line 16 ---
+  "gold_in_grep_pages_rate": 0.3195,
+  "gold_in_raw_fallback_rate": 0.315,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.809282088469907,
+--- line 17 ---
+  "gold_in_raw_fallback_rate": 0.315,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+  "candidate_recall@50": 0.5735,
+  "candidate_recall@100": 0.6895,
+  "mean_gold_rank_before_qwen": 23.69108049311095,
+  "mean_gold_rank_after_qwen": 23.809282088469907,
+  "oracle_accuracy@1": 0.6895,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 80,
+  "route_selected_pages": 5,
+--- line 8 ---
+  "max_eval_cases": "2000",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 80,
+  "route_selected_pages": 5,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+--- line 24 ---
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/metrics.json =====
+--- line 9 ---
+  "ranking_failures": 28,
+  "avg_selected_pages": 4.945,
+  "avg_search_terms": 3.985,
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.035,
+  "gold_in_transition_kg_rate": 0.705,
+--- line 15 ---
+  "gold_in_transition_kg_rate": 0.705,
+  "gold_in_grep_pages_rate": 0.29,
+  "gold_in_raw_fallback_rate": 0.275,
+  "gold_in_final_candidate_ids_rate": 0.705,
+  "candidate_recall@50": 0.58,
+  "candidate_recall@100": 0.705,
+  "mean_gold_rank_before_qwen": 26.49645390070922,
+--- line 16 ---
+  "gold_in_grep_pages_rate": 0.29,
+  "gold_in_raw_fallback_rate": 0.275,
+  "gold_in_final_candidate_ids_rate": 0.705,
+  "candidate_recall@50": 0.58,
+  "candidate_recall@100": 0.705,
+  "mean_gold_rank_before_qwen": 26.49645390070922,
+  "mean_gold_rank_after_qwen": 26.156028368794328,
+--- line 17 ---
+  "gold_in_raw_fallback_rate": 0.275,
+  "gold_in_final_candidate_ids_rate": 0.705,
+  "candidate_recall@50": 0.58,
+  "candidate_recall@100": 0.705,
+  "mean_gold_rank_before_qwen": 26.49645390070922,
+  "mean_gold_rank_after_qwen": 26.156028368794328,
+  "oracle_accuracy@1": 0.705,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 80,
+  "route_selected_pages": 5,
+--- line 8 ---
+  "max_eval_cases": "200",
+  "output_dir": "outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean",
+  "seed": 42,
+  "route_index_candidates": 80,
+  "route_selected_pages": 5,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+--- line 24 ---
+  "final_rank_k": 10,
+  "final_fusion_mode": "bonus",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_t256/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_t256",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_t256",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 5,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 5,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "200",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "500",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "500",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 3,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_direct_select_seed42_validation_n5_c16/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "5",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n5_c16",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 8 ---
+  "max_eval_cases": "5",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n5_c16",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+--- line 19 ---
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+--- line 24 ---
+  "final_rank_k": 10,
+  "final_fusion_mode": "hard",
+  "qwen_rank_bonus": 0.2,
+  "candidate_summary_chars": 60,
+  "context_summary_chars": 160,
+  "context_list_chars": 120,
+  "llm_base_url": "http://127.0.0.1:8000/v1",
+
+===== outputs/wiki_kg_ablation_seed42_test_full/test/run_config.json =====
+--- line 7 ---
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_test_full",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+
+===== outputs/wiki_kg_ablation_seed42_validation_full/validation/run_config.json =====
+--- line 7 ---
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_full",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+
+===== outputs/wiki_kg_ablation_seed42_validation_n1000/validation/run_config.json =====
+--- line 7 ---
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_n1000",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+
+===== outputs/wiki_kg_score_fusion_seed42_test_full_alpha08/test/run_config.json =====
+--- line 7 ---
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_test_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08/validation/run_config.json =====
+--- line 7 ---
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_n1000/validation/run_config.json =====
+--- line 7 ---
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_n1000",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+
+===== scripts/dense_eval.py =====
+--- line 66 ---
+    parser.add_argument("--retrieve-k", type=int, default=10, help="Ranking depth used to extract metrics; >=10.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/dense_eval")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+    parser.add_argument("--query-prefix", default=None, help="Override model-specific query prefix.")
+    parser.add_argument("--passage-prefix", default=None, help="Override model-specific passage prefix.")
+    return parser.parse_args()
+--- line 109 ---
+    return rows
+
+
+def make_ir_inputs(cases, query_texts, candidate_codes, candidate_texts):
+    queries = {f"q{i}": text for i, text in enumerate(query_texts)}
+    corpus = {code: text for code, text in zip(candidate_codes, candidate_texts)}
+    relevant_docs = {f"q{i}": {case["target"]} for i, case in enumerate(cases)}
+--- line 111 ---
+
+def make_ir_inputs(cases, query_texts, candidate_codes, candidate_texts):
+    queries = {f"q{i}": text for i, text in enumerate(query_texts)}
+    corpus = {code: text for code, text in zip(candidate_codes, candidate_texts)}
+    relevant_docs = {f"q{i}": {case["target"]} for i, case in enumerate(cases)}
+    return queries, corpus, relevant_docs
+
+--- line 121 ---
+    split,
+    cases,
+    query_texts,
+    candidate_codes,
+    candidate_texts,
+    query_prefix,
+    passage_prefix,
+--- line 122 ---
+    cases,
+    query_texts,
+    candidate_codes,
+    candidate_texts,
+    query_prefix,
+    passage_prefix,
+    metric_ks,
+--- line 130 ---
+    output_dir,
+):
+    output_dir.mkdir(parents=True, exist_ok=True)
+    queries, corpus, relevant_docs = make_ir_inputs(cases, query_texts, candidate_codes, candidate_texts)
+    evaluator_kwargs = {
+        "queries": queries,
+        "corpus": corpus,
+--- line 153 ---
+        queries, corpus, relevant_docs = make_ir_inputs(
+            cases,
+            apply_prefixes(query_texts, query_prefix),
+            candidate_codes,
+            apply_prefixes(candidate_texts, passage_prefix),
+        )
+        evaluator_kwargs = {
+--- line 154 ---
+            cases,
+            apply_prefixes(query_texts, query_prefix),
+            candidate_codes,
+            apply_prefixes(candidate_texts, passage_prefix),
+        )
+        evaluator_kwargs = {
+            key: value
+--- line 230 ---
+
+        texts = build_texts(
+            data["metadata_lookup"],
+            data["candidate_codes"],
+            data["validation_cases"],
+            data["test_cases"],
+        )
+--- line 238 ---
+        stage = "markov_baseline"
+        transition_probs, global_probs, code_to_index = train_markov_dense(
+            data["trajectories"]["train"],
+            data["candidate_codes"],
+        )
+        validation_markov_norm = row_maxnorm(
+            markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 241 ---
+            data["candidate_codes"],
+        )
+        validation_markov_norm = row_maxnorm(
+            markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+        )
+        test_markov_norm = row_maxnorm(
+            markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 244 ---
+            markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+        )
+        test_markov_norm = row_maxnorm(
+            markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+        )
+
+        stage = "model_loading"
+--- line 257 ---
+            "validation",
+            data["validation_cases"],
+            texts["validation_query_texts"],
+            data["candidate_codes"],
+            texts["candidate_texts"],
+            query_prefix,
+            passage_prefix,
+--- line 258 ---
+            data["validation_cases"],
+            texts["validation_query_texts"],
+            data["candidate_codes"],
+            texts["candidate_texts"],
+            query_prefix,
+            passage_prefix,
+            metric_ks,
+--- line 268 ---
+        write_json(run_dir / "sentence_transformers_ir_validation.json", validation_ir_scores)
+        write_csv(run_dir / "sentence_transformers_ir_validation.csv", validation_ir_rows)
+
+        stage = "candidate_encoding"
+        candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
+
+        stage = "validation_encoding"
+--- line 269 ---
+        write_csv(run_dir / "sentence_transformers_ir_validation.csv", validation_ir_rows)
+
+        stage = "candidate_encoding"
+        candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
+
+        stage = "validation_encoding"
+        validation_embeddings = encode_texts(model, texts["validation_query_texts"], query_prefix, batch_size)
+--- line 273 ---
+
+        stage = "validation_encoding"
+        validation_embeddings = encode_texts(model, texts["validation_query_texts"], query_prefix, batch_size)
+        validation_embedding_norm = row_minmax(validation_embeddings @ candidate_embeddings.T)
+
+        stage = "validation_sweep"
+        validation_rows = []
+--- line 310 ---
+            "test",
+            data["test_cases"],
+            texts["test_query_texts"],
+            data["candidate_codes"],
+            texts["candidate_texts"],
+            query_prefix,
+            passage_prefix,
+--- line 311 ---
+            data["test_cases"],
+            texts["test_query_texts"],
+            data["candidate_codes"],
+            texts["candidate_texts"],
+            query_prefix,
+            passage_prefix,
+            metric_ks,
+--- line 323 ---
+
+        stage = "test_encoding_and_final_eval"
+        test_embeddings = encode_texts(model, texts["test_query_texts"], query_prefix, batch_size)
+        test_embedding_norm = row_minmax(test_embeddings @ candidate_embeddings.T)
+        test_scores = selected_alpha * test_markov_norm + (1.0 - selected_alpha) * test_embedding_norm
+        final_metrics = evaluate_score_matrix_at_k(test_scores, data["test_cases"], code_to_index, metric_ks, args.retrieve_k)
+        final_row = {
+
+===== scripts/eval_lateon_only_datafull.py =====
+--- line 176 ---
+            "mrr10": (1.0 / rank) if rank is not None and rank <= 10 else 0.0,
+            "ndcg10": (1.0 / math.log2(rank + 1)) if rank is not None and rank <= 10 else 0.0,
+            "recall10": 1.0 if rank is not None and rank <= 10 else 0.0,
+            "top100": ranked_ids[:100],
+        })
+
+    metrics = summarize(ranks, ks)
+
+===== scripts/export_bge_m3_formal_per_query.py =====
+--- line 136 ---
+    data = load_jobhop_eval_data(max_eval_cases=None, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+        data["candidate_codes"],
+        data["validation_cases"],
+        data["test_cases"],
+    )
+--- line 144 ---
+    print("building formal Markov scores...", flush=True)
+    transition_probs, global_probs, code_to_index = train_markov_dense(
+        data["trajectories"]["train"],
+        data["candidate_codes"],
+    )
+    validation_markov_norm = row_maxnorm(
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 147 ---
+        data["candidate_codes"],
+    )
+    validation_markov_norm = row_maxnorm(
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 150 ---
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+
+    print(f"loading model: {args.model_name}", flush=True)
+--- line 156 ---
+    print(f"loading model: {args.model_name}", flush=True)
+    model = load_sentence_transformer_model(args.model_name, device="cuda")
+
+    print("encoding candidates...", flush=True)
+    candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, args.batch_size)
+
+    print("validation alpha sweep...", flush=True)
+--- line 157 ---
+    model = load_sentence_transformer_model(args.model_name, device="cuda")
+
+    print("encoding candidates...", flush=True)
+    candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, args.batch_size)
+
+    print("validation alpha sweep...", flush=True)
+    validation_embeddings = encode_texts(model, texts["validation_query_texts"], query_prefix, args.batch_size)
+--- line 161 ---
+
+    print("validation alpha sweep...", flush=True)
+    validation_embeddings = encode_texts(model, texts["validation_query_texts"], query_prefix, args.batch_size)
+    validation_embedding_norm = row_minmax(validation_embeddings @ candidate_embeddings.T)
+
+    validation_rows = []
+    for alpha in ALPHAS:
+--- line 189 ---
+
+    print("test encoding and formal fusion...", flush=True)
+    test_embeddings = encode_texts(model, texts["test_query_texts"], query_prefix, args.batch_size)
+    test_embedding_norm = row_minmax(test_embeddings @ candidate_embeddings.T)
+    test_scores = selected_alpha * test_markov_norm + (1.0 - selected_alpha) * test_embedding_norm
+
+    pure_metrics = evaluate_score_matrix_at_k(test_embedding_norm, data["test_cases"], code_to_index, metric_ks, args.retrieve_k)
+
+===== scripts/export_bge_m3_per_query_test.py =====
+--- line 65 ---
+    out["MRR"] = out.get("MRR@10")
+    return out
+
+def topk_ranks_and_ids(score_matrix, cases, code_to_index, candidate_codes, metric_ks, retrieve_k):
+    top_k = max(max(metric_ks), int(retrieve_k))
+    top_k = min(top_k, score_matrix.shape[1])
+    target_indices = np.array([code_to_index[c["target"]] for c in cases], dtype=np.int64)
+--- line 87 ---
+            target = target_indices[start + row_idx]
+            matches = np.where(preds == target)[0]
+            ranks.append(int(matches[0]) + 1 if len(matches) else None)
+            ranked_ids.append([candidate_codes[int(i)] for i in preds])
+
+    return ranks, ranked_ids
+
+--- line 170 ---
+    print("loading JobHop data...")
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    cases = data["test_cases"]
+    candidate_codes = data["candidate_codes"]
+    code_to_index = {code: i for i, code in enumerate(candidate_codes)}
+
+    print("building texts...")
+--- line 171 ---
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    cases = data["test_cases"]
+    candidate_codes = data["candidate_codes"]
+    code_to_index = {code: i for i, code in enumerate(candidate_codes)}
+
+    print("building texts...")
+    texts = build_texts(
+--- line 176 ---
+    print("building texts...")
+    texts = build_texts(
+        data["metadata_lookup"],
+        candidate_codes,
+        data["validation_cases"],
+        cases,
+    )
+--- line 184 ---
+    print("building Markov scores from train trajectories...")
+    transition_probs, global_probs, code_to_index = train_markov_dense(
+        data["trajectories"]["train"],
+        candidate_codes,
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(cases, candidate_codes, transition_probs, global_probs)
+--- line 187 ---
+        candidate_codes,
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(cases, candidate_codes, transition_probs, global_probs)
+    )
+
+    print("loading BGE-M3...")
+--- line 193 ---
+    print("loading BGE-M3...")
+    model = load_sentence_transformer_model(args.model_name, device="cuda")
+
+    print("encoding candidate occupations...")
+    candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
+
+    print("encoding test queries...")
+--- line 194 ---
+    model = load_sentence_transformer_model(args.model_name, device="cuda")
+
+    print("encoding candidate occupations...")
+    candidate_embeddings = encode_texts(model, texts["candidate_texts"], passage_prefix, batch_size)
+
+    print("encoding test queries...")
+    test_embeddings = encode_texts(model, texts["test_query_texts"], query_prefix, batch_size)
+--- line 200 ---
+    test_embeddings = encode_texts(model, texts["test_query_texts"], query_prefix, batch_size)
+
+    print("scoring pure BGE-M3...")
+    pure_scores = test_embeddings @ candidate_embeddings.T
+    pure_norm = row_minmax(pure_scores)
+
+    print("scoring BGE-M3 + Markov fusion...")
+--- line 208 ---
+
+    print("extracting per-query ranks...")
+    pure_ranks, pure_ranked_ids = topk_ranks_and_ids(
+        pure_scores, cases, code_to_index, candidate_codes, metric_ks, args.retrieve_k
+    )
+    fusion_ranks, fusion_ranked_ids = topk_ranks_and_ids(
+        fusion_scores, cases, code_to_index, candidate_codes, metric_ks, args.retrieve_k
+--- line 211 ---
+        pure_scores, cases, code_to_index, candidate_codes, metric_ks, args.retrieve_k
+    )
+    fusion_ranks, fusion_ranked_ids = topk_ranks_and_ids(
+        fusion_scores, cases, code_to_index, candidate_codes, metric_ks, args.retrieve_k
+    )
+
+    print("writing per-query outputs...")
+--- line 231 ---
+                "prefix": case["prefix"],
+                "pure_rank": pure_ranks[i],
+                "fusion_rank": fusion_ranks[i],
+                "pure_top100": pure_ranked_ids[i],
+                "fusion_top100": fusion_ranked_ids[i],
+            }
+            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+--- line 232 ---
+                "pure_rank": pure_ranks[i],
+                "fusion_rank": fusion_ranks[i],
+                "pure_top100": pure_ranked_ids[i],
+                "fusion_top100": fusion_ranked_ids[i],
+            }
+            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+
+--- line 262 ---
+        "elapsed_seconds": time.monotonic() - started,
+        "seconds_per_case": (time.monotonic() - started) / max(1, len(cases)),
+        "n_cases": len(cases),
+        "n_candidates": len(candidate_codes),
+        "outputs": [
+            str(out_dir / "bge_m3_test_per_query_ranks.csv"),
+            str(out_dir / "bge_m3_test_per_query_results.jsonl"),
+
+===== scripts/export_bge_m3_per_query_test_datafull.py =====
+--- line 88 ---
+    return (x / denom).astype("float32")
+
+
+def build_markov_from_datafull_train(train_rows, candidate_codes):
+    valid = set(candidate_codes)
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+    transitions = defaultdict(Counter)
+--- line 89 ---
+
+
+def build_markov_from_datafull_train(train_rows, candidate_codes):
+    valid = set(candidate_codes)
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+    transitions = defaultdict(Counter)
+    global_next = Counter()
+--- line 90 ---
+
+def build_markov_from_datafull_train(train_rows, candidate_codes):
+    valid = set(candidate_codes)
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+    transitions = defaultdict(Counter)
+    global_next = Counter()
+
+--- line 115 ---
+        global_next[target] += 1
+        used += 1
+
+    global_probs = np.zeros(len(candidate_codes), dtype="float32")
+    total = sum(global_next.values())
+    if total:
+        for code, count in global_next.items():
+--- line 140 ---
+    return transition_probs, global_probs, code_to_index, stats
+
+
+def markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index):
+    valid = set(candidate_codes)
+    scores = np.zeros((len(eval_rows), len(candidate_codes)), dtype="float32")
+
+--- line 141 ---
+
+
+def markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index):
+    valid = set(candidate_codes)
+    scores = np.zeros((len(eval_rows), len(candidate_codes)), dtype="float32")
+
+    for i, row in enumerate(eval_rows):
+--- line 142 ---
+
+def markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index):
+    valid = set(candidate_codes)
+    scores = np.zeros((len(eval_rows), len(candidate_codes)), dtype="float32")
+
+    for i, row in enumerate(eval_rows):
+        history = extract_history_codes(row.get("query", ""), valid)
+--- line 175 ---
+    return emb.astype("float32")
+
+
+def rank_topk(score_matrix, target_indices, candidate_codes, top_k):
+    top_k = min(top_k, score_matrix.shape[1])
+    ranks = []
+    top_ids = []
+--- line 193 ---
+            target = target_indices[start + j]
+            m = np.where(preds == target)[0]
+            ranks.append(int(m[0]) + 1 if len(m) else None)
+            top_ids.append([candidate_codes[int(x)] for x in preds])
+
+    return ranks, top_ids
+
+--- line 246 ---
+    eval_rows = read_jsonl(eval_path, limit=max_eval)
+    train_rows = read_jsonl(data_dir / "train.jsonl")
+
+    candidate_codes = [str(r["docid"]) for r in corpus_rows]
+    candidate_texts = [str(r["text"]) for r in corpus_rows]
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+
+--- line 247 ---
+    train_rows = read_jsonl(data_dir / "train.jsonl")
+
+    candidate_codes = [str(r["docid"]) for r in corpus_rows]
+    candidate_texts = [str(r["text"]) for r in corpus_rows]
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+
+    targets = []
+--- line 248 ---
+
+    candidate_codes = [str(r["docid"]) for r in corpus_rows]
+    candidate_texts = [str(r["text"]) for r in corpus_rows]
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+
+    targets = []
+    for row in eval_rows:
+--- line 260 ---
+    target_indices = np.array([code_to_index[t] for t in targets], dtype=np.int64)
+
+    transition_probs, global_probs, code_to_index, transition_stats = build_markov_from_datafull_train(
+        train_rows, candidate_codes
+    )
+
+    write_json(out_dir / "run_config.json", {
+--- line 277 ---
+        "query_prefix": args.query_prefix,
+        "passage_prefix": args.passage_prefix,
+        "n_eval_rows": len(eval_rows),
+        "n_candidates": len(candidate_codes),
+        "transition_stats": transition_stats,
+    })
+
+--- line 284 ---
+    print("loading model:", args.model_name, flush=True)
+    model = load_model(args.model_name)
+
+    print("encoding corpus:", len(candidate_texts), flush=True)
+    corpus_emb = encode(model, candidate_texts, args.passage_prefix, args.batch_size)
+
+    print("encoding queries:", len(eval_rows), flush=True)
+--- line 285 ---
+    model = load_model(args.model_name)
+
+    print("encoding corpus:", len(candidate_texts), flush=True)
+    corpus_emb = encode(model, candidate_texts, args.passage_prefix, args.batch_size)
+
+    print("encoding queries:", len(eval_rows), flush=True)
+    query_texts = [str(r["query"]) for r in eval_rows]
+--- line 296 ---
+    pure_norm = row_minmax(pure_scores)
+
+    print("scoring Markov", flush=True)
+    markov_norm = row_maxnorm(markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index))
+
+    print("scoring fusion", flush=True)
+    fusion_scores = args.alpha_markov * markov_norm + (1.0 - args.alpha_markov) * pure_norm
+--- line 302 ---
+    fusion_scores = args.alpha_markov * markov_norm + (1.0 - args.alpha_markov) * pure_norm
+
+    print("ranking", flush=True)
+    pure_ranks, pure_top = rank_topk(pure_scores, target_indices, candidate_codes, top_k)
+    fusion_ranks, fusion_top = rank_topk(fusion_scores, target_indices, candidate_codes, top_k)
+
+    per_query = []
+--- line 303 ---
+
+    print("ranking", flush=True)
+    pure_ranks, pure_top = rank_topk(pure_scores, target_indices, candidate_codes, top_k)
+    fusion_ranks, fusion_top = rank_topk(fusion_scores, target_indices, candidate_codes, top_k)
+
+    per_query = []
+    jsonl_rows = []
+--- line 363 ---
+        "elapsed_seconds": time.time() - started,
+        "seconds_per_case": (time.time() - started) / max(1, len(eval_rows)),
+        "n_cases": len(eval_rows),
+        "n_candidates": len(candidate_codes),
+    })
+
+    print("DONE", flush=True)
+
+===== scripts/export_jobhop_training_data.py =====
+--- line 8 ---
+from pathlib import Path
+
+from jobhop_eval_common import (
+    candidate_text,
+    configure_hf_cache,
+    configure_reproducibility,
+    failure_payload,
+--- line 27 ---
+    parser = argparse.ArgumentParser(
+        description="Export JobHop v2 data into the canonical retriever-training JSONL format."
+    )
+    parser.add_argument("--output-dir", default="handoff/data", help="Directory for train/eval JSONL files.")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--max-train-samples", default="none", help="Integer cap for train rows, or 'none'.")
+--- line 28 ---
+        description="Export JobHop v2 data into the canonical retriever-training JSONL format."
+    )
+    parser.add_argument("--output-dir", default="handoff/data", help="Directory for train/eval JSONL files.")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--max-train-samples", default="none", help="Integer cap for train rows, or 'none'.")
+    parser.add_argument("--max-eval-cases", default="none", help="Integer cap per validation/test split, or 'none'.")
+--- line 80 ---
+    return cases
+
+
+def sample_negatives(candidate_codes, target, num_negatives, rng):
+    pool = [code for code in candidate_codes if code != target]
+    if len(pool) <= num_negatives:
+        return pool
+--- line 81 ---
+
+
+def sample_negatives(candidate_codes, target, num_negatives, rng):
+    pool = [code for code in candidate_codes if code != target]
+    if len(pool) <= num_negatives:
+        return pool
+    return rng.sample(pool, num_negatives)
+--- line 87 ---
+    return rng.sample(pool, num_negatives)
+
+
+def build_train_rows(cases, metadata_lookup, candidate_codes, num_negatives, rng):
+    rows = []
+    skipped = []
+    candidate_set = set(candidate_codes)
+--- line 90 ---
+def build_train_rows(cases, metadata_lookup, candidate_codes, num_negatives, rng):
+    rows = []
+    skipped = []
+    candidate_set = set(candidate_codes)
+    for idx, case in enumerate(cases):
+        target = case["target"]
+        if target not in candidate_set:
+--- line 93 ---
+    candidate_set = set(candidate_codes)
+    for idx, case in enumerate(cases):
+        target = case["target"]
+        if target not in candidate_set:
+            skipped.append({"index": idx, "person_id": str(case["person_id"]), "target": target, "reason": "target_not_in_train_candidate_pool"})
+            continue
+        negative_codes = sample_negatives(candidate_codes, target, num_negatives, rng)
+--- line 94 ---
+    for idx, case in enumerate(cases):
+        target = case["target"]
+        if target not in candidate_set:
+            skipped.append({"index": idx, "person_id": str(case["person_id"]), "target": target, "reason": "target_not_in_train_candidate_pool"})
+            continue
+        negative_codes = sample_negatives(candidate_codes, target, num_negatives, rng)
+        if len(negative_codes) < num_negatives:
+--- line 96 ---
+        if target not in candidate_set:
+            skipped.append({"index": idx, "person_id": str(case["person_id"]), "target": target, "reason": "target_not_in_train_candidate_pool"})
+            continue
+        negative_codes = sample_negatives(candidate_codes, target, num_negatives, rng)
+        if len(negative_codes) < num_negatives:
+            skipped.append({"index": idx, "person_id": str(case["person_id"]), "target": target, "reason": "not_enough_negatives"})
+            continue
+--- line 107 ---
+                "target_docid": target,
+                "negative_docids": negative_codes,
+                "query": query_text(metadata_lookup, case),
+                "positive": candidate_text(metadata_lookup, target),
+                "negatives": [candidate_text(metadata_lookup, code) for code in negative_codes],
+            }
+        )
+--- line 108 ---
+                "negative_docids": negative_codes,
+                "query": query_text(metadata_lookup, case),
+                "positive": candidate_text(metadata_lookup, target),
+                "negatives": [candidate_text(metadata_lookup, code) for code in negative_codes],
+            }
+        )
+    return rows, skipped
+--- line 171 ---
+
+        stage = "load_jobhop_data"
+        data = load_jobhop_eval_data(max_eval_cases=run_config["max_eval_cases"], seed=args.random_seed)
+        candidate_codes = data["candidate_codes"]
+        metadata_lookup = data["metadata_lookup"]
+
+        stage = "build_training_cases"
+--- line 180 ---
+        else:
+            train_cases = make_all_prefix_cases(data["trajectories"]["train"])
+
+        train_cases = [case for case in train_cases if case["target"] in set(candidate_codes)]
+        if run_config["max_train_samples"] is not None:
+            train_cases = rng.sample(train_cases, min(run_config["max_train_samples"], len(train_cases)))
+
+--- line 187 ---
+        train_rows, skipped_train_rows = build_train_rows(
+            train_cases,
+            metadata_lookup,
+            candidate_codes,
+            args.num_negatives,
+            rng,
+        )
+--- line 194 ---
+
+        stage = "build_eval_files"
+        corpus_rows = [
+            {"docid": code, "text": candidate_text(metadata_lookup, code)}
+            for code in candidate_codes
+        ]
+        validation_query_rows = build_eval_query_rows("validation", data["validation_cases"], metadata_lookup)
+--- line 195 ---
+        stage = "build_eval_files"
+        corpus_rows = [
+            {"docid": code, "text": candidate_text(metadata_lookup, code)}
+            for code in candidate_codes
+        ]
+        validation_query_rows = build_eval_query_rows("validation", data["validation_cases"], metadata_lookup)
+        test_query_rows = build_eval_query_rows("test", data["test_cases"], metadata_lookup)
+--- line 216 ---
+            "runtime_seconds": time.monotonic() - started_monotonic,
+            "train_rows": len(train_rows),
+            "skipped_train_rows": len(skipped_train_rows),
+            "candidate_corpus_rows": len(corpus_rows),
+            "validation_queries": len(validation_query_rows),
+            "test_queries": len(test_query_rows),
+            "protocol_note": (
+
+===== scripts/export_lateon_only_test.py =====
+--- line 159 ---
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+        data["candidate_codes"],
+        data["validation_cases"],
+        data["test_cases"],
+    )
+--- line 175 ---
+        device="cuda",
+    )
+
+    print("encoding/indexing candidate occupations...", flush=True)
+    document_embeddings = colbert_model.encode(
+        texts["candidate_texts"],
+        batch_size=args.doc_batch_size,
+--- line 177 ---
+
+    print("encoding/indexing candidate occupations...", flush=True)
+    document_embeddings = colbert_model.encode(
+        texts["candidate_texts"],
+        batch_size=args.doc_batch_size,
+        is_query=False,
+        show_progress_bar=True,
+--- line 189 ---
+    index_dir.mkdir(parents=True, exist_ok=True)
+
+    index = indexes.PLAID(index_folder=str(index_dir), index_name=INDEX_NAME, override=True)
+    index.add_documents(documents_ids=data["candidate_codes"], documents_embeddings=document_embeddings)
+    retriever = retrieve.ColBERT(index=index)
+
+    print("retrieving test queries with LateOn...", flush=True)
+--- line 240 ---
+            "ndcg10": (1.0 / __import__("math").log2(rank + 1)) if rank is not None and rank <= 10 else 0.0,
+            "recall10": 1.0 if rank is not None and rank <= 10 else 0.0,
+            "acc1": 1.0 if rank == 1 else 0.0,
+            "top100": [code for code, _ in row[:100]],
+        })
+    write_jsonl(run_dir / "lateon_only_test_per_query.jsonl", per_query)
+
+--- line 249 ---
+        "elapsed_seconds": time.monotonic() - started,
+        "seconds_per_case": (time.monotonic() - started) / max(1, len(data["test_cases"])),
+        "n_cases": len(data["test_cases"]),
+        "n_candidates": len(data["candidate_codes"]),
+    }
+    write_json_and_key_value_csv(run_dir / "runtime.json", run_dir / "runtime.csv", runtime)
+
+
+===== scripts/export_trained_st_formal_per_query_and_sig.py =====
+--- line 192 ---
+    data = load_jobhop_eval_data(max_eval_cases=None, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+        data["candidate_codes"],
+        data["validation_cases"],
+        data["test_cases"],
+    )
+--- line 200 ---
+    print("building formal Markov scores...", flush=True)
+    transition_probs, global_probs, code_to_index = train_markov_dense(
+        data["trajectories"]["train"],
+        data["candidate_codes"],
+    )
+    validation_markov_norm = row_maxnorm(
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 203 ---
+        data["candidate_codes"],
+    )
+    validation_markov_norm = row_maxnorm(
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 206 ---
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+
+    print(f"loading model: {args.model_name}", flush=True)
+--- line 212 ---
+    print(f"loading model: {args.model_name}", flush=True)
+    model = load_sentence_transformer_model(args.model_name, device="cuda")
+
+    print("encoding candidates...", flush=True)
+    candidate_embeddings = encode_texts(model, texts["candidate_texts"], args.passage_prefix, args.batch_size)
+
+    print("validation alpha sweep...", flush=True)
+--- line 213 ---
+    model = load_sentence_transformer_model(args.model_name, device="cuda")
+
+    print("encoding candidates...", flush=True)
+    candidate_embeddings = encode_texts(model, texts["candidate_texts"], args.passage_prefix, args.batch_size)
+
+    print("validation alpha sweep...", flush=True)
+    validation_embeddings = encode_texts(model, texts["validation_query_texts"], args.query_prefix, args.batch_size)
+--- line 217 ---
+
+    print("validation alpha sweep...", flush=True)
+    validation_embeddings = encode_texts(model, texts["validation_query_texts"], args.query_prefix, args.batch_size)
+    validation_embedding_norm = row_minmax(validation_embeddings @ candidate_embeddings.T)
+
+    validation_rows = []
+    for alpha in ALPHAS:
+--- line 245 ---
+
+    print("test encoding and formal fusion...", flush=True)
+    test_embeddings = encode_texts(model, texts["test_query_texts"], args.query_prefix, args.batch_size)
+    test_embedding_norm = row_minmax(test_embeddings @ candidate_embeddings.T)
+    test_scores = selected_alpha * test_markov_norm + (1.0 - selected_alpha) * test_embedding_norm
+
+    pure_metrics = evaluate_score_matrix_at_k(test_embedding_norm, data["test_cases"], code_to_index, metric_ks, args.retrieve_k)
+
+===== scripts/filter_counts_formal.py =====
+--- line 104 ---
+        pid: seq for pid, seq in seqs_after["train"].items()
+        if len(seq) >= 2
+    }
+    candidate_codes = sorted({item["code"] for seq in train_eligible.values() for item in seq})
+    candidate_set = set(candidate_codes)
+
+    cases_after_len = {
+--- line 105 ---
+        if len(seq) >= 2
+    }
+    candidate_codes = sorted({item["code"] for seq in train_eligible.values() for item in seq})
+    candidate_set = set(candidate_codes)
+
+    cases_after_len = {
+        split: last_step_cases_from_sequences(seqs_after[split])
+--- line 112 ---
+        for split in ["validation", "test"]
+    }
+    cases_target_in_train = {
+        split: [case for case in cases_after_len[split] if case["target"] in candidate_set]
+        for split in ["validation", "test"]
+    }
+
+--- line 148 ---
+
+        if split == "train":
+            row["train_trajectories_used_for_markov"] = len(train_eligible)
+            row["train_candidate_vocab_size"] = len(candidate_codes)
+            row["final_train_trajectories"] = len(train_eligible)
+        else:
+            row["eval_cases_after_len_filter"] = len(cases_after_len[split])
+--- line 170 ---
+        ]
+        if split == "train":
+            stages.extend([
+                ("train_trajectories_used_for_markov", len(train_eligible), "Final train trajectories used for candidate vocabulary and Markov transitions."),
+                ("train_candidate_vocab_size", len(candidate_codes), "Unique ESCO candidate codes from retained train trajectories."),
+            ])
+        else:
+--- line 171 ---
+        if split == "train":
+            stages.extend([
+                ("train_trajectories_used_for_markov", len(train_eligible), "Final train trajectories used for candidate vocabulary and Markov transitions."),
+                ("train_candidate_vocab_size", len(candidate_codes), "Unique ESCO candidate codes from retained train trajectories."),
+            ])
+        else:
+            stages.extend([
+--- line 176 ---
+        else:
+            stages.extend([
+                ("eval_cases_after_len_filter", len(cases_after_len[split]), "Last-step eval cases after len>=2 trajectory filter."),
+                ("eval_cases_target_in_train_vocab", len(cases_target_in_train[split]), "Eval cases retained because target is in train candidate vocabulary."),
+                ("final_eval_cases", len(cases_target_in_train[split]), "Final evaluation cases."),
+            ])
+
+--- line 198 ---
+        "preprocessing": {
+            "collapse_consecutive_duplicates": bool(COLLAPSE_CONSECUTIVE_DUPLICATES),
+            "target_in_train_vocab_filter_for_eval": True,
+            "candidate_vocab_source": "retained train trajectories after Unknown/invalid removal and consecutive duplicate collapse",
+        },
+        "candidate_vocab_size": len(candidate_codes),
+        "by_split": by_split_rows,
+--- line 200 ---
+            "target_in_train_vocab_filter_for_eval": True,
+            "candidate_vocab_source": "retained train trajectories after Unknown/invalid removal and consecutive duplicate collapse",
+        },
+        "candidate_vocab_size": len(candidate_codes),
+        "by_split": by_split_rows,
+        "expected_final_counts": {
+            "train": int(by_split.loc[by_split["split"] == "train", "final_train_trajectories"].iloc[0]),
+--- line 223 ---
+    md.append("## Key Settings")
+    md.append("")
+    md.append(f"- collapse_consecutive_duplicates: `{COLLAPSE_CONSECUTIVE_DUPLICATES}`")
+    md.append("- validation/test targets retained only if the target ESCO code appears in the retained train candidate vocabulary")
+    md.append(f"- train candidate vocabulary size: `{len(candidate_codes)}`")
+    md.append("")
+    md.append("## By Split")
+--- line 224 ---
+    md.append("")
+    md.append(f"- collapse_consecutive_duplicates: `{COLLAPSE_CONSECUTIVE_DUPLICATES}`")
+    md.append("- validation/test targets retained only if the target ESCO code appears in the retained train candidate vocabulary")
+    md.append(f"- train candidate vocabulary size: `{len(candidate_codes)}`")
+    md.append("")
+    md.append("## By Split")
+    md.append("")
+
+===== scripts/jobhop_eval_common.py =====
+--- line 171 ---
+    shared = [
+        "Removed Colab-only shell installs such as !pip; dependencies are declared in requirements.txt.",
+        "Removed display()/Styler notebook rendering; all tabular outputs are saved as CSV and key metadata as JSON.",
+        "Added argparse for model name, max evaluation cases with 'none' support, random seed, batch size, retrieve-k, output directory, and cache directory.",
+        "Runs one model per process/job instead of iterating over multiple models inside one notebook.",
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+--- line 173 ---
+        "Removed display()/Styler notebook rendering; all tabular outputs are saved as CSV and key metadata as JSON.",
+        "Added argparse for model name, max evaluation cases with 'none' support, random seed, batch size, retrieve-k, output directory, and cache directory.",
+        "Runs one model per process/job instead of iterating over multiple models inside one notebook.",
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+--- line 176 ---
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+        "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+        "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+--- line 177 ---
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+        "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+        "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+        "Adds multi-K information retrieval metrics: Accuracy@K, Precision@K, Recall@K, MRR@K, NDCG@K, and MAP@K.",
+--- line 185 ---
+    dense = [
+        "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
+        "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
+    ]
+    lateon = [
+--- line 191 ---
+    lateon = [
+        "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "LateOn script keeps PyLate ColBERT encoding, PLAID indexing, and ColBERT retrieval.",
+        "LateOn script uses --retrieve-k for both LateOn retrieval depth and Markov candidate depth, matching the notebook's shared default of 200.",
+        "LateOn script keeps per-case union of LateOn and Markov candidates with per-row min-max normalization before hybrid ranking.",
+    ]
+    specific = dense if script_name == "dense" else lateon
+--- line 192 ---
+        "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "LateOn script keeps PyLate ColBERT encoding, PLAID indexing, and ColBERT retrieval.",
+        "LateOn script uses --retrieve-k for both LateOn retrieval depth and Markov candidate depth, matching the notebook's shared default of 200.",
+        "LateOn script keeps per-case union of LateOn and Markov candidates with per-row min-max normalization before hybrid ranking.",
+    ]
+    specific = dense if script_name == "dense" else lateon
+    return {"shared_changes": shared, "script_specific_changes": specific}
+--- line 268 ---
+                continue
+            if item_path.endswith(".parquet"):
+                files.append(item_path)
+            elif item.get("type") == "directory":
+                stack.append(item_path)
+    return sorted(set(files))
+
+--- line 432 ---
+    return cases
+
+
+def dataset_statistics(raw, trajectories, candidate_codes, validation_cases, test_cases, metadata_lookup):
+    rows = []
+    for split, df in raw.items():
+        rows.append(
+--- line 446 ---
+                "trajectories_len_ge_2": len(trajectories.get(split, {})),
+            }
+        )
+    metadata_coverage = sum(1 for code in candidate_codes if code in metadata_lookup)
+    description_coverage = sum(1 for code in candidate_codes if metadata_lookup.get(code, {}).get("description"))
+    summary = {
+        "candidate_occupations": len(candidate_codes),
+--- line 447 ---
+            }
+        )
+    metadata_coverage = sum(1 for code in candidate_codes if code in metadata_lookup)
+    description_coverage = sum(1 for code in candidate_codes if metadata_lookup.get(code, {}).get("description"))
+    summary = {
+        "candidate_occupations": len(candidate_codes),
+        "candidate_metadata_coverage": metadata_coverage,
+--- line 449 ---
+    metadata_coverage = sum(1 for code in candidate_codes if code in metadata_lookup)
+    description_coverage = sum(1 for code in candidate_codes if metadata_lookup.get(code, {}).get("description"))
+    summary = {
+        "candidate_occupations": len(candidate_codes),
+        "candidate_metadata_coverage": metadata_coverage,
+        "candidate_description_coverage": description_coverage,
+        "validation_eval_cases": len(validation_cases),
+--- line 450 ---
+    description_coverage = sum(1 for code in candidate_codes if metadata_lookup.get(code, {}).get("description"))
+    summary = {
+        "candidate_occupations": len(candidate_codes),
+        "candidate_metadata_coverage": metadata_coverage,
+        "candidate_description_coverage": description_coverage,
+        "validation_eval_cases": len(validation_cases),
+        "test_eval_cases": len(test_cases),
+--- line 451 ---
+    summary = {
+        "candidate_occupations": len(candidate_codes),
+        "candidate_metadata_coverage": metadata_coverage,
+        "candidate_description_coverage": description_coverage,
+        "validation_eval_cases": len(validation_cases),
+        "test_eval_cases": len(test_cases),
+    }
+--- line 472 ---
+
+    validation_cases = make_last_step_cases(trajectories["validation"])
+    test_cases = make_last_step_cases(trajectories["test"])
+    candidate_codes = sorted({item["code"] for seq in trajectories["train"].values() for item in seq})
+    candidate_set = set(candidate_codes)
+
+    validation_cases = [case for case in validation_cases if case["target"] in candidate_set]
+--- line 473 ---
+    validation_cases = make_last_step_cases(trajectories["validation"])
+    test_cases = make_last_step_cases(trajectories["test"])
+    candidate_codes = sorted({item["code"] for seq in trajectories["train"].values() for item in seq})
+    candidate_set = set(candidate_codes)
+
+    validation_cases = [case for case in validation_cases if case["target"] in candidate_set]
+    test_cases = [case for case in test_cases if case["target"] in candidate_set]
+--- line 475 ---
+    candidate_codes = sorted({item["code"] for seq in trajectories["train"].values() for item in seq})
+    candidate_set = set(candidate_codes)
+
+    validation_cases = [case for case in validation_cases if case["target"] in candidate_set]
+    test_cases = [case for case in test_cases if case["target"] in candidate_set]
+
+    if max_eval_cases is not None:
+--- line 476 ---
+    candidate_set = set(candidate_codes)
+
+    validation_cases = [case for case in validation_cases if case["target"] in candidate_set]
+    test_cases = [case for case in test_cases if case["target"] in candidate_set]
+
+    if max_eval_cases is not None:
+        rng = random.Random(seed)
+--- line 484 ---
+        test_cases = rng.sample(test_cases, min(max_eval_cases, len(test_cases)))
+
+    stats_rows, stats_summary = dataset_statistics(
+        raw, trajectories, candidate_codes, validation_cases, test_cases, metadata_lookup
+    )
+    preprocessing_config = {
+        "dataset_id": DATASET_ID,
+--- line 494 ---
+        "date_sort_keys": ["start_date parsed as year/quarter", "end_date", "matched_code"],
+        "min_trajectory_length": 2,
+        "prediction_protocol": "last-step next-occupation prediction",
+        "candidate_pool": "unique ESCO codes observed in train trajectories",
+        "validation_test_filter": "cases whose target is in train candidate pool",
+        "max_eval_cases": max_eval_cases,
+        "random_seed": seed,
+... 10 more hits omitted
+
+===== scripts/jobhop_llm_wiki_rerank.py =====
+--- line 15 ---
+from dense_eval import DENSE_MODEL_DEFAULTS, encode_texts, load_sentence_transformer_model
+from jobhop_eval_common import (
+    build_texts,
+    candidate_text,
+    cleanup_cuda,
+    configure_hf_cache,
+    configure_reproducibility,
+--- line 35 ---
+)
+
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+Your task is to choose the most plausible next ESCO occupations from a provided candidate list.
+Return JSON only. Do not add explanations."""
+
+--- line 36 ---
+
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+Your task is to choose the most plausible next ESCO occupations from a provided candidate list.
+Return JSON only. Do not add explanations."""
+
+
+--- line 42 ---
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="JobHop LLM-Wiki-style list reranking smoke test using a local OpenAI-compatible LLM endpoint."
+    )
+    parser.add_argument("--retriever-model", required=True, help="SentenceTransformer model name or local path.")
+    parser.add_argument("--split", default="validation", choices=["validation", "test"])
+--- line 49 ---
+    parser.add_argument("--max-eval-cases", default="20", help="Integer sample size per split, or 'none'.")
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--candidate-k", type=int, default=100)
+    parser.add_argument("--return-k", type=int, default=20)
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100")
+    parser.add_argument("--output-dir", default="outputs/llm_wiki_rerank")
+--- line 52 ---
+    parser.add_argument("--candidate-k", type=int, default=100)
+    parser.add_argument("--return-k", type=int, default=20)
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100")
+    parser.add_argument("--output-dir", default="outputs/llm_wiki_rerank")
+    parser.add_argument("--cache-dir", default=None)
+    parser.add_argument("--candidate-cache", default=None, help="JSONL path for saved retriever top-k candidates.")
+    parser.add_argument("--save-candidates-only", action="store_true", help="Save retriever top-k candidates and exit.")
+--- line 54 ---
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100")
+    parser.add_argument("--output-dir", default="outputs/llm_wiki_rerank")
+    parser.add_argument("--cache-dir", default=None)
+    parser.add_argument("--candidate-cache", default=None, help="JSONL path for saved retriever top-k candidates.")
+    parser.add_argument("--save-candidates-only", action="store_true", help="Save retriever top-k candidates and exit.")
+    parser.add_argument("--rerank-from-candidates", action="store_true", help="Load retriever top-k candidates from JSONL.")
+    parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
+--- line 55 ---
+    parser.add_argument("--output-dir", default="outputs/llm_wiki_rerank")
+    parser.add_argument("--cache-dir", default=None)
+    parser.add_argument("--candidate-cache", default=None, help="JSONL path for saved retriever top-k candidates.")
+    parser.add_argument("--save-candidates-only", action="store_true", help="Save retriever top-k candidates and exit.")
+    parser.add_argument("--rerank-from-candidates", action="store_true", help="Load retriever top-k candidates from JSONL.")
+    parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
+    parser.add_argument("--require-cuda", action="store_true")
+--- line 56 ---
+    parser.add_argument("--cache-dir", default=None)
+    parser.add_argument("--candidate-cache", default=None, help="JSONL path for saved retriever top-k candidates.")
+    parser.add_argument("--save-candidates-only", action="store_true", help="Save retriever top-k candidates and exit.")
+    parser.add_argument("--rerank-from-candidates", action="store_true", help="Load retriever top-k candidates from JSONL.")
+    parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"])
+    parser.add_argument("--require-cuda", action="store_true")
+    parser.add_argument("--query-prefix", default=None)
+--- line 69 ---
+    parser.add_argument("--timeout", type=int, default=180)
+    parser.add_argument("--fusion-mode", default="bonus", choices=["bonus", "reorder"])
+    parser.add_argument("--rank-bonus", type=float, default=1.0)
+    parser.add_argument("--candidate-description-chars", type=int, default=350)
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+--- line 73 ---
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Build candidates and prompts, save them, but do not call the LLM endpoint.",
+    )
+    return parser.parse_args()
+
+--- line 106 ---
+    return device
+
+
+def top_k_ranked_lists(score_matrix, candidate_codes, candidate_k):
+    top_k = min(candidate_k, score_matrix.shape[1])
+    ranked_lists = []
+    for start in tqdm(range(0, score_matrix.shape[0]), desc="top-k candidates"):
+--- line 107 ---
+
+
+def top_k_ranked_lists(score_matrix, candidate_codes, candidate_k):
+    top_k = min(candidate_k, score_matrix.shape[1])
+    ranked_lists = []
+    for start in tqdm(range(0, score_matrix.shape[0]), desc="top-k candidates"):
+        row = score_matrix[start]
+--- line 109 ---
+def top_k_ranked_lists(score_matrix, candidate_codes, candidate_k):
+    top_k = min(candidate_k, score_matrix.shape[1])
+    ranked_lists = []
+    for start in tqdm(range(0, score_matrix.shape[0]), desc="top-k candidates"):
+        row = score_matrix[start]
+        kth = max(0, top_k - 1)
+        idx = np.argpartition(-row, kth=kth)[:top_k]
+--- line 114 ---
+        kth = max(0, top_k - 1)
+        idx = np.argpartition(-row, kth=kth)[:top_k]
+        idx = idx[np.argsort(-row[idx])]
+        ranked_lists.append([(candidate_codes[i], float(row[i])) for i in idx])
+    return ranked_lists
+
+
+--- line 118 ---
+    return ranked_lists
+
+
+def save_candidate_cache(path, cases, ranked_lists):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+--- line 128 ---
+                "case_index": i,
+                "case": case,
+                "target": case["target"],
+                "ranked_candidates": [{"code": code, "score": score} for code, score in ranked],
+            }
+            f.write(json.dumps(row, ensure_ascii=False, default=str) + "\n")
+    tmp.replace(path)
+--- line 134 ---
+    tmp.replace(path)
+
+
+def load_candidate_cache(path):
+    rows = []
+    with Path(path).open("r", encoding="utf-8") as f:
+        for line in f:
+--- line 142 ---
+                rows.append(json.loads(line))
+    cases = [row["case"] for row in rows]
+    ranked_lists = [
+        [(item["code"], float(item["score"])) for item in row["ranked_candidates"]]
+        for row in rows
+    ]
+    return rows, cases, ranked_lists
+--- line 158 ---
+    return "\n".join(lines)
+
+
+def truncate_candidate_text(metadata_lookup, code, max_chars):
+    text = candidate_text(metadata_lookup, code)
+    if len(text) <= max_chars:
+        return text
+... 49 more hits omitted
+
+===== scripts/jobhop_qwen_wiki_direct_select.py =====
+--- line 297 ---
+Career history query:
+{case.get("query", "")}
+
+Candidate Wiki index:
+{chr(10).join(lines)}
+
+Return JSON only:
+--- line 308 ---
+
+Rules:
+- Select at most {args.route_selected_pages} page ids.
+- Use only page ids from the Candidate Wiki index.
+- Search terms should help grep the frozen Wiki for additional relevant pages.
+- Prefer plausible next occupations, not past occupations from the query.
+"""
+--- line 340 ---
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+
+def merge_candidates(selected_ids, transition_ids, grep_ids, raw_ids, candidate_pool_size):
+    merged = []
+    sources = {}
+    for source, ids in [
+--- line 353 ---
+            if docid not in sources:
+                sources[docid] = source
+                merged.append(docid)
+            if len(merged) >= candidate_pool_size:
+                break
+        if len(merged) >= candidate_pool_size:
+            break
+--- line 355 ---
+                merged.append(docid)
+            if len(merged) >= candidate_pool_size:
+                break
+        if len(merged) >= candidate_pool_size:
+            break
+    return merged, sources
+
+--- line 373 ---
+    return "\n".join(parts)
+
+
+def candidate_table_line(rank, docid, page, raw_corpus, source, args):
+    raw = raw_corpus.get(docid, {})
+    title = page.get("title") or raw.get("raw_title", "")
+    summary = page.get("summary") or raw.get("raw_desc", "")
+--- line 377 ---
+    raw = raw_corpus.get(docid, {})
+    title = page.get("title") or raw.get("raw_title", "")
+    summary = page.get("summary") or raw.get("raw_desc", "")
+    return f"id={docid} | title={title} | source={source} | summary={trunc(summary, args.candidate_summary_chars)}"
+
+
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+--- line 380 ---
+    return f"id={docid} | title={title} | source={source} | summary={trunc(summary, args.candidate_summary_chars)}"
+
+
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+    table = [
+        candidate_table_line(i, docid, pages[docid], raw_corpus, sources.get(docid, "retrieved"), args)
+        for i, docid in enumerate(candidate_ids, start=1)
+--- line 382 ---
+
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+    table = [
+        candidate_table_line(i, docid, pages[docid], raw_corpus, sources.get(docid, "retrieved"), args)
+        for i, docid in enumerate(candidate_ids, start=1)
+        if docid in pages
+    ]
+--- line 383 ---
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+    table = [
+        candidate_table_line(i, docid, pages[docid], raw_corpus, sources.get(docid, "retrieved"), args)
+        for i, docid in enumerate(candidate_ids, start=1)
+        if docid in pages
+    ]
+
+--- line 392 ---
+Career history query:
+{case.get("query", "")}
+
+Candidate occupation IDs:
+{chr(10).join(table)}
+
+Return JSON only:
+--- line 401 ---
+}}
+
+Rules:
+- Select ONLY ESCO ids from the Candidate occupation IDs list.
+- ESCO ids look like "2432.9" or "1221.3.2"; do not output row numbers like "1", "2", "47".
+- Return up to {args.final_rank_k} ids in ranked order.
+- Do NOT score candidates.
+--- line 404 ---
+- Select ONLY ESCO ids from the Candidate occupation IDs list.
+- ESCO ids look like "2432.9" or "1221.3.2"; do not output row numbers like "1", "2", "47".
+- Return up to {args.final_rank_k} ids in ranked order.
+- Do NOT score candidates.
+- Do NOT explain candidates.
+- Do NOT output occupations outside the candidate list.
+- Prefer plausible next occupations, not occupations already in the career history.
+--- line 405 ---
+- ESCO ids look like "2432.9" or "1221.3.2"; do not output row numbers like "1", "2", "47".
+- Return up to {args.final_rank_k} ids in ranked order.
+- Do NOT score candidates.
+- Do NOT explain candidates.
+- Do NOT output occupations outside the candidate list.
+- Prefer plausible next occupations, not occupations already in the career history.
+- If uncertain, preserve the original candidate order.
+--- line 406 ---
+- Return up to {args.final_rank_k} ids in ranked order.
+- Do NOT score candidates.
+- Do NOT explain candidates.
+- Do NOT output occupations outside the candidate list.
+- Prefer plausible next occupations, not occupations already in the career history.
+- If uncertain, preserve the original candidate order.
+"""
+--- line 408 ---
+- Do NOT explain candidates.
+- Do NOT output occupations outside the candidate list.
+- Prefer plausible next occupations, not occupations already in the career history.
+- If uncertain, preserve the original candidate order.
+"""
+    raw = call_chat(
+        prompt,
+--- line 412 ---
+"""
+    raw = call_chat(
+        prompt,
+        "Return JSON only. Directly select the most plausible ESCO occupation IDs from the provided candidate list.",
+        args,
+        args.answer_max_tokens,
+    )
+--- line 417 ---
+        args.answer_max_tokens,
+    )
+    obj = parse_json_obj(raw)
+    ranked, invalid = valid_unique(obj.get("selected_ids") or obj.get("ranked_ids") or obj.get("ids") or [], set(candidate_ids))
+    return ranked, invalid, raw
+
+
+--- line 421 ---
+    return ranked, invalid, raw
+
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+--- line 423 ---
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+... 24 more hits omitted
+
+===== scripts/jobhop_qwen_wiki_query_eval.py =====
+--- line 297 ---
+Career history query:
+{case.get("query", "")}
+
+Candidate Wiki index:
+{chr(10).join(lines)}
+
+Return JSON only:
+--- line 308 ---
+
+Rules:
+- Select at most {args.route_selected_pages} page ids.
+- Use only page ids from the Candidate Wiki index.
+- Search terms should help grep the frozen Wiki for additional relevant pages.
+- Prefer plausible next occupations, not past occupations from the query.
+"""
+--- line 340 ---
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+
+def merge_candidates(selected_ids, transition_ids, grep_ids, raw_ids, candidate_pool_size):
+    merged = []
+    sources = {}
+    for source, ids in [
+--- line 353 ---
+            if docid not in sources:
+                sources[docid] = source
+                merged.append(docid)
+            if len(merged) >= candidate_pool_size:
+                break
+        if len(merged) >= candidate_pool_size:
+            break
+--- line 355 ---
+                merged.append(docid)
+            if len(merged) >= candidate_pool_size:
+                break
+        if len(merged) >= candidate_pool_size:
+            break
+    return merged, sources
+
+--- line 373 ---
+    return "\n".join(parts)
+
+
+def candidate_table_line(rank, docid, page, raw_corpus, source, args):
+    raw = raw_corpus.get(docid, {})
+    title = page.get("title") or raw.get("raw_title", "")
+    summary = page.get("summary") or raw.get("raw_desc", "")
+--- line 377 ---
+    raw = raw_corpus.get(docid, {})
+    title = page.get("title") or raw.get("raw_title", "")
+    summary = page.get("summary") or raw.get("raw_desc", "")
+    return f"id={docid} | title={title} | source={source} | summary={trunc(summary, args.candidate_summary_chars)}"
+
+
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+--- line 380 ---
+    return f"id={docid} | title={title} | source={source} | summary={trunc(summary, args.candidate_summary_chars)}"
+
+
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+    context_ids = candidate_ids[:args.final_context_pages]
+    contexts = [page_context(docid, pages[docid], raw_corpus, args) for docid in context_ids if docid in pages]
+
+--- line 381 ---
+
+
+def final_rank(case, candidate_ids, sources, pages, raw_corpus, args):
+    context_ids = candidate_ids[:args.final_context_pages]
+    contexts = [page_context(docid, pages[docid], raw_corpus, args) for docid in context_ids if docid in pages]
+
+    table = [
+--- line 385 ---
+    contexts = [page_context(docid, pages[docid], raw_corpus, args) for docid in context_ids if docid in pages]
+
+    table = [
+        candidate_table_line(i, docid, pages[docid], raw_corpus, sources.get(docid, "retrieved"), args)
+        for i, docid in enumerate(candidate_ids, start=1)
+        if docid in pages
+    ]
+--- line 386 ---
+
+    table = [
+        candidate_table_line(i, docid, pages[docid], raw_corpus, sources.get(docid, "retrieved"), args)
+        for i, docid in enumerate(candidate_ids, start=1)
+        if docid in pages
+    ]
+
+--- line 390 ---
+        if docid in pages
+    ]
+
+    prompt = f"""Rank candidate ESCO occupation IDs for JobHop next-occupation prediction.
+
+Career history query:
+{case.get("query", "")}
+--- line 398 ---
+Retrieved Wiki context:
+{chr(10).join(chr(10) + "---" + chr(10) + x for x in contexts)}
+
+Candidate occupation IDs:
+{chr(10).join(table)}
+
+Return JSON only:
+--- line 407 ---
+}}
+
+Rules:
+- Rank ONLY ESCO ids from the Candidate occupation IDs list.
+- ESCO ids look like "2432.9" or "1221.3.2"; do not output row numbers like "1", "2", "47".
+- Return up to {args.final_rank_k} ids.
+- Prefer plausible next occupations, not occupations already in the career history.
+--- line 411 ---
+- ESCO ids look like "2432.9" or "1221.3.2"; do not output row numbers like "1", "2", "47".
+- Return up to {args.final_rank_k} ids.
+- Prefer plausible next occupations, not occupations already in the career history.
+- If uncertain, preserve the candidate order.
+"""
+    raw = call_chat(
+        prompt,
+--- line 415 ---
+"""
+    raw = call_chat(
+        prompt,
+        "Return JSON only. You rank retrieved ESCO candidate IDs for JobHop.",
+        args,
+        args.answer_max_tokens,
+    )
+--- line 420 ---
+        args.answer_max_tokens,
+    )
+    obj = parse_json_obj(raw)
+    ranked, invalid = valid_unique(obj.get("ranked_ids") or obj.get("selected_ids") or obj.get("ids") or [], set(candidate_ids))
+    return ranked, invalid, raw
+
+
+--- line 425 ---
+
+
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+--- line 427 ---
+
+def fuse_ranked_ids(candidate_ids, qwen_ranked_ids, mode, bonus):
+    if mode == "hard":
+        return qwen_ranked_ids + [x for x in candidate_ids if x not in set(qwen_ranked_ids)]
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+--- line 431 ---
+
+    qpos = {docid: i for i, docid in enumerate(qwen_ranked_ids, start=1)}
+    scored = []
+    for i, docid in enumerate(candidate_ids, start=1):
+        retrieval_score = 1.0 / i
+        qwen_score = bonus * (1.0 / qpos[docid]) if docid in qpos else 0.0
+        scored.append((docid, retrieval_score + qwen_score))
+... 19 more hits omitted
+
+===== scripts/jobhop_strict_llm_wiki_eval.py =====
+--- line 33 ---
+    p.add_argument("--data-dir", default="handoff/data_full")
+    p.add_argument("--split", choices=["validation", "test"], default="validation")
+    p.add_argument("--max-eval-cases", default="100")
+    p.add_argument("--page-candidate-k", type=int, default=60)
+    p.add_argument("--return-k", type=int, default=20)
+    p.add_argument("--page-desc-chars", type=int, default=140)
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+--- line 155 ---
+    return s[:n].rsplit(" ", 1)[0] + "..."
+
+
+def build_prompt(query, candidates, return_k, desc_chars):
+    lines = []
+    for i, (docid, score, page) in enumerate(candidates, start=1):
+        lines.append(
+--- line 157 ---
+
+def build_prompt(query, candidates, return_k, desc_chars):
+    lines = []
+    for i, (docid, score, page) in enumerate(candidates, start=1):
+        lines.append(
+            f"{i}. id={docid} | title={page['title']} | wiki_score={score:.3f} | "
+            f"description={trunc(page['description'], desc_chars)}"
+--- line 192 ---
+        if not m:
+            raise
+        obj = json.loads(m.group(0))
+    ids = obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+--- line 257 ---
+def run_one(args, i, row, pages):
+    query = row["query"]
+    target = row["positive_docids"][0]
+    candidates = preselect_pages(query, pages, args.page_candidate_k)
+    candidate_ids = [x[0] for x in candidates]
+    prompt = build_prompt(query, candidates, args.return_k, args.page_desc_chars)
+
+--- line 258 ---
+    query = row["query"]
+    target = row["positive_docids"][0]
+    candidates = preselect_pages(query, pages, args.page_candidate_k)
+    candidate_ids = [x[0] for x in candidates]
+    prompt = build_prompt(query, candidates, args.return_k, args.page_desc_chars)
+
+    request_row = {
+--- line 259 ---
+    target = row["positive_docids"][0]
+    candidates = preselect_pages(query, pages, args.page_candidate_k)
+    candidate_ids = [x[0] for x in candidates]
+    prompt = build_prompt(query, candidates, args.return_k, args.page_desc_chars)
+
+    request_row = {
+        "case_index": i,
+--- line 265 ---
+        "case_index": i,
+        "qid": row.get("qid"),
+        "target": target,
+        "gold_in_page_candidates": target in candidate_ids,
+        "page_candidate_ids": candidate_ids,
+        "prompt": prompt,
+    }
+--- line 266 ---
+        "qid": row.get("qid"),
+        "target": target,
+        "gold_in_page_candidates": target in candidate_ids,
+        "page_candidate_ids": candidate_ids,
+        "prompt": prompt,
+    }
+
+--- line 273 ---
+    try:
+        content, raw = call_llm(args, prompt)
+        ids = parse_selected_ids(content)
+        valid_ids, invalid_ids = unique_valid(ids, candidate_ids)
+
+        # Fill missing slots with original wiki preselection order, but record avg_valid_ids.
+        filled = list(valid_ids)
+--- line 277 ---
+
+        # Fill missing slots with original wiki preselection order, but record avg_valid_ids.
+        filled = list(valid_ids)
+        for cid in candidate_ids:
+            if len(filled) >= args.return_k:
+                break
+            if cid not in filled:
+--- line 301 ---
+                "selected_ids": valid_ids,
+                "invalid_ids": invalid_ids,
+                "ranked_ids": [x[0] for x in ranked],
+                "gold_in_page_candidates": target in candidate_ids,
+                "target_in_selected": target in valid_ids,
+                "target_in_ranked": target in [x[0] for x in ranked],
+            },
+--- line 309 ---
+            "valid_count": len(valid_ids),
+        }
+    except Exception as e:
+        fallback = [(cid, float(args.return_k - j)) for j, cid in enumerate(candidate_ids[:args.return_k])]
+        return {
+            "ok": False,
+            "request": request_row,
+--- line 319 ---
+                "target": target,
+                "error_type": type(e).__name__,
+                "error": str(e),
+                "gold_in_page_candidates": target in candidate_ids,
+            },
+            "ranked": fallback,
+            "valid_count": 0,
+--- line 351 ---
+    config = vars(args).copy()
+    config.update({
+        "method": "strict_llm_wiki_jobhop",
+        "protocol": "data_full corpus as ESCO wiki pages; Qwen selects relevant wiki pages directly; no trained retriever candidates.",
+        "n_pages": len(pages),
+        "n_cases": len(query_rows),
+    })
+--- line 389 ---
+        "n_cases": len(query_rows),
+        "n_llm_failures": len(failure_rows),
+        "avg_valid_ids": sum(r["valid_count"] for r in results) / max(1, len(results)),
+        "gold_in_page_candidates_rate": sum(1 for r in requests_rows if r["gold_in_page_candidates"]) / max(1, len(requests_rows)),
+        "page_candidate_k": args.page_candidate_k,
+        "return_k": args.return_k,
+        "page_desc_chars": args.page_desc_chars,
+--- line 390 ---
+        "n_llm_failures": len(failure_rows),
+        "avg_valid_ids": sum(r["valid_count"] for r in results) / max(1, len(results)),
+        "gold_in_page_candidates_rate": sum(1 for r in requests_rows if r["gold_in_page_candidates"]) / max(1, len(requests_rows)),
+        "page_candidate_k": args.page_candidate_k,
+        "return_k": args.return_k,
+        "page_desc_chars": args.page_desc_chars,
+        "max_tokens": args.max_tokens,
+
+===== scripts/jobhop_transition_wiki_eval.py =====
+--- line 207 ---
+                tgt_title = corpus.get(tgt, {}).get("title", "")
+                lines.append(f"- {tgt} | {tgt_title} | weight={w:.3f} | p={w / max(total, 1e-9):.4f}")
+        else:
+            lines.append("- No direct outgoing transition observed in train.")
+
+        (pages_dir / f"{docid}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        index_lines.append(f"- {docid}: {row['title']}")
+--- line 275 ---
+
+    ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+
+    if len(ranked) < args.page_candidate_k:
+        seen = {x for x, _ in ranked}
+        for docid in corpus:
+            if docid not in seen:
+--- line 280 ---
+        for docid in corpus:
+            if docid not in seen:
+                ranked.append((docid, 0.0))
+                if len(ranked) >= args.page_candidate_k:
+                    break
+
+    out = []
+--- line 284 ---
+                    break
+
+    out = []
+    for docid, score in ranked[:args.page_candidate_k]:
+        out.append({
+            "docid": docid,
+            "score": float(score),
+--- line 293 ---
+    return out
+
+
+def build_prompt(case, history, candidates, corpus, args):
+    lines = []
+    for i, item in enumerate(candidates, start=1):
+        docid = item["docid"]
+--- line 295 ---
+
+def build_prompt(case, history, candidates, corpus, args):
+    lines = []
+    for i, item in enumerate(candidates, start=1):
+        docid = item["docid"]
+        row = corpus[docid]
+        lines.append(
+--- line 313 ---
+Extracted recent ESCO history:
+{hist}
+
+Candidate wiki pages:
+{chr(10).join(lines)}
+
+Task:
+--- line 317 ---
+{chr(10).join(lines)}
+
+Task:
+Select exactly {args.return_k} candidate ids that are the most plausible next occupations.
+
+Decision rules:
+- Transition evidence from train is a strong prior.
+--- line 321 ---
+
+Decision rules:
+- Transition evidence from train is a strong prior.
+- Prefer candidates supported by recent exact transitions.
+- Use occupation title and description only to break ties or reject implausible transitions.
+- Do not invent ids.
+- Use only ids from the candidate wiki pages.
+--- line 324 ---
+- Prefer candidates supported by recent exact transitions.
+- Use occupation title and description only to break ties or reject implausible transitions.
+- Do not invent ids.
+- Use only ids from the candidate wiki pages.
+- Return ids in descending relevance order.
+
+Return exactly this JSON schema:
+--- line 343 ---
+            raise
+        obj = json.loads(m.group(0))
+
+    ids = obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+--- line 415 ---
+def run_one(i, case, corpus, inv, idf, doc_len, trans, prefix_trans, target_prior, args):
+    valid_docids = set(corpus)
+    history = extract_codes_from_query(str(case.get("query", "")), valid_docids)
+    candidates = preselect_pages(str(case.get("query", "")), history, corpus, inv, idf, doc_len, trans, prefix_trans, target_prior, args)
+    candidate_ids = [x["docid"] for x in candidates]
+    llm_candidates = candidates[:args.llm_rerank_k] if args.llm_rerank_k else candidates
+    llm_candidate_ids = [x["docid"] for x in llm_candidates]
+--- line 416 ---
+    valid_docids = set(corpus)
+    history = extract_codes_from_query(str(case.get("query", "")), valid_docids)
+    candidates = preselect_pages(str(case.get("query", "")), history, corpus, inv, idf, doc_len, trans, prefix_trans, target_prior, args)
+    candidate_ids = [x["docid"] for x in candidates]
+    llm_candidates = candidates[:args.llm_rerank_k] if args.llm_rerank_k else candidates
+    llm_candidate_ids = [x["docid"] for x in llm_candidates]
+    target_docids = [str(x) for x in case.get("positive_docids", [])]
+--- line 417 ---
+    history = extract_codes_from_query(str(case.get("query", "")), valid_docids)
+    candidates = preselect_pages(str(case.get("query", "")), history, corpus, inv, idf, doc_len, trans, prefix_trans, target_prior, args)
+    candidate_ids = [x["docid"] for x in candidates]
+    llm_candidates = candidates[:args.llm_rerank_k] if args.llm_rerank_k else candidates
+    llm_candidate_ids = [x["docid"] for x in llm_candidates]
+    target_docids = [str(x) for x in case.get("positive_docids", [])]
+
+--- line 418 ---
+    candidates = preselect_pages(str(case.get("query", "")), history, corpus, inv, idf, doc_len, trans, prefix_trans, target_prior, args)
+    candidate_ids = [x["docid"] for x in candidates]
+    llm_candidates = candidates[:args.llm_rerank_k] if args.llm_rerank_k else candidates
+    llm_candidate_ids = [x["docid"] for x in llm_candidates]
+    target_docids = [str(x) for x in case.get("positive_docids", [])]
+
+    gold_in_candidates = bool(set(target_docids) & set(candidate_ids))
+--- line 421 ---
+    llm_candidate_ids = [x["docid"] for x in llm_candidates]
+    target_docids = [str(x) for x in case.get("positive_docids", [])]
+
+    gold_in_candidates = bool(set(target_docids) & set(candidate_ids))
+
+    base_row = {
+        "case_index": i,
+--- line 427 ---
+        "case_index": i,
+        "qid": case.get("qid"),
+        "target_docids": target_docids,
+        "ranked_ids": candidate_ids,
+        "gold_in_page_candidates": gold_in_candidates,
+    }
+
+--- line 428 ---
+        "qid": case.get("qid"),
+        "target_docids": target_docids,
+        "ranked_ids": candidate_ids,
+        "gold_in_page_candidates": gold_in_candidates,
+    }
+
+    if args.diagnose_only:
+--- line 434 ---
+    if args.diagnose_only:
+        return base_row, None, None, None
+
+    prompt = build_prompt(case, history, llm_candidates, corpus, args)
+
+    try:
+        raw = call_llm(prompt, args)
+--- line 438 ---
+
+    try:
+        raw = call_llm(prompt, args)
+        selected, invalid = unique_valid(parse_selected_ids(raw), set(llm_candidate_ids))
+        ranked = selected + [x for x in candidate_ids if x not in set(selected)]
+
+        parsed = {
+... 11 more hits omitted
+
+===== scripts/jobhop_wiki_kg_ablation.py =====
+--- line 266 ---
+        kg = transition_rank(case, trans, prefix_trans, prior, valid_docids, args)
+
+        if mode == "wiki_only":
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+--- line 268 ---
+        if mode == "wiki_only":
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+--- line 270 ---
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+            raise ValueError(mode)
+
+--- line 279 ---
+            "qid": case.get("qid", f"{args.split}_{i}"),
+            "target_docids": gold,
+            "ranked_ids": ranked,
+            "gold_in_top100": bool(set(gold) & set(ranked[:100])),
+        })
+    return rows
+
+--- line 290 ---
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_ablation")
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+--- line 336 ---
+        rows = run_mode(mode, queries, wiki_rankings, raw_rankings, trans, prefix_trans, prior, valid_docids, args)
+        write_jsonl(out / f"{mode}_parsed_results.jsonl", rows)
+        metrics[mode] = eval_ranked(rows, [1, 3, 5, 10, 20, 50, 100])
+        metrics[mode]["candidate_recall@100"] = sum(1 for r in rows if r["gold_in_top100"]) / max(len(rows), 1)
+
+    metrics["elapsed_seconds"] = time.time() - t0
+    metrics["seconds_per_case"] = metrics["elapsed_seconds"] / max(len(queries), 1)
+
+===== scripts/jobhop_wiki_kg_score_fusion.py =====
+--- line 58 ---
+            "qid": case.get("qid", f"{args.split}_{i}"),
+            "target_docids": gold,
+            "ranked_ids": ranked,
+            "gold_in_top100": bool(set(gold) & set(ranked[:100])),
+            "method": method,
+        })
+    return rows
+--- line 70 ---
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_score_fusion")
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+--- line 118 ---
+    for alpha in alphas:
+        method = f"wiki_kg_fusion_alpha_{alpha:g}"
+        rankings = [
+            fusion_rank(kg_items_all[i], wiki_items_all[i], raw_items_all[i], alpha, args.candidate_pool_size)
+            for i in range(len(queries))
+        ]
+        rows = make_rows(method, queries, rankings, args)
+--- line 124 ---
+        rows = make_rows(method, queries, rankings, args)
+        write_jsonl(out / f"{method}_parsed_results.jsonl", rows)
+        metrics[method] = eval_ranked(rows, [1, 3, 5, 10, 20, 50, 100])
+        metrics[method]["candidate_recall@100"] = sum(1 for r in rows if r["gold_in_top100"]) / max(len(rows), 1)
+
+    metrics["elapsed_seconds"] = time.time() - t0
+    metrics["seconds_per_case"] = metrics["elapsed_seconds"] / max(len(queries), 1)
+
+===== scripts/lateon_eval.py =====
+--- line 44 ---
+    parser.add_argument("--max-eval-cases", default="2000", help="Integer sample size per eval split, or 'none'.")
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--batch-size", type=int, default=16, help="Query batch size.")
+    parser.add_argument("--doc-batch-size", type=int, default=32, help="Candidate document batch size.")
+    parser.add_argument("--retrieve-k", type=int, default=200, help="LateOn and Markov candidate depth.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/lateon_eval")
+--- line 45 ---
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--batch-size", type=int, default=16, help="Query batch size.")
+    parser.add_argument("--doc-batch-size", type=int, default=32, help="Candidate document batch size.")
+    parser.add_argument("--retrieve-k", type=int, default=200, help="LateOn and Markov candidate depth.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/lateon_eval")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+--- line 48 ---
+    parser.add_argument("--retrieve-k", type=int, default=200, help="LateOn and Markov candidate depth.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/lateon_eval")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+    parser.add_argument("--index-dir", default=None, help="Optional PyLate index directory.")
+    return parser.parse_args()
+
+--- line 49 ---
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/lateon_eval")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+    parser.add_argument("--index-dir", default=None, help="Optional PyLate index directory.")
+    return parser.parse_args()
+
+
+--- line 179 ---
+
+        texts = build_texts(
+            data["metadata_lookup"],
+            data["candidate_codes"],
+            data["validation_cases"],
+            data["test_cases"],
+        )
+--- line 198 ---
+        stage = "model_loading"
+        colbert_model = models.ColBERT(model_name_or_path=args.model_name)
+
+        stage = "candidate_encoding_and_indexing"
+        document_embeddings = colbert_model.encode(
+            texts["candidate_texts"],
+            batch_size=args.doc_batch_size,
+--- line 200 ---
+
+        stage = "candidate_encoding_and_indexing"
+        document_embeddings = colbert_model.encode(
+            texts["candidate_texts"],
+            batch_size=args.doc_batch_size,
+            is_query=False,
+            show_progress_bar=True,
+--- line 206 ---
+            show_progress_bar=True,
+        )
+        index = indexes.PLAID(index_folder=str(index_dir), index_name=INDEX_NAME, override=True)
+        index.add_documents(documents_ids=data["candidate_codes"], documents_embeddings=document_embeddings)
+        retriever = retrieve.ColBERT(index=index)
+
+        stage = "validation_retrieval"
+
+===== scripts/vllm_datafull_late_interaction_parallel.py =====
+--- line 8 ---
+import requests
+from tqdm.auto import tqdm
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+Choose the most plausible next ESCO occupations from the candidate list.
+Return JSON only. Do not add explanations."""
+
+--- line 9 ---
+from tqdm.auto import tqdm
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+Choose the most plausible next ESCO occupations from the candidate list.
+Return JSON only. Do not add explanations."""
+
+INDEX_NAME = "esco_late_datafull"
+--- line 60 ---
+Career query:
+{query}
+
+Candidate ESCO occupations from the late-interaction retriever:
+{chr(10).join(lines)}
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+--- line 63 ---
+Candidate ESCO occupations from the late-interaction retriever:
+{chr(10).join(lines)}
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+--- line 64 ---
+{chr(10).join(lines)}
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+
+--- line 79 ---
+        if not m:
+            raise
+        obj = json.loads(m.group(0))
+    ids = obj if isinstance(obj, list) else obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+--- line 99 ---
+    data = r.json()
+    return data["choices"][0]["message"]["content"], data
+
+def rerank(base, selected, rank_bonus=1.0):
+    pos = {c: i for i, c in enumerate(selected)}
+    vals = [s for _, s in base]
+    mn, mx = min(vals), max(vals)
+--- line 147 ---
+    p.add_argument("--max-eval-cases", default="100")
+    p.add_argument("--batch-size", type=int, default=16)
+    p.add_argument("--doc-batch-size", type=int, default=32)
+    p.add_argument("--candidate-k", type=int, default=20)
+    p.add_argument("--return-k", type=int, default=10)
+    p.add_argument("--candidate-description-chars", type=int, default=40)
+    p.add_argument("--max-tokens", type=int, default=128)
+--- line 149 ---
+    p.add_argument("--doc-batch-size", type=int, default=32)
+    p.add_argument("--candidate-k", type=int, default=20)
+    p.add_argument("--return-k", type=int, default=10)
+    p.add_argument("--candidate-description-chars", type=int, default=40)
+    p.add_argument("--max-tokens", type=int, default=128)
+    p.add_argument("--concurrency", type=int, default=80)
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+--- line 155 ---
+    p.add_argument("--llm-base-url", default="http://127.0.0.1:8000/v1")
+    p.add_argument("--llm-model", default="Qwen/Qwen3.5-9B")
+    p.add_argument("--timeout", type=int, default=180)
+    p.add_argument("--output-dir", default="outputs/llm_wiki_rerank_datafull_late_parallel")
+    args = p.parse_args()
+
+    started = time.time()
+--- line 194 ---
+
+    print("[late-datafull] encoding queries", flush=True)
+    q_emb = model.encode(queries, batch_size=args.batch_size, is_query=True, show_progress_bar=True)
+    print(f"[late-datafull] retrieving top-{args.candidate_k}", flush=True)
+    raw = retriever.retrieve(queries_embeddings=q_emb, k=args.candidate_k)
+    base_ranked = [parse_retrieved_row(r)[:args.candidate_k] for r in raw]
+
+--- line 195 ---
+    print("[late-datafull] encoding queries", flush=True)
+    q_emb = model.encode(queries, batch_size=args.batch_size, is_query=True, show_progress_bar=True)
+    print(f"[late-datafull] retrieving top-{args.candidate_k}", flush=True)
+    raw = retriever.retrieve(queries_embeddings=q_emb, k=args.candidate_k)
+    base_ranked = [parse_retrieved_row(r)[:args.candidate_k] for r in raw]
+
+    with (run_dir / "candidate_cache.jsonl").open("w", encoding="utf-8") as f:
+--- line 196 ---
+    q_emb = model.encode(queries, batch_size=args.batch_size, is_query=True, show_progress_bar=True)
+    print(f"[late-datafull] retrieving top-{args.candidate_k}", flush=True)
+    raw = retriever.retrieve(queries_embeddings=q_emb, k=args.candidate_k)
+    base_ranked = [parse_retrieved_row(r)[:args.candidate_k] for r in raw]
+
+    with (run_dir / "candidate_cache.jsonl").open("w", encoding="utf-8") as f:
+        for i, (case, ranked) in enumerate(zip(cases, base_ranked)):
+--- line 198 ---
+    raw = retriever.retrieve(queries_embeddings=q_emb, k=args.candidate_k)
+    base_ranked = [parse_retrieved_row(r)[:args.candidate_k] for r in raw]
+
+    with (run_dir / "candidate_cache.jsonl").open("w", encoding="utf-8") as f:
+        for i, (case, ranked) in enumerate(zip(cases, base_ranked)):
+            f.write(json.dumps({"case_index": i, "case": case, "target": case["target"],
+                                "ranked_candidates": [{"code": c, "score": s} for c, s in ranked]}, ensure_ascii=False) + "\n")
+--- line 201 ---
+    with (run_dir / "candidate_cache.jsonl").open("w", encoding="utf-8") as f:
+        for i, (case, ranked) in enumerate(zip(cases, base_ranked)):
+            f.write(json.dumps({"case_index": i, "case": case, "target": case["target"],
+                                "ranked_candidates": [{"code": c, "score": s} for c, s in ranked]}, ensure_ascii=False) + "\n")
+
+    failures, parsed, responses = [], [], [None] * len(cases)
+    reranked = [None] * len(cases)
+--- line 204 ---
+                                "ranked_candidates": [{"code": c, "score": s} for c, s in ranked]}, ensure_ascii=False) + "\n")
+
+    failures, parsed, responses = [], [], [None] * len(cases)
+    reranked = [None] * len(cases)
+
+    def one(i):
+        case, ranked = cases[i], base_ranked[i]
+--- line 208 ---
+
+    def one(i):
+        case, ranked = cases[i], base_ranked[i]
+        prompt = build_prompt(case["query"], corpus, ranked, args.return_k, args.candidate_description_chars)
+        content, raw_response = call_llm(args, prompt)
+        ids = parse_ids(content)
+        valid_set = {c for c, _ in ranked}
+--- line 216 ---
+        for x in ids:
+            if x in valid_set and x not in valid:
+                valid.append(x)
+        return i, content, raw_response, valid, rerank(ranked, valid[:args.return_k])
+
+    print(f"[late-datafull] llm rerank cases with concurrency={args.concurrency}", flush=True)
+    with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
+--- line 218 ---
+                valid.append(x)
+        return i, content, raw_response, valid, rerank(ranked, valid[:args.return_k])
+
+    print(f"[late-datafull] llm rerank cases with concurrency={args.concurrency}", flush=True)
+    with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
+        futs = [ex.submit(one, i) for i in range(len(cases))]
+        for fut in tqdm(as_completed(futs), total=len(futs), desc="llm rerank cases"):
+--- line 221 ---
+    print(f"[late-datafull] llm rerank cases with concurrency={args.concurrency}", flush=True)
+    with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
+        futs = [ex.submit(one, i) for i in range(len(cases))]
+        for fut in tqdm(as_completed(futs), total=len(futs), desc="llm rerank cases"):
+            try:
+                i, content, raw_response, valid, rr = fut.result()
+                reranked[i] = rr
+... 5 more hits omitted
+
+===== scripts/vllm_datafull_rerank_parallel.py =====
+--- line 16 ---
+from jobhop_eval_common import configure_hf_cache, cleanup_cuda
+
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+Choose the most plausible next ESCO occupations from the candidate list.
+Return JSON only with this schema: {"selected_ids": ["id1", "id2"]}.
+Do not add explanations."""
+--- line 17 ---
+
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+Choose the most plausible next ESCO occupations from the candidate list.
+Return JSON only with this schema: {"selected_ids": ["id1", "id2"]}.
+Do not add explanations."""
+
+--- line 60 ---
+def topk_from_scores(score_matrix, docids, k):
+    rows = []
+    top_k = min(k, score_matrix.shape[1])
+    for row in tqdm(score_matrix, desc="top-k candidates"):
+        idx = np.argpartition(-row, top_k - 1)[:top_k]
+        idx = idx[np.argsort(-row[idx])]
+        rows.append([(docids[i], float(row[i])) for i in idx])
+--- line 74 ---
+
+
+def build_prompt(case, ranked, corpus, return_k, max_chars):
+    cand_lines = []
+    for i, (docid, score) in enumerate(ranked, start=1):
+        cand_lines.append(
+            f"{i}. id={docid} | retriever_score={score:.6f} | {truncate(corpus[docid], max_chars)}"
+--- line 76 ---
+def build_prompt(case, ranked, corpus, return_k, max_chars):
+    cand_lines = []
+    for i, (docid, score) in enumerate(ranked, start=1):
+        cand_lines.append(
+            f"{i}. id={docid} | retriever_score={score:.6f} | {truncate(corpus[docid], max_chars)}"
+        )
+    return f"""We are doing JobHop last-step next-occupation prediction.
+--- line 84 ---
+Career history query:
+{case["query"]}
+
+Candidate ESCO occupations from the retriever:
+{chr(10).join(cand_lines)}
+
+The retriever ranking is a strong prior.
+--- line 85 ---
+{case["query"]}
+
+Candidate ESCO occupations from the retriever:
+{chr(10).join(cand_lines)}
+
+The retriever ranking is a strong prior.
+Do not aggressively reorder candidates.
+--- line 88 ---
+{chr(10).join(cand_lines)}
+
+The retriever ranking is a strong prior.
+Do not aggressively reorder candidates.
+Only move a candidate upward if it is clearly a better next occupation than candidates above it.
+If uncertain, preserve the original retriever order.
+
+--- line 89 ---
+
+The retriever ranking is a strong prior.
+Do not aggressively reorder candidates.
+Only move a candidate upward if it is clearly a better next occupation than candidates above it.
+If uncertain, preserve the original retriever order.
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+--- line 92 ---
+Only move a candidate upward if it is clearly a better next occupation than candidates above it.
+If uncertain, preserve the original retriever order.
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+--- line 93 ---
+If uncertain, preserve the original retriever order.
+
+Select exactly {return_k} candidate ids that are the most plausible next occupations.
+Use only ids from the candidate list. Preserve descending relevance order.
+Return exactly this JSON schema:
+{{"selected_ids": ["id1", "id2"]}}"""
+
+--- line 109 ---
+        if not m:
+            raise
+        obj = json.loads(m.group(0))
+    ids = obj.get("selected_ids") or obj.get("ids") or obj.get("candidate_ids")
+    if not isinstance(ids, list):
+        raise ValueError("No selected_ids list in LLM response")
+    return [str(x).strip() for x in ids if str(x).strip()]
+--- line 115 ---
+    return [str(x).strip() for x in ids if str(x).strip()]
+
+
+def rerank_bonus(ranked, selected_ids, rank_bonus=1.0):
+    pos = {x: i for i, x in enumerate(selected_ids)}
+    scores = np.array([s for _, s in ranked], dtype="float32")
+    mn, mx = float(scores.min()), float(scores.max())
+--- line 130 ---
+
+
+def call_one(args, i, case, ranked, corpus):
+    prompt = build_prompt(case, ranked[:args.candidate_k], corpus, args.return_k, args.candidate_description_chars)
+    payload = {
+        "model": args.llm_model,
+        "messages": [
+--- line 155 ---
+
+    valid = []
+    seen = set()
+    cand = {x[0] for x in ranked}
+    invalid = []
+    for x in ids:
+        if x not in cand:
+--- line 158 ---
+    cand = {x[0] for x in ranked}
+    invalid = []
+    for x in ids:
+        if x not in cand:
+            invalid.append(x)
+            continue
+        if x not in seen:
+--- line 165 ---
+            valid.append(x)
+            seen.add(x)
+
+    reranked = rerank_bonus(ranked, valid[:args.return_k])
+    parsed = {
+        "case_index": i,
+        "target": case["target"],
+--- line 176 ---
+        "n_invalid": len(invalid),
+    }
+    response = {"case_index": i, "target": case["target"], "raw_content": content, "raw_response": raw}
+    return i, reranked, parsed, response, None
+
+
+def main():
+--- line 186 ---
+    p.add_argument("--split", choices=["validation", "test"], default="validation")
+    p.add_argument("--max-eval-cases", default="100")
+    p.add_argument("--batch-size", type=int, default=32)
+    p.add_argument("--candidate-k", type=int, default=20)
+    p.add_argument("--return-k", type=int, default=10)
+    p.add_argument("--candidate-description-chars", type=int, default=40)
+    p.add_argument("--max-tokens", type=int, default=128)
+--- line 188 ---
+    p.add_argument("--batch-size", type=int, default=32)
+    p.add_argument("--candidate-k", type=int, default=20)
+    p.add_argument("--return-k", type=int, default=10)
+    p.add_argument("--candidate-description-chars", type=int, default=40)
+    p.add_argument("--max-tokens", type=int, default=128)
+    p.add_argument("--concurrency", type=int, default=4)
+    p.add_argument("--rank-bonus", type=float, default=1.0)
+... 9 more hits omitted

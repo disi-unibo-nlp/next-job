@@ -1,0 +1,47 @@
+{
+  "candidate_corpus_rows": 2982,
+  "files": {
+    "eval_corpus": "handoff/data_full/eval_corpus.jsonl",
+    "eval_queries_default_validation": "handoff/data_full/eval_queries.jsonl",
+    "eval_queries_test": "handoff/data_full/eval_queries_test.jsonl",
+    "eval_queries_validation": "handoff/data_full/eval_queries_validation.jsonl",
+    "train": "handoff/data_full/train.jsonl"
+  },
+  "finished_at_utc": "2026-08-22T10:50:47.034189+00:00",
+  "preprocessing_config": {
+    "candidate_pool": "unique ESCO codes observed in train trajectories",
+    "collapse_consecutive_duplicates": true,
+    "dataset_id": "aida-ugent/JobHop",
+    "date_sort_keys": [
+      "start_date parsed as year/quarter",
+      "end_date",
+      "matched_code"
+    ],
+    "max_eval_cases": null,
+    "min_trajectory_length": 2,
+    "prediction_protocol": "last-step next-occupation prediction",
+    "random_seed": 7,
+    "remove_unknown": true,
+    "splits": [
+      "train",
+      "validation",
+      "test"
+    ],
+    "validation_test_filter": "cases whose target is in train candidate pool"
+  },
+  "protocol_note": "Evaluation remains last-step next-occupation prediction. Training rows are generated from the train split only using the configured train_example_mode.",
+  "runtime_seconds": 471.8920194299999,
+  "skipped_train_rows": 0,
+  "started_at_utc": "2026-08-22T10:42:55.142185+00:00",
+  "stats_summary": {
+    "candidate_description_coverage": 2982,
+    "candidate_metadata_coverage": 2982,
+    "candidate_occupations": 2982,
+    "test_eval_cases": 32089,
+    "validation_eval_cases": 32123
+  },
+  "status": "ok",
+  "test_queries": 32089,
+  "train_rows": 256593,
+  "validation_queries": 32123
+}

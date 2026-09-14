@@ -1,0 +1,27 @@
+split,stage,count,note
+train,raw_rows,1594827,Rows loaded after schema standardization.
+train,valid_code_rows,1484254,Rows retained after removing Unknown/invalid ESCO codes.
+train,persons_with_valid_code,281982,Persons with at least one valid occupation code.
+train,persons_len_ge_2_before_collapse,263697,Persons with at least two valid events before duplicate collapse.
+train,persons_after_collapse,281982,Persons remaining after consecutive duplicate collapse.
+train,persons_len_ge_2_after_collapse,256593,Persons with at least two events after duplicate collapse.
+train,train_trajectories_used_for_markov,256593,Final train trajectories used for candidate vocabulary and Markov transitions.
+train,train_candidate_vocab_size,2982,Unique ESCO candidate codes from retained train trajectories.
+validation,raw_rows,199587,Rows loaded after schema standardization.
+validation,valid_code_rows,185965,Rows retained after removing Unknown/invalid ESCO codes.
+validation,persons_with_valid_code,35262,Persons with at least one valid occupation code.
+validation,persons_len_ge_2_before_collapse,32976,Persons with at least two valid events before duplicate collapse.
+validation,persons_after_collapse,35262,Persons remaining after consecutive duplicate collapse.
+validation,persons_len_ge_2_after_collapse,32123,Persons with at least two events after duplicate collapse.
+validation,eval_cases_after_len_filter,32123,Last-step eval cases after len>=2 trajectory filter.
+validation,eval_cases_target_in_train_vocab,32123,Eval cases retained because target is in train candidate vocabulary.
+validation,final_eval_cases,32123,Final evaluation cases.
+test,raw_rows,198877,Rows loaded after schema standardization.
+test,valid_code_rows,185290,Rows retained after removing Unknown/invalid ESCO codes.
+test,persons_with_valid_code,35249,Persons with at least one valid occupation code.
+test,persons_len_ge_2_before_collapse,32988,Persons with at least two valid events before duplicate collapse.
+test,persons_after_collapse,35249,Persons remaining after consecutive duplicate collapse.
+test,persons_len_ge_2_after_collapse,32089,Persons with at least two events after duplicate collapse.
+test,eval_cases_after_len_filter,32089,Last-step eval cases after len>=2 trajectory filter.
+test,eval_cases_target_in_train_vocab,32089,Eval cases retained because target is in train candidate vocabulary.
+test,final_eval_cases,32089,Final evaluation cases.

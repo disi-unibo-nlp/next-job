@@ -1,0 +1,5 @@
+test,metric,n,baseline_label,system_label,baseline,system,delta,ci95_low,ci95_high,p_boot
+trained_st_fusion_vs_pure_formal_test,Accuracy@1,32089,trained ST pure,trained ST+Markov fusion,0.05260369597058182,0.08638474243510237,0.03378104646452055,0.030197263859889682,0.037395992396148214,0.0
+trained_st_fusion_vs_pure_formal_test,MRR@10,32089,trained ST pure,trained ST+Markov fusion,0.1108546938153657,0.15470902603720704,0.04385433222184134,0.04094954904687211,0.046731182173389785,0.0
+trained_st_fusion_vs_pure_formal_test,NDCG@10,32089,trained ST pure,trained ST+Markov fusion,0.14925784229977074,0.19820089626772674,0.048943053967956014,0.046169885859204104,0.05165204933016167,0.0
+trained_st_fusion_vs_pure_formal_test,Recall@10,32089,trained ST pure,trained ST+Markov fusion,0.2750163607466733,0.3398360808999969,0.06481972015332357,0.060861977624731216,0.06874707843809404,0.0

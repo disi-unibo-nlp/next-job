@@ -1,0 +1,76 @@
+# Fast Provenance Checks
+
+Scanned files: 65
+
+## Files
+- `matches_kg_params.txt`: 123516 bytes
+- `matches_qwen_candidate_recall.txt`: 142599 bytes
+- `matches_qwen_failure.txt`: 120831 bytes
+- `matches_wiki_alpha.txt`: 22064 bytes
+
+## Scanned Paths
+- `outputs/paper_checks/error_analysis/error_analysis_summary.md`
+- `outputs/paper_checks/error_analysis_plus_bge/error_analysis_plus_bge_summary.md`
+- `outputs/paper_checks/filter_counts/filter_counts_by_split.csv`
+- `outputs/paper_checks/filter_counts/filter_counts_stages.csv`
+- `outputs/paper_checks/filter_counts/filter_counts_summary.md`
+- `outputs/paper_checks/significance_tests_fixed/significance_per_query_deltas.csv`
+- `outputs/paper_checks/significance_tests_fixed/significance_summary.csv`
+- `outputs/paper_checks/significance_tests_fixed/significance_summary.md`
+- `outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/metrics.json`
+- `outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/run_config.json`
+- `outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/transition_stats.json`
+- `outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/metrics.json`
+- `outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/run_config.json`
+- `outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/transition_stats.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/metrics.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/run_config.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/transition_stats.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/metrics.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/run_config.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/transition_stats.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/metrics.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/run_config.json`
+- `outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/transition_stats.json`
+- `outputs/qwen_wiki_query_smoke_20pages_5q/validation/metrics.json`
+- `outputs/qwen_wiki_query_smoke_20pages_5q/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n100_c16/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n100_c16_t256/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192/validation/run_config.json`
+- `outputs/wiki_direct_select_seed42_validation_n5_c16/validation/run_config.json`
+- `outputs/wiki_kg_ablation_seed42_test_full/test/run_config.json`
+- `outputs/wiki_kg_ablation_seed42_validation_full/validation/run_config.json`
+- `outputs/wiki_kg_ablation_seed42_validation_n1000/validation/run_config.json`
+- `outputs/wiki_kg_score_fusion_seed42_test_full_alpha08/test/run_config.json`
+- `outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08/validation/run_config.json`
+- `outputs/wiki_kg_score_fusion_seed42_validation_n1000/validation/run_config.json`
+- `scripts/check_handoff_training_data.py`
+- `scripts/create_named_wiki_pages.py`
+- `scripts/dense_eval.py`
+- `scripts/error_analysis_plus_bge.py`
+- `scripts/eval_lateon_only_datafull.py`
+- `scripts/export_bge_m3_formal_per_query.py`
+- `scripts/export_bge_m3_per_query_test.py`
+- `scripts/export_bge_m3_per_query_test_datafull.py`
+- `scripts/export_jobhop_training_data.py`
+- `scripts/export_lateon_only_test.py`
+- `scripts/export_trained_st_formal_per_query_and_sig.py`
+- `scripts/filter_counts_formal.py`
+- `scripts/jobhop_eval_common.py`
+- `scripts/jobhop_llm_wiki_rerank.py`
+- `scripts/jobhop_qwen_make_entity_pages.py`
+- `scripts/jobhop_qwen_wiki_direct_select.py`
+- `scripts/jobhop_qwen_wiki_query_eval.py`
+- `scripts/jobhop_strict_llm_wiki_eval.py`
+- `scripts/jobhop_transition_wiki_eval.py`
+- `scripts/jobhop_wiki_kg_ablation.py`
+- `scripts/jobhop_wiki_kg_score_fusion.py`
+- `scripts/lateon_eval.py`
+- `scripts/vllm_datafull_late_interaction_parallel.py`
+- `scripts/vllm_datafull_rerank_parallel.py`

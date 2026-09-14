@@ -1,0 +1,4 @@
+split,raw_rows,raw_persons,unknown_code_rows,valid_code_rows_after_unknown_invalid_removed,dropped_rows_unknown_or_invalid,persons_with_at_least_one_valid_code,persons_len_ge_2_before_collapse,events_after_consecutive_duplicate_collapse,persons_after_consecutive_duplicate_collapse,persons_len_ge_2_after_collapse,dropped_persons_by_len_after_collapse,train_trajectories_used_for_markov,train_candidate_vocab_size,final_train_trajectories,eval_cases_after_len_filter,eval_cases_target_in_train_vocab,dropped_eval_cases_target_not_in_train_vocab,final_eval_cases
+train,1594827,284251,110573,1484254,110573,281982,263697,1312111,281982,256593,25389,256593.0,2982.0,256593.0,,,,
+validation,199587,35531,13622,185965,13622,35262,32976,164396,35262,32123,3139,,,,32123.0,32123.0,0.0,32123.0
+test,198877,35533,13587,185290,13587,35249,32988,163796,35249,32089,3160,,,,32089.0,32089.0,0.0,32089.0

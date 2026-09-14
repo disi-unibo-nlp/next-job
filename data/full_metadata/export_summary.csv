@@ -1,0 +1,32 @@
+key,value
+status,ok
+started_at_utc,2026-08-22T10:42:55.142185+00:00
+finished_at_utc,2026-08-22T10:50:47.034189+00:00
+runtime_seconds,471.8920194299999
+train_rows,256593
+skipped_train_rows,0
+candidate_corpus_rows,2982
+validation_queries,32123
+test_queries,32089
+protocol_note,Evaluation remains last-step next-occupation prediction. Training rows are generated from the train split only using the configured train_example_mode.
+preprocessing_config.dataset_id,aida-ugent/JobHop
+preprocessing_config.splits,"[""train"", ""validation"", ""test""]"
+preprocessing_config.remove_unknown,True
+preprocessing_config.collapse_consecutive_duplicates,True
+preprocessing_config.date_sort_keys,"[""start_date parsed as year/quarter"", ""end_date"", ""matched_code""]"
+preprocessing_config.min_trajectory_length,2
+preprocessing_config.prediction_protocol,last-step next-occupation prediction
+preprocessing_config.candidate_pool,unique ESCO codes observed in train trajectories
+preprocessing_config.validation_test_filter,cases whose target is in train candidate pool
+preprocessing_config.max_eval_cases,
+preprocessing_config.random_seed,7
+stats_summary.candidate_occupations,2982
+stats_summary.candidate_metadata_coverage,2982
+stats_summary.candidate_description_coverage,2982
+stats_summary.validation_eval_cases,32123
+stats_summary.test_eval_cases,32089
+files.train,handoff/data_full/train.jsonl
+files.eval_corpus,handoff/data_full/eval_corpus.jsonl
+files.eval_queries_default_validation,handoff/data_full/eval_queries.jsonl
+files.eval_queries_validation,handoff/data_full/eval_queries_validation.jsonl
+files.eval_queries_test,handoff/data_full/eval_queries_test.jsonl

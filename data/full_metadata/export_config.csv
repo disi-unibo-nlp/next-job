@@ -1,0 +1,10 @@
+key,value
+script,scripts/export_jobhop_training_data.py
+output_dir,handoff/data_full
+cache_dir,/hf-cache
+random_seed,7
+max_train_samples,
+max_eval_cases,
+num_negatives,8
+negative_strategy,random
+train_example_mode,last-step

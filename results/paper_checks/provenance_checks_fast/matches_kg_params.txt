@@ -1,0 +1,3203 @@
+
+===== outputs/paper_checks/error_analysis/error_analysis_summary.md =====
+--- line 1 ---
+# Error Analysis: KG-alone vs Wiki+KG Score Fusion
+
+Split: full test
+
+--- line 15 ---
+
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| 1 | kg_alone | 4849 | 0.0608 | 0.1163 | 0.1552 | 0.2834 |
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+--- line 16 ---
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| 1 | kg_alone | 4849 | 0.0608 | 0.1163 | 0.1552 | 0.2834 |
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+--- line 17 ---
+|---|---|---:|---:|---:|---:|---:|
+| 1 | kg_alone | 4849 | 0.0608 | 0.1163 | 0.1552 | 0.2834 |
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+--- line 18 ---
+| 1 | kg_alone | 4849 | 0.0608 | 0.1163 | 0.1552 | 0.2834 |
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+--- line 19 ---
+| 1 | wiki_kg_score_fusion_alpha_0.8 | 4849 | 0.0608 | 0.1127 | 0.1483 | 0.2650 |
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+--- line 20 ---
+| 2-3 | kg_alone | 11342 | 0.0733 | 0.1377 | 0.1815 | 0.3252 |
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+--- line 21 ---
+| 2-3 | wiki_kg_score_fusion_alpha_0.8 | 11342 | 0.0749 | 0.1415 | 0.1856 | 0.3299 |
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+--- line 22 ---
+| 4-7 | kg_alone | 12685 | 0.0708 | 0.1347 | 0.1776 | 0.3182 |
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+--- line 23 ---
+| 4-7 | wiki_kg_score_fusion_alpha_0.8 | 12685 | 0.0752 | 0.1419 | 0.1865 | 0.3326 |
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+--- line 24 ---
+| 8-15 | kg_alone | 3177 | 0.0661 | 0.1352 | 0.1827 | 0.3384 |
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+--- line 25 ---
+| 8-15 | wiki_kg_score_fusion_alpha_0.8 | 3177 | 0.0715 | 0.1456 | 0.1950 | 0.3563 |
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+| 8-15 | delta_fusion_minus_kg | 3177 | 0.0054 | 0.0104 | 0.0123 | 0.0179 |
+--- line 26 ---
+| 16+ | kg_alone | 36 | 0.1111 | 0.1567 | 0.1972 | 0.3333 |
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+| 8-15 | delta_fusion_minus_kg | 3177 | 0.0054 | 0.0104 | 0.0123 | 0.0179 |
+| 16+ | delta_fusion_minus_kg | 36 | 0.0000 | 0.0290 | 0.0537 | 0.1389 |
+--- line 27 ---
+| 16+ | wiki_kg_score_fusion_alpha_0.8 | 36 | 0.1111 | 0.1857 | 0.2509 | 0.4722 |
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+| 8-15 | delta_fusion_minus_kg | 3177 | 0.0054 | 0.0104 | 0.0123 | 0.0179 |
+| 16+ | delta_fusion_minus_kg | 36 | 0.0000 | 0.0290 | 0.0537 | 0.1389 |
+
+--- line 28 ---
+| 1 | delta_fusion_minus_kg | 4849 | 0.0000 | -0.0037 | -0.0069 | -0.0184 |
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+| 8-15 | delta_fusion_minus_kg | 3177 | 0.0054 | 0.0104 | 0.0123 | 0.0179 |
+| 16+ | delta_fusion_minus_kg | 36 | 0.0000 | 0.0290 | 0.0537 | 0.1389 |
+
+### return_move
+--- line 29 ---
+| 2-3 | delta_fusion_minus_kg | 11342 | 0.0016 | 0.0038 | 0.0041 | 0.0048 |
+| 4-7 | delta_fusion_minus_kg | 12685 | 0.0044 | 0.0072 | 0.0089 | 0.0143 |
+| 8-15 | delta_fusion_minus_kg | 3177 | 0.0054 | 0.0104 | 0.0123 | 0.0179 |
+| 16+ | delta_fusion_minus_kg | 36 | 0.0000 | 0.0290 | 0.0537 | 0.1389 |
+
+### return_move
+
+--- line 35 ---
+
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| yes | kg_alone | 4778 | 0.1898 | 0.3290 | 0.4148 | 0.6921 |
+| yes | wiki_kg_score_fusion_alpha_0.8 | 4778 | 0.2175 | 0.3847 | 0.4844 | 0.8056 |
+| no | kg_alone | 27311 | 0.0487 | 0.0988 | 0.1344 | 0.2519 |
+| no | wiki_kg_score_fusion_alpha_0.8 | 27311 | 0.0472 | 0.0945 | 0.1283 | 0.2397 |
+--- line 36 ---
+| Bucket | Method | N | Acc@1 | MRR@10 | NDCG@10 | Recall@10 |
+|---|---|---:|---:|---:|---:|---:|
+| yes | kg_alone | 4778 | 0.1898 | 0.3290 | 0.4148 | 0.6921 |
+| yes | wiki_kg_score_fusion_alpha_0.8 | 4778 | 0.2175 | 0.3847 | 0.4844 | 0.8056 |
+| no | kg_alone | 27311 | 0.0487 | 0.0988 | 0.1344 | 0.2519 |
+| no | wiki_kg_score_fusion_alpha_0.8 | 27311 | 0.0472 | 0.0945 | 0.1283 | 0.2397 |
+| yes | delta_fusion_minus_kg | 4778 | 0.0276 | 0.0556 | 0.0697 | 0.1134 |
+--- line 37 ---
+|---|---|---:|---:|---:|---:|---:|
+| yes | kg_alone | 4778 | 0.1898 | 0.3290 | 0.4148 | 0.6921 |
+| yes | wiki_kg_score_fusion_alpha_0.8 | 4778 | 0.2175 | 0.3847 | 0.4844 | 0.8056 |
+| no | kg_alone | 27311 | 0.0487 | 0.0988 | 0.1344 | 0.2519 |
+| no | wiki_kg_score_fusion_alpha_0.8 | 27311 | 0.0472 | 0.0945 | 0.1283 | 0.2397 |
+| yes | delta_fusion_minus_kg | 4778 | 0.0276 | 0.0556 | 0.0697 | 0.1134 |
+| no | delta_fusion_minus_kg | 27311 | -0.0015 | -0.0042 | -0.0061 | -0.0122 |
+--- line 38 ---
+| yes | kg_alone | 4778 | 0.1898 | 0.3290 | 0.4148 | 0.6921 |
+| yes | wiki_kg_score_fusion_alpha_0.8 | 4778 | 0.2175 | 0.3847 | 0.4844 | 0.8056 |
+| no | kg_alone | 27311 | 0.0487 | 0.0988 | 0.1344 | 0.2519 |
+| no | wiki_kg_score_fusion_alpha_0.8 | 27311 | 0.0472 | 0.0945 | 0.1283 | 0.2397 |
+| yes | delta_fusion_minus_kg | 4778 | 0.0276 | 0.0556 | 0.0697 | 0.1134 |
+| no | delta_fusion_minus_kg | 27311 | -0.0015 | -0.0042 | -0.0061 | -0.0122 |
+
+... 24 more hits omitted
+
+===== outputs/paper_checks/error_analysis_plus_bge/error_analysis_plus_bge_summary.md =====
+--- line 3 ---
+# Error Analysis Plus BGE
+
+This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.
+
+## Inputs
+- error_per_case: `outputs/paper_checks/error_analysis/error_analysis_per_case.csv`
+--- line 14 ---
+
+| method                         |     n |   Accuracy@1 |    MRR@10 |   NDCG@10 |   Recall@10 |
+|:-------------------------------|------:|-------------:|----------:|----------:|------------:|
+| KG-alone                       | 32089 |    0.0697435 | 0.133072  | 0.176111  |    0.31743  |
+| wiki_kg_score_fusion_alpha_0.8 | 32089 |    0.0725794 | 0.137745  | 0.181313  |    0.323943 |
+| BGE-M3 pure                    | 32089 |    0.0343731 | 0.0685488 | 0.0890462 |    0.155412 |
+| BGE-M3+Markov fusion           | 32089 |    0.077659  | 0.139675  | 0.179024  |    0.307146 |
+--- line 15 ---
+| method                         |     n |   Accuracy@1 |    MRR@10 |   NDCG@10 |   Recall@10 |
+|:-------------------------------|------:|-------------:|----------:|----------:|------------:|
+| KG-alone                       | 32089 |    0.0697435 | 0.133072  | 0.176111  |    0.31743  |
+| wiki_kg_score_fusion_alpha_0.8 | 32089 |    0.0725794 | 0.137745  | 0.181313  |    0.323943 |
+| BGE-M3 pure                    | 32089 |    0.0343731 | 0.0685488 | 0.0890462 |    0.155412 |
+| BGE-M3+Markov fusion           | 32089 |    0.077659  | 0.139675  | 0.179024  |    0.307146 |
+| trained ST pure                | 32089 |    0.0526037 | 0.110855  | 0.149258  |    0.275016 |
+--- line 18 ---
+| wiki_kg_score_fusion_alpha_0.8 | 32089 |    0.0725794 | 0.137745  | 0.181313  |    0.323943 |
+| BGE-M3 pure                    | 32089 |    0.0343731 | 0.0685488 | 0.0890462 |    0.155412 |
+| BGE-M3+Markov fusion           | 32089 |    0.077659  | 0.139675  | 0.179024  |    0.307146 |
+| trained ST pure                | 32089 |    0.0526037 | 0.110855  | 0.149258  |    0.275016 |
+| trained ST+Markov fusion       | 32089 |    0.0863847 | 0.154709  | 0.198201  |    0.339836 |
+
+## Files Written
+
+===== outputs/paper_checks/filter_counts/filter_counts_stages.csv =====
+--- line 8 ---
+train,persons_len_ge_2_before_collapse,263697,Persons with at least two valid events before duplicate collapse.
+train,persons_after_collapse,281982,Persons remaining after consecutive duplicate collapse.
+train,persons_len_ge_2_after_collapse,256593,Persons with at least two events after duplicate collapse.
+train,train_trajectories_used_for_markov,256593,Final train trajectories used for candidate vocabulary and Markov transitions.
+train,train_candidate_vocab_size,2982,Unique ESCO candidate codes from retained train trajectories.
+validation,raw_rows,199587,Rows loaded after schema standardization.
+validation,valid_code_rows,185965,Rows retained after removing Unknown/invalid ESCO codes.
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.csv =====
+--- line 2 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+--- line 3 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+--- line 4 ---
+test,metric,n,baseline_mean,system_mean,delta_mean,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_p_two_sided,paired_t_stat_normal_approx,paired_t_p_two_sided_normal_approx
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+--- line 5 ---
+wiki_kg_fusion_vs_kg_alone_test,Accuracy@1,32089,0.06974352581881642,0.07257938857552432,0.002835862756707906,0.00177630963881704,0.003864252547601982,0.0,5.373893041192806,7.705457624723644e-08
+wiki_kg_fusion_vs_kg_alone_test,MRR@10,32089,0.13307201894334555,0.13774536791770112,0.00467334897435555,0.003959053366950201,0.005388596794530317,0.0,12.650262679499942,1.1150140008865367e-36
+wiki_kg_fusion_vs_kg_alone_test,NDCG@10,32089,0.17611136500268573,0.1813129750763115,0.005201610073625761,0.004320375682534289,0.006081032532339042,0.0,11.555923634954235,6.8902658640390606e-31
+wiki_kg_fusion_vs_kg_alone_test,Recall@10,32089,0.31742964878930474,0.3239427841316339,0.006513135342329147,0.004238212471563464,0.00875689488609804,0.0,5.634914331802003,1.7514538126361665e-08
+qwen_direct_select_vs_baseline_validation_n2000,Accuracy@1,2000,0.071,0.0435,-0.0275,-0.039,-0.0165,0.0,-4.832147312467512,1.3506824992793593e-06
+qwen_direct_select_vs_baseline_validation_n2000,MRR@10,2000,0.13390892857142858,0.10240654761904762,-0.031502380952380955,-0.04050734126984129,-0.022692857142857136,0.0,-6.8899837183134505,5.57987739475369e-12
+qwen_direct_select_vs_baseline_validation_n2000,NDCG@10,2000,0.17597201384687355,0.14931272386515443,-0.02665928998171913,-0.03406428836056196,-0.018979489381186033,0.0,-6.841475391565157,7.838167082408502e-12
+
+===== outputs/paper_checks/significance_tests_fixed/significance_summary.md =====
+--- line 9 ---
+
+| Test | Metric | N | Baseline | System | Delta | 95% CI | p_boot | p_t_approx |
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+--- line 10 ---
+| Test | Metric | N | Baseline | System | Delta | 95% CI | p_boot | p_t_approx |
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+--- line 11 ---
+|---|---|---:|---:|---:|---:|---|---:|---:|
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+--- line 12 ---
+| wiki_kg_fusion_vs_kg_alone_test | Accuracy@1 | 32089 | 0.069744 | 0.072579 | 0.002836 | [0.001776, 0.003864] | 0 | 7.70546e-08 |
+| wiki_kg_fusion_vs_kg_alone_test | MRR@10 | 32089 | 0.133072 | 0.137745 | 0.004673 | [0.003959, 0.005389] | 0 | 1.11501e-36 |
+| wiki_kg_fusion_vs_kg_alone_test | NDCG@10 | 32089 | 0.176111 | 0.181313 | 0.005202 | [0.004320, 0.006081] | 0 | 6.89027e-31 |
+| wiki_kg_fusion_vs_kg_alone_test | Recall@10 | 32089 | 0.317430 | 0.323943 | 0.006513 | [0.004238, 0.008757] | 0 | 1.75145e-08 |
+| qwen_direct_select_vs_baseline_validation_n2000 | Accuracy@1 | 2000 | 0.071000 | 0.043500 | -0.027500 | [-0.039000, -0.016500] | 0 | 1.35068e-06 |
+| qwen_direct_select_vs_baseline_validation_n2000 | MRR@10 | 2000 | 0.133909 | 0.102407 | -0.031502 | [-0.040507, -0.022693] | 0 | 5.57988e-12 |
+| qwen_direct_select_vs_baseline_validation_n2000 | NDCG@10 | 2000 | 0.175972 | 0.149313 | -0.026659 | [-0.034064, -0.018979] | 0 | 7.83817e-12 |
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/metrics.json =====
+--- line 12 ---
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c12_top3_t128_clean/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/metrics.json =====
+--- line 12 ---
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.32,
+  "gold_in_raw_fallback_rate": 0.3195,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+
+===== outputs/qwen_ablation_direct_select_seed42_validation_n2000_c24_top3_t128/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/metrics.json =====
+--- line 12 ---
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0005,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.322,
+  "gold_in_raw_fallback_rate": 0.3215,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c24_t128/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/metrics.json =====
+--- line 12 ---
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.0395,
+  "gold_in_transition_kg_rate": 0.6895,
+  "gold_in_grep_pages_rate": 0.3195,
+  "gold_in_raw_fallback_rate": 0.315,
+  "gold_in_final_candidate_ids_rate": 0.6895,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n2000_c8_route80_t128_clean/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/metrics.json =====
+--- line 12 ---
+  "avg_candidate_ids": 100.0,
+  "avg_ranked_ids": 100.0,
+  "gold_in_selected_pages_rate": 0.035,
+  "gold_in_transition_kg_rate": 0.705,
+  "gold_in_grep_pages_rate": 0.29,
+  "gold_in_raw_fallback_rate": 0.275,
+  "gold_in_final_candidate_ids_rate": 0.705,
+
+===== outputs/qwen_ablation_routing_seed42_validation_n200_c8_route80_t128_clean/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 2,
+  "final_rank_k": 10,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_t256/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_top3_t192/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "100",
+  "output_dir": "outputs/wiki_direct_select_seed42_validation_n100_c16_top5_t192",
+  "seed": 42,
+  "route_index_candidates": 180,
+  "route_selected_pages": 20,
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 5,
+
+===== outputs/wiki_direct_select_seed42_validation_n100_c40_top3_t192/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c16_top3_t192/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c24_top3_t128/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/wiki_direct_select_seed42_validation_n200_c40_top3_t128/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/wiki_direct_select_seed42_validation_n500_c16_top3_t192/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 3,
+
+===== outputs/wiki_direct_select_seed42_validation_n5_c16/validation/run_config.json =====
+--- line 13 ---
+  "max_search_terms": 4,
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 14 ---
+  "grep_top_k": 80,
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+--- line 15 ---
+  "raw_fallback_top_k": 80,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+--- line 16 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+--- line 17 ---
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+--- line 18 ---
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix_transition_weight": 1.0,
+  "prior_transition_weight": 0.05,
+  "candidate_pool_size": 100,
+  "final_context_pages": 12,
+  "final_rank_k": 10,
+
+===== outputs/wiki_kg_ablation_seed42_test_full/test/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_test_full",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 10 ---
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 11 ---
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+--- line 12 ---
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+--- line 13 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+--- line 17 ---
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}
+
+===== outputs/wiki_kg_ablation_seed42_validation_full/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_full",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 10 ---
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 11 ---
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+--- line 12 ---
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+--- line 13 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+--- line 17 ---
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}
+
+===== outputs/wiki_kg_ablation_seed42_validation_n1000/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_ablation_seed42_validation_n1000",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 10 ---
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+--- line 11 ---
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+--- line 12 ---
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+--- line 13 ---
+  "transition_top_k": 100,
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+--- line 17 ---
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}
+
+===== outputs/wiki_kg_score_fusion_seed42_test_full_alpha08/test/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_test_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 10 ---
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 12 ---
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+--- line 13 ---
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+--- line 14 ---
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+--- line 18 ---
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 10 ---
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 12 ---
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+--- line 13 ---
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+--- line 14 ---
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+--- line 18 ---
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}
+
+===== outputs/wiki_kg_score_fusion_seed42_validation_n1000/validation/run_config.json =====
+--- line 6 ---
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "validation",
+  "max_eval_cases": "1000",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_validation_n1000",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+--- line 10 ---
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.7,0.8,0.9,0.95",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+--- line 12 ---
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.7,0.8,0.9,0.95",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+--- line 13 ---
+  "transition_top_k": 100,
+  "alphas": "0.7,0.8,0.9,0.95",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+--- line 14 ---
+  "alphas": "0.7,0.8,0.9,0.95",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+--- line 18 ---
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}
+
+===== scripts/dense_eval.py =====
+--- line 9 ---
+from sentence_transformers import SentenceTransformer
+from sentence_transformers.evaluation import InformationRetrievalEvaluator
+
+from jobhop_eval_common import (
+    build_texts,
+    cleanup_cuda,
+    configure_hf_cache,
+--- line 17 ---
+    evaluate_score_matrix_at_k,
+    failure_payload,
+    gpu_info,
+    load_jobhop_eval_data,
+    markov_score_matrix,
+    model_slug,
+    notebook_conversion_changes,
+--- line 58 ---
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Cluster-ready JobHop v2 dense embedding evaluation.")
+    parser.add_argument("--model-name", required=True, help="SentenceTransformer model name or local path.")
+    parser.add_argument("--max-eval-cases", default="2000", help="Integer sample size per eval split, or 'none'.")
+    parser.add_argument("--random-seed", type=int, default=7)
+--- line 63 ---
+    parser.add_argument("--max-eval-cases", default="2000", help="Integer sample size per eval split, or 'none'.")
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--retrieve-k", type=int, default=10, help="Ranking depth used to extract metrics; >=10.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/dense_eval")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+--- line 219 ---
+        write_json_and_key_value_csv(run_dir / "gpu_info.json", run_dir / "gpu_info.csv", gpu_info())
+
+        stage = "data_loading_and_preprocessing"
+        data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+        write_csv(run_dir / "dataset_statistics.csv", data["stats_rows"])
+        write_json(run_dir / "dataset_statistics.json", data["stats_rows"])
+        write_json_and_key_value_csv(run_dir / "dataset_summary.json", run_dir / "dataset_summary.csv", data["stats_summary"])
+--- line 236 ---
+        )
+
+        stage = "markov_baseline"
+        transition_probs, global_probs, code_to_index = train_markov_dense(
+            data["trajectories"]["train"],
+            data["candidate_codes"],
+        )
+--- line 241 ---
+            data["candidate_codes"],
+        )
+        validation_markov_norm = row_maxnorm(
+            markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+        )
+        test_markov_norm = row_maxnorm(
+            markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 244 ---
+            markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+        )
+        test_markov_norm = row_maxnorm(
+            markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+        )
+
+        stage = "model_loading"
+
+===== scripts/error_analysis_plus_bge.py =====
+--- line 32 ---
+def method_label(x):
+    s = str(x)
+    return {
+        "kg_alone": "KG-alone",
+        "wiki_kg_fusion": "Wiki+KG fusion",
+        "wiki_kg": "Wiki+KG fusion",
+    }.get(s, s)
+--- line 33 ---
+    s = str(x)
+    return {
+        "kg_alone": "KG-alone",
+        "wiki_kg_fusion": "Wiki+KG fusion",
+        "wiki_kg": "Wiki+KG fusion",
+    }.get(s, s)
+
+--- line 34 ---
+    return {
+        "kg_alone": "KG-alone",
+        "wiki_kg_fusion": "Wiki+KG fusion",
+        "wiki_kg": "Wiki+KG fusion",
+    }.get(s, s)
+
+
+--- line 60 ---
+            "return_move": r["return_move"],
+            "target_train_freq": r["target_train_freq"],
+            "target_freq_bucket": r["target_freq_bucket"],
+            "transition_seen": r["transition_seen"],
+            "last_code": r["last_code"],
+        })
+    return pd.DataFrame(rows)
+--- line 94 ---
+    feature_cols = [
+        "qid", "case_index", "target", "history_len", "history_bucket",
+        "return_move", "target_train_freq", "target_freq_bucket",
+        "transition_seen", "last_code",
+    ]
+    base = ea[feature_cols].drop_duplicates("case_index").sort_values("case_index")
+    assert len(base) == 32089, f"Expected 32089 unique cases, got {len(base)}"
+--- line 99 ---
+    base = ea[feature_cols].drop_duplicates("case_index").sort_values("case_index")
+    assert len(base) == 32089, f"Expected 32089 unique cases, got {len(base)}"
+
+    # Existing KG/Wiki rows are already long-format per method.
+    existing = ea[[
+        "qid", "case_index", "method", "target", "rank",
+        "Accuracy@1", "MRR@10", "NDCG@10", "Recall@10",
+--- line 104 ---
+        "qid", "case_index", "method", "target", "rank",
+        "Accuracy@1", "MRR@10", "NDCG@10", "Recall@10",
+        "history_len", "history_bucket", "return_move",
+        "target_train_freq", "target_freq_bucket", "transition_seen", "last_code",
+    ]].copy()
+
+    bge = pd.read_csv(args.bge_ranks)
+--- line 138 ---
+        ("history_length", "history_bucket"),
+        ("return_move", "return_move"),
+        ("target_frequency", "target_freq_bucket"),
+        ("seen_transition", "transition_seen"),
+    ]
+
+    for family, col in bucket_specs:
+--- line 172 ---
+                    "history_bucket": r["history_bucket"],
+                    "return_move": r["return_move"],
+                    "target_freq_bucket": r["target_freq_bucket"],
+                    "transition_seen": r["transition_seen"],
+                    "bge_pure_rank": clean_rank(r.get("BGE-M3 pure")),
+                    "bge_fusion_rank": clean_rank(r.get("BGE-M3+Markov fusion")),
+                })
+--- line 184 ---
+    md = []
+    md.append("# Error Analysis Plus BGE")
+    md.append("")
+    md.append("This table extends the existing KG/Wiki error analysis with formal BGE-M3 and trained ST per-query ranks.")
+    md.append("")
+    md.append("## Inputs")
+    md.append(f"- error_per_case: `{args.error_per_case}`")
+
+===== scripts/export_bge_m3_formal_per_query.py =====
+--- line 18 ---
+    encode_texts,
+    load_sentence_transformer_model,
+)
+from jobhop_eval_common import (  # noqa: E402
+    build_texts,
+    cleanup_cuda,
+    configure_hf_cache,
+--- line 24 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    evaluate_score_matrix_at_k,
+    load_jobhop_eval_data,
+    markov_score_matrix,
+    now_utc,
+    parse_k_values,
+--- line 118 ---
+
+    run_config = {
+        "script": "scripts/export_bge_m3_formal_per_query.py",
+        "base_script_logic": "scripts/dense_eval.py + scripts/jobhop_eval_common.py",
+        "model_name": args.model_name,
+        "random_seed": args.random_seed,
+        "batch_size": args.batch_size,
+--- line 132 ---
+    }
+    write_json(out / "run_config.json", run_config)
+
+    print("loading formal JobHop data...", flush=True)
+    data = load_jobhop_eval_data(max_eval_cases=None, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+--- line 133 ---
+    write_json(out / "run_config.json", run_config)
+
+    print("loading formal JobHop data...", flush=True)
+    data = load_jobhop_eval_data(max_eval_cases=None, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+        data["candidate_codes"],
+--- line 142 ---
+    )
+
+    print("building formal Markov scores...", flush=True)
+    transition_probs, global_probs, code_to_index = train_markov_dense(
+        data["trajectories"]["train"],
+        data["candidate_codes"],
+    )
+--- line 147 ---
+        data["candidate_codes"],
+    )
+    validation_markov_norm = row_maxnorm(
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 150 ---
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+
+    print(f"loading model: {args.model_name}", flush=True)
+
+===== scripts/export_bge_m3_per_query_test.py =====
+--- line 14 ---
+    encode_texts,
+    load_sentence_transformer_model,
+)
+from jobhop_eval_common import (
+    build_texts,
+    cleanup_cuda,
+    configure_hf_cache,
+--- line 20 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    gpu_info,
+    load_jobhop_eval_data,
+    markov_score_matrix,
+    now_utc,
+    package_versions,
+--- line 167 ---
+    write_json_and_key_value_csv(out_dir / "gpu_info.json", out_dir / "gpu_info.csv", gpu_info())
+    write_json_and_key_value_csv(out_dir / "package_versions.json", out_dir / "package_versions.csv", package_versions())
+
+    print("loading JobHop data...")
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    cases = data["test_cases"]
+    candidate_codes = data["candidate_codes"]
+--- line 168 ---
+    write_json_and_key_value_csv(out_dir / "package_versions.json", out_dir / "package_versions.csv", package_versions())
+
+    print("loading JobHop data...")
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    cases = data["test_cases"]
+    candidate_codes = data["candidate_codes"]
+    code_to_index = {code: i for i, code in enumerate(candidate_codes)}
+--- line 182 ---
+    )
+
+    print("building Markov scores from train trajectories...")
+    transition_probs, global_probs, code_to_index = train_markov_dense(
+        data["trajectories"]["train"],
+        candidate_codes,
+    )
+--- line 187 ---
+        candidate_codes,
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(cases, candidate_codes, transition_probs, global_probs)
+    )
+
+    print("loading BGE-M3...")
+
+===== scripts/export_bge_m3_per_query_test_datafull.py =====
+--- line 91 ---
+def build_markov_from_datafull_train(train_rows, candidate_codes):
+    valid = set(candidate_codes)
+    code_to_index = {c: i for i, c in enumerate(candidate_codes)}
+    transitions = defaultdict(Counter)
+    global_next = Counter()
+
+    used = 0
+--- line 111 ---
+            continue
+
+        last = history[-1]
+        transitions[last][target] += 1
+        global_next[target] += 1
+        used += 1
+
+--- line 121 ---
+        for code, count in global_next.items():
+            global_probs[code_to_index[code]] = count / total
+
+    transition_probs = {}
+    for src, counter in transitions.items():
+        total = sum(counter.values())
+        idxs, probs = [], []
+--- line 122 ---
+            global_probs[code_to_index[code]] = count / total
+
+    transition_probs = {}
+    for src, counter in transitions.items():
+        total = sum(counter.values())
+        idxs, probs = [], []
+        for tgt, count in counter.items():
+--- line 129 ---
+            if tgt in code_to_index:
+                idxs.append(code_to_index[tgt])
+                probs.append(count / total)
+        transition_probs[src] = (np.array(idxs, dtype=np.int32), np.array(probs, dtype="float32"))
+
+    stats = {
+        "train_rows_loaded": len(train_rows),
+--- line 134 ---
+    stats = {
+        "train_rows_loaded": len(train_rows),
+        "train_rows_used": used,
+        "exact_source_codes": len(transition_probs),
+        "global_prior_size": len(global_next),
+    }
+    return transition_probs, global_probs, code_to_index, stats
+--- line 137 ---
+        "exact_source_codes": len(transition_probs),
+        "global_prior_size": len(global_next),
+    }
+    return transition_probs, global_probs, code_to_index, stats
+
+
+def markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index):
+--- line 140 ---
+    return transition_probs, global_probs, code_to_index, stats
+
+
+def markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index):
+    valid = set(candidate_codes)
+    scores = np.zeros((len(eval_rows), len(candidate_codes)), dtype="float32")
+
+--- line 147 ---
+    for i, row in enumerate(eval_rows):
+        history = extract_history_codes(row.get("query", ""), valid)
+        last = history[-1] if history else None
+        if last in transition_probs:
+            idxs, probs = transition_probs[last]
+            scores[i, idxs] = probs
+        else:
+--- line 148 ---
+        history = extract_history_codes(row.get("query", ""), valid)
+        last = history[-1] if history else None
+        if last in transition_probs:
+            idxs, probs = transition_probs[last]
+            scores[i, idxs] = probs
+        else:
+            scores[i, :] = global_probs
+--- line 259 ---
+
+    target_indices = np.array([code_to_index[t] for t in targets], dtype=np.int64)
+
+    transition_probs, global_probs, code_to_index, transition_stats = build_markov_from_datafull_train(
+        train_rows, candidate_codes
+    )
+
+--- line 278 ---
+        "passage_prefix": args.passage_prefix,
+        "n_eval_rows": len(eval_rows),
+        "n_candidates": len(candidate_codes),
+        "transition_stats": transition_stats,
+    })
+
+    print("loading model:", args.model_name, flush=True)
+--- line 296 ---
+    pure_norm = row_minmax(pure_scores)
+
+    print("scoring Markov", flush=True)
+    markov_norm = row_maxnorm(markov_score_matrix(eval_rows, candidate_codes, transition_probs, global_probs, code_to_index))
+
+    print("scoring fusion", flush=True)
+    fusion_scores = args.alpha_markov * markov_norm + (1.0 - args.alpha_markov) * pure_norm
+
+===== scripts/export_jobhop_training_data.py =====
+--- line 7 ---
+import time
+from pathlib import Path
+
+from jobhop_eval_common import (
+    candidate_text,
+    configure_hf_cache,
+    configure_reproducibility,
+--- line 12 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    failure_payload,
+    load_jobhop_eval_data,
+    make_last_step_cases,
+    now_utc,
+    parse_optional_int,
+--- line 25 ---
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Export JobHop v2 data into the canonical retriever-training JSONL format."
+    )
+    parser.add_argument("--output-dir", default="handoff/data", help="Directory for train/eval JSONL files.")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+--- line 39 ---
+        default="last-step",
+        help=(
+            "last-step matches the current evaluation protocol most conservatively. "
+            "all-prefixes uses every train transition as an explicit training expansion."
+        ),
+    )
+    parser.add_argument(
+--- line 157 ---
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        run_config = {
+            "script": "scripts/export_jobhop_training_data.py",
+            "output_dir": str(output_dir),
+            "cache_dir": cache_dir,
+            "random_seed": args.random_seed,
+--- line 169 ---
+        }
+        write_json_and_key_value_csv(output_dir / "export_config.json", output_dir / "export_config.csv", run_config)
+
+        stage = "load_jobhop_data"
+        data = load_jobhop_eval_data(max_eval_cases=run_config["max_eval_cases"], seed=args.random_seed)
+        candidate_codes = data["candidate_codes"]
+        metadata_lookup = data["metadata_lookup"]
+--- line 170 ---
+        write_json_and_key_value_csv(output_dir / "export_config.json", output_dir / "export_config.csv", run_config)
+
+        stage = "load_jobhop_data"
+        data = load_jobhop_eval_data(max_eval_cases=run_config["max_eval_cases"], seed=args.random_seed)
+        candidate_codes = data["candidate_codes"]
+        metadata_lookup = data["metadata_lookup"]
+
+
+===== scripts/export_lateon_only_test.py =====
+--- line 6 ---
+import time
+from pathlib import Path
+
+from jobhop_eval_common import (
+    build_texts,
+    cleanup_cuda,
+    configure_hf_cache,
+--- line 13 ---
+    configure_reproducibility,
+    evaluate_ranked_lists_at_k,
+    gpu_info,
+    load_jobhop_eval_data,
+    model_slug,
+    now_utc,
+    package_versions,
+--- line 63 ---
+        warnings.append({"row": 0, "message": "retrieval output parser returned an empty first row", "raw": str(raw_rows[0])})
+    return parsed, warnings
+
+def top_markov_scores(case, transition_probs, global_rank, k):
+    last = case["prefix"][-1]
+    ranked = transition_probs.get(last, global_rank)
+    return ranked[:k]
+--- line 65 ---
+
+def top_markov_scores(case, transition_probs, global_rank, k):
+    last = case["prefix"][-1]
+    ranked = transition_probs.get(last, global_rank)
+    return ranked[:k]
+
+def normalize_scores(items):
+--- line 77 ---
+        return {str(k): 1.0 for k, _ in items}
+    return {str(k): (float(v) - mn) / (mx - mn) for k, v in items}
+
+def hybrid_ranked_lists(cases, lateon_ranked, transition_probs, global_rank, alpha_markov, retrieve_k):
+    outputs = []
+    for case, late_row in zip(cases, lateon_ranked):
+        late_scores = {code: score for code, score in late_row[:retrieve_k]}
+--- line 81 ---
+    outputs = []
+    for case, late_row in zip(cases, lateon_ranked):
+        late_scores = {code: score for code, score in late_row[:retrieve_k]}
+        markov_scores = top_markov_scores(case, transition_probs, global_rank, retrieve_k)
+
+        late_norm = normalize_scores(late_scores.items())
+        markov_norm = normalize_scores(markov_scores)
+--- line 155 ---
+    write_json_and_key_value_csv(run_dir / "gpu_info.json", run_dir / "gpu_info.csv", gpu_info())
+    write_json_and_key_value_csv(run_dir / "package_versions.json", run_dir / "package_versions.csv", package_versions())
+
+    print("loading JobHop formal eval data...", flush=True)
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+--- line 156 ---
+    write_json_and_key_value_csv(run_dir / "package_versions.json", run_dir / "package_versions.csv", package_versions())
+
+    print("loading JobHop formal eval data...", flush=True)
+    data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+        data["candidate_codes"],
+--- line 165 ---
+    )
+
+    print("building train Markov stats...", flush=True)
+    transition_probs, global_rank = train_markov_ranked(data["trajectories"]["train"])
+
+    print("loading LateOn / PyLate...", flush=True)
+    from pylate import indexes, models, retrieve
+--- line 206 ---
+    ranked = hybrid_ranked_lists(
+        data["test_cases"],
+        test_lateon,
+        transition_probs,
+        global_rank,
+        args.alpha_markov,
+        retrieve_k,
+
+===== scripts/export_trained_st_formal_per_query_and_sig.py =====
+--- line 13 ---
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from dense_eval import ALPHAS, encode_texts, load_sentence_transformer_model  # noqa: E402
+from jobhop_eval_common import (  # noqa: E402
+    build_texts,
+    cleanup_cuda,
+    configure_hf_cache,
+--- line 19 ---
+    configure_hf_cache,
+    configure_reproducibility,
+    evaluate_score_matrix_at_k,
+    load_jobhop_eval_data,
+    markov_score_matrix,
+    now_utc,
+    parse_k_values,
+--- line 173 ---
+
+    run_config = {
+        "script": "scripts/export_trained_st_formal_per_query_and_sig.py",
+        "base_script_logic": "scripts/dense_eval.py + scripts/jobhop_eval_common.py",
+        "model_name": args.model_name,
+        "random_seed": args.random_seed,
+        "batch_size": args.batch_size,
+--- line 188 ---
+    }
+    write_json(out / "run_config.json", run_config)
+
+    print("loading formal JobHop data...", flush=True)
+    data = load_jobhop_eval_data(max_eval_cases=None, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+--- line 189 ---
+    write_json(out / "run_config.json", run_config)
+
+    print("loading formal JobHop data...", flush=True)
+    data = load_jobhop_eval_data(max_eval_cases=None, seed=args.random_seed)
+    texts = build_texts(
+        data["metadata_lookup"],
+        data["candidate_codes"],
+--- line 198 ---
+    )
+
+    print("building formal Markov scores...", flush=True)
+    transition_probs, global_probs, code_to_index = train_markov_dense(
+        data["trajectories"]["train"],
+        data["candidate_codes"],
+    )
+--- line 203 ---
+        data["candidate_codes"],
+    )
+    validation_markov_norm = row_maxnorm(
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+--- line 206 ---
+        markov_score_matrix(data["validation_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+    test_markov_norm = row_maxnorm(
+        markov_score_matrix(data["test_cases"], data["candidate_codes"], transition_probs, global_probs)
+    )
+
+    print(f"loading model: {args.model_name}", flush=True)
+
+===== scripts/filter_counts_formal.py =====
+--- line 10 ---
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from jobhop_eval_common import (  # noqa: E402
+    SPLITS,
+    COLLAPSE_CONSECUTIVE_DUPLICATES,
+    compact_consecutive,
+--- line 17 ---
+    date_key,
+    list_parquet_files,
+    load_split,
+    normalize_jobhop_code,
+    split_from_path,
+    standardize_jobhop_schema,
+)
+--- line 19 ---
+    load_split,
+    normalize_jobhop_code,
+    split_from_path,
+    standardize_jobhop_schema,
+)
+
+
+--- line 50 ---
+
+        seq = []
+        for _, row in group.iterrows():
+            code = normalize_jobhop_code(row["matched_code"])
+            if code is None:
+                continue
+            valid_row_count += 1
+--- line 87 ---
+            split_files[split].append(path)
+
+    raw = {
+        split: standardize_jobhop_schema(load_split(split, split_files))
+        for split in SPLITS
+    }
+
+--- line 170 ---
+        ]
+        if split == "train":
+            stages.extend([
+                ("train_trajectories_used_for_markov", len(train_eligible), "Final train trajectories used for candidate vocabulary and Markov transitions."),
+                ("train_candidate_vocab_size", len(candidate_codes), "Unique ESCO candidate codes from retained train trajectories."),
+            ])
+        else:
+
+===== scripts/jobhop_eval_common.py =====
+--- line 23 ---
+from tqdm.auto import tqdm
+
+
+DATASET_ID = "aida-ugent/JobHop"
+HF_API = f"https://huggingface.co/api/datasets/{DATASET_ID}/tree/main"
+SPLITS = ("train", "validation", "test")
+
+--- line 176 ---
+        "Uses a shared Hugging Face cache directory when --cache-dir is supplied and sets non-interactive cache environment variables.",
+        "Persists validation sweeps, selected alpha, final test results, runtime, GPU information, package versions, dataset statistics, preprocessing configuration, data-file discovery, and failures.",
+        "Adds explicit failure handling so partial CSV/JSON artifacts are kept when a model or retrieval stage fails.",
+        "Keeps JobHop v2 preprocessing: schema standardization, unknown-code removal, start-date/end-date/code stable ordering, consecutive duplicate collapse, length>=2 trajectories, train-only candidate pool, and last-step prediction.",
+        "Keeps ESCO metadata loading from danieldux/ESCO and the same candidate/query text templates from the notebooks.",
+        "Changes alpha protocol intentionally: alpha is selected using validation MRR only, then frozen for one final test evaluation. Test metrics are not used for alpha selection.",
+        "Tie handling is explicit and validation-only: the first alpha in the notebook sweep order wins equal validation MRR ties.",
+--- line 185 ---
+    dense = [
+        "Dense script keeps the notebook dense alpha grid [0.0, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "Dense script keeps row min-max normalization for embedding scores and row max normalization for Markov scores.",
+        "Dense script preserves full candidate scoring; --retrieve-k controls ranking extraction depth for metrics and is clamped to at least 10.",
+        "Dense script runs sentence_transformers.evaluation.InformationRetrievalEvaluator for pure dense retrieval statistics.",
+    ]
+    lateon = [
+--- line 191 ---
+    lateon = [
+        "LateOn script keeps the notebook LateOn alpha grid [0.0, 0.25, 0.5, 0.75, 0.9, 1.0].",
+        "LateOn script keeps PyLate ColBERT encoding, PLAID indexing, and ColBERT retrieval.",
+        "LateOn script uses --retrieve-k for both LateOn retrieval depth and Markov candidate depth, matching the notebook's shared default of 200.",
+        "LateOn script keeps per-case union of LateOn and Markov candidates with per-row min-max normalization before hybrid ranking.",
+    ]
+    specific = dense if script_name == "dense" else lateon
+--- line 289 ---
+    return df
+
+
+def standardize_jobhop_schema(df):
+    df = df.copy()
+    if "person_id" not in df.columns:
+        if "resume_id" in df.columns:
+--- line 379 ---
+    return (year, quarter)
+
+
+def normalize_jobhop_code(value):
+    if value is None or pd.isna(value):
+        return None
+    text = str(value).strip()
+--- line 406 ---
+        group = group.sort_values(["_date_key", "end_date", "matched_code"], kind="mergesort")
+        seq = []
+        for _, row in group.iterrows():
+            code = normalize_jobhop_code(row["matched_code"])
+            if code is None:
+                continue
+            seq.append({"code": code, "education": row.get("university_studies")})
+--- line 458 ---
+    return rows, summary
+
+
+def load_jobhop_eval_data(max_eval_cases, seed):
+    parquet_files = list_parquet_files()
+    split_files = {split: [] for split in SPLITS}
+    for path in parquet_files:
+--- line 466 ---
+        if split in split_files:
+            split_files[split].append(path)
+
+    raw = {split: standardize_jobhop_schema(load_split(split, split_files)) for split in SPLITS}
+    metadata_lookup = load_danieldux_esco_metadata()
+    trajectories = {split: make_trajectories(raw[split]) for split in SPLITS}
+
+--- line 562 ---
+
+def train_markov_dense(trajectories_dict, candidate_codes):
+    code_to_index = {code: i for i, code in enumerate(candidate_codes)}
+    transitions = defaultdict(Counter)
+    global_next = Counter()
+    for seq in trajectories_dict.values():
+        codes = [item["code"] for item in seq]
+--- line 567 ---
+    for seq in trajectories_dict.values():
+        codes = [item["code"] for item in seq]
+        for current, nxt in zip(codes[:-1], codes[1:]):
+            transitions[current][nxt] += 1
+            global_next[nxt] += 1
+
+    global_total = sum(global_next.values())
+--- line 577 ---
+            if code in code_to_index:
+                global_probs[code_to_index[code]] = count / global_total
+
+    transition_probs = {}
+    for prev, counter in transitions.items():
+        total = sum(counter.values())
+        indices = []
+--- line 578 ---
+                global_probs[code_to_index[code]] = count / global_total
+
+    transition_probs = {}
+    for prev, counter in transitions.items():
+        total = sum(counter.values())
+        indices = []
+        probs = []
+--- line 586 ---
+            if nxt in code_to_index:
+                indices.append(code_to_index[nxt])
+                probs.append(count / total)
+        transition_probs[prev] = (np.array(indices, dtype=np.int32), np.array(probs, dtype="float32"))
+    return transition_probs, global_probs, code_to_index
+
+
+--- line 587 ---
+                indices.append(code_to_index[nxt])
+                probs.append(count / total)
+        transition_probs[prev] = (np.array(indices, dtype=np.int32), np.array(probs, dtype="float32"))
+    return transition_probs, global_probs, code_to_index
+
+
+def markov_score_matrix(cases, candidate_codes, transition_probs, global_probs):
+--- line 590 ---
+    return transition_probs, global_probs, code_to_index
+
+
+def markov_score_matrix(cases, candidate_codes, transition_probs, global_probs):
+    scores = np.zeros((len(cases), len(candidate_codes)), dtype="float32")
+    for i, case in enumerate(tqdm(cases, desc="markov score rows")):
+        last = case["prefix"][-1]
+--- line 594 ---
+    scores = np.zeros((len(cases), len(candidate_codes)), dtype="float32")
+    for i, case in enumerate(tqdm(cases, desc="markov score rows")):
+        last = case["prefix"][-1]
+        if last in transition_probs:
+            idx, probs = transition_probs[last]
+            scores[i, idx] = probs
+        else:
+--- line 595 ---
+    for i, case in enumerate(tqdm(cases, desc="markov score rows")):
+        last = case["prefix"][-1]
+        if last in transition_probs:
+            idx, probs = transition_probs[last]
+            scores[i, idx] = probs
+        else:
+            scores[i, :] = global_probs
+--- line 603 ---
+
+
+def train_markov_ranked(trajectories_dict):
+    transitions = defaultdict(Counter)
+    global_next = Counter()
+    for seq in trajectories_dict.values():
+        codes = [item["code"] for item in seq]
+--- line 608 ---
+    for seq in trajectories_dict.values():
+        codes = [item["code"] for item in seq]
+        for current, nxt in zip(codes[:-1], codes[1:]):
+            transitions[current][nxt] += 1
+            global_next[nxt] += 1
+
+    global_total = sum(global_next.values())
+... 4 more hits omitted
+
+===== scripts/jobhop_llm_wiki_rerank.py =====
+--- line 13 ---
+from tqdm.auto import tqdm
+
+from dense_eval import DENSE_MODEL_DEFAULTS, encode_texts, load_sentence_transformer_model
+from jobhop_eval_common import (
+    build_texts,
+    candidate_text,
+    cleanup_cuda,
+--- line 23 ---
+    failure_payload,
+    gpu_info,
+    label_for_code,
+    load_jobhop_eval_data,
+    model_slug,
+    now_utc,
+    package_versions,
+--- line 42 ---
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="JobHop LLM-Wiki-style list reranking smoke test using a local OpenAI-compatible LLM endpoint."
+    )
+    parser.add_argument("--retriever-model", required=True, help="SentenceTransformer model name or local path.")
+    parser.add_argument("--split", default="validation", choices=["validation", "test"])
+--- line 170 ---
+    for rank, (code, score) in enumerate(ranked_candidates, start=1):
+        text = truncate_candidate_text(metadata_lookup, code, max_desc_chars)
+        candidates.append(f"{rank}. id={code} | retriever_score={score:.6f} | {text}")
+    return f"""We are doing JobHop last-step next-occupation prediction.
+
+Career history:
+{build_history_block(metadata_lookup, case)}
+--- line 289 ---
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    run_config = {
+        "script": "scripts/jobhop_llm_wiki_rerank.py",
+        "adapted_from": "LLM_Wiki local OpenAI-compatible JSON-calling pattern",
+        "protocol": "JobHop last-step next-occupation prediction; LLM reranks retriever top-k candidates.",
+        "retriever_model": args.retriever_model,
+--- line 291 ---
+    run_config = {
+        "script": "scripts/jobhop_llm_wiki_rerank.py",
+        "adapted_from": "LLM_Wiki local OpenAI-compatible JSON-calling pattern",
+        "protocol": "JobHop last-step next-occupation prediction; LLM reranks retriever top-k candidates.",
+        "retriever_model": args.retriever_model,
+        "split": args.split,
+        "max_eval_cases": max_eval_cases,
+--- line 328 ---
+        write_json_and_key_value_csv(run_dir / "run_config.json", run_dir / "run_config.csv", run_config)
+
+        stage = "data_loading_and_preprocessing"
+        data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+        cases = data[f"{args.split}_cases"]
+        texts = build_texts(data["metadata_lookup"], data["candidate_codes"], data["validation_cases"], data["test_cases"])
+        query_texts = texts[f"{args.split}_query_texts"]
+
+===== scripts/jobhop_qwen_make_entity_pages.py =====
+--- line 44 ---
+  "summary": "...",
+  "core_tasks": ["...", "..."],
+  "skills_or_context": ["...", "..."],
+  "career_transition_hints": ["...", "..."]
+}}
+
+Rules:
+--- line 83 ---
+    summary = obj.get("summary", "")
+    tasks = obj.get("core_tasks", [])
+    skills = obj.get("skills_or_context", [])
+    hints = obj.get("career_transition_hints", [])
+
+    lines = [f"# {docid} {title}", "", "## Summary", summary, "", "## Core tasks"]
+    lines += [f"- {x}" for x in tasks]
+--- line 89 ---
+    lines += [f"- {x}" for x in tasks]
+    lines += ["", "## Skills or context"]
+    lines += [f"- {x}" for x in skills]
+    lines += ["", "## Career transition hints"]
+    lines += [f"- {x}" for x in hints]
+    return "\n".join(lines).strip() + "\n"
+
+--- line 116 ---
+
+    entity_path = out / "entity_pages.jsonl"
+    failure_path = out / "failures.jsonl"
+    index_lines = ["# JobHop Qwen Entity Wiki", ""]
+
+    successes, failures = [], []
+    t0 = time.time()
+
+===== scripts/jobhop_qwen_wiki_direct_select.py =====
+--- line 93 ---
+        row.get("summary", ""),
+        " ".join(map(str, row.get("core_tasks", []))),
+        " ".join(map(str, row.get("skills_or_context", []))),
+        " ".join(map(str, row.get("career_transition_hints", []))),
+    ]
+    return " ".join(parts)
+
+--- line 215 ---
+    return out
+
+
+def build_train_transition_index(data_dir, valid_docids, args):
+    trans = defaultdict(Counter)
+    prefix_trans = defaultdict(Counter)
+    prior = Counter()
+--- line 238 ---
+        used += 1
+        prior[target] += 1.0
+
+        recent = list(reversed(history[-args.history_window:]))
+        for age, src in enumerate(recent):
+            rec = args.transition_recency_decay ** age
+            trans[src][target] += rec
+--- line 240 ---
+
+        recent = list(reversed(history[-args.history_window:]))
+        for age, src in enumerate(recent):
+            rec = args.transition_recency_decay ** age
+            trans[src][target] += rec
+
+            for kind, pref in code_prefixes(src):
+--- line 263 ---
+    return trans, prefix_trans, prior, stats
+
+
+def transition_retrieve(case, trans, prefix_trans, prior, valid_docids, args):
+    history = extract_history_codes(case.get("query", ""), valid_docids)
+    scores = defaultdict(float)
+
+--- line 267 ---
+    history = extract_history_codes(case.get("query", ""), valid_docids)
+    scores = defaultdict(float)
+
+    recent = list(reversed(history[-args.history_window:]))
+    for age, src in enumerate(recent):
+        rec = args.transition_recency_decay ** age
+
+--- line 269 ---
+
+    recent = list(reversed(history[-args.history_window:]))
+    for age, src in enumerate(recent):
+        rec = args.transition_recency_decay ** age
+
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+--- line 273 ---
+
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+        for rank, (tgt, w) in enumerate(outgoing.most_common(args.transition_top_k)):
+            scores[tgt] += args.exact_transition_weight * rec * (w / max(total, 1e-9) + 1.0 / (rank + 2))
+
+        for kind, pref in code_prefixes(src):
+--- line 274 ---
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+        for rank, (tgt, w) in enumerate(outgoing.most_common(args.transition_top_k)):
+            scores[tgt] += args.exact_transition_weight * rec * (w / max(total, 1e-9) + 1.0 / (rank + 2))
+
+        for kind, pref in code_prefixes(src):
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+--- line 279 ---
+        for kind, pref in code_prefixes(src):
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+            total2 = sum(outgoing2.values())
+            for rank, (tgt, w) in enumerate(outgoing2.most_common(args.transition_top_k)):
+                scores[tgt] += args.prefix_transition_weight * rec * (w / max(total2, 1e-9) + 1.0 / (rank + 3))
+
+    if prior:
+--- line 280 ---
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+            total2 = sum(outgoing2.values())
+            for rank, (tgt, w) in enumerate(outgoing2.most_common(args.transition_top_k)):
+                scores[tgt] += args.prefix_transition_weight * rec * (w / max(total2, 1e-9) + 1.0 / (rank + 3))
+
+    if prior:
+        mx = max(prior.values())
+--- line 284 ---
+
+    if prior:
+        mx = max(prior.values())
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_transition_weight * c / max(mx, 1e-9)
+
+    return [docid for docid, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:args.transition_top_k]]
+--- line 285 ---
+    if prior:
+        mx = max(prior.values())
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_transition_weight * c / max(mx, 1e-9)
+
+    return [docid for docid, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:args.transition_top_k]]
+
+--- line 287 ---
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_transition_weight * c / max(mx, 1e-9)
+
+    return [docid for docid, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:args.transition_top_k]]
+
+def route_query(case, pages, route_index_ids, args):
+    lines = [index_line(docid, pages[docid]) for docid in route_index_ids if docid in pages]
+--- line 292 ---
+def route_query(case, pages, route_index_ids, args):
+    lines = [index_line(docid, pages[docid]) for docid in route_index_ids if docid in pages]
+
+    prompt = f"""Route this JobHop query to relevant ESCO Wiki entity pages.
+
+Career history query:
+{case.get("query", "")}
+--- line 314 ---
+"""
+    raw = call_chat(
+        prompt,
+        "Return JSON only. You route JobHop queries to ESCO Wiki pages.",
+        args,
+        args.route_max_tokens,
+    )
+--- line 340 ---
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+
+def merge_candidates(selected_ids, transition_ids, grep_ids, raw_ids, candidate_pool_size):
+    merged = []
+    sources = {}
+    for source, ids in [
+--- line 344 ---
+    merged = []
+    sources = {}
+    for source, ids in [
+        ("train_transition_kg", transition_ids),
+        ("qwen_selected_pages", selected_ids),
+        ("wiki_grep", grep_ids),
+        ("raw_corpus_fallback", raw_ids),
+--- line 368 ---
+        f"summary={trunc(page.get('summary', ''), args.context_summary_chars)}",
+        f"tasks={trunc('; '.join(map(str, page.get('core_tasks', [])[:4])), args.context_list_chars)}",
+        f"skills={trunc('; '.join(map(str, page.get('skills_or_context', [])[:4])), args.context_list_chars)}",
+        f"hints={trunc('; '.join(map(str, page.get('career_transition_hints', [])[:4])), args.context_list_chars)}",
+    ]
+    return "\n".join(parts)
+
+--- line 387 ---
+        if docid in pages
+    ]
+
+    prompt = f"""Select the most plausible ESCO occupation IDs for JobHop next-occupation prediction.
+
+Career history query:
+{case.get("query", "")}
+... 15 more hits omitted
+
+===== scripts/jobhop_qwen_wiki_query_eval.py =====
+--- line 93 ---
+        row.get("summary", ""),
+        " ".join(map(str, row.get("core_tasks", []))),
+        " ".join(map(str, row.get("skills_or_context", []))),
+        " ".join(map(str, row.get("career_transition_hints", []))),
+    ]
+    return " ".join(parts)
+
+--- line 215 ---
+    return out
+
+
+def build_train_transition_index(data_dir, valid_docids, args):
+    trans = defaultdict(Counter)
+    prefix_trans = defaultdict(Counter)
+    prior = Counter()
+--- line 238 ---
+        used += 1
+        prior[target] += 1.0
+
+        recent = list(reversed(history[-args.history_window:]))
+        for age, src in enumerate(recent):
+            rec = args.transition_recency_decay ** age
+            trans[src][target] += rec
+--- line 240 ---
+
+        recent = list(reversed(history[-args.history_window:]))
+        for age, src in enumerate(recent):
+            rec = args.transition_recency_decay ** age
+            trans[src][target] += rec
+
+            for kind, pref in code_prefixes(src):
+--- line 263 ---
+    return trans, prefix_trans, prior, stats
+
+
+def transition_retrieve(case, trans, prefix_trans, prior, valid_docids, args):
+    history = extract_history_codes(case.get("query", ""), valid_docids)
+    scores = defaultdict(float)
+
+--- line 267 ---
+    history = extract_history_codes(case.get("query", ""), valid_docids)
+    scores = defaultdict(float)
+
+    recent = list(reversed(history[-args.history_window:]))
+    for age, src in enumerate(recent):
+        rec = args.transition_recency_decay ** age
+
+--- line 269 ---
+
+    recent = list(reversed(history[-args.history_window:]))
+    for age, src in enumerate(recent):
+        rec = args.transition_recency_decay ** age
+
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+--- line 273 ---
+
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+        for rank, (tgt, w) in enumerate(outgoing.most_common(args.transition_top_k)):
+            scores[tgt] += args.exact_transition_weight * rec * (w / max(total, 1e-9) + 1.0 / (rank + 2))
+
+        for kind, pref in code_prefixes(src):
+--- line 274 ---
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+        for rank, (tgt, w) in enumerate(outgoing.most_common(args.transition_top_k)):
+            scores[tgt] += args.exact_transition_weight * rec * (w / max(total, 1e-9) + 1.0 / (rank + 2))
+
+        for kind, pref in code_prefixes(src):
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+--- line 279 ---
+        for kind, pref in code_prefixes(src):
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+            total2 = sum(outgoing2.values())
+            for rank, (tgt, w) in enumerate(outgoing2.most_common(args.transition_top_k)):
+                scores[tgt] += args.prefix_transition_weight * rec * (w / max(total2, 1e-9) + 1.0 / (rank + 3))
+
+    if prior:
+--- line 280 ---
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+            total2 = sum(outgoing2.values())
+            for rank, (tgt, w) in enumerate(outgoing2.most_common(args.transition_top_k)):
+                scores[tgt] += args.prefix_transition_weight * rec * (w / max(total2, 1e-9) + 1.0 / (rank + 3))
+
+    if prior:
+        mx = max(prior.values())
+--- line 284 ---
+
+    if prior:
+        mx = max(prior.values())
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_transition_weight * c / max(mx, 1e-9)
+
+    return [docid for docid, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:args.transition_top_k]]
+--- line 285 ---
+    if prior:
+        mx = max(prior.values())
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_transition_weight * c / max(mx, 1e-9)
+
+    return [docid for docid, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:args.transition_top_k]]
+
+--- line 287 ---
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_transition_weight * c / max(mx, 1e-9)
+
+    return [docid for docid, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)[:args.transition_top_k]]
+
+def route_query(case, pages, route_index_ids, args):
+    lines = [index_line(docid, pages[docid]) for docid in route_index_ids if docid in pages]
+--- line 292 ---
+def route_query(case, pages, route_index_ids, args):
+    lines = [index_line(docid, pages[docid]) for docid in route_index_ids if docid in pages]
+
+    prompt = f"""Route this JobHop query to relevant ESCO Wiki entity pages.
+
+Career history query:
+{case.get("query", "")}
+--- line 314 ---
+"""
+    raw = call_chat(
+        prompt,
+        "Return JSON only. You route JobHop queries to ESCO Wiki pages.",
+        args,
+        args.route_max_tokens,
+    )
+--- line 340 ---
+    return bm25_rank(query, inv, idf, lens, avgdl, top_k)
+
+
+def merge_candidates(selected_ids, transition_ids, grep_ids, raw_ids, candidate_pool_size):
+    merged = []
+    sources = {}
+    for source, ids in [
+--- line 344 ---
+    merged = []
+    sources = {}
+    for source, ids in [
+        ("train_transition_kg", transition_ids),
+        ("qwen_selected_pages", selected_ids),
+        ("wiki_grep", grep_ids),
+        ("raw_corpus_fallback", raw_ids),
+--- line 368 ---
+        f"summary={trunc(page.get('summary', ''), args.context_summary_chars)}",
+        f"tasks={trunc('; '.join(map(str, page.get('core_tasks', [])[:4])), args.context_list_chars)}",
+        f"skills={trunc('; '.join(map(str, page.get('skills_or_context', [])[:4])), args.context_list_chars)}",
+        f"hints={trunc('; '.join(map(str, page.get('career_transition_hints', [])[:4])), args.context_list_chars)}",
+    ]
+    return "\n".join(parts)
+
+--- line 390 ---
+        if docid in pages
+    ]
+
+    prompt = f"""Rank candidate ESCO occupation IDs for JobHop next-occupation prediction.
+
+Career history query:
+{case.get("query", "")}
+... 16 more hits omitted
+
+===== scripts/jobhop_strict_llm_wiki_eval.py =====
+--- line 23 ---
+}
+
+
+SYSTEM_PROMPT = """You are an expert JobHop wiki reasoner.
+You use ESCO occupation wiki pages to predict the next occupation in a career history.
+Return JSON only. Do not explain."""
+
+--- line 106 ---
+    wiki_dir = out_dir / "wiki_pages"
+    wiki_dir.mkdir(parents=True, exist_ok=True)
+
+    index_lines = ["# JobHop ESCO Occupation Wiki Index", ""]
+    for page in pages:
+        safe = page["docid"].replace("/", "_")
+        page_path = wiki_dir / f"{safe}.md"
+--- line 163 ---
+            f"description={trunc(page['description'], desc_chars)}"
+        )
+
+    return f"""We are using a JobHop ESCO occupation wiki.
+
+Career query:
+{query}
+--- line 350 ---
+
+    config = vars(args).copy()
+    config.update({
+        "method": "strict_llm_wiki_jobhop",
+        "protocol": "data_full corpus as ESCO wiki pages; Qwen selects relevant wiki pages directly; no trained retriever candidates.",
+        "n_pages": len(pages),
+        "n_cases": len(query_rows),
+--- line 380 ---
+
+    elapsed = time.time() - started
+    metrics = {
+        "method": "strict_llm_wiki_jobhop",
+        "split": args.split,
+        "data_dir": str(data_dir),
+        "llm_model": args.llm_model,
+
+===== scripts/jobhop_transition_wiki_eval.py =====
+--- line 126 ---
+    return inv, idf, doc_len
+
+
+def build_transition_wiki(data_dir, corpus, max_train_cases=None, history_window=5, recency_decay=0.65):
+    valid_docids = set(corpus)
+    trans = defaultdict(Counter)
+    prefix_trans = defaultdict(Counter)
+--- line 157 ---
+        gold = positives[0]
+        target_prior[gold] += 1.0
+
+        recent = list(reversed(history[-history_window:]))
+        for age, src in enumerate(recent):
+            weight = recency_decay ** age
+            trans[src][gold] += weight
+--- line 186 ---
+    pages_dir = out_dir / "wiki_pages"
+    pages_dir.mkdir(parents=True, exist_ok=True)
+
+    index_lines = ["# JobHop Transition Wiki", ""]
+    for docid in sorted(corpus):
+        row = corpus[docid]
+        outgoing = trans.get(docid, Counter()).most_common(30)
+--- line 207 ---
+                tgt_title = corpus.get(tgt, {}).get("title", "")
+                lines.append(f"- {tgt} | {tgt_title} | weight={w:.3f} | p={w / max(total, 1e-9):.4f}")
+        else:
+            lines.append("- No direct outgoing transition observed in train.")
+
+        (pages_dir / f"{docid}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        index_lines.append(f"- {docid}: {row['title']}")
+--- line 225 ---
+            if len(evidence[docid]) < 4:
+                evidence[docid].append(why)
+
+    recent = list(reversed(history[-args.history_window:]))
+
+    for age, src in enumerate(recent):
+        rec_weight = args.recency_decay ** age
+--- line 230 ---
+    for age, src in enumerate(recent):
+        rec_weight = args.recency_decay ** age
+
+        outgoing = trans.get(src, Counter()).most_common(args.top_transitions_per_source)
+        total = sum(trans.get(src, Counter()).values())
+        for rank, (tgt, w) in enumerate(outgoing):
+            prob = w / max(total, 1e-9)
+--- line 234 ---
+        total = sum(trans.get(src, Counter()).values())
+        for rank, (tgt, w) in enumerate(outgoing):
+            prob = w / max(total, 1e-9)
+            amount = args.exact_transition_weight * rec_weight * (prob + 1.0 / (rank + 2))
+            add(tgt, amount, f"exact_transition from {src}: weight={w:.2f}, p={prob:.3f}")
+
+        for kind, pref in code_prefixes(src):
+--- line 235 ---
+        for rank, (tgt, w) in enumerate(outgoing):
+            prob = w / max(total, 1e-9)
+            amount = args.exact_transition_weight * rec_weight * (prob + 1.0 / (rank + 2))
+            add(tgt, amount, f"exact_transition from {src}: weight={w:.2f}, p={prob:.3f}")
+
+        for kind, pref in code_prefixes(src):
+            key = f"{kind}:{pref}"
+--- line 239 ---
+
+        for kind, pref in code_prefixes(src):
+            key = f"{kind}:{pref}"
+            outgoing2 = prefix_trans.get(key, Counter()).most_common(args.top_prefix_transitions)
+            total2 = sum(prefix_trans.get(key, Counter()).values())
+
+            if kind == "unit4":
+--- line 252 ---
+            for rank, (tgt, w) in enumerate(outgoing2):
+                prob = w / max(total2, 1e-9)
+                amount = base_w * rec_weight * (prob + 1.0 / (rank + 3))
+                add(tgt, amount, f"{kind}_transition from {pref}: weight={w:.2f}, p={prob:.3f}")
+
+    qtok = Counter(tokenize(query))
+    lex_scores = defaultdict(float)
+--- line 303 ---
+            f"description={truncate(row['desc'], args.page_desc_chars)}"
+        )
+
+    hist = ", ".join(history[-args.history_window:]) if history else "none"
+
+    return f"""We are using a JobHop transition wiki to predict the next ESCO occupation.
+
+--- line 305 ---
+
+    hist = ", ".join(history[-args.history_window:]) if history else "none"
+
+    return f"""We are using a JobHop transition wiki to predict the next ESCO occupation.
+
+Career history query:
+{case.get("query", "")}
+--- line 320 ---
+Select exactly {args.return_k} candidate ids that are the most plausible next occupations.
+
+Decision rules:
+- Transition evidence from train is a strong prior.
+- Prefer candidates supported by recent exact transitions.
+- Use occupation title and description only to break ties or reject implausible transitions.
+- Do not invent ids.
+--- line 321 ---
+
+Decision rules:
+- Transition evidence from train is a strong prior.
+- Prefer candidates supported by recent exact transitions.
+- Use occupation title and description only to break ties or reject implausible transitions.
+- Do not invent ids.
+- Use only ids from the candidate wiki pages.
+--- line 322 ---
+Decision rules:
+- Transition evidence from train is a strong prior.
+- Prefer candidates supported by recent exact transitions.
+- Use occupation title and description only to break ties or reject implausible transitions.
+- Do not invent ids.
+- Use only ids from the candidate wiki pages.
+- Return ids in descending relevance order.
+--- line 366 ---
+    payload = {
+        "model": args.llm_model,
+        "messages": [
+            {"role": "system", "content": "Return JSON only. You are selecting ESCO occupation ids from a transition wiki."},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": args.temperature,
+--- line 479 ---
+    p.add_argument("--split", choices=["validation", "test"], default="validation")
+    p.add_argument("--max-eval-cases", default="100")
+    p.add_argument("--max-train-cases", default="none")
+    p.add_argument("--output-dir", default="outputs/jobhop_transition_wiki")
+
+    p.add_argument("--diagnose-only", action="store_true")
+    p.add_argument("--diagnose-ks", default="20,50,60,100,200,300,500,1000,2000,2982")
+--- line 488 ---
+    p.add_argument("--return-k", type=int, default=20)
+    p.add_argument("--llm-rerank-k", type=int, default=None)
+    p.add_argument("--page-desc-chars", type=int, default=160)
+    p.add_argument("--history-window", type=int, default=5)
+    p.add_argument("--recency-decay", type=float, default=0.65)
+
+    p.add_argument("--top-transitions-per-source", type=int, default=120)
+--- line 489 ---
+    p.add_argument("--llm-rerank-k", type=int, default=None)
+    p.add_argument("--page-desc-chars", type=int, default=160)
+    p.add_argument("--history-window", type=int, default=5)
+    p.add_argument("--recency-decay", type=float, default=0.65)
+
+    p.add_argument("--top-transitions-per-source", type=int, default=120)
+    p.add_argument("--top-prefix-transitions", type=int, default=200)
+--- line 491 ---
+    p.add_argument("--history-window", type=int, default=5)
+    p.add_argument("--recency-decay", type=float, default=0.65)
+
+    p.add_argument("--top-transitions-per-source", type=int, default=120)
+    p.add_argument("--top-prefix-transitions", type=int, default=200)
+    p.add_argument("--top-prior", type=int, default=300)
+
+... 5 more hits omitted
+
+===== scripts/jobhop_wiki_kg_ablation.py =====
+--- line 75 ---
+        page.get("summary", ""),
+        " ".join(map(str, page.get("core_tasks", []))),
+        " ".join(map(str, page.get("skills_or_context", []))),
+        " ".join(map(str, page.get("career_transition_hints", []))),
+        raw.get("title", ""),
+        raw.get("desc", ""),
+    ]
+--- line 127 ---
+        out.append(("major1", first[:1]))
+    return out
+
+def build_train_transition_index(data_dir, valid_docids, args):
+    trans = defaultdict(Counter)
+    prefix_trans = defaultdict(Counter)
+    prior = Counter()
+--- line 156 ---
+        gold = targets[0]
+        prior[gold] += 1.0
+
+        recent = list(reversed(hist[-args.history_window:]))
+        for age, src in enumerate(recent):
+            rec = args.transition_recency_decay ** age
+            trans[src][gold] += rec
+--- line 158 ---
+
+        recent = list(reversed(hist[-args.history_window:]))
+        for age, src in enumerate(recent):
+            rec = args.transition_recency_decay ** age
+            trans[src][gold] += rec
+            for kind, pref in code_prefixes(src):
+                key = f"{kind}:{pref}"
+--- line 179 ---
+    }
+    return trans, prefix_trans, prior, stats
+
+def transition_rank(case, trans, prefix_trans, prior, valid_docids, args):
+    scores = defaultdict(float)
+    hist = extract_history_codes(case.get("query", ""), valid_docids)
+    recent = list(reversed(hist[-args.history_window:]))
+--- line 182 ---
+def transition_rank(case, trans, prefix_trans, prior, valid_docids, args):
+    scores = defaultdict(float)
+    hist = extract_history_codes(case.get("query", ""), valid_docids)
+    recent = list(reversed(hist[-args.history_window:]))
+
+    for age, src in enumerate(recent):
+        rec = args.transition_recency_decay ** age
+--- line 185 ---
+    recent = list(reversed(hist[-args.history_window:]))
+
+    for age, src in enumerate(recent):
+        rec = args.transition_recency_decay ** age
+
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+--- line 189 ---
+
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+        for rank, (tgt, w) in enumerate(outgoing.most_common(args.transition_top_k)):
+            scores[tgt] += args.exact_transition_weight * rec * (w / max(total, 1e-9) + 1.0 / (rank + 2))
+
+        for kind, pref in code_prefixes(src):
+--- line 190 ---
+        outgoing = trans.get(src, Counter())
+        total = sum(outgoing.values())
+        for rank, (tgt, w) in enumerate(outgoing.most_common(args.transition_top_k)):
+            scores[tgt] += args.exact_transition_weight * rec * (w / max(total, 1e-9) + 1.0 / (rank + 2))
+
+        for kind, pref in code_prefixes(src):
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+--- line 196 ---
+            outgoing2 = prefix_trans.get(f"{kind}:{pref}", Counter())
+            total2 = sum(outgoing2.values())
+            base = args.prefix4_weight if kind == "unit4" else args.prefix2_weight if kind == "minor2" else args.prefix1_weight
+            for rank, (tgt, w) in enumerate(outgoing2.most_common(args.transition_top_k)):
+                scores[tgt] += base * rec * (w / max(total2, 1e-9) + 1.0 / (rank + 3))
+
+    if args.prior_weight > 0 and prior:
+--- line 201 ---
+
+    if args.prior_weight > 0 and prior:
+        mx = max(prior.values())
+        for tgt, c in prior.most_common(args.transition_top_k):
+            scores[tgt] += args.prior_weight * c / max(mx, 1e-9)
+
+    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
+--- line 263 ---
+
+        wiki = wiki_rankings[i]
+        raw = raw_rankings[i]
+        kg = transition_rank(case, trans, prefix_trans, prior, valid_docids, args)
+
+        if mode == "wiki_only":
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+--- line 267 ---
+
+        if mode == "wiki_only":
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+--- line 268 ---
+        if mode == "wiki_only":
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+--- line 269 ---
+            ranked = merge_scored(wiki, raw, args.candidate_pool_size)
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+            raise ValueError(mode)
+--- line 270 ---
+        elif mode == "kg_alone":
+            ranked = merge_scored(kg, raw, args.candidate_pool_size)
+        elif mode == "wiki_kg":
+            ranked = merge_scored(kg, wiki + raw, args.candidate_pool_size)
+        else:
+            raise ValueError(mode)
+
+--- line 289 ---
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_ablation")
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+--- line 293 ---
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+--- line 294 ---
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+    ap.add_argument("--prefix4-weight", type=float, default=1.0)
+--- line 295 ---
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+    ap.add_argument("--prefix4-weight", type=float, default=1.0)
+    ap.add_argument("--prefix2-weight", type=float, default=1.0)
+... 5 more hits omitted
+
+===== scripts/jobhop_wiki_kg_score_fusion.py =====
+--- line 7 ---
+from collections import defaultdict
+from pathlib import Path
+
+from jobhop_wiki_kg_ablation import (
+    parse_limit, read_jsonl, write_json, write_jsonl,
+    load_raw_corpus, load_entity_pages, page_blob,
+    build_bm25_index, bm25_rank,
+--- line 11 ---
+    parse_limit, read_jsonl, write_json, write_jsonl,
+    load_raw_corpus, load_entity_pages, page_blob,
+    build_bm25_index, bm25_rank,
+    build_train_transition_index, transition_rank,
+    target_docids, first_gold_rank, eval_ranked,
+)
+
+--- line 35 ---
+            break
+    return out[:top_k]
+
+def fusion_rank(kg_items, wiki_items, raw_items, alpha, top_k):
+    kg = normalize(kg_items)
+    wiki = normalize(wiki_items)
+
+--- line 36 ---
+    return out[:top_k]
+
+def fusion_rank(kg_items, wiki_items, raw_items, alpha, top_k):
+    kg = normalize(kg_items)
+    wiki = normalize(wiki_items)
+
+    ids = set(kg) | set(wiki)
+--- line 39 ---
+    kg = normalize(kg_items)
+    wiki = normalize(wiki_items)
+
+    ids = set(kg) | set(wiki)
+    scored = []
+    for docid in ids:
+        score = alpha * kg.get(docid, 0.0) + (1.0 - alpha) * wiki.get(docid, 0.0)
+--- line 42 ---
+    ids = set(kg) | set(wiki)
+    scored = []
+    for docid in ids:
+        score = alpha * kg.get(docid, 0.0) + (1.0 - alpha) * wiki.get(docid, 0.0)
+        scored.append((docid, score))
+
+    ranked = [docid for docid, _ in sorted(scored, key=lambda x: x[1], reverse=True)]
+--- line 69 ---
+    ap.add_argument("--wiki-dir", default="outputs/qwen_entity_wiki_full")
+    ap.add_argument("--split", choices=["validation", "test"], default="validation")
+    ap.add_argument("--max-eval-cases", default="1000")
+    ap.add_argument("--output-dir", default="outputs/wiki_kg_score_fusion")
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+--- line 73 ---
+    ap.add_argument("--candidate-pool-size", type=int, default=100)
+    ap.add_argument("--wiki-top-k", type=int, default=100)
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--alphas", default="0.7,0.8,0.9,0.95")
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+--- line 75 ---
+    ap.add_argument("--raw-top-k", type=int, default=100)
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--alphas", default="0.7,0.8,0.9,0.95")
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+    ap.add_argument("--prefix4-weight", type=float, default=1.0)
+--- line 76 ---
+    ap.add_argument("--transition-top-k", type=int, default=100)
+    ap.add_argument("--alphas", default="0.7,0.8,0.9,0.95")
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+    ap.add_argument("--prefix4-weight", type=float, default=1.0)
+    ap.add_argument("--prefix2-weight", type=float, default=1.0)
+--- line 77 ---
+    ap.add_argument("--alphas", default="0.7,0.8,0.9,0.95")
+    ap.add_argument("--history-window", type=int, default=5)
+    ap.add_argument("--transition-recency-decay", type=float, default=0.65)
+    ap.add_argument("--exact-transition-weight", type=float, default=8.0)
+    ap.add_argument("--prefix4-weight", type=float, default=1.0)
+    ap.add_argument("--prefix2-weight", type=float, default=1.0)
+    ap.add_argument("--prefix1-weight", type=float, default=1.0)
+--- line 81 ---
+    ap.add_argument("--prefix4-weight", type=float, default=1.0)
+    ap.add_argument("--prefix2-weight", type=float, default=1.0)
+    ap.add_argument("--prefix1-weight", type=float, default=1.0)
+    ap.add_argument("--prior-weight", type=float, default=0.05)
+    args = ap.parse_args()
+
+    t0 = time.time()
+--- line 98 ---
+
+    wiki_inv, wiki_idf, wiki_lens, wiki_avgdl = build_bm25_index(wiki_docs)
+    raw_inv, raw_idf, raw_lens, raw_avgdl = build_bm25_index(raw_docs)
+    trans, prefix_trans, prior, transition_stats = build_train_transition_index(data_dir, valid_docids, args)
+
+    queries = read_jsonl(data_dir / f"eval_queries_{args.split}.jsonl", limit=parse_limit(args.max_eval_cases))
+    alphas = [float(x.strip()) for x in args.alphas.split(",") if x.strip()]
+--- line 105 ---
+
+    wiki_items_all = [bm25_rank(q.get("query", ""), wiki_inv, wiki_idf, wiki_lens, wiki_avgdl, args.wiki_top_k) for q in queries]
+    raw_items_all = [bm25_rank(q.get("query", ""), raw_inv, raw_idf, raw_lens, raw_avgdl, args.raw_top_k) for q in queries]
+    kg_items_all = [transition_rank(q, trans, prefix_trans, prior, valid_docids, args)[:args.transition_top_k] for q in queries]
+
+    metrics = {
+        "n_cases": len(queries),
+--- line 111 ---
+        "n_cases": len(queries),
+        "n_pages": len(pages),
+        "split": args.split,
+        "transition_stats": transition_stats,
+        "alphas": alphas,
+    }
+
+--- line 116 ---
+    }
+
+    for alpha in alphas:
+        method = f"wiki_kg_fusion_alpha_{alpha:g}"
+        rankings = [
+            fusion_rank(kg_items_all[i], wiki_items_all[i], raw_items_all[i], alpha, args.candidate_pool_size)
+            for i in range(len(queries))
+--- line 118 ---
+    for alpha in alphas:
+        method = f"wiki_kg_fusion_alpha_{alpha:g}"
+        rankings = [
+            fusion_rank(kg_items_all[i], wiki_items_all[i], raw_items_all[i], alpha, args.candidate_pool_size)
+            for i in range(len(queries))
+        ]
+        rows = make_rows(method, queries, rankings, args)
+
+===== scripts/lateon_eval.py =====
+--- line 9 ---
+import numpy as np
+import torch
+
+from jobhop_eval_common import (
+    build_texts,
+    cleanup_cuda,
+    configure_hf_cache,
+--- line 17 ---
+    evaluate_ranked_lists_at_k,
+    failure_payload,
+    gpu_info,
+    load_jobhop_eval_data,
+    model_slug,
+    notebook_conversion_changes,
+    now_utc,
+--- line 39 ---
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Cluster-ready JobHop v2 LightOn LateOn evaluation.")
+    parser.add_argument("--model-name", default=DEFAULT_MODEL_NAME, help="PyLate ColBERT model name or local path.")
+    parser.add_argument("--max-eval-cases", default="2000", help="Integer sample size per eval split, or 'none'.")
+    parser.add_argument("--random-seed", type=int, default=7)
+--- line 45 ---
+    parser.add_argument("--random-seed", type=int, default=7)
+    parser.add_argument("--batch-size", type=int, default=16, help="Query batch size.")
+    parser.add_argument("--doc-batch-size", type=int, default=32, help="Candidate document batch size.")
+    parser.add_argument("--retrieve-k", type=int, default=200, help="LateOn and Markov candidate depth.")
+    parser.add_argument("--metric-ks", default="1,3,5,10,20,50,100", help="Comma-separated K values for IR metrics.")
+    parser.add_argument("--output-dir", default="outputs/lateon_eval")
+    parser.add_argument("--cache-dir", default=None, help="Shared Hugging Face cache directory.")
+--- line 89 ---
+    return parsed, warnings
+
+
+def top_markov_scores(case, transition_probs, global_rank, k):
+    last = case["prefix"][-1]
+    ranked = transition_probs.get(last, global_rank)
+    return {code: float(score) for code, score in ranked[:k]}
+--- line 91 ---
+
+def top_markov_scores(case, transition_probs, global_rank, k):
+    last = case["prefix"][-1]
+    ranked = transition_probs.get(last, global_rank)
+    return {code: float(score) for code, score in ranked[:k]}
+
+
+--- line 104 ---
+    return {key: (float(value) - mn) / denom for key, value in score_dict.items()}
+
+
+def hybrid_ranked_lists(cases, lateon_ranked, transition_probs, global_rank, alpha, retrieve_k):
+    outputs = []
+    for case, late_row in zip(cases, lateon_ranked):
+        late_scores = {code: score for code, score in late_row[:retrieve_k]}
+--- line 108 ---
+    outputs = []
+    for case, late_row in zip(cases, lateon_ranked):
+        late_scores = {code: score for code, score in late_row[:retrieve_k]}
+        markov_scores = top_markov_scores(case, transition_probs, global_rank, retrieve_k)
+        union = set(late_scores) | set(markov_scores)
+
+        late_norm = minmax_scores({code: late_scores.get(code, 0.0) for code in union})
+--- line 168 ---
+        write_json_and_key_value_csv(run_dir / "gpu_info.json", run_dir / "gpu_info.csv", gpu_info())
+
+        stage = "data_loading_and_preprocessing"
+        data = load_jobhop_eval_data(max_eval_cases=max_eval_cases, seed=args.random_seed)
+        write_csv(run_dir / "dataset_statistics.csv", data["stats_rows"])
+        write_json(run_dir / "dataset_statistics.json", data["stats_rows"])
+        write_json_and_key_value_csv(run_dir / "dataset_summary.json", run_dir / "dataset_summary.csv", data["stats_summary"])
+--- line 185 ---
+        )
+
+        stage = "markov_baseline"
+        transition_probs, global_rank = train_markov_ranked(data["trajectories"]["train"])
+
+        stage = "lateon_import"
+        from pylate import indexes, models, retrieve
+--- line 219 ---
+        validation_rows = []
+        for alpha in ALPHAS:
+            ranked = hybrid_ranked_lists(
+                data["validation_cases"], validation_lateon, transition_probs, global_rank, alpha, retrieve_k
+            )
+            scores = evaluate_ranked_lists_at_k(data["validation_cases"], ranked, metric_ks)
+            row = {
+--- line 251 ---
+        )
+        write_json(run_dir / "retrieval_parse_warnings.json", {"validation": validation_warnings, "test": test_warnings})
+        test_ranked = hybrid_ranked_lists(
+            data["test_cases"], test_lateon, transition_probs, global_rank, selected_alpha, retrieve_k
+        )
+        final_metrics = evaluate_ranked_lists_at_k(data["test_cases"], test_ranked, metric_ks)
+        final_row = {
+
+===== scripts/vllm_datafull_late_interaction_parallel.py =====
+--- line 55 ---
+    lines = []
+    for r, (code, score) in enumerate(ranked, 1):
+        lines.append(f"{r}. id={code} | retriever_score={score:.6f} | {truncate(corpus.get(code, ''), desc_chars)}")
+    return f"""We are doing JobHop last-step next-occupation prediction.
+
+Career query:
+{query}
+
+===== scripts/vllm_datafull_rerank_parallel.py =====
+--- line 13 ---
+sys.path.insert(0, "/workspace/scripts")
+
+from dense_eval import encode_texts, load_sentence_transformer_model
+from jobhop_eval_common import configure_hf_cache, cleanup_cuda
+
+
+SYSTEM_PROMPT = """You are an expert career trajectory reranker.
+--- line 79 ---
+        cand_lines.append(
+            f"{i}. id={docid} | retriever_score={score:.6f} | {truncate(corpus[docid], max_chars)}"
+        )
+    return f"""We are doing JobHop last-step next-occupation prediction.
+
+Career history query:
+{case["query"]}

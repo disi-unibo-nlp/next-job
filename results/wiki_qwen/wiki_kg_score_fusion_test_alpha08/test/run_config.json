@@ -1,0 +1,19 @@
+{
+  "data_dir": "handoff/data_full",
+  "wiki_dir": "outputs/qwen_entity_wiki_full",
+  "split": "test",
+  "max_eval_cases": "none",
+  "output_dir": "outputs/wiki_kg_score_fusion_seed42_test_full_alpha08",
+  "candidate_pool_size": 100,
+  "wiki_top_k": 100,
+  "raw_top_k": 100,
+  "transition_top_k": 100,
+  "alphas": "0.8",
+  "history_window": 5,
+  "transition_recency_decay": 0.65,
+  "exact_transition_weight": 8.0,
+  "prefix4_weight": 1.0,
+  "prefix2_weight": 1.0,
+  "prefix1_weight": 1.0,
+  "prior_weight": 0.05
+}

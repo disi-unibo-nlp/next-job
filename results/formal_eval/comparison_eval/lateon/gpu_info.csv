@@ -1,6 +1,0 @@
-key,value
-cuda_available,True
-device,cuda
-torch_cuda_version,12.8
-cuda_device_count,1
-gpus,"[{""index"": 0, ""name"": ""NVIDIA GeForce RTX 4090"", ""total_memory_gb"": 23.64288330078125, ""major"": 8, ""minor"": 9}]"

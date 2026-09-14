@@ -1,0 +1,79 @@
+{
+  "preprocessing": {
+    "collapse_consecutive_duplicates": true,
+    "target_in_train_vocab_filter_for_eval": true,
+    "candidate_vocab_source": "retained train trajectories after Unknown/invalid removal and consecutive duplicate collapse"
+  },
+  "candidate_vocab_size": 2982,
+  "by_split": [
+    {
+      "split": "train",
+      "raw_rows": 1594827,
+      "raw_persons": 284251,
+      "unknown_code_rows": 110573,
+      "valid_code_rows_after_unknown_invalid_removed": 1484254,
+      "dropped_rows_unknown_or_invalid": 110573,
+      "persons_with_at_least_one_valid_code": 281982,
+      "persons_len_ge_2_before_collapse": 263697,
+      "events_after_consecutive_duplicate_collapse": 1312111,
+      "persons_after_consecutive_duplicate_collapse": 281982,
+      "persons_len_ge_2_after_collapse": 256593,
+      "dropped_persons_by_len_after_collapse": 25389,
+      "train_trajectories_used_for_markov": 256593,
+      "train_candidate_vocab_size": 2982,
+      "final_train_trajectories": 256593
+    },
+    {
+      "split": "validation",
+      "raw_rows": 199587,
+      "raw_persons": 35531,
+      "unknown_code_rows": 13622,
+      "valid_code_rows_after_unknown_invalid_removed": 185965,
+      "dropped_rows_unknown_or_invalid": 13622,
+      "persons_with_at_least_one_valid_code": 35262,
+      "persons_len_ge_2_before_collapse": 32976,
+      "events_after_consecutive_duplicate_collapse": 164396,
+      "persons_after_consecutive_duplicate_collapse": 35262,
+      "persons_len_ge_2_after_collapse": 32123,
+      "dropped_persons_by_len_after_collapse": 3139,
+      "eval_cases_after_len_filter": 32123,
+      "eval_cases_target_in_train_vocab": 32123,
+      "dropped_eval_cases_target_not_in_train_vocab": 0,
+      "final_eval_cases": 32123
+    },
+    {
+      "split": "test",
+      "raw_rows": 198877,
+      "raw_persons": 35533,
+      "unknown_code_rows": 13587,
+      "valid_code_rows_after_unknown_invalid_removed": 185290,
+      "dropped_rows_unknown_or_invalid": 13587,
+      "persons_with_at_least_one_valid_code": 35249,
+      "persons_len_ge_2_before_collapse": 32988,
+      "events_after_consecutive_duplicate_collapse": 163796,
+      "persons_after_consecutive_duplicate_collapse": 35249,
+      "persons_len_ge_2_after_collapse": 32089,
+      "dropped_persons_by_len_after_collapse": 3160,
+      "eval_cases_after_len_filter": 32089,
+      "eval_cases_target_in_train_vocab": 32089,
+      "dropped_eval_cases_target_not_in_train_vocab": 0,
+      "final_eval_cases": 32089
+    }
+  ],
+  "expected_final_counts": {
+    "train": 256593,
+    "validation": 32123,
+    "test": 32089
+  },
+  "split_files": {
+    "train": [
+      "JobHop_v2_train.parquet"
+    ],
+    "validation": [
+      "JobHop_v2_val.parquet"
+    ],
+    "test": [
+      "JobHop_v2_test.parquet"
+    ]
+  }
+}
