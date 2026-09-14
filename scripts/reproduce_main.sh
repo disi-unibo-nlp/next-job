@@ -7,7 +7,35 @@ cd "$ROOT"
 cat <<'EOF'
 This repository includes final paper outputs and the scripts that produced them.
 
-Full reruns require large external inputs that are not committed:
+The most directly reproducible main experiment is the formal BGE-M3 + Markov
+experiment. It uses public Hugging Face resources and does not require a trained
+project checkpoint.
+
+Requirements:
+
+- NVIDIA GPU with CUDA.
+- Internet access for Hugging Face datasets/models.
+- Python dependencies from requirements.txt.
+
+Representative command:
+
+pip install -r requirements.txt
+
+python src/export_bge_m3_formal_per_query.py \
+  --model-name BAAI/bge-m3 \
+  --cache-dir ./hf-cache \
+  --output-dir ./outputs/reproduction_bge_m3
+
+Expected test MRR@10 values:
+
+- BGE-M3 pure: about 0.069
+- BGE-M3 + Markov: about 0.140
+
+To execute this command from this helper, run:
+
+RUN_BGE=1 bash scripts/reproduce_main.sh
+
+Full reruns of all paper systems require additional external inputs:
 
 1. The full exported JobHop data directory.
 2. Public base models, for example BAAI/bge-m3.
@@ -37,3 +65,9 @@ python src/jobhop_wiki_kg_score_fusion.py
 Consult each script's --help or run_config.json files in results/ for exact environment-specific paths.
 EOF
 
+if [[ "${RUN_BGE:-0}" == "1" ]]; then
+  python src/export_bge_m3_formal_per_query.py \
+    --model-name BAAI/bge-m3 \
+    --cache-dir ./hf-cache \
+    --output-dir ./outputs/reproduction_bge_m3
+fi

@@ -62,7 +62,7 @@ The most important additions are:
 
 ## Reproducibility notes
 
-The repository includes code and final outputs, but does not vendor the full JobHop data, Hugging Face model weights, or trained checkpoints. Those are intentionally excluded from the GitHub-ready project because they are large and environment-dependent.
+The repository includes code and final outputs, but does not vendor large model weights or trained checkpoints. Public base models are downloaded from Hugging Face when required. Training scripts and configurations for task-adapted models are included under `training/`, and the submitted repository contains the final metrics and experimental outputs used in the accompanying paper.
 
 Full reruns require:
 
@@ -83,5 +83,38 @@ For reproduction guidance:
 bash scripts/reproduce_main.sh
 ```
 
-These helper scripts do not hide missing data or checkpoints. They report what is present and point to the exact final outputs used by the paper.
+### Reproducing a representative main experiment
 
+A representative main experiment that can be reproduced with public resources is the formal BGE-M3 + Markov experiment. It downloads JobHop v2 through Hugging Face datasets, loads BGE-M3, builds the train-derived ESCO candidate vocabulary and Markov transition statistics, selects the fusion weight on validation data, and evaluates the frozen configuration on the test split.
+
+Requirements:
+
+- NVIDIA GPU with CUDA.
+- Internet access for Hugging Face datasets/models.
+- Python dependencies from `requirements.txt`.
+
+Run:
+
+```bash
+pip install -r requirements.txt
+
+python src/export_bge_m3_formal_per_query.py \
+  --model-name BAAI/bge-m3 \
+  --cache-dir ./hf-cache \
+  --output-dir ./outputs/reproduction_bge_m3
+```
+
+Expected test MRR@10 values are approximately:
+
+- BGE-M3 pure: 0.069
+- BGE-M3 + Markov: 0.140
+
+Some secondary analysis scripts consume intermediate per-case files generated during the full experimental pipeline. The final secondary analysis outputs are included under `results/paper_checks/`.
+
+### Submission archive
+
+For a course submission ZIP, exclude repository metadata and redundant large intermediate files such as `.git/`, `__pycache__/`, and selected per-query JSONL exports. The GitHub repository keeps the curated result evidence, while the submission archive can be smaller and easier to inspect. A Windows helper is provided:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/make_submission_zip.ps1
+```
